@@ -23,6 +23,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from detect_momentum import fetch_binary_markets, fetch_prob_series, compute_momentum
+from notify import signal_alert, exit_alert
 
 # ── Config ────────────────────────────────────────────────────────────────────
 MARKETS_TO_SCAN    = 40
@@ -92,7 +93,7 @@ def log_new_signals(signals: list[dict], trades: list[dict]) -> tuple[list[dict]
     for s in signals:
         if s["market_id"] in open_ids:
             continue
-        trades.append({
+        new_trade = {
             "market_id":   s["market_id"],
             "question":    s["question"],
             "direction":   s["direction"],
@@ -105,7 +106,9 @@ def log_new_signals(signals: list[dict], trades: list[dict]) -> tuple[list[dict]
             "exit_time":   None,
             "exit_reason": None,
             "pnl_pp":      None,
-        })
+        }
+        trades.append(new_trade)
+        signal_alert(new_trade)
         added += 1
     return trades, added
 
@@ -139,6 +142,7 @@ def check_exits(trades: list[dict]) -> tuple[list[dict], int]:
             t["exit_reason"] = "expired"
             t["exit_prob"]   = t["entry_prob"]   # no data — record as flat
             t["pnl_pp"]      = 0.0
+            exit_alert(t)
             closed += 1
             continue
 
@@ -166,6 +170,7 @@ def check_exits(trades: list[dict]) -> tuple[list[dict], int]:
         t["exit_time"]   = now_str()
         t["exit_reason"] = reason
         t["pnl_pp"]      = round(pnl, 1)
+        exit_alert(t)
         closed += 1
 
     return trades, closed
