@@ -152,3 +152,32 @@ def fade_exit_alert(trade: dict) -> None:
         f"Reason:     {reason_labels.get(trade.get('exit_reason', ''), trade.get('exit_reason', 'unknown'))}"
     )
     send(msg)
+
+
+# ── Intelligence Layer Alerts ─────────────────────────────────────────────────
+
+def intel_conflict_alert(conflict: dict) -> None:
+    """Intelligence layer: cross-bot conflict detected."""
+    msg = (
+        f"<b>[INTEL] Cross-Bot Conflict</b>\n"
+        f"{conflict['question']}\n\n"
+        f"Momentum: {conflict['momentum_dir']} @ {conflict['momentum_entry']}%\n"
+        f"Fade:     {conflict['fade_dir']} @ {conflict['fade_entry']}%\n\n"
+        f"These bots disagree on this market.\n"
+        f"Review and consider closing the weaker position."
+    )
+    send(msg)
+
+
+def intel_adjustment_alert(adjustments: list[dict]) -> None:
+    """Intelligence layer: parameters auto-adjusted."""
+    lines = ["<b>[INTEL] Parameters Adjusted</b>\n"]
+    for a in adjustments:
+        lines.append(f"{a['param']}: {a['old']} -> {a['new']}")
+        lines.append(f"  Reason: {a['reason']}\n")
+    send("\n".join(lines))
+
+
+def intel_report_alert(report: str) -> None:
+    """Intelligence layer: daily digest."""
+    send(report)

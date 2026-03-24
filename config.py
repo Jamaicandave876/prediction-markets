@@ -1,5 +1,5 @@
 """
-Central configuration for the Consensus Momentum Trader.
+Central configuration for all trading bots + intelligence layer.
 All tunable parameters in one place — change anything here.
 Keep this file private (contains Telegram credentials).
 """
@@ -50,3 +50,27 @@ MAX_CONSISTENCY    = 50        # % — reject if consistency is TOO high (that's
 FADE_NORMALIZE_PCT = 50       # % of spike to recover for a win (50 = expect half the spike to retrace)
 FADE_STOP_PP       = 8        # pp — stop loss if price keeps going in spike direction
 FADE_MAX_DAYS      = 7        # fade trades expire faster (spikes resolve quickly)
+
+# ══════════════════════════════════════════════════════════════════════════════
+# INTELLIGENCE LAYER
+# ══════════════════════════════════════════════════════════════════════════════
+
+# ── Risk Limits ───────────────────────────────────────────────────────────────
+INTEL_MAX_OPEN_TOTAL       = 8    # max open trades across both bots
+INTEL_MAX_OPEN_PER_BOT     = 5    # max open trades per individual bot
+INTEL_DRAWDOWN_LIMIT_PP    = -50  # pause if 7-day realized losses exceed this
+INTEL_PAUSE_AFTER_LOSSES   = 4    # pause a bot after this many consecutive losses
+
+# ── Auto-Adjustment ──────────────────────────────────────────────────────────
+INTEL_LOOKBACK_TRADES      = 10   # how many recent closed trades to evaluate
+INTEL_ADJUST_BOUNDS        = {
+    "MIN_DRIFT_SCORE":     (1.0, 5.0,  0.3),   # (min, max, step)
+    "MIN_CONSISTENCY":     (50,  85,   5),
+    "REVERSAL_THRESHOLD":  (3,   10,   1),
+    "SPIKE_MIN_RATIO":     (2.0, 8.0,  0.5),
+    "SPIKE_MIN_SIZE":      (5,   15,   1),
+    "FADE_STOP_PP":        (4,   12,   1),
+}
+
+# ── Reporting ─────────────────────────────────────────────────────────────────
+INTEL_DAILY_REPORT_ENABLED = True  # set False to disable daily digest

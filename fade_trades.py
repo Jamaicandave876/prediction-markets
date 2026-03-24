@@ -129,8 +129,12 @@ def log_new_signals(signals: list[dict], trades: list[dict]) -> tuple[list[dict]
     all_ids = {t["market_id"] for t in trades}
     added = 0
 
+    from intelligence import check_pre_trade_conflict
+
     for s in signals:
         if s["market_id"] in all_ids:
+            continue
+        if check_pre_trade_conflict(s["market_id"], s["direction"], "fade"):
             continue
 
         new_trade = {
@@ -311,12 +315,17 @@ def main():
     trades, n_closed = check_exits(trades)
     print(f"  Closed: {n_closed}\n")
 
-    # 2. Scan for new spikes
-    print(f"Scanning for overreaction spikes ({MARKETS_TO_SCAN} markets)...")
-    signals = find_fade_signals()
-    print(f"  Spike signals found: {len(signals)}")
-    trades, n_added = log_new_signals(signals, trades)
-    print(f"  New fade trades logged: {n_added}\n")
+    # 2. Scan for new spikes (if intelligence layer allows)
+    from intelligence import should_allow_new_trade
+    if should_allow_new_trade("fade"):
+        print(f"Scanning for overreaction spikes ({MARKETS_TO_SCAN} markets)...")
+        signals = find_fade_signals()
+        print(f"  Spike signals found: {len(signals)}")
+        trades, n_added = log_new_signals(signals, trades)
+        print(f"  New fade trades logged: {n_added}\n")
+    else:
+        print("Intelligence layer: new fade trades PAUSED (risk limit hit)\n")
+        n_added = 0
 
     # 3. Save
     save_trades(trades, TRADES_FILE, BACKUP_FILE)

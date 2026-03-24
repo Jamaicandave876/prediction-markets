@@ -182,8 +182,12 @@ def log_new_signals(signals: list[dict], trades: list[dict]) -> tuple[list[dict]
     all_ids = {t["market_id"] for t in trades}
     added = 0
 
+    from intelligence import check_pre_trade_conflict
+
     for s in signals:
         if s["market_id"] in all_ids:
+            continue
+        if check_pre_trade_conflict(s["market_id"], s["direction"], "momentum"):
             continue
 
         new_trade = {
@@ -400,12 +404,17 @@ def main():
     trades, n_closed = check_exits(trades)
     print(f"  Closed: {n_closed}\n")
 
-    # 2. Scan for new signals
-    print(f"Scanning for new signals ({MARKETS_TO_SCAN} markets)...")
-    signals = find_signals()
-    print(f"  Signals found: {len(signals)}")
-    trades, n_added = log_new_signals(signals, trades)
-    print(f"  New trades logged: {n_added}\n")
+    # 2. Scan for new signals (if intelligence layer allows)
+    from intelligence import should_allow_new_trade
+    if should_allow_new_trade("momentum"):
+        print(f"Scanning for new signals ({MARKETS_TO_SCAN} markets)...")
+        signals = find_signals()
+        print(f"  Signals found: {len(signals)}")
+        trades, n_added = log_new_signals(signals, trades)
+        print(f"  New trades logged: {n_added}\n")
+    else:
+        print("Intelligence layer: new momentum trades PAUSED (risk limit hit)\n")
+        n_added = 0
 
     # 3. Save (atomic with backup)
     save_trades(trades)

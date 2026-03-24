@@ -1,0 +1,12 @@
+{
+  "last_report": "2026-03-24 21:06 UTC",
+  "adjustments": [],
+  "paused": {
+    "momentum": false,
+    "fade": false
+  },
+  "consecutive_losses": {
+    "momentum": 1,
+    "fade": 0
+  }
+}
