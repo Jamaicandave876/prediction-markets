@@ -1,62 +1,100 @@
 """
-Step 2: Detect probability momentum in prediction markets.
+Detect probability momentum in prediction markets.
 
 For each market we:
-  1. Fetch recent bets and extract the probability series (probAfter each bet)
-  2. Compute two simple numbers:
-       drift      = total prob change over the window (+ means rising, - means falling)
-       consistency = fraction of individual bet-moves in the same direction as the drift
-  3. Combine into a drift_score = drift * consistency
-     e.g. drift_score 0.12 means: prob moved up ~12pp AND moves were mostly upward
-          drift_score -0.08 means: prob drifted down ~8pp consistently
+  1. Fetch recent bets and extract the probability series
+  2. Compute drift (total prob change) and consistency (directional agreement)
+  3. Apply time-decay weighting so recent bets count more than old ones
+  4. Combine into drift_score = drift * weighted_consistency
 
-No trading decisions yet — just ranking markets by momentum strength.
+Improvements over v1:
+  - Time-decay: recent bets weighted ~7x more than oldest bets
+  - Market age filter: skips markets younger than MIN_MARKET_AGE_HR
+  - Uses centralized config
 """
 
+import math
+import time
+import logging
 import requests
+from config import (
+    API_BASE, MIN_POOL, BETS_WINDOW, MIN_BETS,
+    DECAY_STRENGTH, MIN_MARKET_AGE_HR,
+)
 
-# ── Config (change these freely) ──────────────────────────────────────────────
-API_BASE        = "https://api.manifold.markets/v0"
-MARKETS_TO_SCAN = 15      # how many markets to pull from the feed
-MIN_POOL        = 500     # skip very thin markets
-BETS_WINDOW     = 30      # how many recent bets to look back through
-MIN_BETS        = 8       # need at least this many bets to have a signal
-# ──────────────────────────────────────────────────────────────────────────────
+log = logging.getLogger(__name__)
 
 
 def fetch_binary_markets(n: int) -> list[dict]:
-    resp = requests.get(f"{API_BASE}/markets", params={"limit": n * 4}, timeout=10)
-    resp.raise_for_status()
-    return [
-        m for m in resp.json()
-        if m.get("outcomeType") == "BINARY"
-        and not m.get("isResolved")
-        and (m.get("pool", {}).get("YES", 0) + m.get("pool", {}).get("NO", 0)) >= MIN_POOL
-    ][:n]
+    """Fetch open binary markets with enough liquidity and age."""
+    try:
+        resp = requests.get(
+            f"{API_BASE}/markets",
+            params={"limit": min(n * 4, 200)},
+            timeout=15,
+        )
+        resp.raise_for_status()
+    except requests.RequestException as e:
+        log.error("Failed to fetch markets: %s", e)
+        return []
+
+    now_ms = time.time() * 1000
+    min_age_ms = MIN_MARKET_AGE_HR * 3_600_000
+    results = []
+
+    for m in resp.json():
+        if m.get("outcomeType") != "BINARY":
+            continue
+        if m.get("isResolved"):
+            continue
+
+        # Liquidity filter
+        pool = m.get("pool", {})
+        pool_total = pool.get("YES", 0) + pool.get("NO", 0)
+        if pool_total < MIN_POOL:
+            continue
+
+        # Market age filter — skip brand-new markets (just noise)
+        created = m.get("createdTime", 0)
+        if (now_ms - created) < min_age_ms:
+            continue
+
+        results.append(m)
+        if len(results) >= n:
+            break
+
+    return results
 
 
 def fetch_prob_series(market_id: str, limit: int = BETS_WINDOW) -> list[float]:
     """Return a time-ordered list of probabilities after each bet."""
-    resp = requests.get(
-        f"{API_BASE}/bets",
-        params={"contractId": market_id, "limit": limit},
-        timeout=10,
-    )
-    resp.raise_for_status()
+    try:
+        resp = requests.get(
+            f"{API_BASE}/bets",
+            params={"contractId": market_id, "limit": limit},
+            timeout=15,
+        )
+        resp.raise_for_status()
+    except requests.RequestException as e:
+        log.warning("Failed to fetch bets for %s: %s", market_id, e)
+        return []
+
     bets = resp.json()
     if not bets:
         return []
-    # API returns newest-first; reverse so we go oldest → newest
-    bets.sort(key=lambda b: b["createdTime"])
+
+    bets.sort(key=lambda b: b.get("createdTime", 0))
     return [b["probAfter"] for b in bets if "probAfter" in b]
 
 
 def compute_momentum(probs: list[float]) -> dict:
     """
-    Given an ordered probability series, compute:
-      drift       : total change (prob[-1] - prob[0])
-      consistency : fraction of steps moving in the same direction as drift
-      drift_score : drift * consistency  (the headline signal)
+    Compute momentum with time-decay weighting.
+
+    Returns:
+      drift       : total prob change in pp (+ = rising, - = falling)
+      consistency : weighted fraction of steps moving with the drift (0-100%)
+      drift_score : drift * consistency — the headline signal
     """
     if len(probs) < 2:
         return {"drift": 0.0, "consistency": 0.0, "drift_score": 0.0}
@@ -66,47 +104,64 @@ def compute_momentum(probs: list[float]) -> dict:
         return {"drift": 0.0, "consistency": 0.0, "drift_score": 0.0}
 
     direction = 1 if drift > 0 else -1
-    steps = [probs[i+1] - probs[i] for i in range(len(probs) - 1)]
-    steps_in_direction = sum(1 for s in steps if s * direction > 0)
-    consistency = steps_in_direction / len(steps)
+    steps = [probs[i + 1] - probs[i] for i in range(len(probs) - 1)]
+    n = len(steps)
+
+    # Time-decay weights: recent bets matter more
+    # weight_i = exp(DECAY_STRENGTH * i / n)
+    # With DECAY_STRENGTH=2.0: newest step is ~7.4x heavier than oldest
+    weights = [math.exp(DECAY_STRENGTH * i / n) for i in range(n)]
+    total_weight = sum(weights)
+
+    # Weighted consistency: what fraction of weighted activity is directional?
+    weighted_in_dir = sum(w for s, w in zip(steps, weights) if s * direction > 0)
+    consistency = weighted_in_dir / total_weight
 
     return {
-        "drift":       round(drift * 100, 2),        # in percentage points
-        "consistency": round(consistency * 100, 1),  # as a %
+        "drift":       round(drift * 100, 2),
+        "consistency": round(consistency * 100, 1),
         "drift_score": round(drift * consistency * 100, 2),
     }
 
 
 def main():
-    print(f"Scanning {MARKETS_TO_SCAN} markets for momentum (last {BETS_WINDOW} bets each)...\n")
+    """Standalone demo: scan markets and rank by momentum."""
+    from config import MARKETS_TO_SCAN
+
+    print(f"Scanning {MARKETS_TO_SCAN} markets for momentum "
+          f"(last {BETS_WINDOW} bets, time-decay={DECAY_STRENGTH})...\n")
 
     markets = fetch_binary_markets(MARKETS_TO_SCAN)
-    results = []
+    if not markets:
+        print("No markets fetched. API may be down.")
+        return
 
+    results = []
     for m in markets:
         probs = fetch_prob_series(m["id"])
         if len(probs) < MIN_BETS:
             continue
         mom = compute_momentum(probs)
         results.append({
-            "question":   m["question"],
-            "prob_now":   round(m["probability"] * 100, 1),
-            "bets_used":  len(probs),
+            "question":  m["question"],
+            "prob_now":  round(m["probability"] * 100, 1),
+            "bets_used": len(probs),
             **mom,
         })
 
-    # Sort by absolute drift_score (strongest momentum first)
     results.sort(key=lambda r: abs(r["drift_score"]), reverse=True)
 
     if not results:
-        print("No markets had enough bets to score. Try increasing MARKETS_TO_SCAN.")
+        print("No markets had enough bets to score.")
         return
 
     print(f"{'Score':>7}  {'Drift':>7}  {'Consist':>7}  {'Now%':>5}  {'Bets':>4}  Question")
     print("-" * 90)
     for r in results:
         arrow = "^" if r["drift"] > 0 else "v"
-        q = r["question"][:55] + "…" if len(r["question"]) > 55 else r["question"]
+        q = r["question"][:55]
+        if len(r["question"]) > 55:
+            q += "..."
         print(
             f"{r['drift_score']:>+7.2f}  "
             f"{r['drift']:>+6.1f}pp  "
@@ -115,11 +170,6 @@ def main():
             f"{r['bets_used']:>4}  "
             f"{arrow} {q}"
         )
-
-    print(f"\nHighest momentum: {results[0]['question'][:70]}")
-    print(f"  drift_score={results[0]['drift_score']:+.2f}  "
-          f"drift={results[0]['drift']:+.1f}pp  "
-          f"consistency={results[0]['consistency']:.0f}%")
 
 
 if __name__ == "__main__":

@@ -21,10 +21,10 @@
     "entry_time": "2026-03-24 19:07 UTC",
     "drift_score": 11.56,
     "url": "https://manifold.markets/Kalshi/will-chainlink-go-up-in-the-next-24-pOdnRugLzg",
-    "status": "closed",
-    "exit_prob": 0.0,
-    "exit_time": "2026-03-24 20:24 UTC",
-    "exit_reason": "resolved_loss",
-    "pnl_pp": -63.8
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]
