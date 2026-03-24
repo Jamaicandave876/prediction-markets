@@ -174,6 +174,39 @@ def build_pdf():
     pdf.bullet("4. All updated trade data is committed back to GitHub")
     pdf.bullet("5. Telegram notifications are sent at each step")
 
+    pdf.ln(4)
+    pdf.sub_title("How to Use This System (Day-to-Day)")
+    pdf.body_text(
+        "You do NOT need to keep your computer on, VS Code open, or anything running. "
+        "The entire system is fully automated in the cloud. Here is what you need to know:"
+    )
+    pdf.ln(1)
+    pdf.bullet(
+        "Everything runs automatically. An Anthropic cloud agent wakes up every 4 hours, "
+        "clones your GitHub repo, runs all three bots, and pushes updated trade data back. "
+        "This happens 6 times per day at 12am, 4am, 8am, 12pm, 4pm, and 8pm UTC."
+    )
+    pdf.bullet(
+        "Check Telegram on your phone. That is your only interface. You will get notifications "
+        "for every new trade, every closed trade, every run summary, and a daily intelligence report."
+    )
+    pdf.bullet(
+        "Look for the tags: [MOMENTUM] is the trend-following bot, [FADE] is the spike-fading bot, "
+        "and [INTEL] is the daily intelligence report with overall system health."
+    )
+    pdf.bullet(
+        "Your trade history is on GitHub. Go to github.com/Jamaicandave876/prediction-markets "
+        "and look at trades.json (momentum) and fade_trades.json (fade) to see all trades."
+    )
+    pdf.bullet(
+        "You do NOT need to touch any code. The intelligence layer automatically adjusts "
+        "parameters when performance is poor. If a bot keeps losing, it gets paused automatically."
+    )
+    pdf.ln(1)
+    pdf.body_text(
+        "In short: set it and forget it. Just read the Telegram alerts on your phone."
+    )
+
     # ── 2. HOW PREDICTION MARKETS WORK ───────────────────────────────────────
     pdf.add_page()
     pdf.section_title("2. How Prediction Markets Work")
