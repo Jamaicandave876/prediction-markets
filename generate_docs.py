@@ -102,7 +102,7 @@ def build_pdf():
     pdf.cell(0, 8, "Automated every 4 hours with Telegram alerts", align="C")
     pdf.ln(20)
     pdf.set_font("Helvetica", "I", 10)
-    pdf.cell(0, 8, "March 2026", align="C")
+    pdf.cell(0, 8, "March 2026 (v2 - Post Advisory Board Review)", align="C")
 
     # ── TABLE OF CONTENTS ────────────────────────────────────────────────────
     pdf.add_page()
@@ -259,7 +259,7 @@ def build_pdf():
     pdf.bullet("Target hit: BUY YES exits when prob >= 78%. BUY NO exits when prob <= 22%.")
     pdf.bullet("Reversal: Price moves 6pp or more against our entry (stop-loss).")
     pdf.bullet("Market resolved: The market ends. If resolution matches our bet = WIN.")
-    pdf.bullet("Stale: Trade has been open 14+ days with no exit hit. Closed at 0pp P&L.")
+    pdf.bullet("Stale: Trade has been open 14+ days with no exit hit. Closed at REAL current market price (records actual P&L, not 0pp).")
 
     pdf.add_page()
     pdf.sub_title("Momentum Scoring: Time-Decay Weighting")
@@ -324,6 +324,8 @@ def build_pdf():
     pdf.bullet("Spike size >= 8pp (the move is big enough to matter)")
     pdf.bullet("Spike ratio >= 3.0x (the move is abnormally large vs baseline)")
     pdf.bullet("Consistency <= 50% (bets are NOT all in the same direction - if they were, it's a real trend, not a spike)")
+    pdf.bullet("Time validation: The spike window bets must span less than 6 hours. If 5 bets took days, that's gradual movement, not a real spike.")
+    pdf.bullet("Risk-reward check: Expected reward must be at least 80% of expected risk. Rejects trades where the stop-loss is much bigger than the profit target.")
     pdf.bullet("At least 12 bets available for analysis")
     pdf.bullet("Market has not been traded before")
     pdf.bullet("No conflict with momentum bot on same market")
@@ -342,7 +344,7 @@ def build_pdf():
         "it wasn't an overreaction)."
     )
     pdf.bullet("Market resolved: Same as momentum bot.")
-    pdf.bullet("Stale: 7 days max (shorter than momentum - spikes resolve quickly).")
+    pdf.bullet("Stale: 7 days max (shorter than momentum - spikes resolve quickly). Records real P&L at current market price.")
 
     pdf.add_page()
     pdf.sub_title("Fade Exit Logic: Normalization Target")
@@ -366,6 +368,36 @@ def build_pdf():
         "The fade bot rejects these (consistency must be <= 50%). It only trades when the price "
         "movement looks erratic - a few large bets moved the price sharply, which is the "
         "classic signature of an overreaction."
+    )
+    pdf.ln(2)
+    pdf.sub_title("Time-Aware Spike Validation")
+    pdf.body_text(
+        "A key improvement from the advisory board review: the system now checks WHEN the "
+        "bets in the spike window actually happened, not just how many there are. If the "
+        "last 5 bets are spread over several days, that is gradual movement, not a spike. "
+        "Real spikes happen fast --within hours. The system rejects any 'spike' where the "
+        "spike window spans more than 6 hours (SPIKE_MAX_WINDOW_HR)."
+    )
+    pdf.ln(2)
+    pdf.sub_title("Risk-Reward Filter")
+    pdf.body_text(
+        "Another advisory board improvement: before entering any fade trade, the bot checks "
+        "whether the math makes sense. The expected reward (spike_size * normalize%) must be "
+        "at least 80% of the expected risk (stop-loss size). Without this filter, small spikes "
+        "could produce trades where you risk 8pp to win only 4pp --structurally unprofitable."
+    )
+    pdf.code_block(
+        "Example of a REJECTED trade (bad risk-reward):\n"
+        "  Spike size = 8pp, Normalize = 50%, Stop = 8pp\n"
+        "  Expected reward = 8 * 50% = 4pp\n"
+        "  Expected risk   = 8pp\n"
+        "  Ratio = 4/8 = 0.50 < 0.80 threshold -> REJECTED\n"
+        "\n"
+        "Example of an ACCEPTED trade (good risk-reward):\n"
+        "  Spike size = 14pp, Normalize = 50%, Stop = 8pp\n"
+        "  Expected reward = 14 * 50% = 7pp\n"
+        "  Expected risk   = 8pp\n"
+        "  Ratio = 7/8 = 0.875 >= 0.80 threshold -> ACCEPTED"
     )
 
     # ── 5. INTELLIGENCE LAYER ────────────────────────────────────────────────
@@ -393,7 +425,13 @@ def build_pdf():
     pdf.bullet("Max 8 open trades total across both bots (5 per individual bot).")
     pdf.bullet("Pauses a bot after 4 consecutive losses (until it gets a win).")
     pdf.bullet(
-        "Tracks 7-day drawdown and alerts when realized losses exceed -50pp."
+        "Deadlock recovery: If a paused bot stays paused for 3+ days (all open trades "
+        "also lost), it auto-unpauses so it gets a fresh chance. This prevents a permanent "
+        "dead state where the bot can never recover."
+    )
+    pdf.bullet(
+        "Tracks 7-day NET P&L (wins + losses combined) and alerts when it drops below -50pp. "
+        "Previous versions only counted losses, which dramatically overstated risk."
     )
     pdf.bullet(
         "When limits are hit, the bot's scanning phase is skipped entirely - it still "
@@ -427,6 +465,11 @@ def build_pdf():
     pdf.bullet("Max 1 adjustment per parameter per run.")
     pdf.bullet("Requires 10+ closed trades before any adjustment activates.")
     pdf.bullet("Every change is logged and sent as a Telegram alert.")
+    pdf.bullet(
+        "Adjustments are saved to config_overrides.json (a safe JSON file), NOT by modifying "
+        "config.py source code. The original config.py values serve as defaults, and the "
+        "overrides file cleanly layers changes on top."
+    )
     pdf.ln(2)
     pdf.sub_title("5.5 Daily Intelligence Report")
     pdf.body_text(
@@ -473,7 +516,8 @@ def build_pdf():
     )
     pdf.bullet("trades.json / trades.backup.json - Momentum bot trades")
     pdf.bullet("fade_trades.json / fade_trades.backup.json - Fade bot trades")
-    pdf.bullet("intelligence_state.json - Intel layer state (adjustment history, pause flags)")
+    pdf.bullet("intelligence_state.json - Intel layer state (last report time, pause flags, loss streaks)")
+    pdf.bullet("config_overrides.json - Parameter adjustments from the intelligence layer")
 
     # ── 7. TELEGRAM ──────────────────────────────────────────────────────────
     pdf.add_page()
@@ -533,17 +577,20 @@ def build_pdf():
     pdf.param_row("SPIKE_MIN_SIZE", 8, "pp - minimum spike size")
     pdf.param_row("SPIKE_MIN_RATIO", 3.0, "Spike must be Nx baseline moves")
     pdf.param_row("MAX_CONSISTENCY", 50, "% - reject if too consistent (it's a trend)")
+    pdf.param_row("SPIKE_MAX_WINDOW_HR", 6, "Max hours for spike window (rejects slow moves)")
     pdf.ln(2)
     pdf.sub_title("Fade Exit Conditions")
     pdf.param_row("FADE_NORMALIZE_PCT", 50, "% of spike to retrace for a win")
     pdf.param_row("FADE_STOP_PP", 8, "pp stop-loss if spike continues")
     pdf.param_row("FADE_MAX_DAYS", 7, "Fade trades expire faster")
+    pdf.param_row("FADE_MIN_REWARD_RATIO", 0.8, "Min reward/risk ratio to enter trade")
     pdf.ln(2)
     pdf.sub_title("Intelligence Layer")
     pdf.param_row("INTEL_MAX_OPEN_TOTAL", 8, "Max open trades across both bots")
     pdf.param_row("INTEL_MAX_OPEN_PER_BOT", 5, "Max open trades per bot")
     pdf.param_row("INTEL_DRAWDOWN_LIMIT_PP", -50, "Pause alert threshold (7-day)")
     pdf.param_row("INTEL_PAUSE_AFTER_LOSSES", 4, "Pause bot after N consecutive losses")
+    pdf.param_row("INTEL_MAX_PAUSE_DAYS", 3, "Auto-unpause after N days (deadlock fix)")
     pdf.param_row("INTEL_LOOKBACK_TRADES", 10, "Recent trades for adjustment decisions")
 
     # ── 9. FILE REFERENCE ────────────────────────────────────────────────────
@@ -564,11 +611,14 @@ def build_pdf():
     pdf.bullet("trades.backup.json - Backup copy of momentum trades.")
     pdf.bullet("fade_trades.json - Fade bot trade log.")
     pdf.bullet("fade_trades.backup.json - Backup copy of fade trades.")
-    pdf.bullet("intelligence_state.json - Intel layer state (last report time, adjustments, pauses).")
+    pdf.bullet("intelligence_state.json - Intel layer state (last report time, pauses, loss streaks).")
+    pdf.bullet("config_overrides.json - Parameter overrides from auto-adjustment (loaded by config.py).")
     pdf.ln(2)
     pdf.sub_title("Other Files")
     pdf.bullet("requirements.txt - Python dependencies (just 'requests').")
     pdf.bullet(".gitignore - Excludes __pycache__, .env, *.tmp, .claude/")
+    pdf.bullet("generate_docs.py - Generates this PDF documentation.")
+    pdf.bullet("Prediction_Market_Trading_System.pdf - This document.")
     pdf.bullet("fetch_markets.py - Original market fetching demo (standalone).")
     pdf.bullet("find_signals.py - Original signal detection demo (standalone).")
 
@@ -610,12 +660,19 @@ def build_pdf():
         ("Paper Trading",
          "Recording hypothetical trades without real money. Used to test strategy "
          "performance before going live."),
-        ("Drawdown",
-         "The cumulative realized losses over a period (7 days in this system). "
-         "Used as a risk metric."),
+        ("Net P&L (7-day)",
+         "The sum of ALL realized profits and losses over the last 7 days. "
+         "Used as the primary risk metric. If it drops below -50pp, a warning is triggered."),
+        ("Risk-Reward Ratio",
+         "Expected reward divided by expected risk for a trade. A ratio of 1.0 means "
+         "you risk the same as you could win. Below 0.8 is rejected by the fade bot."),
         ("Conflict",
          "When both bots have opposing open positions on the same market. "
          "The intelligence layer detects and prevents these."),
+        ("Config Overrides",
+         "A JSON file (config_overrides.json) where the intelligence layer writes "
+         "parameter adjustments. Loaded by config.py at startup, layering changes on "
+         "top of the default values without modifying source code."),
     ]
     for term, definition in terms:
         pdf.set_font("Helvetica", "B", 10)
