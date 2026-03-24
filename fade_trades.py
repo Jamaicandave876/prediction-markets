@@ -31,13 +31,14 @@ from config import (
     MARKETS_TO_SCAN, SPIKE_BETS_TOTAL, SPIKE_MIN_BETS,
     SPIKE_MIN_SIZE, SPIKE_MIN_RATIO, MAX_CONSISTENCY,
     FADE_NORMALIZE_PCT, FADE_STOP_PP, FADE_MAX_DAYS,
+    FADE_MIN_REWARD_RATIO,
 )
-from detect_momentum import fetch_binary_markets, fetch_prob_series, compute_momentum
+from detect_momentum import fetch_binary_markets, fetch_bet_data, compute_momentum
 from detect_spike import detect_spike
 from paper_trades import (
     load_trades, save_trades, get_market_state,
     compute_resolution_pnl, compute_metrics,
-    now_str, days_since, close_trade as _close_trade_momentum,
+    now_str, days_since,
 )
 from notify import fade_signal_alert, fade_exit_alert, summary_alert
 
@@ -76,11 +77,14 @@ def find_fade_signals() -> list[dict]:
 
     signals = []
     for m in markets:
-        probs = fetch_prob_series(m["id"], limit=SPIKE_BETS_TOTAL)
-        if len(probs) < SPIKE_MIN_BETS:
+        bet_data = fetch_bet_data(m["id"], limit=SPIKE_BETS_TOTAL)
+        if len(bet_data) < SPIKE_MIN_BETS:
             continue
 
-        spike = detect_spike(probs)
+        probs = [b["prob"] for b in bet_data]
+        timestamps = [b["time_ms"] for b in bet_data]
+
+        spike = detect_spike(probs, timestamps_ms=timestamps)
         if spike is None:
             continue
 
@@ -95,6 +99,16 @@ def find_fade_signals() -> list[dict]:
         # Filter 3: reject high consistency (that's a real trend, not a spike)
         mom = compute_momentum(probs)
         if mom["consistency"] > MAX_CONSISTENCY:
+            continue
+
+        # Filter 4: risk-reward check — don't take trades where
+        # expected reward is too small relative to the stop loss
+        expected_reward = spike["spike_size"] * (FADE_NORMALIZE_PCT / 100)
+        expected_risk = FADE_STOP_PP
+        if expected_risk > 0 and expected_reward / expected_risk < FADE_MIN_REWARD_RATIO:
+            log.info("SKIP %s — bad risk-reward: %.1fpp reward vs %.1fpp risk (ratio %.2f < %.2f)",
+                     m["question"][:40], expected_reward, expected_risk,
+                     expected_reward / expected_risk, FADE_MIN_REWARD_RATIO)
             continue
 
         prob_now = round(m.get("probability", 0) * 100, 1)
@@ -183,21 +197,22 @@ def check_exits(trades: list[dict]) -> tuple[list[dict], int]:
         if t["status"] != "open":
             continue
 
-        # Exit 1: Max trade duration (fades expire faster)
-        if days_since(t["entry_time"]) >= FADE_MAX_DAYS:
-            close_trade(t, t["entry_prob"], "stale", 0.0)
-            closed += 1
-            continue
+        is_stale = days_since(t["entry_time"]) >= FADE_MAX_DAYS
 
-        # Fetch current market state
+        # Fetch current market state (needed for accurate stale P&L too)
         state = get_market_state(t["market_id"])
 
         if state["status"] == "error":
-            api_errors += 1
-            log.warning("API error for %s: %s — skipping", t["market_id"], state["reason"])
+            if is_stale:
+                # Can't get real price, but trade must close — record 0pp
+                close_trade(t, t["entry_prob"], "stale", 0.0)
+                closed += 1
+            else:
+                api_errors += 1
+                log.warning("API error for %s: %s — skipping", t["market_id"], state["reason"])
             continue
 
-        # Exit 2: Market resolved
+        # Exit 1: Market resolved
         if state["status"] == "resolved":
             resolution = state["resolution"]
             pnl = compute_resolution_pnl(t, resolution)
@@ -215,20 +230,27 @@ def check_exits(trades: list[dict]) -> tuple[list[dict], int]:
             closed += 1
             continue
 
-        # Market is active — check fade-specific exits
+        # Market is active
         prob = state["probability"]
         entry = t["entry_prob"]
-        pre_spike = t["pre_spike_prob"]
 
-        # How far has price moved back toward pre-spike?
-        # Normalization target = pre_spike + (1 - FADE_NORMALIZE_PCT/100) * spike
-        # i.e., we want FADE_NORMALIZE_PCT% of the spike to retrace
-        spike_pp = entry - pre_spike  # signed: + if spike went up, - if went down
+        # Exit 2: Max trade duration — now records REAL P&L
+        if is_stale:
+            if t["direction"] == "BUY NO":
+                pnl = entry - prob
+            else:
+                pnl = prob - entry
+            close_trade(t, prob, "stale", pnl)
+            closed += 1
+            continue
+
+        # Exit 3: Fade-specific price exits
+        pre_spike = t["pre_spike_prob"]
+        spike_pp = entry - pre_spike
 
         if t["direction"] == "BUY NO":
-            # We faded an upward spike. We win if price drops back toward pre-spike.
             normalize_target = entry - abs(spike_pp) * (FADE_NORMALIZE_PCT / 100)
-            pnl = entry - prob  # BUY NO profits when prob drops
+            pnl = entry - prob
             if prob <= normalize_target:
                 close_trade(t, prob, "normalized", pnl)
                 closed += 1
@@ -236,9 +258,8 @@ def check_exits(trades: list[dict]) -> tuple[list[dict], int]:
                 close_trade(t, prob, "stopped_out", pnl)
                 closed += 1
         else:
-            # We faded a downward spike. We win if price rises back toward pre-spike.
             normalize_target = entry + abs(spike_pp) * (FADE_NORMALIZE_PCT / 100)
-            pnl = prob - entry  # BUY YES profits when prob rises
+            pnl = prob - entry
             if prob >= normalize_target:
                 close_trade(t, prob, "normalized", pnl)
                 closed += 1

@@ -25,7 +25,6 @@ v2 improvements:
 import json
 import shutil
 import logging
-import time
 import requests
 from datetime import datetime, timezone
 from pathlib import Path
@@ -255,22 +254,23 @@ def check_exits(trades: list[dict]) -> tuple[list[dict], int]:
         if t["status"] != "open":
             continue
 
-        # Exit 1: Max trade duration
-        if days_since(t["entry_time"]) >= MAX_TRADE_DAYS:
-            close_trade(t, t["entry_prob"], "stale", 0.0)
-            closed += 1
-            continue
+        is_stale = days_since(t["entry_time"]) >= MAX_TRADE_DAYS
 
-        # Fetch current market state
+        # Fetch current market state (needed for accurate stale P&L too)
         state = get_market_state(t["market_id"])
 
-        # API error — SKIP this trade, don't close it
+        # API error
         if state["status"] == "error":
-            api_errors += 1
-            log.warning("API error for %s: %s — skipping", t["market_id"], state["reason"])
+            if is_stale:
+                # Can't get real price, but trade must close — record 0pp
+                close_trade(t, t["entry_prob"], "stale", 0.0)
+                closed += 1
+            else:
+                api_errors += 1
+                log.warning("API error for %s: %s — skipping", t["market_id"], state["reason"])
             continue
 
-        # Exit 2: Market resolved — record actual win/loss
+        # Exit 1: Market resolved — record actual win/loss
         if state["status"] == "resolved":
             resolution = state["resolution"]
             pnl = compute_resolution_pnl(t, resolution)
@@ -288,10 +288,21 @@ def check_exits(trades: list[dict]) -> tuple[list[dict], int]:
             closed += 1
             continue
 
-        # Market is active — check price-based exits
+        # Market is active
         prob = state["probability"]
         entry = t["entry_prob"]
 
+        # Exit 2: Max trade duration — now records REAL P&L
+        if is_stale:
+            if t["direction"] == "BUY YES":
+                pnl = prob - entry
+            else:
+                pnl = entry - prob
+            close_trade(t, prob, "stale", pnl)
+            closed += 1
+            continue
+
+        # Exit 3: Price-based exits (target hit / reversal)
         if t["direction"] == "BUY YES":
             pnl = prob - entry
             if prob >= EXIT_TARGET_YES:

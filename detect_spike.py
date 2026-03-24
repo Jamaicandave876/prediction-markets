@@ -22,22 +22,26 @@ Reuses: fetch_binary_markets, fetch_prob_series from detect_momentum.py
 import logging
 from config import (
     MARKETS_TO_SCAN, SPIKE_BETS_TOTAL, SPIKE_RECENT, SPIKE_MIN_BETS,
-    SPIKE_MIN_SIZE, SPIKE_MIN_RATIO, MAX_CONSISTENCY,
+    SPIKE_MIN_SIZE, SPIKE_MIN_RATIO, MAX_CONSISTENCY, SPIKE_MAX_WINDOW_HR,
 )
 from detect_momentum import fetch_binary_markets, fetch_prob_series, compute_momentum
 
 log = logging.getLogger(__name__)
 
 
-def detect_spike(probs: list[float]) -> dict | None:
+def detect_spike(probs: list[float], timestamps_ms: list[int] | None = None) -> dict | None:
     """
     Detect if the most recent bets show a spike (potential overreaction).
 
     Args:
-        probs: time-ordered probability series (oldest first)
+        probs:          time-ordered probability series (oldest first)
+        timestamps_ms:  optional epoch-ms timestamps for each prob entry.
+                        If provided, rejects spikes where the spike window
+                        spans more than SPIKE_MAX_WINDOW_HR hours (those are
+                        gradual moves, not real spikes).
 
     Returns:
-        dict with spike metrics, or None if not enough data.
+        dict with spike metrics, or None if not enough data or not a real spike.
     """
     if len(probs) < SPIKE_MIN_BETS:
         return None
@@ -59,12 +63,22 @@ def detect_spike(probs: list[float]) -> dict | None:
     # Spike ratio: how many times larger than normal is this move?
     spike_ratio = spike_size / avg_step if avg_step > 0.01 else 0
 
+    # Time validation: reject "spikes" that are actually slow movement
+    spike_hours = None
+    if timestamps_ms and len(timestamps_ms) >= len(probs):
+        spike_times = timestamps_ms[-SPIKE_RECENT:]
+        if len(spike_times) >= 2 and spike_times[-1] > spike_times[0]:
+            spike_hours = (spike_times[-1] - spike_times[0]) / (1000 * 3600)
+            if spike_hours > SPIKE_MAX_WINDOW_HR:
+                return None  # too slow to be a real spike
+
     return {
         "spike_size":     round(spike_size, 1),              # pp
         "avg_step":       round(avg_step, 2),                # pp (baseline normal)
         "spike_ratio":    round(spike_ratio, 1),             # times larger than normal
         "spike_dir":      1 if spike > 0 else -1,            # +1 = spiked up, -1 = down
         "pre_spike_prob": round(spike_probs[0] * 100, 1),   # % before the spike began
+        "spike_hours":    round(spike_hours, 1) if spike_hours is not None else None,
     }
 
 

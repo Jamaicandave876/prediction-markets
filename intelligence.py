@@ -14,7 +14,6 @@ Also provides pre-trade hooks called by each bot:
 """
 
 import json
-import re
 import logging
 from pathlib import Path
 from collections import Counter
@@ -23,7 +22,7 @@ from config import (
     INTEL_MAX_OPEN_TOTAL, INTEL_MAX_OPEN_PER_BOT,
     INTEL_DRAWDOWN_LIMIT_PP, INTEL_PAUSE_AFTER_LOSSES,
     INTEL_LOOKBACK_TRADES, INTEL_ADJUST_BOUNDS,
-    INTEL_DAILY_REPORT_ENABLED,
+    INTEL_DAILY_REPORT_ENABLED, INTEL_MAX_PAUSE_DAYS,
 )
 from paper_trades import load_trades, compute_metrics, now_str, parse_time, days_since
 from notify import (
@@ -126,16 +125,19 @@ def count_consecutive_losses(trades: list[dict]) -> int:
     return streak
 
 
-def compute_7day_drawdown(mom_trades: list[dict], fade_trades: list[dict]) -> float:
-    """Sum of realized losses in the last 7 days across both bots."""
+def compute_7day_net_pnl(mom_trades: list[dict], fade_trades: list[dict]) -> float:
+    """Net realized P&L in the last 7 days across both bots.
+
+    Previous version only summed losses, which dramatically overstated risk
+    (e.g., -60pp in losses + 55pp in wins = -60pp old way, -5pp correct way).
+    Now includes both wins and losses for an accurate picture.
+    """
     total = 0.0
     for trades in [mom_trades, fade_trades]:
         for t in trades:
             if t["status"] != "closed":
                 continue
             pnl = t["pnl_pp"] or 0
-            if pnl >= 0:
-                continue
             try:
                 if days_since(t["exit_time"]) <= 7:
                     total += pnl
@@ -153,7 +155,7 @@ def check_risk_limits(mom_trades: list[dict], fade_trades: list[dict],
 
     mom_losses = count_consecutive_losses(mom_trades)
     fade_losses = count_consecutive_losses(fade_trades)
-    drawdown = compute_7day_drawdown(mom_trades, fade_trades)
+    drawdown = compute_7day_net_pnl(mom_trades, fade_trades)
 
     warnings = []
     mom_paused = state.get("paused", {}).get("momentum", False)
@@ -166,19 +168,49 @@ def check_risk_limits(mom_trades: list[dict], fade_trades: list[dict],
     if len(fade_open) >= INTEL_MAX_OPEN_PER_BOT:
         warnings.append(f"Fade at per-bot limit: {len(fade_open)}/{INTEL_MAX_OPEN_PER_BOT}")
     if drawdown <= INTEL_DRAWDOWN_LIMIT_PP:
-        warnings.append(f"7-day drawdown {drawdown}pp exceeds limit {INTEL_DRAWDOWN_LIMIT_PP}pp")
+        warnings.append(f"7-day net P&L {drawdown:+.1f}pp exceeds limit {INTEL_DRAWDOWN_LIMIT_PP}pp")
+
+    # Pause logic with deadlock recovery:
+    # A bot is paused after N consecutive losses. But if it stays paused too long
+    # (all open trades also lost), it would be stuck forever. Auto-unpause after
+    # INTEL_MAX_PAUSE_DAYS so the bot gets a fresh chance.
+    pause_start = state.get("pause_start", {})
 
     if mom_losses >= INTEL_PAUSE_AFTER_LOSSES:
+        if not mom_paused:
+            pause_start["momentum"] = now_str()
         mom_paused = True
         warnings.append(f"Momentum PAUSED: {mom_losses} consecutive losses")
     elif mom_paused and mom_losses < INTEL_PAUSE_AFTER_LOSSES:
         mom_paused = False
+        pause_start.pop("momentum", None)
 
     if fade_losses >= INTEL_PAUSE_AFTER_LOSSES:
+        if not fade_paused:
+            pause_start["fade"] = now_str()
         fade_paused = True
         warnings.append(f"Fade PAUSED: {fade_losses} consecutive losses")
     elif fade_paused and fade_losses < INTEL_PAUSE_AFTER_LOSSES:
         fade_paused = False
+        pause_start.pop("fade", None)
+
+    # Deadlock recovery: auto-unpause after max pause days
+    for bot_name in ["momentum", "fade"]:
+        start = pause_start.get(bot_name)
+        if start:
+            try:
+                pause_days = days_since(start)
+                if pause_days >= INTEL_MAX_PAUSE_DAYS:
+                    if bot_name == "momentum":
+                        mom_paused = False
+                    else:
+                        fade_paused = False
+                    pause_start.pop(bot_name, None)
+                    warnings.append(f"{bot_name.title()} AUTO-UNPAUSED after {pause_days:.1f} days")
+            except (ValueError, KeyError):
+                pass
+
+    state["pause_start"] = pause_start
 
     return {
         "total_open": total_open,
@@ -415,26 +447,36 @@ def _make_adjustment(param: str, current: float, direction: str, reason: str) ->
     return {"param": param, "old": current, "new": new_val, "reason": reason}
 
 
+OVERRIDES_FILE = Path("config_overrides.json")
+
+
 def apply_adjustments(adjustments: list[dict]) -> None:
-    """Write adjusted values to config.py by modifying specific lines."""
+    """Write adjusted values to config_overrides.json (loaded by config.py at import).
+
+    Previous version modified config.py source code via regex, which was fragile
+    and risked corrupting the config file. JSON overrides are structured, safe,
+    and cleanly separated from the base config.
+    """
     if not adjustments:
         return
 
-    text = CONFIG_FILE.read_text()
-    for adj in adjustments:
-        param = adj["param"]
-        new_val = adj["new"]
-        # Match lines like: PARAM_NAME       = 2.0     # comment
-        pattern = rf'^({param}\s*=\s*)[\d.]+(\s*#.*)?$'
-        replacement = rf'\g<1>{new_val}\2'
-        text, count = re.subn(pattern, replacement, text, flags=re.MULTILINE)
-        if count:
-            log.info("ADJUSTED: %s = %s (was %s) — %s",
-                     param, new_val, adj["old"], adj["reason"])
-        else:
-            log.warning("Could not find %s in config.py to adjust", param)
+    # Load existing overrides
+    overrides = {}
+    if OVERRIDES_FILE.exists():
+        try:
+            overrides = json.loads(OVERRIDES_FILE.read_text())
+        except (json.JSONDecodeError, ValueError):
+            pass
 
-    CONFIG_FILE.write_text(text)
+    for adj in adjustments:
+        overrides[adj["param"]] = adj["new"]
+        log.info("ADJUSTED: %s = %s (was %s) — %s",
+                 adj["param"], adj["new"], adj["old"], adj["reason"])
+
+    # Atomic write
+    tmp = OVERRIDES_FILE.with_suffix(".tmp")
+    tmp.write_text(json.dumps(overrides, indent=2))
+    tmp.replace(OVERRIDES_FILE)
 
 
 # ── Daily Report ──────────────────────────────────────────────────────────────
@@ -504,7 +546,7 @@ def build_daily_report(mom_trades: list[dict], fade_trades: list[dict],
 
     # Risk
     lines.append(f"Positions: {risk['total_open']}/{INTEL_MAX_OPEN_TOTAL} limit")
-    lines.append(f"Drawdown (7d): {risk['drawdown_7d']}pp / {INTEL_DRAWDOWN_LIMIT_PP}pp limit")
+    lines.append(f"Net P&L (7d): {risk['drawdown_7d']:+.1f}pp / {INTEL_DRAWDOWN_LIMIT_PP}pp limit")
     lines.append(f"Loss streaks: momentum {risk['mom_consecutive_losses']}, "
                   f"fade {risk['fade_consecutive_losses']}")
 
@@ -567,7 +609,7 @@ def main():
         "fade": risk["fade_consecutive_losses"],
     }
     print(f"\nRisk: {risk['total_open']}/{INTEL_MAX_OPEN_TOTAL} positions  "
-          f"| Drawdown: {risk['drawdown_7d']}pp")
+          f"| Net P&L (7d): {risk['drawdown_7d']:+.1f}pp")
     if risk["warnings"]:
         for w in risk["warnings"]:
             print(f"  WARNING: {w}")

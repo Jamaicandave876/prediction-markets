@@ -45,11 +45,14 @@ SPIKE_MIN_BETS     = 12       # need at least this many bets (recent + baseline)
 SPIKE_MIN_SIZE     = 8        # pp — minimum spike size to consider
 SPIKE_MIN_RATIO    = 3.0      # spike must be this many times larger than baseline moves
 MAX_CONSISTENCY    = 50        # % — reject if consistency is TOO high (that's a trend, not a spike)
+SPIKE_MAX_WINDOW_HR = 6       # spike window bets must span less than this many hours
+                              # (if 5 bets took 6+ hours, it's not a real spike)
 
 # ── Fade Exit Conditions ──────────────────────────────────────────────────────
 FADE_NORMALIZE_PCT = 50       # % of spike to recover for a win (50 = expect half the spike to retrace)
 FADE_STOP_PP       = 8        # pp — stop loss if price keeps going in spike direction
 FADE_MAX_DAYS      = 7        # fade trades expire faster (spikes resolve quickly)
+FADE_MIN_REWARD_RATIO = 0.8   # minimum reward/risk ratio (filters out bad risk-reward trades)
 
 # ══════════════════════════════════════════════════════════════════════════════
 # INTELLIGENCE LAYER
@@ -60,6 +63,7 @@ INTEL_MAX_OPEN_TOTAL       = 8    # max open trades across both bots
 INTEL_MAX_OPEN_PER_BOT     = 5    # max open trades per individual bot
 INTEL_DRAWDOWN_LIMIT_PP    = -50  # pause if 7-day realized losses exceed this
 INTEL_PAUSE_AFTER_LOSSES   = 4    # pause a bot after this many consecutive losses
+INTEL_MAX_PAUSE_DAYS       = 3    # auto-unpause after this many days (prevents deadlock)
 
 # ── Auto-Adjustment ──────────────────────────────────────────────────────────
 INTEL_LOOKBACK_TRADES      = 10   # how many recent closed trades to evaluate
@@ -74,3 +78,17 @@ INTEL_ADJUST_BOUNDS        = {
 
 # ── Reporting ─────────────────────────────────────────────────────────────────
 INTEL_DAILY_REPORT_ENABLED = True  # set False to disable daily digest
+
+# ── Runtime Overrides (auto-managed by intelligence layer) ───────────────────
+# The intelligence layer writes parameter adjustments to config_overrides.json
+# instead of modifying this file directly. Overrides are loaded below.
+import json as _json
+from pathlib import Path as _Path
+_overrides_path = _Path(__file__).parent / "config_overrides.json"
+if _overrides_path.exists():
+    try:
+        for _k, _v in _json.loads(_overrides_path.read_text()).items():
+            if _k in globals():
+                globals()[_k] = _v
+    except Exception:
+        pass

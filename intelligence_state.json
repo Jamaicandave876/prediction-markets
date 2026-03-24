@@ -8,5 +8,6 @@
   "consecutive_losses": {
     "momentum": 1,
     "fade": 0
-  }
+  },
+  "pause_start": {}
 }

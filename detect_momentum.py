@@ -87,6 +87,34 @@ def fetch_prob_series(market_id: str, limit: int = BETS_WINDOW) -> list[float]:
     return [b["probAfter"] for b in bets if "probAfter" in b]
 
 
+def fetch_bet_data(market_id: str, limit: int = BETS_WINDOW) -> list[dict]:
+    """Return time-ordered bet data with probabilities AND timestamps.
+
+    Each entry: {"prob": float (0-1), "time_ms": int (epoch ms)}
+    Used by spike detection to validate that spikes are temporally sharp.
+    """
+    try:
+        resp = requests.get(
+            f"{API_BASE}/bets",
+            params={"contractId": market_id, "limit": limit},
+            timeout=15,
+        )
+        resp.raise_for_status()
+    except requests.RequestException as e:
+        log.warning("Failed to fetch bets for %s: %s", market_id, e)
+        return []
+
+    bets = resp.json()
+    if not bets:
+        return []
+
+    bets.sort(key=lambda b: b.get("createdTime", 0))
+    return [
+        {"prob": b["probAfter"], "time_ms": b.get("createdTime", 0)}
+        for b in bets if "probAfter" in b
+    ]
+
+
 def compute_momentum(probs: list[float]) -> dict:
     """
     Compute momentum with time-decay weighting.
