@@ -65,9 +65,11 @@ def days_since(time_str: str) -> float:
 
 # ── Safe File I/O ─────────────────────────────────────────────────────────────
 
-def load_trades() -> list[dict]:
+def load_trades(trades_file=None, backup_file=None) -> list[dict]:
     """Load trades from file, falling back to backup if corrupt."""
-    for path in [TRADES_FILE, BACKUP_FILE]:
+    trades_file = trades_file or TRADES_FILE
+    backup_file = backup_file or BACKUP_FILE
+    for path in [trades_file, backup_file]:
         if not path.exists():
             continue
         try:
@@ -80,15 +82,17 @@ def load_trades() -> list[dict]:
     return []
 
 
-def save_trades(trades: list[dict]) -> None:
+def save_trades(trades: list[dict], trades_file=None, backup_file=None) -> None:
     """Atomic save: backup current file, write to temp, rename."""
-    if TRADES_FILE.exists():
-        shutil.copy2(str(TRADES_FILE), str(BACKUP_FILE))
+    trades_file = trades_file or TRADES_FILE
+    backup_file = backup_file or BACKUP_FILE
+    if trades_file.exists():
+        shutil.copy2(str(trades_file), str(backup_file))
 
-    tmp = TRADES_FILE.with_suffix(".tmp")
+    tmp = trades_file.with_suffix(".tmp")
     tmp.write_text(json.dumps(trades, indent=2))
-    tmp.replace(TRADES_FILE)
-    log.info("Saved %d trades", len(trades))
+    tmp.replace(trades_file)
+    log.info("Saved %d trades to %s", len(trades), trades_file.name)
 
 
 # ── Market State Fetching ─────────────────────────────────────────────────────

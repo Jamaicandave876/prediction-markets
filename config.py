@@ -33,3 +33,20 @@ EXIT_TARGET_YES    = 78       # close BUY YES when prob rises above this %
 EXIT_TARGET_NO     = 22       # close BUY NO when prob falls below this %
 REVERSAL_THRESHOLD = 6        # pp — close if market moves this far against entry
 MAX_TRADE_DAYS     = 14       # close trades older than this many days
+
+# ══════════════════════════════════════════════════════════════════════════════
+# OVERREACTION FADE BOT
+# ══════════════════════════════════════════════════════════════════════════════
+
+# ── Spike Detection ───────────────────────────────────────────────────────────
+SPIKE_BETS_TOTAL   = 20       # total bets to fetch per market
+SPIKE_RECENT       = 5        # last N bets = the "spike window"
+SPIKE_MIN_BETS     = 12       # need at least this many bets (recent + baseline)
+SPIKE_MIN_SIZE     = 8        # pp — minimum spike size to consider
+SPIKE_MIN_RATIO    = 3.0      # spike must be this many times larger than baseline moves
+MAX_CONSISTENCY    = 50        # % — reject if consistency is TOO high (that's a trend, not a spike)
+
+# ── Fade Exit Conditions ──────────────────────────────────────────────────────
+FADE_NORMALIZE_PCT = 50       # % of spike to recover for a win (50 = expect half the spike to retrace)
+FADE_STOP_PP       = 8        # pp — stop loss if price keeps going in spike direction
+FADE_MAX_DAYS      = 7        # fade trades expire faster (spikes resolve quickly)
