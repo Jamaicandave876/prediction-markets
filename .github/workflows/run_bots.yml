@@ -1,0 +1,39 @@
+name: Run Trading Bots
+
+on:
+  schedule:
+    - cron: '0 */4 * * *'   # Every 4 hours
+  workflow_dispatch:          # Manual trigger button
+
+permissions:
+  contents: write
+
+jobs:
+  run-bots:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run Momentum Bot
+        run: python paper_trades.py
+
+      - name: Run Fade Bot
+        run: python fade_trades.py
+
+      - name: Run Intelligence Layer
+        run: python intelligence.py
+
+      - name: Commit and push data files
+        run: |
+          git config user.email "bot@prediction-markets"
+          git config user.name "Paper Trader Bot"
+          git add trades.json trades.backup.json fade_trades.json fade_trades.backup.json intelligence_state.json config_overrides.json
+          git diff --cached --quiet && echo 'Nothing to commit' || git commit -m 'chore: update paper trades + intel state [automated]'
+          git push
