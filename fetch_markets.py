@@ -1,3 +1,4 @@
+from __future__ import annotations
 """
 Step 1: Fetch live prediction market data from Manifold Markets.
 Goal: Prove we can see real binary markets and their current probabilities.

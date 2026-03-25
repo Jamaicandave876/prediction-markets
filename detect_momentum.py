@@ -1,3 +1,4 @@
+from __future__ import annotations
 """
 Detect probability momentum in prediction markets.
 

@@ -1,3 +1,4 @@
+from __future__ import annotations
 """
 Intelligence Layer — Meta-observer sitting above both trading bots.
 

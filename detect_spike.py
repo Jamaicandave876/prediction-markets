@@ -1,3 +1,4 @@
+from __future__ import annotations
 """
 Overreaction Fade Bot — Step 1: Spike Detection.
 

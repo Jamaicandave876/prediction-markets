@@ -1,3 +1,4 @@
+from __future__ import annotations
 """
 Consensus Momentum Trader — Paper Trade Engine (v2)
 

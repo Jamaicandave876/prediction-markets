@@ -1,3 +1,4 @@
+from __future__ import annotations
 """
 Telegram notifications for both trading bots.
 
