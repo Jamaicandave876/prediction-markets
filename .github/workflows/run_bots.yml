@@ -34,6 +34,6 @@ jobs:
         run: |
           git config user.email "bot@prediction-markets"
           git config user.name "Paper Trader Bot"
-          git add trades.json trades.backup.json fade_trades.json fade_trades.backup.json intelligence_state.json config_overrides.json
+          git add trades.json trades.backup.json fade_trades.json fade_trades.backup.json intelligence_state.json config_overrides.json portfolio.json
           git diff --cached --quiet && echo 'Nothing to commit' || git commit -m 'chore: update paper trades + intel state [automated]'
           git push

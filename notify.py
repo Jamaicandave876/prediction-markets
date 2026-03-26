@@ -40,12 +40,14 @@ def send(message: str) -> bool:
 def signal_alert(trade: dict) -> None:
     """Momentum bot: new entry."""
     arrow = "UP" if trade["direction"] == "BUY YES" else "DOWN"
+    stake_line = f"Stake:       {trade['stake']:.0f} Mana\n" if trade.get("stake") else ""
     msg = (
         f"<b>[MOMENTUM] New Signal [{arrow}]</b>\n"
         f"{trade['question']}\n\n"
         f"Direction:   {trade['direction']}\n"
         f"Prob now:    {trade['entry_prob']}%\n"
         f"Drift score: {trade['drift_score']:+.2f}\n"
+        f"{stake_line}"
         f"\n{trade.get('url', '')}"
     )
     send(msg)
@@ -67,6 +69,10 @@ def exit_alert(trade: dict) -> None:
         "expired":        "Market expired/deleted",
     }
 
+    stake = trade.get("stake")
+    pnl_mana = pnl / 100 * stake if stake else None
+    mana_line = f"P&L (Mana): {'+' if pnl_mana >= 0 else ''}{pnl_mana:.0f} Mana\n" if pnl_mana is not None else ""
+
     msg = (
         f"<b>[MOMENTUM] Trade Closed [{result}]</b>\n"
         f"{trade['question']}\n\n"
@@ -74,12 +80,13 @@ def exit_alert(trade: dict) -> None:
         f"Entry:      {trade['entry_prob']}%\n"
         f"Exit:       {trade.get('exit_prob', '?')}%\n"
         f"P&L:        {sign}{pnl:.1f}pp\n"
+        f"{mana_line}"
         f"Reason:     {reason_labels.get(trade.get('exit_reason', ''), trade.get('exit_reason', 'unknown'))}"
     )
     send(msg)
 
 
-def summary_alert(metrics: dict, n_new: int, n_closed: int, bot: str = "momentum") -> None:
+def summary_alert(metrics: dict, n_new: int, n_closed: int, bot: str = "momentum", portfolio: dict | None = None) -> None:
     """Run summary — works for either bot."""
     label = BOT_LABELS.get(bot, bot.upper())
 
@@ -107,6 +114,18 @@ def summary_alert(metrics: dict, n_new: int, n_closed: int, bot: str = "momentum
             f"Best trade:   {metrics['best_trade']:+.1f}pp\n"
             f"Worst trade:  {metrics['worst_trade']:+.1f}pp"
         )
+
+    if portfolio:
+        balance = portfolio["starting_balance"] + portfolio["realized_pnl"]
+        starting = portfolio["starting_balance"]
+        ret = ((balance - starting) / starting) * 100 if starting else 0
+        msg += (
+            f"\n\n<b>Portfolio</b>\n"
+            f"Balance:  {balance:,.0f} / {starting:,.0f} Mana\n"
+            f"Realized: {portfolio['realized_pnl']:+,.0f} Mana\n"
+            f"Return:   {ret:+.1f}%"
+        )
+
     send(msg)
 
 
@@ -115,6 +134,7 @@ def summary_alert(metrics: dict, n_new: int, n_closed: int, bot: str = "momentum
 def fade_signal_alert(trade: dict) -> None:
     """Fade bot: new entry (fading a spike)."""
     spike_dir = "SPIKED UP" if trade["spike_dir"] == 1 else "SPIKED DOWN"
+    stake_line = f"Stake:       {trade['stake']:.0f} Mana\n" if trade.get("stake") else ""
     msg = (
         f"<b>[FADE] Overreaction Detected</b>\n"
         f"{trade['question']}\n\n"
@@ -123,6 +143,7 @@ def fade_signal_alert(trade: dict) -> None:
         f"Pre-spike:   {trade['pre_spike_prob']}%\n"
         f"Spiked to:   {trade['entry_prob']}%\n"
         f"Fading with: {trade['direction']}\n"
+        f"{stake_line}"
         f"\n{trade.get('url', '')}"
     )
     send(msg)
@@ -143,6 +164,10 @@ def fade_exit_alert(trade: dict) -> None:
         "expired":        "Market expired/deleted",
     }
 
+    stake = trade.get("stake")
+    pnl_mana = pnl / 100 * stake if stake else None
+    mana_line = f"P&L (Mana): {'+' if pnl_mana >= 0 else ''}{pnl_mana:.0f} Mana\n" if pnl_mana is not None else ""
+
     msg = (
         f"<b>[FADE] Trade Closed [{result}]</b>\n"
         f"{trade['question']}\n\n"
@@ -150,6 +175,7 @@ def fade_exit_alert(trade: dict) -> None:
         f"Entry:      {trade['entry_prob']}%\n"
         f"Exit:       {trade.get('exit_prob', '?')}%\n"
         f"P&L:        {sign}{pnl:.1f}pp\n"
+        f"{mana_line}"
         f"Reason:     {reason_labels.get(trade.get('exit_reason', ''), trade.get('exit_reason', 'unknown'))}"
     )
     send(msg)

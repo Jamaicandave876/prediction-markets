@@ -28,6 +28,10 @@ ENTRY_PROB_HIGH    = 72       # % — above this may already be crowded
 MIN_DRIFT_SCORE    = 2.0      # |drift_score| must exceed this
 MIN_CONSISTENCY    = 65       # % of bets in trend direction (raised from 50 to filter noise)
 
+# ── Portfolio Simulation ──────────────────────────────────────────────────────
+STARTING_BALANCE   = 1000    # hypothetical starting balance in Mana
+                             # position sizing is dynamic — see portfolio.py
+
 # ── Exit Conditions ───────────────────────────────────────────────────────────
 EXIT_TARGET_YES    = 78       # close BUY YES when prob rises above this %
 EXIT_TARGET_NO     = 22       # close BUY NO when prob falls below this %

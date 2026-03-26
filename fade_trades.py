@@ -42,6 +42,7 @@ from paper_trades import (
     now_str, days_since,
 )
 from notify import fade_signal_alert, fade_exit_alert, summary_alert
+from portfolio import sync_portfolio, get_balance, format_balance_summary, compute_stake, load_portfolio
 
 logging.basicConfig(
     level=logging.INFO,
@@ -146,11 +147,17 @@ def log_new_signals(signals: list[dict], trades: list[dict]) -> tuple[list[dict]
 
     from intelligence import check_pre_trade_conflict
 
+    # Get current balance for position sizing
+    portfolio_state = load_portfolio()
+    balance = get_balance(portfolio_state)
+
     for s in signals:
         if s["market_id"] in all_ids:
             continue
         if check_pre_trade_conflict(s["market_id"], s["direction"], "fade"):
             continue
+
+        stake = compute_stake(balance, s, trades, bot="fade")
 
         new_trade = {
             "market_id":      s["market_id"],
@@ -163,6 +170,7 @@ def log_new_signals(signals: list[dict], trades: list[dict]) -> tuple[list[dict]
             "spike_dir":      s["spike_dir"],
             "entry_time":     now_str(),
             "url":            s["url"],
+            "stake":          stake,
             "status":         "open",
             "exit_prob":      None,
             "exit_time":      None,
@@ -171,9 +179,9 @@ def log_new_signals(signals: list[dict], trades: list[dict]) -> tuple[list[dict]
         }
         trades.append(new_trade)
         fade_signal_alert(new_trade)
-        log.info("NEW FADE: %s %s @ %.1f%% (spike %+.1fpp, %.1fx)",
+        log.info("NEW FADE: %s %s @ %.1f%% (spike %+.1fpp, %.1fx, stake: %.0f Mana)",
                  s["direction"], s["question"][:40], s["entry_prob"],
-                 s["spike_size"], s["spike_ratio"])
+                 s["spike_size"], s["spike_ratio"], stake)
         added += 1
 
     return trades, added
@@ -367,8 +375,20 @@ def main():
         print(f"  Avg loss:    {metrics['avg_loss']:+.1f}pp")
         print()
 
-    # 6. Telegram summary
-    summary_alert(metrics, n_added, n_closed, bot="fade")
+    # 6. Portfolio tracking
+    from paper_trades import load_trades as _load
+    momentum_path = Path("trades.json")
+    momentum_backup = Path("trades.backup.json")
+    momentum_trades = _load(momentum_path, momentum_backup) if momentum_path.exists() else []
+    portfolio_state = sync_portfolio(momentum_trades, trades)
+    balance = get_balance(portfolio_state)
+
+    print("--- PORTFOLIO ---")
+    print(f"  {format_balance_summary(portfolio_state)}")
+    print()
+
+    # 7. Telegram summary
+    summary_alert(metrics, n_added, n_closed, bot="fade", portfolio=portfolio_state)
 
 
 if __name__ == "__main__":
