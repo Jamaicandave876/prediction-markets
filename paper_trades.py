@@ -33,7 +33,8 @@ from pathlib import Path
 from config import (
     API_BASE, MARKETS_TO_SCAN, BETS_WINDOW, MIN_BETS,
     ENTRY_PROB_LOW, ENTRY_PROB_HIGH, MIN_DRIFT_SCORE, MIN_CONSISTENCY,
-    EXIT_TARGET_YES, EXIT_TARGET_NO, REVERSAL_THRESHOLD, MAX_TRADE_DAYS,
+    EXIT_TARGET_YES, EXIT_TARGET_NO, REVERSAL_THRESHOLD, TRAILING_STOP_PP,
+    MAX_TRADE_DAYS,
 )
 from detect_momentum import fetch_binary_markets, fetch_prob_series, compute_momentum
 from notify import signal_alert, exit_alert, summary_alert
@@ -180,7 +181,10 @@ def log_new_signals(signals: list[dict], trades: list[dict]) -> tuple[list[dict]
     Append NEW signals to trade log.
     Prevents re-entry: checks ALL market IDs (open AND closed), not just open.
     """
-    all_ids = {t["market_id"] for t in trades}
+    # Block re-entry on open trades and recently closed trades (48h cooldown)
+    all_ids = {t["market_id"] for t in trades
+               if t["status"] == "open"
+               or (t["status"] == "closed" and days_since(t.get("exit_time", t["entry_time"])) < 2)}
     added = 0
 
     from intelligence import check_pre_trade_conflict
@@ -312,22 +316,37 @@ def check_exits(trades: list[dict]) -> tuple[list[dict], int]:
             closed += 1
             continue
 
-        # Exit 3: Price-based exits (target hit / reversal)
+        # Exit 3: Price-based exits (target hit / reversal / trailing stop)
         if t["direction"] == "BUY YES":
             pnl = prob - entry
+            # Track peak profit for trailing stop
+            peak = t.get("peak_pnl", 0)
+            if pnl > peak:
+                t["peak_pnl"] = pnl
+                peak = pnl
             if prob >= EXIT_TARGET_YES:
                 close_trade(t, prob, "target_hit", pnl)
                 closed += 1
             elif pnl <= -REVERSAL_THRESHOLD:
                 close_trade(t, prob, "reversal", pnl)
                 closed += 1
+            elif peak >= TRAILING_STOP_PP and (peak - pnl) >= TRAILING_STOP_PP:
+                close_trade(t, prob, "trailing_stop", pnl)
+                closed += 1
         else:  # BUY NO
             pnl = entry - prob
+            peak = t.get("peak_pnl", 0)
+            if pnl > peak:
+                t["peak_pnl"] = pnl
+                peak = pnl
             if prob <= EXIT_TARGET_NO:
                 close_trade(t, prob, "target_hit", pnl)
                 closed += 1
             elif pnl <= -REVERSAL_THRESHOLD:
                 close_trade(t, prob, "reversal", pnl)
+                closed += 1
+            elif peak >= TRAILING_STOP_PP and (peak - pnl) >= TRAILING_STOP_PP:
+                close_trade(t, prob, "trailing_stop", pnl)
                 closed += 1
 
     if api_errors:

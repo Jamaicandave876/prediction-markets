@@ -20,7 +20,7 @@ import logging
 import requests
 from config import (
     API_BASE, MIN_POOL, BETS_WINDOW, MIN_BETS,
-    DECAY_STRENGTH, MIN_MARKET_AGE_HR,
+    DECAY_STRENGTH, MIN_MARKET_AGE_HR, MIN_CLOSE_DAYS,
 )
 
 log = logging.getLogger(__name__)
@@ -58,6 +58,11 @@ def fetch_binary_markets(n: int) -> list[dict]:
         # Market age filter — skip brand-new markets (just noise)
         created = m.get("createdTime", 0)
         if (now_ms - created) < min_age_ms:
+            continue
+
+        # Close-date filter — skip markets closing too soon (resolution risk)
+        close_time = m.get("closeTime")
+        if close_time and (close_time - now_ms) < MIN_CLOSE_DAYS * 86_400_000:
             continue
 
         results.append(m)
@@ -146,10 +151,15 @@ def compute_momentum(probs: list[float]) -> dict:
     weighted_in_dir = sum(w for s, w in zip(steps, weights) if s * direction > 0)
     consistency = weighted_in_dir / total_weight
 
+    # Quadratic consistency weighting: consistency below 50% is heavily penalized,
+    # above 50% is boosted. This prevents large noisy moves from scoring higher
+    # than small clean trends.  (e.g., 90% consistency → 3.24x, 40% → 0.64x)
+    consistency_multiplier = (consistency / 0.50) ** 2
+
     return {
         "drift":       round(drift * 100, 2),
         "consistency": round(consistency * 100, 1),
-        "drift_score": round(drift * consistency * 100, 2),
+        "drift_score": round(drift * consistency_multiplier * 100, 2),
     }
 
 

@@ -142,7 +142,10 @@ def find_fade_signals() -> list[dict]:
 
 def log_new_signals(signals: list[dict], trades: list[dict]) -> tuple[list[dict], int]:
     """Append new fade signals. Prevents re-entry on same market."""
-    all_ids = {t["market_id"] for t in trades}
+    # Block re-entry on open trades and recently closed trades (48h cooldown)
+    all_ids = {t["market_id"] for t in trades
+               if t["status"] == "open"
+               or (t["status"] == "closed" and days_since(t.get("exit_time", t["entry_time"])) < 2)}
     added = 0
 
     from intelligence import check_pre_trade_conflict

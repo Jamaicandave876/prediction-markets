@@ -62,7 +62,9 @@ def detect_spike(probs: list[float], timestamps_ms: list[int] | None = None) -> 
     avg_step = sum(baseline_steps) / len(baseline_steps) * 100  # in pp
 
     # Spike ratio: how many times larger than normal is this move?
-    spike_ratio = spike_size / avg_step if avg_step > 0.01 else 0
+    # Floor avg_step at 0.5pp — if a market normally moves less than that,
+    # it's too stable for meaningful spike detection (avoids 100x+ false ratios)
+    spike_ratio = spike_size / avg_step if avg_step > 0.5 else 0
 
     # Time validation: reject "spikes" that are actually slow movement
     spike_hours = None

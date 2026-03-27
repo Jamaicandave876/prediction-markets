@@ -15,6 +15,8 @@ TELEGRAM_CHAT_ID = "8425023293"
 MARKETS_TO_SCAN    = 40       # how many markets to scan each run
 MIN_POOL           = 500      # minimum liquidity pool (YES + NO in Mana)
 MIN_MARKET_AGE_HR  = 1        # skip markets younger than this (hours)
+MIN_CLOSE_DAYS     = 3        # skip markets closing within this many days
+                              # (prevents resolution-risk blowups on short-term markets)
 
 # ── Momentum Detection ────────────────────────────────────────────────────────
 BETS_WINDOW        = 30       # how many recent bets to analyze per market
@@ -35,7 +37,8 @@ STARTING_BALANCE   = 1000    # hypothetical starting balance in Mana
 # ── Exit Conditions ───────────────────────────────────────────────────────────
 EXIT_TARGET_YES    = 78       # close BUY YES when prob rises above this %
 EXIT_TARGET_NO     = 22       # close BUY NO when prob falls below this %
-REVERSAL_THRESHOLD = 6        # pp — close if market moves this far against entry
+REVERSAL_THRESHOLD = 4        # pp — close if market moves this far against entry
+TRAILING_STOP_PP   = 4        # pp — close if trade drops this far from its peak profit
 MAX_TRADE_DAYS     = 14       # close trades older than this many days
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -74,7 +77,7 @@ INTEL_LOOKBACK_TRADES      = 10   # how many recent closed trades to evaluate
 INTEL_ADJUST_BOUNDS        = {
     "MIN_DRIFT_SCORE":     (1.0, 5.0,  0.3),   # (min, max, step)
     "MIN_CONSISTENCY":     (50,  85,   5),
-    "REVERSAL_THRESHOLD":  (3,   10,   1),
+    "REVERSAL_THRESHOLD":  (3,   8,    1),
     "SPIKE_MIN_RATIO":     (2.0, 8.0,  0.5),
     "SPIKE_MIN_SIZE":      (5,   15,   1),
     "FADE_STOP_PP":        (4,   12,   1),

@@ -62,6 +62,7 @@ def exit_alert(trade: dict) -> None:
     reason_labels = {
         "target_hit":     "Target reached",
         "reversal":       "Reversed against us",
+        "trailing_stop":  "Trailing stop (locked in profit)",
         "resolved_win":   "Market resolved in our favor",
         "resolved_loss":  "Market resolved against us",
         "stale":          "Max duration reached",
