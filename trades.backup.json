@@ -11,7 +11,8 @@
     "exit_prob": null,
     "exit_time": null,
     "exit_reason": null,
-    "pnl_pp": null
+    "pnl_pp": null,
+    "peak_pnl": 14.100000000000001
   },
   {
     "market_id": "5ttpAlhgLO",
