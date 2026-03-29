@@ -41,5 +41,20 @@
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null
+  },
+  {
+    "market_id": "nRyCA65gzt",
+    "question": "Will the physical remains of Donald Trump lie in state in the capitol rotunda?",
+    "direction": "BUY YES",
+    "entry_prob": 56.7,
+    "entry_time": "2026-03-28 21:00 UTC",
+    "drift_score": 29.56,
+    "url": "https://manifold.markets/JussiVilleHeiskanen/will-the-physical-remains-of-donald",
+    "stake": 58.1,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]
