@@ -32,5 +32,23 @@
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null
+  },
+  {
+    "market_id": "czAN0Zc8UA",
+    "question": "Will I miss a flight in 2026?",
+    "direction": "BUY NO",
+    "entry_prob": 86.0,
+    "pre_spike_prob": 71.4,
+    "spike_size": 13.9,
+    "spike_ratio": 4.6,
+    "spike_dir": 1,
+    "entry_time": "2026-03-30 15:56 UTC",
+    "url": "https://manifold.markets/Kire_/will-i-miss-a-flight-in-2026",
+    "stake": 33.9,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]
