@@ -36,11 +36,11 @@
     "entry_time": "2026-03-25 07:38 UTC",
     "drift_score": -3.65,
     "url": "https://manifold.markets/NicholasWeininger/will-scotus-vote-to-overturn-missis",
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 60.2,
+    "exit_time": "2026-03-31 21:57 UTC",
+    "exit_reason": "reversal",
+    "pnl_pp": -6.2
   },
   {
     "market_id": "nRyCA65gzt",
