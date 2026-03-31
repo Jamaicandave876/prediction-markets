@@ -21,19 +21,26 @@ jobs:
       - name: Install dependencies
         run: pip install requests
 
-      - name: Run Momentum Bot
-        run: python paper_trades.py
-
-      - name: Run Fade Bot
-        run: python fade_trades.py
-
-      - name: Run Intelligence Layer
-        run: python intelligence.py
+      - name: Run Full System (10 bots + 3 governors)
+        run: python run_all.py
 
       - name: Commit and push data files
         run: |
           git config user.email "bot@prediction-markets"
           git config user.name "Paper Trader Bot"
-          git add trades.json trades.backup.json fade_trades.json fade_trades.backup.json intelligence_state.json config_overrides.json portfolio.json
-          git diff --cached --quiet && echo 'Nothing to commit' || git commit -m 'chore: update paper trades + intel state [automated]'
+          git add \
+            trades.json trades.backup.json \
+            fade_trades.json fade_trades.backup.json \
+            mean_reversion_trades.json mean_reversion_trades.backup.json \
+            volume_trades.json volume_trades.backup.json \
+            whale_trades.json whale_trades.backup.json \
+            contrarian_trades.json contrarian_trades.backup.json \
+            close_gravity_trades.json close_gravity_trades.backup.json \
+            fresh_sniper_trades.json fresh_sniper_trades.backup.json \
+            stability_trades.json stability_trades.backup.json \
+            breakout_trades.json breakout_trades.backup.json \
+            intelligence_state.json config_overrides.json portfolio.json \
+            atlas_state.json meridian_state.json sentinel_state.json \
+            2>/dev/null || true
+          git diff --cached --quiet && echo 'Nothing to commit' || git commit -m 'chore: update trades + governance state [automated]'
           git push

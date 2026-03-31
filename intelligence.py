@@ -1,17 +1,15 @@
 from __future__ import annotations
 """
-Intelligence Layer — Meta-observer sitting above both trading bots.
+Intelligence Layer — Compatibility shim that delegates to Atlas (CEO).
 
-Runs after both bots each cycle and:
-  1. Detects cross-bot conflicts (opposing positions on same market)
-  2. Analyzes performance trends (streaks, win rate shifts, loss patterns)
-  3. Auto-adjusts parameters (tighten when losing, loosen when winning)
-  4. Enforces risk limits (position caps, drawdown breaker, loss pause)
-  5. Sends daily intelligence report to Telegram
+The original intelligence layer has been upgraded to a 3-tier governance system:
+  - Atlas (CEO): Strategic oversight, bot scoring, parameter adjustment
+  - Meridian (President): Tactical ops, deconfliction, capital allocation
+  - Sentinel (Risk Manager): Portfolio-level risk monitoring
 
-Also provides pre-trade hooks called by each bot:
-  - check_pre_trade_conflict() — blocks a trade if other bot disagrees
-  - should_allow_new_trade()   — blocks if risk limits are breached
+This file remains as a compatibility layer so existing bots (paper_trades.py,
+fade_trades.py) continue to work without modification. New bots use bot_engine.py
+which calls Atlas directly.
 """
 
 import json
@@ -94,8 +92,15 @@ def find_conflicts(mom_trades: list[dict], fade_trades: list[dict]) -> list[dict
 def check_pre_trade_conflict(market_id: str, direction: str, bot: str) -> bool:
     """
     Called by a bot BEFORE logging a trade. Returns True to BLOCK the trade.
-    Checks if the OTHER bot has an open trade on this market in the opposite direction.
+    Delegates to Atlas for full 10-bot conflict checking.
     """
+    try:
+        from atlas import check_pre_trade_conflict as atlas_check
+        return atlas_check(market_id, direction, bot)
+    except ImportError:
+        pass
+
+    # Fallback to legacy logic
     if bot == "momentum":
         other_trades = load_trades(FADE_FILE, FADE_BAK)
     else:
@@ -227,7 +232,15 @@ def check_risk_limits(mom_trades: list[dict], fade_trades: list[dict],
 
 
 def should_allow_new_trade(bot: str) -> bool:
-    """Quick check called by each bot before scanning for signals."""
+    """Quick check called by each bot before scanning for signals.
+    Delegates to Atlas for the full 10-bot system."""
+    try:
+        from atlas import should_allow_new_trade as atlas_check
+        return atlas_check(bot)
+    except ImportError:
+        pass
+
+    # Fallback to legacy logic if Atlas not available
     state = load_state()
 
     if state.get("paused", {}).get(bot, False):

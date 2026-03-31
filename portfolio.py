@@ -89,10 +89,14 @@ def compute_stake(balance: float, signal: dict, all_trades: list[dict], bot: str
         drift = abs(signal.get("drift_score", 0))
         # drift_score typically 2-15; map to 0.7-1.5
         confidence = min(1.5, max(0.7, 0.5 + drift / 15))
-    else:  # fade
+    elif bot == "fade":
         ratio = signal.get("spike_ratio", 0)
         # spike_ratio typically 3-20; map to 0.7-1.5
         confidence = min(1.5, max(0.7, 0.4 + ratio / 20))
+    else:
+        # Generic: use signal_strength field if available, else neutral
+        strength = signal.get("signal_strength", 1.0)
+        confidence = min(1.5, max(0.7, strength))
 
     stake = base * confidence
 
