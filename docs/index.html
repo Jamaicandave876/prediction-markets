@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#0d1117">
+<title>Trading HQ</title>
+<style>
+  :root {
+    --bg: #0d1117; --surface: #161b22; --border: #30363d;
+    --text: #e6edf3; --dim: #8b949e; --green: #3fb950;
+    --red: #f85149; --blue: #58a6ff; --orange: #d29922;
+    --yellow: #e3b341; --purple: #bc8cff; --pink: #f778ba;
+    --cyan: #39d2c0; --teal: #2ea58f;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text); font-family: -apple-system, 'Segoe UI', system-ui, sans-serif; padding: 12px; padding-bottom: 80px; -webkit-font-smoothing: antialiased; }
+
+  /* Header */
+  .hdr { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
+  .hdr h1 { font-size: 17px; font-weight: 700; }
+  .live { width: 7px; height: 7px; background: var(--green); border-radius: 50%; display: inline-block; margin-right: 5px; animation: pulse 2s infinite; }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.3} }
+  .ts { font-size: 10px; color: var(--dim); }
+  .pos { color: var(--green); } .neg { color: var(--red); } .neutral { color: var(--dim); }
+
+  /* Governance strip */
+  .gov { display: flex; gap: 6px; margin-bottom: 12px; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .gov::-webkit-scrollbar { display: none; }
+  .gov-chip { background: var(--surface); border: 1px solid var(--border); border-radius: 20px; padding: 4px 10px; font-size: 10px; white-space: nowrap; display: flex; align-items: center; gap: 4px; flex-shrink: 0; }
+  .dot { width: 6px; height: 6px; border-radius: 50%; }
+  .dot-green { background: var(--green); } .dot-yellow { background: var(--yellow); } .dot-red { background: var(--red); }
+
+  /* Summary cards */
+  .cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin-bottom: 14px; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 10px; }
+  .card .lbl { font-size: 9px; color: var(--dim); text-transform: uppercase; letter-spacing: .5px; margin-bottom: 2px; }
+  .card .val { font-size: 20px; font-weight: 800; }
+  .card .sub { font-size: 10px; color: var(--dim); margin-top: 1px; }
+
+  /* Tabs */
+  .tabs { display: flex; gap: 0; margin-bottom: 12px; border-bottom: 1px solid var(--border); overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .tabs::-webkit-scrollbar { display: none; }
+  .tab { padding: 8px 14px; font-size: 12px; font-weight: 500; color: var(--dim); cursor: pointer; border-bottom: 2px solid transparent; white-space: nowrap; flex-shrink: 0; }
+  .tab.active { color: var(--blue); border-bottom-color: var(--blue); }
+
+  /* Bot roster */
+  .roster { display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px; margin-bottom: 14px; }
+  .bot { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 8px 10px; }
+  .bot-hdr { display: flex; justify-content: space-between; align-items: center; margin-bottom: 3px; }
+  .bot-name { font-size: 11px; font-weight: 600; }
+  .grade { font-size: 9px; font-weight: 800; padding: 1px 5px; border-radius: 3px; }
+  .g-A{background:#0f2d1a;color:var(--green)} .g-B{background:#1a2d0f;color:#7ee787}
+  .g-C{background:#2d2a0f;color:var(--yellow)} .g-D{background:#2d1a0f;color:var(--orange)}
+  .g-F{background:#3d1419;color:var(--red)} .g-NEW{background:var(--border);color:var(--dim)}
+  .bot-row { font-size: 10px; color: var(--dim); }
+  .bot.paused { opacity: .45; }
+
+  /* Positions */
+  .pos-list { display: flex; flex-direction: column; gap: 8px; }
+  .pcard { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 10px 12px; }
+  .pcard-top { display: flex; justify-content: space-between; gap: 8px; }
+  .pcard-q { font-size: 12px; font-weight: 500; line-height: 1.35; flex: 1; }
+  .pcard-q a { color: var(--blue); text-decoration: none; }
+  .pcard-pnl { font-size: 17px; font-weight: 800; white-space: nowrap; text-align: right; }
+  .pcard-sub { font-size: 10px; color: var(--dim); font-weight: 400; }
+  .pcard-meta { display: flex; gap: 8px; margin-top: 6px; font-size: 10px; color: var(--dim); flex-wrap: wrap; }
+  .tag { font-size: 8px; padding: 1px 5px; border-radius: 3px; font-weight: 700; text-transform: uppercase; }
+  .t-momentum{background:#1f3a5f;color:var(--blue)} .t-fade{background:#3d2e00;color:var(--orange)}
+  .t-mean_reversion{background:#2d0f3d;color:var(--purple)} .t-volume_surge{background:#0f3d2d;color:var(--cyan)}
+  .t-whale{background:#1a1a3d;color:#8b8bff} .t-contrarian{background:#3d0f2d;color:var(--pink)}
+  .t-close_gravity{background:#2d2d0f;color:var(--yellow)} .t-fresh_sniper{background:#0f2d1a;color:var(--green)}
+  .t-stability{background:#1a2d2d;color:var(--teal)} .t-breakout{background:#3d1a0f;color:#ff9a5c}
+  .t-yes{background:#0f2d1a;color:var(--green)} .t-no{background:#3d1419;color:var(--red)}
+  .pbar { margin-top: 6px; height: 4px; background: var(--border); border-radius: 2px; position: relative; }
+  .pm { position: absolute; top: -3px; width: 10px; height: 10px; border-radius: 50%; transform: translateX(-50%); }
+  .pm-entry { background: var(--dim); border: 2px solid var(--surface); z-index: 1; }
+  .pm-now { background: var(--blue); border: 2px solid var(--surface); z-index: 2; }
+  .pm-tgt { position: absolute; top: -1px; width: 2px; height: 6px; background: var(--green); transform: translateX(-50%); }
+  .pm-stp { position: absolute; top: -1px; width: 2px; height: 6px; background: var(--red); transform: translateX(-50%); }
+
+  /* History */
+  .htrade { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 8px 10px; margin-bottom: 6px; }
+  .ht-top { display: flex; justify-content: space-between; gap: 8px; }
+  .ht-q { font-size: 11px; flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .ht-pnl { font-size: 13px; font-weight: 700; }
+  .ht-meta { font-size: 10px; color: var(--dim); margin-top: 3px; }
+
+  /* Bottom nav */
+  .bnav { position: fixed; bottom: 0; left: 0; right: 0; background: var(--surface); border-top: 1px solid var(--border); display: flex; z-index: 100; }
+  .bnav-btn { flex: 1; padding: 10px 0 8px; text-align: center; font-size: 10px; color: var(--dim); cursor: pointer; }
+  .bnav-btn.active { color: var(--blue); }
+  .bnav-icon { font-size: 18px; display: block; margin-bottom: 2px; }
+
+  .section { display: none; }
+  .section.show { display: block; }
+  .empty { text-align: center; color: var(--dim); padding: 30px; font-size: 12px; }
+  .loading { text-align: center; color: var(--dim); padding: 60px; font-size: 14px; }
+</style>
+</head>
+<body>
+
+<div class="hdr">
+  <h1><span class="live"></span> Trading HQ</h1>
+  <span class="ts" id="ts">Loading...</span>
+</div>
+<div class="gov" id="gov"></div>
+<div class="cards" id="cards"></div>
+
+<div id="sec-positions" class="section show"></div>
+<div id="sec-roster" class="section"></div>
+<div id="sec-history" class="section"></div>
+
+<div class="bnav">
+  <div class="bnav-btn active" onclick="showSec('positions')"><span class="bnav-icon">&#9678;</span>Positions</div>
+  <div class="bnav-btn" onclick="showSec('roster')"><span class="bnav-icon">&#9733;</span>Bots</div>
+  <div class="bnav-btn" onclick="showSec('history')"><span class="bnav-icon">&#9776;</span>History</div>
+  <div class="bnav-btn" onclick="refresh()"><span class="bnav-icon">&#8635;</span>Refresh</div>
+</div>
+
+<script>
+const REPO = 'Jamaicandave876/prediction-markets';
+const BRANCH = 'main';
+const RAW = `https://raw.githubusercontent.com/${REPO}/${BRANCH}`;
+const API = 'https://api.manifold.markets/v0';
+const NAMES = {
+  momentum:'Momentum', fade:'Fade', mean_reversion:'Mean Rev',
+  volume_surge:'Vol Surge', whale:'Whale', contrarian:'Contrarian',
+  close_gravity:'Gravity', fresh_sniper:'Sniper', stability:'Stable', breakout:'Breakout'
+};
+const FILES = [
+  ['momentum','trades.json'],['fade','fade_trades.json'],
+  ['mean_reversion','mean_reversion_trades.json'],['volume_surge','volume_trades.json'],
+  ['whale','whale_trades.json'],['contrarian','contrarian_trades.json'],
+  ['close_gravity','close_gravity_trades.json'],['fresh_sniper','fresh_sniper_trades.json'],
+  ['stability','stability_trades.json'],['breakout','breakout_trades.json'],
+];
+
+let D = null;
+let curSec = 'positions';
+
+function showSec(s) {
+  curSec = s;
+  document.querySelectorAll('.section').forEach(e => e.classList.remove('show'));
+  document.getElementById('sec-'+s).classList.add('show');
+  document.querySelectorAll('.bnav-btn').forEach((e,i) => {
+    e.classList.toggle('active', ['positions','roster','history'][i] === s);
+  });
+}
+
+async function fetchJSON(url) {
+  try {
+    const r = await fetch(url + '?t=' + Date.now());
+    if (!r.ok) return null;
+    return await r.json();
+  } catch(e) { return null; }
+}
+
+async function fetchProb(id) {
+  try {
+    const r = await fetch(`${API}/market/${id}`);
+    if (!r.ok) return null;
+    const d = await r.json();
+    return d.probability != null ? Math.round(d.probability * 1000) / 10 : null;
+  } catch(e) { return null; }
+}
+
+function pc(v) { return v > .05 ? 'pos' : v < -.05 ? 'neg' : 'neutral'; }
+function sg(v) { return v > 0 ? '+' : ''; }
+
+async function refresh() {
+  document.getElementById('ts').textContent = 'Loading...';
+
+  // Load all trade files + state files in parallel
+  const promises = FILES.map(([name, file]) => fetchJSON(`${RAW}/${file}`).then(d => [name, d || []]));
+  const stateP = [
+    fetchJSON(`${RAW}/portfolio.json`),
+    fetchJSON(`${RAW}/atlas_state.json`),
+    fetchJSON(`${RAW}/meridian_state.json`),
+    fetchJSON(`${RAW}/sentinel_state.json`),
+  ];
+
+  const [botResults, [portfolio, atlas, meridian, sentinel]] = await Promise.all([
+    Promise.all(promises),
+    Promise.all(stateP),
+  ]);
+
+  const pf = portfolio || {starting_balance:1000, realized_pnl:0};
+  const at = atlas || {};
+  const mr = meridian || {};
+  const sn = sentinel || {};
+
+  const starting = pf.starting_balance || 1000;
+  const realized = pf.realized_pnl || 0;
+  const balance = starting + realized;
+
+  // Collect all trades
+  let allOpen = [], allClosed = [], botStats = {};
+  for (const [name, trades] of botResults) {
+    const open = trades.filter(t => t.status === 'open');
+    const closed = trades.filter(t => t.status === 'closed');
+    open.forEach(t => t._bot = name);
+    closed.forEach(t => t._bot = name);
+    allOpen.push(...open);
+    allClosed.push(...closed);
+    const wins = closed.filter(t => (t.pnl_pp||0) > 0).length;
+    const scores = (at.bot_scores||{})[name] || {};
+    botStats[name] = {
+      open: open.length, closed: closed.length, wins,
+      win_rate: closed.length > 0 ? Math.round(wins/closed.length*1000)/10 : 0,
+      total_pnl: Math.round(closed.reduce((s,t) => s + (t.pnl_pp||0), 0) * 10) / 10,
+      grade: scores.grade || 'NEW', score: scores.score || 50,
+      paused: (at.paused||{})[name] || false,
+    };
+  }
+
+  // Fetch live prices for open positions (max 15 to avoid rate limits)
+  let unrealized = 0;
+  const pricePromises = allOpen.slice(0, 15).map(async t => {
+    const live = await fetchProb(t.market_id);
+    const entry = t.entry_prob;
+    const stake = t.stake || starting * .05;
+    let pnl_pp = null, pnl_mana = null;
+    if (live != null) {
+      pnl_pp = t.direction === 'BUY YES' ? live - entry : entry - live;
+      pnl_pp = Math.round(pnl_pp * 10) / 10;
+      pnl_mana = Math.round(pnl_pp / 100 * stake * 10) / 10;
+      unrealized += pnl_mana;
+    }
+    return {
+      market_id: t.market_id, question: t.question, direction: t.direction,
+      bot: t._bot, entry_prob: entry, current_prob: live,
+      pnl_pp, pnl_mana, stake: Math.round(stake*10)/10,
+      entry_time: t.entry_time || '', url: t.url || '',
+      target: t.direction === 'BUY YES' ? 78 : 22,
+      stop: t.direction === 'BUY YES' ? Math.round((entry-5)*10)/10 : Math.round((entry+5)*10)/10,
+    };
+  });
+  const positions = await Promise.all(pricePromises);
+
+  D = { portfolio: {starting, realized, balance, unrealized, total: Math.round((balance+unrealized)*10)/10,
+    ret: Math.round((balance-starting)/starting*1000)/10,
+    tret: Math.round((balance+unrealized-starting)/starting*1000)/10},
+    positions, allClosed, botStats,
+    gov: { regime: at.regime||'normal', risk: sn.risk_level||'green',
+      dir: (mr.direction_exposure||{}).balance||'balanced',
+      yes_pct: (mr.direction_exposure||{}).yes_pct||50 }
+  };
+  render();
+}
+
+function render() {
+  if (!D) return;
+  const p = D.portfolio;
+  const g = D.gov;
+
+  document.getElementById('ts').textContent = new Date().toLocaleTimeString();
+
+  // Gov bar
+  const rc = g.risk==='green'?'dot-green':g.risk==='yellow'?'dot-yellow':'dot-red';
+  document.getElementById('gov').innerHTML =
+    `<div class="gov-chip"><span class="dot ${rc}"></span>${g.risk.toUpperCase()}</div>` +
+    `<div class="gov-chip">${g.regime.toUpperCase()}</div>` +
+    `<div class="gov-chip">${g.dir}</div>` +
+    `<div class="gov-chip">${D.positions.length} open</div>` +
+    `<div class="gov-chip">${Object.values(D.botStats).filter(b=>!b.paused&&(b.open>0||b.closed>0)).length}/10 active</div>`;
+
+  // Cards
+  document.getElementById('cards').innerHTML = `
+    <div class="card"><div class="lbl">Balance</div><div class="val">${p.balance.toLocaleString()}</div><div class="sub">of ${p.starting.toLocaleString()} M</div></div>
+    <div class="card"><div class="lbl">Total Value</div><div class="val ${pc(p.total-p.starting)}">${p.total.toLocaleString()}</div><div class="sub">${sg(p.tret)}${p.tret}%</div></div>
+    <div class="card"><div class="lbl">Realized</div><div class="val ${pc(p.realized)}">${sg(p.realized)}${p.realized}</div><div class="sub">${sg(p.ret)}${p.ret}%</div></div>
+    <div class="card"><div class="lbl">Unrealized</div><div class="val ${pc(p.unrealized)}">${sg(p.unrealized)}${Math.round(p.unrealized*10)/10}</div><div class="sub">${D.positions.length} positions</div></div>
+  `;
+
+  // Positions
+  const posDiv = document.getElementById('sec-positions');
+  if (D.positions.length === 0) {
+    posDiv.innerHTML = '<div class="empty">No open positions yet.<br>Bots will find trades on next run.</div>';
+  } else {
+    posDiv.innerHTML = '<div class="pos-list">' + D.positions.map(renderPos).join('') + '</div>';
+  }
+
+  // Roster
+  const rosterDiv = document.getElementById('sec-roster');
+  const sorted = Object.entries(D.botStats).sort((a,b) => b[1].score - a[1].score);
+  rosterDiv.innerHTML = '<div class="roster">' + sorted.map(([name, s]) => `
+    <div class="bot ${s.paused?'paused':''}">
+      <div class="bot-hdr">
+        <span class="bot-name">${NAMES[name]||name}</span>
+        <span class="grade g-${s.grade}">${s.grade}${s.paused?' OFF':''}</span>
+      </div>
+      <div class="bot-row">${s.closed>0?`WR ${s.win_rate}% | ${sg(s.total_pnl)}${s.total_pnl}pp`:'No trades yet'}</div>
+      <div class="bot-row">Open: ${s.open} | Closed: ${s.closed}</div>
+    </div>
+  `).join('') + '</div>';
+
+  // History
+  const hDiv = document.getElementById('sec-history');
+  const hist = D.allClosed.sort((a,b) => (b.exit_time||'').localeCompare(a.exit_time||'')).slice(0, 30);
+  if (hist.length === 0) {
+    hDiv.innerHTML = '<div class="empty">No closed trades yet</div>';
+  } else {
+    hDiv.innerHTML = hist.map(h => {
+      const pnl = h.pnl_pp || 0;
+      const stake = h.stake || 50;
+      const mana = Math.round(pnl/100*stake*10)/10;
+      return `<div class="htrade">
+        <div class="ht-top">
+          <span class="ht-q">${h.question}</span>
+          <span class="ht-pnl ${pc(pnl)}">${sg(pnl)}${pnl}pp</span>
+        </div>
+        <div class="ht-meta">
+          <span class="tag t-${h._bot||'unknown'}">${NAMES[h._bot]||h._bot||'?'}</span>
+          <span class="tag t-${h.direction.includes('YES')?'yes':'no'}">${h.direction.replace('BUY ','')}</span>
+          ${sg(mana)}${mana}M | ${h.exit_reason||'?'} | ${(h.exit_time||'').slice(0,16)}
+        </div>
+      </div>`;
+    }).join('');
+  }
+}
+
+function renderPos(p) {
+  const pnl = p.pnl_pp != null ? `${sg(p.pnl_pp)}${p.pnl_pp}pp` : '...';
+  const mana = p.pnl_mana != null ? `${sg(p.pnl_mana)}${p.pnl_mana}M` : '';
+  const cls = p.pnl_pp != null ? pc(p.pnl_pp) : 'neutral';
+  const e = Math.max(0,Math.min(100,p.entry_prob));
+  const c = p.current_prob!=null ? Math.max(0,Math.min(100,p.current_prob)) : null;
+  const tg = Math.max(0,Math.min(100,p.target));
+  const st = Math.max(0,Math.min(100,p.stop));
+
+  return `<div class="pcard">
+    <div class="pcard-top">
+      <div class="pcard-q"><a href="${p.url}" target="_blank">${p.question}</a></div>
+      <div class="pcard-pnl ${cls}">${pnl}<div class="pcard-sub">${mana}</div></div>
+    </div>
+    <div class="pcard-meta">
+      <span class="tag t-${p.bot}">${NAMES[p.bot]||p.bot}</span>
+      <span class="tag t-${p.direction.includes('YES')?'yes':'no'}">${p.direction.replace('BUY ','')}</span>
+      <span>${p.entry_prob}% → ${p.current_prob!=null?p.current_prob+'%':'...'}</span>
+      <span>${p.stake}M</span>
+    </div>
+    <div class="pbar">
+      <div class="pm-tgt" style="left:${tg}%"></div>
+      <div class="pm-stp" style="left:${st}%"></div>
+      <div class="pm pm-entry" style="left:${e}%"></div>
+      ${c!=null?`<div class="pm pm-now" style="left:${c}%"></div>`:''}
+    </div>
+  </div>`;
+}
+
+// Initial load + auto refresh every 60s
+refresh();
+setInterval(refresh, 60000);
+</script>
+</body>
+</html>
