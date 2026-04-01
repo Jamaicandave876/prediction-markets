@@ -537,6 +537,15 @@ BOT_TRADE_FILES = [
     ("stability_trades.json", "stability_trades.backup.json"),
     ("breakout_trades.json", "breakout_trades.backup.json"),
     ("calibration_trades.json", "calibration_trades.backup.json"),
+    ("reversal_trades.json", "reversal_trades.backup.json"),
+    ("smart_money_trades.json", "smart_money_trades.backup.json"),
+    ("time_decay_trades.json", "time_decay_trades.backup.json"),
+    ("sentiment_trades.json", "sentiment_trades.backup.json"),
+    ("accumulation_trades.json", "accumulation_trades.backup.json"),
+    ("underdog_trades.json", "underdog_trades.backup.json"),
+    ("late_mover_trades.json", "late_mover_trades.backup.json"),
+    ("hedge_trades.json", "hedge_trades.backup.json"),
+    ("liquidation_trades.json", "liquidation_trades.backup.json"),
 ]
 
 

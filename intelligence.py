@@ -55,6 +55,15 @@ BOT_NAMES = {
     "stability_trades.json": "stability",
     "breakout_trades.json": "breakout",
     "calibration_trades.json": "calibration",
+    "reversal_trades.json": "reversal",
+    "smart_money_trades.json": "smart_money",
+    "time_decay_trades.json": "time_decay",
+    "sentiment_trades.json": "sentiment_divergence",
+    "accumulation_trades.json": "accumulation",
+    "underdog_trades.json": "underdog",
+    "late_mover_trades.json": "late_mover",
+    "hedge_trades.json": "hedge",
+    "liquidation_trades.json": "liquidation",
 }
 
 STATE_FILE    = Path("intelligence_state.json")

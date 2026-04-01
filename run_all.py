@@ -56,6 +56,15 @@ def main():
         ("stability_bot",       "9. Stability Bot"),
         ("breakout_bot",        "10. Breakout Bot"),
         ("calibration_bot",     "11. Calibration Bot"),
+        ("reversal_bot",        "12. Reversal Bot"),
+        ("smart_money_bot",     "13. Smart Money Bot"),
+        ("time_decay_bot",      "14. Time Decay Bot"),
+        ("sentiment_bot",       "15. Sentiment Divergence Bot"),
+        ("accumulation_bot",    "16. Accumulation Bot"),
+        ("underdog_bot",        "17. Underdog Bot"),
+        ("late_mover_bot",      "18. Late Mover Bot"),
+        ("hedge_bot",           "19. Hedge Bot"),
+        ("liquidation_bot",     "20. Liquidation Sniper Bot"),
     ]
 
     print("\n--- TRADING BOTS ---\n")
