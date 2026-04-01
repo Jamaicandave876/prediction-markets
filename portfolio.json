@@ -1,6 +1,1 @@
-{
-  "starting_balance": 1000,
-  "stake_per_trade": 50,
-  "realized_pnl": -32.8,
-  "total_trades_counted": 5
-}
+{"starting_balance": 1000, "realized_pnl": 0.0, "total_trades_counted": 0}

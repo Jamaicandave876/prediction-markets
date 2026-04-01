@@ -1,13 +1,1 @@
-{
-  "last_report": "2026-04-01 22:00 UTC",
-  "adjustments": [],
-  "paused": {
-    "momentum": false,
-    "fade": false
-  },
-  "consecutive_losses": {
-    "momentum": 2,
-    "fade": 0
-  },
-  "pause_start": {}
-}
+{"last_report": null, "adjustments": [], "paused": {}, "consecutive_losses": {}, "pause_start": {}}
