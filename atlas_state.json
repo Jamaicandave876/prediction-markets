@@ -1,8 +1,8 @@
 {
-  "last_report": "2026-03-31 01:33 UTC",
+  "last_report": "2026-04-01 23:14 UTC",
   "paused": {},
   "consecutive_losses": {
-    "momentum": 1,
+    "momentum": 2,
     "fade": 0,
     "mean_reversion": 0,
     "volume_surge": 0,
@@ -15,22 +15,22 @@
   },
   "bot_scores": {
     "momentum": {
-      "score": 50,
-      "win_rate": 0,
-      "avg_pnl": 0,
-      "total_pnl": 0,
-      "closed": 1,
-      "open": 2,
-      "grade": "NEW"
+      "score": 0.0,
+      "win_rate": 0.0,
+      "avg_pnl": -35.0,
+      "total_pnl": -70.0,
+      "closed": 2,
+      "open": 5,
+      "grade": "F"
     },
     "fade": {
-      "score": 50,
-      "win_rate": 0,
-      "avg_pnl": 0,
-      "total_pnl": 0,
-      "closed": 0,
-      "open": 2,
-      "grade": "NEW"
+      "score": 54.4,
+      "win_rate": 50.0,
+      "avg_pnl": 2.2,
+      "total_pnl": 4.4,
+      "closed": 2,
+      "open": 1,
+      "grade": "C"
     },
     "mean_reversion": {
       "score": 50,
@@ -38,7 +38,7 @@
       "avg_pnl": 0,
       "total_pnl": 0,
       "closed": 0,
-      "open": 3,
+      "open": 8,
       "grade": "NEW"
     },
     "volume_surge": {
@@ -47,7 +47,7 @@
       "avg_pnl": 0,
       "total_pnl": 0,
       "closed": 0,
-      "open": 0,
+      "open": 1,
       "grade": "NEW"
     },
     "whale": {
@@ -56,7 +56,7 @@
       "avg_pnl": 0,
       "total_pnl": 0,
       "closed": 1,
-      "open": 0,
+      "open": 3,
       "grade": "NEW"
     },
     "contrarian": {
@@ -65,7 +65,7 @@
       "avg_pnl": 0,
       "total_pnl": 0,
       "closed": 0,
-      "open": 1,
+      "open": 5,
       "grade": "NEW"
     },
     "close_gravity": {
@@ -83,7 +83,7 @@
       "avg_pnl": 0,
       "total_pnl": 0,
       "closed": 0,
-      "open": 0,
+      "open": 3,
       "grade": "NEW"
     },
     "stability": {

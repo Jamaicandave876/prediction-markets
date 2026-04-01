@@ -1,1 +1,56 @@
-[]
+[
+  {
+    "market_id": "8dONzhst6C",
+    "question": "Claude app redesign in April?",
+    "direction": "BUY NO",
+    "entry_prob": 15.1,
+    "entry_time": "2026-04-01 23:14 UTC",
+    "url": "https://manifold.markets/Bayesian/new-claude-app-design-in-april",
+    "stake": 33.9,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "open_prob": 50.0,
+    "move_from_open": 34.9,
+    "age_hours": 5.2,
+    "signal_strength": 1.1633333333333333
+  },
+  {
+    "market_id": "nLPdZR2d5d",
+    "question": "Will King Charles' trip to the US be cancelled?",
+    "direction": "BUY NO",
+    "entry_prob": 15.9,
+    "entry_time": "2026-04-01 23:14 UTC",
+    "url": "https://manifold.markets/TomQpup/will-king-charles-trip-to-the-us-be",
+    "stake": 33.9,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "open_prob": 50.0,
+    "move_from_open": 34.1,
+    "age_hours": 6.3,
+    "signal_strength": 1.1366666666666667
+  },
+  {
+    "market_id": "2pthP6605l",
+    "question": "Will Trump withdraw out of Iran by April 15th, 2026?",
+    "direction": "BUY NO",
+    "entry_prob": 16.0,
+    "entry_time": "2026-04-01 23:14 UTC",
+    "url": "https://manifold.markets/100Anonymous/will-trump-withdraw-out-of-iran-by",
+    "stake": 33.9,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "open_prob": 50.0,
+    "move_from_open": 34.0,
+    "age_hours": 8.7,
+    "signal_strength": 1.1333333333333333
+  }
+]

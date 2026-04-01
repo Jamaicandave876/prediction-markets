@@ -72,5 +72,35 @@
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null
+  },
+  {
+    "market_id": "8hCC2S9tUU",
+    "question": "Will \"The Super Mario Galaxy Movie\" gross over $185 million in its 5-day domestic opening weekend?",
+    "direction": "BUY NO",
+    "entry_prob": 38.1,
+    "entry_time": "2026-04-01 23:13 UTC",
+    "drift_score": -29.53,
+    "url": "https://manifold.markets/ShaneBo/will-the-super-mario-galaxy-movie-g",
+    "stake": 46.4,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
+  },
+  {
+    "market_id": "C0dC652qlU",
+    "question": "Bitcoin $76K in April?",
+    "direction": "BUY NO",
+    "entry_prob": 35.5,
+    "entry_time": "2026-04-01 23:13 UTC",
+    "drift_score": -20.38,
+    "url": "https://manifold.markets/predyx_markets/bitcoin-76k-in-april",
+    "stake": 46.4,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]
