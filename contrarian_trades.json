@@ -1,0 +1,21 @@
+[
+  {
+    "market_id": "lCdu8E6ySc",
+    "question": "Will I think all AI hell broke loose in 2026?",
+    "direction": "BUY YES",
+    "entry_prob": 11.3,
+    "entry_time": "2026-03-31 01:32 UTC",
+    "url": "https://manifold.markets/EliezerYudkowsky/will-i-think-all-ai-hell-broke-loos-N9U9U2IPzn",
+    "stake": 33.9,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_direction": "NO",
+    "crowd_pct": 78.4,
+    "price_move": 0.3,
+    "absorption_score": 0.76,
+    "signal_strength": 0.76
+  }
+]

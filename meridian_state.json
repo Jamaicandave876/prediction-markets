@@ -1,0 +1,32 @@
+{
+  "last_run": "2026-03-31 01:52 UTC",
+  "conflicts": [],
+  "overlaps": {
+    "lCdu8E6ySc": [
+      "mean_reversion",
+      "contrarian"
+    ]
+  },
+  "direction_exposure": {
+    "yes_count": 4,
+    "no_count": 4,
+    "total": 8,
+    "yes_stake": 135.6,
+    "no_stake": 200,
+    "total_stake": 335.6,
+    "yes_pct": 40.4,
+    "balance": "balanced"
+  },
+  "capital_weights": {
+    "momentum": 1.0,
+    "fade": 1.0,
+    "mean_reversion": 1.0,
+    "volume_surge": 1.0,
+    "whale": 1.0,
+    "contrarian": 1.0,
+    "close_gravity": 1.0,
+    "fresh_sniper": 1.0,
+    "stability": 1.0,
+    "breakout": 1.0
+  }
+}

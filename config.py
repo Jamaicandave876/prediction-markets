@@ -12,10 +12,10 @@ TELEGRAM_TOKEN   = "8764048221:AAEgEYUvHlan4T8BdSFRYBSQ2KdgIWfylwA"
 TELEGRAM_CHAT_ID = "8425023293"
 
 # ── Market Scanning ───────────────────────────────────────────────────────────
-MARKETS_TO_SCAN    = 40       # how many markets to scan each run
-MIN_POOL           = 500      # minimum liquidity pool (YES + NO in Mana)
+MARKETS_TO_SCAN    = 80       # how many markets to scan each run
+MIN_POOL           = 300      # minimum liquidity pool (YES + NO in Mana)
 MIN_MARKET_AGE_HR  = 1        # skip markets younger than this (hours)
-MIN_CLOSE_DAYS     = 3        # skip markets closing within this many days
+MIN_CLOSE_DAYS     = 2        # skip markets closing within this many days
                               # (prevents resolution-risk blowups on short-term markets)
 
 # ── Momentum Detection ────────────────────────────────────────────────────────
@@ -25,10 +25,10 @@ DECAY_STRENGTH     = 2.0      # how much more recent bets matter vs old ones
                               # (2.0 = newest bet weighted ~7x more than oldest)
 
 # ── Signal Filters ────────────────────────────────────────────────────────────
-ENTRY_PROB_LOW     = 45       # % — below this is too uncertain / early
-ENTRY_PROB_HIGH    = 72       # % — above this may already be crowded
-MIN_DRIFT_SCORE    = 2.0      # |drift_score| must exceed this
-MIN_CONSISTENCY    = 65       # % of bets in trend direction (raised from 50 to filter noise)
+ENTRY_PROB_LOW     = 35       # % — below this is too uncertain / early
+ENTRY_PROB_HIGH    = 78       # % — above this may already be crowded
+MIN_DRIFT_SCORE    = 1.5      # |drift_score| must exceed this
+MIN_CONSISTENCY    = 55       # % of bets in trend direction
 
 # ── Portfolio Simulation ──────────────────────────────────────────────────────
 STARTING_BALANCE   = 1000    # hypothetical starting balance in Mana
@@ -49,8 +49,8 @@ MAX_TRADE_DAYS     = 14       # close trades older than this many days
 SPIKE_BETS_TOTAL   = 20       # total bets to fetch per market
 SPIKE_RECENT       = 5        # last N bets = the "spike window"
 SPIKE_MIN_BETS     = 12       # need at least this many bets (recent + baseline)
-SPIKE_MIN_SIZE     = 8        # pp — minimum spike size to consider
-SPIKE_MIN_RATIO    = 3.0      # spike must be this many times larger than baseline moves
+SPIKE_MIN_SIZE     = 6        # pp — minimum spike size to consider
+SPIKE_MIN_RATIO    = 2.5      # spike must be this many times larger than baseline moves
 MAX_CONSISTENCY    = 50        # % — reject if consistency is TOO high (that's a trend, not a spike)
 SPIKE_MAX_WINDOW_HR = 6       # spike window bets must span less than this many hours
                               # (if 5 bets took 6+ hours, it's not a real spike)
@@ -66,7 +66,7 @@ FADE_MIN_REWARD_RATIO = 0.8   # minimum reward/risk ratio (filters out bad risk-
 # ══════════════════════════════════════════════════════════════════════════════
 
 # ── Risk Limits ───────────────────────────────────────────────────────────────
-INTEL_MAX_OPEN_TOTAL       = 8    # max open trades across both bots
+INTEL_MAX_OPEN_TOTAL       = 20   # max open trades across all bots
 INTEL_MAX_OPEN_PER_BOT     = 5    # max open trades per individual bot
 INTEL_DRAWDOWN_LIMIT_PP    = -50  # pause if 7-day realized losses exceed this
 INTEL_PAUSE_AFTER_LOSSES   = 4    # pause a bot after this many consecutive losses
