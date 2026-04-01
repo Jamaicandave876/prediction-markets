@@ -21,10 +21,11 @@ log = logging.getLogger("portfolio")
 PORTFOLIO_FILE = Path("portfolio.json")
 
 # ── Sizing Parameters ────────────────────────────────────────────────────────
-BASE_STAKE_PCT  = 0.05    # 5% of balance per trade
-MAX_STAKE_PCT   = 0.10    # never risk more than 10% on one trade
+BASE_STAKE_PCT  = 0.05    # 5% of balance per trade (fallback if Kelly unavailable)
+MAX_STAKE_PCT   = 0.08    # never risk more than 8% on one trade
 MIN_STAKE       = 20      # floor — always at least 20 Mana
 CONSEC_LOSS_DAMPEN = 0.80 # multiply stake by this per consecutive loss
+KELLY_FRACTION  = 0.25    # use 25% Kelly (conservative — protects against edge overestimation)
 
 
 # ── Portfolio State ──────────────────────────────────────────────────────────
@@ -72,29 +73,74 @@ def _count_recent_consecutive_losses(all_trades: list[dict]) -> int:
     return streak
 
 
+def _kelly_stake(balance: float, signal: dict) -> float | None:
+    """
+    Fractional Kelly criterion for prediction markets.
+
+    In a binary market at price p_market, if we estimate true probability p_true:
+      For BUY YES: edge = p_true - p_market
+      For BUY NO:  edge = (1 - p_true) - (1 - p_market) = p_market - p_true
+
+    Kelly fraction: f* = edge / odds
+      For BUY YES at price p: odds = (1-p)/p, so f* = (p_true - p) / (1 - p)
+      For BUY NO  at price p: odds = p/(1-p), so f* = (p - p_true) / p
+
+    We use KELLY_FRACTION (0.25) of full Kelly for safety.
+    """
+    entry_prob = signal.get("entry_prob", 50) / 100  # convert to 0-1
+    strength = signal.get("signal_strength", 0)
+    direction = signal.get("direction", "")
+
+    if strength <= 0:
+        return None
+
+    # Estimate our edge from signal_strength
+    # signal_strength maps to how far we think true prob differs from market
+    # Scale: strength 0.5 = ~5pp edge, strength 1.0 = ~10pp edge, 1.5 = ~15pp
+    edge_pp = min(strength * 10, 20) / 100  # cap at 20pp estimated edge
+
+    if direction == "BUY YES":
+        p_market = entry_prob
+        p_true = min(p_market + edge_pp, 0.95)
+        if p_true <= p_market:
+            return None
+        kelly_f = (p_true - p_market) / (1 - p_market)
+    elif direction == "BUY NO":
+        p_market = entry_prob
+        p_true = max(p_market - edge_pp, 0.05)
+        if p_true >= p_market:
+            return None
+        kelly_f = (p_market - p_true) / p_market
+    else:
+        return None
+
+    if kelly_f <= 0:
+        return None
+
+    # Apply fractional Kelly
+    fraction = kelly_f * KELLY_FRACTION
+    return balance * fraction
+
+
 def compute_stake(balance: float, signal: dict, all_trades: list[dict], bot: str = "momentum") -> float:
     """
-    Compute dynamic stake for a new trade.
+    Compute dynamic stake using fractional Kelly criterion.
 
     Sizing logic:
-      1. Base = BASE_STAKE_PCT * current_balance
-      2. Confidence multiplier (0.7x – 1.5x) from signal strength
+      1. Try Kelly criterion (0.25x full Kelly) based on signal strength
+      2. Fall back to BASE_STAKE_PCT if Kelly unavailable
       3. Dampen after consecutive losses (0.8x per loss in streak)
       4. Clamp to [MIN_STAKE, MAX_STAKE_PCT * balance]
     """
-    base = balance * BASE_STAKE_PCT
-
-    # Confidence from signal strength
-    if bot == "momentum":
-        drift = abs(signal.get("drift_score", 0))
-        # drift_score typically 2-15; map to 0.7-1.5
-        confidence = min(1.5, max(0.7, 0.5 + drift / 15))
-    else:  # fade
-        ratio = signal.get("spike_ratio", 0)
-        # spike_ratio typically 3-20; map to 0.7-1.5
-        confidence = min(1.5, max(0.7, 0.4 + ratio / 20))
-
-    stake = base * confidence
+    # Try Kelly first
+    kelly = _kelly_stake(balance, signal)
+    if kelly is not None and kelly > 0:
+        stake = kelly
+    else:
+        # Fallback: base stake with signal confidence
+        strength = signal.get("signal_strength", 0.5)
+        confidence = min(1.5, max(0.7, 0.5 + strength))
+        stake = balance * BASE_STAKE_PCT * confidence
 
     # Dampen after consecutive losses
     streak = _count_recent_consecutive_losses(all_trades)

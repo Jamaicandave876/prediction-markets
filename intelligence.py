@@ -25,7 +25,10 @@ from config import (
     INTEL_LOOKBACK_TRADES, INTEL_ADJUST_BOUNDS,
     INTEL_DAILY_REPORT_ENABLED, INTEL_MAX_PAUSE_DAYS,
 )
-from paper_trades import load_trades, compute_metrics, now_str, parse_time, days_since
+from bot_engine import (
+    load_trades, compute_metrics, now_str, parse_time, days_since,
+    get_market_state, BOT_TRADE_FILES,
+)
 from notify import (
     intel_conflict_alert, intel_adjustment_alert, intel_report_alert,
 )
@@ -36,10 +39,24 @@ logging.basicConfig(
 )
 log = logging.getLogger("intel")
 
-MOMENTUM_FILE = Path("trades.json")
-MOMENTUM_BAK  = Path("trades.backup.json")
-FADE_FILE     = Path("fade_trades.json")
-FADE_BAK      = Path("fade_trades.backup.json")
+# All bot trade files — derived from bot_engine registry
+ALL_BOT_FILES = BOT_TRADE_FILES
+
+# Bot name mapping for display
+BOT_NAMES = {
+    "trades.json": "momentum",
+    "fade_trades.json": "fade",
+    "mean_reversion_trades.json": "mean_reversion",
+    "volume_trades.json": "volume_surge",
+    "whale_trades.json": "whale",
+    "contrarian_trades.json": "contrarian",
+    "close_gravity_trades.json": "close_gravity",
+    "fresh_sniper_trades.json": "fresh_sniper",
+    "stability_trades.json": "stability",
+    "breakout_trades.json": "breakout",
+    "calibration_trades.json": "calibration",
+}
+
 STATE_FILE    = Path("intelligence_state.json")
 CONFIG_FILE   = Path("config.py")
 
@@ -68,25 +85,48 @@ def save_state(state: dict) -> None:
     tmp.replace(STATE_FILE)
 
 
+# ── Load All Bot Trades ──────────────────────────────────────────────────────
+
+def _load_all_bot_trades() -> dict[str, list[dict]]:
+    """Load trades from all bots, keyed by bot name."""
+    result = {}
+    for tf, bf in ALL_BOT_FILES:
+        bot_name = BOT_NAMES.get(tf, tf.replace("_trades.json", ""))
+        result[bot_name] = load_trades(tf, bf)
+    return result
+
+
+def _all_trades_flat(bot_trades: dict[str, list[dict]]) -> list[dict]:
+    """Flatten all bot trades into a single list."""
+    flat = []
+    for trades in bot_trades.values():
+        flat.extend(trades)
+    return flat
+
+
 # ── Conflict Detection ────────────────────────────────────────────────────────
 
-def find_conflicts(mom_trades: list[dict], fade_trades: list[dict]) -> list[dict]:
-    """Find markets where both bots have open opposing positions."""
-    mom_open = {t["market_id"]: t for t in mom_trades if t["status"] == "open"}
-    fade_open = {t["market_id"]: t for t in fade_trades if t["status"] == "open"}
+def find_conflicts(bot_trades: dict[str, list[dict]]) -> list[dict]:
+    """Find markets where ANY bots have open opposing positions."""
+    # Group open trades by market
+    market_positions: dict[str, list[tuple[str, dict]]] = {}
+    for bot_name, trades in bot_trades.items():
+        for t in trades:
+            if t["status"] == "open":
+                mid = t["market_id"]
+                market_positions.setdefault(mid, []).append((bot_name, t))
 
     conflicts = []
-    for mid in set(mom_open) & set(fade_open):
-        mt = mom_open[mid]
-        ft = fade_open[mid]
-        if mt["direction"] != ft["direction"]:
+    for mid, positions in market_positions.items():
+        directions = set(t["direction"] for _, t in positions)
+        if len(directions) > 1:  # opposing directions on same market
             conflicts.append({
-                "market_id":      mid,
-                "question":       mt["question"],
-                "momentum_dir":   mt["direction"],
-                "momentum_entry": mt["entry_prob"],
-                "fade_dir":       ft["direction"],
-                "fade_entry":     ft["entry_prob"],
+                "market_id": mid,
+                "question": positions[0][1]["question"],
+                "positions": [
+                    {"bot": bot, "direction": t["direction"], "entry_prob": t["entry_prob"]}
+                    for bot, t in positions
+                ],
             })
     return conflicts
 
@@ -94,20 +134,19 @@ def find_conflicts(mom_trades: list[dict], fade_trades: list[dict]) -> list[dict
 def check_pre_trade_conflict(market_id: str, direction: str, bot: str) -> bool:
     """
     Called by a bot BEFORE logging a trade. Returns True to BLOCK the trade.
-    Checks if the OTHER bot has an open trade on this market in the opposite direction.
+    Checks if ANY other bot has an open trade on this market in the opposite direction.
     """
-    if bot == "momentum":
-        other_trades = load_trades(FADE_FILE, FADE_BAK)
-    else:
-        other_trades = load_trades(MOMENTUM_FILE, MOMENTUM_BAK)
-
-    for t in other_trades:
-        if t["market_id"] == market_id and t["status"] == "open":
-            if t["direction"] != direction:
-                log.info("CONFLICT BLOCKED: %s bot wanted %s but %s bot has %s on %s",
-                         bot, direction, "fade" if bot == "momentum" else "momentum",
-                         t["direction"], market_id)
-                return True
+    for tf, bf in ALL_BOT_FILES:
+        other_bot = BOT_NAMES.get(tf, tf.replace("_trades.json", ""))
+        if other_bot == bot:
+            continue
+        other_trades = load_trades(tf, bf)
+        for t in other_trades:
+            if t["market_id"] == market_id and t["status"] == "open":
+                if t["direction"] != direction:
+                    log.info("CONFLICT BLOCKED: %s wanted %s but %s has %s on %s",
+                             bot, direction, other_bot, t["direction"], market_id)
+                    return True
     return False
 
 
@@ -126,15 +165,10 @@ def count_consecutive_losses(trades: list[dict]) -> int:
     return streak
 
 
-def compute_7day_net_pnl(mom_trades: list[dict], fade_trades: list[dict]) -> float:
-    """Net realized P&L in the last 7 days across both bots.
-
-    Previous version only summed losses, which dramatically overstated risk
-    (e.g., -60pp in losses + 55pp in wins = -60pp old way, -5pp correct way).
-    Now includes both wins and losses for an accurate picture.
-    """
+def compute_7day_net_pnl(bot_trades: dict[str, list[dict]]) -> float:
+    """Net realized P&L in the last 7 days across ALL bots."""
     total = 0.0
-    for trades in [mom_trades, fade_trades]:
+    for trades in bot_trades.values():
         for t in trades:
             if t["status"] != "closed":
                 continue
@@ -147,81 +181,103 @@ def compute_7day_net_pnl(mom_trades: list[dict], fade_trades: list[dict]) -> flo
     return round(total, 1)
 
 
-def check_risk_limits(mom_trades: list[dict], fade_trades: list[dict],
-                      state: dict) -> dict:
-    """Evaluate portfolio-level risk constraints."""
-    mom_open = [t for t in mom_trades if t["status"] == "open"]
-    fade_open = [t for t in fade_trades if t["status"] == "open"]
-    total_open = len(mom_open) + len(fade_open)
+def compute_unrealized_pnl(bot_trades: dict[str, list[dict]]) -> float:
+    """Estimate unrealized P&L across all open positions."""
+    total = 0.0
+    for trades in bot_trades.values():
+        for t in trades:
+            if t["status"] != "open":
+                continue
+            state = get_market_state(t["market_id"])
+            if state["status"] != "active":
+                continue
+            prob = state["probability"]
+            entry = t["entry_prob"]
+            if t["direction"] == "BUY YES":
+                pnl = prob - entry
+            else:
+                pnl = entry - prob
+            total += pnl
+    return round(total, 1)
 
-    mom_losses = count_consecutive_losses(mom_trades)
-    fade_losses = count_consecutive_losses(fade_trades)
-    drawdown = compute_7day_net_pnl(mom_trades, fade_trades)
+
+def check_risk_limits(bot_trades: dict[str, list[dict]], state: dict) -> dict:
+    """Evaluate portfolio-level risk constraints across ALL bots."""
+    # Count open positions per bot
+    bot_open_counts = {}
+    total_open = 0
+    for bot_name, trades in bot_trades.items():
+        n_open = sum(1 for t in trades if t["status"] == "open")
+        bot_open_counts[bot_name] = n_open
+        total_open += n_open
+
+    # P&L checks
+    realized_7d = compute_7day_net_pnl(bot_trades)
+    unrealized = compute_unrealized_pnl(bot_trades)
+    total_drawdown = realized_7d + unrealized  # include unrealized losses
+
+    # Direction skew check
+    all_open = [t for trades in bot_trades.values() for t in trades if t["status"] == "open"]
+    yes_count = sum(1 for t in all_open if t["direction"] == "BUY YES")
+    no_count = sum(1 for t in all_open if t["direction"] == "BUY NO")
+    direction_skew = yes_count / max(yes_count + no_count, 1)
 
     warnings = []
-    mom_paused = state.get("paused", {}).get("momentum", False)
-    fade_paused = state.get("paused", {}).get("fade", False)
 
     if total_open >= INTEL_MAX_OPEN_TOTAL:
         warnings.append(f"Position limit reached: {total_open}/{INTEL_MAX_OPEN_TOTAL}")
-    if len(mom_open) >= INTEL_MAX_OPEN_PER_BOT:
-        warnings.append(f"Momentum at per-bot limit: {len(mom_open)}/{INTEL_MAX_OPEN_PER_BOT}")
-    if len(fade_open) >= INTEL_MAX_OPEN_PER_BOT:
-        warnings.append(f"Fade at per-bot limit: {len(fade_open)}/{INTEL_MAX_OPEN_PER_BOT}")
-    if drawdown <= INTEL_DRAWDOWN_LIMIT_PP:
-        warnings.append(f"7-day net P&L {drawdown:+.1f}pp exceeds limit {INTEL_DRAWDOWN_LIMIT_PP}pp")
 
-    # Pause logic with deadlock recovery:
-    # A bot is paused after N consecutive losses. But if it stays paused too long
-    # (all open trades also lost), it would be stuck forever. Auto-unpause after
-    # INTEL_MAX_PAUSE_DAYS so the bot gets a fresh chance.
+    for bot_name, n_open in bot_open_counts.items():
+        if n_open >= INTEL_MAX_OPEN_PER_BOT:
+            warnings.append(f"{bot_name} at per-bot limit: {n_open}/{INTEL_MAX_OPEN_PER_BOT}")
+
+    if total_drawdown <= INTEL_DRAWDOWN_LIMIT_PP:
+        warnings.append(f"7-day P&L (realized+unrealized) {total_drawdown:+.1f}pp exceeds limit {INTEL_DRAWDOWN_LIMIT_PP}pp")
+
+    if total_open >= 4 and (direction_skew > 0.75 or direction_skew < 0.25):
+        pct = round(max(direction_skew, 1 - direction_skew) * 100)
+        warnings.append(f"Direction skew: {pct}% in one direction ({yes_count}Y/{no_count}N)")
+
+    # Pause logic with deadlock recovery for ALL bots
     pause_start = state.get("pause_start", {})
+    paused = state.get("paused", {})
 
-    if mom_losses >= INTEL_PAUSE_AFTER_LOSSES:
-        if not mom_paused:
-            pause_start["momentum"] = now_str()
-        mom_paused = True
-        warnings.append(f"Momentum PAUSED: {mom_losses} consecutive losses")
-    elif mom_paused and mom_losses < INTEL_PAUSE_AFTER_LOSSES:
-        mom_paused = False
-        pause_start.pop("momentum", None)
+    for bot_name, trades in bot_trades.items():
+        losses = count_consecutive_losses(trades)
+        was_paused = paused.get(bot_name, False)
 
-    if fade_losses >= INTEL_PAUSE_AFTER_LOSSES:
-        if not fade_paused:
-            pause_start["fade"] = now_str()
-        fade_paused = True
-        warnings.append(f"Fade PAUSED: {fade_losses} consecutive losses")
-    elif fade_paused and fade_losses < INTEL_PAUSE_AFTER_LOSSES:
-        fade_paused = False
-        pause_start.pop("fade", None)
+        if losses >= INTEL_PAUSE_AFTER_LOSSES:
+            if not was_paused:
+                pause_start[bot_name] = now_str()
+            paused[bot_name] = True
+            warnings.append(f"{bot_name} PAUSED: {losses} consecutive losses")
+        elif was_paused and losses < INTEL_PAUSE_AFTER_LOSSES:
+            paused[bot_name] = False
+            pause_start.pop(bot_name, None)
 
-    # Deadlock recovery: auto-unpause after max pause days
-    for bot_name in ["momentum", "fade"]:
+        # Deadlock recovery
         start = pause_start.get(bot_name)
         if start:
             try:
                 pause_days = days_since(start)
                 if pause_days >= INTEL_MAX_PAUSE_DAYS:
-                    if bot_name == "momentum":
-                        mom_paused = False
-                    else:
-                        fade_paused = False
+                    paused[bot_name] = False
                     pause_start.pop(bot_name, None)
-                    warnings.append(f"{bot_name.title()} AUTO-UNPAUSED after {pause_days:.1f} days")
+                    warnings.append(f"{bot_name} AUTO-UNPAUSED after {pause_days:.1f} days")
             except (ValueError, KeyError):
                 pass
 
     state["pause_start"] = pause_start
+    state["paused"] = paused
 
     return {
         "total_open": total_open,
-        "mom_open": len(mom_open),
-        "fade_open": len(fade_open),
-        "drawdown_7d": drawdown,
-        "mom_consecutive_losses": mom_losses,
-        "fade_consecutive_losses": fade_losses,
-        "mom_paused": mom_paused,
-        "fade_paused": fade_paused,
+        "bot_open_counts": bot_open_counts,
+        "realized_7d": realized_7d,
+        "unrealized": unrealized,
+        "total_drawdown": total_drawdown,
+        "direction_skew": round(direction_skew, 2),
+        "paused": paused,
         "warnings": warnings,
     }
 
@@ -234,17 +290,22 @@ def should_allow_new_trade(bot: str) -> bool:
         log.warning("%s bot is PAUSED by intelligence layer", bot)
         return False
 
-    mom_trades = load_trades(MOMENTUM_FILE, MOMENTUM_BAK)
-    fade_trades = load_trades(FADE_FILE, FADE_BAK)
-    mom_open = sum(1 for t in mom_trades if t["status"] == "open")
-    fade_open = sum(1 for t in fade_trades if t["status"] == "open")
+    # Count total open across ALL bots
+    total_open = 0
+    my_open = 0
+    for tf, bf in ALL_BOT_FILES:
+        bot_name = BOT_NAMES.get(tf, tf.replace("_trades.json", ""))
+        trades = load_trades(tf, bf)
+        n_open = sum(1 for t in trades if t["status"] == "open")
+        total_open += n_open
+        if bot_name == bot:
+            my_open = n_open
 
-    if mom_open + fade_open >= INTEL_MAX_OPEN_TOTAL:
+    if total_open >= INTEL_MAX_OPEN_TOTAL:
         log.warning("Total position limit reached (%d/%d) — blocking %s",
-                     mom_open + fade_open, INTEL_MAX_OPEN_TOTAL, bot)
+                     total_open, INTEL_MAX_OPEN_TOTAL, bot)
         return False
 
-    my_open = mom_open if bot == "momentum" else fade_open
     if my_open >= INTEL_MAX_OPEN_PER_BOT:
         log.warning("%s at per-bot limit (%d/%d)", bot, my_open, INTEL_MAX_OPEN_PER_BOT)
         return False
@@ -261,12 +322,11 @@ def get_recent_closed(trades: list[dict], n: int) -> list[dict]:
     return closed[-n:]
 
 
-def detect_performance_trends(mom_trades: list[dict],
-                               fade_trades: list[dict]) -> list[str]:
-    """Identify notable patterns from trade history."""
+def detect_performance_trends(bot_trades: dict[str, list[dict]]) -> list[str]:
+    """Identify notable patterns from trade history across all bots."""
     trends = []
 
-    for name, trades in [("Momentum", mom_trades), ("Fade", fade_trades)]:
+    for name, trades in bot_trades.items():
         closed = [t for t in trades if t["status"] == "closed"]
         if len(closed) < 3:
             continue
@@ -328,92 +388,57 @@ def detect_performance_trends(mom_trades: list[dict],
 
 # ── Auto-Adjustment ───────────────────────────────────────────────────────────
 
-def compute_adjustments(mom_trades: list[dict],
-                         fade_trades: list[dict]) -> list[dict]:
-    """Decide what params to tighten/loosen based on recent performance."""
+def compute_adjustments(bot_trades: dict[str, list[dict]]) -> list[dict]:
+    """Decide what params to tighten/loosen based on recent performance across all bots."""
     adjustments = []
 
-    # Need enough data
-    mom_closed = [t for t in mom_trades if t["status"] == "closed"]
-    fade_closed = [t for t in fade_trades if t["status"] == "closed"]
+    # Aggregate all closed trades for system-wide analysis
+    all_closed = []
+    for trades in bot_trades.values():
+        all_closed.extend([t for t in trades if t["status"] == "closed"])
 
-    # Momentum bot adjustments
-    if len(mom_closed) >= INTEL_LOOKBACK_TRADES:
-        recent = mom_closed[-INTEL_LOOKBACK_TRADES:]
-        wr = sum(1 for t in recent if (t["pnl_pp"] or 0) > 0) / len(recent) * 100
-        losses = [t for t in recent if (t["pnl_pp"] or 0) < 0]
-        avg_loss = sum(t["pnl_pp"] or 0 for t in losses) / len(losses) if losses else 0
+    if len(all_closed) < INTEL_LOOKBACK_TRADES:
+        return adjustments
 
-        # Import current values
-        import config
-        cur_drift = getattr(config, "MIN_DRIFT_SCORE", 2.0)
-        cur_consist = getattr(config, "MIN_CONSISTENCY", 65)
-        cur_reversal = getattr(config, "REVERSAL_THRESHOLD", 6)
+    all_closed.sort(key=lambda t: t.get("exit_time", ""))
+    recent = all_closed[-INTEL_LOOKBACK_TRADES:]
+    wr = sum(1 for t in recent if (t["pnl_pp"] or 0) > 0) / len(recent) * 100
+    losses = [t for t in recent if (t["pnl_pp"] or 0) < 0]
+    avg_loss = sum(t["pnl_pp"] or 0 for t in losses) / len(losses) if losses else 0
 
-        if wr < 40:
-            adj = _make_adjustment("MIN_DRIFT_SCORE", cur_drift, "tighten",
-                                   f"Momentum recent WR {wr:.0f}% < 40%")
-            if adj:
-                adjustments.append(adj)
-        elif wr > 65:
-            adj = _make_adjustment("MIN_DRIFT_SCORE", cur_drift, "loosen",
-                                   f"Momentum recent WR {wr:.0f}% > 65%")
-            if adj:
-                adjustments.append(adj)
+    import config
 
-        # Reversal threshold based on avg loss size
-        if avg_loss < -8:
-            adj = _make_adjustment("REVERSAL_THRESHOLD", cur_reversal, "tighten",
-                                   f"Momentum avg loss {avg_loss:.1f}pp > 8pp")
-            if adj:
-                adjustments.append(adj)
-        elif losses and avg_loss > -4:
-            adj = _make_adjustment("REVERSAL_THRESHOLD", cur_reversal, "loosen",
-                                   f"Momentum avg loss {avg_loss:.1f}pp < 4pp")
-            if adj:
-                adjustments.append(adj)
+    # System-wide drift score adjustment
+    cur_drift = getattr(config, "MIN_DRIFT_SCORE", 1.5)
+    if wr < 40:
+        adj = _make_adjustment("MIN_DRIFT_SCORE", cur_drift, "tighten",
+                               f"System WR {wr:.0f}% < 40% — tighten signals")
+        if adj:
+            adjustments.append(adj)
+    elif wr > 65:
+        adj = _make_adjustment("MIN_DRIFT_SCORE", cur_drift, "loosen",
+                               f"System WR {wr:.0f}% > 65% — loosen signals")
+        if adj:
+            adjustments.append(adj)
 
-        # Consistency based on reversal exits
-        reversal_losses = [t for t in losses if t.get("exit_reason") == "reversal"]
-        if losses and len(reversal_losses) / len(losses) > 0.5:
-            adj = _make_adjustment("MIN_CONSISTENCY", cur_consist, "tighten",
-                                   f"Reversals = {len(reversal_losses)}/{len(losses)} of momentum losses")
-            if adj:
-                adjustments.append(adj)
+    # Stop loss adjustment based on avg loss size
+    cur_reversal = getattr(config, "REVERSAL_THRESHOLD", 4)
+    if avg_loss < -8:
+        adj = _make_adjustment("REVERSAL_THRESHOLD", cur_reversal, "tighten",
+                               f"Avg loss {avg_loss:.1f}pp — tighten stops")
+        if adj:
+            adjustments.append(adj)
 
-    # Fade bot adjustments
+    # Fade-specific adjustments
+    fade_trades_list = bot_trades.get("fade", [])
+    fade_closed = [t for t in fade_trades_list if t["status"] == "closed"]
     if len(fade_closed) >= INTEL_LOOKBACK_TRADES:
-        recent = fade_closed[-INTEL_LOOKBACK_TRADES:]
-        wr = sum(1 for t in recent if (t["pnl_pp"] or 0) > 0) / len(recent) * 100
-        losses = [t for t in recent if (t["pnl_pp"] or 0) < 0]
-        avg_loss = sum(t["pnl_pp"] or 0 for t in losses) / len(losses) if losses else 0
-
-        import config
-        cur_ratio = getattr(config, "SPIKE_MIN_RATIO", 3.0)
-        cur_size = getattr(config, "SPIKE_MIN_SIZE", 8)
-        cur_stop = getattr(config, "FADE_STOP_PP", 8)
-
-        if wr < 40:
+        fade_recent = fade_closed[-INTEL_LOOKBACK_TRADES:]
+        fade_wr = sum(1 for t in fade_recent if (t["pnl_pp"] or 0) > 0) / len(fade_recent) * 100
+        cur_ratio = getattr(config, "SPIKE_MIN_RATIO", 2.5)
+        if fade_wr < 40:
             adj = _make_adjustment("SPIKE_MIN_RATIO", cur_ratio, "tighten",
-                                   f"Fade recent WR {wr:.0f}% < 40%")
-            if adj:
-                adjustments.append(adj)
-        elif wr > 65:
-            adj = _make_adjustment("SPIKE_MIN_RATIO", cur_ratio, "loosen",
-                                   f"Fade recent WR {wr:.0f}% > 65%")
-            if adj:
-                adjustments.append(adj)
-
-        stopped = [t for t in losses if t.get("exit_reason") == "stopped_out"]
-        if losses and len(stopped) / len(losses) > 0.5:
-            adj = _make_adjustment("SPIKE_MIN_SIZE", cur_size, "tighten",
-                                   f"Stopped out = {len(stopped)}/{len(losses)} of fade losses")
-            if adj:
-                adjustments.append(adj)
-
-        if avg_loss < -10:
-            adj = _make_adjustment("FADE_STOP_PP", cur_stop, "tighten",
-                                   f"Fade avg loss {avg_loss:.1f}pp > 10pp")
+                                   f"Fade WR {fade_wr:.0f}% < 40%")
             if adj:
                 adjustments.append(adj)
 
@@ -495,81 +520,61 @@ def should_send_report(state: dict) -> bool:
         return True
 
 
-def build_daily_report(mom_trades: list[dict], fade_trades: list[dict],
+def build_daily_report(bot_trades: dict[str, list[dict]],
                        conflicts: list[dict], risk: dict,
                        trends: list[str], adjustments: list[dict]) -> str:
-    """Build the Telegram daily intelligence report."""
-    mom_m = compute_metrics(mom_trades)
-    fade_m = compute_metrics(fade_trades)
-
-    # Combined P&L
-    mom_pnl = mom_m.get("total_pnl", 0)
-    fade_pnl = fade_m.get("total_pnl", 0)
-    total_pnl = round(mom_pnl + fade_pnl, 1)
-
+    """Build the Telegram daily intelligence report for all bots."""
     lines = [
         f"<b>[INTEL] Daily Intelligence Report</b>",
         "",
         f"<b>Portfolio</b>",
-        f"Open: {risk['total_open']} (momentum: {risk['mom_open']}, fade: {risk['fade_open']})",
-        f"Total P&L: {total_pnl:+.1f}pp",
+        f"Open: {risk['total_open']}/{INTEL_MAX_OPEN_TOTAL}",
+        f"P&L (7d): {risk['realized_7d']:+.1f}pp realized, {risk['unrealized']:+.1f}pp unrealized",
+        f"Direction: {risk['direction_skew']:.0%} YES / {1-risk['direction_skew']:.0%} NO",
         "",
     ]
 
-    # Momentum summary
-    if mom_m.get("total_trades"):
-        status = "PAUSED" if risk["mom_paused"] else "ACTIVE"
-        lines.append(f"<b>Momentum</b> [{status}]")
-        lines.append(f"Closed: {mom_m['total_trades']}  |  "
-                      f"WR: {mom_m['win_rate']}%  |  P&L: {mom_m['total_pnl']:+.1f}pp")
-    else:
-        lines.append(f"<b>Momentum</b> — No closed trades yet")
+    # Per-bot summaries
+    total_pnl = 0.0
+    for bot_name, trades in bot_trades.items():
+        metrics = compute_metrics(trades)
+        is_paused = risk["paused"].get(bot_name, False)
+        status = "PAUSED" if is_paused else "ACTIVE"
+        n_open = risk["bot_open_counts"].get(bot_name, 0)
 
-    # Fade summary
-    if fade_m.get("total_trades"):
-        status = "PAUSED" if risk["fade_paused"] else "ACTIVE"
-        lines.append(f"<b>Fade</b> [{status}]")
-        lines.append(f"Closed: {fade_m['total_trades']}  |  "
-                      f"WR: {fade_m['win_rate']}%  |  P&L: {fade_m['total_pnl']:+.1f}pp")
-    else:
-        lines.append(f"<b>Fade</b> — No closed trades yet")
+        if metrics.get("total_trades"):
+            total_pnl += metrics["total_pnl"]
+            lines.append(f"<b>{bot_name}</b> [{status}] Open:{n_open} "
+                         f"WR:{metrics['win_rate']}% P&L:{metrics['total_pnl']:+.1f}pp")
+        elif n_open > 0:
+            lines.append(f"<b>{bot_name}</b> [{status}] Open:{n_open} (no closed trades)")
 
-    lines.append("")
+    lines.append(f"\nTotal P&L: {total_pnl:+.1f}pp")
 
     # Conflicts
     if conflicts:
-        lines.append(f"<b>Conflicts:</b> {len(conflicts)} detected")
+        lines.append(f"\n<b>Conflicts:</b> {len(conflicts)}")
         for c in conflicts:
-            q = c["question"][:50]
-            lines.append(f"  {q}...")
+            lines.append(f"  {c['question'][:50]}...")
     else:
-        lines.append("Conflicts: None")
+        lines.append("\nConflicts: None")
 
-    # Risk
-    lines.append(f"Positions: {risk['total_open']}/{INTEL_MAX_OPEN_TOTAL} limit")
-    lines.append(f"Net P&L (7d): {risk['drawdown_7d']:+.1f}pp / {INTEL_DRAWDOWN_LIMIT_PP}pp limit")
-    lines.append(f"Loss streaks: momentum {risk['mom_consecutive_losses']}, "
-                  f"fade {risk['fade_consecutive_losses']}")
-
+    # Warnings
     if risk["warnings"]:
         lines.append("")
         for w in risk["warnings"]:
             lines.append(f"WARNING: {w}")
 
     # Trends
-    lines.append("")
-    lines.append("<b>Trends</b>")
+    lines.append("\n<b>Trends</b>")
     for t in trends[:5]:
         lines.append(f"- {t}")
 
     # Adjustments
     if adjustments:
-        lines.append("")
-        lines.append("<b>Adjustments</b>")
+        lines.append("\n<b>Adjustments</b>")
         for a in adjustments:
             lines.append(f"- {a['param']}: {a['old']} -> {a['new']}")
-    else:
-        lines.append("\nAdjustments: None this cycle")
 
     return "\n".join(lines)
 
@@ -581,48 +586,42 @@ def main():
     print(f"Intelligence Layer  [{now_str()}]")
     print("=" * 60)
 
-    # Load data
-    mom_trades  = load_trades(MOMENTUM_FILE, MOMENTUM_BAK)
-    fade_trades = load_trades(FADE_FILE, FADE_BAK)
-    state       = load_state()
+    # Load ALL bot trades
+    bot_trades = _load_all_bot_trades()
+    state = load_state()
 
-    print(f"\nMomentum trades: {len(mom_trades)}  |  Fade trades: {len(fade_trades)}\n")
+    total_trades = sum(len(t) for t in bot_trades.values())
+    active_bots = sum(1 for t in bot_trades.values() if t)
+    print(f"\nMonitoring {active_bots} bots, {total_trades} total trades\n")
 
     # 1. Conflict detection
-    conflicts = find_conflicts(mom_trades, fade_trades)
+    conflicts = find_conflicts(bot_trades)
     if conflicts:
         print(f"CONFLICTS FOUND: {len(conflicts)}")
         for c in conflicts:
             print(f"  {c['question'][:50]}")
-            print(f"    Momentum: {c['momentum_dir']}  vs  Fade: {c['fade_dir']}")
+            for p in c["positions"]:
+                print(f"    {p['bot']}: {p['direction']}")
             intel_conflict_alert(c)
     else:
         print("Conflicts: None")
 
     # 2. Risk management
-    risk = check_risk_limits(mom_trades, fade_trades, state)
-    state["paused"] = {
-        "momentum": risk["mom_paused"],
-        "fade": risk["fade_paused"],
-    }
-    state["consecutive_losses"] = {
-        "momentum": risk["mom_consecutive_losses"],
-        "fade": risk["fade_consecutive_losses"],
-    }
+    risk = check_risk_limits(bot_trades, state)
     print(f"\nRisk: {risk['total_open']}/{INTEL_MAX_OPEN_TOTAL} positions  "
-          f"| Net P&L (7d): {risk['drawdown_7d']:+.1f}pp")
+          f"| 7d P&L: {risk['realized_7d']:+.1f}pp realized, {risk['unrealized']:+.1f}pp unrealized")
     if risk["warnings"]:
         for w in risk["warnings"]:
             print(f"  WARNING: {w}")
 
     # 3. Performance trends
-    trends = detect_performance_trends(mom_trades, fade_trades)
+    trends = detect_performance_trends(bot_trades)
     print(f"\nTrends:")
     for t in trends:
         print(f"  - {t}")
 
     # 4. Auto-adjustment
-    adjustments = compute_adjustments(mom_trades, fade_trades)
+    adjustments = compute_adjustments(bot_trades)
     if adjustments:
         print(f"\nAdjustments:")
         for a in adjustments:
@@ -636,9 +635,7 @@ def main():
     # 5. Daily report
     if should_send_report(state):
         print("\nSending daily intelligence report...")
-        report = build_daily_report(
-            mom_trades, fade_trades, conflicts, risk, trends, adjustments
-        )
+        report = build_daily_report(bot_trades, conflicts, risk, trends, adjustments)
         intel_report_alert(report)
         state["last_report"] = now_str()
         print("  Sent.")

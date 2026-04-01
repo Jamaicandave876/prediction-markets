@@ -52,12 +52,17 @@ def detect_signals() -> list[dict]:
     signals = []
 
     for m in markets:
-        bets = fetch_rich_bets(m["id"], limit=total_bets_needed)
+        bets = fetch_rich_bets(m["id"], limit=total_bets_needed + 5)
         if len(bets) < total_bets_needed:
             continue
 
+        # Need multiple unique traders
+        unique_traders = len(set(b["user_id"] for b in bets if b.get("user_id")))
+        if unique_traders < 3:
+            continue
+
         baseline_bets = bets[:BASELINE_BETS]
-        breakout_bets = bets[BASELINE_BETS:]
+        breakout_bets = bets[-BREAKOUT_BETS:]  # use LAST N bets for breakout
 
         # Check baseline stability
         baseline_probs = [b["prob_after"] * 100 for b in baseline_bets]

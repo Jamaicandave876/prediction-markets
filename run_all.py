@@ -55,6 +55,7 @@ def main():
         ("fresh_sniper_bot",    "8. Fresh Sniper Bot"),
         ("stability_bot",       "9. Stability Bot"),
         ("breakout_bot",        "10. Breakout Bot"),
+        ("calibration_bot",     "11. Calibration Bot"),
     ]
 
     print("\n--- TRADING BOTS ---\n")

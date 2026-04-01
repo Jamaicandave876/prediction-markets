@@ -59,6 +59,11 @@ def detect_signals() -> list[dict]:
         if len(bets) < MIN_BETS:
             continue
 
+        # Need multiple unique traders confirming the price level
+        unique_traders = len(set(b["user_id"] for b in bets if b.get("user_id")))
+        if unique_traders < 4:
+            continue
+
         probs_pct = [b["prob_after"] * 100 for b in bets]
         price_range = max(probs_pct) - min(probs_pct)
 

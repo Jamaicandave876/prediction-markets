@@ -66,11 +66,11 @@ FADE_MIN_REWARD_RATIO = 0.8   # minimum reward/risk ratio (filters out bad risk-
 # ══════════════════════════════════════════════════════════════════════════════
 
 # ── Risk Limits ───────────────────────────────────────────────────────────────
-INTEL_MAX_OPEN_TOTAL       = 20   # max open trades across all bots
+INTEL_MAX_OPEN_TOTAL       = 30   # max open trades across all 10 bots (~3 per bot)
 INTEL_MAX_OPEN_PER_BOT     = 5    # max open trades per individual bot
-INTEL_DRAWDOWN_LIMIT_PP    = -50  # pause if 7-day realized losses exceed this
-INTEL_PAUSE_AFTER_LOSSES   = 4    # pause a bot after this many consecutive losses
-INTEL_MAX_PAUSE_DAYS       = 3    # auto-unpause after this many days (prevents deadlock)
+INTEL_DRAWDOWN_LIMIT_PP    = -30  # pause if 7-day P&L (realized+unrealized) exceeds this
+INTEL_PAUSE_AFTER_LOSSES   = 5    # pause a bot after this many consecutive losses
+INTEL_MAX_PAUSE_DAYS       = 2    # auto-unpause after this many days (prevents deadlock)
 
 # ── Auto-Adjustment ──────────────────────────────────────────────────────────
 INTEL_LOOKBACK_TRADES      = 10   # how many recent closed trades to evaluate

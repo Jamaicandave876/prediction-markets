@@ -276,34 +276,27 @@ def check_exits(trades: list[dict], cfg: BotConfig,
         # Standard price-based exits
         if t["direction"] == "BUY YES":
             pnl = prob - entry
-            peak = t.get("peak_pnl", 0)
-            if pnl > peak:
-                t["peak_pnl"] = pnl
-                peak = pnl
-            if prob >= cfg.target_yes:
-                _close(t, prob, "target_hit", pnl, alert_fn)
-                closed += 1
-            elif pnl <= -cfg.stop_pp:
-                _close(t, prob, "stopped_out", pnl, alert_fn)
-                closed += 1
-            elif peak >= cfg.trailing_stop_pp and (peak - pnl) >= cfg.trailing_stop_pp:
-                _close(t, prob, "trailing_stop", pnl, alert_fn)
-                closed += 1
         else:
             pnl = entry - prob
-            peak = t.get("peak_pnl", 0)
-            if pnl > peak:
-                t["peak_pnl"] = pnl
-                peak = pnl
-            if prob <= cfg.target_no:
-                _close(t, prob, "target_hit", pnl, alert_fn)
-                closed += 1
-            elif pnl <= -cfg.stop_pp:
-                _close(t, prob, "stopped_out", pnl, alert_fn)
-                closed += 1
-            elif peak >= cfg.trailing_stop_pp and (peak - pnl) >= cfg.trailing_stop_pp:
-                _close(t, prob, "trailing_stop", pnl, alert_fn)
-                closed += 1
+
+        peak = t.get("peak_pnl", 0)
+        if pnl > peak:
+            t["peak_pnl"] = pnl
+            peak = pnl
+
+        if t["direction"] == "BUY YES" and prob >= cfg.target_yes:
+            _close(t, prob, "target_hit", pnl, alert_fn)
+            closed += 1
+        elif t["direction"] == "BUY NO" and prob <= cfg.target_no:
+            _close(t, prob, "target_hit", pnl, alert_fn)
+            closed += 1
+        elif pnl <= -cfg.stop_pp:
+            _close(t, prob, "stopped_out", pnl, alert_fn)
+            closed += 1
+        elif peak > 0 and (peak - pnl) >= cfg.trailing_stop_pp:
+            # Trailing stop: activates once ANY profit is seen
+            _close(t, prob, "trailing_stop", pnl, alert_fn)
+            closed += 1
 
     return trades, closed
 
@@ -410,7 +403,7 @@ def bot_summary_alert(metrics: dict, n_new: int, n_closed: int,
 
 def log_new_entries(signals: list[dict], trades: list[dict], cfg: BotConfig,
                     alert_fn: Callable | None = None) -> tuple[list[dict], int]:
-    """Generic entry logger. Prevents re-entry with 48h cooldown."""
+    """Generic entry logger. Prevents re-entry with 12h cooldown."""
     all_ids = {t["market_id"] for t in trades
                if t["status"] == "open"
                or (t["status"] == "closed" and days_since(t.get("exit_time", t["entry_time"])) < 0.5)}
@@ -419,8 +412,20 @@ def log_new_entries(signals: list[dict], trades: list[dict], cfg: BotConfig,
     portfolio_state = load_portfolio()
     balance = get_balance(portfolio_state)
 
+    # Cross-market position cap: max 2 open positions per market across ALL bots
+    all_trades = _collect_all_trades()
+    market_counts = {}
+    for t in all_trades:
+        if t["status"] == "open":
+            mid = t["market_id"]
+            market_counts[mid] = market_counts.get(mid, 0) + 1
+
     for s in signals:
         if s["market_id"] in all_ids:
+            continue
+
+        # Max 2 bots on the same market
+        if market_counts.get(s["market_id"], 0) >= 2:
             continue
 
         # Cross-bot conflict check
@@ -531,6 +536,7 @@ BOT_TRADE_FILES = [
     ("fresh_sniper_trades.json", "fresh_sniper_trades.backup.json"),
     ("stability_trades.json", "stability_trades.backup.json"),
     ("breakout_trades.json", "breakout_trades.backup.json"),
+    ("calibration_trades.json", "calibration_trades.backup.json"),
 ]
 
 

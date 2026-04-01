@@ -54,7 +54,12 @@ def detect_signals() -> list[dict]:
     signals = []
     for m in markets:
         bets = fetch_rich_bets(m["id"], limit=100)
-        if len(bets) < 10:
+        if len(bets) < 8:
+            continue
+
+        # Need multiple unique traders (not one person spamming)
+        unique_traders = len(set(b["user_id"] for b in bets if b.get("user_id")))
+        if unique_traders < 3:
             continue
 
         recent = [b for b in bets if b["time_ms"] >= recent_cutoff]
