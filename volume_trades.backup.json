@@ -7,14 +7,33 @@
     "entry_time": "2026-04-02 00:00 UTC",
     "url": "https://manifold.markets/LoganTurner/will-there-be-a-lethal-disaster-dur-6SEycL5luu",
     "stake": 80.0,
+    "status": "closed",
+    "exit_prob": 5.8,
+    "exit_time": "2026-04-02 01:03 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 6.9,
+    "volume_ratio": 7.5,
+    "net_flow": -453,
+    "recent_mana": 513,
+    "signal_strength": 0.7476351183854513,
+    "peak_pnl": 6.8999999999999995
+  },
+  {
+    "market_id": "NpLN9QLS6l",
+    "question": "Who is win hsg vs dc yes hsg no dc",
+    "direction": "BUY NO",
+    "entry_prob": 8.0,
+    "entry_time": "2026-04-02 01:03 UTC",
+    "url": "https://manifold.markets/Hitu/who-is-win-hsg-vs-dc-yes-hsg-no-dc",
+    "stake": 80.0,
     "status": "open",
     "exit_prob": null,
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null,
-    "volume_ratio": 7.5,
-    "net_flow": -453,
-    "recent_mana": 513,
-    "signal_strength": 0.7476351183854513
+    "volume_ratio": 3.9,
+    "net_flow": -484,
+    "recent_mana": 516,
+    "signal_strength": 0.3933676717288588
   }
 ]

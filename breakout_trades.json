@@ -1,1 +1,20 @@
-[]
+[
+  {
+    "market_id": "cNd05lL9SA",
+    "question": "Q-Day before 2030?",
+    "direction": "BUY NO",
+    "entry_prob": 15.9,
+    "entry_time": "2026-04-02 05:52 UTC",
+    "url": "https://manifold.markets/SG/qday-before-2030",
+    "stake": 78.8,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "baseline_range": 0.3,
+    "breakout_move": -7.2,
+    "breakout_strength": 7.2,
+    "signal_strength": 1.5
+  }
+]

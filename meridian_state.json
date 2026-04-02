@@ -1,26 +1,39 @@
 {
-  "last_run": "2026-04-02 01:04 UTC",
+  "last_run": "2026-04-02 05:52 UTC",
   "conflicts": [],
-  "overlaps": {},
+  "overlaps": {
+    "l5ttgczEut": [
+      "momentum",
+      "whale"
+    ],
+    "cqpLP0PAZn": [
+      "momentum",
+      "contrarian"
+    ],
+    "cNd05lL9SA": [
+      "volume_surge",
+      "breakout"
+    ]
+  },
   "direction_exposure": {
-    "yes_count": 6,
-    "no_count": 7,
-    "total": 13,
-    "yes_stake": 182.5,
-    "no_stake": 293.1,
-    "total_stake": 475.6,
-    "yes_pct": 38.4,
-    "balance": "NO-heavy"
+    "yes_count": 11,
+    "no_count": 11,
+    "total": 22,
+    "yes_stake": 362.8,
+    "no_stake": 456.6,
+    "total_stake": 819.4,
+    "yes_pct": 44.3,
+    "balance": "balanced"
   },
   "capital_weights": {
     "momentum": 1.0,
     "fade": 1.0,
     "mean_reversion": 1.0,
     "volume_surge": 1.0,
-    "whale": 1.0,
+    "whale": 0.6,
     "contrarian": 1.0,
     "close_gravity": 1.0,
-    "fresh_sniper": 1.0,
+    "fresh_sniper": 0.6,
     "stability": 1.0,
     "breakout": 1.0
   }

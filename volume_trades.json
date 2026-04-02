@@ -26,14 +26,33 @@
     "entry_time": "2026-04-02 01:03 UTC",
     "url": "https://manifold.markets/Hitu/who-is-win-hsg-vs-dc-yes-hsg-no-dc",
     "stake": 80.0,
+    "status": "closed",
+    "exit_prob": 5.0,
+    "exit_time": "2026-04-02 05:51 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 3.0,
+    "volume_ratio": 3.9,
+    "net_flow": -484,
+    "recent_mana": 516,
+    "signal_strength": 0.3933676717288588,
+    "peak_pnl": 3.0
+  },
+  {
+    "market_id": "cNd05lL9SA",
+    "question": "Q-Day before 2030?",
+    "direction": "BUY NO",
+    "entry_prob": 15.9,
+    "entry_time": "2026-04-02 05:51 UTC",
+    "url": "https://manifold.markets/SG/qday-before-2030",
+    "stake": 65.1,
     "status": "open",
     "exit_prob": null,
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null,
-    "volume_ratio": 3.9,
-    "net_flow": -484,
-    "recent_mana": 516,
-    "signal_strength": 0.3933676717288588
+    "volume_ratio": 4.2,
+    "net_flow": -25825,
+    "recent_mana": 25995,
+    "signal_strength": 0.41551346041668313
   }
 ]
