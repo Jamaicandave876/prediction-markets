@@ -1,1 +1,20 @@
-[]
+[
+  {
+    "market_id": "qd9260psg5",
+    "question": "Will there be a lethal disaster during the Artemis II mission? (duplicate)",
+    "direction": "BUY NO",
+    "entry_prob": 12.7,
+    "entry_time": "2026-04-02 00:00 UTC",
+    "url": "https://manifold.markets/LoganTurner/will-there-be-a-lethal-disaster-dur-6SEycL5luu",
+    "stake": 80.0,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "volume_ratio": 7.5,
+    "net_flow": -453,
+    "recent_mana": 513,
+    "signal_strength": 0.7476351183854513
+  }
+]

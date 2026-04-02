@@ -1,1 +1,56 @@
-[]
+[
+  {
+    "market_id": "8dONzhst6C",
+    "question": "Claude app redesign in April?",
+    "direction": "BUY NO",
+    "entry_prob": 15.1,
+    "entry_time": "2026-04-02 00:00 UTC",
+    "url": "https://manifold.markets/Bayesian/new-claude-app-design-in-april",
+    "stake": 80.0,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "open_prob": 50.0,
+    "move_from_open": 34.9,
+    "age_hours": 6.0,
+    "signal_strength": 1.1633333333333333
+  },
+  {
+    "market_id": "nLPdZR2d5d",
+    "question": "Will King Charles' trip to the US be cancelled?",
+    "direction": "BUY NO",
+    "entry_prob": 15.9,
+    "entry_time": "2026-04-02 00:00 UTC",
+    "url": "https://manifold.markets/TomQpup/will-king-charles-trip-to-the-us-be",
+    "stake": 80.0,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "open_prob": 50.0,
+    "move_from_open": 34.1,
+    "age_hours": 7.1,
+    "signal_strength": 1.1366666666666667
+  },
+  {
+    "market_id": "5hdRhCy60y",
+    "question": "Will I promote to Masters this season?",
+    "direction": "BUY NO",
+    "entry_prob": 18.5,
+    "entry_time": "2026-04-02 00:00 UTC",
+    "url": "https://manifold.markets/100Anonymous/will-i-promote-to-masters-this-seas-ySpEN5NOdc",
+    "stake": 80.0,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "open_prob": 50.0,
+    "move_from_open": 31.5,
+    "age_hours": 12.7,
+    "signal_strength": 1.05
+  }
+]

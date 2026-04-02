@@ -1,1 +1,53 @@
-[]
+[
+  {
+    "market_id": "cNd05lL9SA",
+    "question": "Q-Day before 2030?",
+    "direction": "BUY NO",
+    "entry_prob": 23.3,
+    "entry_time": "2026-04-02 00:00 UTC",
+    "url": "https://manifold.markets/SG/qday-before-2030",
+    "stake": 80.0,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "whale_amount": 6942,
+    "price_impact": 3.3,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "8dONzhst6C",
+    "question": "Claude app redesign in April?",
+    "direction": "BUY NO",
+    "entry_prob": 15.1,
+    "entry_time": "2026-04-02 00:00 UTC",
+    "url": "https://manifold.markets/Bayesian/new-claude-app-design-in-april",
+    "stake": 80.0,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "whale_amount": 500,
+    "price_impact": 9.3,
+    "signal_strength": 0.5
+  },
+  {
+    "market_id": "QUlUpzqyNh",
+    "question": "Will this market get at least 50 unique traders before May?",
+    "direction": "BUY YES",
+    "entry_prob": 79.8,
+    "entry_time": "2026-04-02 00:00 UTC",
+    "url": "https://manifold.markets/johnNZOy/will-this-market-get-at-least-50-un-62LcQ6tNsR",
+    "stake": 61.9,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "whale_amount": 500,
+    "price_impact": 20.7,
+    "signal_strength": 0.5
+  }
+]
