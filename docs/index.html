@@ -73,6 +73,11 @@
   .t-whale{background:#1a1a3d;color:#8b8bff} .t-contrarian{background:#3d0f2d;color:var(--pink)}
   .t-close_gravity{background:#2d2d0f;color:var(--yellow)} .t-fresh_sniper{background:#0f2d1a;color:var(--green)}
   .t-stability{background:#1a2d2d;color:var(--teal)} .t-breakout{background:#3d1a0f;color:#ff9a5c}
+  .t-calibration{background:#2d1a3d;color:#d2a8ff} .t-reversal{background:#3d2d0f;color:#ffc680}
+  .t-smart_money{background:#0f2d3d;color:#80d4ff} .t-time_decay{background:#2d0f2d;color:#e09fff}
+  .t-sentiment{background:#1a3d2d;color:#80ffaa} .t-accumulation{background:#3d3d0f;color:#e3e380}
+  .t-underdog{background:#0f3d3d;color:#80e0e0} .t-late_mover{background:#2d3d1a;color:#b0e080}
+  .t-hedge{background:#1a1a3d;color:#a0a0ff} .t-liquidation{background:#3d0f1a;color:#ff8090}
   .t-yes{background:#0f2d1a;color:var(--green)} .t-no{background:#3d1419;color:var(--red)}
   .pbar { margin-top: 6px; height: 4px; background: var(--border); border-radius: 2px; position: relative; }
   .pm { position: absolute; top: -3px; width: 10px; height: 10px; border-radius: 50%; transform: translateX(-50%); }
@@ -128,7 +133,10 @@ const API = 'https://api.manifold.markets/v0';
 const NAMES = {
   momentum:'Momentum', fade:'Fade', mean_reversion:'Mean Rev',
   volume_surge:'Vol Surge', whale:'Whale', contrarian:'Contrarian',
-  close_gravity:'Gravity', fresh_sniper:'Sniper', stability:'Stable', breakout:'Breakout'
+  close_gravity:'Gravity', fresh_sniper:'Sniper', stability:'Stable', breakout:'Breakout',
+  calibration:'Calibration', reversal:'Reversal', smart_money:'Smart $',
+  time_decay:'Time Decay', sentiment:'Sentiment', accumulation:'Accumulate',
+  underdog:'Underdog', late_mover:'Late Mover', hedge:'Hedge', liquidation:'Liquidation'
 };
 const FILES = [
   ['momentum','trades.json'],['fade','fade_trades.json'],
@@ -136,6 +144,11 @@ const FILES = [
   ['whale','whale_trades.json'],['contrarian','contrarian_trades.json'],
   ['close_gravity','close_gravity_trades.json'],['fresh_sniper','fresh_sniper_trades.json'],
   ['stability','stability_trades.json'],['breakout','breakout_trades.json'],
+  ['calibration','calibration_trades.json'],['reversal','reversal_trades.json'],
+  ['smart_money','smart_money_trades.json'],['time_decay','time_decay_trades.json'],
+  ['sentiment','sentiment_trades.json'],['accumulation','accumulation_trades.json'],
+  ['underdog','underdog_trades.json'],['late_mover','late_mover_trades.json'],
+  ['hedge','hedge_trades.json'],['liquidation','liquidation_trades.json'],
 ];
 
 let D = null;
@@ -218,7 +231,7 @@ async function refresh() {
 
   // Fetch live prices for open positions (max 15 to avoid rate limits)
   let unrealized = 0;
-  const pricePromises = allOpen.slice(0, 15).map(async t => {
+  const pricePromises = allOpen.slice(0, 30).map(async t => {
     const live = await fetchProb(t.market_id);
     const entry = t.entry_prob;
     const stake = t.stake || starting * .05;
@@ -265,7 +278,7 @@ function render() {
     `<div class="gov-chip">${g.regime.toUpperCase()}</div>` +
     `<div class="gov-chip">${g.dir}</div>` +
     `<div class="gov-chip">${D.positions.length} open</div>` +
-    `<div class="gov-chip">${Object.values(D.botStats).filter(b=>!b.paused&&(b.open>0||b.closed>0)).length}/10 active</div>`;
+    `<div class="gov-chip">${Object.values(D.botStats).filter(b=>!b.paused&&(b.open>0||b.closed>0)).length}/20 active</div>`;
 
   // Cards
   document.getElementById('cards').innerHTML = `
