@@ -18,5 +18,24 @@
     "divergence_score": 9.22,
     "signal_strength": 1.5,
     "peak_pnl": 3.3000000000000007
+  },
+  {
+    "market_id": "QUlUpzqyNh",
+    "question": "Will this market get at least 50 unique traders before May?",
+    "direction": "BUY NO",
+    "entry_prob": 78.5,
+    "entry_time": "2026-04-02 15:39 UTC",
+    "url": "https://manifold.markets/johnNZOy/will-this-market-get-at-least-50-un-62LcQ6tNsR",
+    "stake": 20,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "YES",
+    "crowd_pct": 75.0,
+    "price_move": -1.8,
+    "divergence_score": 1.33,
+    "signal_strength": 0.27
   }
 ]

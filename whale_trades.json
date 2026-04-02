@@ -65,7 +65,8 @@
     "pnl_pp": null,
     "whale_amount": 500,
     "price_impact": 1.5,
-    "signal_strength": 0.5
+    "signal_strength": 0.5,
+    "peak_pnl": 1.5
   },
   {
     "market_id": "zqUOdLndhE",
@@ -84,5 +85,56 @@
     "price_impact": 11.3,
     "signal_strength": 0.25,
     "peak_pnl": 0.6000000000000014
+  },
+  {
+    "market_id": "cNd05lL9SA",
+    "question": "Q-Day before 2030?",
+    "direction": "BUY NO",
+    "entry_prob": 16.1,
+    "entry_time": "2026-04-02 15:38 UTC",
+    "url": "https://manifold.markets/SG/qday-before-2030",
+    "stake": 79.9,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "whale_amount": 15000,
+    "price_impact": 4.7,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "p5dO5PpAs2",
+    "question": "Will the price of private education in Japan be cheaper in 5 years?",
+    "direction": "BUY NO",
+    "entry_prob": 48.1,
+    "entry_time": "2026-04-02 15:38 UTC",
+    "url": "https://manifold.markets/Quillist/will-the-price-of-private-education",
+    "stake": 39.9,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "whale_amount": 2250,
+    "price_impact": 9.5,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "cNINOgdn2N",
+    "question": "Will the US seize the Iranian uranium?",
+    "direction": "BUY YES",
+    "entry_prob": 29.5,
+    "entry_time": "2026-04-02 15:38 UTC",
+    "url": "https://manifold.markets/MachiNi/will-the-us-get-the-iranian-uranium",
+    "stake": 20,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "whale_amount": 400,
+    "price_impact": 15.7,
+    "signal_strength": 0.4
   }
 ]

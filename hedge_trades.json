@@ -35,6 +35,7 @@
     "related_prob": 63.5,
     "word_overlap": 100.0,
     "mispricing_pp": 39.7,
-    "signal_strength": 1.32
+    "signal_strength": 1.32,
+    "peak_pnl": 1.3000000000000007
   }
 ]

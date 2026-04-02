@@ -1,1 +1,20 @@
-[]
+[
+  {
+    "market_id": "RcRy5POOpq",
+    "question": "Will the US/Israel strike 3 or more Iranian power plants in April 2026",
+    "direction": "BUY NO",
+    "entry_prob": 60.7,
+    "pre_spike_prob": 46.4,
+    "spike_size": 14.3,
+    "spike_ratio": 10.3,
+    "spike_dir": 1,
+    "entry_time": "2026-04-02 15:38 UTC",
+    "url": "https://manifold.markets/vdb/will-the-usisrael-strike-3-or-more",
+    "stake": 50.0,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
+  }
+]

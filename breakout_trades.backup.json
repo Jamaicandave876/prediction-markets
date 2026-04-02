@@ -7,14 +7,15 @@
     "entry_time": "2026-04-02 05:52 UTC",
     "url": "https://manifold.markets/SG/qday-before-2030",
     "stake": 78.8,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 15.7,
+    "exit_time": "2026-04-02 09:40 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 0.2,
     "baseline_range": 0.3,
     "breakout_move": -7.2,
     "breakout_strength": 7.2,
-    "signal_strength": 1.5
+    "signal_strength": 1.5,
+    "peak_pnl": 0.20000000000000107
   }
 ]

@@ -82,6 +82,7 @@
     "pnl_pp": null,
     "whale_amount": 250,
     "price_impact": 11.3,
-    "signal_strength": 0.25
+    "signal_strength": 0.25,
+    "peak_pnl": 0.6000000000000014
   }
 ]

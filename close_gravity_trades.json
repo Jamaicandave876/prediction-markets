@@ -15,5 +15,22 @@
     "drift_score": -3.78,
     "consistency": 52.6,
     "signal_strength": 0.378
+  },
+  {
+    "market_id": "ILd5dhPgEp",
+    "question": "Will I have a \"Successful Week\", based on the objective scoring criteria below? (MID SEMESTER COLLAPSE BONUS ROUND)",
+    "direction": "BUY YES",
+    "entry_prob": 77.0,
+    "entry_time": "2026-04-02 15:38 UTC",
+    "url": "https://manifold.markets/gorillawarfare/will-i-have-a-successful-week-based-nN6sc0dZO0",
+    "stake": 79.9,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "drift_score": 15.0,
+    "consistency": 62.1,
+    "signal_strength": 1.5
   }
 ]

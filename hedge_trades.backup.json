@@ -1,1 +1,40 @@
-[]
+[
+  {
+    "market_id": "p8USRRU02t",
+    "question": "Bitcoin $78K in April?",
+    "direction": "BUY YES",
+    "entry_prob": 22.3,
+    "entry_time": "2026-04-02 09:41 UTC",
+    "url": "https://manifold.markets/predyx_markets/bitcoin-78k-in-april",
+    "stake": 44.0,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "related_market": "Bitcoin $64K in April?",
+    "related_prob": 63.5,
+    "word_overlap": 100.0,
+    "mispricing_pp": 41.2,
+    "signal_strength": 1.37
+  },
+  {
+    "market_id": "R5gtEPsUqI",
+    "question": "Bitcoin $58K in April?",
+    "direction": "BUY YES",
+    "entry_prob": 23.8,
+    "entry_time": "2026-04-02 09:41 UTC",
+    "url": "https://manifold.markets/predyx_markets/bitcoin-58k-in-april",
+    "stake": 43.2,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "related_market": "Bitcoin $64K in April?",
+    "related_prob": 63.5,
+    "word_overlap": 100.0,
+    "mispricing_pp": 39.7,
+    "signal_strength": 1.32
+  }
+]
