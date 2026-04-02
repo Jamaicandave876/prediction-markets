@@ -1,1 +1,47 @@
-[]
+[
+  {
+    "market_id": "8hCC2S9tUU",
+    "question": "Will \"The Super Mario Galaxy Movie\" gross over $185 million in its 5-day domestic opening weekend?",
+    "direction": "BUY NO",
+    "entry_prob": 36.3,
+    "entry_time": "2026-04-01 23:59 UTC",
+    "drift_score": -42.03,
+    "url": "https://manifold.markets/ShaneBo/will-the-super-mario-galaxy-movie-g",
+    "stake": 50.0,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
+  },
+  {
+    "market_id": "CqptuuhR5c",
+    "question": "Bitcoin $64K in April?",
+    "direction": "BUY YES",
+    "entry_prob": 51.5,
+    "entry_time": "2026-04-01 23:59 UTC",
+    "drift_score": 9.0,
+    "url": "https://manifold.markets/predyx_markets/bitcoin-64k-in-april",
+    "stake": 50.0,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
+  },
+  {
+    "market_id": "l5ttgczEut",
+    "question": "Will US average gas price reach $4.300 in April, 2026?",
+    "direction": "BUY YES",
+    "entry_prob": 64.0,
+    "entry_time": "2026-04-01 23:59 UTC",
+    "drift_score": 23.34,
+    "url": "https://manifold.markets/vdb/will-us-average-gas-price-reach-430",
+    "stake": 50.0,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
+  }
+]
