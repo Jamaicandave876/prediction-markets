@@ -1,1 +1,19 @@
-[]
+[
+  {
+    "market_id": "0gI6PnhO6Z",
+    "question": "Recession in Australia in 2026?",
+    "direction": "BUY NO",
+    "entry_prob": 30.8,
+    "entry_time": "2026-04-02 15:39 UTC",
+    "url": "https://manifold.markets/brod/recession-in-australia-in-2026",
+    "stake": 20,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "hours_stale": 27.6,
+    "staleness_score": 0.22,
+    "signal_strength": 0.22
+  }
+]

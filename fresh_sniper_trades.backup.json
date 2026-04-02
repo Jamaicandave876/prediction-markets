@@ -144,5 +144,41 @@
     "move_from_open": 21.0,
     "age_hours": 18.8,
     "signal_strength": 0.7
+  },
+  {
+    "market_id": "QqUntRuSQh",
+    "question": "tesla robot will 'Walk' on the moon in 2028",
+    "direction": "BUY NO",
+    "entry_prob": 20.8,
+    "entry_time": "2026-04-02 15:39 UTC",
+    "url": "https://manifold.markets/VictorMeldrewSnr/tesla-robot-will-walk-on-the-moon-i",
+    "stake": 79.9,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "open_prob": 50.0,
+    "move_from_open": 29.2,
+    "age_hours": 23.6,
+    "signal_strength": 0.9733333333333333
+  },
+  {
+    "market_id": "pCSOS9pcPQ",
+    "question": "will Anthropic have another leak in April 2026?",
+    "direction": "BUY NO",
+    "entry_prob": 22.6,
+    "entry_time": "2026-04-02 15:39 UTC",
+    "url": "https://manifold.markets/duck_master/will-anthropic-have-another-leak-in",
+    "stake": 79.9,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "open_prob": 50.0,
+    "move_from_open": 27.4,
+    "age_hours": 9.9,
+    "signal_strength": 0.9133333333333333
   }
 ]

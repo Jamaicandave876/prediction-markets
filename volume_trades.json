@@ -91,7 +91,8 @@
     "volume_ratio": 12.7,
     "net_flow": -139,
     "recent_mana": 343,
-    "signal_strength": 1.2705988048974148
+    "signal_strength": 1.2705988048974148,
+    "peak_pnl": 1.1000000000000014
   },
   {
     "market_id": "CqptuuhR5c",
@@ -110,5 +111,23 @@
     "net_flow": 334,
     "recent_mana": 466,
     "signal_strength": 0.5539462416022513
+  },
+  {
+    "market_id": "5AOL2qdUcN",
+    "question": "Will Trump end the Russia-Ukraine war within 24 months of his inauguration?",
+    "direction": "BUY NO",
+    "entry_prob": 26.0,
+    "entry_time": "2026-04-02 20:01 UTC",
+    "url": "https://manifold.markets/GazDownright/will-trump-end-the-russiaukraine-wa-dsOtuQOUlQ",
+    "stake": 20,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "volume_ratio": 2.0,
+    "net_flow": -227,
+    "recent_mana": 313,
+    "signal_strength": 0.20103875909694735
   }
 ]

@@ -1,16 +1,19 @@
 {
   "paused": {
-    "fresh_sniper": false
+    "fresh_sniper": false,
+    "whale": true
   },
-  "pause_start": {},
+  "pause_start": {
+    "whale": "2026-04-02 20:02 UTC"
+  },
   "bot_scores": {
     "momentum": {
       "score": 50,
       "win_rate": 0,
       "avg_pnl": 0,
       "total_pnl": 0,
-      "closed": 0,
-      "open": 5,
+      "closed": 1,
+      "open": 4,
       "grade": "NEW"
     },
     "fade": {
@@ -37,16 +40,16 @@
       "avg_pnl": 3.0,
       "total_pnl": 11.9,
       "closed": 4,
-      "open": 2,
+      "open": 3,
       "grade": "A"
     },
     "whale": {
-      "score": 20.0,
+      "score": 16.8,
       "win_rate": 0.0,
-      "avg_pnl": 0.0,
-      "total_pnl": 0.0,
-      "closed": 3,
-      "open": 5,
+      "avg_pnl": -1.6,
+      "total_pnl": -8.0,
+      "closed": 5,
+      "open": 3,
       "grade": "F"
     },
     "contrarian": {
@@ -64,16 +67,16 @@
       "avg_pnl": 0,
       "total_pnl": 0,
       "closed": 0,
-      "open": 2,
+      "open": 3,
       "grade": "NEW"
     },
     "fresh_sniper": {
-      "score": 40.8,
-      "win_rate": 33.3,
-      "avg_pnl": 0.4,
-      "total_pnl": 2.4,
-      "closed": 6,
-      "open": 4,
+      "score": 35.4,
+      "win_rate": 25.0,
+      "avg_pnl": 0.2,
+      "total_pnl": 1.7,
+      "closed": 8,
+      "open": 3,
       "grade": "D"
     },
     "stability": {
@@ -96,14 +99,14 @@
     }
   },
   "consecutive_losses": {
-    "momentum": 0,
+    "momentum": 1,
     "fade": 0,
     "mean_reversion": 0,
     "volume_surge": 0,
-    "whale": 3,
+    "whale": 5,
     "contrarian": 0,
     "close_gravity": 0,
-    "fresh_sniper": 0,
+    "fresh_sniper": 2,
     "stability": 0,
     "breakout": 0
   },
