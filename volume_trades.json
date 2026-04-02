@@ -45,14 +45,33 @@
     "entry_time": "2026-04-02 05:51 UTC",
     "url": "https://manifold.markets/SG/qday-before-2030",
     "stake": 65.1,
+    "status": "closed",
+    "exit_prob": 15.7,
+    "exit_time": "2026-04-02 09:40 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 0.2,
+    "volume_ratio": 4.2,
+    "net_flow": -25825,
+    "recent_mana": 25995,
+    "signal_strength": 0.41551346041668313,
+    "peak_pnl": 0.20000000000000107
+  },
+  {
+    "market_id": "SuhU6lLQnI",
+    "question": "Will temperature of Paris be above 8 degree on Saturday (4th April)",
+    "direction": "BUY YES",
+    "entry_prob": 91.0,
+    "entry_time": "2026-04-02 09:40 UTC",
+    "url": "https://manifold.markets/Anujpanchal/will-temperature-of-paris-be-above",
+    "stake": 79.0,
     "status": "open",
     "exit_prob": null,
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null,
-    "volume_ratio": 4.2,
-    "net_flow": -25825,
-    "recent_mana": 25995,
-    "signal_strength": 0.41551346041668313
+    "volume_ratio": 5.6,
+    "net_flow": 155,
+    "recent_mana": 165,
+    "signal_strength": 0.5580916004681182
   }
 ]

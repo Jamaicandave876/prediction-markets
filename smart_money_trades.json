@@ -37,5 +37,24 @@
     "conviction_score": 10.86,
     "signal_strength": 1.5,
     "peak_pnl": 4.5
+  },
+  {
+    "market_id": "cNd05lL9SA",
+    "question": "Q-Day before 2030?",
+    "direction": "BUY NO",
+    "entry_prob": 15.7,
+    "entry_time": "2026-04-02 09:40 UTC",
+    "url": "https://manifold.markets/SG/qday-before-2030",
+    "stake": 79.8,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 2,
+    "smart_user_mana": 11211,
+    "price_impact": 5.0,
+    "conviction_score": 44.78,
+    "signal_strength": 1.5
   }
 ]

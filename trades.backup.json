@@ -12,7 +12,8 @@
     "exit_prob": null,
     "exit_time": null,
     "exit_reason": null,
-    "pnl_pp": null
+    "pnl_pp": null,
+    "peak_pnl": 1.2999999999999972
   },
   {
     "market_id": "CqptuuhR5c",
@@ -27,7 +28,8 @@
     "exit_prob": null,
     "exit_time": null,
     "exit_reason": null,
-    "pnl_pp": null
+    "pnl_pp": null,
+    "peak_pnl": 12.299999999999997
   },
   {
     "market_id": "l5ttgczEut",
@@ -43,6 +45,36 @@
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null,
-    "peak_pnl": 0.20000000000000284
+    "peak_pnl": 4.799999999999997
+  },
+  {
+    "market_id": "5ztuCIqnuL",
+    "question": "Bitcoin 60000\u20ac at the end of april?",
+    "direction": "BUY NO",
+    "entry_prob": 35.9,
+    "entry_time": "2026-04-02 05:51 UTC",
+    "drift_score": -19.82,
+    "url": "https://manifold.markets/Tymothyy/bitcoin-60000-end-of-april",
+    "stake": 49.9,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
+  },
+  {
+    "market_id": "cqpLP0PAZn",
+    "question": "Bitcoin $62K in April?",
+    "direction": "BUY YES",
+    "entry_prob": 48.5,
+    "entry_time": "2026-04-02 05:51 UTC",
+    "drift_score": 7.19,
+    "url": "https://manifold.markets/predyx_markets/bitcoin-62k-in-april",
+    "stake": 49.9,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]

@@ -49,5 +49,39 @@
     "whale_amount": 500,
     "price_impact": 20.7,
     "signal_strength": 0.5
+  },
+  {
+    "market_id": "l5ttgczEut",
+    "question": "Will US average gas price reach $4.300 in April, 2026?",
+    "direction": "BUY YES",
+    "entry_prob": 68.8,
+    "entry_time": "2026-04-02 05:51 UTC",
+    "url": "https://manifold.markets/vdb/will-us-average-gas-price-reach-430",
+    "stake": 20.5,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "whale_amount": 500,
+    "price_impact": 1.5,
+    "signal_strength": 0.5
+  },
+  {
+    "market_id": "zqUOdLndhE",
+    "question": "Will LoveFrom + OpenAI ship a consumer product before 2030",
+    "direction": "BUY NO",
+    "entry_prob": 41.4,
+    "entry_time": "2026-04-02 05:51 UTC",
+    "url": "https://manifold.markets/DavidFWatson/will-lovefrom-openai-ship-a-consume-Rnun8IugA6",
+    "stake": 20,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "whale_amount": 250,
+    "price_impact": 11.3,
+    "signal_strength": 0.25
   }
 ]

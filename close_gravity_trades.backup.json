@@ -1,1 +1,19 @@
-[]
+[
+  {
+    "market_id": "d6d6zngPcZ",
+    "question": "Will the S&P500 be within 1% of all time high at the end of Apr 2026?",
+    "direction": "BUY NO",
+    "entry_prob": 23.2,
+    "entry_time": "2026-04-02 05:51 UTC",
+    "url": "https://manifold.markets/Magnify/will-the-sp500-be-within-1-of-all-t-q9h06np9hZ",
+    "stake": 40.2,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "drift_score": -3.78,
+    "consistency": 52.6,
+    "signal_strength": 0.378
+  }
+]
