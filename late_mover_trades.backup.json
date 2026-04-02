@@ -15,5 +15,39 @@
     "hours_stale": 27.6,
     "staleness_score": 0.22,
     "signal_strength": 0.22
+  },
+  {
+    "market_id": "NQpShhR8OP",
+    "question": "Number of tornadoes in the U.S. in April 2026 exceeds average?",
+    "direction": "BUY YES",
+    "entry_prob": 59.0,
+    "entry_time": "2026-04-02 20:02 UTC",
+    "url": "https://manifold.markets/Zacd/number-of-tornadoes-in-the-us-in-ap",
+    "stake": 20,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "hours_stale": 49.7,
+    "staleness_score": 0.19,
+    "signal_strength": 0.19
+  },
+  {
+    "market_id": "RSt5zLQZs6",
+    "question": "Will CO2 pass a daily average of 432.55 ppm at Mauna Loa on any day in 2026?",
+    "direction": "BUY YES",
+    "entry_prob": 55.0,
+    "entry_time": "2026-04-02 20:02 UTC",
+    "url": "https://manifold.markets/Better369/will-co2-pass-a-daily-average-of-43",
+    "stake": 20,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "hours_stale": 51.7,
+    "staleness_score": 0.11,
+    "signal_strength": 0.11
   }
 ]

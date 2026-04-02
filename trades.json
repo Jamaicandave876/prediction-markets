@@ -77,5 +77,20 @@
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null
+  },
+  {
+    "market_id": "ZZRAP59Egn",
+    "question": "Will there be an AI loss of control incident that causes over $100 million in damages in 2026?",
+    "direction": "BUY NO",
+    "entry_prob": 41.0,
+    "entry_time": "2026-04-02 22:53 UTC",
+    "drift_score": -6.87,
+    "url": "https://manifold.markets/waterlilly/will-there-be-an-ai-loss-of-control",
+    "stake": 39.6,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]
