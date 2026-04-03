@@ -76,7 +76,8 @@
     "crowd_pct": 60.0,
     "price_move": -16.8,
     "divergence_score": 10.06,
-    "signal_strength": 1.5
+    "signal_strength": 1.5,
+    "peak_pnl": 2.5000000000000036
   },
   {
     "market_id": "zACQ82SQd6",

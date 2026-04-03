@@ -67,7 +67,7 @@
     "drift_score": -1.07,
     "consistency": 53.2,
     "signal_strength": 0.10700000000000001,
-    "peak_pnl": 0.3999999999999986
+    "peak_pnl": 0.6000000000000014
   },
   {
     "market_id": "8hCC2S9tUU",
@@ -84,6 +84,7 @@
     "pnl_pp": null,
     "drift_score": 55.99,
     "consistency": 56.2,
-    "signal_strength": 5.599
+    "signal_strength": 5.599,
+    "peak_pnl": 0.9000000000000057
   }
 ]

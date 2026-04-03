@@ -290,5 +290,41 @@
     "move_from_open": 13.8,
     "age_hours": 26.2,
     "signal_strength": 0.4594447624180752
+  },
+  {
+    "market_id": "ndtECCSg2l",
+    "question": "Will the US-Iran war end before the 2026 midterm elections?",
+    "direction": "BUY YES",
+    "entry_prob": 59.0,
+    "entry_time": "2026-04-03 19:56 UTC",
+    "url": "https://manifold.markets/Terminator2/will-the-usiran-war-end-before-the",
+    "stake": 41.3,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "open_prob": 25.0,
+    "move_from_open": 34.0,
+    "age_hours": 2.6,
+    "signal_strength": 1.1333333333333333
+  },
+  {
+    "market_id": "9hqshAI65L",
+    "question": "Will OpenAI Spud launch to the public before Claude Mythos?",
+    "direction": "BUY YES",
+    "entry_prob": 78.4,
+    "entry_time": "2026-04-03 19:56 UTC",
+    "url": "https://manifold.markets/eapache/which-will-launch-first-openai-spud",
+    "stake": 65.4,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "open_prob": 50.0,
+    "move_from_open": 28.4,
+    "age_hours": 17.0,
+    "signal_strength": 0.9466666666666669
   }
 ]
