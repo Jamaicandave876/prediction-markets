@@ -7,11 +7,11 @@
     "entry_time": "2026-04-02 00:01 UTC",
     "url": "https://manifold.markets/ShaneBo/artemis-2-will-a-safety-test-or-oth",
     "stake": 20.7,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 0.0,
+    "exit_time": "2026-04-03 05:53 UTC",
+    "exit_reason": "resolved_loss",
+    "pnl_pp": -14.2,
     "liquidation_size": 250,
     "liquidation_impact": 5.7,
     "liquidation_dir": "NO",
@@ -93,6 +93,7 @@
     "liquidation_impact": 16.7,
     "liquidation_dir": "NO",
     "impact_score": 6.68,
-    "signal_strength": 1.5
+    "signal_strength": 1.5,
+    "peak_pnl": 4.600000000000001
   }
 ]

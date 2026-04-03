@@ -153,5 +153,24 @@
     "price_move": -1.0,
     "absorption_score": 0.6,
     "signal_strength": 0.6
+  },
+  {
+    "market_id": "sPqOczl6A2",
+    "question": "Democratic aligned candidate vote % in 50-60% range in the 2026 Wisconsin Supreme Court Election on April 7?",
+    "direction": "BUY NO",
+    "entry_prob": 77.7,
+    "entry_time": "2026-04-03 08:36 UTC",
+    "url": "https://manifold.markets/Jack1/democratic-aligned-candidate-vote-i-t6ZIIpsPqO",
+    "stake": 20,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_direction": "YES",
+    "crowd_pct": 69.2,
+    "price_move": 2.7,
+    "absorption_score": 0.51,
+    "signal_strength": 0.51
   }
 ]
