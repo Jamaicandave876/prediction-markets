@@ -58,5 +58,43 @@
     "divergence_score": 6.72,
     "signal_strength": 1.34,
     "peak_pnl": 0.19999999999999574
+  },
+  {
+    "market_id": "ZZRAP59Egn",
+    "question": "Will there be an AI loss of control incident that causes over $100 million in damages in 2026?",
+    "direction": "BUY NO",
+    "entry_prob": 33.2,
+    "entry_time": "2026-04-03 14:29 UTC",
+    "url": "https://manifold.markets/waterlilly/will-there-be-an-ai-loss-of-control",
+    "stake": 67.7,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "YES",
+    "crowd_pct": 60.0,
+    "price_move": -16.8,
+    "divergence_score": 10.06,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "zACQ82SQd6",
+    "question": "Bitcoin $60K in April?",
+    "direction": "BUY YES",
+    "entry_prob": 39.4,
+    "entry_time": "2026-04-03 14:29 UTC",
+    "url": "https://manifold.markets/predyx_markets/bitcoin-60k-in-april",
+    "stake": 20.5,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "NO",
+    "crowd_pct": 70.0,
+    "price_move": 5.9,
+    "divergence_score": 4.14,
+    "signal_strength": 0.83
   }
 ]

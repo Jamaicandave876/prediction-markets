@@ -66,7 +66,7 @@
     "whale_amount": 500,
     "price_impact": 1.5,
     "signal_strength": 0.5,
-    "peak_pnl": 2.4000000000000057
+    "peak_pnl": 4.6000000000000085
   },
   {
     "market_id": "zqUOdLndhE",
@@ -162,15 +162,15 @@
     "entry_time": "2026-04-03 05:52 UTC",
     "url": "https://manifold.markets/ShaneBo/will-the-super-mario-galaxy-movie-g",
     "stake": 20,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 77.3,
+    "exit_time": "2026-04-03 17:01 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 16.1,
     "whale_amount": 500,
     "price_impact": 24.8,
     "signal_strength": 0.5,
-    "peak_pnl": 11.5
+    "peak_pnl": 16.099999999999994
   },
   {
     "market_id": "CqptuuhR5c",
@@ -188,5 +188,22 @@
     "whale_amount": 500,
     "price_impact": 10.0,
     "signal_strength": 0.5
+  },
+  {
+    "market_id": "l2UcqtzuPZ",
+    "question": "Will Gemma 4 124B be released?",
+    "direction": "BUY NO",
+    "entry_prob": 23.6,
+    "entry_time": "2026-04-03 17:01 UTC",
+    "url": "https://manifold.markets/Bayesian/will-gemma-4-124b-be-released",
+    "stake": 24.8,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "whale_amount": 250,
+    "price_impact": 6.2,
+    "signal_strength": 0.25
   }
 ]

@@ -7,11 +7,11 @@
     "entry_time": "2026-04-02 05:51 UTC",
     "url": "https://manifold.markets/Magnify/will-the-sp500-be-within-1-of-all-t-q9h06np9hZ",
     "stake": 40.2,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 27.0,
+    "exit_time": "2026-04-03 14:28 UTC",
+    "exit_reason": "trailing_stop",
+    "pnl_pp": -3.8,
     "drift_score": -3.78,
     "consistency": 52.6,
     "signal_strength": 0.378,
@@ -67,6 +67,6 @@
     "drift_score": -1.07,
     "consistency": 53.2,
     "signal_strength": 0.10700000000000001,
-    "peak_pnl": 0.10000000000000142
+    "peak_pnl": 0.3999999999999986
   }
 ]
