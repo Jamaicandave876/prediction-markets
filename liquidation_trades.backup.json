@@ -113,6 +113,7 @@
     "liquidation_impact": 5.5,
     "liquidation_dir": "NO",
     "impact_score": 1.11,
-    "signal_strength": 0.55
+    "signal_strength": 0.55,
+    "peak_pnl": 4.899999999999999
   }
 ]

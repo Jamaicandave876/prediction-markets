@@ -48,6 +48,7 @@
     "pnl_pp": null,
     "days_to_close": 27.7,
     "decay_strength": 0.29,
-    "signal_strength": 0.29
+    "signal_strength": 0.29,
+    "peak_pnl": 0.09999999999999432
   }
 ]

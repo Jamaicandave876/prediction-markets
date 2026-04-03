@@ -41,20 +41,20 @@
       "grade": "NEW"
     },
     "volume_surge": {
-      "score": 68.0,
-      "win_rate": 77.8,
-      "avg_pnl": 0.7,
+      "score": 63.2,
+      "win_rate": 70.0,
+      "avg_pnl": 0.6,
       "total_pnl": 5.9,
-      "closed": 9,
-      "open": 5,
-      "grade": "B"
+      "closed": 10,
+      "open": 4,
+      "grade": "C"
     },
     "whale": {
-      "score": 29.5,
-      "win_rate": 12.5,
-      "avg_pnl": 1.0,
+      "score": 28.5,
+      "win_rate": 11.1,
+      "avg_pnl": 0.9,
       "total_pnl": 8.1,
-      "closed": 8,
+      "closed": 9,
       "open": 4,
       "grade": "F"
     },
@@ -82,7 +82,7 @@
       "avg_pnl": 1.7,
       "total_pnl": 6.5,
       "closed": 13,
-      "open": 3,
+      "open": 5,
       "grade": "D"
     },
     "stability": {
@@ -108,8 +108,8 @@
     "momentum": 0,
     "fade": 0,
     "mean_reversion": 0,
-    "volume_surge": 0,
-    "whale": 0,
+    "volume_surge": 1,
+    "whale": 1,
     "contrarian": 1,
     "close_gravity": 2,
     "fresh_sniper": 1,

@@ -194,15 +194,16 @@
     "entry_time": "2026-04-03 14:28 UTC",
     "url": "https://manifold.markets/YourFriend/will-kalshi-reduce-its-taker-fees-i",
     "stake": 74.2,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 18.0,
+    "exit_time": "2026-04-03 17:01 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 0.3,
     "volume_ratio": 9.1,
     "net_flow": -51,
     "recent_mana": 109,
-    "signal_strength": 0.9120870386601068
+    "signal_strength": 0.9120870386601068,
+    "peak_pnl": 0.3000000000000007
   },
   {
     "market_id": "R5gtEPsUqI",
@@ -220,6 +221,43 @@
     "volume_ratio": 4.3,
     "net_flow": 60,
     "recent_mana": 60,
-    "signal_strength": 0.43034056257050846
+    "signal_strength": 0.43034056257050846,
+    "peak_pnl": 1.8999999999999986
+  },
+  {
+    "market_id": "l2UcqtzuPZ",
+    "question": "Will Gemma 4 124B be released?",
+    "direction": "BUY NO",
+    "entry_prob": 23.6,
+    "entry_time": "2026-04-03 17:01 UTC",
+    "url": "https://manifold.markets/Bayesian/will-gemma-4-124b-be-released",
+    "stake": 74.9,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "volume_ratio": 45.5,
+    "net_flow": -305,
+    "recent_mana": 455,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "8dONzhst6C",
+    "question": "Claude app redesign in April?",
+    "direction": "BUY YES",
+    "entry_prob": 16.0,
+    "entry_time": "2026-04-03 17:01 UTC",
+    "url": "https://manifold.markets/Bayesian/new-claude-app-design-in-april",
+    "stake": 41.8,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "volume_ratio": 35.0,
+    "net_flow": 70,
+    "recent_mana": 70,
+    "signal_strength": 1.5
   }
 ]

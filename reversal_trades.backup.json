@@ -1,1 +1,20 @@
-[]
+[
+  {
+    "market_id": "8dONzhst6C",
+    "question": "Claude app redesign in April?",
+    "direction": "BUY YES",
+    "entry_prob": 16.0,
+    "entry_time": "2026-04-03 17:02 UTC",
+    "url": "https://manifold.markets/Bayesian/new-claude-app-design-in-april",
+    "stake": 20,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "trend_move": -20.3,
+    "reversal_pct": 60.0,
+    "reversal_strength": 1.22,
+    "signal_strength": 0.61
+  }
+]

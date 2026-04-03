@@ -66,7 +66,7 @@
     "whale_amount": 500,
     "price_impact": 1.5,
     "signal_strength": 0.5,
-    "peak_pnl": 4.6000000000000085
+    "peak_pnl": 5.6000000000000085
   },
   {
     "market_id": "zqUOdLndhE",
@@ -197,13 +197,30 @@
     "entry_time": "2026-04-03 17:01 UTC",
     "url": "https://manifold.markets/Bayesian/will-gemma-4-124b-be-released",
     "stake": 24.8,
+    "status": "closed",
+    "exit_prob": 23.6,
+    "exit_time": "2026-04-03 19:56 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 0.0,
+    "whale_amount": 250,
+    "price_impact": 6.2,
+    "signal_strength": 0.25
+  },
+  {
+    "market_id": "zNQOh9dzZ6",
+    "question": "[short fuse] US ground invasion of Iran occurs during Easter?",
+    "direction": "BUY YES",
+    "entry_prob": 59.8,
+    "entry_time": "2026-04-03 19:56 UTC",
+    "url": "https://manifold.markets/brod/short-fuse-us-ground-invasion-of-ir",
+    "stake": 20,
     "status": "open",
     "exit_prob": null,
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null,
     "whale_amount": 250,
-    "price_impact": 6.2,
+    "price_impact": 14.5,
     "signal_strength": 0.25
   }
 ]

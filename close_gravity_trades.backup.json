@@ -68,5 +68,22 @@
     "consistency": 53.2,
     "signal_strength": 0.10700000000000001,
     "peak_pnl": 0.3999999999999986
+  },
+  {
+    "market_id": "8hCC2S9tUU",
+    "question": "Will \"The Super Mario Galaxy Movie\" gross over $185 million in its 5-day domestic opening weekend?",
+    "direction": "BUY YES",
+    "entry_prob": 77.3,
+    "entry_time": "2026-04-03 17:01 UTC",
+    "url": "https://manifold.markets/ShaneBo/will-the-super-mario-galaxy-movie-g",
+    "stake": 75.2,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "drift_score": 55.99,
+    "consistency": 56.2,
+    "signal_strength": 5.599
   }
 ]

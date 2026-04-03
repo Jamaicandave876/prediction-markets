@@ -45,7 +45,7 @@
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null,
-    "peak_pnl": 9.400000000000006
+    "peak_pnl": 10.400000000000006
   },
   {
     "market_id": "5ztuCIqnuL",
@@ -93,6 +93,6 @@
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null,
-    "peak_pnl": 8.399999999999999
+    "peak_pnl": 10.3
   }
 ]
