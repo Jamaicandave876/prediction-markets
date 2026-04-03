@@ -420,12 +420,32 @@ def log_new_entries(signals: list[dict], trades: list[dict], cfg: BotConfig,
             mid = t["market_id"]
             market_counts[mid] = market_counts.get(mid, 0) + 1
 
+    # Regime signal threshold — filter weak signals in cautious mode
+    try:
+        from evolution import get_regime_multipliers, get_bot_confidence
+        regime_threshold = get_regime_multipliers().get("signal_threshold", 1.0)
+        bot_confidence = get_bot_confidence(cfg.name)
+    except ImportError:
+        regime_threshold = 1.0
+        bot_confidence = 0.5
+
     for s in signals:
         if s["market_id"] in all_ids:
             continue
 
         # Max 2 bots on the same market
         if market_counts.get(s["market_id"], 0) >= 2:
+            continue
+
+        # Regime-aware signal gate: skip weak signals when cautious
+        signal_strength = s.get("signal_strength") or s.get("drift_score") or s.get("spike_ratio") or 0
+        if regime_threshold > 1.0 and abs(signal_strength) < 0.5 * regime_threshold:
+            log.info("Signal filtered by regime threshold (%.2f < %.2f)", abs(signal_strength), 0.5 * regime_threshold)
+            continue
+
+        # Low-confidence bot gate: skip if bot has very low confidence
+        if bot_confidence < 0.25:
+            log.info("Signal skipped — %s confidence too low (%.2f)", cfg.name, bot_confidence)
             continue
 
         # Cross-bot conflict check
@@ -467,6 +487,39 @@ def log_new_entries(signals: list[dict], trades: list[dict], cfg: BotConfig,
 
 # ── Main Run Template ────────────────────────────────────────────────────────
 
+def _apply_evolution_overrides(cfg: BotConfig) -> BotConfig:
+    """Apply per-bot parameter overrides and regime multipliers from evolution engine."""
+    try:
+        from evolution import get_bot_overrides, get_regime_multipliers
+    except ImportError:
+        return cfg
+
+    # Per-bot adaptive tuning (from loss reason → action pipeline)
+    overrides = get_bot_overrides(cfg.name)
+    if overrides:
+        if "stop_pp" in overrides:
+            cfg.stop_pp = overrides["stop_pp"]
+        if "trailing_stop_pp" in overrides:
+            cfg.trailing_stop_pp = overrides["trailing_stop_pp"]
+        if "max_days" in overrides:
+            cfg.max_days = int(overrides["max_days"])
+        if "target_spread" in overrides:
+            spread = overrides["target_spread"]
+            cfg.target_yes = 50 + spread
+            cfg.target_no = 50 - spread
+        log.info("Evolution overrides for %s: %s", cfg.name, overrides)
+
+    # Regime-wide multipliers
+    regime = get_regime_multipliers()
+    if regime.get("stop_multiplier", 1.0) != 1.0:
+        cfg.stop_pp = round(cfg.stop_pp * regime["stop_multiplier"], 1)
+        cfg.trailing_stop_pp = round(cfg.trailing_stop_pp * regime["stop_multiplier"], 1)
+    if regime.get("max_days_multiplier", 1.0) != 1.0:
+        cfg.max_days = max(2, int(cfg.max_days * regime["max_days_multiplier"]))
+
+    return cfg
+
+
 def run_bot(cfg: BotConfig,
             detect_signals_fn: Callable,
             signal_alert_fn: Callable | None = None,
@@ -477,6 +530,9 @@ def run_bot(cfg: BotConfig,
         format="%(asctime)s [%(levelname)s] %(name)s: %(message)s",
     )
     bot_log = logging.getLogger(cfg.name)
+
+    # Apply evolution engine overrides before running
+    cfg = _apply_evolution_overrides(cfg)
 
     print(f"{'=' * 60}")
     print(f"{cfg.display_name}  [{now_str()}]")

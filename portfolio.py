@@ -130,7 +130,9 @@ def compute_stake(balance: float, signal: dict, all_trades: list[dict], bot: str
       1. Try Kelly criterion (0.25x full Kelly) based on signal strength
       2. Fall back to BASE_STAKE_PCT if Kelly unavailable
       3. Dampen after consecutive losses (0.8x per loss in streak)
-      4. Clamp to [MIN_STAKE, MAX_STAKE_PCT * balance]
+      4. Apply capital weight from Atlas grades (A=1.3x … F=0.6x)
+      5. Apply regime multiplier (cautious=0.7x, aggressive=1.2x)
+      6. Clamp to [MIN_STAKE, MAX_STAKE_PCT * balance]
     """
     # Try Kelly first
     kelly = _kelly_stake(balance, signal)
@@ -148,6 +150,26 @@ def compute_stake(balance: float, signal: dict, all_trades: list[dict], bot: str
         dampen = CONSEC_LOSS_DAMPEN ** min(streak, 5)  # cap at 5 losses
         stake *= dampen
         log.info("Loss streak %d → stake dampened by %.0f%%", streak, (1 - dampen) * 100)
+
+    # Apply capital weight from Atlas grades (evolution engine)
+    try:
+        from evolution import get_capital_weight
+        weight = get_capital_weight(bot)
+        stake *= weight
+        if weight != 1.0:
+            log.info("Capital weight for %s: %.1fx", bot, weight)
+    except ImportError:
+        pass
+
+    # Apply regime multiplier (evolution engine)
+    try:
+        from evolution import get_regime_multipliers
+        regime_mult = get_regime_multipliers().get("stake_multiplier", 1.0)
+        stake *= regime_mult
+        if regime_mult != 1.0:
+            log.info("Regime stake multiplier: %.1fx", regime_mult)
+    except ImportError:
+        pass
 
     # Clamp
     ceiling = balance * MAX_STAKE_PCT

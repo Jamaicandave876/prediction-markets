@@ -1,14 +1,13 @@
 from __future__ import annotations
 """
-Master orchestrator — runs all 10 trading bots, then the governance layer.
+Master orchestrator — runs all 20 trading bots, governance layer, then evolution engine.
 
 Execution order:
-  1. Original bots (momentum, fade)
-  2. New bots (mean reversion, volume, whale, contrarian, close gravity,
-     fresh sniper, stability, breakout)
-  3. Meridian (President/COO) — tactical operations
-  4. Atlas (CEO) — strategic oversight
-  5. Sentinel (Risk Manager) — portfolio-level risk check
+  1. 20 Trading bots (momentum through liquidation)
+  2. Meridian (President/COO) — tactical operations
+  3. Atlas (CEO) — strategic oversight
+  4. Sentinel (Risk Manager) — portfolio-level risk check
+  5. Evolution Engine — trade autopsy, market memory, per-bot tuning, regime detection
 """
 
 import sys
@@ -81,6 +80,10 @@ def main():
     print("\n--- GOVERNANCE LAYER ---\n")
     for module, display in governance:
         run_module(module, display)
+
+    # ── Evolution Engine ─────────────────────────────────────────────
+    print("\n--- EVOLUTION ENGINE ---\n")
+    run_module("evolution", "Evolution (Learning Brain)")
 
     elapsed = time.time() - t_start
     print(f"\n{'=' * 60}")
