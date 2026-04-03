@@ -120,14 +120,15 @@
     "entry_time": "2026-04-02 20:01 UTC",
     "url": "https://manifold.markets/GazDownright/will-trump-end-the-russiaukraine-wa-dsOtuQOUlQ",
     "stake": 20,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 23.9,
+    "exit_time": "2026-04-02 22:53 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 2.1,
     "volume_ratio": 2.0,
     "net_flow": -227,
     "recent_mana": 313,
-    "signal_strength": 0.20103875909694735
+    "signal_strength": 0.20103875909694735,
+    "peak_pnl": 2.1000000000000014
   }
 ]

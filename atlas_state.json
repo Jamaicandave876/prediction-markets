@@ -43,13 +43,13 @@
       "grade": "NEW"
     },
     "volume_surge": {
-      "score": 85.6,
-      "win_rate": 100.0,
-      "avg_pnl": 2.8,
-      "total_pnl": 14.0,
-      "closed": 5,
+      "score": 73.0,
+      "win_rate": 85.7,
+      "avg_pnl": 0.8,
+      "total_pnl": 5.6,
+      "closed": 7,
       "open": 2,
-      "grade": "A"
+      "grade": "B"
     },
     "whale": {
       "score": 16.8,
@@ -57,17 +57,17 @@
       "avg_pnl": -1.6,
       "total_pnl": -8.0,
       "closed": 5,
-      "open": 3,
+      "open": 5,
       "grade": "F"
     },
     "contrarian": {
-      "score": 40.0,
-      "win_rate": 66.7,
-      "avg_pnl": -16.0,
-      "total_pnl": -48.0,
-      "closed": 3,
+      "score": 30.0,
+      "win_rate": 50.0,
+      "avg_pnl": -13.5,
+      "total_pnl": -54.0,
+      "closed": 4,
       "open": 4,
-      "grade": "D"
+      "grade": "F"
     },
     "close_gravity": {
       "score": 50,
@@ -75,16 +75,16 @@
       "avg_pnl": 0,
       "total_pnl": 0,
       "closed": 1,
-      "open": 2,
+      "open": 3,
       "grade": "NEW"
     },
     "fresh_sniper": {
-      "score": 35.4,
-      "win_rate": 25.0,
-      "avg_pnl": 0.2,
-      "total_pnl": 1.7,
-      "closed": 8,
-      "open": 5,
+      "score": 39.0,
+      "win_rate": 30.0,
+      "avg_pnl": 0.5,
+      "total_pnl": 5.1,
+      "closed": 10,
+      "open": 3,
       "grade": "D"
     },
     "stability": {
@@ -93,7 +93,7 @@
       "avg_pnl": 0,
       "total_pnl": 0,
       "closed": 0,
-      "open": 0,
+      "open": 1,
       "grade": "NEW"
     },
     "breakout": {
@@ -102,7 +102,7 @@
       "avg_pnl": 0,
       "total_pnl": 0,
       "closed": 1,
-      "open": 0,
+      "open": 2,
       "grade": "NEW"
     }
   },
@@ -110,14 +110,14 @@
     "momentum": 1,
     "fade": 0,
     "mean_reversion": 0,
-    "volume_surge": 0,
+    "volume_surge": 1,
     "whale": 5,
-    "contrarian": 0,
+    "contrarian": 1,
     "close_gravity": 1,
-    "fresh_sniper": 2,
+    "fresh_sniper": 1,
     "stability": 0,
     "breakout": 0
   },
   "regime": "normal",
-  "last_report": "2026-04-02 00:02 UTC"
+  "last_report": "2026-04-03 05:53 UTC"
 }

@@ -17,5 +17,41 @@
     "breakout_strength": 7.2,
     "signal_strength": 1.5,
     "peak_pnl": 0.20000000000000107
+  },
+  {
+    "market_id": "pUCZPnhO66",
+    "question": "Will somebody managram me at least 1500 mana before market close?",
+    "direction": "BUY YES",
+    "entry_prob": 55.5,
+    "entry_time": "2026-04-03 05:52 UTC",
+    "url": "https://manifold.markets/ZandaZhu/will-somebody-managram-me-at-least-9UIcCuAR6s",
+    "stake": 73.7,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "baseline_range": 3.0,
+    "breakout_move": 16.4,
+    "breakout_strength": 5.5,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "8hCC2S9tUU",
+    "question": "Will \"The Super Mario Galaxy Movie\" gross over $185 million in its 5-day domestic opening weekend?",
+    "direction": "BUY YES",
+    "entry_prob": 61.2,
+    "entry_time": "2026-04-03 05:52 UTC",
+    "url": "https://manifold.markets/ShaneBo/will-the-super-mario-galaxy-movie-g",
+    "stake": 73.7,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "baseline_range": 4.6,
+    "breakout_move": 22.1,
+    "breakout_strength": 4.8,
+    "signal_strength": 1.5
   }
 ]

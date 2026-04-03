@@ -27,11 +27,11 @@
     "entry_time": "2026-04-02 00:00 UTC",
     "url": "https://manifold.markets/predyx_markets/bitcoin-78k-in-april",
     "stake": 20,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 19.8,
+    "exit_time": "2026-04-03 05:52 UTC",
+    "exit_reason": "stopped_out",
+    "pnl_pp": -6.0,
     "crowd_direction": "NO",
     "crowd_pct": 76.5,
     "price_move": -2.3,
@@ -74,7 +74,8 @@
     "crowd_pct": 66.7,
     "price_move": -1.5,
     "absorption_score": 0.57,
-    "signal_strength": 0.57
+    "signal_strength": 0.57,
+    "peak_pnl": 1.7000000000000028
   },
   {
     "market_id": "NpLN9QLS6l",
@@ -133,5 +134,24 @@
     "price_move": 1.0,
     "absorption_score": 0.62,
     "signal_strength": 0.62
+  },
+  {
+    "market_id": "ndASI20QRS",
+    "question": "Chris Taylor wins Wisconsin Supreme Court election on April 7?",
+    "direction": "BUY NO",
+    "entry_prob": 98.0,
+    "entry_time": "2026-04-03 05:52 UTC",
+    "url": "https://manifold.markets/Jack1/chris-taylor-wins-wisconsin-supreme",
+    "stake": 20,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_direction": "YES",
+    "crowd_pct": 66.7,
+    "price_move": -1.0,
+    "absorption_score": 0.6,
+    "signal_strength": 0.6
   }
 ]

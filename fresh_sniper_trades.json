@@ -197,7 +197,8 @@
     "open_prob": 24.0,
     "move_from_open": 40.1,
     "age_hours": 20.7,
-    "signal_strength": 1.3366666666666664
+    "signal_strength": 1.3366666666666664,
+    "peak_pnl": 4.900000000000006
   },
   {
     "market_id": "8Lp0uz8pgQ",
@@ -207,11 +208,11 @@
     "entry_time": "2026-04-02 22:54 UTC",
     "url": "https://manifold.markets/100Anonymous/will-courts-overturn-trumps-executi-8hpLCPAnU2",
     "stake": 74.3,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 33.0,
+    "exit_time": "2026-04-03 05:52 UTC",
+    "exit_reason": "stopped_out",
+    "pnl_pp": -8.0,
     "open_prob": 67.4,
     "move_from_open": 42.4,
     "age_hours": 19.2,
@@ -225,14 +226,15 @@
     "entry_time": "2026-04-02 22:54 UTC",
     "url": "https://manifold.markets/GnosticGirl/will-i-get-a-bug-bounty-reward-for",
     "stake": 74.3,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 91.9,
+    "exit_time": "2026-04-03 05:52 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 11.4,
     "open_prob": 50.0,
     "move_from_open": 30.5,
     "age_hours": 2.3,
-    "signal_strength": 1.0166666666666666
+    "signal_strength": 1.0166666666666666,
+    "peak_pnl": 11.400000000000006
   }
 ]

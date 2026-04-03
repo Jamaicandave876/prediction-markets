@@ -1,1 +1,19 @@
-[]
+[
+  {
+    "market_id": "PQlA9nnUP2",
+    "question": "Who will win Futarchy Chess?",
+    "direction": "BUY YES",
+    "entry_prob": 55.3,
+    "entry_time": "2026-04-03 05:52 UTC",
+    "url": "https://manifold.markets/MaxE/who-will-win-futarchy-chess",
+    "stake": 20,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "price_range": 4.7,
+    "stability_score": 0.22,
+    "signal_strength": 0.22
+  }
+]

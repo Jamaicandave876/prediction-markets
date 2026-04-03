@@ -1,11 +1,7 @@
 {
-  "last_run": "2026-04-02 22:55 UTC",
+  "last_run": "2026-04-03 05:53 UTC",
   "conflicts": [],
   "overlaps": {
-    "CqptuuhR5c": [
-      "momentum",
-      "volume_surge"
-    ],
     "l5ttgczEut": [
       "momentum",
       "whale"
@@ -13,17 +9,25 @@
     "cqpLP0PAZn": [
       "momentum",
       "contrarian"
+    ],
+    "PQlA9nnUP2": [
+      "volume_surge",
+      "stability"
+    ],
+    "8hCC2S9tUU": [
+      "whale",
+      "breakout"
     ]
   },
   "direction_exposure": {
-    "yes_count": 15,
+    "yes_count": 19,
     "no_count": 12,
-    "total": 27,
-    "yes_stake": 615.0,
-    "no_stake": 522.4,
-    "total_stake": 1137.4,
-    "yes_pct": 54.1,
-    "balance": "balanced"
+    "total": 31,
+    "yes_stake": 796.7,
+    "no_stake": 411.0,
+    "total_stake": 1207.7,
+    "yes_pct": 66.0,
+    "balance": "YES-heavy"
   },
   "capital_weights": {
     "momentum": 1.0,

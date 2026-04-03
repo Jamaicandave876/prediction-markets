@@ -49,5 +49,22 @@
     "hours_stale": 51.7,
     "staleness_score": 0.11,
     "signal_strength": 0.11
+  },
+  {
+    "market_id": "PPQI2y0Cud",
+    "question": "Will the U.S. Supreme Court grant certiorari to hear the White House Ballroom case by the end of their 2026-2027 term?",
+    "direction": "BUY NO",
+    "entry_prob": 44.1,
+    "entry_time": "2026-04-02 22:55 UTC",
+    "url": "https://manifold.markets/bens/will-the-us-supreme-court-grant-cer-CpuqdNlLCc",
+    "stake": 20,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "hours_stale": 30.7,
+    "staleness_score": 0.08,
+    "signal_strength": 0.08
   }
 ]

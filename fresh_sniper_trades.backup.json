@@ -198,5 +198,41 @@
     "move_from_open": 40.1,
     "age_hours": 20.7,
     "signal_strength": 1.3366666666666664
+  },
+  {
+    "market_id": "8Lp0uz8pgQ",
+    "question": "Will courts overturn Trump\u2019s executive order on birthright citizenship in April?",
+    "direction": "BUY NO",
+    "entry_prob": 25.0,
+    "entry_time": "2026-04-02 22:54 UTC",
+    "url": "https://manifold.markets/100Anonymous/will-courts-overturn-trumps-executi-8hpLCPAnU2",
+    "stake": 74.3,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "open_prob": 67.4,
+    "move_from_open": 42.4,
+    "age_hours": 19.2,
+    "signal_strength": 1.414617840938665
+  },
+  {
+    "market_id": "P8U8dQSz6d",
+    "question": "Will I get a bug bounty reward for an Infinite Mana Exploit?",
+    "direction": "BUY YES",
+    "entry_prob": 80.5,
+    "entry_time": "2026-04-02 22:54 UTC",
+    "url": "https://manifold.markets/GnosticGirl/will-i-get-a-bug-bounty-reward-for",
+    "stake": 74.3,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "open_prob": 50.0,
+    "move_from_open": 30.5,
+    "age_hours": 2.3,
+    "signal_strength": 1.0166666666666666
   }
 ]

@@ -50,5 +50,22 @@
     "drift_score": -14.41,
     "consistency": 56.3,
     "signal_strength": 1.441
+  },
+  {
+    "market_id": "APCsslCpuz",
+    "question": "Daily Coinflip",
+    "direction": "BUY NO",
+    "entry_prob": 50.6,
+    "entry_time": "2026-04-03 05:52 UTC",
+    "url": "https://manifold.markets/Traveel/daily-coinflip-9ONg6z8tL0",
+    "stake": 20,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "drift_score": -1.07,
+    "consistency": 53.2,
+    "signal_strength": 0.10700000000000001
   }
 ]
