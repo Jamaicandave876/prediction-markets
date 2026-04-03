@@ -7,6 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="theme-color" content="#0d1117">
 <title>Trading HQ</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
 <style>
   :root {
     --bg: #0d1117; --surface: #161b22; --border: #30363d;
@@ -18,7 +19,6 @@
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { background: var(--bg); color: var(--text); font-family: -apple-system, 'Segoe UI', system-ui, sans-serif; padding: 12px; padding-bottom: 80px; -webkit-font-smoothing: antialiased; }
 
-  /* Header */
   .hdr { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
   .hdr h1 { font-size: 17px; font-weight: 700; }
   .live { width: 7px; height: 7px; background: var(--green); border-radius: 50%; display: inline-block; margin-right: 5px; animation: pulse 2s infinite; }
@@ -26,27 +26,23 @@
   .ts { font-size: 10px; color: var(--dim); }
   .pos { color: var(--green); } .neg { color: var(--red); } .neutral { color: var(--dim); }
 
-  /* Governance strip */
   .gov { display: flex; gap: 6px; margin-bottom: 12px; overflow-x: auto; -webkit-overflow-scrolling: touch; }
   .gov::-webkit-scrollbar { display: none; }
   .gov-chip { background: var(--surface); border: 1px solid var(--border); border-radius: 20px; padding: 4px 10px; font-size: 10px; white-space: nowrap; display: flex; align-items: center; gap: 4px; flex-shrink: 0; }
   .dot { width: 6px; height: 6px; border-radius: 50%; }
   .dot-green { background: var(--green); } .dot-yellow { background: var(--yellow); } .dot-red { background: var(--red); }
 
-  /* Summary cards */
   .cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin-bottom: 14px; }
   .card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 10px; }
   .card .lbl { font-size: 9px; color: var(--dim); text-transform: uppercase; letter-spacing: .5px; margin-bottom: 2px; }
   .card .val { font-size: 20px; font-weight: 800; }
   .card .sub { font-size: 10px; color: var(--dim); margin-top: 1px; }
 
-  /* Tabs */
   .tabs { display: flex; gap: 0; margin-bottom: 12px; border-bottom: 1px solid var(--border); overflow-x: auto; -webkit-overflow-scrolling: touch; }
   .tabs::-webkit-scrollbar { display: none; }
   .tab { padding: 8px 14px; font-size: 12px; font-weight: 500; color: var(--dim); cursor: pointer; border-bottom: 2px solid transparent; white-space: nowrap; flex-shrink: 0; }
   .tab.active { color: var(--blue); border-bottom-color: var(--blue); }
 
-  /* Bot roster */
   .roster { display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px; margin-bottom: 14px; }
   .bot { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 8px 10px; }
   .bot-hdr { display: flex; justify-content: space-between; align-items: center; margin-bottom: 3px; }
@@ -57,8 +53,9 @@
   .g-F{background:#3d1419;color:var(--red)} .g-NEW{background:var(--border);color:var(--dim)}
   .bot-row { font-size: 10px; color: var(--dim); }
   .bot.paused { opacity: .45; }
+  .sparkline { height: 20px; margin-top: 4px; }
+  .bot-last { font-size: 8px; color: var(--dim); margin-top: 2px; }
 
-  /* Positions */
   .pos-list { display: flex; flex-direction: column; gap: 8px; }
   .pcard { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 10px 12px; }
   .pcard-top { display: flex; justify-content: space-between; gap: 8px; }
@@ -86,23 +83,39 @@
   .pm-tgt { position: absolute; top: -1px; width: 2px; height: 6px; background: var(--green); transform: translateX(-50%); }
   .pm-stp { position: absolute; top: -1px; width: 2px; height: 6px; background: var(--red); transform: translateX(-50%); }
 
-  /* History */
   .htrade { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 8px 10px; margin-bottom: 6px; }
   .ht-top { display: flex; justify-content: space-between; gap: 8px; }
   .ht-q { font-size: 11px; flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   .ht-pnl { font-size: 13px; font-weight: 700; }
   .ht-meta { font-size: 10px; color: var(--dim); margin-top: 3px; }
 
-  /* Bottom nav */
+  /* Analytics */
+  .chart-card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 12px; margin-bottom: 10px; }
+  .chart-title { font-size: 11px; font-weight: 700; color: var(--dim); text-transform: uppercase; letter-spacing: .5px; margin-bottom: 8px; }
+  .chart-wrap { position: relative; height: 200px; }
+
+  /* Intelligence */
+  .intel-card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 10px 12px; margin-bottom: 8px; }
+  .intel-title { font-size: 11px; font-weight: 700; color: var(--dim); text-transform: uppercase; letter-spacing: .5px; margin-bottom: 6px; }
+  .param-row { display: flex; justify-content: space-between; align-items: center; padding: 4px 0; border-bottom: 1px solid var(--border); font-size: 10px; }
+  .param-row:last-child { border-bottom: none; }
+  .param-name { color: var(--text); }
+  .param-val { font-weight: 700; }
+  .param-default { color: var(--dim); font-size: 9px; }
+  .param-changed { color: var(--orange); }
+  .pause-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 4px; }
+  .pause-dot { text-align: center; padding: 4px; border-radius: 4px; font-size: 8px; font-weight: 700; }
+  .pause-active { background: #0f2d1a; color: var(--green); }
+  .pause-paused { background: #3d1419; color: var(--red); }
+
   .bnav { position: fixed; bottom: 0; left: 0; right: 0; background: var(--surface); border-top: 1px solid var(--border); display: flex; z-index: 100; }
-  .bnav-btn { flex: 1; padding: 10px 0 8px; text-align: center; font-size: 10px; color: var(--dim); cursor: pointer; }
+  .bnav-btn { flex: 1; padding: 8px 0 6px; text-align: center; font-size: 9px; color: var(--dim); cursor: pointer; }
   .bnav-btn.active { color: var(--blue); }
-  .bnav-icon { font-size: 18px; display: block; margin-bottom: 2px; }
+  .bnav-icon { font-size: 16px; display: block; margin-bottom: 1px; }
 
   .section { display: none; }
   .section.show { display: block; }
   .empty { text-align: center; color: var(--dim); padding: 30px; font-size: 12px; }
-  .loading { text-align: center; color: var(--dim); padding: 60px; font-size: 14px; }
 </style>
 </head>
 <body>
@@ -116,13 +129,16 @@
 
 <div id="sec-positions" class="section show"></div>
 <div id="sec-roster" class="section"></div>
+<div id="sec-analytics" class="section"></div>
+<div id="sec-intel" class="section"></div>
 <div id="sec-history" class="section"></div>
 
 <div class="bnav">
-  <div class="bnav-btn active" onclick="showSec('positions')"><span class="bnav-icon">&#9678;</span>Positions</div>
+  <div class="bnav-btn active" onclick="showSec('positions')"><span class="bnav-icon">&#9678;</span>Live</div>
   <div class="bnav-btn" onclick="showSec('roster')"><span class="bnav-icon">&#9733;</span>Bots</div>
-  <div class="bnav-btn" onclick="showSec('history')"><span class="bnav-icon">&#9776;</span>History</div>
-  <div class="bnav-btn" onclick="refresh()"><span class="bnav-icon">&#8635;</span>Refresh</div>
+  <div class="bnav-btn" onclick="showSec('analytics')"><span class="bnav-icon">&#9683;</span>Charts</div>
+  <div class="bnav-btn" onclick="showSec('intel')"><span class="bnav-icon">&#9881;</span>Intel</div>
+  <div class="bnav-btn" onclick="showSec('history')"><span class="bnav-icon">&#9776;</span>Log</div>
 </div>
 
 <script>
@@ -138,6 +154,13 @@ const NAMES = {
   time_decay:'Time Decay', sentiment:'Sentiment', accumulation:'Accumulate',
   underdog:'Underdog', late_mover:'Late Mover', hedge:'Hedge', liquidation:'Liquidation'
 };
+const BOT_COLORS = {
+  momentum:'#58a6ff', fade:'#d29922', mean_reversion:'#bc8cff', volume_surge:'#39d2c0',
+  whale:'#8b8bff', contrarian:'#f778ba', close_gravity:'#e3b341', fresh_sniper:'#3fb950',
+  stability:'#2ea58f', breakout:'#ff9a5c', calibration:'#d2a8ff', reversal:'#ffc680',
+  smart_money:'#80d4ff', time_decay:'#e09fff', sentiment:'#80ffaa', accumulation:'#e3e380',
+  underdog:'#80e0e0', late_mover:'#b0e080', hedge:'#a0a0ff', liquidation:'#ff8090'
+};
 const FILES = [
   ['momentum','trades.json'],['fade','fade_trades.json'],
   ['mean_reversion','mean_reversion_trades.json'],['volume_surge','volume_trades.json'],
@@ -152,32 +175,22 @@ const FILES = [
 ];
 
 let D = null;
-let curSec = 'positions';
+let charts = {};
+const SECS = ['positions','roster','analytics','intel','history'];
 
 function showSec(s) {
-  curSec = s;
   document.querySelectorAll('.section').forEach(e => e.classList.remove('show'));
   document.getElementById('sec-'+s).classList.add('show');
-  document.querySelectorAll('.bnav-btn').forEach((e,i) => {
-    e.classList.toggle('active', ['positions','roster','history'][i] === s);
-  });
+  document.querySelectorAll('.bnav-btn').forEach((e,i) => e.classList.toggle('active', SECS[i]===s));
+  if (s==='analytics' && D) renderCharts();
 }
 
 async function fetchJSON(url) {
-  try {
-    const r = await fetch(url + '?t=' + Date.now());
-    if (!r.ok) return null;
-    return await r.json();
-  } catch(e) { return null; }
+  try { const r = await fetch(url+'?t='+Date.now()); if (!r.ok) return null; return await r.json(); } catch(e) { return null; }
 }
 
 async function fetchProb(id) {
-  try {
-    const r = await fetch(`${API}/market/${id}`);
-    if (!r.ok) return null;
-    const d = await r.json();
-    return d.probability != null ? Math.round(d.probability * 1000) / 10 : null;
-  } catch(e) { return null; }
+  try { const r = await fetch(`${API}/market/${id}`); if (!r.ok) return null; const d = await r.json(); return d.probability!=null ? Math.round(d.probability*1000)/10 : null; } catch(e) { return null; }
 }
 
 function pc(v) { return v > .05 ? 'pos' : v < -.05 ? 'neg' : 'neutral'; }
@@ -185,102 +198,76 @@ function sg(v) { return v > 0 ? '+' : ''; }
 
 async function refresh() {
   document.getElementById('ts').textContent = 'Loading...';
-
-  // Load all trade files + state files in parallel
-  const promises = FILES.map(([name, file]) => fetchJSON(`${RAW}/${file}`).then(d => [name, d || []]));
-  const stateP = [
-    fetchJSON(`${RAW}/portfolio.json`),
-    fetchJSON(`${RAW}/atlas_state.json`),
-    fetchJSON(`${RAW}/meridian_state.json`),
-    fetchJSON(`${RAW}/sentinel_state.json`),
-  ];
-
-  const [botResults, [portfolio, atlas, meridian, sentinel]] = await Promise.all([
-    Promise.all(promises),
-    Promise.all(stateP),
-  ]);
+  const promises = FILES.map(([name,file]) => fetchJSON(`${RAW}/${file}`).then(d => [name, d||[]]));
+  const stateP = [fetchJSON(`${RAW}/portfolio.json`), fetchJSON(`${RAW}/atlas_state.json`), fetchJSON(`${RAW}/meridian_state.json`), fetchJSON(`${RAW}/sentinel_state.json`), fetchJSON(`${RAW}/intelligence_state.json`), fetchJSON(`${RAW}/config_overrides.json`)];
+  const [botResults, [portfolio,atlas,meridian,sentinel,intel,overrides]] = await Promise.all([Promise.all(promises), Promise.all(stateP)]);
 
   const pf = portfolio || {starting_balance:1000, realized_pnl:0};
-  const at = atlas || {};
-  const mr = meridian || {};
-  const sn = sentinel || {};
-
-  const starting = pf.starting_balance || 1000;
-  const realized = pf.realized_pnl || 0;
+  const at = atlas || {}; const mr = meridian || {}; const sn = sentinel || {}; const il = intel || {}; const ov = overrides || {};
+  const starting = pf.starting_balance||1000;
+  const realized = pf.realized_pnl||0;
   const balance = starting + realized;
 
-  // Collect all trades
-  let allOpen = [], allClosed = [], botStats = {};
-  for (const [name, trades] of botResults) {
-    const open = trades.filter(t => t.status === 'open');
-    const closed = trades.filter(t => t.status === 'closed');
-    open.forEach(t => t._bot = name);
-    closed.forEach(t => t._bot = name);
-    allOpen.push(...open);
-    allClosed.push(...closed);
-    const wins = closed.filter(t => (t.pnl_pp||0) > 0).length;
-    const scores = (at.bot_scores||{})[name] || {};
+  let allOpen=[], allClosed=[], botStats={};
+  for (const [name,trades] of botResults) {
+    const open = trades.filter(t => t.status==='open');
+    const closed = trades.filter(t => t.status==='closed');
+    open.forEach(t => t._bot=name); closed.forEach(t => t._bot=name);
+    allOpen.push(...open); allClosed.push(...closed);
+    const wins = closed.filter(t => (t.pnl_pp||0)>0).length;
+    const losses = closed.filter(t => (t.pnl_pp||0)<0);
+    const winTrades = closed.filter(t => (t.pnl_pp||0)>0);
+    const scores = (at.bot_scores||{})[name]||{};
+    const lastTrade = [...closed].sort((a,b)=>(b.exit_time||'').localeCompare(a.exit_time||'')).shift();
     botStats[name] = {
       open: open.length, closed: closed.length, wins,
-      win_rate: closed.length > 0 ? Math.round(wins/closed.length*1000)/10 : 0,
-      total_pnl: Math.round(closed.reduce((s,t) => s + (t.pnl_pp||0), 0) * 10) / 10,
-      grade: scores.grade || 'NEW', score: scores.score || 50,
-      paused: (at.paused||{})[name] || false,
+      win_rate: closed.length>0 ? Math.round(wins/closed.length*1000)/10 : 0,
+      total_pnl: Math.round(closed.reduce((s,t)=>s+(t.pnl_pp||0),0)*10)/10,
+      avg_win: winTrades.length>0 ? Math.round(winTrades.reduce((s,t)=>s+(t.pnl_pp||0),0)/winTrades.length*10)/10 : 0,
+      avg_loss: losses.length>0 ? Math.round(losses.reduce((s,t)=>s+(t.pnl_pp||0),0)/losses.length*10)/10 : 0,
+      grade: scores.grade||'NEW', score: scores.score||50,
+      paused: (il.paused||{})[name]||false,
+      consec_losses: (il.consecutive_losses||{})[name]||0,
+      last_trade_time: lastTrade ? lastTrade.exit_time : null,
+      pnl_history: closed.sort((a,b)=>(a.exit_time||'').localeCompare(b.exit_time||'')).map(t=>t.pnl_pp||0),
     };
   }
 
-  // Fetch live prices for open positions (max 15 to avoid rate limits)
   let unrealized = 0;
-  const pricePromises = allOpen.slice(0, 30).map(async t => {
+  const pricePromises = allOpen.slice(0,30).map(async t => {
     const live = await fetchProb(t.market_id);
-    const entry = t.entry_prob;
-    const stake = t.stake || starting * .05;
-    let pnl_pp = null, pnl_mana = null;
-    if (live != null) {
-      pnl_pp = t.direction === 'BUY YES' ? live - entry : entry - live;
-      pnl_pp = Math.round(pnl_pp * 10) / 10;
-      pnl_mana = Math.round(pnl_pp / 100 * stake * 10) / 10;
-      unrealized += pnl_mana;
-    }
-    return {
-      market_id: t.market_id, question: t.question, direction: t.direction,
-      bot: t._bot, entry_prob: entry, current_prob: live,
-      pnl_pp, pnl_mana, stake: Math.round(stake*10)/10,
-      entry_time: t.entry_time || '', url: t.url || '',
-      target: t.direction === 'BUY YES' ? 78 : 22,
-      stop: t.direction === 'BUY YES' ? Math.round((entry-5)*10)/10 : Math.round((entry+5)*10)/10,
-    };
+    const entry = t.entry_prob; const stake = t.stake||starting*.05;
+    let pnl_pp=null, pnl_mana=null;
+    if (live!=null) { pnl_pp = t.direction==='BUY YES' ? live-entry : entry-live; pnl_pp=Math.round(pnl_pp*10)/10; pnl_mana=Math.round(pnl_pp/100*stake*10)/10; unrealized+=pnl_mana; }
+    return { market_id:t.market_id, question:t.question, direction:t.direction, bot:t._bot, entry_prob:entry, current_prob:live, pnl_pp, pnl_mana, stake:Math.round(stake*10)/10, entry_time:t.entry_time||'', url:t.url||'', target:t.direction==='BUY YES'?78:22, stop:t.direction==='BUY YES'?Math.round((entry-5)*10)/10:Math.round((entry+5)*10)/10 };
   });
   const positions = await Promise.all(pricePromises);
 
-  D = { portfolio: {starting, realized, balance, unrealized, total: Math.round((balance+unrealized)*10)/10,
-    ret: Math.round((balance-starting)/starting*1000)/10,
-    tret: Math.round((balance+unrealized-starting)/starting*1000)/10},
+  D = {
+    portfolio: {starting, realized, balance, unrealized, total:Math.round((balance+unrealized)*10)/10, ret:Math.round((balance-starting)/starting*1000)/10, tret:Math.round((balance+unrealized-starting)/starting*1000)/10},
     positions, allClosed, botStats,
-    gov: { regime: at.regime||'normal', risk: sn.risk_level||'green',
-      dir: (mr.direction_exposure||{}).balance||'balanced',
-      yes_pct: (mr.direction_exposure||{}).yes_pct||50 }
+    gov: {regime:at.regime||'normal', risk:sn.risk_level||'green', dir:(mr.direction_exposure||{}).balance||'balanced', yes_pct:(mr.direction_exposure||{}).yes_pct||50},
+    intel: il, overrides: ov
   };
   render();
 }
 
 function render() {
   if (!D) return;
-  const p = D.portfolio;
-  const g = D.gov;
-
+  const p = D.portfolio; const g = D.gov;
   document.getElementById('ts').textContent = new Date().toLocaleTimeString();
 
-  // Gov bar
   const rc = g.risk==='green'?'dot-green':g.risk==='yellow'?'dot-yellow':'dot-red';
+  const activeBots = Object.values(D.botStats).filter(b=>!b.paused&&(b.open>0||b.closed>0)).length;
+  const pausedBots = Object.values(D.botStats).filter(b=>b.paused).length;
   document.getElementById('gov').innerHTML =
-    `<div class="gov-chip"><span class="dot ${rc}"></span>${g.risk.toUpperCase()}</div>` +
-    `<div class="gov-chip">${g.regime.toUpperCase()}</div>` +
-    `<div class="gov-chip">${g.dir}</div>` +
-    `<div class="gov-chip">${D.positions.length} open</div>` +
-    `<div class="gov-chip">${Object.values(D.botStats).filter(b=>!b.paused&&(b.open>0||b.closed>0)).length}/20 active</div>`;
+    `<div class="gov-chip"><span class="dot ${rc}"></span>${g.risk.toUpperCase()}</div>`+
+    `<div class="gov-chip">${g.regime.toUpperCase()}</div>`+
+    `<div class="gov-chip">${g.dir}</div>`+
+    `<div class="gov-chip">${D.positions.length} open</div>`+
+    `<div class="gov-chip">${activeBots}/20 active</div>`+
+    (pausedBots>0?`<div class="gov-chip" style="color:var(--red)">${pausedBots} paused</div>`:'');
 
-  // Cards
   document.getElementById('cards').innerHTML = `
     <div class="card"><div class="lbl">Balance</div><div class="val">${p.balance.toLocaleString()}</div><div class="sub">of ${p.starting.toLocaleString()} M</div></div>
     <div class="card"><div class="lbl">Total Value</div><div class="val ${pc(p.total-p.starting)}">${p.total.toLocaleString()}</div><div class="sub">${sg(p.tret)}${p.tret}%</div></div>
@@ -288,83 +275,183 @@ function render() {
     <div class="card"><div class="lbl">Unrealized</div><div class="val ${pc(p.unrealized)}">${sg(p.unrealized)}${Math.round(p.unrealized*10)/10}</div><div class="sub">${D.positions.length} positions</div></div>
   `;
 
-  // Positions
-  const posDiv = document.getElementById('sec-positions');
-  if (D.positions.length === 0) {
-    posDiv.innerHTML = '<div class="empty">No open positions yet.<br>Bots will find trades on next run.</div>';
-  } else {
-    posDiv.innerHTML = '<div class="pos-list">' + D.positions.map(renderPos).join('') + '</div>';
-  }
+  renderPositions();
+  renderRoster();
+  renderHistory();
+  renderIntel();
+}
 
-  // Roster
-  const rosterDiv = document.getElementById('sec-roster');
-  const sorted = Object.entries(D.botStats).sort((a,b) => b[1].score - a[1].score);
-  rosterDiv.innerHTML = '<div class="roster">' + sorted.map(([name, s]) => `
-    <div class="bot ${s.paused?'paused':''}">
-      <div class="bot-hdr">
-        <span class="bot-name">${NAMES[name]||name}</span>
-        <span class="grade g-${s.grade}">${s.grade}${s.paused?' OFF':''}</span>
-      </div>
+function renderPositions() {
+  const div = document.getElementById('sec-positions');
+  if (D.positions.length===0) { div.innerHTML='<div class="empty">No open positions yet.<br>Bots will find trades on next run.</div>'; return; }
+  div.innerHTML='<div class="pos-list">'+D.positions.map(p => {
+    const pnl = p.pnl_pp!=null?`${sg(p.pnl_pp)}${p.pnl_pp}pp`:'...';
+    const mana = p.pnl_mana!=null?`${sg(p.pnl_mana)}${p.pnl_mana}M`:'';
+    const cls = p.pnl_pp!=null?pc(p.pnl_pp):'neutral';
+    const e=Math.max(0,Math.min(100,p.entry_prob)); const c=p.current_prob!=null?Math.max(0,Math.min(100,p.current_prob)):null;
+    const tg=Math.max(0,Math.min(100,p.target)); const st=Math.max(0,Math.min(100,p.stop));
+    return `<div class="pcard"><div class="pcard-top"><div class="pcard-q"><a href="${p.url}" target="_blank">${p.question}</a></div><div class="pcard-pnl ${cls}">${pnl}<div class="pcard-sub">${mana}</div></div></div><div class="pcard-meta"><span class="tag t-${p.bot}">${NAMES[p.bot]||p.bot}</span><span class="tag t-${p.direction.includes('YES')?'yes':'no'}">${p.direction.replace('BUY ','')}</span><span>${p.entry_prob}% &rarr; ${p.current_prob!=null?p.current_prob+'%':'...'}</span><span>${p.stake}M</span></div><div class="pbar"><div class="pm-tgt" style="left:${tg}%"></div><div class="pm-stp" style="left:${st}%"></div><div class="pm pm-entry" style="left:${e}%"></div>${c!=null?`<div class="pm pm-now" style="left:${c}%"></div>`:''}</div></div>`;
+  }).join('')+'</div>';
+}
+
+function renderRoster() {
+  const div = document.getElementById('sec-roster');
+  const sorted = Object.entries(D.botStats).sort((a,b)=>b[1].score-a[1].score);
+  div.innerHTML='<div class="roster">'+sorted.map(([name,s]) => {
+    const pnlHist = s.pnl_history||[];
+    const sparkId = 'spark-'+name;
+    const lastTime = s.last_trade_time ? timeAgo(s.last_trade_time) : 'no trades';
+    return `<div class="bot ${s.paused?'paused':''}">
+      <div class="bot-hdr"><span class="bot-name">${NAMES[name]||name}</span><span class="grade g-${s.grade}">${s.grade}${s.paused?' OFF':''}</span></div>
       <div class="bot-row">${s.closed>0?`WR ${s.win_rate}% | ${sg(s.total_pnl)}${s.total_pnl}pp`:'No trades yet'}</div>
-      <div class="bot-row">Open: ${s.open} | Closed: ${s.closed}</div>
-    </div>
-  `).join('') + '</div>';
+      <div class="bot-row">Open: ${s.open} | Closed: ${s.closed}${s.consec_losses>0?' | L'+s.consec_losses:''}</div>
+      <canvas id="${sparkId}" class="sparkline" width="140" height="20"></canvas>
+      <div class="bot-last">${lastTime}</div>
+    </div>`;
+  }).join('')+'</div>';
 
-  // History
-  const hDiv = document.getElementById('sec-history');
-  const hist = D.allClosed.sort((a,b) => (b.exit_time||'').localeCompare(a.exit_time||'')).slice(0, 30);
-  if (hist.length === 0) {
-    hDiv.innerHTML = '<div class="empty">No closed trades yet</div>';
-  } else {
-    hDiv.innerHTML = hist.map(h => {
-      const pnl = h.pnl_pp || 0;
-      const stake = h.stake || 50;
-      const mana = Math.round(pnl/100*stake*10)/10;
-      return `<div class="htrade">
-        <div class="ht-top">
-          <span class="ht-q">${h.question}</span>
-          <span class="ht-pnl ${pc(pnl)}">${sg(pnl)}${pnl}pp</span>
-        </div>
-        <div class="ht-meta">
-          <span class="tag t-${h._bot||'unknown'}">${NAMES[h._bot]||h._bot||'?'}</span>
-          <span class="tag t-${h.direction.includes('YES')?'yes':'no'}">${h.direction.replace('BUY ','')}</span>
-          ${sg(mana)}${mana}M | ${h.exit_reason||'?'} | ${(h.exit_time||'').slice(0,16)}
-        </div>
-      </div>`;
-    }).join('');
+  // Draw sparklines
+  sorted.forEach(([name,s]) => {
+    const pnlHist = s.pnl_history||[];
+    if (pnlHist.length<2) return;
+    const canvas = document.getElementById('spark-'+name);
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    const w = canvas.width, h = canvas.height;
+    ctx.clearRect(0,0,w,h);
+    const cumulative = []; let sum=0;
+    pnlHist.forEach(v => { sum+=v; cumulative.push(sum); });
+    const mn = Math.min(...cumulative), mx = Math.max(...cumulative);
+    const range = mx-mn||1;
+    ctx.strokeStyle = sum>=0?'#3fb950':'#f85149';
+    ctx.lineWidth = 1.5;
+    ctx.beginPath();
+    cumulative.forEach((v,i) => {
+      const x = (i/(cumulative.length-1))*w;
+      const y = h-((v-mn)/range)*(h-4)-2;
+      i===0?ctx.moveTo(x,y):ctx.lineTo(x,y);
+    });
+    ctx.stroke();
+  });
+}
+
+function renderCharts() {
+  const div = document.getElementById('sec-analytics');
+  const closed = D.allClosed.filter(t=>t.exit_time).sort((a,b)=>(a.exit_time||'').localeCompare(b.exit_time||''));
+  if (closed.length<2) { div.innerHTML='<div class="empty">Need at least 2 closed trades for analytics.<br>Charts will appear as trades close.</div>'; return; }
+
+  div.innerHTML = `
+    <div class="chart-card"><div class="chart-title">Cumulative P&L (pp)</div><div class="chart-wrap"><canvas id="ch-pnl"></canvas></div></div>
+    <div class="chart-card"><div class="chart-title">Win Rate Trend (Rolling 5)</div><div class="chart-wrap"><canvas id="ch-wr"></canvas></div></div>
+    <div class="chart-card"><div class="chart-title">P&L by Bot</div><div class="chart-wrap"><canvas id="ch-botpnl"></canvas></div></div>
+    <div class="chart-card"><div class="chart-title">Trade Duration vs P&L</div><div class="chart-wrap"><canvas id="ch-scatter"></canvas></div></div>
+  `;
+
+  Object.values(charts).forEach(c => c.destroy());
+  charts = {};
+
+  const chartOpts = { responsive:true, maintainAspectRatio:false, plugins:{legend:{display:false}}, scales:{x:{ticks:{color:'#8b949e',font:{size:9}},grid:{color:'#30363d'}},y:{ticks:{color:'#8b949e',font:{size:9}},grid:{color:'#30363d'}}} };
+
+  // 1. Cumulative PnL
+  let cumPnl=0;
+  const cumData = closed.map(t => { cumPnl+=(t.pnl_pp||0); return {x:(t.exit_time||'').slice(5,10), y:Math.round(cumPnl*10)/10}; });
+  charts.pnl = new Chart(document.getElementById('ch-pnl'), {
+    type:'line', data:{labels:cumData.map(d=>d.x), datasets:[{data:cumData.map(d=>d.y), borderColor:'#58a6ff', backgroundColor:'rgba(88,166,255,0.1)', fill:true, tension:0.3, pointRadius:2}]},
+    options:{...chartOpts, plugins:{...chartOpts.plugins, tooltip:{callbacks:{label:c=>`${c.parsed.y}pp`}}}}
+  });
+
+  // 2. Win Rate Trend (rolling 5)
+  const wrLabels=[]; const wrData=[];
+  for (let i=4;i<closed.length;i++) {
+    const window = closed.slice(i-4,i+1);
+    const wins = window.filter(t=>(t.pnl_pp||0)>0).length;
+    wrLabels.push((closed[i].exit_time||'').slice(5,10));
+    wrData.push(Math.round(wins/5*1000)/10);
   }
+  charts.wr = new Chart(document.getElementById('ch-wr'), {
+    type:'bar', data:{labels:wrLabels, datasets:[{data:wrData, backgroundColor:wrData.map(v=>v>=50?'rgba(63,185,80,0.7)':'rgba(248,81,73,0.7)'), borderRadius:3}]},
+    options:{...chartOpts, scales:{...chartOpts.scales, y:{...chartOpts.scales.y, min:0, max:100, ticks:{...chartOpts.scales.y.ticks, callback:v=>v+'%'}}}}
+  });
+
+  // 3. P&L by Bot (horizontal bar)
+  const botPnl = {};
+  closed.forEach(t => { const b=t._bot||'unknown'; botPnl[b]=(botPnl[b]||0)+(t.pnl_pp||0); });
+  const botEntries = Object.entries(botPnl).sort((a,b)=>b[1]-a[1]);
+  charts.botpnl = new Chart(document.getElementById('ch-botpnl'), {
+    type:'bar', data:{labels:botEntries.map(([b])=>NAMES[b]||b), datasets:[{data:botEntries.map(([,v])=>Math.round(v*10)/10), backgroundColor:botEntries.map(([b])=>botPnl[b]>=0?'rgba(63,185,80,0.7)':'rgba(248,81,73,0.7)'), borderRadius:3}]},
+    options:{...chartOpts, indexAxis:'y'}
+  });
+
+  // 4. Scatter: Duration vs PnL
+  const scatterData = closed.map(t => {
+    const entry = new Date(t.entry_time||0); const exit = new Date(t.exit_time||0);
+    const days = Math.max(0.1, (exit-entry)/(1000*60*60*24));
+    return {x:Math.round(days*10)/10, y:t.pnl_pp||0, bot:t._bot};
+  });
+  charts.scatter = new Chart(document.getElementById('ch-scatter'), {
+    type:'scatter', data:{datasets:[{data:scatterData, backgroundColor:scatterData.map(d=>BOT_COLORS[d.bot]||'#58a6ff'), pointRadius:5}]},
+    options:{...chartOpts, scales:{x:{...chartOpts.scales.x, title:{display:true,text:'Days',color:'#8b949e',font:{size:9}}}, y:{...chartOpts.scales.y, title:{display:true,text:'PnL (pp)',color:'#8b949e',font:{size:9}}}}}
+  });
 }
 
-function renderPos(p) {
-  const pnl = p.pnl_pp != null ? `${sg(p.pnl_pp)}${p.pnl_pp}pp` : '...';
-  const mana = p.pnl_mana != null ? `${sg(p.pnl_mana)}${p.pnl_mana}M` : '';
-  const cls = p.pnl_pp != null ? pc(p.pnl_pp) : 'neutral';
-  const e = Math.max(0,Math.min(100,p.entry_prob));
-  const c = p.current_prob!=null ? Math.max(0,Math.min(100,p.current_prob)) : null;
-  const tg = Math.max(0,Math.min(100,p.target));
-  const st = Math.max(0,Math.min(100,p.stop));
+function renderIntel() {
+  const div = document.getElementById('sec-intel');
+  const il = D.intel||{};
+  const ov = D.overrides||{};
 
-  return `<div class="pcard">
-    <div class="pcard-top">
-      <div class="pcard-q"><a href="${p.url}" target="_blank">${p.question}</a></div>
-      <div class="pcard-pnl ${cls}">${pnl}<div class="pcard-sub">${mana}</div></div>
+  const defaults = {MIN_DRIFT_SCORE:1.5, MIN_CONSISTENCY:55, REVERSAL_THRESHOLD:4, SPIKE_MIN_RATIO:2.5, SPIKE_MIN_SIZE:6, FADE_STOP_PP:8, INTEL_MAX_OPEN_TOTAL:50, INTEL_DRAWDOWN_LIMIT_PP:-30};
+
+  let paramHtml = '';
+  for (const [key,def] of Object.entries(defaults)) {
+    const current = ov[key]!=null ? ov[key] : def;
+    const changed = ov[key]!=null && ov[key]!==def;
+    paramHtml += `<div class="param-row"><span class="param-name">${key}</span><span class="param-val ${changed?'param-changed':''}">${current}${changed?` <span class="param-default">(def: ${def})</span>`:''}</span></div>`;
+  }
+
+  let pauseHtml = '<div class="pause-grid">';
+  for (const [name] of FILES) {
+    const paused = (il.paused||{})[name];
+    const losses = (il.consecutive_losses||{})[name]||0;
+    pauseHtml += `<div class="pause-dot ${paused?'pause-paused':'pause-active'}">${(NAMES[name]||name).slice(0,4)}${losses>0?'<br>L'+losses:''}</div>`;
+  }
+  pauseHtml += '</div>';
+
+  const adjustments = il.adjustments||[];
+  const recentAdj = adjustments.slice(-5).reverse();
+  let adjHtml = recentAdj.length===0 ? '<div class="bot-row">No adjustments yet</div>' : recentAdj.map(a =>
+    `<div class="param-row"><span class="param-name">${a.param||'?'}: ${a.old_value||'?'} &rarr; ${a.new_value||'?'}</span><span class="param-val" style="font-size:8px;color:var(--dim)">${(a.reason||'').slice(0,30)}</span></div>`
+  ).join('');
+
+  div.innerHTML = `
+    <div class="intel-card"><div class="intel-title">Config Parameters</div>${paramHtml}</div>
+    <div class="intel-card"><div class="intel-title">Bot Status (20)</div>${pauseHtml}</div>
+    <div class="intel-card"><div class="intel-title">Recent Adjustments</div>${adjHtml}</div>
+    <div class="intel-card"><div class="intel-title">System Info</div>
+      <div class="param-row"><span class="param-name">Last Report</span><span class="param-val" style="font-size:9px">${il.last_report||'Never'}</span></div>
+      <div class="param-row"><span class="param-name">Total Adjustments</span><span class="param-val">${adjustments.length}</span></div>
     </div>
-    <div class="pcard-meta">
-      <span class="tag t-${p.bot}">${NAMES[p.bot]||p.bot}</span>
-      <span class="tag t-${p.direction.includes('YES')?'yes':'no'}">${p.direction.replace('BUY ','')}</span>
-      <span>${p.entry_prob}% → ${p.current_prob!=null?p.current_prob+'%':'...'}</span>
-      <span>${p.stake}M</span>
-    </div>
-    <div class="pbar">
-      <div class="pm-tgt" style="left:${tg}%"></div>
-      <div class="pm-stp" style="left:${st}%"></div>
-      <div class="pm pm-entry" style="left:${e}%"></div>
-      ${c!=null?`<div class="pm pm-now" style="left:${c}%"></div>`:''}
-    </div>
-  </div>`;
+  `;
 }
 
-// Initial load + auto refresh every 60s
+function renderHistory() {
+  const div = document.getElementById('sec-history');
+  const hist = D.allClosed.sort((a,b)=>(b.exit_time||'').localeCompare(a.exit_time||'')).slice(0,50);
+  if (hist.length===0) { div.innerHTML='<div class="empty">No closed trades yet</div>'; return; }
+  div.innerHTML = hist.map(h => {
+    const pnl=h.pnl_pp||0; const stake=h.stake||50; const mana=Math.round(pnl/100*stake*10)/10;
+    return `<div class="htrade"><div class="ht-top"><span class="ht-q">${h.question}</span><span class="ht-pnl ${pc(pnl)}">${sg(pnl)}${pnl}pp</span></div><div class="ht-meta"><span class="tag t-${h._bot||'unknown'}">${NAMES[h._bot]||h._bot||'?'}</span><span class="tag t-${h.direction.includes('YES')?'yes':'no'}">${h.direction.replace('BUY ','')}</span>${sg(mana)}${mana}M | ${h.exit_reason||'?'} | ${(h.exit_time||'').slice(0,16)}</div></div>`;
+  }).join('');
+}
+
+function timeAgo(dateStr) {
+  const d = new Date(dateStr); const now = new Date();
+  const hrs = Math.round((now-d)/(1000*60*60));
+  if (hrs<1) return 'just now';
+  if (hrs<24) return hrs+'h ago';
+  const days = Math.round(hrs/24);
+  return days+'d ago';
+}
+
 refresh();
 setInterval(refresh, 60000);
 </script>
