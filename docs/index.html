@@ -199,11 +199,11 @@ function sg(v) { return v > 0 ? '+' : ''; }
 async function refresh() {
   document.getElementById('ts').textContent = 'Loading...';
   const promises = FILES.map(([name,file]) => fetchJSON(`${RAW}/${file}`).then(d => [name, d||[]]));
-  const stateP = [fetchJSON(`${RAW}/portfolio.json`), fetchJSON(`${RAW}/atlas_state.json`), fetchJSON(`${RAW}/meridian_state.json`), fetchJSON(`${RAW}/sentinel_state.json`), fetchJSON(`${RAW}/intelligence_state.json`), fetchJSON(`${RAW}/config_overrides.json`)];
-  const [botResults, [portfolio,atlas,meridian,sentinel,intel,overrides]] = await Promise.all([Promise.all(promises), Promise.all(stateP)]);
+  const stateP = [fetchJSON(`${RAW}/portfolio.json`), fetchJSON(`${RAW}/atlas_state.json`), fetchJSON(`${RAW}/meridian_state.json`), fetchJSON(`${RAW}/sentinel_state.json`), fetchJSON(`${RAW}/intelligence_state.json`), fetchJSON(`${RAW}/config_overrides.json`), fetchJSON(`${RAW}/evolution_state.json`)];
+  const [botResults, [portfolio,atlas,meridian,sentinel,intel,overrides,evolution]] = await Promise.all([Promise.all(promises), Promise.all(stateP)]);
 
   const pf = portfolio || {starting_balance:1000, realized_pnl:0};
-  const at = atlas || {}; const mr = meridian || {}; const sn = sentinel || {}; const il = intel || {}; const ov = overrides || {};
+  const at = atlas || {}; const mr = meridian || {}; const sn = sentinel || {}; const il = intel || {}; const ov = overrides || {}; const evo = evolution || {};
   const starting = pf.starting_balance||1000;
   const realized = pf.realized_pnl||0;
   const balance = starting + realized;
@@ -246,8 +246,8 @@ async function refresh() {
   D = {
     portfolio: {starting, realized, balance, unrealized, total:Math.round((balance+unrealized)*10)/10, ret:Math.round((balance-starting)/starting*1000)/10, tret:Math.round((balance+unrealized-starting)/starting*1000)/10},
     positions, allClosed, botStats,
-    gov: {regime:at.regime||'normal', risk:sn.risk_level||'green', dir:(mr.direction_exposure||{}).balance||'balanced', yes_pct:(mr.direction_exposure||{}).yes_pct||50},
-    intel: il, overrides: ov
+    gov: {regime:evo.regime||at.regime||'normal', risk:sn.risk_level||'green', dir:(mr.direction_exposure||{}).balance||'balanced', yes_pct:(mr.direction_exposure||{}).yes_pct||50},
+    intel: il, overrides: ov, evo
   };
   render();
 }
@@ -422,7 +422,46 @@ function renderIntel() {
     `<div class="param-row"><span class="param-name">${a.param||'?'}: ${a.old_value||'?'} &rarr; ${a.new_value||'?'}</span><span class="param-val" style="font-size:8px;color:var(--dim)">${(a.reason||'').slice(0,30)}</span></div>`
   ).join('');
 
+  // Evolution engine data
+  const evo = D.evo||{};
+  const regime = evo.regime||'normal';
+  const gen = evo.generation||0;
+  const confidence = evo.bot_confidence||{};
+  const journal = (evo.learning_journal||[]).slice(-5).reverse();
+  const regimeHistory = (evo.regime_history||[]).slice(-3).reverse();
+  const botAdj = evo.bot_adjustments||{};
+
+  const regimeColor = regime==='cautious'?'var(--red)':regime==='aggressive'?'var(--green)':'var(--blue)';
+
+  let confHtml = '';
+  const confEntries = Object.entries(confidence).sort((a,b)=>b[1]-a[1]);
+  for (const [bot,score] of confEntries) {
+    const pct = Math.round(score*100);
+    const color = pct>=60?'var(--green)':pct>=40?'var(--yellow)':'var(--red)';
+    confHtml += `<div class="param-row"><span class="param-name">${NAMES[bot]||bot}</span><span class="param-val" style="color:${color}">${pct}%</span></div>`;
+  }
+
+  let journalHtml = journal.length===0 ? '<div class="bot-row" style="color:var(--dim)">No lessons yet — system is learning</div>' : journal.map(j =>
+    `<div class="param-row" style="flex-wrap:wrap"><span class="param-name" style="flex:1;min-width:0">${j.type==='bot_adjustment'?'⚙ '+((NAMES[j.bot]||j.bot)+': '+j.param+' '+j.old+'→'+j.new):'📝 '+(j.lesson||j.reason||'?')}</span><span class="param-val" style="font-size:7px;color:var(--dim)">${(j.timestamp||'').slice(0,16)}</span></div>`
+  ).join('');
+
+  let evoAdjHtml = '';
+  for (const [bot,params] of Object.entries(botAdj)) {
+    const items = Object.entries(params).map(([k,v])=>`${k}=${v}`).join(', ');
+    evoAdjHtml += `<div class="param-row"><span class="param-name">${NAMES[bot]||bot}</span><span class="param-val" style="font-size:8px">${items}</span></div>`;
+  }
+  if (!evoAdjHtml) evoAdjHtml = '<div class="bot-row" style="color:var(--dim)">No per-bot overrides yet</div>';
+
   div.innerHTML = `
+    <div class="intel-card"><div class="intel-title" style="color:${regimeColor}">🧠 Evolution — Gen #${gen} | ${regime.toUpperCase()} Mode</div>
+      <div class="param-row"><span class="param-name">Regime</span><span class="param-val" style="color:${regimeColor};font-weight:700">${regime.toUpperCase()}</span></div>
+      <div class="param-row"><span class="param-name">Generation</span><span class="param-val">${gen}</span></div>
+      <div class="param-row"><span class="param-name">Last Evolution</span><span class="param-val" style="font-size:9px">${evo.last_evolution||'Never'}</span></div>
+      ${regimeHistory.map(r=>`<div class="param-row"><span class="param-name" style="font-size:8px">${r.from}→${r.to}</span><span class="param-val" style="font-size:7px;color:var(--dim)">${(r.timestamp||'').slice(0,16)}</span></div>`).join('')}
+    </div>
+    <div class="intel-card"><div class="intel-title">Bot Confidence Scores</div>${confHtml}</div>
+    <div class="intel-card"><div class="intel-title">Per-Bot Adaptive Overrides</div>${evoAdjHtml}</div>
+    <div class="intel-card"><div class="intel-title">Learning Journal (Recent)</div>${journalHtml}</div>
     <div class="intel-card"><div class="intel-title">Config Parameters</div>${paramHtml}</div>
     <div class="intel-card"><div class="intel-title">Bot Status (20)</div>${pauseHtml}</div>
     <div class="intel-card"><div class="intel-title">Recent Adjustments</div>${adjHtml}</div>
