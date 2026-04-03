@@ -66,7 +66,7 @@
     "whale_amount": 500,
     "price_impact": 1.5,
     "signal_strength": 0.5,
-    "peak_pnl": 1.5
+    "peak_pnl": 1.7000000000000028
   },
   {
     "market_id": "zqUOdLndhE",
@@ -145,11 +145,11 @@
     "entry_time": "2026-04-03 05:52 UTC",
     "url": "https://manifold.markets/Jack1/democratic-aligned-candidate-vote-i-t6ZIIpsPqO",
     "stake": 50.7,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 77.7,
+    "exit_time": "2026-04-03 08:36 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 0.0,
     "whale_amount": 2500,
     "price_impact": 6.9,
     "signal_strength": 1.5
@@ -169,6 +169,7 @@
     "pnl_pp": null,
     "whale_amount": 500,
     "price_impact": 24.8,
-    "signal_strength": 0.5
+    "signal_strength": 0.5,
+    "peak_pnl": 2.1999999999999957
   }
 ]

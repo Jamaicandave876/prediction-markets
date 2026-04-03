@@ -66,6 +66,7 @@
     "pnl_pp": null,
     "drift_score": -1.07,
     "consistency": 53.2,
-    "signal_strength": 0.10700000000000001
+    "signal_strength": 0.10700000000000001,
+    "peak_pnl": 0.10000000000000142
   }
 ]

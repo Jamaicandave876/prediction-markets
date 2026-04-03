@@ -1,1 +1,19 @@
-[]
+[
+  {
+    "market_id": "C0dC652qlU",
+    "question": "Bitcoin $76K in April?",
+    "direction": "BUY NO",
+    "entry_prob": 27.4,
+    "entry_time": "2026-04-03 11:26 UTC",
+    "url": "https://manifold.markets/predyx_markets/bitcoin-76k-in-april",
+    "stake": 20,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "days_to_close": 27.8,
+    "decay_strength": 0.23,
+    "signal_strength": 0.23
+  }
+]
