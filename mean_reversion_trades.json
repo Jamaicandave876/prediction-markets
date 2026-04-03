@@ -61,7 +61,8 @@
     "exit_reason": null,
     "pnl_pp": null,
     "distance_from_center": 35.7,
-    "signal_strength": 0.71
+    "signal_strength": 0.71,
+    "peak_pnl": 0.7999999999999989
   },
   {
     "market_id": "gL89pz95z9",

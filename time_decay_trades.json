@@ -15,5 +15,39 @@
     "days_to_close": 27.8,
     "decay_strength": 0.23,
     "signal_strength": 0.23
+  },
+  {
+    "market_id": "QUlUpzqyNh",
+    "question": "Will this market get at least 50 unique traders before May?",
+    "direction": "BUY YES",
+    "entry_prob": 83.0,
+    "entry_time": "2026-04-03 14:29 UTC",
+    "url": "https://manifold.markets/johnNZOy/will-this-market-get-at-least-50-un-62LcQ6tNsR",
+    "stake": 45.4,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "days_to_close": 27.4,
+    "decay_strength": 0.33,
+    "signal_strength": 0.33
+  },
+  {
+    "market_id": "CqptuuhR5c",
+    "question": "Bitcoin $64K in April?",
+    "direction": "BUY YES",
+    "entry_prob": 79.0,
+    "entry_time": "2026-04-03 14:29 UTC",
+    "url": "https://manifold.markets/predyx_markets/bitcoin-64k-in-april",
+    "stake": 32.3,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "days_to_close": 27.7,
+    "decay_strength": 0.29,
+    "signal_strength": 0.29
   }
 ]

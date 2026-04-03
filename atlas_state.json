@@ -48,16 +48,16 @@
       "avg_pnl": 0.7,
       "total_pnl": 5.6,
       "closed": 8,
-      "open": 1,
+      "open": 4,
       "grade": "B"
     },
     "whale": {
-      "score": 17.3,
+      "score": 17.7,
       "win_rate": 0.0,
-      "avg_pnl": -1.3,
+      "avg_pnl": -1.1,
       "total_pnl": -8.0,
-      "closed": 6,
-      "open": 5,
+      "closed": 7,
+      "open": 4,
       "grade": "F"
     },
     "contrarian": {
@@ -70,21 +70,21 @@
       "grade": "F"
     },
     "close_gravity": {
-      "score": 50,
-      "win_rate": 0,
-      "avg_pnl": 0,
-      "total_pnl": 0,
-      "closed": 1,
-      "open": 3,
-      "grade": "NEW"
+      "score": 0.0,
+      "win_rate": 0.0,
+      "avg_pnl": -40.4,
+      "total_pnl": -80.8,
+      "closed": 2,
+      "open": 2,
+      "grade": "F"
     },
     "fresh_sniper": {
-      "score": 39.0,
-      "win_rate": 30.0,
-      "avg_pnl": 0.5,
-      "total_pnl": 5.1,
-      "closed": 11,
-      "open": 5,
+      "score": 49.9,
+      "win_rate": 40.0,
+      "avg_pnl": 3.0,
+      "total_pnl": 19.0,
+      "closed": 12,
+      "open": 4,
       "grade": "D"
     },
     "stability": {
@@ -111,10 +111,10 @@
     "fade": 0,
     "mean_reversion": 0,
     "volume_surge": 2,
-    "whale": 6,
+    "whale": 7,
     "contrarian": 1,
-    "close_gravity": 1,
-    "fresh_sniper": 2,
+    "close_gravity": 2,
+    "fresh_sniper": 0,
     "stability": 0,
     "breakout": 0
   },

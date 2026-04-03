@@ -95,5 +95,24 @@
     "impact_score": 6.68,
     "signal_strength": 1.5,
     "peak_pnl": 4.600000000000001
+  },
+  {
+    "market_id": "zNQOh9dzZ6",
+    "question": "[short fuse] US ground invasion of Iran occurs during Easter?",
+    "direction": "BUY YES",
+    "entry_prob": 28.1,
+    "entry_time": "2026-04-03 14:29 UTC",
+    "url": "https://manifold.markets/brod/short-fuse-us-ground-invasion-of-ir",
+    "stake": 20,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "liquidation_size": 200,
+    "liquidation_impact": 5.5,
+    "liquidation_dir": "NO",
+    "impact_score": 1.11,
+    "signal_strength": 0.55
   }
 ]

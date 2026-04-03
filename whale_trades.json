@@ -170,7 +170,7 @@
     "whale_amount": 500,
     "price_impact": 24.8,
     "signal_strength": 0.5,
-    "peak_pnl": 11.299999999999997
+    "peak_pnl": 11.5
   },
   {
     "market_id": "CqptuuhR5c",
@@ -180,11 +180,11 @@
     "entry_time": "2026-04-03 11:25 UTC",
     "url": "https://manifold.markets/predyx_markets/bitcoin-64k-in-april",
     "stake": 20,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 79.0,
+    "exit_time": "2026-04-03 14:28 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 0.0,
     "whale_amount": 500,
     "price_impact": 10.0,
     "signal_strength": 0.5

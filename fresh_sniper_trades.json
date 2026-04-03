@@ -189,16 +189,16 @@
     "entry_time": "2026-04-02 20:02 UTC",
     "url": "https://manifold.markets/Jack1/announcement-that-pam-bondi-is-out",
     "stake": 59.2,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 78.0,
+    "exit_time": "2026-04-03 14:28 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 13.9,
     "open_prob": 24.0,
     "move_from_open": 40.1,
     "age_hours": 20.7,
     "signal_strength": 1.3366666666666664,
-    "peak_pnl": 4.900000000000006
+    "peak_pnl": 13.900000000000006
   },
   {
     "market_id": "8Lp0uz8pgQ",
