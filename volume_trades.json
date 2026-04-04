@@ -316,5 +316,41 @@
     "net_flow": -1852,
     "recent_mana": 2368,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "cNINOgdn2N",
+    "question": "Will the US seize the Iranian uranium?",
+    "direction": "BUY YES",
+    "entry_prob": 22.3,
+    "entry_time": "2026-04-04 16:00 UTC",
+    "url": "https://manifold.markets/MachiNi/will-the-us-get-the-iranian-uranium",
+    "stake": 20.2,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "volume_ratio": 56.1,
+    "net_flow": 156,
+    "recent_mana": 671,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "cNd05lL9SA",
+    "question": "Q-Day before 2030?",
+    "direction": "BUY YES",
+    "entry_prob": 16.9,
+    "entry_time": "2026-04-04 16:00 UTC",
+    "url": "https://manifold.markets/SG/qday-before-2030",
+    "stake": 20,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "volume_ratio": 36.0,
+    "net_flow": 425,
+    "recent_mana": 425,
+    "signal_strength": 1.5
   }
 ]

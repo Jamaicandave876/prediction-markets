@@ -88,11 +88,11 @@
     "drift_score": -6.87,
     "url": "https://manifold.markets/waterlilly/will-there-be-an-ai-loss-of-control",
     "stake": 39.6,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 43.1,
+    "exit_time": "2026-04-04 15:59 UTC",
+    "exit_reason": "trailing_stop",
+    "pnl_pp": -2.1,
     "peak_pnl": 10.3
   },
   {

@@ -277,7 +277,8 @@
     "volume_ratio": 30.6,
     "net_flow": 63,
     "recent_mana": 343,
-    "signal_strength": 1.5
+    "signal_strength": 1.5,
+    "peak_pnl": 0.19999999999999996
   },
   {
     "market_id": "AU5Lzc8zhz",
@@ -306,11 +307,11 @@
     "entry_time": "2026-04-04 10:06 UTC",
     "url": "https://manifold.markets/Sketchy/will-pam-bondi-disparage-trump-in-t",
     "stake": 74.9,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 21.6,
+    "exit_time": "2026-04-04 14:03 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": -1.6,
     "volume_ratio": 23.3,
     "net_flow": -1852,
     "recent_mana": 2368,

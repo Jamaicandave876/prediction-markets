@@ -94,5 +94,20 @@
     "exit_reason": null,
     "pnl_pp": null,
     "peak_pnl": 10.3
+  },
+  {
+    "market_id": "NNUtSU6O95",
+    "question": "Will Trump declare victory in the Iran war before the 2026 midterms?",
+    "direction": "BUY YES",
+    "entry_prob": 74.0,
+    "entry_time": "2026-04-04 14:03 UTC",
+    "drift_score": 9.8,
+    "url": "https://manifold.markets/Terminator2/will-trump-declare-victory-in-the-i",
+    "stake": 42.5,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]
