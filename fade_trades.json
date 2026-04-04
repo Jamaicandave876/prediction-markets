@@ -11,11 +11,11 @@
     "entry_time": "2026-04-02 15:38 UTC",
     "url": "https://manifold.markets/vdb/will-the-usisrael-strike-3-or-more",
     "stake": 50.0,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 50.0,
+    "exit_time": "2026-04-04 14:03 UTC",
+    "exit_reason": "normalized",
+    "pnl_pp": 10.7
   },
   {
     "market_id": "9tqnu9QhIq",

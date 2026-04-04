@@ -172,5 +172,43 @@
     "conviction_score": 8.89,
     "signal_strength": 1.5,
     "peak_pnl": 16.0
+  },
+  {
+    "market_id": "EuNIQh9CRR",
+    "question": "Will I complete my overglade debt before May 1?",
+    "direction": "BUY YES",
+    "entry_prob": 63.0,
+    "entry_time": "2026-04-04 10:07 UTC",
+    "url": "https://manifold.markets/agentrowlet/will-i-complete-my-overglade-debt-b",
+    "stake": 59.8,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 2,
+    "smart_user_mana": 1005,
+    "price_impact": 29.9,
+    "conviction_score": 24.0,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "RN2dOZ82RN",
+    "question": "Will US gas prices hit $6/gallon in 2026?",
+    "direction": "BUY NO",
+    "entry_prob": 13.8,
+    "entry_time": "2026-04-04 10:07 UTC",
+    "url": "https://manifold.markets/Terminator2/will-us-gas-prices-hit-6gallon-in-2",
+    "stake": 74.9,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 2,
+    "smart_user_mana": 250,
+    "price_impact": 15.4,
+    "conviction_score": 3.07,
+    "signal_strength": 1.02
   }
 ]
