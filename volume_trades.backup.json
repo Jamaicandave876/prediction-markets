@@ -258,6 +258,43 @@
     "volume_ratio": 35.0,
     "net_flow": 70,
     "recent_mana": 70,
+    "signal_strength": 1.5,
+    "peak_pnl": 0.10000000000000142
+  },
+  {
+    "market_id": "8PtCSSg6sU",
+    "question": "Will the Federal Reserve cut interest rates at the April 29, 2026 FOMC meeting?",
+    "direction": "BUY YES",
+    "entry_prob": 1.0,
+    "entry_time": "2026-04-04 05:15 UTC",
+    "url": "https://manifold.markets/CalibratedGhosts/will-the-federal-reserve-cut-intere-dsghRLEz6Z",
+    "stake": 20,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "volume_ratio": 30.6,
+    "net_flow": 63,
+    "recent_mana": 343,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "AU5Lzc8zhz",
+    "question": "Will the US military control at least ten percent of Iran by area at any point during 2026?",
+    "direction": "BUY NO",
+    "entry_prob": 11.2,
+    "entry_time": "2026-04-04 05:15 UTC",
+    "url": "https://manifold.markets/benjaminIkuta/will-the-us-military-control-at-lea",
+    "stake": 58.7,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "volume_ratio": 13.7,
+    "net_flow": -2858,
+    "recent_mana": 3294,
+    "signal_strength": 1.3676488908900644
   }
 ]

@@ -97,5 +97,24 @@
     "price_move": 5.9,
     "divergence_score": 4.14,
     "signal_strength": 0.83
+  },
+  {
+    "market_id": "IuOpLtLgNU",
+    "question": "Will Pam Bondi disparage Trump in the next month?",
+    "direction": "BUY NO",
+    "entry_prob": 18.0,
+    "entry_time": "2026-04-04 08:02 UTC",
+    "url": "https://manifold.markets/Sketchy/will-pam-bondi-disparage-trump-in-t",
+    "stake": 68.1,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "YES",
+    "crowd_pct": 60.0,
+    "price_move": -26.8,
+    "divergence_score": 16.11,
+    "signal_strength": 1.5
   }
 ]

@@ -40,12 +40,12 @@
     "drift_score": 23.34,
     "url": "https://manifold.markets/vdb/will-us-average-gas-price-reach-430",
     "stake": 50.0,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
-    "peak_pnl": 10.400000000000006
+    "status": "closed",
+    "exit_prob": 78.8,
+    "exit_time": "2026-04-04 05:15 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 14.8,
+    "peak_pnl": 14.799999999999997
   },
   {
     "market_id": "5ztuCIqnuL",

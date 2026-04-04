@@ -161,16 +161,16 @@
     "entry_time": "2026-04-03 14:29 UTC",
     "url": "https://manifold.markets/Sketchy/will-pam-bondi-disparage-trump-in-t",
     "stake": 33.9,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 18.0,
+    "exit_time": "2026-04-04 08:01 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 16.0,
     "smart_user_bets": 6,
     "smart_user_mana": 300,
     "price_impact": 12.3,
     "conviction_score": 8.89,
     "signal_strength": 1.5,
-    "peak_pnl": 3.8000000000000007
+    "peak_pnl": 16.0
   }
 ]

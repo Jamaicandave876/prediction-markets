@@ -16,5 +16,23 @@
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null
+  },
+  {
+    "market_id": "9tqnu9QhIq",
+    "question": "Will the Republican candidate win Georgia's 14th Congressional District special election?",
+    "direction": "BUY NO",
+    "entry_prob": 91.6,
+    "pre_spike_prob": 8.4,
+    "spike_size": 83.2,
+    "spike_ratio": 2.8,
+    "spike_dir": 1,
+    "entry_time": "2026-04-04 08:00 UTC",
+    "url": "https://manifold.markets/FabulousFab/will-the-republican-candidate-win-g",
+    "stake": 32.1,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]

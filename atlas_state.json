@@ -28,7 +28,7 @@
       "avg_pnl": 0,
       "total_pnl": 0,
       "closed": 0,
-      "open": 1,
+      "open": 2,
       "grade": "NEW"
     },
     "mean_reversion": {
@@ -41,12 +41,12 @@
       "grade": "NEW"
     },
     "volume_surge": {
-      "score": 54.9,
+      "score": 54.6,
       "win_rate": 60.0,
-      "avg_pnl": -0.5,
-      "total_pnl": 1.6,
-      "closed": 11,
-      "open": 5,
+      "avg_pnl": -0.7,
+      "total_pnl": 2.8,
+      "closed": 12,
+      "open": 4,
       "grade": "C"
     },
     "whale": {
@@ -108,7 +108,7 @@
     "momentum": 0,
     "fade": 0,
     "mean_reversion": 0,
-    "volume_surge": 2,
+    "volume_surge": 0,
     "whale": 0,
     "contrarian": 1,
     "close_gravity": 3,
