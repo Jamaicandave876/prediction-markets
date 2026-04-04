@@ -289,7 +289,8 @@
     "open_prob": 41.7,
     "move_from_open": 13.8,
     "age_hours": 26.2,
-    "signal_strength": 0.4594447624180752
+    "signal_strength": 0.4594447624180752,
+    "peak_pnl": 9.400000000000006
   },
   {
     "market_id": "ndtECCSg2l",

@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-04-04 08:02 UTC",
+  "last_run": "2026-04-04 10:07 UTC",
   "conflicts": [],
   "overlaps": {
     "cqpLP0PAZn": [
@@ -17,12 +17,12 @@
   },
   "direction_exposure": {
     "yes_count": 15,
-    "no_count": 12,
-    "total": 27,
+    "no_count": 13,
+    "total": 28,
     "yes_stake": 551.1,
-    "no_stake": 383.0,
-    "total_stake": 934.1,
-    "yes_pct": 59.0,
+    "no_stake": 457.9,
+    "total_stake": 1009.0,
+    "yes_pct": 54.6,
     "balance": "balanced"
   },
   "capital_weights": {

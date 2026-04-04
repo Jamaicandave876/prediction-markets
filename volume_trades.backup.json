@@ -287,14 +287,15 @@
     "entry_time": "2026-04-04 05:15 UTC",
     "url": "https://manifold.markets/benjaminIkuta/will-the-us-military-control-at-lea",
     "stake": 58.7,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 10.0,
+    "exit_time": "2026-04-04 08:00 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 1.2,
     "volume_ratio": 13.7,
     "net_flow": -2858,
     "recent_mana": 3294,
-    "signal_strength": 1.3676488908900644
+    "signal_strength": 1.3676488908900644,
+    "peak_pnl": 1.1999999999999993
   }
 ]
