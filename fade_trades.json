@@ -34,5 +34,23 @@
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null
+  },
+  {
+    "market_id": "EuNIQh9CRR",
+    "question": "Will I complete my overglade debt before May 1?",
+    "direction": "BUY YES",
+    "entry_prob": 70.5,
+    "pre_spike_prob": 84.4,
+    "spike_size": 13.9,
+    "spike_ratio": 11.4,
+    "spike_dir": -1,
+    "entry_time": "2026-04-04 19:45 UTC",
+    "url": "https://manifold.markets/agentrowlet/will-i-complete-my-overglade-debt-b",
+    "stake": 32.3,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]
