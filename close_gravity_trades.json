@@ -49,7 +49,8 @@
     "pnl_pp": null,
     "drift_score": -14.41,
     "consistency": 56.3,
-    "signal_strength": 1.441
+    "signal_strength": 1.441,
+    "peak_pnl": 2.6999999999999886
   },
   {
     "market_id": "APCsslCpuz",
@@ -77,11 +78,11 @@
     "entry_time": "2026-04-03 17:01 UTC",
     "url": "https://manifold.markets/ShaneBo/will-the-super-mario-galaxy-movie-g",
     "stake": 75.2,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 61.3,
+    "exit_time": "2026-04-04 05:15 UTC",
+    "exit_reason": "stopped_out",
+    "pnl_pp": -16.0,
     "drift_score": 55.99,
     "consistency": 56.2,
     "signal_strength": 5.599,

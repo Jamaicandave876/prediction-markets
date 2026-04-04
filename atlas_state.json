@@ -14,13 +14,13 @@
   "pause_start": {},
   "bot_scores": {
     "momentum": {
-      "score": 70.0,
-      "win_rate": 50.0,
-      "avg_pnl": 13.0,
-      "total_pnl": 25.9,
-      "closed": 2,
-      "open": 4,
-      "grade": "B"
+      "score": 80.0,
+      "win_rate": 66.7,
+      "avg_pnl": 13.6,
+      "total_pnl": 40.7,
+      "closed": 3,
+      "open": 3,
+      "grade": "A"
     },
     "fade": {
       "score": 50,
@@ -46,16 +46,16 @@
       "avg_pnl": -0.5,
       "total_pnl": 1.6,
       "closed": 11,
-      "open": 3,
+      "open": 5,
       "grade": "C"
     },
     "whale": {
-      "score": 23.9,
-      "win_rate": 10.0,
-      "avg_pnl": -1.1,
-      "total_pnl": -10.7,
-      "closed": 11,
-      "open": 2,
+      "score": 31.9,
+      "win_rate": 20.0,
+      "avg_pnl": -0.1,
+      "total_pnl": -0.7,
+      "closed": 12,
+      "open": 1,
       "grade": "F"
     },
     "contrarian": {
@@ -70,19 +70,19 @@
     "close_gravity": {
       "score": 0.0,
       "win_rate": 0.0,
-      "avg_pnl": -40.4,
-      "total_pnl": -80.8,
-      "closed": 2,
-      "open": 3,
+      "avg_pnl": -32.3,
+      "total_pnl": -96.8,
+      "closed": 3,
+      "open": 2,
       "grade": "F"
     },
     "fresh_sniper": {
-      "score": 47.6,
-      "win_rate": 40.0,
-      "avg_pnl": 1.8,
-      "total_pnl": 4.5,
-      "closed": 14,
-      "open": 4,
+      "score": 38.8,
+      "win_rate": 30.0,
+      "avg_pnl": 0.4,
+      "total_pnl": -0.4,
+      "closed": 15,
+      "open": 3,
       "grade": "D"
     },
     "stability": {
@@ -95,13 +95,13 @@
       "grade": "NEW"
     },
     "breakout": {
-      "score": 50,
-      "win_rate": 0,
-      "avg_pnl": 0,
-      "total_pnl": 0,
-      "closed": 1,
-      "open": 2,
-      "grade": "NEW"
+      "score": 80.3,
+      "win_rate": 100.0,
+      "avg_pnl": 0.2,
+      "total_pnl": 0.3,
+      "closed": 2,
+      "open": 1,
+      "grade": "A"
     }
   },
   "consecutive_losses": {
@@ -109,13 +109,13 @@
     "fade": 0,
     "mean_reversion": 0,
     "volume_surge": 2,
-    "whale": 3,
+    "whale": 0,
     "contrarian": 1,
-    "close_gravity": 2,
-    "fresh_sniper": 2,
+    "close_gravity": 3,
+    "fresh_sniper": 3,
     "stability": 0,
     "breakout": 0
   },
-  "regime": "normal",
-  "last_report": "2026-04-03 05:53 UTC"
+  "regime": "adverse",
+  "last_report": "2026-04-04 05:15 UTC"
 }

@@ -1,1 +1,22 @@
-[]
+[
+  {
+    "market_id": "QUlUpzqyNh",
+    "question": "Will this market get at least 50 unique traders before May?",
+    "direction": "BUY YES",
+    "entry_prob": 80.7,
+    "entry_time": "2026-04-03 22:02 UTC",
+    "url": "https://manifold.markets/johnNZOy/will-this-market-get-at-least-50-un-62LcQ6tNsR",
+    "stake": 72.6,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "accum_direction": "YES",
+    "accum_pct": 75.6,
+    "total_volume": 859,
+    "price_move": 0.4,
+    "accum_score": 1.9,
+    "signal_strength": 0.95
+  }
+]
