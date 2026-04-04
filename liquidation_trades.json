@@ -153,6 +153,26 @@
     "liquidation_impact": 11.0,
     "liquidation_dir": "YES",
     "impact_score": 2.74,
-    "signal_strength": 1.37
+    "signal_strength": 1.37,
+    "peak_pnl": 2.3999999999999986
+  },
+  {
+    "market_id": "NN6SZcUq0y",
+    "question": "Will JD Vance, Marco Rubio OR Gavin Newsom win the 2028 presidential election?",
+    "direction": "BUY YES",
+    "entry_prob": 51.4,
+    "entry_time": "2026-04-04 21:59 UTC",
+    "url": "https://manifold.markets/Jack1/will-jd-vance-marco-rubio-or-gavin",
+    "stake": 20,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "liquidation_size": 100,
+    "liquidation_impact": 5.5,
+    "liquidation_dir": "NO",
+    "impact_score": 0.55,
+    "signal_strength": 0.27
   }
 ]

@@ -11,17 +11,17 @@
       "stop_pp": 12
     },
     "volume_surge": {
-      "stop_pp": 8
+      "stop_pp": 9
     },
     "contrarian": {
-      "stop_pp": 6
+      "stop_pp": 7
     }
   },
   "loss_patterns": {
     "volume_surge": {
       "target_hit": 4,
       "stopped_out": 1,
-      "trailing_stop": 1
+      "trailing_stop": 2
     },
     "whale": {
       "target_hit": 2,
@@ -36,14 +36,14 @@
     },
     "time_decay": {
       "stopped_out": 2,
-      "trailing_stop": 1
+      "trailing_stop": 2
     },
     "accumulation": {
       "target_hit": 2
     },
     "sentiment": {
       "target_hit": 2,
-      "stopped_out": 3
+      "stopped_out": 4
     },
     "smart_money": {
       "target_hit": 2
@@ -52,7 +52,7 @@
       "trailing_stop": 2
     },
     "contrarian": {
-      "trailing_stop": 1
+      "trailing_stop": 2
     }
   },
   "win_patterns": {
@@ -75,9 +75,9 @@
     },
     "liquidation": {
       "low_prob_entry": 1,
-      "fast_trade": 2,
-      "yes_direction": 2,
-      "mid_prob_entry": 1
+      "fast_trade": 3,
+      "yes_direction": 3,
+      "mid_prob_entry": 2
     },
     "momentum": {
       "mid_prob_entry": 2,
@@ -85,10 +85,10 @@
       "strong_signal": 2
     },
     "breakout": {
-      "mid_prob_entry": 3,
+      "mid_prob_entry": 4,
       "fast_trade": 2,
-      "yes_direction": 3,
-      "strong_signal": 3
+      "yes_direction": 4,
+      "strong_signal": 4
     },
     "fade": {
       "mid_prob_entry": 2,
@@ -101,19 +101,19 @@
       "weak_signal": 2
     },
     "fresh_sniper": {
-      "mid_prob_entry": 1,
-      "yes_direction": 1,
-      "weak_signal": 1
+      "mid_prob_entry": 2,
+      "yes_direction": 2,
+      "weak_signal": 2
     },
     "sentiment": {
-      "low_prob_entry": 1,
-      "fast_trade": 1,
-      "no_direction": 1
+      "low_prob_entry": 2,
+      "fast_trade": 2,
+      "no_direction": 2
     },
     "hedge": {
-      "low_prob_entry": 1,
-      "yes_direction": 1,
-      "strong_signal": 1
+      "low_prob_entry": 2,
+      "yes_direction": 2,
+      "strong_signal": 2
     }
   },
   "learning_journal": [
@@ -341,6 +341,24 @@
       "new": 12,
       "reason": "Too many stop-outs \u2014 stops are too tight",
       "timestamp": "2026-04-04 19:46 UTC"
+    },
+    {
+      "type": "bot_adjustment",
+      "bot": "volume_surge",
+      "param": "stop_pp",
+      "old": 8,
+      "new": 9,
+      "reason": "Too many stop-outs \u2014 stops are too tight",
+      "timestamp": "2026-04-04 21:59 UTC"
+    },
+    {
+      "type": "bot_adjustment",
+      "bot": "contrarian",
+      "param": "stop_pp",
+      "old": 6,
+      "new": 7,
+      "reason": "Too many stop-outs \u2014 stops are too tight",
+      "timestamp": "2026-04-04 21:59 UTC"
     }
   ],
   "trade_autopsies": [
@@ -1281,6 +1299,157 @@
       "direction": "BUY YES",
       "timestamp": "2026-04-04 19:46 UTC",
       "lesson": "Liquidation: Quick strong win \u2014 this signal pattern works well."
+    },
+    {
+      "bot": "volume_surge",
+      "market_id": "R5gtEPsUqI",
+      "outcome": "small_loss",
+      "pnl_pp": -2.7,
+      "exit_reason": "trailing_stop",
+      "duration_hours": 29.3,
+      "traits": [
+        "low_prob_entry",
+        "yes_direction",
+        "weak_signal"
+      ],
+      "entry_prob": 26.6,
+      "direction": "BUY YES",
+      "timestamp": "2026-04-04 19:45 UTC",
+      "lesson": "Vol Surge: Had profit but trailing stop was too tight. Consider widening trail."
+    },
+    {
+      "bot": "contrarian",
+      "market_id": "cqpLP0PAZn",
+      "outcome": "small_loss",
+      "pnl_pp": -2.0,
+      "exit_reason": "trailing_stop",
+      "duration_hours": 61.9,
+      "traits": [
+        "mid_prob_entry",
+        "yes_direction"
+      ],
+      "entry_prob": 48.5,
+      "direction": "BUY YES",
+      "timestamp": "2026-04-04 19:45 UTC",
+      "lesson": "Contrarian: Had profit but trailing stop was too tight. Consider widening trail."
+    },
+    {
+      "bot": "fresh_sniper",
+      "market_id": "pUCZPnhO66",
+      "outcome": "small_win",
+      "pnl_pp": 4.5,
+      "exit_reason": "trailing_stop",
+      "duration_hours": 35.1,
+      "traits": [
+        "mid_prob_entry",
+        "yes_direction",
+        "weak_signal"
+      ],
+      "entry_prob": 55.5,
+      "direction": "BUY YES",
+      "timestamp": "2026-04-04 19:45 UTC",
+      "lesson": "Sniper: small win via trailing_stop. PnL: +4.5pp in 35h."
+    },
+    {
+      "bot": "breakout",
+      "market_id": "pUCZPnhO66",
+      "outcome": "small_win",
+      "pnl_pp": 4.5,
+      "exit_reason": "trailing_stop",
+      "duration_hours": 37.9,
+      "traits": [
+        "mid_prob_entry",
+        "yes_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 55.5,
+      "direction": "BUY YES",
+      "timestamp": "2026-04-04 19:45 UTC",
+      "lesson": "Breakout: small win via trailing_stop. PnL: +4.5pp in 38h."
+    },
+    {
+      "bot": "time_decay",
+      "market_id": "C0dC652qlU",
+      "outcome": "small_loss",
+      "pnl_pp": -0.7,
+      "exit_reason": "trailing_stop",
+      "duration_hours": 32.3,
+      "traits": [
+        "low_prob_entry",
+        "no_direction",
+        "weak_signal"
+      ],
+      "entry_prob": 27.4,
+      "direction": "BUY NO",
+      "timestamp": "2026-04-04 19:46 UTC",
+      "lesson": "Time Decay: Had profit but trailing stop was too tight. Consider widening trail."
+    },
+    {
+      "bot": "sentiment",
+      "market_id": "zACQ82SQd6",
+      "outcome": "big_loss",
+      "pnl_pp": -4.9,
+      "exit_reason": "stopped_out",
+      "duration_hours": 29.3,
+      "traits": [
+        "mid_prob_entry",
+        "yes_direction"
+      ],
+      "entry_prob": 39.4,
+      "direction": "BUY YES",
+      "timestamp": "2026-04-04 19:46 UTC",
+      "lesson": "Sentiment: big loss via stopped_out. PnL: -4.9pp in 29h."
+    },
+    {
+      "bot": "sentiment",
+      "market_id": "l2UcqtzuPZ",
+      "outcome": "small_win",
+      "pnl_pp": 1.2,
+      "exit_reason": "target_hit",
+      "duration_hours": 3.8,
+      "traits": [
+        "low_prob_entry",
+        "fast_trade",
+        "no_direction"
+      ],
+      "entry_prob": 27.7,
+      "direction": "BUY NO",
+      "timestamp": "2026-04-04 19:46 UTC",
+      "lesson": "Sentiment: small win via target_hit. PnL: +1.2pp in 4h."
+    },
+    {
+      "bot": "hedge",
+      "market_id": "R5gtEPsUqI",
+      "outcome": "small_win",
+      "pnl_pp": 0.1,
+      "exit_reason": "trailing_stop",
+      "duration_hours": 58.1,
+      "traits": [
+        "low_prob_entry",
+        "yes_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 23.8,
+      "direction": "BUY YES",
+      "timestamp": "2026-04-04 19:46 UTC",
+      "lesson": "Hedge: small win via trailing_stop. PnL: +0.1pp in 58h."
+    },
+    {
+      "bot": "liquidation",
+      "market_id": "EuNIQh9CRR",
+      "outcome": "strong_win",
+      "pnl_pp": 30.5,
+      "exit_reason": "target_hit",
+      "duration_hours": 11.7,
+      "traits": [
+        "mid_prob_entry",
+        "fast_trade",
+        "yes_direction"
+      ],
+      "entry_prob": 40.0,
+      "direction": "BUY YES",
+      "timestamp": "2026-04-04 19:46 UTC",
+      "lesson": "Liquidation: Quick strong win \u2014 this signal pattern works well."
     }
   ],
   "regime": "normal",
@@ -1320,6 +1489,6 @@
     "hedge": 1.0,
     "liquidation": 0.53
   },
-  "last_evolution": "2026-04-04 19:46 UTC",
-  "generation": 8
+  "last_evolution": "2026-04-04 21:59 UTC",
+  "generation": 9
 }
