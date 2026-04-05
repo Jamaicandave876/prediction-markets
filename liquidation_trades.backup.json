@@ -144,11 +144,11 @@
     "entry_time": "2026-04-04 16:01 UTC",
     "url": "https://manifold.markets/vdb/will-the-usisrael-strike-3-or-more",
     "stake": 33.0,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 65.9,
+    "exit_time": "2026-04-05 19:52 UTC",
+    "exit_reason": "trailing_stop",
+    "pnl_pp": -4.5,
     "liquidation_size": 250,
     "liquidation_impact": 11.0,
     "liquidation_dir": "YES",
@@ -193,7 +193,8 @@
     "liquidation_impact": 9.0,
     "liquidation_dir": "NO",
     "impact_score": 5.16,
-    "signal_strength": 1.5
+    "signal_strength": 1.5,
+    "peak_pnl": 0.09999999999999432
   },
   {
     "market_id": "yOugUdyuzE",
@@ -214,5 +215,24 @@
     "impact_score": 2.91,
     "signal_strength": 1.46,
     "peak_pnl": 1.3999999999999986
+  },
+  {
+    "market_id": "NNUtSU6O95",
+    "question": "Will Trump declare victory in the Iran war before the 2026 midterms?",
+    "direction": "BUY NO",
+    "entry_prob": 83.0,
+    "entry_time": "2026-04-05 19:52 UTC",
+    "url": "https://manifold.markets/Terminator2/will-trump-declare-victory-in-the-i",
+    "stake": 20,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "liquidation_size": 100,
+    "liquidation_impact": 5.8,
+    "liquidation_dir": "YES",
+    "impact_score": 0.58,
+    "signal_strength": 0.29
   }
 ]

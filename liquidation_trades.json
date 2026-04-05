@@ -234,5 +234,24 @@
     "liquidation_dir": "YES",
     "impact_score": 0.58,
     "signal_strength": 0.29
+  },
+  {
+    "market_id": "pyOPUy9NEg",
+    "question": "Will COMEX Gold (June 2026) touch $5000.00 at any point before April 25, 2026?",
+    "direction": "BUY YES",
+    "entry_prob": 39.2,
+    "entry_time": "2026-04-05 21:59 UTC",
+    "url": "https://manifold.markets/ShaneBo/will-comex-gold-june-2026-touch-500",
+    "stake": 39.4,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "liquidation_size": 250,
+    "liquidation_impact": 11.5,
+    "liquidation_dir": "NO",
+    "impact_score": 2.88,
+    "signal_strength": 1.44
   }
 ]
