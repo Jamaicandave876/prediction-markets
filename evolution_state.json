@@ -20,15 +20,15 @@
       "trailing_stop_pp": 8
     },
     "close_gravity": {
-      "stop_pp": 10
+      "stop_pp": 11
     },
     "sentiment": {
-      "trailing_stop_pp": 5
+      "trailing_stop_pp": 6
     }
   },
   "loss_patterns": {
     "volume_surge": {
-      "target_hit": 4,
+      "target_hit": 6,
       "stopped_out": 3,
       "trailing_stop": 2
     },
@@ -53,7 +53,7 @@
     "sentiment": {
       "target_hit": 2,
       "stopped_out": 4,
-      "trailing_stop": 1
+      "trailing_stop": 2
     },
     "smart_money": {
       "target_hit": 4,
@@ -68,6 +68,9 @@
     },
     "reversal": {
       "stopped_out": 2
+    },
+    "liquidation": {
+      "trailing_stop": 1
     }
   },
   "win_patterns": {
@@ -83,9 +86,9 @@
       "yes_direction": 3
     },
     "smart_money": {
-      "mid_prob_entry": 4,
-      "no_direction": 4,
-      "strong_signal": 4,
+      "mid_prob_entry": 5,
+      "no_direction": 5,
+      "strong_signal": 5,
       "fast_trade": 2
     },
     "liquidation": {
@@ -545,6 +548,24 @@
       "new": 5,
       "reason": "Trailing stops triggering too often \u2014 trail is too tight",
       "timestamp": "2026-04-05 16:03 UTC"
+    },
+    {
+      "type": "bot_adjustment",
+      "bot": "close_gravity",
+      "param": "stop_pp",
+      "old": 10,
+      "new": 11,
+      "reason": "Too many stop-outs \u2014 stops are too tight",
+      "timestamp": "2026-04-05 19:52 UTC"
+    },
+    {
+      "type": "bot_adjustment",
+      "bot": "sentiment",
+      "param": "trailing_stop_pp",
+      "old": 5,
+      "new": 6,
+      "reason": "Trailing stops triggering too often \u2014 trail is too tight",
+      "timestamp": "2026-04-05 19:52 UTC"
     }
   ],
   "trade_autopsies": [
@@ -2125,6 +2146,94 @@
       "direction": "BUY NO",
       "timestamp": "2026-04-05 16:03 UTC",
       "lesson": "Sentiment: big loss via trailing_stop. PnL: -4.7pp in 18h."
+    },
+    {
+      "bot": "volume_surge",
+      "market_id": "SCPSCt22ns",
+      "outcome": "small_loss",
+      "pnl_pp": -0.4,
+      "exit_reason": "target_hit",
+      "duration_hours": 3.8,
+      "traits": [
+        "low_prob_entry",
+        "fast_trade",
+        "no_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 6.7,
+      "direction": "BUY NO",
+      "timestamp": "2026-04-05 19:50 UTC",
+      "lesson": "Vol Surge: small loss via target_hit. PnL: -0.4pp in 4h."
+    },
+    {
+      "bot": "volume_surge",
+      "market_id": "gQO2zZRNZ5",
+      "outcome": "small_loss",
+      "pnl_pp": 0.0,
+      "exit_reason": "target_hit",
+      "duration_hours": 3.8,
+      "traits": [
+        "low_prob_entry",
+        "fast_trade",
+        "no_direction",
+        "weak_signal"
+      ],
+      "entry_prob": 8.0,
+      "direction": "BUY NO",
+      "timestamp": "2026-04-05 19:50 UTC",
+      "lesson": "Vol Surge: small loss via target_hit. PnL: +0.0pp in 4h."
+    },
+    {
+      "bot": "smart_money",
+      "market_id": "Z5nLUCPlER",
+      "outcome": "strong_win",
+      "pnl_pp": 43.7,
+      "exit_reason": "target_hit",
+      "duration_hours": 72.4,
+      "traits": [
+        "mid_prob_entry",
+        "no_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 44.7,
+      "direction": "BUY NO",
+      "timestamp": "2026-04-05 16:03 UTC",
+      "lesson": "Smart $: Strong signal \u2192 strong win. Keep trusting high-confidence entries."
+    },
+    {
+      "bot": "sentiment",
+      "market_id": "RcRy5POOpq",
+      "outcome": "big_loss",
+      "pnl_pp": -4.7,
+      "exit_reason": "trailing_stop",
+      "duration_hours": 18.1,
+      "traits": [
+        "mid_prob_entry",
+        "fast_trade",
+        "no_direction",
+        "weak_signal"
+      ],
+      "entry_prob": 59.0,
+      "direction": "BUY NO",
+      "timestamp": "2026-04-05 16:03 UTC",
+      "lesson": "Sentiment: big loss via trailing_stop. PnL: -4.7pp in 18h."
+    },
+    {
+      "bot": "liquidation",
+      "market_id": "RcRy5POOpq",
+      "outcome": "big_loss",
+      "pnl_pp": -4.5,
+      "exit_reason": "trailing_stop",
+      "duration_hours": 27.9,
+      "traits": [
+        "mid_prob_entry",
+        "no_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 61.4,
+      "direction": "BUY NO",
+      "timestamp": "2026-04-05 19:52 UTC",
+      "lesson": "Liquidation: big loss via trailing_stop. PnL: -4.5pp in 28h."
     }
   ],
   "regime": "normal",
@@ -2146,7 +2255,7 @@
     "momentum": 0.6,
     "fade": 1.0,
     "mean_reversion": 0.5,
-    "volume_surge": 0.27,
+    "volume_surge": 0.2,
     "whale": 0.17,
     "contrarian": 0.22,
     "close_gravity": 0.2,
@@ -2162,8 +2271,8 @@
     "underdog": 0.5,
     "late_mover": 0.5,
     "hedge": 1.0,
-    "liquidation": 0.53
+    "liquidation": 0.44
   },
-  "last_evolution": "2026-04-05 16:03 UTC",
-  "generation": 14
+  "last_evolution": "2026-04-05 19:52 UTC",
+  "generation": 15
 }

@@ -1,1 +1,20 @@
-[]
+[
+  {
+    "market_id": "AScQIsSIE6",
+    "question": "If the US confirms aliens exist, will Jesus Christ return before 2027?",
+    "direction": "BUY YES",
+    "entry_prob": 1.0,
+    "entry_time": "2026-04-05 19:51 UTC",
+    "url": "https://manifold.markets/vdb/if-the-us-confirms-aliens-exist-wil",
+    "stake": 20,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "miscalibration": 7.0,
+    "unique_traders": 13,
+    "recent_move": 7.2,
+    "signal_strength": 0.7
+  }
+]

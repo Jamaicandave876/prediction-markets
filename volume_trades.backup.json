@@ -352,5 +352,41 @@
     "net_flow": 425,
     "recent_mana": 425,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "SCPSCt22ns",
+    "question": "By the end of 2027: Germany will be actively engaged in war or there will be acts of war on German Territory.",
+    "direction": "BUY NO",
+    "entry_prob": 6.7,
+    "entry_time": "2026-04-05 16:03 UTC",
+    "url": "https://manifold.markets/Hypermental/by-the-end-of-2027-germany-will-be",
+    "stake": 20,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "volume_ratio": 17.9,
+    "net_flow": -200,
+    "recent_mana": 200,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "gQO2zZRNZ5",
+    "question": "Will Iran agree to a ceasefire OR will a nuke be used in the US-Iran war by April 15?",
+    "direction": "BUY NO",
+    "entry_prob": 8.0,
+    "entry_time": "2026-04-05 16:03 UTC",
+    "url": "https://manifold.markets/100Anonymous/will-iran-agree-to-a-ceasefire-or-w",
+    "stake": 26.2,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "volume_ratio": 4.8,
+    "net_flow": -50,
+    "recent_mana": 50,
+    "signal_strength": 0.48297401994520095
   }
 ]
