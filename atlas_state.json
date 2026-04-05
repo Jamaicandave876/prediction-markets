@@ -1,26 +1,26 @@
 {
   "paused": {
-    "fresh_sniper": false,
-    "whale": false,
-    "momentum": false,
-    "fade": false,
-    "mean_reversion": false,
-    "volume_surge": false,
-    "contrarian": false,
-    "close_gravity": false,
-    "stability": false,
-    "breakout": false
+    "fresh_sniper": true,
+    "whale": true,
+    "momentum": true,
+    "fade": true,
+    "mean_reversion": true,
+    "volume_surge": true,
+    "contrarian": true,
+    "close_gravity": true,
+    "stability": true,
+    "breakout": true
   },
   "pause_start": {},
   "bot_scores": {
     "momentum": {
-      "score": 69.3,
+      "score": 62.3,
       "win_rate": 50.0,
-      "avg_pnl": 9.7,
-      "total_pnl": 38.6,
-      "closed": 4,
-      "open": 4,
-      "grade": "B"
+      "avg_pnl": 6.1,
+      "total_pnl": 36.9,
+      "closed": 6,
+      "open": 2,
+      "grade": "C"
     },
     "fade": {
       "score": 50,
@@ -68,22 +68,22 @@
       "grade": "F"
     },
     "close_gravity": {
-      "score": 15.0,
-      "win_rate": 25.0,
-      "avg_pnl": -11.5,
-      "total_pnl": -46.2,
-      "closed": 4,
-      "open": 1,
+      "score": 12.0,
+      "win_rate": 20.0,
+      "avg_pnl": -10.8,
+      "total_pnl": -54.2,
+      "closed": 5,
+      "open": 0,
       "grade": "F"
     },
     "fresh_sniper": {
-      "score": 38.3,
+      "score": 31.8,
       "win_rate": 30.0,
-      "avg_pnl": 0.2,
-      "total_pnl": 4.1,
-      "closed": 16,
-      "open": 5,
-      "grade": "D"
+      "avg_pnl": -3.1,
+      "total_pnl": -26.1,
+      "closed": 20,
+      "open": 1,
+      "grade": "F"
     },
     "stability": {
       "score": 50,
@@ -91,7 +91,7 @@
       "avg_pnl": 0,
       "total_pnl": 0,
       "closed": 0,
-      "open": 1,
+      "open": 2,
       "grade": "NEW"
     },
     "breakout": {
@@ -105,17 +105,17 @@
     }
   },
   "consecutive_losses": {
-    "momentum": 1,
+    "momentum": 0,
     "fade": 0,
     "mean_reversion": 0,
     "volume_surge": 2,
     "whale": 0,
     "contrarian": 2,
-    "close_gravity": 0,
+    "close_gravity": 1,
     "fresh_sniper": 0,
     "stability": 0,
     "breakout": 0
   },
   "regime": "adverse",
-  "last_report": "2026-04-04 05:15 UTC"
+  "last_report": "2026-04-05 05:58 UTC"
 }

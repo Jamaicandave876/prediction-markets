@@ -136,5 +136,43 @@
     "divergence_score": 3.62,
     "signal_strength": 0.72,
     "peak_pnl": 1.1999999999999993
+  },
+  {
+    "market_id": "zLQdhz9h5A",
+    "question": "Will anyone be charged under the new Idaho Bathroom Bill?",
+    "direction": "BUY NO",
+    "entry_prob": 40.0,
+    "entry_time": "2026-04-04 21:59 UTC",
+    "url": "https://manifold.markets/GnosticGirl/will-anyone-be-charged-under-the-ne",
+    "stake": 20,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "YES",
+    "crowd_pct": 60.0,
+    "price_move": -2.8,
+    "divergence_score": 1.65,
+    "signal_strength": 0.33
+  },
+  {
+    "market_id": "RcRy5POOpq",
+    "question": "Will the US/Israel strike 3 or more Iranian power plants in April 2026",
+    "direction": "BUY NO",
+    "entry_prob": 59.0,
+    "entry_time": "2026-04-04 21:59 UTC",
+    "url": "https://manifold.markets/vdb/will-the-usisrael-strike-3-or-more",
+    "stake": 20,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "YES",
+    "crowd_pct": 65.0,
+    "price_move": -2.0,
+    "divergence_score": 1.28,
+    "signal_strength": 0.26
   }
 ]

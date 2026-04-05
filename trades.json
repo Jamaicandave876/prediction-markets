@@ -104,11 +104,12 @@
     "drift_score": 9.8,
     "url": "https://manifold.markets/Terminator2/will-trump-declare-victory-in-the-i",
     "stake": 42.5,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 79.0,
+    "exit_time": "2026-04-05 05:56 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 5.0,
+    "peak_pnl": 5.0
   },
   {
     "market_id": "0sEPlhcgPU",
@@ -119,11 +120,11 @@
     "drift_score": 16.37,
     "url": "https://manifold.markets/Ziddletwix/will-project-hail-mary-be-nominated",
     "stake": 28.9,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 67.0,
+    "exit_time": "2026-04-05 05:56 UTC",
+    "exit_reason": "reversal",
+    "pnl_pp": -6.7,
     "peak_pnl": 0.5
   }
 ]
