@@ -14,19 +14,19 @@
       "stop_pp": 12
     },
     "contrarian": {
-      "stop_pp": 10
+      "stop_pp": 11
     },
     "momentum": {
-      "trailing_stop_pp": 7
+      "trailing_stop_pp": 8
     },
     "close_gravity": {
-      "stop_pp": 8
+      "stop_pp": 9
     }
   },
   "loss_patterns": {
     "volume_surge": {
       "target_hit": 4,
-      "stopped_out": 1,
+      "stopped_out": 2,
       "trailing_stop": 2
     },
     "whale": {
@@ -61,6 +61,9 @@
     },
     "contrarian": {
       "trailing_stop": 2
+    },
+    "reversal": {
+      "stopped_out": 1
     }
   },
   "win_patterns": {
@@ -117,10 +120,10 @@
       "high_prob_entry": 2
     },
     "sentiment": {
-      "low_prob_entry": 3,
-      "fast_trade": 3,
-      "no_direction": 3,
-      "weak_signal": 1
+      "low_prob_entry": 4,
+      "fast_trade": 4,
+      "no_direction": 4,
+      "weak_signal": 2
     },
     "hedge": {
       "low_prob_entry": 2,
@@ -484,6 +487,33 @@
       "new": 8,
       "reason": "Too many stop-outs \u2014 stops are too tight",
       "timestamp": "2026-04-05 10:21 UTC"
+    },
+    {
+      "type": "bot_adjustment",
+      "bot": "momentum",
+      "param": "trailing_stop_pp",
+      "old": 7,
+      "new": 8,
+      "reason": "Trailing stops triggering too often \u2014 trail is too tight",
+      "timestamp": "2026-04-05 14:07 UTC"
+    },
+    {
+      "type": "bot_adjustment",
+      "bot": "contrarian",
+      "param": "stop_pp",
+      "old": 10,
+      "new": 11,
+      "reason": "Too many stop-outs \u2014 stops are too tight",
+      "timestamp": "2026-04-05 14:07 UTC"
+    },
+    {
+      "type": "bot_adjustment",
+      "bot": "close_gravity",
+      "param": "stop_pp",
+      "old": 8,
+      "new": 9,
+      "reason": "Too many stop-outs \u2014 stops are too tight",
+      "timestamp": "2026-04-05 14:07 UTC"
     }
   ],
   "trade_autopsies": [
@@ -1945,6 +1975,57 @@
       "direction": "BUY NO",
       "timestamp": "2026-04-05 10:21 UTC",
       "lesson": "Sentiment: small win via target_hit. PnL: +0.2pp in 2h."
+    },
+    {
+      "bot": "volume_surge",
+      "market_id": "8dONzhst6C",
+      "outcome": "big_loss",
+      "pnl_pp": -13.1,
+      "exit_reason": "stopped_out",
+      "duration_hours": 45.1,
+      "traits": [
+        "low_prob_entry",
+        "yes_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 16.0,
+      "direction": "BUY YES",
+      "timestamp": "2026-04-05 14:05 UTC",
+      "lesson": "Vol Surge: big loss via stopped_out. PnL: -13.1pp in 45h."
+    },
+    {
+      "bot": "reversal",
+      "market_id": "8dONzhst6C",
+      "outcome": "big_loss",
+      "pnl_pp": -13.1,
+      "exit_reason": "stopped_out",
+      "duration_hours": 45.1,
+      "traits": [
+        "low_prob_entry",
+        "yes_direction"
+      ],
+      "entry_prob": 16.0,
+      "direction": "BUY YES",
+      "timestamp": "2026-04-05 14:06 UTC",
+      "lesson": "Reversal: big loss via stopped_out. PnL: -13.1pp in 45h."
+    },
+    {
+      "bot": "sentiment",
+      "market_id": "l2UcqtzuPZ",
+      "outcome": "small_win",
+      "pnl_pp": 0.2,
+      "exit_reason": "target_hit",
+      "duration_hours": 2.3,
+      "traits": [
+        "low_prob_entry",
+        "fast_trade",
+        "no_direction",
+        "weak_signal"
+      ],
+      "entry_prob": 26.0,
+      "direction": "BUY NO",
+      "timestamp": "2026-04-05 10:21 UTC",
+      "lesson": "Sentiment: small win via target_hit. PnL: +0.2pp in 2h."
     }
   ],
   "regime": "normal",
@@ -1966,7 +2047,7 @@
     "momentum": 0.6,
     "fade": 1.0,
     "mean_reversion": 0.5,
-    "volume_surge": 0.46,
+    "volume_surge": 0.27,
     "whale": 0.17,
     "contrarian": 0.22,
     "close_gravity": 0.2,
@@ -1974,7 +2055,7 @@
     "stability": 0.5,
     "breakout": 1.0,
     "calibration": 0.5,
-    "reversal": 0.5,
+    "reversal": 0.2,
     "smart_money": 0.13,
     "time_decay": 0.23,
     "sentiment": 0.2,
@@ -1984,6 +2065,6 @@
     "hedge": 1.0,
     "liquidation": 0.53
   },
-  "last_evolution": "2026-04-05 10:21 UTC",
-  "generation": 12
+  "last_evolution": "2026-04-05 14:07 UTC",
+  "generation": 13
 }

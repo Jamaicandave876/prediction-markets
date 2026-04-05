@@ -155,7 +155,7 @@
     "price_move": -2.8,
     "divergence_score": 1.65,
     "signal_strength": 0.33,
-    "peak_pnl": 2.200000000000003
+    "peak_pnl": 3.5
   },
   {
     "market_id": "RcRy5POOpq",
@@ -185,15 +185,16 @@
     "entry_time": "2026-04-05 08:05 UTC",
     "url": "https://manifold.markets/Bayesian/will-gemma-4-124b-be-released",
     "stake": 27.3,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 25.8,
+    "exit_time": "2026-04-05 10:21 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 0.2,
     "crowd_dir": "YES",
     "crowd_pct": 75.0,
     "price_move": -2.9,
     "divergence_score": 2.17,
-    "signal_strength": 0.43
+    "signal_strength": 0.43,
+    "peak_pnl": 0.1999999999999993
   }
 ]
