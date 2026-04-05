@@ -176,5 +176,24 @@
     "divergence_score": 1.28,
     "signal_strength": 0.26,
     "peak_pnl": 1.0
+  },
+  {
+    "market_id": "l2UcqtzuPZ",
+    "question": "Will Gemma 4 124B be released?",
+    "direction": "BUY NO",
+    "entry_prob": 26.0,
+    "entry_time": "2026-04-05 08:05 UTC",
+    "url": "https://manifold.markets/Bayesian/will-gemma-4-124b-be-released",
+    "stake": 27.3,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "YES",
+    "crowd_pct": 75.0,
+    "price_move": -2.9,
+    "divergence_score": 2.17,
+    "signal_strength": 0.43
   }
 ]

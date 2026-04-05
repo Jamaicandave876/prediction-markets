@@ -11,16 +11,16 @@
       "stop_pp": 12
     },
     "volume_surge": {
-      "stop_pp": 11
+      "stop_pp": 12
     },
     "contrarian": {
-      "stop_pp": 9
+      "stop_pp": 10
     },
     "momentum": {
-      "trailing_stop_pp": 6
+      "trailing_stop_pp": 7
     },
     "close_gravity": {
-      "stop_pp": 7
+      "stop_pp": 8
     }
   },
   "loss_patterns": {
@@ -117,9 +117,10 @@
       "high_prob_entry": 2
     },
     "sentiment": {
-      "low_prob_entry": 2,
-      "fast_trade": 2,
-      "no_direction": 2
+      "low_prob_entry": 3,
+      "fast_trade": 3,
+      "no_direction": 3,
+      "weak_signal": 1
     },
     "hedge": {
       "low_prob_entry": 2,
@@ -447,6 +448,42 @@
       "new": 7,
       "reason": "Too many stop-outs \u2014 stops are too tight",
       "timestamp": "2026-04-05 08:05 UTC"
+    },
+    {
+      "type": "bot_adjustment",
+      "bot": "momentum",
+      "param": "trailing_stop_pp",
+      "old": 6,
+      "new": 7,
+      "reason": "Trailing stops triggering too often \u2014 trail is too tight",
+      "timestamp": "2026-04-05 10:21 UTC"
+    },
+    {
+      "type": "bot_adjustment",
+      "bot": "volume_surge",
+      "param": "stop_pp",
+      "old": 11,
+      "new": 12,
+      "reason": "Too many stop-outs \u2014 stops are too tight",
+      "timestamp": "2026-04-05 10:21 UTC"
+    },
+    {
+      "type": "bot_adjustment",
+      "bot": "contrarian",
+      "param": "stop_pp",
+      "old": 9,
+      "new": 10,
+      "reason": "Too many stop-outs \u2014 stops are too tight",
+      "timestamp": "2026-04-05 10:21 UTC"
+    },
+    {
+      "type": "bot_adjustment",
+      "bot": "close_gravity",
+      "param": "stop_pp",
+      "old": 7,
+      "new": 8,
+      "reason": "Too many stop-outs \u2014 stops are too tight",
+      "timestamp": "2026-04-05 10:21 UTC"
     }
   ],
   "trade_autopsies": [
@@ -1890,6 +1927,24 @@
       "direction": "BUY YES",
       "timestamp": "2026-04-05 05:57 UTC",
       "lesson": "Time Decay: small win via target_hit. PnL: +2.7pp in 39h."
+    },
+    {
+      "bot": "sentiment",
+      "market_id": "l2UcqtzuPZ",
+      "outcome": "small_win",
+      "pnl_pp": 0.2,
+      "exit_reason": "target_hit",
+      "duration_hours": 2.3,
+      "traits": [
+        "low_prob_entry",
+        "fast_trade",
+        "no_direction",
+        "weak_signal"
+      ],
+      "entry_prob": 26.0,
+      "direction": "BUY NO",
+      "timestamp": "2026-04-05 10:21 UTC",
+      "lesson": "Sentiment: small win via target_hit. PnL: +0.2pp in 2h."
     }
   ],
   "regime": "normal",
@@ -1929,6 +1984,6 @@
     "hedge": 1.0,
     "liquidation": 0.53
   },
-  "last_evolution": "2026-04-05 08:05 UTC",
-  "generation": 11
+  "last_evolution": "2026-04-05 10:21 UTC",
+  "generation": 12
 }

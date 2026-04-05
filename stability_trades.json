@@ -31,6 +31,7 @@
     "pnl_pp": null,
     "price_range": 5.2,
     "stability_score": 0.14,
-    "signal_strength": 0.14
+    "signal_strength": 0.14,
+    "peak_pnl": 1.2999999999999972
   }
 ]

@@ -52,5 +52,23 @@
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null
+  },
+  {
+    "market_id": "0sEPlhcgPU",
+    "question": "Will Project Hail Mary be nominated for Best Picture?",
+    "direction": "BUY YES",
+    "entry_prob": 62.5,
+    "pre_spike_prob": 78.0,
+    "spike_size": 15.5,
+    "spike_ratio": 17.3,
+    "spike_dir": -1,
+    "entry_time": "2026-04-05 08:04 UTC",
+    "url": "https://manifold.markets/Ziddletwix/will-project-hail-mary-be-nominated",
+    "stake": 46.1,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]
