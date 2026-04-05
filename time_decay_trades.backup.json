@@ -25,14 +25,15 @@
     "entry_time": "2026-04-03 14:29 UTC",
     "url": "https://manifold.markets/johnNZOy/will-this-market-get-at-least-50-un-62LcQ6tNsR",
     "stake": 45.4,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 85.7,
+    "exit_time": "2026-04-05 05:57 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 2.7,
     "days_to_close": 27.4,
     "decay_strength": 0.33,
-    "signal_strength": 0.33
+    "signal_strength": 0.33,
+    "peak_pnl": 2.700000000000003
   },
   {
     "market_id": "CqptuuhR5c",

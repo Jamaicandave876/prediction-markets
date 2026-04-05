@@ -154,7 +154,7 @@
     "liquidation_dir": "YES",
     "impact_score": 2.74,
     "signal_strength": 1.37,
-    "peak_pnl": 2.3999999999999986
+    "peak_pnl": 3.3999999999999986
   },
   {
     "market_id": "NN6SZcUq0y",
@@ -173,6 +173,45 @@
     "liquidation_impact": 5.5,
     "liquidation_dir": "NO",
     "impact_score": 0.55,
-    "signal_strength": 0.27
+    "signal_strength": 0.27,
+    "peak_pnl": 0.3999999999999986
+  },
+  {
+    "market_id": "0sEPlhcgPU",
+    "question": "Will Project Hail Mary be nominated for Best Picture?",
+    "direction": "BUY YES",
+    "entry_prob": 67.0,
+    "entry_time": "2026-04-05 05:58 UTC",
+    "url": "https://manifold.markets/Ziddletwix/will-project-hail-mary-be-nominated",
+    "stake": 73.5,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "liquidation_size": 574,
+    "liquidation_impact": 9.0,
+    "liquidation_dir": "NO",
+    "impact_score": 5.16,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "yOugUdyuzE",
+    "question": "CIGARs (permanent)",
+    "direction": "BUY NO",
+    "entry_prob": 56.0,
+    "entry_time": "2026-04-05 05:58 UTC",
+    "url": "https://manifold.markets/Hypermental/cigarsstock-permanent",
+    "stake": 53.9,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "liquidation_size": 200,
+    "liquidation_impact": 14.6,
+    "liquidation_dir": "YES",
+    "impact_score": 2.91,
+    "signal_strength": 1.46
   }
 ]

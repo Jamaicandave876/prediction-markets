@@ -11,16 +11,16 @@
       "stop_pp": 12
     },
     "volume_surge": {
-      "stop_pp": 10
+      "stop_pp": 11
     },
     "contrarian": {
-      "stop_pp": 8
+      "stop_pp": 9
     },
     "momentum": {
-      "trailing_stop_pp": 5
+      "trailing_stop_pp": 6
     },
     "close_gravity": {
-      "stop_pp": 6
+      "stop_pp": 7
     }
   },
   "loss_patterns": {
@@ -34,11 +34,11 @@
       "stopped_out": 2
     },
     "fresh_sniper": {
-      "stopped_out": 5,
-      "target_hit": 2
+      "stopped_out": 7,
+      "target_hit": 3
     },
     "close_gravity": {
-      "stopped_out": 3
+      "stopped_out": 4
     },
     "time_decay": {
       "stopped_out": 2,
@@ -52,12 +52,12 @@
       "stopped_out": 4
     },
     "smart_money": {
-      "target_hit": 3,
-      "stopped_out": 1
+      "target_hit": 4,
+      "stopped_out": 2
     },
     "momentum": {
       "trailing_stop": 2,
-      "reversal": 1
+      "reversal": 2
     },
     "contrarian": {
       "trailing_stop": 2
@@ -89,10 +89,10 @@
     },
     "momentum": {
       "mid_prob_entry": 2,
-      "yes_direction": 3,
-      "strong_signal": 3,
-      "high_prob_entry": 1,
-      "fast_trade": 1
+      "yes_direction": 4,
+      "strong_signal": 4,
+      "high_prob_entry": 2,
+      "fast_trade": 2
     },
     "breakout": {
       "mid_prob_entry": 4,
@@ -112,9 +112,9 @@
     },
     "fresh_sniper": {
       "mid_prob_entry": 2,
-      "yes_direction": 3,
+      "yes_direction": 4,
       "weak_signal": 2,
-      "high_prob_entry": 1
+      "high_prob_entry": 2
     },
     "sentiment": {
       "low_prob_entry": 2,
@@ -127,9 +127,9 @@
       "strong_signal": 2
     },
     "time_decay": {
-      "high_prob_entry": 1,
-      "yes_direction": 1,
-      "weak_signal": 1
+      "high_prob_entry": 2,
+      "yes_direction": 2,
+      "weak_signal": 2
     }
   },
   "learning_journal": [
@@ -411,6 +411,42 @@
       "new": 6,
       "reason": "Too many stop-outs \u2014 stops are too tight",
       "timestamp": "2026-04-05 05:58 UTC"
+    },
+    {
+      "type": "bot_adjustment",
+      "bot": "momentum",
+      "param": "trailing_stop_pp",
+      "old": 5,
+      "new": 6,
+      "reason": "Trailing stops triggering too often \u2014 trail is too tight",
+      "timestamp": "2026-04-05 08:05 UTC"
+    },
+    {
+      "type": "bot_adjustment",
+      "bot": "volume_surge",
+      "param": "stop_pp",
+      "old": 10,
+      "new": 11,
+      "reason": "Too many stop-outs \u2014 stops are too tight",
+      "timestamp": "2026-04-05 08:05 UTC"
+    },
+    {
+      "type": "bot_adjustment",
+      "bot": "contrarian",
+      "param": "stop_pp",
+      "old": 8,
+      "new": 9,
+      "reason": "Too many stop-outs \u2014 stops are too tight",
+      "timestamp": "2026-04-05 08:05 UTC"
+    },
+    {
+      "type": "bot_adjustment",
+      "bot": "close_gravity",
+      "param": "stop_pp",
+      "old": 6,
+      "new": 7,
+      "reason": "Too many stop-outs \u2014 stops are too tight",
+      "timestamp": "2026-04-05 08:05 UTC"
     }
   ],
   "trade_autopsies": [
@@ -1678,6 +1714,182 @@
       "direction": "BUY YES",
       "timestamp": "2026-04-05 05:57 UTC",
       "lesson": "Time Decay: small win via target_hit. PnL: +2.7pp in 39h."
+    },
+    {
+      "bot": "momentum",
+      "market_id": "NNUtSU6O95",
+      "outcome": "small_win",
+      "pnl_pp": 5.0,
+      "exit_reason": "target_hit",
+      "duration_hours": 15.9,
+      "traits": [
+        "high_prob_entry",
+        "fast_trade",
+        "yes_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 74.0,
+      "direction": "BUY YES",
+      "timestamp": "2026-04-05 05:56 UTC",
+      "lesson": "Momentum: small win via target_hit. PnL: +5.0pp in 16h."
+    },
+    {
+      "bot": "momentum",
+      "market_id": "0sEPlhcgPU",
+      "outcome": "big_loss",
+      "pnl_pp": -6.7,
+      "exit_reason": "reversal",
+      "duration_hours": 10.2,
+      "traits": [
+        "high_prob_entry",
+        "fast_trade",
+        "yes_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 73.7,
+      "direction": "BUY YES",
+      "timestamp": "2026-04-05 05:56 UTC",
+      "lesson": "Momentum: big loss via reversal. PnL: -6.7pp in 10h."
+    },
+    {
+      "bot": "close_gravity",
+      "market_id": "nQI56ENUNE",
+      "outcome": "big_loss",
+      "pnl_pp": -8.0,
+      "exit_reason": "stopped_out",
+      "duration_hours": 57.9,
+      "traits": [
+        "mid_prob_entry",
+        "no_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 68.6,
+      "direction": "BUY NO",
+      "timestamp": "2026-04-05 05:57 UTC",
+      "lesson": "Gravity: big loss via stopped_out. PnL: -8.0pp in 58h."
+    },
+    {
+      "bot": "fresh_sniper",
+      "market_id": "LRPqzzh0zq",
+      "outcome": "small_win",
+      "pnl_pp": 1.0,
+      "exit_reason": "target_hit",
+      "duration_hours": 68.3,
+      "traits": [
+        "high_prob_entry",
+        "yes_direction"
+      ],
+      "entry_prob": 75.0,
+      "direction": "BUY YES",
+      "timestamp": "2026-04-05 05:57 UTC",
+      "lesson": "Sniper: small win via target_hit. PnL: +1.0pp in 68h."
+    },
+    {
+      "bot": "fresh_sniper",
+      "market_id": "ORES8Zhc9R",
+      "outcome": "big_loss",
+      "pnl_pp": -15.0,
+      "exit_reason": "stopped_out",
+      "duration_hours": 8.0,
+      "traits": [
+        "low_prob_entry",
+        "fast_trade",
+        "no_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 15.0,
+      "direction": "BUY NO",
+      "timestamp": "2026-04-05 05:57 UTC",
+      "lesson": "Sniper: big loss via stopped_out. PnL: -15.0pp in 8h."
+    },
+    {
+      "bot": "fresh_sniper",
+      "market_id": "RIQNs5UnLI",
+      "outcome": "small_loss",
+      "pnl_pp": 0.0,
+      "exit_reason": "target_hit",
+      "duration_hours": 8.0,
+      "traits": [
+        "high_prob_entry",
+        "fast_trade",
+        "yes_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 84.7,
+      "direction": "BUY YES",
+      "timestamp": "2026-04-05 05:57 UTC",
+      "lesson": "Sniper: small loss via target_hit. PnL: +0.0pp in 8h."
+    },
+    {
+      "bot": "fresh_sniper",
+      "market_id": "6OnzdSgQcy",
+      "outcome": "big_loss",
+      "pnl_pp": -16.2,
+      "exit_reason": "stopped_out",
+      "duration_hours": 8.0,
+      "traits": [
+        "low_prob_entry",
+        "fast_trade",
+        "no_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 16.0,
+      "direction": "BUY NO",
+      "timestamp": "2026-04-05 05:57 UTC",
+      "lesson": "Sniper: big loss via stopped_out. PnL: -16.2pp in 8h."
+    },
+    {
+      "bot": "smart_money",
+      "market_id": "IuOpLtLgNU",
+      "outcome": "small_loss",
+      "pnl_pp": -2.0,
+      "exit_reason": "target_hit",
+      "duration_hours": 8.0,
+      "traits": [
+        "low_prob_entry",
+        "fast_trade",
+        "no_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 12.9,
+      "direction": "BUY NO",
+      "timestamp": "2026-04-05 05:57 UTC",
+      "lesson": "Smart $: small loss via target_hit. PnL: -2.0pp in 8h."
+    },
+    {
+      "bot": "smart_money",
+      "market_id": "0sEPlhcgPU",
+      "outcome": "big_loss",
+      "pnl_pp": -7.2,
+      "exit_reason": "stopped_out",
+      "duration_hours": 8.0,
+      "traits": [
+        "high_prob_entry",
+        "fast_trade",
+        "yes_direction",
+        "weak_signal"
+      ],
+      "entry_prob": 74.2,
+      "direction": "BUY YES",
+      "timestamp": "2026-04-05 05:57 UTC",
+      "lesson": "Smart $: Weak signal led to stop-out. Need stronger signals to justify entry."
+    },
+    {
+      "bot": "time_decay",
+      "market_id": "QUlUpzqyNh",
+      "outcome": "small_win",
+      "pnl_pp": 2.7,
+      "exit_reason": "target_hit",
+      "duration_hours": 39.5,
+      "traits": [
+        "high_prob_entry",
+        "yes_direction",
+        "weak_signal"
+      ],
+      "entry_prob": 83.0,
+      "direction": "BUY YES",
+      "timestamp": "2026-04-05 05:57 UTC",
+      "lesson": "Time Decay: small win via target_hit. PnL: +2.7pp in 39h."
     }
   ],
   "regime": "normal",
@@ -1717,6 +1929,6 @@
     "hedge": 1.0,
     "liquidation": 0.53
   },
-  "last_evolution": "2026-04-05 05:58 UTC",
-  "generation": 10
+  "last_evolution": "2026-04-05 08:05 UTC",
+  "generation": 11
 }
