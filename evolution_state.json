@@ -28,7 +28,7 @@
       "trailing_stop_pp": 7
     },
     "smart_money": {
-      "stop_pp": 9
+      "stop_pp": 10
     }
   },
   "loss_patterns": {
@@ -685,6 +685,15 @@
       "new": 8,
       "reason": "Trailing stops triggering too often \u2014 trail is too tight",
       "timestamp": "2026-04-06 17:33 UTC"
+    },
+    {
+      "type": "bot_adjustment",
+      "bot": "smart_money",
+      "param": "stop_pp",
+      "old": 9,
+      "new": 10,
+      "reason": "Too many stop-outs \u2014 stops are too tight",
+      "timestamp": "2026-04-06 20:04 UTC"
     }
   ],
   "trade_autopsies": [
@@ -2462,6 +2471,6 @@
     "hedge": 1.0,
     "liquidation": 0.21
   },
-  "last_evolution": "2026-04-06 17:33 UTC",
-  "generation": 20
+  "last_evolution": "2026-04-06 20:04 UTC",
+  "generation": 21
 }
