@@ -56,11 +56,11 @@
     "drift_score": -19.82,
     "url": "https://manifold.markets/Tymothyy/bitcoin-60000-end-of-april",
     "stake": 49.9,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 44.0,
+    "exit_time": "2026-04-06 06:18 UTC",
+    "exit_reason": "reversal",
+    "pnl_pp": -8.1,
     "peak_pnl": 0.5
   },
   {
@@ -72,11 +72,11 @@
     "drift_score": 7.19,
     "url": "https://manifold.markets/predyx_markets/bitcoin-62k-in-april",
     "stake": 49.9,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 37.2,
+    "exit_time": "2026-04-06 06:18 UTC",
+    "exit_reason": "reversal",
+    "pnl_pp": -11.3,
     "peak_pnl": 1.8999999999999986
   },
   {
@@ -126,5 +126,35 @@
     "exit_reason": "reversal",
     "pnl_pp": -6.7,
     "peak_pnl": 0.5
+  },
+  {
+    "market_id": "npRtO25zAZ",
+    "question": "Gas exceeds $4.50, and democrats control both House and Senate?",
+    "direction": "BUY NO",
+    "entry_prob": 43.4,
+    "entry_time": "2026-04-06 06:18 UTC",
+    "drift_score": -8.7,
+    "url": "https://manifold.markets/vdb/gas-exceeds-450-and-democrats-contr",
+    "stake": 29.6,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
+  },
+  {
+    "market_id": "Ng0ntuZhuh",
+    "question": "Will I notice any degradation in Claude performance over the next week?",
+    "direction": "BUY NO",
+    "entry_prob": 46.1,
+    "entry_time": "2026-04-06 06:18 UTC",
+    "drift_score": -19.96,
+    "url": "https://manifold.markets/billyhumblebrag/will-i-notice-any-degradation-in-cl",
+    "stake": 29.6,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]

@@ -116,6 +116,7 @@
     "pnl_pp": null,
     "hours_stale": 13.9,
     "staleness_score": 0.05,
-    "signal_strength": 0.05
+    "signal_strength": 0.05,
+    "peak_pnl": 2.0
   }
 ]
