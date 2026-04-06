@@ -99,7 +99,8 @@
     "pnl_pp": null,
     "hours_stale": 14.0,
     "staleness_score": 0.06,
-    "signal_strength": 0.06
+    "signal_strength": 0.06,
+    "peak_pnl": 0.29999999999999716
   },
   {
     "market_id": "zqUOdLndhE",
