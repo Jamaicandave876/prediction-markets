@@ -157,5 +157,20 @@
     "exit_reason": null,
     "pnl_pp": null,
     "peak_pnl": 4.399999999999999
+  },
+  {
+    "market_id": "guqE9SUcOs",
+    "question": "Will there be widespread gas rationing at the pump in Italy by noon May 21, 2026 (local time)?",
+    "direction": "BUY NO",
+    "entry_prob": 38.3,
+    "entry_time": "2026-04-06 17:32 UTC",
+    "drift_score": -44.77,
+    "url": "https://manifold.markets/mariopasquato/will-there-be-widespread-gas-ration",
+    "stake": 20,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]
