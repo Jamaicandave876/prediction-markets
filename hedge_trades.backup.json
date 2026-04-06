@@ -16,7 +16,8 @@
     "related_prob": 63.5,
     "word_overlap": 100.0,
     "mispricing_pp": 41.2,
-    "signal_strength": 1.37
+    "signal_strength": 1.37,
+    "peak_pnl": 1.3999999999999986
   },
   {
     "market_id": "R5gtEPsUqI",

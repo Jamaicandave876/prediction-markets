@@ -333,7 +333,8 @@
     "volume_ratio": 56.1,
     "net_flow": 156,
     "recent_mana": 671,
-    "signal_strength": 1.5
+    "signal_strength": 1.5,
+    "peak_pnl": 0.1999999999999993
   },
   {
     "market_id": "cNd05lL9SA",
