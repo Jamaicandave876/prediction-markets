@@ -47,11 +47,11 @@
     "entry_time": "2026-04-04 19:45 UTC",
     "url": "https://manifold.markets/agentrowlet/will-i-complete-my-overglade-debt-b",
     "stake": 32.3,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 41.0,
+    "exit_time": "2026-04-07 05:59 UTC",
+    "exit_reason": "stopped_out",
+    "pnl_pp": -29.5
   },
   {
     "market_id": "0sEPlhcgPU",

@@ -59,12 +59,12 @@
       "grade": "D"
     },
     "contrarian": {
-      "score": 20.8,
-      "win_rate": 25.0,
-      "avg_pnl": -7.1,
-      "total_pnl": -56.9,
-      "closed": 8,
-      "open": 1,
+      "score": 20.4,
+      "win_rate": 22.2,
+      "avg_pnl": -6.5,
+      "total_pnl": -58.3,
+      "closed": 9,
+      "open": 0,
       "grade": "F"
     },
     "close_gravity": {
@@ -110,7 +110,7 @@
     "mean_reversion": 0,
     "volume_surge": 0,
     "whale": 0,
-    "contrarian": 5,
+    "contrarian": 6,
     "close_gravity": 1,
     "fresh_sniper": 1,
     "stability": 0,

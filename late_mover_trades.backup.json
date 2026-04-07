@@ -7,11 +7,11 @@
     "entry_time": "2026-04-02 15:39 UTC",
     "url": "https://manifold.markets/brod/recession-in-australia-in-2026",
     "stake": 20,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 38.1,
+    "exit_time": "2026-04-07 05:59 UTC",
+    "exit_reason": "stopped_out",
+    "pnl_pp": -7.3,
     "hours_stale": 27.6,
     "staleness_score": 0.22,
     "signal_strength": 0.22
@@ -31,7 +31,8 @@
     "pnl_pp": null,
     "hours_stale": 49.7,
     "staleness_score": 0.19,
-    "signal_strength": 0.19
+    "signal_strength": 0.19,
+    "peak_pnl": 2.0
   },
   {
     "market_id": "RSt5zLQZs6",
@@ -100,7 +101,7 @@
     "hours_stale": 14.0,
     "staleness_score": 0.06,
     "signal_strength": 0.06,
-    "peak_pnl": 0.29999999999999716
+    "peak_pnl": 7.199999999999996
   },
   {
     "market_id": "zqUOdLndhE",

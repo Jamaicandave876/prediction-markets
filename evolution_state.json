@@ -15,7 +15,8 @@
       "stop_pp": 12
     },
     "contrarian": {
-      "stop_pp": 12
+      "stop_pp": 12,
+      "max_days": 5
     },
     "momentum": {
       "trailing_stop_pp": 8,
@@ -64,7 +65,7 @@
     },
     "smart_money": {
       "target_hit": 6,
-      "stopped_out": 4
+      "stopped_out": 5
     },
     "momentum": {
       "trailing_stop": 2,
@@ -72,7 +73,7 @@
     },
     "contrarian": {
       "trailing_stop": 2,
-      "stale": 4
+      "stale": 7
     },
     "reversal": {
       "stopped_out": 2
@@ -81,19 +82,19 @@
       "trailing_stop": 4
     },
     "fade": {
-      "stopped_out": 1
+      "stopped_out": 2
     },
     "late_mover": {
-      "stopped_out": 1
+      "stopped_out": 2
     }
   },
   "win_patterns": {
     "volume_surge": {
-      "low_prob_entry": 4,
+      "low_prob_entry": 5,
       "fast_trade": 3,
       "no_direction": 3,
-      "strong_signal": 3,
-      "yes_direction": 1
+      "strong_signal": 4,
+      "yes_direction": 2
     },
     "whale": {
       "mid_prob_entry": 5,
@@ -719,134 +720,18 @@
       "new": 12,
       "reason": "Too many stop-outs \u2014 stops are too tight",
       "timestamp": "2026-04-07 05:59 UTC"
+    },
+    {
+      "type": "bot_adjustment",
+      "bot": "contrarian",
+      "param": "max_days",
+      "old": 7,
+      "new": 5,
+      "reason": "Too many stale exits \u2014 holding too long",
+      "timestamp": "2026-04-07 09:53 UTC"
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "breakout",
-      "market_id": "8hCC2S9tUU",
-      "outcome": "small_win",
-      "pnl_pp": 0.1,
-      "exit_reason": "trailing_stop",
-      "duration_hours": 23.4,
-      "traits": [
-        "mid_prob_entry",
-        "fast_trade",
-        "yes_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 61.2,
-      "direction": "BUY YES",
-      "timestamp": "2026-04-04 05:15 UTC",
-      "lesson": "Breakout: small win via trailing_stop. PnL: +0.1pp in 23h."
-    },
-    {
-      "bot": "smart_money",
-      "market_id": "IuOpLtLgNU",
-      "outcome": "strong_win",
-      "pnl_pp": 16.0,
-      "exit_reason": "target_hit",
-      "duration_hours": 17.5,
-      "traits": [
-        "mid_prob_entry",
-        "fast_trade",
-        "no_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 34.0,
-      "direction": "BUY NO",
-      "timestamp": "2026-04-04 08:01 UTC",
-      "lesson": "Smart $: Quick strong win \u2014 this signal pattern works well."
-    },
-    {
-      "bot": "time_decay",
-      "market_id": "CqptuuhR5c",
-      "outcome": "big_loss",
-      "pnl_pp": -13.7,
-      "exit_reason": "stopped_out",
-      "duration_hours": 14.8,
-      "traits": [
-        "high_prob_entry",
-        "fast_trade",
-        "yes_direction",
-        "weak_signal"
-      ],
-      "entry_prob": 79.0,
-      "direction": "BUY YES",
-      "timestamp": "2026-04-04 05:15 UTC",
-      "lesson": "Time Decay: Weak signal led to stop-out. Need stronger signals to justify entry."
-    },
-    {
-      "bot": "accumulation",
-      "market_id": "QUlUpzqyNh",
-      "outcome": "small_loss",
-      "pnl_pp": -0.7,
-      "exit_reason": "target_hit",
-      "duration_hours": 7.2,
-      "traits": [
-        "high_prob_entry",
-        "fast_trade",
-        "yes_direction"
-      ],
-      "entry_prob": 80.7,
-      "direction": "BUY YES",
-      "timestamp": "2026-04-04 05:15 UTC",
-      "lesson": "Accumulate: small loss via target_hit. PnL: -0.7pp in 7h."
-    },
-    {
-      "bot": "volume_surge",
-      "market_id": "AU5Lzc8zhz",
-      "outcome": "small_win",
-      "pnl_pp": 1.2,
-      "exit_reason": "target_hit",
-      "duration_hours": 2.8,
-      "traits": [
-        "low_prob_entry",
-        "fast_trade",
-        "no_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 11.2,
-      "direction": "BUY NO",
-      "timestamp": "2026-04-04 08:00 UTC",
-      "lesson": "Vol Surge: small win via target_hit. PnL: +1.2pp in 3h."
-    },
-    {
-      "bot": "smart_money",
-      "market_id": "IuOpLtLgNU",
-      "outcome": "strong_win",
-      "pnl_pp": 16.0,
-      "exit_reason": "target_hit",
-      "duration_hours": 17.5,
-      "traits": [
-        "mid_prob_entry",
-        "fast_trade",
-        "no_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 34.0,
-      "direction": "BUY NO",
-      "timestamp": "2026-04-04 08:01 UTC",
-      "lesson": "Smart $: Quick strong win \u2014 this signal pattern works well."
-    },
-    {
-      "bot": "sentiment",
-      "market_id": "IuOpLtLgNU",
-      "outcome": "small_loss",
-      "pnl_pp": -2.0,
-      "exit_reason": "target_hit",
-      "duration_hours": 2.1,
-      "traits": [
-        "low_prob_entry",
-        "fast_trade",
-        "no_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 18.0,
-      "direction": "BUY NO",
-      "timestamp": "2026-04-04 10:07 UTC",
-      "lesson": "Sentiment: small loss via target_hit. PnL: -2.0pp in 2h."
-    },
     {
       "bot": "fade",
       "market_id": "RcRy5POOpq",
@@ -2447,6 +2332,122 @@
       "direction": "BUY NO",
       "timestamp": "2026-04-07 05:59 UTC",
       "lesson": "Late Mover: Weak signal led to stop-out. Need stronger signals to justify entry."
+    },
+    {
+      "bot": "fade",
+      "market_id": "EuNIQh9CRR",
+      "outcome": "big_loss",
+      "pnl_pp": -29.5,
+      "exit_reason": "stopped_out",
+      "duration_hours": 58.2,
+      "traits": [
+        "high_prob_entry",
+        "yes_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 70.5,
+      "direction": "BUY YES",
+      "timestamp": "2026-04-07 05:59 UTC",
+      "lesson": "Fade: big loss via stopped_out. PnL: -29.5pp in 58h."
+    },
+    {
+      "bot": "volume_surge",
+      "market_id": "8PtCSSg6sU",
+      "outcome": "small_win",
+      "pnl_pp": 4.0,
+      "exit_reason": "stale",
+      "duration_hours": 72.7,
+      "traits": [
+        "low_prob_entry",
+        "yes_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 1.0,
+      "direction": "BUY YES",
+      "timestamp": "2026-04-07 05:59 UTC",
+      "lesson": "Vol Surge: small win via stale. PnL: +4.0pp in 73h."
+    },
+    {
+      "bot": "contrarian",
+      "market_id": "cNd05lL9SA",
+      "outcome": "small_loss",
+      "pnl_pp": -0.2,
+      "exit_reason": "stale",
+      "duration_hours": 103.1,
+      "traits": [
+        "low_prob_entry",
+        "yes_direction"
+      ],
+      "entry_prob": 17.0,
+      "direction": "BUY YES",
+      "timestamp": "2026-04-07 05:59 UTC",
+      "lesson": "Contrarian: small loss via stale. PnL: -0.2pp in 103h."
+    },
+    {
+      "bot": "contrarian",
+      "market_id": "ndASI20QRS",
+      "outcome": "small_loss",
+      "pnl_pp": -0.7,
+      "exit_reason": "stale",
+      "duration_hours": 96.1,
+      "traits": [
+        "high_prob_entry",
+        "no_direction"
+      ],
+      "entry_prob": 98.0,
+      "direction": "BUY NO",
+      "timestamp": "2026-04-07 05:59 UTC",
+      "lesson": "Contrarian: small loss via stale. PnL: -0.7pp in 96h."
+    },
+    {
+      "bot": "contrarian",
+      "market_id": "sPqOczl6A2",
+      "outcome": "small_loss",
+      "pnl_pp": -1.4,
+      "exit_reason": "stale",
+      "duration_hours": 97.3,
+      "traits": [
+        "high_prob_entry",
+        "no_direction"
+      ],
+      "entry_prob": 77.7,
+      "direction": "BUY NO",
+      "timestamp": "2026-04-07 09:53 UTC",
+      "lesson": "Contrarian: small loss via stale. PnL: -1.4pp in 97h."
+    },
+    {
+      "bot": "smart_money",
+      "market_id": "EuNIQh9CRR",
+      "outcome": "big_loss",
+      "pnl_pp": -22.0,
+      "exit_reason": "stopped_out",
+      "duration_hours": 67.9,
+      "traits": [
+        "mid_prob_entry",
+        "yes_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 63.0,
+      "direction": "BUY YES",
+      "timestamp": "2026-04-07 05:59 UTC",
+      "lesson": "Smart $: big loss via stopped_out. PnL: -22.0pp in 68h."
+    },
+    {
+      "bot": "late_mover",
+      "market_id": "0gI6PnhO6Z",
+      "outcome": "big_loss",
+      "pnl_pp": -7.3,
+      "exit_reason": "stopped_out",
+      "duration_hours": 110.3,
+      "traits": [
+        "mid_prob_entry",
+        "no_direction",
+        "weak_signal"
+      ],
+      "entry_prob": 30.8,
+      "direction": "BUY NO",
+      "timestamp": "2026-04-07 05:59 UTC",
+      "lesson": "Late Mover: Weak signal led to stop-out. Need stronger signals to justify entry."
     }
   ],
   "regime": "cautious",
@@ -2492,6 +2493,6 @@
     "hedge": 1.0,
     "liquidation": 0.21
   },
-  "last_evolution": "2026-04-07 05:59 UTC",
-  "generation": 23
+  "last_evolution": "2026-04-07 09:53 UTC",
+  "generation": 24
 }
