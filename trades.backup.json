@@ -140,7 +140,8 @@
     "exit_prob": null,
     "exit_time": null,
     "exit_reason": null,
-    "pnl_pp": null
+    "pnl_pp": null,
+    "peak_pnl": 0.3999999999999986
   },
   {
     "market_id": "Ng0ntuZhuh",

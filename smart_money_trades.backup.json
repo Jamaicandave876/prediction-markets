@@ -384,7 +384,7 @@
     "price_impact": 7.0,
     "conviction_score": 39.08,
     "signal_strength": 1.5,
-    "peak_pnl": 4.200000000000003
+    "peak_pnl": 10.5
   },
   {
     "market_id": "N88nUlAnd6",
@@ -394,11 +394,11 @@
     "entry_time": "2026-04-07 16:15 UTC",
     "url": "https://manifold.markets/MikhailTal/will-kamoakakula-have-achieved-a-50",
     "stake": 70.2,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 24.3,
+    "exit_time": "2026-04-07 20:06 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": -0.1,
     "smart_user_bets": 3,
     "smart_user_mana": 6100,
     "price_impact": 17.8,
@@ -422,6 +422,25 @@
     "smart_user_mana": 500,
     "price_impact": 19.2,
     "conviction_score": 7.69,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "y9puPEnOPC",
+    "question": "Will Kamoa-Kakula Project 95 be fully commissioned by 2026-12-31?",
+    "direction": "BUY YES",
+    "entry_prob": 76.5,
+    "entry_time": "2026-04-07 20:06 UTC",
+    "url": "https://manifold.markets/MikhailTal/will-kamoakakula-project-95-be-full",
+    "stake": 70.4,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 2,
+    "smart_user_mana": 7500,
+    "price_impact": 23.4,
+    "conviction_score": 140.46,
     "signal_strength": 1.5
   }
 ]
