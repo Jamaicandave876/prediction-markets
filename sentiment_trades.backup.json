@@ -215,5 +215,24 @@
     "price_move": -9.4,
     "divergence_score": 6.11,
     "signal_strength": 1.22
+  },
+  {
+    "market_id": "hEL6p02ngS",
+    "question": "Anthropic 60B revenue on July 6, 2026?",
+    "direction": "BUY NO",
+    "entry_prob": 39.2,
+    "entry_time": "2026-04-07 09:53 UTC",
+    "url": "https://manifold.markets/Bayesian/anthropic-60b-revenue-on-july-6-202",
+    "stake": 24.8,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "YES",
+    "crowd_pct": 63.2,
+    "price_move": -10.8,
+    "divergence_score": 6.84,
+    "signal_strength": 1.37
   }
 ]
