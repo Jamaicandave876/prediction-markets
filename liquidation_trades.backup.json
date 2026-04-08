@@ -254,5 +254,24 @@
     "impact_score": 2.88,
     "signal_strength": 1.44,
     "peak_pnl": 0.3999999999999986
+  },
+  {
+    "market_id": "czh6sgdE8h",
+    "question": "Will \"Project Hail Mary\" receive more Oscar nominations than \"Dune: Part Three\"?",
+    "direction": "BUY YES",
+    "entry_prob": 37.7,
+    "entry_time": "2026-04-08 18:56 UTC",
+    "url": "https://manifold.markets/Ziddletwix/will-project-hail-mary-receive-more",
+    "stake": 26.5,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "liquidation_size": 250,
+    "liquidation_impact": 9.4,
+    "liquidation_dir": "NO",
+    "impact_score": 2.36,
+    "signal_strength": 1.18
   }
 ]
