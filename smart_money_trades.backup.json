@@ -374,11 +374,11 @@
     "entry_time": "2026-04-07 05:59 UTC",
     "url": "https://manifold.markets/Bayesian/anthropic-60b-revenue-on-july-6-202",
     "stake": 36.5,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 31.0,
+    "exit_time": "2026-04-08 12:01 UTC",
+    "exit_reason": "trailing_stop",
+    "pnl_pp": 6.0,
     "smart_user_bets": 2,
     "smart_user_mana": 6978,
     "price_impact": 7.0,
@@ -422,7 +422,8 @@
     "smart_user_mana": 500,
     "price_impact": 19.2,
     "conviction_score": 7.69,
-    "signal_strength": 1.5
+    "signal_strength": 1.5,
+    "peak_pnl": 3.799999999999997
   },
   {
     "market_id": "y9puPEnOPC",

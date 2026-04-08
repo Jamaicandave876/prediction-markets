@@ -461,7 +461,8 @@
     "smart_user_mana": 200,
     "price_impact": 28.4,
     "conviction_score": 11.38,
-    "signal_strength": 1.5
+    "signal_strength": 1.5,
+    "peak_pnl": 3.0
   },
   {
     "market_id": "6cLlpS9U95",
@@ -481,5 +482,24 @@
     "price_impact": 5.1,
     "conviction_score": 4.27,
     "signal_strength": 1.42
+  },
+  {
+    "market_id": "dAELAOQuAc",
+    "question": "Ben Roberts-Smith found guilty of war crimes before 2028?",
+    "direction": "BUY YES",
+    "entry_prob": 66.3,
+    "entry_time": "2026-04-08 18:56 UTC",
+    "url": "https://manifold.markets/brod/ben-robertssmith-found-guilty-of-wa",
+    "stake": 62.2,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 2,
+    "smart_user_mana": 350,
+    "price_impact": 16.2,
+    "conviction_score": 4.54,
+    "signal_strength": 1.5
   }
 ]
