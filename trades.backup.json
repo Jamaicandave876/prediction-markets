@@ -157,7 +157,7 @@
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null,
-    "peak_pnl": 6.399999999999999
+    "peak_pnl": 6.5
   },
   {
     "market_id": "guqE9SUcOs",
@@ -184,11 +184,11 @@
     "drift_score": 7.51,
     "url": "https://manifold.markets/Qq/will-futarchy-chess-end-in-a-draw",
     "stake": 20,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 61.1,
+    "exit_time": "2026-04-07 23:06 UTC",
+    "exit_reason": "trailing_stop",
+    "pnl_pp": 5.6,
     "peak_pnl": 11.700000000000003
   }
 ]

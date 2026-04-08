@@ -204,11 +204,11 @@
     "entry_time": "2026-04-05 05:58 UTC",
     "url": "https://manifold.markets/Hypermental/cigarsstock-permanent",
     "stake": 53.9,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 55.6,
+    "exit_time": "2026-04-08 06:02 UTC",
+    "exit_reason": "stale",
+    "pnl_pp": 0.4,
     "liquidation_size": 200,
     "liquidation_impact": 14.6,
     "liquidation_dir": "YES",
@@ -252,6 +252,7 @@
     "liquidation_impact": 11.5,
     "liquidation_dir": "NO",
     "impact_score": 2.88,
-    "signal_strength": 1.44
+    "signal_strength": 1.44,
+    "peak_pnl": 0.3999999999999986
   }
 ]

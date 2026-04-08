@@ -19,7 +19,7 @@
       "avg_pnl": 2.6,
       "total_pnl": 23.1,
       "closed": 9,
-      "open": 3,
+      "open": 4,
       "grade": "C"
     },
     "fade": {
@@ -117,5 +117,5 @@
     "breakout": 0
   },
   "regime": "adverse",
-  "last_report": "2026-04-07 05:59 UTC"
+  "last_report": "2026-04-08 06:02 UTC"
 }

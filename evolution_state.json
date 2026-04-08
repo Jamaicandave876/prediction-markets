@@ -27,7 +27,7 @@
     },
     "sentiment": {
       "trailing_stop_pp": 7,
-      "stop_pp": 7
+      "stop_pp": 8
     },
     "smart_money": {
       "stop_pp": 12
@@ -118,7 +118,9 @@
       "low_prob_entry": 1,
       "fast_trade": 3,
       "yes_direction": 3,
-      "mid_prob_entry": 2
+      "mid_prob_entry": 3,
+      "no_direction": 1,
+      "strong_signal": 1
     },
     "momentum": {
       "mid_prob_entry": 3,
@@ -762,26 +764,18 @@
       "new": 7,
       "reason": "Too many stop-outs \u2014 stops are too tight",
       "timestamp": "2026-04-07 23:07 UTC"
+    },
+    {
+      "type": "bot_adjustment",
+      "bot": "sentiment",
+      "param": "stop_pp",
+      "old": 7,
+      "new": 8,
+      "reason": "Too many stop-outs \u2014 stops are too tight",
+      "timestamp": "2026-04-08 06:02 UTC"
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "fresh_sniper",
-      "market_id": "pUCZPnhO66",
-      "outcome": "small_win",
-      "pnl_pp": 4.5,
-      "exit_reason": "trailing_stop",
-      "duration_hours": 35.1,
-      "traits": [
-        "mid_prob_entry",
-        "yes_direction",
-        "weak_signal"
-      ],
-      "entry_prob": 55.5,
-      "direction": "BUY YES",
-      "timestamp": "2026-04-04 19:45 UTC",
-      "lesson": "Sniper: small win via trailing_stop. PnL: +4.5pp in 35h."
-    },
     {
       "bot": "breakout",
       "market_id": "pUCZPnhO66",
@@ -2482,6 +2476,23 @@
       "direction": "BUY NO",
       "timestamp": "2026-04-07 20:06 UTC",
       "lesson": "Sentiment: Quick strong win \u2014 this signal pattern works well."
+    },
+    {
+      "bot": "liquidation",
+      "market_id": "yOugUdyuzE",
+      "outcome": "small_win",
+      "pnl_pp": 0.4,
+      "exit_reason": "stale",
+      "duration_hours": 72.1,
+      "traits": [
+        "mid_prob_entry",
+        "no_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 56.0,
+      "direction": "BUY NO",
+      "timestamp": "2026-04-08 06:02 UTC",
+      "lesson": "Liquidation: small win via stale. PnL: +0.4pp in 72h."
     }
   ],
   "regime": "cautious",
@@ -2525,8 +2536,8 @@
     "underdog": 0.5,
     "late_mover": 0.1,
     "hedge": 0.45,
-    "liquidation": 0.21
+    "liquidation": 0.36
   },
-  "last_evolution": "2026-04-07 23:07 UTC",
-  "generation": 27
+  "last_evolution": "2026-04-08 06:02 UTC",
+  "generation": 28
 }
