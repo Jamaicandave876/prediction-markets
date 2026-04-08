@@ -190,5 +190,20 @@
     "exit_reason": "trailing_stop",
     "pnl_pp": 5.6,
     "peak_pnl": 11.700000000000003
+  },
+  {
+    "market_id": "u0yElUq58t",
+    "question": "Iran charges \"Strait of Hormuz fees\" on June 1?",
+    "direction": "BUY YES",
+    "entry_prob": 48.0,
+    "entry_time": "2026-04-08 06:02 UTC",
+    "drift_score": 78.58,
+    "url": "https://manifold.markets/Ziddletwix/iran-charges-strait-of-hormuz-fees",
+    "stake": 31.0,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]
