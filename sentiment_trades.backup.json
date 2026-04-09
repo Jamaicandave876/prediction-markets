@@ -235,5 +235,24 @@
     "divergence_score": 6.84,
     "signal_strength": 1.37,
     "peak_pnl": 12.700000000000003
+  },
+  {
+    "market_id": "cyA88y5URR",
+    "question": "Hegseth, Patel, or RFK is out within the next 90 days",
+    "direction": "BUY NO",
+    "entry_prob": 39.2,
+    "entry_time": "2026-04-09 10:21 UTC",
+    "url": "https://manifold.markets/TheWabiSabi/hegseth-patel-or-rfk-is-out-within-LRUCtl0Rhg",
+    "stake": 53.2,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "YES",
+    "crowd_pct": 60.0,
+    "price_move": -12.8,
+    "divergence_score": 7.69,
+    "signal_strength": 1.5
   }
 ]

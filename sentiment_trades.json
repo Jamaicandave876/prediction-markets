@@ -254,5 +254,43 @@
     "price_move": -12.8,
     "divergence_score": 7.69,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "p9c6INORqI",
+    "question": "Who will win: Arsenal or Sporting Lisboa?",
+    "direction": "BUY YES",
+    "entry_prob": 71.0,
+    "entry_time": "2026-04-09 16:49 UTC",
+    "url": "https://manifold.markets/HotPotato/who-will-win-psg-or-liverpool",
+    "stake": 70.1,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "NO",
+    "crowd_pct": 70.0,
+    "price_move": 20.1,
+    "divergence_score": 14.07,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "USpnpA6Idq",
+    "question": "Will the ID verification requirement for new users be reversed?",
+    "direction": "BUY NO",
+    "entry_prob": 52.5,
+    "entry_time": "2026-04-09 16:49 UTC",
+    "url": "https://manifold.markets/xjp/will-the-id-verification-requiremen",
+    "stake": 39.4,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "YES",
+    "crowd_pct": 70.0,
+    "price_move": -16.2,
+    "divergence_score": 11.33,
+    "signal_strength": 1.5
   }
 ]

@@ -15,18 +15,16 @@
     "weather_storm": true,
     "weather_divergence": true
   },
-  "pause_start": {
-    "contrarian": "2026-04-08 12:00 UTC"
-  },
+  "pause_start": {},
   "bot_scores": {
     "momentum": {
-      "score": 51.8,
-      "win_rate": 44.4,
-      "avg_pnl": 2.6,
-      "total_pnl": 23.1,
-      "closed": 9,
-      "open": 6,
-      "grade": "C"
+      "score": 45.5,
+      "win_rate": 40.0,
+      "avg_pnl": 0.7,
+      "total_pnl": 7.4,
+      "closed": 10,
+      "open": 5,
+      "grade": "D"
     },
     "fade": {
       "score": 31.2,
@@ -106,7 +104,7 @@
       "avg_pnl": 1.6,
       "total_pnl": 4.8,
       "closed": 3,
-      "open": 0,
+      "open": 1,
       "grade": "A"
     },
     "weather_temperature": {
@@ -147,7 +145,7 @@
     }
   },
   "consecutive_losses": {
-    "momentum": 0,
+    "momentum": 1,
     "fade": 1,
     "mean_reversion": 5,
     "volume_surge": 2,

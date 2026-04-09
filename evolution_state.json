@@ -65,12 +65,12 @@
       "trailing_stop": 2
     },
     "smart_money": {
-      "target_hit": 9,
+      "target_hit": 10,
       "stopped_out": 6
     },
     "momentum": {
       "trailing_stop": 2,
-      "reversal": 4
+      "reversal": 5
     },
     "contrarian": {
       "trailing_stop": 2,
@@ -87,7 +87,7 @@
       "stopped_out": 2
     },
     "late_mover": {
-      "stopped_out": 2
+      "stopped_out": 3
     },
     "hedge": {
       "trailing_stop": 2
@@ -821,56 +821,6 @@
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "sentiment",
-      "market_id": "zACQ82SQd6",
-      "outcome": "big_loss",
-      "pnl_pp": -4.9,
-      "exit_reason": "stopped_out",
-      "duration_hours": 29.3,
-      "traits": [
-        "mid_prob_entry",
-        "yes_direction"
-      ],
-      "entry_prob": 39.4,
-      "direction": "BUY YES",
-      "timestamp": "2026-04-04 19:46 UTC",
-      "lesson": "Sentiment: big loss via stopped_out. PnL: -4.9pp in 29h."
-    },
-    {
-      "bot": "sentiment",
-      "market_id": "l2UcqtzuPZ",
-      "outcome": "small_win",
-      "pnl_pp": 1.2,
-      "exit_reason": "target_hit",
-      "duration_hours": 3.8,
-      "traits": [
-        "low_prob_entry",
-        "fast_trade",
-        "no_direction"
-      ],
-      "entry_prob": 27.7,
-      "direction": "BUY NO",
-      "timestamp": "2026-04-04 19:46 UTC",
-      "lesson": "Sentiment: small win via target_hit. PnL: +1.2pp in 4h."
-    },
-    {
-      "bot": "hedge",
-      "market_id": "R5gtEPsUqI",
-      "outcome": "small_win",
-      "pnl_pp": 0.1,
-      "exit_reason": "trailing_stop",
-      "duration_hours": 58.1,
-      "traits": [
-        "low_prob_entry",
-        "yes_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 23.8,
-      "direction": "BUY YES",
-      "timestamp": "2026-04-04 19:46 UTC",
-      "lesson": "Hedge: small win via trailing_stop. PnL: +0.1pp in 58h."
-    },
     {
       "bot": "liquidation",
       "market_id": "EuNIQh9CRR",
@@ -2540,6 +2490,59 @@
       "direction": "BUY YES",
       "timestamp": "2026-04-09 10:21 UTC",
       "lesson": "Smart $: small win via trailing_stop. PnL: +2.0pp in 28h."
+    },
+    {
+      "bot": "momentum",
+      "market_id": "USpnpA6Idq",
+      "outcome": "big_loss",
+      "pnl_pp": -15.7,
+      "exit_reason": "reversal",
+      "duration_hours": 6.5,
+      "traits": [
+        "mid_prob_entry",
+        "fast_trade",
+        "yes_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 68.2,
+      "direction": "BUY YES",
+      "timestamp": "2026-04-09 16:48 UTC",
+      "lesson": "Momentum: big loss via reversal. PnL: -15.7pp in 6h."
+    },
+    {
+      "bot": "smart_money",
+      "market_id": "Ec0yEIp2ty",
+      "outcome": "small_loss",
+      "pnl_pp": -2.9,
+      "exit_reason": "target_hit",
+      "duration_hours": 6.5,
+      "traits": [
+        "high_prob_entry",
+        "fast_trade",
+        "yes_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 87.8,
+      "direction": "BUY YES",
+      "timestamp": "2026-04-09 16:49 UTC",
+      "lesson": "Smart $: small loss via target_hit. PnL: -2.9pp in 6h."
+    },
+    {
+      "bot": "late_mover",
+      "market_id": "pUCZPnhO66",
+      "outcome": "big_loss",
+      "pnl_pp": -9.8,
+      "exit_reason": "stopped_out",
+      "duration_hours": 102.5,
+      "traits": [
+        "mid_prob_entry",
+        "yes_direction",
+        "weak_signal"
+      ],
+      "entry_prob": 60.1,
+      "direction": "BUY YES",
+      "timestamp": "2026-04-09 16:49 UTC",
+      "lesson": "Late Mover: Weak signal led to stop-out. Need stronger signals to justify entry."
     }
   ],
   "regime": "cautious",
@@ -2564,7 +2567,7 @@
     }
   ],
   "bot_confidence": {
-    "momentum": 0.54,
+    "momentum": 0.36,
     "fade": 0.35,
     "mean_reversion": 0.1,
     "volume_surge": 0.2,
@@ -2576,12 +2579,12 @@
     "breakout": 1.0,
     "calibration": 1.0,
     "reversal": 0.2,
-    "smart_money": 0.42,
+    "smart_money": 0.39,
     "time_decay": 0.23,
     "sentiment": 0.23,
     "accumulation": 0.1,
     "underdog": 0.5,
-    "late_mover": 0.1,
+    "late_mover": 0.2,
     "hedge": 0.45,
     "liquidation": 0.35,
     "weather_temperature": 0.5,
@@ -2589,6 +2592,6 @@
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-04-09 10:22 UTC",
-  "generation": 33
+  "last_evolution": "2026-04-09 16:49 UTC",
+  "generation": 34
 }

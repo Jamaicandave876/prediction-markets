@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-04-09 10:21 UTC",
+  "timestamp": "2026-04-09 16:49 UTC",
   "regime": "adverse",
-  "pnl_7d": -112.6,
+  "pnl_7d": -130.1,
   "total_open": 10,
-  "total_closed": 88,
-  "total_pnl": -147.9,
+  "total_closed": 89,
+  "total_pnl": -163.6,
   "bots": [
     {
       "name": "breakout",
@@ -13,20 +13,8 @@
       "score": 83.2,
       "win_rate": 100.0,
       "total_pnl": 4.8,
-      "open": 0,
+      "open": 1,
       "closed": 3,
-      "paused": true,
-      "consecutive_losses": 0
-    },
-    {
-      "name": "momentum",
-      "display": "Momentum",
-      "grade": "C",
-      "score": 51.8,
-      "win_rate": 44.4,
-      "total_pnl": 23.1,
-      "open": 6,
-      "closed": 9,
       "paused": true,
       "consecutive_losses": 0
     },
@@ -89,6 +77,18 @@
       "closed": 0,
       "paused": true,
       "consecutive_losses": 0
+    },
+    {
+      "name": "momentum",
+      "display": "Momentum",
+      "grade": "D",
+      "score": 45.5,
+      "win_rate": 40.0,
+      "total_pnl": 7.4,
+      "open": 5,
+      "closed": 10,
+      "paused": true,
+      "consecutive_losses": 1
     },
     {
       "name": "whale",
@@ -181,6 +181,7 @@
     "Mean Reversion UNPAUSED \u2014 loss streak broken",
     "Volume Surge UNPAUSED \u2014 loss streak broken",
     "Whale Tracker UNPAUSED \u2014 loss streak broken",
+    "Contrarian AUTO-UNPAUSED after 1 days",
     "Close Gravity UNPAUSED \u2014 loss streak broken",
     "Fresh Sniper UNPAUSED \u2014 loss streak broken",
     "Stability UNPAUSED \u2014 loss streak broken",
@@ -189,7 +190,7 @@
     "Wx Precip UNPAUSED \u2014 loss streak broken",
     "Wx Storm UNPAUSED \u2014 loss streak broken",
     "Wx Diverge UNPAUSED \u2014 loss streak broken",
-    "EMERGENCY HALT: 7-day P&L -112.6pp < -80pp"
+    "EMERGENCY HALT: 7-day P&L -130.1pp < -80pp"
   ],
   "adjustments": []
 }

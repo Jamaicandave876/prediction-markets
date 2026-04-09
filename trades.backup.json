@@ -206,5 +206,35 @@
     "exit_reason": null,
     "pnl_pp": null,
     "peak_pnl": 7.0
+  },
+  {
+    "market_id": "ngN8cULCyO",
+    "question": "Will MNX hit $100m in volume 2026?",
+    "direction": "BUY NO",
+    "entry_prob": 75.2,
+    "entry_time": "2026-04-09 10:20 UTC",
+    "drift_score": -8.08,
+    "url": "https://manifold.markets/SG/will-mnx-hit-100m-in-volume-2026",
+    "stake": 30.9,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
+  },
+  {
+    "market_id": "USpnpA6Idq",
+    "question": "Will the ID verification requirement for new users be reversed?",
+    "direction": "BUY YES",
+    "entry_prob": 68.2,
+    "entry_time": "2026-04-09 10:20 UTC",
+    "drift_score": 31.34,
+    "url": "https://manifold.markets/xjp/will-the-id-verification-requiremen",
+    "stake": 30.9,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]
