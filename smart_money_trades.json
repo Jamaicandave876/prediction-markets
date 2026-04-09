@@ -423,7 +423,8 @@
     "price_impact": 19.2,
     "conviction_score": 7.69,
     "signal_strength": 1.5,
-    "peak_pnl": 3.799999999999997
+    "peak_pnl": 3.799999999999997,
+    "api_errors": 1
   },
   {
     "market_id": "y9puPEnOPC",
@@ -540,6 +541,6 @@
     "price_impact": 4.5,
     "conviction_score": 2.54,
     "signal_strength": 0.85,
-    "peak_pnl": 12.600000000000001
+    "peak_pnl": 14.300000000000004
   }
 ]

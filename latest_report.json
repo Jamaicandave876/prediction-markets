@@ -1,22 +1,22 @@
 {
-  "timestamp": "2026-04-09 20:36 UTC",
+  "timestamp": "2026-04-09 23:13 UTC",
   "regime": "adverse",
-  "pnl_7d": -120.7,
-  "total_open": 10,
-  "total_closed": 89,
-  "total_pnl": -163.6,
+  "pnl_7d": -52.5,
+  "total_open": 9,
+  "total_closed": 90,
+  "total_pnl": -170.3,
   "bots": [
     {
       "name": "breakout",
       "display": "Breakout",
-      "grade": "A",
-      "score": 83.2,
-      "win_rate": 100.0,
-      "total_pnl": 4.8,
-      "open": 1,
-      "closed": 3,
-      "paused": true,
-      "consecutive_losses": 0
+      "grade": "C",
+      "score": 64.0,
+      "win_rate": 75.0,
+      "total_pnl": -1.9,
+      "open": 0,
+      "closed": 4,
+      "paused": false,
+      "consecutive_losses": 1
     },
     {
       "name": "stability",
@@ -27,7 +27,7 @@
       "total_pnl": 0,
       "open": 2,
       "closed": 0,
-      "paused": true,
+      "paused": false,
       "consecutive_losses": 0
     },
     {
@@ -39,7 +39,7 @@
       "total_pnl": 0,
       "open": 0,
       "closed": 0,
-      "paused": true,
+      "paused": false,
       "consecutive_losses": 0
     },
     {
@@ -51,7 +51,7 @@
       "total_pnl": 0,
       "open": 0,
       "closed": 0,
-      "paused": true,
+      "paused": false,
       "consecutive_losses": 0
     },
     {
@@ -63,7 +63,7 @@
       "total_pnl": 0,
       "open": 0,
       "closed": 0,
-      "paused": true,
+      "paused": false,
       "consecutive_losses": 0
     },
     {
@@ -75,7 +75,7 @@
       "total_pnl": 0,
       "open": 0,
       "closed": 0,
-      "paused": true,
+      "paused": false,
       "consecutive_losses": 0
     },
     {
@@ -87,7 +87,7 @@
       "total_pnl": 7.4,
       "open": 5,
       "closed": 10,
-      "paused": true,
+      "paused": false,
       "consecutive_losses": 1
     },
     {
@@ -99,7 +99,7 @@
       "total_pnl": 0.7,
       "open": 0,
       "closed": 13,
-      "paused": true,
+      "paused": false,
       "consecutive_losses": 0
     },
     {
@@ -111,7 +111,7 @@
       "total_pnl": -26.7,
       "open": 0,
       "closed": 21,
-      "paused": true,
+      "paused": false,
       "consecutive_losses": 1
     },
     {
@@ -123,7 +123,7 @@
       "total_pnl": -18.8,
       "open": 2,
       "closed": 2,
-      "paused": true,
+      "paused": false,
       "consecutive_losses": 1
     },
     {
@@ -135,7 +135,7 @@
       "total_pnl": -18.5,
       "open": 0,
       "closed": 21,
-      "paused": true,
+      "paused": false,
       "consecutive_losses": 2
     },
     {
@@ -159,7 +159,7 @@
       "total_pnl": 0.0,
       "open": 0,
       "closed": 5,
-      "paused": true,
+      "paused": false,
       "consecutive_losses": 5
     },
     {
@@ -171,7 +171,7 @@
       "total_pnl": -54.2,
       "open": 0,
       "closed": 5,
-      "paused": true,
+      "paused": false,
       "consecutive_losses": 1
     }
   ],
@@ -188,8 +188,7 @@
     "Wx Temp UNPAUSED \u2014 loss streak broken",
     "Wx Precip UNPAUSED \u2014 loss streak broken",
     "Wx Storm UNPAUSED \u2014 loss streak broken",
-    "Wx Diverge UNPAUSED \u2014 loss streak broken",
-    "EMERGENCY HALT: 7-day P&L -120.7pp < -80pp"
+    "Wx Diverge UNPAUSED \u2014 loss streak broken"
   ],
   "adjustments": []
 }

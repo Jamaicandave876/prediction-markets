@@ -1,19 +1,19 @@
 {
   "paused": {
-    "fresh_sniper": true,
-    "whale": true,
-    "momentum": true,
-    "fade": true,
-    "mean_reversion": true,
-    "volume_surge": true,
+    "fresh_sniper": false,
+    "whale": false,
+    "momentum": false,
+    "fade": false,
+    "mean_reversion": false,
+    "volume_surge": false,
     "contrarian": true,
-    "close_gravity": true,
-    "stability": true,
-    "breakout": true,
-    "weather_temperature": true,
-    "weather_precipitation": true,
-    "weather_storm": true,
-    "weather_divergence": true
+    "close_gravity": false,
+    "stability": false,
+    "breakout": false,
+    "weather_temperature": false,
+    "weather_precipitation": false,
+    "weather_storm": false,
+    "weather_divergence": false
   },
   "pause_start": {},
   "bot_scores": {
@@ -99,13 +99,13 @@
       "grade": "NEW"
     },
     "breakout": {
-      "score": 83.2,
-      "win_rate": 100.0,
-      "avg_pnl": 1.6,
-      "total_pnl": 4.8,
-      "closed": 3,
-      "open": 1,
-      "grade": "A"
+      "score": 64.0,
+      "win_rate": 75.0,
+      "avg_pnl": -0.5,
+      "total_pnl": -1.9,
+      "closed": 4,
+      "open": 0,
+      "grade": "C"
     },
     "weather_temperature": {
       "score": 50,
@@ -154,7 +154,7 @@
     "close_gravity": 1,
     "fresh_sniper": 1,
     "stability": 0,
-    "breakout": 0,
+    "breakout": 1,
     "weather_temperature": 0,
     "weather_precipitation": 0,
     "weather_storm": 0,
