@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-04-09 06:01 UTC",
+  "timestamp": "2026-04-09 10:21 UTC",
   "regime": "adverse",
-  "pnl_7d": -91.4,
-  "total_open": 8,
+  "pnl_7d": -112.6,
+  "total_open": 10,
   "total_closed": 88,
   "total_pnl": -147.9,
   "bots": [
@@ -25,7 +25,7 @@
       "score": 51.8,
       "win_rate": 44.4,
       "total_pnl": 23.1,
-      "open": 4,
+      "open": 6,
       "closed": 9,
       "paused": true,
       "consecutive_losses": 0
@@ -176,8 +176,20 @@
     }
   ],
   "warnings": [
+    "Momentum UNPAUSED \u2014 loss streak broken",
+    "Fade UNPAUSED \u2014 loss streak broken",
+    "Mean Reversion UNPAUSED \u2014 loss streak broken",
+    "Volume Surge UNPAUSED \u2014 loss streak broken",
+    "Whale Tracker UNPAUSED \u2014 loss streak broken",
     "Close Gravity UNPAUSED \u2014 loss streak broken",
-    "EMERGENCY HALT: 7-day P&L -91.4pp < -80pp"
+    "Fresh Sniper UNPAUSED \u2014 loss streak broken",
+    "Stability UNPAUSED \u2014 loss streak broken",
+    "Breakout UNPAUSED \u2014 loss streak broken",
+    "Wx Temp UNPAUSED \u2014 loss streak broken",
+    "Wx Precip UNPAUSED \u2014 loss streak broken",
+    "Wx Storm UNPAUSED \u2014 loss streak broken",
+    "Wx Diverge UNPAUSED \u2014 loss streak broken",
+    "EMERGENCY HALT: 7-day P&L -112.6pp < -80pp"
   ],
   "adjustments": []
 }
