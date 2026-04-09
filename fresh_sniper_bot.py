@@ -35,8 +35,8 @@ BOT_CONFIG = BotConfig(
     target_yes=75,
     target_no=25,
     stop_pp=8,          # wider stop — new markets are volatile
-    trailing_stop_pp=5,
-    max_days=7,
+    trailing_stop_pp=6,
+    max_days=14,
     confidence_field="move_from_open",
 )
 

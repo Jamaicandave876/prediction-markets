@@ -34,8 +34,8 @@ BOT_CONFIG = BotConfig(
     backup_file="late_mover_trades.backup.json",
     target_yes=73,
     target_no=27,
-    stop_pp=5,
-    trailing_stop_pp=4,
+    stop_pp=8,
+    trailing_stop_pp=6,
     max_days=10,
     confidence_field="staleness_score",
 )

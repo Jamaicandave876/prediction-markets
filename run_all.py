@@ -72,6 +72,7 @@ def main():
 
     # ── Governance Layer ─────────────────────────────────────────────────
     governance = [
+        ("intelligence", "Intelligence Layer"),
         ("meridian",  "Meridian (President/COO)"),
         ("atlas",     "Atlas (CEO)"),
         ("sentinel",  "Sentinel (Risk Manager)"),

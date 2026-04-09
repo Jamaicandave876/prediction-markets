@@ -25,8 +25,8 @@ DECAY_STRENGTH     = 2.0      # how much more recent bets matter vs old ones
                               # (2.0 = newest bet weighted ~7x more than oldest)
 
 # ── Signal Filters ────────────────────────────────────────────────────────────
-ENTRY_PROB_LOW     = 35       # % — below this is too uncertain / early
-ENTRY_PROB_HIGH    = 78       # % — above this may already be crowded
+ENTRY_PROB_LOW     = 15       # % — below this is too uncertain / early
+ENTRY_PROB_HIGH    = 85       # % — above this may already be crowded
 MIN_DRIFT_SCORE    = 1.5      # |drift_score| must exceed this
 MIN_CONSISTENCY    = 55       # % of bets in trend direction
 
@@ -37,8 +37,8 @@ STARTING_BALANCE   = 1000    # hypothetical starting balance in Mana
 # ── Exit Conditions ───────────────────────────────────────────────────────────
 EXIT_TARGET_YES    = 78       # close BUY YES when prob rises above this %
 EXIT_TARGET_NO     = 22       # close BUY NO when prob falls below this %
-REVERSAL_THRESHOLD = 4        # pp — close if market moves this far against entry
-TRAILING_STOP_PP   = 4        # pp — close if trade drops this far from its peak profit
+REVERSAL_THRESHOLD = 8        # pp — close if market moves this far against entry
+TRAILING_STOP_PP   = 6        # pp — close if trade drops this far from its peak profit
 MAX_TRADE_DAYS     = 14       # close trades older than this many days
 
 # ══════════════════════════════════════════════════════════════════════════════

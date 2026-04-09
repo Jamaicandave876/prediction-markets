@@ -24,7 +24,7 @@ PORTFOLIO_FILE = Path("portfolio.json")
 BASE_STAKE_PCT  = 0.05    # 5% of balance per trade (fallback if Kelly unavailable)
 MAX_STAKE_PCT   = 0.08    # never risk more than 8% on one trade
 MIN_STAKE       = 20      # floor — always at least 20 Mana
-CONSEC_LOSS_DAMPEN = 0.80 # multiply stake by this per consecutive loss
+CONSEC_LOSS_DAMPEN = 0.90 # multiply stake by this per consecutive loss (gentler)
 KELLY_FRACTION  = 0.25    # use 25% Kelly (conservative — protects against edge overestimation)
 
 
@@ -147,7 +147,7 @@ def compute_stake(balance: float, signal: dict, all_trades: list[dict], bot: str
     # Dampen after consecutive losses
     streak = _count_recent_consecutive_losses(all_trades)
     if streak > 0:
-        dampen = CONSEC_LOSS_DAMPEN ** min(streak, 5)  # cap at 5 losses
+        dampen = CONSEC_LOSS_DAMPEN ** min(streak, 3)  # cap at 3 losses
         stake *= dampen
         log.info("Loss streak %d → stake dampened by %.0f%%", streak, (1 - dampen) * 100)
 

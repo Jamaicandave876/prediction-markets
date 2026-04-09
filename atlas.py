@@ -50,8 +50,8 @@ ALL_BOTS = [
 
 MAX_OPEN_TOTAL = 20          # across all 10 bots
 MAX_OPEN_PER_BOT = 5         # per individual bot
-PAUSE_AFTER_LOSSES = 4       # consecutive losses to pause a bot
-MAX_PAUSE_DAYS = 3           # auto-unpause after this
+PAUSE_AFTER_LOSSES = 6       # consecutive losses to pause a bot
+MAX_PAUSE_DAYS = 1           # auto-unpause after this
 DRAWDOWN_LIMIT_PP = -80      # emergency halt if 7-day net P&L drops below this
 REGIME_CHANGE_THRESHOLD = 3  # if 3+ bots are losing, declare regime change
 
@@ -400,6 +400,46 @@ def check_pre_trade_conflict(market_id: str, direction: str, bot: str) -> bool:
     return False
 
 
+LATEST_REPORT_FILE = Path("latest_report.json")
+
+
+def _write_latest_report(all_bot_data, state, warnings, adjustments, regime, pnl_7d):
+    """Write a machine-readable JSON report for the Slack scheduled task."""
+    bots_summary = []
+    for bd in sorted(all_bot_data, key=lambda b: b["score_data"]["score"], reverse=True):
+        sd = bd["score_data"]
+        bots_summary.append({
+            "name": bd["name"], "display": bd["display"],
+            "grade": sd["grade"], "score": sd["score"],
+            "win_rate": sd["win_rate"], "total_pnl": sd["total_pnl"],
+            "open": sd["open"], "closed": sd["closed"],
+            "paused": state.get("paused", {}).get(bd["name"], False),
+            "consecutive_losses": bd["consecutive_losses"],
+        })
+
+    total_open = sum(b["open"] for b in bots_summary)
+    total_closed = sum(b["closed"] for b in bots_summary)
+    total_pnl = sum(b["total_pnl"] for b in bots_summary)
+
+    report = {
+        "timestamp": now_str(),
+        "regime": regime,
+        "pnl_7d": pnl_7d,
+        "total_open": total_open,
+        "total_closed": total_closed,
+        "total_pnl": round(total_pnl, 1),
+        "bots": bots_summary,
+        "warnings": warnings,
+        "adjustments": [{"param": a["param"], "old": a["old"], "new": a["new"], "reason": a["reason"]} for a in adjustments],
+    }
+    try:
+        tmp = LATEST_REPORT_FILE.with_suffix(".tmp")
+        tmp.write_text(json.dumps(report, indent=2))
+        tmp.replace(LATEST_REPORT_FILE)
+    except Exception as e:
+        log.error("Failed to write latest_report.json: %s", e)
+
+
 # ── Main ─────────────────────────────────────────────────────────────────────
 
 def main():
@@ -476,6 +516,9 @@ def main():
         report = build_report(all_bot_data, state, warnings, adjustments, regime, pnl_7d)
         send(report)
         state["last_report"] = now_str()
+
+    # 8. Write machine-readable report for Slack scheduled task
+    _write_latest_report(all_bot_data, state, warnings, adjustments, regime, pnl_7d)
 
     save_state(state)
     print("\nAtlas (CEO) complete.")

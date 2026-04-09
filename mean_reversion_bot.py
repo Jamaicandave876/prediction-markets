@@ -31,8 +31,8 @@ BOT_CONFIG = BotConfig(
     backup_file="mean_reversion_trades.backup.json",
     target_yes=40,      # BUY YES target: prob rises from <18% to 40%
     target_no=60,       # BUY NO target: prob drops from >82% to 60%
-    stop_pp=6,          # stop if it goes 6pp further toward extreme
-    trailing_stop_pp=5,
+    stop_pp=8,          # stop if it goes 8pp further toward extreme
+    trailing_stop_pp=6,
     max_days=10,
     confidence_field="distance_from_center",
 )

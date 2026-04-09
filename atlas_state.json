@@ -1,17 +1,20 @@
 {
   "paused": {
-    "fresh_sniper": true,
-    "whale": true,
-    "momentum": true,
-    "fade": true,
-    "mean_reversion": true,
-    "volume_surge": true,
+    "fresh_sniper": false,
+    "whale": false,
+    "momentum": false,
+    "fade": false,
+    "mean_reversion": false,
+    "volume_surge": false,
     "contrarian": true,
     "close_gravity": true,
-    "stability": true,
-    "breakout": true
+    "stability": false,
+    "breakout": false
   },
-  "pause_start": {},
+  "pause_start": {
+    "contrarian": "2026-04-08 12:00 UTC",
+    "close_gravity": "2026-04-08 12:00 UTC"
+  },
   "bot_scores": {
     "momentum": {
       "score": 51.8,

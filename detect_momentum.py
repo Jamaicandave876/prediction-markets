@@ -151,10 +151,13 @@ def compute_momentum(probs: list[float]) -> dict:
     weighted_in_dir = sum(w for s, w in zip(steps, weights) if s * direction > 0)
     consistency = weighted_in_dir / total_weight
 
-    # Quadratic consistency weighting: consistency below 50% is heavily penalized,
-    # above 50% is boosted. This prevents large noisy moves from scoring higher
-    # than small clean trends.  (e.g., 90% consistency → 3.24x, 40% → 0.64x)
-    consistency_multiplier = (consistency / 0.50) ** 2
+    # Require minimum 3 directional steps — single-spike events aren't trends
+    directional_steps = sum(1 for s in steps if s * direction > 0)
+    if directional_steps < 3:
+        consistency = 0.0
+
+    # Quadratic consistency weighting, capped at 2.0x to limit spike amplification
+    consistency_multiplier = min(2.0, (consistency / 0.50) ** 2)
 
     return {
         "drift":       round(drift * 100, 2),

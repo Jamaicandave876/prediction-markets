@@ -35,9 +35,9 @@ BOT_CONFIG = BotConfig(
     backup_file="liquidation_trades.backup.json",
     target_yes=70,
     target_no=30,
-    stop_pp=6,           # wider stop — these can be volatile
-    trailing_stop_pp=4,
-    max_days=5,
+    stop_pp=8,           # wider stop — these can be volatile
+    trailing_stop_pp=6,
+    max_days=10,
     confidence_field="impact_score",
 )
 

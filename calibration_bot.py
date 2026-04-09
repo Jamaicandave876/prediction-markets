@@ -43,7 +43,7 @@ BOT_CONFIG = BotConfig(
     target_yes=30,       # BUY YES target: underpriced event rises to 30%
     target_no=70,        # BUY NO target: overpriced event drops to 70%
     stop_pp=8,           # stop if price keeps going to extreme
-    trailing_stop_pp=5,
+    trailing_stop_pp=6,
     max_days=21,         # longer hold — waiting for resolution, not price movement
     confidence_field="miscalibration",
 )

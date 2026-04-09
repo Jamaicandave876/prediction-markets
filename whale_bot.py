@@ -29,9 +29,9 @@ BOT_CONFIG = BotConfig(
     backup_file="whale_trades.backup.json",
     target_yes=75,
     target_no=25,
-    stop_pp=4,
-    trailing_stop_pp=3,
-    max_days=7,
+    stop_pp=8,
+    trailing_stop_pp=6,
+    max_days=14,
     confidence_field="whale_amount",
 )
 

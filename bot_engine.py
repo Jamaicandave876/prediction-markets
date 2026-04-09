@@ -44,9 +44,9 @@ class BotConfig:
     # Exit parameters
     target_yes: float = 78    # close BUY YES when prob >= this
     target_no: float = 22     # close BUY NO when prob <= this
-    stop_pp: float = 5        # stop loss in pp against entry
-    trailing_stop_pp: float = 4  # trailing stop from peak
-    max_days: int = 7         # max trade duration
+    stop_pp: float = 8        # stop loss in pp against entry
+    trailing_stop_pp: float = 6  # trailing stop from peak (activates at +6pp)
+    max_days: int = 14        # max trade duration
 
     # Signal strength field (for position sizing confidence)
     confidence_field: str = "signal_strength"
@@ -235,8 +235,10 @@ def check_exits(trades: list[dict], cfg: BotConfig,
         state = get_market_state(t["market_id"])
 
         if state["status"] == "error":
-            if is_stale:
-                _close(t, t["entry_prob"], "stale", 0.0, alert_fn)
+            t["api_errors"] = t.get("api_errors", 0) + 1
+            if is_stale or t["api_errors"] >= 5:
+                reason = "stale" if is_stale else "api_unreachable"
+                _close(t, t["entry_prob"], reason, 0.0, alert_fn)
                 closed += 1
             continue
 
@@ -293,8 +295,8 @@ def check_exits(trades: list[dict], cfg: BotConfig,
         elif pnl <= -cfg.stop_pp:
             _close(t, prob, "stopped_out", pnl, alert_fn)
             closed += 1
-        elif peak > 0 and (peak - pnl) >= cfg.trailing_stop_pp:
-            # Trailing stop: activates once ANY profit is seen
+        elif peak >= cfg.trailing_stop_pp and (peak - pnl) >= cfg.trailing_stop_pp:
+            # Trailing stop: only activates once trade has reached meaningful profit
             _close(t, prob, "trailing_stop", pnl, alert_fn)
             closed += 1
 

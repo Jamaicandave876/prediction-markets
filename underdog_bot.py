@@ -33,8 +33,8 @@ BOT_CONFIG = BotConfig(
     backup_file="underdog_trades.backup.json",
     target_yes=45,       # underdog positions have big targets
     target_no=55,
-    stop_pp=5,           # tight stop — if the crack seals, we're wrong
-    trailing_stop_pp=4,
+    stop_pp=8,           # wider stop — give underdog plays room to develop
+    trailing_stop_pp=6,
     max_days=14,
     confidence_field="crack_size",
 )

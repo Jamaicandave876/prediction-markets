@@ -31,8 +31,8 @@ BOT_CONFIG = BotConfig(
     target_yes=88,      # wider target — ride to resolution
     target_no=12,
     stop_pp=8,          # wider stop — these are volatile near close
-    trailing_stop_pp=5,
-    max_days=4,         # should resolve within this window
+    trailing_stop_pp=6,
+    max_days=7,         # should resolve within this window
     confidence_field="drift_score",
 )
 

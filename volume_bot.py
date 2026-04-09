@@ -29,9 +29,9 @@ BOT_CONFIG = BotConfig(
     backup_file="volume_trades.backup.json",
     target_yes=75,
     target_no=25,
-    stop_pp=5,
-    trailing_stop_pp=4,
-    max_days=5,
+    stop_pp=8,
+    trailing_stop_pp=6,
+    max_days=10,
     confidence_field="volume_ratio",
 )
 

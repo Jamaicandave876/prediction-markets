@@ -29,9 +29,9 @@ BOT_CONFIG = BotConfig(
     backup_file="contrarian_trades.backup.json",
     target_yes=70,
     target_no=30,
-    stop_pp=6,
-    trailing_stop_pp=4,
-    max_days=7,
+    stop_pp=10,
+    trailing_stop_pp=8,
+    max_days=14,
     confidence_field="absorption_score",
 )
 

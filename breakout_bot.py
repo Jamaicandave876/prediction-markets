@@ -31,9 +31,9 @@ BOT_CONFIG = BotConfig(
     backup_file="breakout_trades.backup.json",
     target_yes=80,
     target_no=20,
-    stop_pp=5,           # tight stop — if it falls back into range, it's a fakeout
-    trailing_stop_pp=4,
-    max_days=7,
+    stop_pp=8,           # wider stop — allow some noise before calling fakeout
+    trailing_stop_pp=6,
+    max_days=14,
     confidence_field="breakout_strength",
 )
 
