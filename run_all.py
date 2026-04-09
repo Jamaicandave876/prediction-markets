@@ -70,6 +70,18 @@ def main():
     for module, display in bots:
         run_module(module, display)
 
+    # ── Weather Bots (Polymarket) ────────────────────────────────────────
+    weather_bots = [
+        ("weather_temperature_bot",    "21. Wx Temperature Bot"),
+        ("weather_precipitation_bot",  "22. Wx Precipitation Bot"),
+        ("weather_storm_bot",          "23. Wx Storm Bot"),
+        ("weather_divergence_bot",     "24. Wx Divergence Bot"),
+    ]
+
+    print("\n--- WEATHER BOTS (POLYMARKET) ---\n")
+    for module, display in weather_bots:
+        run_module(module, display)
+
     # ── Governance Layer ─────────────────────────────────────────────────
     governance = [
         ("intelligence", "Intelligence Layer"),
@@ -85,6 +97,10 @@ def main():
     # ── Evolution Engine ─────────────────────────────────────────────
     print("\n--- EVOLUTION ENGINE ---\n")
     run_module("evolution", "Evolution (Learning Brain)")
+
+    # ── Weather Backtest (post-run) ──────────────────────────────────
+    print("\n--- WEATHER BACKTEST ---\n")
+    run_module("weather_backtest", "Weather Backtest Engine")
 
     elapsed = time.time() - t_start
     print(f"\n{'=' * 60}")

@@ -232,7 +232,12 @@ def check_exits(trades: list[dict], cfg: BotConfig,
             continue
 
         is_stale = days_since(t["entry_time"]) >= cfg.max_days
-        state = get_market_state(t["market_id"])
+
+        # Branch on platform: Polymarket (weather) vs Manifold (default)
+        if t.get("platform") == "polymarket":
+            state = get_polymarket_state(t["market_id"], t.get("yes_token_id"))
+        else:
+            state = get_market_state(t["market_id"])
 
         if state["status"] == "error":
             t["api_errors"] = t.get("api_errors", 0) + 1
@@ -604,7 +609,23 @@ BOT_TRADE_FILES = [
     ("late_mover_trades.json", "late_mover_trades.backup.json"),
     ("hedge_trades.json", "hedge_trades.backup.json"),
     ("liquidation_trades.json", "liquidation_trades.backup.json"),
+    # Weather bots (Polymarket)
+    ("weather_temperature_trades.json", "weather_temperature_trades.backup.json"),
+    ("weather_precipitation_trades.json", "weather_precipitation_trades.backup.json"),
+    ("weather_storm_trades.json", "weather_storm_trades.backup.json"),
+    ("weather_divergence_trades.json", "weather_divergence_trades.backup.json"),
 ]
+
+
+# ── Polymarket Market State ─────────────────────────────────────────────────
+
+def get_polymarket_state(condition_id: str, yes_token_id: str = None) -> dict:
+    """Fetch current market state from Polymarket API."""
+    try:
+        from weather_engine import get_polymarket_price
+        return get_polymarket_price(condition_id, yes_token_id)
+    except ImportError:
+        return {"status": "error", "reason": "weather_engine not available"}
 
 
 def _collect_all_trades() -> list[dict]:

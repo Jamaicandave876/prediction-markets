@@ -31,6 +31,9 @@ BOT_NAMES = {
     'smart_money': 'Smart $', 'time_decay': 'Time Decay', 'sentiment': 'Sentiment',
     'accumulation': 'Accumulate', 'underdog': 'Underdog', 'late_mover': 'Late Mover',
     'hedge': 'Hedge', 'liquidation': 'Liquidation',
+    # Weather bots (Polymarket)
+    'weather_temperature': 'Wx Temp', 'weather_precipitation': 'Wx Precip',
+    'weather_storm': 'Wx Storm', 'weather_divergence': 'Wx Diverge',
 }
 
 # Per-bot adjustable parameters and their bounds

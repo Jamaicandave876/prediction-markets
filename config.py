@@ -7,6 +7,9 @@ Keep this file private (contains Telegram credentials).
 # ── API ───────────────────────────────────────────────────────────────────────
 API_BASE = "https://api.manifold.markets/v0"
 
+# ── Polymarket (Weather Markets) ─────────────────────────────────────────────
+POLYMARKET_API_BASE = "https://gamma-api.polymarket.com"
+
 # ── Telegram ──────────────────────────────────────────────────────────────────
 TELEGRAM_TOKEN   = "8764048221:AAEgEYUvHlan4T8BdSFRYBSQ2KdgIWfylwA"
 TELEGRAM_CHAT_ID = "8425023293"

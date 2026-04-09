@@ -64,6 +64,11 @@ BOT_NAMES = {
     "late_mover_trades.json": "late_mover",
     "hedge_trades.json": "hedge",
     "liquidation_trades.json": "liquidation",
+    # Weather bots (Polymarket)
+    "weather_temperature_trades.json": "weather_temperature",
+    "weather_precipitation_trades.json": "weather_precipitation",
+    "weather_storm_trades.json": "weather_storm",
+    "weather_divergence_trades.json": "weather_divergence",
 }
 
 STATE_FILE    = Path("intelligence_state.json")

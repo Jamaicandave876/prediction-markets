@@ -39,6 +39,11 @@ ALL_BOTS = [
     {"name": "fresh_sniper",   "file": "fresh_sniper_trades.json",      "backup": "fresh_sniper_trades.backup.json"},
     {"name": "stability",      "file": "stability_trades.json",         "backup": "stability_trades.backup.json"},
     {"name": "breakout",       "file": "breakout_trades.json",          "backup": "breakout_trades.backup.json"},
+    # Weather bots (Polymarket)
+    {"name": "weather_temperature",   "file": "weather_temperature_trades.json",   "backup": "weather_temperature_trades.backup.json"},
+    {"name": "weather_precipitation", "file": "weather_precipitation_trades.json", "backup": "weather_precipitation_trades.backup.json"},
+    {"name": "weather_storm",         "file": "weather_storm_trades.json",         "backup": "weather_storm_trades.backup.json"},
+    {"name": "weather_divergence",    "file": "weather_divergence_trades.json",    "backup": "weather_divergence_trades.backup.json"},
 ]
 
 # Risk thresholds
