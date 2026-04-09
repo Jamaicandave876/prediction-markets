@@ -1,0 +1,18 @@
+{
+  "period_days": 90,
+  "total_trades": 0,
+  "wins": 0,
+  "losses": 0,
+  "win_rate": 0,
+  "starting_balance": 1000,
+  "ending_balance": 1000,
+  "total_pnl": 0,
+  "total_return_pct": 0.0,
+  "max_drawdown_pct": 0,
+  "sharpe_ratio": 0,
+  "avg_edge": 0,
+  "by_weather_type": {},
+  "by_city": {},
+  "trades": [],
+  "generated_at": "2026-04-09T06:01:07.450385+00:00"
+}

@@ -1,19 +1,22 @@
 {
   "paused": {
-    "fresh_sniper": false,
-    "whale": false,
-    "momentum": false,
-    "fade": false,
-    "mean_reversion": false,
-    "volume_surge": false,
+    "fresh_sniper": true,
+    "whale": true,
+    "momentum": true,
+    "fade": true,
+    "mean_reversion": true,
+    "volume_surge": true,
     "contrarian": true,
     "close_gravity": true,
-    "stability": false,
-    "breakout": false
+    "stability": true,
+    "breakout": true,
+    "weather_temperature": true,
+    "weather_precipitation": true,
+    "weather_storm": true,
+    "weather_divergence": true
   },
   "pause_start": {
-    "contrarian": "2026-04-08 12:00 UTC",
-    "close_gravity": "2026-04-08 12:00 UTC"
+    "contrarian": "2026-04-08 12:00 UTC"
   },
   "bot_scores": {
     "momentum": {
@@ -35,13 +38,13 @@
       "grade": "F"
     },
     "mean_reversion": {
-      "score": 50,
-      "win_rate": 0,
-      "avg_pnl": 0,
-      "total_pnl": 0,
-      "closed": 0,
-      "open": 5,
-      "grade": "NEW"
+      "score": 20.0,
+      "win_rate": 0.0,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "closed": 5,
+      "open": 0,
+      "grade": "F"
     },
     "volume_surge": {
       "score": 28.0,
@@ -105,20 +108,60 @@
       "closed": 3,
       "open": 0,
       "grade": "A"
+    },
+    "weather_temperature": {
+      "score": 50,
+      "win_rate": 0,
+      "avg_pnl": 0,
+      "total_pnl": 0,
+      "closed": 0,
+      "open": 0,
+      "grade": "NEW"
+    },
+    "weather_precipitation": {
+      "score": 50,
+      "win_rate": 0,
+      "avg_pnl": 0,
+      "total_pnl": 0,
+      "closed": 0,
+      "open": 0,
+      "grade": "NEW"
+    },
+    "weather_storm": {
+      "score": 50,
+      "win_rate": 0,
+      "avg_pnl": 0,
+      "total_pnl": 0,
+      "closed": 0,
+      "open": 0,
+      "grade": "NEW"
+    },
+    "weather_divergence": {
+      "score": 50,
+      "win_rate": 0,
+      "avg_pnl": 0,
+      "total_pnl": 0,
+      "closed": 0,
+      "open": 0,
+      "grade": "NEW"
     }
   },
   "consecutive_losses": {
     "momentum": 0,
     "fade": 1,
-    "mean_reversion": 0,
+    "mean_reversion": 5,
     "volume_surge": 2,
     "whale": 0,
     "contrarian": 6,
     "close_gravity": 1,
     "fresh_sniper": 1,
     "stability": 0,
-    "breakout": 0
+    "breakout": 0,
+    "weather_temperature": 0,
+    "weather_precipitation": 0,
+    "weather_storm": 0,
+    "weather_divergence": 0
   },
   "regime": "adverse",
-  "last_report": "2026-04-08 06:02 UTC"
+  "last_report": "2026-04-09 06:01 UTC"
 }

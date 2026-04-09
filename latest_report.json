@@ -1,0 +1,183 @@
+{
+  "timestamp": "2026-04-09 06:01 UTC",
+  "regime": "adverse",
+  "pnl_7d": -91.4,
+  "total_open": 8,
+  "total_closed": 88,
+  "total_pnl": -147.9,
+  "bots": [
+    {
+      "name": "breakout",
+      "display": "Breakout",
+      "grade": "A",
+      "score": 83.2,
+      "win_rate": 100.0,
+      "total_pnl": 4.8,
+      "open": 0,
+      "closed": 3,
+      "paused": true,
+      "consecutive_losses": 0
+    },
+    {
+      "name": "momentum",
+      "display": "Momentum",
+      "grade": "C",
+      "score": 51.8,
+      "win_rate": 44.4,
+      "total_pnl": 23.1,
+      "open": 4,
+      "closed": 9,
+      "paused": true,
+      "consecutive_losses": 0
+    },
+    {
+      "name": "stability",
+      "display": "Stability",
+      "grade": "NEW",
+      "score": 50,
+      "win_rate": 0,
+      "total_pnl": 0,
+      "open": 2,
+      "closed": 0,
+      "paused": true,
+      "consecutive_losses": 0
+    },
+    {
+      "name": "weather_temperature",
+      "display": "Wx Temp",
+      "grade": "NEW",
+      "score": 50,
+      "win_rate": 0,
+      "total_pnl": 0,
+      "open": 0,
+      "closed": 0,
+      "paused": true,
+      "consecutive_losses": 0
+    },
+    {
+      "name": "weather_precipitation",
+      "display": "Wx Precip",
+      "grade": "NEW",
+      "score": 50,
+      "win_rate": 0,
+      "total_pnl": 0,
+      "open": 0,
+      "closed": 0,
+      "paused": true,
+      "consecutive_losses": 0
+    },
+    {
+      "name": "weather_storm",
+      "display": "Wx Storm",
+      "grade": "NEW",
+      "score": 50,
+      "win_rate": 0,
+      "total_pnl": 0,
+      "open": 0,
+      "closed": 0,
+      "paused": true,
+      "consecutive_losses": 0
+    },
+    {
+      "name": "weather_divergence",
+      "display": "Wx Diverge",
+      "grade": "NEW",
+      "score": 50,
+      "win_rate": 0,
+      "total_pnl": 0,
+      "open": 0,
+      "closed": 0,
+      "paused": true,
+      "consecutive_losses": 0
+    },
+    {
+      "name": "whale",
+      "display": "Whale Tracker",
+      "grade": "D",
+      "score": 38.1,
+      "win_rate": 30.0,
+      "total_pnl": 0.7,
+      "open": 0,
+      "closed": 13,
+      "paused": true,
+      "consecutive_losses": 0
+    },
+    {
+      "name": "fresh_sniper",
+      "display": "Fresh Sniper",
+      "grade": "F",
+      "score": 31.6,
+      "win_rate": 30.0,
+      "total_pnl": -26.7,
+      "open": 0,
+      "closed": 21,
+      "paused": true,
+      "consecutive_losses": 1
+    },
+    {
+      "name": "fade",
+      "display": "Fade",
+      "grade": "F",
+      "score": 31.2,
+      "win_rate": 50.0,
+      "total_pnl": -18.8,
+      "open": 2,
+      "closed": 2,
+      "paused": true,
+      "consecutive_losses": 1
+    },
+    {
+      "name": "volume_surge",
+      "display": "Volume Surge",
+      "grade": "F",
+      "score": 28.0,
+      "win_rate": 20.0,
+      "total_pnl": -18.5,
+      "open": 0,
+      "closed": 21,
+      "paused": true,
+      "consecutive_losses": 2
+    },
+    {
+      "name": "contrarian",
+      "display": "Contrarian",
+      "grade": "F",
+      "score": 20.4,
+      "win_rate": 22.2,
+      "total_pnl": -58.3,
+      "open": 0,
+      "closed": 9,
+      "paused": true,
+      "consecutive_losses": 6
+    },
+    {
+      "name": "mean_reversion",
+      "display": "Mean Reversion",
+      "grade": "F",
+      "score": 20.0,
+      "win_rate": 0.0,
+      "total_pnl": 0.0,
+      "open": 0,
+      "closed": 5,
+      "paused": true,
+      "consecutive_losses": 5
+    },
+    {
+      "name": "close_gravity",
+      "display": "Close Gravity",
+      "grade": "F",
+      "score": 12.0,
+      "win_rate": 20.0,
+      "total_pnl": -54.2,
+      "open": 0,
+      "closed": 5,
+      "paused": true,
+      "consecutive_losses": 1
+    }
+  ],
+  "warnings": [
+    "Close Gravity UNPAUSED \u2014 loss streak broken",
+    "EMERGENCY HALT: 7-day P&L -91.4pp < -80pp"
+  ],
+  "adjustments": []
+}
