@@ -220,7 +220,8 @@
     "exit_prob": null,
     "exit_time": null,
     "exit_reason": null,
-    "pnl_pp": null
+    "pnl_pp": null,
+    "peak_pnl": 12.600000000000001
   },
   {
     "market_id": "USpnpA6Idq",
@@ -231,10 +232,10 @@
     "drift_score": 31.34,
     "url": "https://manifold.markets/xjp/will-the-id-verification-requiremen",
     "stake": 30.9,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 52.5,
+    "exit_time": "2026-04-09 16:48 UTC",
+    "exit_reason": "reversal",
+    "pnl_pp": -15.7
   }
 ]

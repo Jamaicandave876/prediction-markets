@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-04-09 16:49 UTC",
+  "timestamp": "2026-04-09 20:36 UTC",
   "regime": "adverse",
-  "pnl_7d": -130.1,
+  "pnl_7d": -120.7,
   "total_open": 10,
   "total_closed": 89,
   "total_pnl": -163.6,
@@ -181,7 +181,6 @@
     "Mean Reversion UNPAUSED \u2014 loss streak broken",
     "Volume Surge UNPAUSED \u2014 loss streak broken",
     "Whale Tracker UNPAUSED \u2014 loss streak broken",
-    "Contrarian AUTO-UNPAUSED after 1 days",
     "Close Gravity UNPAUSED \u2014 loss streak broken",
     "Fresh Sniper UNPAUSED \u2014 loss streak broken",
     "Stability UNPAUSED \u2014 loss streak broken",
@@ -190,7 +189,7 @@
     "Wx Precip UNPAUSED \u2014 loss streak broken",
     "Wx Storm UNPAUSED \u2014 loss streak broken",
     "Wx Diverge UNPAUSED \u2014 loss streak broken",
-    "EMERGENCY HALT: 7-day P&L -130.1pp < -80pp"
+    "EMERGENCY HALT: 7-day P&L -120.7pp < -80pp"
   ],
   "adjustments": []
 }
