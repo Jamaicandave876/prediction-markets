@@ -237,5 +237,20 @@
     "exit_time": "2026-04-09 16:48 UTC",
     "exit_reason": "reversal",
     "pnl_pp": -15.7
+  },
+  {
+    "market_id": "AQIsLgzUU8",
+    "question": "Will there be a separate, second ceasefire in the America / Iran war in 2026?",
+    "direction": "BUY YES",
+    "entry_prob": 50.5,
+    "entry_time": "2026-04-10 22:59 UTC",
+    "drift_score": 14.22,
+    "url": "https://manifold.markets/Panfilo/will-there-be-a-separate-second-cea",
+    "stake": 30.9,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]
