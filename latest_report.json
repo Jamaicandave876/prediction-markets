@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-04-10 14:43 UTC",
+  "timestamp": "2026-04-10 17:39 UTC",
   "regime": "adverse",
-  "pnl_7d": -81.5,
+  "pnl_7d": -85.4,
   "total_open": 8,
   "total_closed": 91,
   "total_pnl": -170.3,
@@ -176,7 +176,20 @@
     }
   ],
   "warnings": [
-    "EMERGENCY HALT: 7-day P&L -81.5pp < -80pp"
+    "Momentum UNPAUSED \u2014 loss streak broken",
+    "Fade UNPAUSED \u2014 loss streak broken",
+    "Mean Reversion UNPAUSED \u2014 loss streak broken",
+    "Volume Surge UNPAUSED \u2014 loss streak broken",
+    "Whale Tracker UNPAUSED \u2014 loss streak broken",
+    "Close Gravity UNPAUSED \u2014 loss streak broken",
+    "Fresh Sniper UNPAUSED \u2014 loss streak broken",
+    "Stability UNPAUSED \u2014 loss streak broken",
+    "Breakout UNPAUSED \u2014 loss streak broken",
+    "Wx Temp UNPAUSED \u2014 loss streak broken",
+    "Wx Precip UNPAUSED \u2014 loss streak broken",
+    "Wx Storm UNPAUSED \u2014 loss streak broken",
+    "Wx Diverge UNPAUSED \u2014 loss streak broken",
+    "EMERGENCY HALT: 7-day P&L -85.4pp < -80pp"
   ],
   "adjustments": []
 }
