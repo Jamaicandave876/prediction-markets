@@ -541,6 +541,25 @@
     "price_impact": 4.5,
     "conviction_score": 2.54,
     "signal_strength": 0.85,
-    "peak_pnl": 14.300000000000004
+    "peak_pnl": 18.800000000000004
+  },
+  {
+    "market_id": "USpnpA6Idq",
+    "question": "Will the ID verification requirement for new users be reversed?",
+    "direction": "BUY NO",
+    "entry_prob": 51.9,
+    "entry_time": "2026-04-10 06:19 UTC",
+    "url": "https://manifold.markets/xjp/will-the-id-verification-requiremen",
+    "stake": 35.6,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 4,
+    "smart_user_mana": 325,
+    "price_impact": 15.2,
+    "conviction_score": 7.88,
+    "signal_strength": 1.5
   }
 ]

@@ -293,5 +293,24 @@
     "price_move": -16.2,
     "divergence_score": 11.33,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "q9nOSN8Idn",
+    "question": "Will there be a second Manifold Prize Drawing in 2026?",
+    "direction": "BUY NO",
+    "entry_prob": 84.2,
+    "entry_time": "2026-04-10 06:19 UTC",
+    "url": "https://manifold.markets/PlasmaPower/will-there-be-a-second-manifold-pri",
+    "stake": 20,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "YES",
+    "crowd_pct": 80.0,
+    "price_move": -4.2,
+    "divergence_score": 3.38,
+    "signal_strength": 0.68
   }
 ]
