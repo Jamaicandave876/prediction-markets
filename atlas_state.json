@@ -1,30 +1,30 @@
 {
   "paused": {
-    "fresh_sniper": true,
-    "whale": true,
-    "momentum": true,
-    "fade": true,
-    "mean_reversion": true,
-    "volume_surge": true,
+    "fresh_sniper": false,
+    "whale": false,
+    "momentum": false,
+    "fade": false,
+    "mean_reversion": false,
+    "volume_surge": false,
     "contrarian": true,
-    "close_gravity": true,
-    "stability": true,
-    "breakout": true,
-    "weather_temperature": true,
-    "weather_precipitation": true,
-    "weather_storm": true,
-    "weather_divergence": true
+    "close_gravity": false,
+    "stability": false,
+    "breakout": false,
+    "weather_temperature": false,
+    "weather_precipitation": false,
+    "weather_storm": false,
+    "weather_divergence": false
   },
   "pause_start": {},
   "bot_scores": {
     "momentum": {
-      "score": 45.5,
-      "win_rate": 40.0,
-      "avg_pnl": 0.7,
-      "total_pnl": 7.4,
-      "closed": 10,
-      "open": 5,
-      "grade": "D"
+      "score": 60.8,
+      "win_rate": 50.0,
+      "avg_pnl": 5.4,
+      "total_pnl": 53.5,
+      "closed": 11,
+      "open": 4,
+      "grade": "C"
     },
     "fade": {
       "score": 31.2,
@@ -145,7 +145,7 @@
     }
   },
   "consecutive_losses": {
-    "momentum": 1,
+    "momentum": 0,
     "fade": 1,
     "mean_reversion": 5,
     "volume_surge": 2,

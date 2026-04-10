@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-04-10 17:39 UTC",
+  "timestamp": "2026-04-10 20:00 UTC",
   "regime": "adverse",
-  "pnl_7d": -85.4,
-  "total_open": 8,
-  "total_closed": 91,
-  "total_pnl": -170.3,
+  "pnl_7d": -39.3,
+  "total_open": 7,
+  "total_closed": 92,
+  "total_pnl": -124.2,
   "bots": [
     {
       "name": "breakout",
@@ -15,8 +15,20 @@
       "total_pnl": -1.9,
       "open": 0,
       "closed": 4,
-      "paused": true,
+      "paused": false,
       "consecutive_losses": 1
+    },
+    {
+      "name": "momentum",
+      "display": "Momentum",
+      "grade": "C",
+      "score": 60.8,
+      "win_rate": 50.0,
+      "total_pnl": 53.5,
+      "open": 4,
+      "closed": 11,
+      "paused": false,
+      "consecutive_losses": 0
     },
     {
       "name": "stability",
@@ -27,7 +39,7 @@
       "total_pnl": 0,
       "open": 1,
       "closed": 1,
-      "paused": true,
+      "paused": false,
       "consecutive_losses": 1
     },
     {
@@ -39,7 +51,7 @@
       "total_pnl": 0,
       "open": 0,
       "closed": 0,
-      "paused": true,
+      "paused": false,
       "consecutive_losses": 0
     },
     {
@@ -51,7 +63,7 @@
       "total_pnl": 0,
       "open": 0,
       "closed": 0,
-      "paused": true,
+      "paused": false,
       "consecutive_losses": 0
     },
     {
@@ -63,7 +75,7 @@
       "total_pnl": 0,
       "open": 0,
       "closed": 0,
-      "paused": true,
+      "paused": false,
       "consecutive_losses": 0
     },
     {
@@ -75,20 +87,8 @@
       "total_pnl": 0,
       "open": 0,
       "closed": 0,
-      "paused": true,
+      "paused": false,
       "consecutive_losses": 0
-    },
-    {
-      "name": "momentum",
-      "display": "Momentum",
-      "grade": "D",
-      "score": 45.5,
-      "win_rate": 40.0,
-      "total_pnl": 7.4,
-      "open": 5,
-      "closed": 10,
-      "paused": true,
-      "consecutive_losses": 1
     },
     {
       "name": "whale",
@@ -99,7 +99,7 @@
       "total_pnl": 0.7,
       "open": 0,
       "closed": 13,
-      "paused": true,
+      "paused": false,
       "consecutive_losses": 0
     },
     {
@@ -111,7 +111,7 @@
       "total_pnl": -26.7,
       "open": 0,
       "closed": 21,
-      "paused": true,
+      "paused": false,
       "consecutive_losses": 1
     },
     {
@@ -123,7 +123,7 @@
       "total_pnl": -18.8,
       "open": 2,
       "closed": 2,
-      "paused": true,
+      "paused": false,
       "consecutive_losses": 1
     },
     {
@@ -135,7 +135,7 @@
       "total_pnl": -18.5,
       "open": 0,
       "closed": 21,
-      "paused": true,
+      "paused": false,
       "consecutive_losses": 2
     },
     {
@@ -159,7 +159,7 @@
       "total_pnl": 0.0,
       "open": 0,
       "closed": 5,
-      "paused": true,
+      "paused": false,
       "consecutive_losses": 5
     },
     {
@@ -171,7 +171,7 @@
       "total_pnl": -54.2,
       "open": 0,
       "closed": 5,
-      "paused": true,
+      "paused": false,
       "consecutive_losses": 1
     }
   ],
@@ -188,8 +188,7 @@
     "Wx Temp UNPAUSED \u2014 loss streak broken",
     "Wx Precip UNPAUSED \u2014 loss streak broken",
     "Wx Storm UNPAUSED \u2014 loss streak broken",
-    "Wx Diverge UNPAUSED \u2014 loss streak broken",
-    "EMERGENCY HALT: 7-day P&L -85.4pp < -80pp"
+    "Wx Diverge UNPAUSED \u2014 loss streak broken"
   ],
   "adjustments": []
 }

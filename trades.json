@@ -152,11 +152,11 @@
     "drift_score": -19.96,
     "url": "https://manifold.markets/billyhumblebrag/will-i-notice-any-degradation-in-cl",
     "stake": 29.6,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 0.0,
+    "exit_time": "2026-04-10 19:58 UTC",
+    "exit_reason": "resolved_win",
+    "pnl_pp": 46.1,
     "peak_pnl": 6.5
   },
   {
