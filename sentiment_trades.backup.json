@@ -311,6 +311,26 @@
     "crowd_pct": 80.0,
     "price_move": -4.2,
     "divergence_score": 3.38,
-    "signal_strength": 0.68
+    "signal_strength": 0.68,
+    "peak_pnl": 0.29999999999999716
+  },
+  {
+    "market_id": "p9c6INORqI",
+    "question": "Who will win: Arsenal or Sporting Lisboa?",
+    "direction": "BUY YES",
+    "entry_prob": 72.3,
+    "entry_time": "2026-04-10 11:37 UTC",
+    "url": "https://manifold.markets/HotPotato/who-will-win-psg-or-liverpool",
+    "stake": 66.8,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "NO",
+    "crowd_pct": 70.0,
+    "price_move": 12.2,
+    "divergence_score": 8.57,
+    "signal_strength": 1.5
   }
 ]
