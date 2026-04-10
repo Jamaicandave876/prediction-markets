@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-04-09 23:13 UTC",
+  "timestamp": "2026-04-10 06:19 UTC",
   "regime": "adverse",
-  "pnl_7d": -52.5,
-  "total_open": 9,
-  "total_closed": 90,
+  "pnl_7d": -44.8,
+  "total_open": 8,
+  "total_closed": 91,
   "total_pnl": -170.3,
   "bots": [
     {
@@ -25,10 +25,10 @@
       "score": 50,
       "win_rate": 0,
       "total_pnl": 0,
-      "open": 2,
-      "closed": 0,
+      "open": 1,
+      "closed": 1,
       "paused": false,
-      "consecutive_losses": 0
+      "consecutive_losses": 1
     },
     {
       "name": "weather_temperature",
@@ -175,20 +175,6 @@
       "consecutive_losses": 1
     }
   ],
-  "warnings": [
-    "Momentum UNPAUSED \u2014 loss streak broken",
-    "Fade UNPAUSED \u2014 loss streak broken",
-    "Mean Reversion UNPAUSED \u2014 loss streak broken",
-    "Volume Surge UNPAUSED \u2014 loss streak broken",
-    "Whale Tracker UNPAUSED \u2014 loss streak broken",
-    "Close Gravity UNPAUSED \u2014 loss streak broken",
-    "Fresh Sniper UNPAUSED \u2014 loss streak broken",
-    "Stability UNPAUSED \u2014 loss streak broken",
-    "Breakout UNPAUSED \u2014 loss streak broken",
-    "Wx Temp UNPAUSED \u2014 loss streak broken",
-    "Wx Precip UNPAUSED \u2014 loss streak broken",
-    "Wx Storm UNPAUSED \u2014 loss streak broken",
-    "Wx Diverge UNPAUSED \u2014 loss streak broken"
-  ],
+  "warnings": [],
   "adjustments": []
 }

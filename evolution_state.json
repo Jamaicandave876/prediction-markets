@@ -98,6 +98,9 @@
     },
     "breakout": {
       "stopped_out": 1
+    },
+    "stability": {
+      "stale": 1
     }
   },
   "win_patterns": {
@@ -833,24 +836,6 @@
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "momentum",
-      "market_id": "0sEPlhcgPU",
-      "outcome": "big_loss",
-      "pnl_pp": -6.7,
-      "exit_reason": "reversal",
-      "duration_hours": 10.2,
-      "traits": [
-        "high_prob_entry",
-        "fast_trade",
-        "yes_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 73.7,
-      "direction": "BUY YES",
-      "timestamp": "2026-04-05 05:56 UTC",
-      "lesson": "Momentum: big loss via reversal. PnL: -6.7pp in 10h."
-    },
     {
       "bot": "close_gravity",
       "market_id": "nQI56ENUNE",
@@ -2558,6 +2543,24 @@
       "direction": "BUY NO",
       "timestamp": "2026-04-09 23:12 UTC",
       "lesson": "Late Mover: small loss via stale. PnL: +0.0pp in 168h."
+    },
+    {
+      "bot": "stability",
+      "market_id": "PQlA9nnUP2",
+      "outcome": "big_loss",
+      "pnl_pp": -3.3,
+      "exit_reason": "stale",
+      "duration_hours": 168.4,
+      "traits": [
+        "mid_prob_entry",
+        "slow_trade",
+        "yes_direction",
+        "weak_signal"
+      ],
+      "entry_prob": 55.3,
+      "direction": "BUY YES",
+      "timestamp": "2026-04-10 06:19 UTC",
+      "lesson": "Stable: Held too long with no resolution. Consider shorter max_days."
     }
   ],
   "regime": "cautious",
@@ -2590,7 +2593,7 @@
     "contrarian": 0.2,
     "close_gravity": 0.2,
     "fresh_sniper": 0.2,
-    "stability": 0.5,
+    "stability": 0.1,
     "breakout": 0.68,
     "calibration": 1.0,
     "reversal": 0.2,
@@ -2607,6 +2610,6 @@
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-04-09 23:13 UTC",
-  "generation": 36
+  "last_evolution": "2026-04-10 06:19 UTC",
+  "generation": 37
 }
