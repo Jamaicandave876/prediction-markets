@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-04-11 14:06 UTC",
+  "timestamp": "2026-04-11 16:02 UTC",
   "regime": "adverse",
-  "pnl_7d": -36.3,
+  "pnl_7d": -84.8,
   "total_open": 7,
   "total_closed": 93,
   "total_pnl": -132.0,
@@ -15,7 +15,7 @@
       "total_pnl": -1.9,
       "open": 0,
       "closed": 4,
-      "paused": false,
+      "paused": true,
       "consecutive_losses": 1
     },
     {
@@ -27,7 +27,7 @@
       "total_pnl": 53.5,
       "open": 5,
       "closed": 11,
-      "paused": false,
+      "paused": true,
       "consecutive_losses": 0
     },
     {
@@ -39,7 +39,7 @@
       "total_pnl": 0,
       "open": 1,
       "closed": 1,
-      "paused": false,
+      "paused": true,
       "consecutive_losses": 1
     },
     {
@@ -51,7 +51,7 @@
       "total_pnl": 0,
       "open": 0,
       "closed": 0,
-      "paused": false,
+      "paused": true,
       "consecutive_losses": 0
     },
     {
@@ -63,7 +63,7 @@
       "total_pnl": 0,
       "open": 0,
       "closed": 0,
-      "paused": false,
+      "paused": true,
       "consecutive_losses": 0
     },
     {
@@ -75,7 +75,7 @@
       "total_pnl": 0,
       "open": 0,
       "closed": 0,
-      "paused": false,
+      "paused": true,
       "consecutive_losses": 0
     },
     {
@@ -87,7 +87,7 @@
       "total_pnl": 0,
       "open": 0,
       "closed": 0,
-      "paused": false,
+      "paused": true,
       "consecutive_losses": 0
     },
     {
@@ -99,7 +99,7 @@
       "total_pnl": 0.7,
       "open": 0,
       "closed": 13,
-      "paused": false,
+      "paused": true,
       "consecutive_losses": 0
     },
     {
@@ -111,7 +111,7 @@
       "total_pnl": -26.7,
       "open": 0,
       "closed": 21,
-      "paused": false,
+      "paused": true,
       "consecutive_losses": 1
     },
     {
@@ -123,7 +123,7 @@
       "total_pnl": -18.5,
       "open": 0,
       "closed": 21,
-      "paused": false,
+      "paused": true,
       "consecutive_losses": 2
     },
     {
@@ -135,7 +135,7 @@
       "total_pnl": -26.6,
       "open": 1,
       "closed": 3,
-      "paused": false,
+      "paused": true,
       "consecutive_losses": 2
     },
     {
@@ -159,7 +159,7 @@
       "total_pnl": 0.0,
       "open": 0,
       "closed": 5,
-      "paused": false,
+      "paused": true,
       "consecutive_losses": 5
     },
     {
@@ -171,10 +171,12 @@
       "total_pnl": -54.2,
       "open": 0,
       "closed": 5,
-      "paused": false,
+      "paused": true,
       "consecutive_losses": 1
     }
   ],
-  "warnings": [],
+  "warnings": [
+    "EMERGENCY HALT: 7-day P&L -84.8pp < -80pp"
+  ],
   "adjustments": []
 }

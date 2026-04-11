@@ -1,19 +1,19 @@
 {
   "paused": {
-    "fresh_sniper": false,
-    "whale": false,
-    "momentum": false,
-    "fade": false,
-    "mean_reversion": false,
-    "volume_surge": false,
+    "fresh_sniper": true,
+    "whale": true,
+    "momentum": true,
+    "fade": true,
+    "mean_reversion": true,
+    "volume_surge": true,
     "contrarian": true,
-    "close_gravity": false,
-    "stability": false,
-    "breakout": false,
-    "weather_temperature": false,
-    "weather_precipitation": false,
-    "weather_storm": false,
-    "weather_divergence": false
+    "close_gravity": true,
+    "stability": true,
+    "breakout": true,
+    "weather_temperature": true,
+    "weather_precipitation": true,
+    "weather_storm": true,
+    "weather_divergence": true
   },
   "pause_start": {},
   "bot_scores": {
