@@ -141,7 +141,7 @@
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null,
-    "peak_pnl": 0.3999999999999986
+    "peak_pnl": 2.5
   },
   {
     "market_id": "Ng0ntuZhuh",
@@ -247,11 +247,11 @@
     "drift_score": 14.22,
     "url": "https://manifold.markets/Panfilo/will-there-be-a-separate-second-cea",
     "stake": 30.9,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 51.9,
+    "exit_time": "2026-04-11 19:51 UTC",
+    "exit_reason": "trailing_stop",
+    "pnl_pp": 1.4,
     "peak_pnl": 25.099999999999994
   }
 ]
