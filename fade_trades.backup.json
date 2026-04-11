@@ -29,11 +29,11 @@
     "entry_time": "2026-04-04 08:00 UTC",
     "url": "https://manifold.markets/FabulousFab/will-the-republican-candidate-win-g",
     "stake": 32.1,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 99.4,
+    "exit_time": "2026-04-11 08:01 UTC",
+    "exit_reason": "stale",
+    "pnl_pp": -7.8
   },
   {
     "market_id": "EuNIQh9CRR",
