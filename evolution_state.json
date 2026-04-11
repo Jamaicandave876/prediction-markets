@@ -137,11 +137,11 @@
       "high_prob_entry": 2
     },
     "momentum": {
-      "mid_prob_entry": 6,
-      "yes_direction": 6,
-      "strong_signal": 8,
+      "mid_prob_entry": 7,
+      "yes_direction": 7,
+      "strong_signal": 9,
       "high_prob_entry": 2,
-      "fast_trade": 3,
+      "fast_trade": 4,
       "no_direction": 2
     },
     "breakout": {
@@ -839,24 +839,6 @@
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "sentiment",
-      "market_id": "RcRy5POOpq",
-      "outcome": "big_loss",
-      "pnl_pp": -4.7,
-      "exit_reason": "trailing_stop",
-      "duration_hours": 18.1,
-      "traits": [
-        "mid_prob_entry",
-        "fast_trade",
-        "no_direction",
-        "weak_signal"
-      ],
-      "entry_prob": 59.0,
-      "direction": "BUY NO",
-      "timestamp": "2026-04-05 16:03 UTC",
-      "lesson": "Sentiment: big loss via trailing_stop. PnL: -4.7pp in 18h."
-    },
     {
       "bot": "volume_surge",
       "market_id": "SCPSCt22ns",
@@ -2567,6 +2549,24 @@
       "direction": "BUY YES",
       "timestamp": "2026-04-11 19:51 UTC",
       "lesson": "Momentum: small win via trailing_stop. PnL: +1.4pp in 21h."
+    },
+    {
+      "bot": "momentum",
+      "market_id": "AQIsLgzUU8",
+      "outcome": "small_win",
+      "pnl_pp": 1.4,
+      "exit_reason": "trailing_stop",
+      "duration_hours": 20.9,
+      "traits": [
+        "mid_prob_entry",
+        "fast_trade",
+        "yes_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 50.5,
+      "direction": "BUY YES",
+      "timestamp": "2026-04-11 19:51 UTC",
+      "lesson": "Momentum: small win via trailing_stop. PnL: +1.4pp in 21h."
     }
   ],
   "regime": "cautious",
@@ -2616,6 +2616,6 @@
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-04-11 19:51 UTC",
-  "generation": 48
+  "last_evolution": "2026-04-11 22:02 UTC",
+  "generation": 49
 }
