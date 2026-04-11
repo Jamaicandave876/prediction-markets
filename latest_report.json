@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-04-11 05:20 UTC",
+  "timestamp": "2026-04-11 08:02 UTC",
   "regime": "adverse",
-  "pnl_7d": -18.2,
-  "total_open": 8,
-  "total_closed": 92,
-  "total_pnl": -124.2,
+  "pnl_7d": -27.2,
+  "total_open": 7,
+  "total_closed": 93,
+  "total_pnl": -132.0,
   "bots": [
     {
       "name": "breakout",
@@ -115,18 +115,6 @@
       "consecutive_losses": 1
     },
     {
-      "name": "fade",
-      "display": "Fade",
-      "grade": "F",
-      "score": 31.2,
-      "win_rate": 50.0,
-      "total_pnl": -18.8,
-      "open": 2,
-      "closed": 2,
-      "paused": false,
-      "consecutive_losses": 1
-    },
-    {
       "name": "volume_surge",
       "display": "Volume Surge",
       "grade": "F",
@@ -135,6 +123,18 @@
       "total_pnl": -18.5,
       "open": 0,
       "closed": 21,
+      "paused": false,
+      "consecutive_losses": 2
+    },
+    {
+      "name": "fade",
+      "display": "Fade",
+      "grade": "F",
+      "score": 22.3,
+      "win_rate": 33.3,
+      "total_pnl": -26.6,
+      "open": 1,
+      "closed": 3,
       "paused": false,
       "consecutive_losses": 2
     },
