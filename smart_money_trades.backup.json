@@ -582,5 +582,43 @@
     "conviction_score": 4.8,
     "signal_strength": 1.5,
     "peak_pnl": 13.399999999999999
+  },
+  {
+    "market_id": "USpnpA6Idq",
+    "question": "Will the ID verification requirement for new users be reversed?",
+    "direction": "BUY NO",
+    "entry_prob": 30.7,
+    "entry_time": "2026-04-12 11:06 UTC",
+    "url": "https://manifold.markets/xjp/will-the-id-verification-requiremen",
+    "stake": 61.1,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 2,
+    "smart_user_mana": 500,
+    "price_impact": 16.4,
+    "conviction_score": 6.58,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "sLtAudcPqO",
+    "question": "Will the WTI Crude Oil Spot Price be above $98 on April 20, 2026?",
+    "direction": "BUY YES",
+    "entry_prob": 66.5,
+    "entry_time": "2026-04-12 11:06 UTC",
+    "url": "https://manifold.markets/ShaneBo/will-the-wti-crude-oil-spot-price-b-yCndszhgyt",
+    "stake": 34.3,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 3,
+    "smart_user_mana": 250,
+    "price_impact": 9.2,
+    "conviction_score": 2.76,
+    "signal_strength": 0.92
   }
 ]

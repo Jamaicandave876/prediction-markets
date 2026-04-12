@@ -268,7 +268,7 @@
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null,
-    "peak_pnl": 2.700000000000003
+    "peak_pnl": 5.700000000000003
   },
   {
     "market_id": "52ChpN99z8",
@@ -316,6 +316,6 @@
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null,
-    "peak_pnl": 1.0
+    "peak_pnl": 3.9000000000000057
   }
 ]

@@ -90,7 +90,7 @@
     },
     "late_mover": {
       "stopped_out": 4,
-      "stale": 4
+      "stale": 5
     },
     "hedge": {
       "trailing_stop": 2
@@ -153,11 +153,11 @@
       "strong_signal": 4
     },
     "fade": {
-      "mid_prob_entry": 3,
+      "mid_prob_entry": 4,
       "no_direction": 2,
-      "strong_signal": 3,
-      "slow_trade": 1,
-      "yes_direction": 1
+      "strong_signal": 4,
+      "slow_trade": 2,
+      "yes_direction": 2
     },
     "close_gravity": {
       "mid_prob_entry": 2,
@@ -195,11 +195,11 @@
       "yes_direction": 1
     },
     "late_mover": {
-      "mid_prob_entry": 3,
-      "slow_trade": 3,
+      "mid_prob_entry": 4,
+      "slow_trade": 4,
       "yes_direction": 2,
-      "weak_signal": 3,
-      "no_direction": 1
+      "weak_signal": 4,
+      "no_direction": 2
     }
   },
   "learning_journal": [
@@ -844,58 +844,6 @@
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "smart_money",
-      "market_id": "IuOpLtLgNU",
-      "outcome": "small_loss",
-      "pnl_pp": 0.0,
-      "exit_reason": "target_hit",
-      "duration_hours": 2.1,
-      "traits": [
-        "low_prob_entry",
-        "fast_trade",
-        "no_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 12.3,
-      "direction": "BUY NO",
-      "timestamp": "2026-04-05 21:59 UTC",
-      "lesson": "Smart $: small loss via target_hit. PnL: +0.0pp in 2h."
-    },
-    {
-      "bot": "liquidation",
-      "market_id": "RcRy5POOpq",
-      "outcome": "big_loss",
-      "pnl_pp": -4.5,
-      "exit_reason": "trailing_stop",
-      "duration_hours": 27.9,
-      "traits": [
-        "mid_prob_entry",
-        "no_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 61.4,
-      "direction": "BUY NO",
-      "timestamp": "2026-04-05 19:52 UTC",
-      "lesson": "Liquidation: big loss via trailing_stop. PnL: -4.5pp in 28h."
-    },
-    {
-      "bot": "momentum",
-      "market_id": "5ztuCIqnuL",
-      "outcome": "big_loss",
-      "pnl_pp": -8.1,
-      "exit_reason": "reversal",
-      "duration_hours": 96.5,
-      "traits": [
-        "mid_prob_entry",
-        "no_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 35.9,
-      "direction": "BUY NO",
-      "timestamp": "2026-04-06 06:18 UTC",
-      "lesson": "Momentum: big loss via reversal. PnL: -8.1pp in 96h."
-    },
     {
       "bot": "momentum",
       "market_id": "cqpLP0PAZn",
@@ -2573,6 +2521,60 @@
       "direction": "BUY NO",
       "timestamp": "2026-04-12 11:06 UTC",
       "lesson": "Late Mover: small win via stale. PnL: +2.0pp in 169h."
+    },
+    {
+      "bot": "fade",
+      "market_id": "0sEPlhcgPU",
+      "outcome": "strong_win",
+      "pnl_pp": 6.1,
+      "exit_reason": "stale",
+      "duration_hours": 171.0,
+      "traits": [
+        "mid_prob_entry",
+        "slow_trade",
+        "yes_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 62.5,
+      "direction": "BUY YES",
+      "timestamp": "2026-04-12 11:05 UTC",
+      "lesson": "Fade: Strong signal \u2192 strong win. Keep trusting high-confidence entries."
+    },
+    {
+      "bot": "late_mover",
+      "market_id": "8cu580zcnp",
+      "outcome": "small_loss",
+      "pnl_pp": 0.0,
+      "exit_reason": "stale",
+      "duration_hours": 168.8,
+      "traits": [
+        "mid_prob_entry",
+        "slow_trade",
+        "yes_direction",
+        "weak_signal"
+      ],
+      "entry_prob": 61.1,
+      "direction": "BUY YES",
+      "timestamp": "2026-04-12 11:06 UTC",
+      "lesson": "Late Mover: small loss via stale. PnL: +0.0pp in 169h."
+    },
+    {
+      "bot": "late_mover",
+      "market_id": "zqUOdLndhE",
+      "outcome": "small_win",
+      "pnl_pp": 2.0,
+      "exit_reason": "stale",
+      "duration_hours": 168.8,
+      "traits": [
+        "mid_prob_entry",
+        "slow_trade",
+        "no_direction",
+        "weak_signal"
+      ],
+      "entry_prob": 42.0,
+      "direction": "BUY NO",
+      "timestamp": "2026-04-12 11:06 UTC",
+      "lesson": "Late Mover: small win via stale. PnL: +2.0pp in 169h."
     }
   ],
   "regime": "normal",
@@ -2628,6 +2630,6 @@
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-04-12 11:06 UTC",
-  "generation": 51
+  "last_evolution": "2026-04-12 14:11 UTC",
+  "generation": 52
 }
