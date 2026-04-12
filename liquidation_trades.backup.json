@@ -389,7 +389,7 @@
     "liquidation_dir": "NO",
     "impact_score": 4.02,
     "signal_strength": 1.5,
-    "peak_pnl": 2.6000000000000014
+    "peak_pnl": 8.100000000000001
   },
   {
     "market_id": "9ppn5cCLld",
@@ -408,6 +408,7 @@
     "liquidation_impact": 5.6,
     "liquidation_dir": "NO",
     "impact_score": 1.4,
-    "signal_strength": 0.7
+    "signal_strength": 0.7,
+    "peak_pnl": 1.8000000000000007
   }
 ]

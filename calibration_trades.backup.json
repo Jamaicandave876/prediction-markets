@@ -17,5 +17,23 @@
     "recent_move": 7.2,
     "signal_strength": 0.7,
     "peak_pnl": 11.3
+  },
+  {
+    "market_id": "quylgtL0OO",
+    "question": "Will Hunter Biden fight Donald Trump Jr or Eric Trump in 2026?",
+    "direction": "BUY YES",
+    "entry_prob": 7.3,
+    "entry_time": "2026-04-12 14:11 UTC",
+    "url": "https://manifold.markets/Jack1/will-hunter-biden-fight-donald-trum",
+    "stake": 20,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "miscalibration": 3.9,
+    "unique_traders": 9,
+    "recent_move": 6.3,
+    "signal_strength": 0.39
   }
 ]
