@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-04-12 19:55 UTC",
+  "timestamp": "2026-04-12 22:03 UTC",
   "regime": "adverse",
   "pnl_7d": -20.3,
-  "total_open": 7,
+  "total_open": 13,
   "total_closed": 100,
   "total_pnl": -119.9,
   "bots": [
@@ -25,7 +25,7 @@
       "score": 61.5,
       "win_rate": 60.0,
       "total_pnl": 64.2,
-      "open": 4,
+      "open": 10,
       "closed": 16,
       "paused": false,
       "consecutive_losses": 0
