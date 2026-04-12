@@ -88,5 +88,23 @@
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null
+  },
+  {
+    "market_id": "ICydNdnS0h",
+    "question": "Artemis program lunar landing success discourages chinese moon landing ambitions?",
+    "direction": "BUY YES",
+    "entry_prob": 18.5,
+    "pre_spike_prob": 33.9,
+    "spike_size": 15.4,
+    "spike_ratio": 25.6,
+    "spike_dir": -1,
+    "entry_time": "2026-04-12 17:03 UTC",
+    "url": "https://manifold.markets/JussiVilleHeiskanen/artemis-program-lunar-landing-succe",
+    "stake": 40.7,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]

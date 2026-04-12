@@ -35,5 +35,23 @@
     "unique_traders": 9,
     "recent_move": 6.3,
     "signal_strength": 0.39
+  },
+  {
+    "market_id": "2HfuvYzRZg",
+    "question": "Will \"Help me launch Obsolete: a book aimed at buil...\" make the top fifty posts in LessWrong's 2026 Annual Review?",
+    "direction": "BUY YES",
+    "entry_prob": 11.8,
+    "entry_time": "2026-04-12 19:55 UTC",
+    "url": "https://manifold.markets/LessWrong/will-help-me-launch-obsolete-a-book",
+    "stake": 20,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "miscalibration": 1.6,
+    "unique_traders": 5,
+    "recent_move": 1.4,
+    "signal_strength": 0.16
   }
 ]

@@ -200,11 +200,11 @@
     "drift_score": 78.58,
     "url": "https://manifold.markets/Ziddletwix/iran-charges-strait-of-hormuz-fees",
     "stake": 31.0,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 46.6,
+    "exit_time": "2026-04-12 17:02 UTC",
+    "exit_reason": "trailing_stop",
+    "pnl_pp": -1.4,
     "peak_pnl": 7.0
   },
   {
@@ -268,7 +268,7 @@
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null,
-    "peak_pnl": 5.700000000000003
+    "peak_pnl": 6.0
   },
   {
     "market_id": "52ChpN99z8",
@@ -316,6 +316,6 @@
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null,
-    "peak_pnl": 3.9000000000000057
+    "peak_pnl": 5.400000000000006
   }
 ]

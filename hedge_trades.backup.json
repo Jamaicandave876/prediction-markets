@@ -38,5 +38,43 @@
     "mispricing_pp": 39.7,
     "signal_strength": 1.32,
     "peak_pnl": 4.699999999999999
+  },
+  {
+    "market_id": "6A95Lq8QIU",
+    "question": "Will China become more authoritarian in 2026?",
+    "direction": "BUY YES",
+    "entry_prob": 44.9,
+    "entry_time": "2026-04-12 17:04 UTC",
+    "url": "https://manifold.markets/cash/will-china-become-more-authoritaria-tQRh2Cq2Rq",
+    "stake": 26.3,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "related_market": "Will the United States become more authoritarian i",
+    "related_prob": 69.3,
+    "word_overlap": 50.0,
+    "mispricing_pp": 24.4,
+    "signal_strength": 0.81
+  },
+  {
+    "market_id": "zn8NQLq2ll",
+    "question": "Will Russia become more authoritarian in 2026?",
+    "direction": "BUY YES",
+    "entry_prob": 45.8,
+    "entry_time": "2026-04-12 17:04 UTC",
+    "url": "https://manifold.markets/cash/will-russia-become-more-authoritari-IdZ9S8n2OC",
+    "stake": 25.7,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "related_market": "Will the United States become more authoritarian i",
+    "related_prob": 69.3,
+    "word_overlap": 50.0,
+    "mispricing_pp": 23.5,
+    "signal_strength": 0.78
   }
 ]
