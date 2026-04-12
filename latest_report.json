@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-04-11 22:02 UTC",
+  "timestamp": "2026-04-12 06:12 UTC",
   "regime": "adverse",
-  "pnl_7d": -87.7,
-  "total_open": 11,
-  "total_closed": 94,
-  "total_pnl": -130.6,
+  "pnl_7d": -45.2,
+  "total_open": 8,
+  "total_closed": 97,
+  "total_pnl": -131.3,
   "bots": [
     {
       "name": "breakout",
@@ -15,32 +15,20 @@
       "total_pnl": -1.9,
       "open": 0,
       "closed": 4,
-      "paused": true,
+      "paused": false,
       "consecutive_losses": 1
     },
     {
       "name": "momentum",
       "display": "Momentum",
       "grade": "C",
-      "score": 55.8,
-      "win_rate": 50.0,
-      "total_pnl": 54.9,
-      "open": 8,
-      "closed": 12,
-      "paused": true,
+      "score": 60.1,
+      "win_rate": 60.0,
+      "total_pnl": 58.9,
+      "open": 6,
+      "closed": 14,
+      "paused": false,
       "consecutive_losses": 0
-    },
-    {
-      "name": "stability",
-      "display": "Stability",
-      "grade": "NEW",
-      "score": 50,
-      "win_rate": 0,
-      "total_pnl": 0,
-      "open": 1,
-      "closed": 1,
-      "paused": true,
-      "consecutive_losses": 1
     },
     {
       "name": "weather_temperature",
@@ -51,7 +39,7 @@
       "total_pnl": 0,
       "open": 0,
       "closed": 0,
-      "paused": true,
+      "paused": false,
       "consecutive_losses": 0
     },
     {
@@ -63,7 +51,7 @@
       "total_pnl": 0,
       "open": 0,
       "closed": 0,
-      "paused": true,
+      "paused": false,
       "consecutive_losses": 0
     },
     {
@@ -75,7 +63,7 @@
       "total_pnl": 0,
       "open": 0,
       "closed": 0,
-      "paused": true,
+      "paused": false,
       "consecutive_losses": 0
     },
     {
@@ -87,7 +75,7 @@
       "total_pnl": 0,
       "open": 0,
       "closed": 0,
-      "paused": true,
+      "paused": false,
       "consecutive_losses": 0
     },
     {
@@ -99,7 +87,7 @@
       "total_pnl": 0.7,
       "open": 0,
       "closed": 13,
-      "paused": true,
+      "paused": false,
       "consecutive_losses": 0
     },
     {
@@ -111,7 +99,7 @@
       "total_pnl": -26.7,
       "open": 0,
       "closed": 21,
-      "paused": true,
+      "paused": false,
       "consecutive_losses": 1
     },
     {
@@ -123,7 +111,7 @@
       "total_pnl": -18.5,
       "open": 0,
       "closed": 21,
-      "paused": true,
+      "paused": false,
       "consecutive_losses": 2
     },
     {
@@ -135,7 +123,7 @@
       "total_pnl": -26.6,
       "open": 2,
       "closed": 3,
-      "paused": true,
+      "paused": false,
       "consecutive_losses": 2
     },
     {
@@ -159,8 +147,20 @@
       "total_pnl": 0.0,
       "open": 0,
       "closed": 5,
-      "paused": true,
+      "paused": false,
       "consecutive_losses": 5
+    },
+    {
+      "name": "stability",
+      "display": "Stability",
+      "grade": "F",
+      "score": 15.3,
+      "win_rate": 0.0,
+      "total_pnl": -4.7,
+      "open": 0,
+      "closed": 2,
+      "paused": false,
+      "consecutive_losses": 2
     },
     {
       "name": "close_gravity",
@@ -171,7 +171,7 @@
       "total_pnl": -54.2,
       "open": 0,
       "closed": 5,
-      "paused": true,
+      "paused": false,
       "consecutive_losses": 1
     }
   ],
@@ -188,8 +188,7 @@
     "Wx Temp UNPAUSED \u2014 loss streak broken",
     "Wx Precip UNPAUSED \u2014 loss streak broken",
     "Wx Storm UNPAUSED \u2014 loss streak broken",
-    "Wx Diverge UNPAUSED \u2014 loss streak broken",
-    "EMERGENCY HALT: 7-day P&L -87.7pp < -80pp"
+    "Wx Diverge UNPAUSED \u2014 loss streak broken"
   ],
   "adjustments": []
 }

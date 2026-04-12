@@ -267,7 +267,8 @@
     "exit_prob": null,
     "exit_time": null,
     "exit_reason": null,
-    "pnl_pp": null
+    "pnl_pp": null,
+    "peak_pnl": 2.700000000000003
   },
   {
     "market_id": "52ChpN99z8",
@@ -278,11 +279,12 @@
     "drift_score": -58.16,
     "url": "https://manifold.markets/AIBear/short-fuse-will-the-us-publicly-con",
     "stake": 30.8,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 17.7,
+    "exit_time": "2026-04-12 06:10 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 2.7,
+    "peak_pnl": 2.6999999999999993
   },
   {
     "market_id": "C6yR9AyCNq",
@@ -293,11 +295,12 @@
     "drift_score": -29.99,
     "url": "https://manifold.markets/retr0id/will-mlkem768-break-before-x25519",
     "stake": 30.8,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 20.3,
+    "exit_time": "2026-04-12 06:10 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 1.3,
+    "peak_pnl": 1.3000000000000007
   },
   {
     "market_id": "2cPRAQRqgQ",
@@ -312,6 +315,7 @@
     "exit_prob": null,
     "exit_time": null,
     "exit_reason": null,
-    "pnl_pp": null
+    "pnl_pp": null,
+    "peak_pnl": 1.0
   }
 ]
