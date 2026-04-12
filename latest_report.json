@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-04-12 06:12 UTC",
+  "timestamp": "2026-04-12 11:06 UTC",
   "regime": "adverse",
-  "pnl_7d": -45.2,
-  "total_open": 8,
-  "total_closed": 97,
-  "total_pnl": -131.3,
+  "pnl_7d": -39.1,
+  "total_open": 7,
+  "total_closed": 98,
+  "total_pnl": -125.2,
   "bots": [
     {
       "name": "breakout",
@@ -79,6 +79,18 @@
       "consecutive_losses": 0
     },
     {
+      "name": "fade",
+      "display": "Fade",
+      "grade": "D",
+      "score": 39.8,
+      "win_rate": 50.0,
+      "total_pnl": -20.5,
+      "open": 1,
+      "closed": 4,
+      "paused": false,
+      "consecutive_losses": 0
+    },
+    {
       "name": "whale",
       "display": "Whale Tracker",
       "grade": "D",
@@ -111,18 +123,6 @@
       "total_pnl": -18.5,
       "open": 0,
       "closed": 21,
-      "paused": false,
-      "consecutive_losses": 2
-    },
-    {
-      "name": "fade",
-      "display": "Fade",
-      "grade": "F",
-      "score": 22.3,
-      "win_rate": 33.3,
-      "total_pnl": -26.6,
-      "open": 2,
-      "closed": 3,
       "paused": false,
       "consecutive_losses": 2
     },
@@ -175,20 +175,6 @@
       "consecutive_losses": 1
     }
   ],
-  "warnings": [
-    "Momentum UNPAUSED \u2014 loss streak broken",
-    "Fade UNPAUSED \u2014 loss streak broken",
-    "Mean Reversion UNPAUSED \u2014 loss streak broken",
-    "Volume Surge UNPAUSED \u2014 loss streak broken",
-    "Whale Tracker UNPAUSED \u2014 loss streak broken",
-    "Close Gravity UNPAUSED \u2014 loss streak broken",
-    "Fresh Sniper UNPAUSED \u2014 loss streak broken",
-    "Stability UNPAUSED \u2014 loss streak broken",
-    "Breakout UNPAUSED \u2014 loss streak broken",
-    "Wx Temp UNPAUSED \u2014 loss streak broken",
-    "Wx Precip UNPAUSED \u2014 loss streak broken",
-    "Wx Storm UNPAUSED \u2014 loss streak broken",
-    "Wx Diverge UNPAUSED \u2014 loss streak broken"
-  ],
+  "warnings": [],
   "adjustments": []
 }
