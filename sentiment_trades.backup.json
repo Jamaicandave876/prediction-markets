@@ -254,7 +254,7 @@
     "price_move": -12.8,
     "divergence_score": 7.69,
     "signal_strength": 1.5,
-    "peak_pnl": 2.8000000000000043
+    "peak_pnl": 3.4000000000000057
   },
   {
     "market_id": "p9c6INORqI",
@@ -390,6 +390,7 @@
     "crowd_pct": 65.0,
     "price_move": -1.2,
     "divergence_score": 0.76,
-    "signal_strength": 0.15
+    "signal_strength": 0.15,
+    "peak_pnl": 2.4999999999999964
   }
 ]

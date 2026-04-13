@@ -346,7 +346,8 @@
     "exit_prob": null,
     "exit_time": null,
     "exit_reason": null,
-    "pnl_pp": null
+    "pnl_pp": null,
+    "peak_pnl": 7.599999999999998
   },
   {
     "market_id": "uPhALPEPOZ",
@@ -391,7 +392,8 @@
     "exit_prob": null,
     "exit_time": null,
     "exit_reason": null,
-    "pnl_pp": null
+    "pnl_pp": null,
+    "peak_pnl": 8.599999999999994
   },
   {
     "market_id": "ghI9lZO0CP",
