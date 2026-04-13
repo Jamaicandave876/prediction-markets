@@ -71,7 +71,7 @@
     },
     "momentum": {
       "trailing_stop": 4,
-      "reversal": 6
+      "reversal": 7
     },
     "contrarian": {
       "trailing_stop": 2,
@@ -138,19 +138,20 @@
       "high_prob_entry": 2
     },
     "momentum": {
-      "mid_prob_entry": 7,
-      "yes_direction": 9,
-      "strong_signal": 13,
+      "mid_prob_entry": 8,
+      "yes_direction": 10,
+      "strong_signal": 14,
       "high_prob_entry": 4,
-      "fast_trade": 8,
+      "fast_trade": 9,
       "no_direction": 4,
       "low_prob_entry": 2
     },
     "breakout": {
-      "mid_prob_entry": 4,
+      "mid_prob_entry": 5,
       "fast_trade": 2,
-      "yes_direction": 4,
-      "strong_signal": 4
+      "yes_direction": 5,
+      "strong_signal": 4,
+      "weak_signal": 1
     },
     "fade": {
       "mid_prob_entry": 4,
@@ -844,56 +845,6 @@
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "volume_surge",
-      "market_id": "PQlA9nnUP2",
-      "outcome": "small_loss",
-      "pnl_pp": -2.0,
-      "exit_reason": "stale",
-      "duration_hours": 77.8,
-      "traits": [
-        "mid_prob_entry",
-        "yes_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 55.3,
-      "direction": "BUY YES",
-      "timestamp": "2026-04-06 11:38 UTC",
-      "lesson": "Vol Surge: small loss via stale. PnL: -2.0pp in 78h."
-    },
-    {
-      "bot": "whale",
-      "market_id": "zqUOdLndhE",
-      "outcome": "small_win",
-      "pnl_pp": 1.4,
-      "exit_reason": "stale",
-      "duration_hours": 101.8,
-      "traits": [
-        "mid_prob_entry",
-        "no_direction",
-        "weak_signal"
-      ],
-      "entry_prob": 41.4,
-      "direction": "BUY NO",
-      "timestamp": "2026-04-06 11:38 UTC",
-      "lesson": "Whale: small win via stale. PnL: +1.4pp in 102h."
-    },
-    {
-      "bot": "contrarian",
-      "market_id": "RuCPq5Qqcp",
-      "outcome": "small_loss",
-      "pnl_pp": 0.0,
-      "exit_reason": "stale",
-      "duration_hours": 107.6,
-      "traits": [
-        "mid_prob_entry",
-        "no_direction"
-      ],
-      "entry_prob": 50.0,
-      "direction": "BUY NO",
-      "timestamp": "2026-04-06 11:38 UTC",
-      "lesson": "Contrarian: small loss via stale. PnL: +0.0pp in 108h."
-    },
     {
       "bot": "fresh_sniper",
       "market_id": "58NnNz2yhS",
@@ -2576,6 +2527,59 @@
       "direction": "BUY YES",
       "timestamp": "2026-04-13 07:27 UTC",
       "lesson": "Smart $: Quick strong win \u2014 this signal pattern works well."
+    },
+    {
+      "bot": "momentum",
+      "market_id": "hqhURsUOA9",
+      "outcome": "big_loss",
+      "pnl_pp": -9.3,
+      "exit_reason": "reversal",
+      "duration_hours": 20.9,
+      "traits": [
+        "mid_prob_entry",
+        "fast_trade",
+        "yes_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 60.0,
+      "direction": "BUY YES",
+      "timestamp": "2026-04-13 18:54 UTC",
+      "lesson": "Momentum: big loss via reversal. PnL: -9.3pp in 21h."
+    },
+    {
+      "bot": "momentum",
+      "market_id": "sLtAudcPqO",
+      "outcome": "small_win",
+      "pnl_pp": 1.3,
+      "exit_reason": "trailing_stop",
+      "duration_hours": 20.9,
+      "traits": [
+        "mid_prob_entry",
+        "fast_trade",
+        "yes_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 68.0,
+      "direction": "BUY YES",
+      "timestamp": "2026-04-13 18:54 UTC",
+      "lesson": "Momentum: small win via trailing_stop. PnL: +1.3pp in 21h."
+    },
+    {
+      "bot": "breakout",
+      "market_id": "sLtAudcPqO",
+      "outcome": "small_win",
+      "pnl_pp": 2.8,
+      "exit_reason": "trailing_stop",
+      "duration_hours": 28.7,
+      "traits": [
+        "mid_prob_entry",
+        "yes_direction",
+        "weak_signal"
+      ],
+      "entry_prob": 66.5,
+      "direction": "BUY YES",
+      "timestamp": "2026-04-13 18:55 UTC",
+      "lesson": "Breakout: small win via trailing_stop. PnL: +2.8pp in 29h."
     }
   ],
   "regime": "normal",
@@ -2606,7 +2610,7 @@
     }
   ],
   "bot_confidence": {
-    "momentum": 0.68,
+    "momentum": 0.59,
     "fade": 0.4,
     "mean_reversion": 0.1,
     "volume_surge": 0.2,
@@ -2615,7 +2619,7 @@
     "close_gravity": 0.2,
     "fresh_sniper": 0.2,
     "stability": 0.1,
-    "breakout": 0.68,
+    "breakout": 0.8,
     "calibration": 1.0,
     "reversal": 0.2,
     "smart_money": 0.47,
@@ -2631,6 +2635,6 @@
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-04-13 12:12 UTC",
-  "generation": 57
+  "last_evolution": "2026-04-13 18:55 UTC",
+  "generation": 58
 }
