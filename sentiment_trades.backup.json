@@ -392,5 +392,43 @@
     "divergence_score": 0.76,
     "signal_strength": 0.15,
     "peak_pnl": 2.4999999999999964
+  },
+  {
+    "market_id": "dcq0znuAgC",
+    "question": "Will the price of WTI Crude Oil experience a single-day rise of $7.00 or more before Friday, April 17?",
+    "direction": "BUY YES",
+    "entry_prob": 57.0,
+    "entry_time": "2026-04-13 23:30 UTC",
+    "url": "https://manifold.markets/ShaneBo/will-the-price-of-wti-crude-oil-exp-N9A9dcNlZ8",
+    "stake": 50.7,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "NO",
+    "crowd_pct": 65.0,
+    "price_move": 10.3,
+    "divergence_score": 6.71,
+    "signal_strength": 1.34
+  },
+  {
+    "market_id": "sLtAudcPqO",
+    "question": "Will the WTI Crude Oil Spot Price be above $98 on April 20, 2026?",
+    "direction": "BUY NO",
+    "entry_prob": 74.0,
+    "entry_time": "2026-04-13 23:30 UTC",
+    "url": "https://manifold.markets/ShaneBo/will-the-wti-crude-oil-spot-price-b-yCndszhgyt",
+    "stake": 20,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "YES",
+    "crowd_pct": 60.0,
+    "price_move": -3.3,
+    "divergence_score": 1.99,
+    "signal_strength": 0.4
   }
 ]

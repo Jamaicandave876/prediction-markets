@@ -76,5 +76,24 @@
     "word_overlap": 50.0,
     "mispricing_pp": 23.5,
     "signal_strength": 0.78
+  },
+  {
+    "market_id": "QAIhlcP86P",
+    "question": "Will India become more authoritarian in 2026?",
+    "direction": "BUY YES",
+    "entry_prob": 46.0,
+    "entry_time": "2026-04-13 23:30 UTC",
+    "url": "https://manifold.markets/cash/will-india-become-more-authoritaria-stcugnnShp",
+    "stake": 24.4,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "related_market": "Will the United States become more authoritarian i",
+    "related_prob": 68.0,
+    "word_overlap": 50.0,
+    "mispricing_pp": 22.0,
+    "signal_strength": 0.73
   }
 ]

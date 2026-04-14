@@ -1,34 +1,34 @@
 {
-  "timestamp": "2026-04-13 23:31 UTC",
+  "timestamp": "2026-04-14 06:20 UTC",
   "regime": "adverse",
-  "pnl_7d": -4.9,
-  "total_open": 11,
-  "total_closed": 103,
-  "total_pnl": -125.1,
+  "pnl_7d": 8.2,
+  "total_open": 10,
+  "total_closed": 105,
+  "total_pnl": -138.4,
   "bots": [
-    {
-      "name": "momentum",
-      "display": "Momentum",
-      "grade": "B",
-      "score": 69.7,
-      "win_rate": 70.0,
-      "total_pnl": 56.2,
-      "open": 8,
-      "closed": 18,
-      "paused": false,
-      "consecutive_losses": 1
-    },
     {
       "name": "breakout",
       "display": "Breakout",
       "grade": "B",
-      "score": 68.4,
-      "win_rate": 80.0,
-      "total_pnl": 0.9,
+      "score": 70.4,
+      "win_rate": 83.3,
+      "total_pnl": 1.2,
       "open": 1,
-      "closed": 5,
+      "closed": 6,
       "paused": false,
       "consecutive_losses": 0
+    },
+    {
+      "name": "momentum",
+      "display": "Momentum",
+      "grade": "C",
+      "score": 59.9,
+      "win_rate": 60.0,
+      "total_pnl": 42.6,
+      "open": 7,
+      "closed": 19,
+      "paused": false,
+      "consecutive_losses": 2
     },
     {
       "name": "weather_temperature",
@@ -176,12 +176,5 @@
     }
   ],
   "warnings": [],
-  "adjustments": [
-    {
-      "param": "MIN_DRIFT_SCORE",
-      "old": 4.5,
-      "new": 4.2,
-      "reason": "Momentum WR 70% > 65% \u2014 loosening"
-    }
-  ]
+  "adjustments": []
 }

@@ -254,7 +254,7 @@
     "price_move": -12.8,
     "divergence_score": 7.69,
     "signal_strength": 1.5,
-    "peak_pnl": 3.4000000000000057
+    "peak_pnl": 5.100000000000001
   },
   {
     "market_id": "p9c6INORqI",
@@ -401,11 +401,11 @@
     "entry_time": "2026-04-13 23:30 UTC",
     "url": "https://manifold.markets/ShaneBo/will-the-price-of-wti-crude-oil-exp-N9A9dcNlZ8",
     "stake": 50.7,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 47.4,
+    "exit_time": "2026-04-14 06:19 UTC",
+    "exit_reason": "stopped_out",
+    "pnl_pp": -9.6,
     "crowd_dir": "NO",
     "crowd_pct": 65.0,
     "price_move": 10.3,
@@ -429,6 +429,7 @@
     "crowd_pct": 60.0,
     "price_move": -3.3,
     "divergence_score": 1.99,
-    "signal_strength": 0.4
+    "signal_strength": 0.4,
+    "peak_pnl": 2.5999999999999943
   }
 ]
