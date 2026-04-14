@@ -75,7 +75,8 @@
     "related_prob": 69.3,
     "word_overlap": 50.0,
     "mispricing_pp": 23.5,
-    "signal_strength": 0.78
+    "signal_strength": 0.78,
+    "peak_pnl": 2.6000000000000014
   },
   {
     "market_id": "QAIhlcP86P",
@@ -95,5 +96,24 @@
     "word_overlap": 50.0,
     "mispricing_pp": 22.0,
     "signal_strength": 0.73
+  },
+  {
+    "market_id": "6E2CQN2ctL",
+    "question": "Will Ukraine become more authoritarian in 2026?",
+    "direction": "BUY YES",
+    "entry_prob": 45.2,
+    "entry_time": "2026-04-14 12:10 UTC",
+    "url": "https://manifold.markets/cash/will-ukraine-become-more-authoritar-8tlNEgnpyI",
+    "stake": 20,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "related_market": "Will the United States become more authoritarian i",
+    "related_prob": 68.0,
+    "word_overlap": 50.0,
+    "mispricing_pp": 22.8,
+    "signal_strength": 0.76
   }
 ]

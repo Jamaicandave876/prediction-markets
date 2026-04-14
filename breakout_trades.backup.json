@@ -128,6 +128,7 @@
     "baseline_range": 4.5,
     "breakout_move": 10.3,
     "breakout_strength": 2.3,
-    "signal_strength": 0.7603937181267617
+    "signal_strength": 0.7603937181267617,
+    "peak_pnl": 5.100000000000001
   }
 ]
