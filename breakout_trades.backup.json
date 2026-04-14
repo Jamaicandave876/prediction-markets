@@ -101,14 +101,33 @@
     "entry_time": "2026-04-13 23:30 UTC",
     "url": "https://manifold.markets/MachiNi/will-eric-swalwell-be-behind-bars-o",
     "stake": 70.8,
+    "status": "closed",
+    "exit_prob": 16.7,
+    "exit_time": "2026-04-14 06:19 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 0.3,
+    "baseline_range": 5.0,
+    "breakout_move": -8.0,
+    "breakout_strength": 1.6,
+    "signal_strength": 0.5325908681410396,
+    "peak_pnl": 0.3000000000000007
+  },
+  {
+    "market_id": "y2ZIUOq0ZC",
+    "question": "Trump announces US blockade of Hormuz lifted by April 30?",
+    "direction": "BUY YES",
+    "entry_prob": 58.4,
+    "entry_time": "2026-04-14 06:19 UTC",
+    "url": "https://manifold.markets/vdb/trump-announces-us-blockade-of-horm",
+    "stake": 44.6,
     "status": "open",
     "exit_prob": null,
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null,
-    "baseline_range": 5.0,
-    "breakout_move": -8.0,
-    "breakout_strength": 1.6,
-    "signal_strength": 0.5325908681410396
+    "baseline_range": 4.5,
+    "breakout_move": 10.3,
+    "breakout_strength": 2.3,
+    "signal_strength": 0.7603937181267617
   }
 ]

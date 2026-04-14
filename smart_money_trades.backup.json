@@ -621,5 +621,24 @@
     "conviction_score": 2.76,
     "signal_strength": 0.92,
     "peak_pnl": 10.099999999999994
+  },
+  {
+    "market_id": "2ItEg96spt",
+    "question": "Strait of Hormuz traffic returns to normal by end of May? [Polymarket]",
+    "direction": "BUY YES",
+    "entry_prob": 47.8,
+    "entry_time": "2026-04-14 06:19 UTC",
+    "url": "https://manifold.markets/vdb/strait-of-hormuz-traffic-returns-to-n28Zdl8Nd6",
+    "stake": 57.3,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 8,
+    "smart_user_mana": 443,
+    "price_impact": 12.1,
+    "conviction_score": 17.23,
+    "signal_strength": 1.5
   }
 ]

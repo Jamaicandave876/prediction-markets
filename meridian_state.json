@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-04-14 06:20 UTC",
+  "last_run": "2026-04-14 12:10 UTC",
   "conflicts": [],
   "overlaps": {},
   "direction_exposure": {
@@ -13,7 +13,7 @@
     "balance": "YES-heavy"
   },
   "capital_weights": {
-    "momentum": 1.1,
+    "momentum": 1.0,
     "fade": 0.8,
     "mean_reversion": 0.6,
     "volume_surge": 0.6,

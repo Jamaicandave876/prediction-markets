@@ -141,7 +141,7 @@
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null,
-    "peak_pnl": 2.5
+    "peak_pnl": 3.1000000000000014
   },
   {
     "market_id": "Ng0ntuZhuh",
@@ -404,10 +404,10 @@
     "drift_score": -20.76,
     "url": "https://manifold.markets/vdb/us-x-iran-permanent-peace-deal-by-m",
     "stake": 44.2,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 39.8,
+    "exit_time": "2026-04-14 06:18 UTC",
+    "exit_reason": "reversal",
+    "pnl_pp": -13.6
   }
 ]
