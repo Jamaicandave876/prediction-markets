@@ -680,5 +680,43 @@
     "price_impact": 4.0,
     "conviction_score": 5.09,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "SR9EqtUZCZ",
+    "question": "Will there be at least one year by 2030 (incl.) in which real US GDP grows by >=10% as measured from a prior peak?",
+    "direction": "BUY NO",
+    "entry_prob": 24.4,
+    "entry_time": "2026-04-15 12:06 UTC",
+    "url": "https://manifold.markets/Luxeed/will-there-be-at-least-one-year-by",
+    "stake": 71.2,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 2,
+    "smart_user_mana": 9717,
+    "price_impact": 16.5,
+    "conviction_score": 128.33,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "C6yR9AyCNq",
+    "question": "Will ML-KEM-768 break before X25519?",
+    "direction": "BUY NO",
+    "entry_prob": 16.4,
+    "entry_time": "2026-04-15 12:06 UTC",
+    "url": "https://manifold.markets/retr0id/will-mlkem768-break-before-x25519",
+    "stake": 71.2,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 2,
+    "smart_user_mana": 1600,
+    "price_impact": 4.0,
+    "conviction_score": 5.09,
+    "signal_strength": 1.5
   }
 ]

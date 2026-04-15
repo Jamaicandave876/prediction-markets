@@ -413,11 +413,11 @@
     "entry_time": "2026-04-07 16:15 UTC",
     "url": "https://manifold.markets/Longtimecarp/can-i-do-100-days-of-tango-under-1-nIP80On0IE",
     "stake": 68.2,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 26.6,
+    "exit_time": "2026-04-15 06:21 UTC",
+    "exit_reason": "stale",
+    "pnl_pp": 3.8,
     "smart_user_bets": 2,
     "smart_user_mana": 500,
     "price_impact": 19.2,
@@ -640,7 +640,7 @@
     "price_impact": 12.1,
     "conviction_score": 17.23,
     "signal_strength": 1.5,
-    "peak_pnl": 8.5
+    "peak_pnl": 11.200000000000003
   },
   {
     "market_id": "sLtAudcPqO",
@@ -660,7 +660,7 @@
     "price_impact": 18.3,
     "conviction_score": 7.67,
     "signal_strength": 1.5,
-    "peak_pnl": 2.5
+    "peak_pnl": 14.200000000000003
   },
   {
     "market_id": "C6yR9AyCNq",
