@@ -640,7 +640,7 @@
     "price_impact": 12.1,
     "conviction_score": 17.23,
     "signal_strength": 1.5,
-    "peak_pnl": 11.200000000000003
+    "peak_pnl": 11.400000000000006
   },
   {
     "market_id": "sLtAudcPqO",
@@ -660,7 +660,7 @@
     "price_impact": 18.3,
     "conviction_score": 7.67,
     "signal_strength": 1.5,
-    "peak_pnl": 14.200000000000003
+    "peak_pnl": 22.900000000000006
   },
   {
     "market_id": "C6yR9AyCNq",
@@ -689,16 +689,17 @@
     "entry_time": "2026-04-15 12:06 UTC",
     "url": "https://manifold.markets/Luxeed/will-there-be-at-least-one-year-by",
     "stake": 71.2,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 20.5,
+    "exit_time": "2026-04-15 18:49 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 3.9,
     "smart_user_bets": 2,
     "smart_user_mana": 9717,
     "price_impact": 16.5,
     "conviction_score": 128.33,
-    "signal_strength": 1.5
+    "signal_strength": 1.5,
+    "peak_pnl": 3.8999999999999986
   },
   {
     "market_id": "C6yR9AyCNq",
@@ -708,11 +709,11 @@
     "entry_time": "2026-04-15 12:06 UTC",
     "url": "https://manifold.markets/retr0id/will-mlkem768-break-before-x25519",
     "stake": 71.2,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 16.4,
+    "exit_time": "2026-04-15 18:49 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 0.0,
     "smart_user_bets": 2,
     "smart_user_mana": 1600,
     "price_impact": 4.0,
