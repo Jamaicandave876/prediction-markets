@@ -83,7 +83,8 @@
     },
     "liquidation": {
       "trailing_stop": 4,
-      "stale": 2
+      "stale": 2,
+      "resolved_loss": 1
     },
     "fade": {
       "stopped_out": 2,
@@ -850,22 +851,6 @@
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "contrarian",
-      "market_id": "sPqOczl6A2",
-      "outcome": "small_loss",
-      "pnl_pp": -1.4,
-      "exit_reason": "stale",
-      "duration_hours": 97.3,
-      "traits": [
-        "high_prob_entry",
-        "no_direction"
-      ],
-      "entry_prob": 77.7,
-      "direction": "BUY NO",
-      "timestamp": "2026-04-07 09:53 UTC",
-      "lesson": "Contrarian: small loss via stale. PnL: -1.4pp in 97h."
-    },
     {
       "bot": "smart_money",
       "market_id": "EuNIQh9CRR",
@@ -2594,6 +2579,23 @@
       "direction": "BUY NO",
       "timestamp": "2026-04-16 06:24 UTC",
       "lesson": "Sentiment: strong win via target_hit. PnL: +49.7pp in 55h."
+    },
+    {
+      "bot": "liquidation",
+      "market_id": "p9c6INORqI",
+      "outcome": "small_loss",
+      "pnl_pp": 0.0,
+      "exit_reason": "resolved_loss",
+      "duration_hours": 145.2,
+      "traits": [
+        "high_prob_entry",
+        "no_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 81.0,
+      "direction": "BUY NO",
+      "timestamp": "2026-04-16 18:50 UTC",
+      "lesson": "Liquidation: small loss via resolved_loss. PnL: +0.0pp in 145h."
     }
   ],
   "regime": "normal",
@@ -2679,12 +2681,12 @@
     "underdog": 0.5,
     "late_mover": 0.2,
     "hedge": 0.45,
-    "liquidation": 0.36,
+    "liquidation": 0.28,
     "weather_temperature": 0.5,
     "weather_precipitation": 0.5,
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-04-16 12:12 UTC",
-  "generation": 69
+  "last_evolution": "2026-04-16 18:50 UTC",
+  "generation": 70
 }
