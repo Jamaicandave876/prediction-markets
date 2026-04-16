@@ -133,7 +133,8 @@
     "related_prob": 41.0,
     "word_overlap": 66.7,
     "mispricing_pp": 26.1,
-    "signal_strength": 0.87
+    "signal_strength": 0.87,
+    "peak_pnl": 0.29999999999999893
   },
   {
     "market_id": "UUyP0862p5",

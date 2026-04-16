@@ -61,7 +61,7 @@
     },
     "sentiment": {
       "target_hit": 4,
-      "stopped_out": 11,
+      "stopped_out": 13,
       "trailing_stop": 2
     },
     "smart_money": {
@@ -851,40 +851,6 @@
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "smart_money",
-      "market_id": "EuNIQh9CRR",
-      "outcome": "big_loss",
-      "pnl_pp": -22.0,
-      "exit_reason": "stopped_out",
-      "duration_hours": 67.9,
-      "traits": [
-        "mid_prob_entry",
-        "yes_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 63.0,
-      "direction": "BUY YES",
-      "timestamp": "2026-04-07 05:59 UTC",
-      "lesson": "Smart $: big loss via stopped_out. PnL: -22.0pp in 68h."
-    },
-    {
-      "bot": "late_mover",
-      "market_id": "0gI6PnhO6Z",
-      "outcome": "big_loss",
-      "pnl_pp": -7.3,
-      "exit_reason": "stopped_out",
-      "duration_hours": 110.3,
-      "traits": [
-        "mid_prob_entry",
-        "no_direction",
-        "weak_signal"
-      ],
-      "entry_prob": 30.8,
-      "direction": "BUY NO",
-      "timestamp": "2026-04-07 05:59 UTC",
-      "lesson": "Late Mover: Weak signal led to stop-out. Need stronger signals to justify entry."
-    },
     {
       "bot": "volume_surge",
       "market_id": "cNINOgdn2N",
@@ -2596,6 +2562,42 @@
       "direction": "BUY NO",
       "timestamp": "2026-04-16 18:50 UTC",
       "lesson": "Liquidation: small loss via resolved_loss. PnL: +0.0pp in 145h."
+    },
+    {
+      "bot": "sentiment",
+      "market_id": "CIsh2zUqpC",
+      "outcome": "big_loss",
+      "pnl_pp": -6.7,
+      "exit_reason": "stopped_out",
+      "duration_hours": 16.8,
+      "traits": [
+        "high_prob_entry",
+        "fast_trade",
+        "no_direction",
+        "weak_signal"
+      ],
+      "entry_prob": 72.3,
+      "direction": "BUY NO",
+      "timestamp": "2026-04-16 23:12 UTC",
+      "lesson": "Sentiment: Weak signal led to stop-out. Need stronger signals to justify entry."
+    },
+    {
+      "bot": "sentiment",
+      "market_id": "y2ZIUOq0ZC",
+      "outcome": "big_loss",
+      "pnl_pp": -7.0,
+      "exit_reason": "stopped_out",
+      "duration_hours": 11.0,
+      "traits": [
+        "mid_prob_entry",
+        "fast_trade",
+        "yes_direction",
+        "weak_signal"
+      ],
+      "entry_prob": 56.4,
+      "direction": "BUY YES",
+      "timestamp": "2026-04-16 23:12 UTC",
+      "lesson": "Sentiment: Weak signal led to stop-out. Need stronger signals to justify entry."
     }
   ],
   "regime": "normal",
@@ -2676,7 +2678,7 @@
     "reversal": 0.2,
     "smart_money": 0.63,
     "time_decay": 0.23,
-    "sentiment": 0.59,
+    "sentiment": 0.35,
     "accumulation": 0.1,
     "underdog": 0.5,
     "late_mover": 0.2,
@@ -2687,6 +2689,6 @@
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-04-16 18:50 UTC",
-  "generation": 70
+  "last_evolution": "2026-04-16 23:13 UTC",
+  "generation": 71
 }
