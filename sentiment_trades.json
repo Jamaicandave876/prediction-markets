@@ -420,6 +420,26 @@
     "entry_time": "2026-04-13 23:30 UTC",
     "url": "https://manifold.markets/ShaneBo/will-the-wti-crude-oil-spot-price-b-yCndszhgyt",
     "stake": 20,
+    "status": "closed",
+    "exit_prob": 24.3,
+    "exit_time": "2026-04-16 06:24 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 49.7,
+    "crowd_dir": "YES",
+    "crowd_pct": 60.0,
+    "price_move": -3.3,
+    "divergence_score": 1.99,
+    "signal_strength": 0.4,
+    "peak_pnl": 49.7
+  },
+  {
+    "market_id": "CIsh2zUqpC",
+    "question": "Will Trump post another religious image deifying himself?",
+    "direction": "BUY NO",
+    "entry_prob": 72.3,
+    "entry_time": "2026-04-16 06:24 UTC",
+    "url": "https://manifold.markets/GnosticGirl/will-trump-post-another-religious-i",
+    "stake": 20,
     "status": "open",
     "exit_prob": null,
     "exit_time": null,
@@ -427,9 +447,8 @@
     "pnl_pp": null,
     "crowd_dir": "YES",
     "crowd_pct": 60.0,
-    "price_move": -3.3,
-    "divergence_score": 1.99,
-    "signal_strength": 0.4,
-    "peak_pnl": 42.0
+    "price_move": -1.6,
+    "divergence_score": 0.99,
+    "signal_strength": 0.2
   }
 ]

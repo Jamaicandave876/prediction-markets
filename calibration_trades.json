@@ -71,5 +71,23 @@
     "unique_traders": 5,
     "recent_move": 1.8,
     "signal_strength": 0.15
+  },
+  {
+    "market_id": "hQNRtAsS9Q",
+    "question": "Will Khamzat Chimaev takedown Sean Strickland within the first 10 seconds of the fight ?",
+    "direction": "BUY YES",
+    "entry_prob": 11.4,
+    "entry_time": "2026-04-16 06:24 UTC",
+    "url": "https://manifold.markets/Themachine/will-khamzat-chimaev-takedown-sean",
+    "stake": 20,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "miscalibration": 1.8,
+    "unique_traders": 6,
+    "recent_move": 4.7,
+    "signal_strength": 0.18
   }
 ]
