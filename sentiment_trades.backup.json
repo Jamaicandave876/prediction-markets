@@ -488,5 +488,24 @@
     "price_move": 2.4,
     "divergence_score": 1.66,
     "signal_strength": 0.33
+  },
+  {
+    "market_id": "EctSlER0EC",
+    "question": "Will cancellations at CDG exceed 100/day average over the week of June 7-13?",
+    "direction": "BUY NO",
+    "entry_prob": 42.7,
+    "entry_time": "2026-04-17 06:25 UTC",
+    "url": "https://manifold.markets/NicholasWeininger/will-cancellations-at-cdg-exceed-10",
+    "stake": 50.0,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "YES",
+    "crowd_pct": 86.7,
+    "price_move": -7.3,
+    "divergence_score": 6.3,
+    "signal_strength": 1.26
   }
 ]

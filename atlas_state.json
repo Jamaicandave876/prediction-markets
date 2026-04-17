@@ -104,7 +104,7 @@
       "avg_pnl": 0.2,
       "total_pnl": 1.3,
       "closed": 7,
-      "open": 0,
+      "open": 1,
       "grade": "B"
     },
     "weather_temperature": {
@@ -161,5 +161,5 @@
     "weather_divergence": 0
   },
   "regime": "adverse",
-  "last_report": "2026-04-16 12:12 UTC"
+  "last_report": "2026-04-17 11:40 UTC"
 }
