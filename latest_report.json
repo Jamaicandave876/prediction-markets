@@ -1,22 +1,22 @@
 {
-  "timestamp": "2026-04-17 11:40 UTC",
+  "timestamp": "2026-04-17 15:41 UTC",
   "regime": "adverse",
-  "pnl_7d": 47.5,
-  "total_open": 9,
-  "total_closed": 107,
-  "total_pnl": -126.1,
+  "pnl_7d": 42.4,
+  "total_open": 8,
+  "total_closed": 108,
+  "total_pnl": -131.2,
   "bots": [
     {
       "name": "breakout",
       "display": "Breakout",
-      "grade": "B",
-      "score": 71.8,
-      "win_rate": 85.7,
-      "total_pnl": 1.3,
-      "open": 1,
-      "closed": 7,
+      "grade": "C",
+      "score": 64.0,
+      "win_rate": 75.0,
+      "total_pnl": -3.8,
+      "open": 0,
+      "closed": 8,
       "paused": false,
-      "consecutive_losses": 0
+      "consecutive_losses": 1
     },
     {
       "name": "momentum",
