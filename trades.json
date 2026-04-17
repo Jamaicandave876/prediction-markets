@@ -136,12 +136,12 @@
     "drift_score": -8.7,
     "url": "https://manifold.markets/vdb/gas-exceeds-450-and-democrats-contr",
     "stake": 29.6,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
-    "peak_pnl": 16.9
+    "status": "closed",
+    "exit_prob": 12.3,
+    "exit_time": "2026-04-17 20:09 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 31.1,
+    "peak_pnl": 31.099999999999998
   },
   {
     "market_id": "Ng0ntuZhuh",

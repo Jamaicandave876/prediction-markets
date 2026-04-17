@@ -1,11 +1,23 @@
 {
-  "timestamp": "2026-04-17 15:41 UTC",
+  "timestamp": "2026-04-17 20:11 UTC",
   "regime": "adverse",
-  "pnl_7d": 42.4,
+  "pnl_7d": 27.4,
   "total_open": 8,
-  "total_closed": 108,
-  "total_pnl": -131.2,
+  "total_closed": 109,
+  "total_pnl": -100.1,
   "bots": [
+    {
+      "name": "momentum",
+      "display": "Momentum",
+      "grade": "B",
+      "score": 75.3,
+      "win_rate": 70.0,
+      "total_pnl": 73.7,
+      "open": 6,
+      "closed": 20,
+      "paused": false,
+      "consecutive_losses": 0
+    },
     {
       "name": "breakout",
       "display": "Breakout",
@@ -13,22 +25,10 @@
       "score": 64.0,
       "win_rate": 75.0,
       "total_pnl": -3.8,
-      "open": 0,
+      "open": 1,
       "closed": 8,
       "paused": false,
       "consecutive_losses": 1
-    },
-    {
-      "name": "momentum",
-      "display": "Momentum",
-      "grade": "C",
-      "score": 59.9,
-      "win_rate": 60.0,
-      "total_pnl": 42.6,
-      "open": 7,
-      "closed": 19,
-      "paused": false,
-      "consecutive_losses": 2
     },
     {
       "name": "fade",
@@ -176,5 +176,12 @@
     }
   ],
   "warnings": [],
-  "adjustments": []
+  "adjustments": [
+    {
+      "param": "MIN_DRIFT_SCORE",
+      "old": 3.3,
+      "new": 3.0,
+      "reason": "Momentum WR 70% > 65% \u2014 loosening"
+    }
+  ]
 }
