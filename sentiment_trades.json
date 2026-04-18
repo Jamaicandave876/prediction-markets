@@ -538,16 +538,16 @@
     "entry_time": "2026-04-18 08:09 UTC",
     "url": "https://manifold.markets/BillClintonBubba/will-60-ships-transit-the-strait-of",
     "stake": 49.0,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 21.0,
+    "exit_time": "2026-04-18 17:04 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 25.8,
     "crowd_dir": "YES",
     "crowd_pct": 75.0,
     "price_move": -12.2,
     "divergence_score": 9.18,
     "signal_strength": 1.5,
-    "peak_pnl": 7.299999999999997
+    "peak_pnl": 25.799999999999997
   }
 ]

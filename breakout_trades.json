@@ -166,7 +166,7 @@
     "breakout_move": -5.1,
     "breakout_strength": 0.6,
     "signal_strength": 0.2143010194329066,
-    "peak_pnl": 6.900000000000006
+    "peak_pnl": 10.100000000000009
   },
   {
     "market_id": "PqSQpPyqER",
@@ -184,6 +184,25 @@
     "baseline_range": 1.6,
     "breakout_move": -5.2,
     "breakout_strength": 3.3,
-    "signal_strength": 1.089485159962049
+    "signal_strength": 1.089485159962049,
+    "peak_pnl": 18.5
+  },
+  {
+    "market_id": "Iq0OnOp0At",
+    "question": "Iran agrees to surrender enriched uranium stockpile by April 30? [Polymarket]",
+    "direction": "BUY NO",
+    "entry_prob": 20.6,
+    "entry_time": "2026-04-18 17:03 UTC",
+    "url": "https://manifold.markets/vdb/iran-agrees-to-surrender-enriched-u",
+    "stake": 75.6,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "baseline_range": 1.2,
+    "breakout_move": -5.5,
+    "breakout_strength": 4.6,
+    "signal_strength": 1.5
   }
 ]
