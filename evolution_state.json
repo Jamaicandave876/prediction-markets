@@ -7,7 +7,7 @@
     "liquidation": {
       "stop_pp": 12,
       "trailing_stop_pp": 8,
-      "max_days": 5
+      "max_days": 3
     },
     "whale": {
       "stop_pp": 12
@@ -84,7 +84,7 @@
     },
     "liquidation": {
       "trailing_stop": 4,
-      "stale": 4,
+      "stale": 6,
       "resolved_loss": 1
     },
     "fade": {
@@ -126,21 +126,21 @@
     },
     "smart_money": {
       "mid_prob_entry": 17,
-      "no_direction": 17,
-      "strong_signal": 18,
-      "fast_trade": 12,
-      "low_prob_entry": 4,
+      "no_direction": 18,
+      "strong_signal": 19,
+      "fast_trade": 13,
+      "low_prob_entry": 5,
       "yes_direction": 5,
       "high_prob_entry": 1,
       "slow_trade": 2
     },
     "liquidation": {
-      "low_prob_entry": 1,
+      "low_prob_entry": 2,
       "fast_trade": 3,
-      "yes_direction": 4,
-      "mid_prob_entry": 4,
+      "yes_direction": 7,
+      "mid_prob_entry": 6,
       "no_direction": 3,
-      "strong_signal": 2,
+      "strong_signal": 4,
       "high_prob_entry": 2
     },
     "momentum": {
@@ -182,10 +182,10 @@
     },
     "sentiment": {
       "low_prob_entry": 4,
-      "fast_trade": 10,
-      "no_direction": 11,
-      "weak_signal": 5,
-      "mid_prob_entry": 5,
+      "fast_trade": 11,
+      "no_direction": 13,
+      "weak_signal": 7,
+      "mid_prob_entry": 7,
       "strong_signal": 7,
       "high_prob_entry": 6,
       "yes_direction": 4
@@ -860,147 +860,18 @@
       "new": 5,
       "reason": "Too many stale exits \u2014 holding too long",
       "timestamp": "2026-04-18 11:10 UTC"
+    },
+    {
+      "type": "bot_adjustment",
+      "bot": "liquidation",
+      "param": "max_days",
+      "old": 5,
+      "new": 3,
+      "reason": "Too many stale exits \u2014 holding too long",
+      "timestamp": "2026-04-18 14:12 UTC"
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "smart_money",
-      "market_id": "N88nUlAnd6",
-      "outcome": "small_loss",
-      "pnl_pp": -0.1,
-      "exit_reason": "target_hit",
-      "duration_hours": 3.9,
-      "traits": [
-        "low_prob_entry",
-        "fast_trade",
-        "no_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 24.2,
-      "direction": "BUY NO",
-      "timestamp": "2026-04-07 20:06 UTC",
-      "lesson": "Smart $: small loss via target_hit. PnL: -0.1pp in 4h."
-    },
-    {
-      "bot": "smart_money",
-      "market_id": "y9puPEnOPC",
-      "outcome": "small_loss",
-      "pnl_pp": 0.0,
-      "exit_reason": "target_hit",
-      "duration_hours": 3.0,
-      "traits": [
-        "high_prob_entry",
-        "fast_trade",
-        "yes_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 76.5,
-      "direction": "BUY YES",
-      "timestamp": "2026-04-07 23:06 UTC",
-      "lesson": "Smart $: small loss via target_hit. PnL: +0.0pp in 3h."
-    },
-    {
-      "bot": "sentiment",
-      "market_id": "hEL6p02ngS",
-      "outcome": "strong_win",
-      "pnl_pp": 12.7,
-      "exit_reason": "target_hit",
-      "duration_hours": 10.2,
-      "traits": [
-        "mid_prob_entry",
-        "fast_trade",
-        "no_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 39.2,
-      "direction": "BUY NO",
-      "timestamp": "2026-04-07 20:06 UTC",
-      "lesson": "Sentiment: Quick strong win \u2014 this signal pattern works well."
-    },
-    {
-      "bot": "liquidation",
-      "market_id": "yOugUdyuzE",
-      "outcome": "small_win",
-      "pnl_pp": 0.4,
-      "exit_reason": "stale",
-      "duration_hours": 72.1,
-      "traits": [
-        "mid_prob_entry",
-        "no_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 56.0,
-      "direction": "BUY NO",
-      "timestamp": "2026-04-08 06:02 UTC",
-      "lesson": "Liquidation: small win via stale. PnL: +0.4pp in 72h."
-    },
-    {
-      "bot": "calibration",
-      "market_id": "AScQIsSIE6",
-      "outcome": "small_win",
-      "pnl_pp": 4.4,
-      "exit_reason": "trailing_stop",
-      "duration_hours": 64.2,
-      "traits": [
-        "low_prob_entry",
-        "yes_direction"
-      ],
-      "entry_prob": 1.0,
-      "direction": "BUY YES",
-      "timestamp": "2026-04-08 12:01 UTC",
-      "lesson": "Calibration: small win via trailing_stop. PnL: +4.4pp in 64h."
-    },
-    {
-      "bot": "smart_money",
-      "market_id": "hEL6p02ngS",
-      "outcome": "strong_win",
-      "pnl_pp": 6.0,
-      "exit_reason": "trailing_stop",
-      "duration_hours": 30.0,
-      "traits": [
-        "mid_prob_entry",
-        "no_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 37.0,
-      "direction": "BUY NO",
-      "timestamp": "2026-04-08 12:01 UTC",
-      "lesson": "Smart $: Strong signal \u2192 strong win. Keep trusting high-confidence entries."
-    },
-    {
-      "bot": "sentiment",
-      "market_id": "zLQdhz9h5A",
-      "outcome": "small_win",
-      "pnl_pp": 0.8,
-      "exit_reason": "stale",
-      "duration_hours": 97.2,
-      "traits": [
-        "mid_prob_entry",
-        "no_direction",
-        "weak_signal"
-      ],
-      "entry_prob": 40.0,
-      "direction": "BUY NO",
-      "timestamp": "2026-04-08 23:10 UTC",
-      "lesson": "Sentiment: small win via stale. PnL: +0.8pp in 97h."
-    },
-    {
-      "bot": "liquidation",
-      "market_id": "NNUtSU6O95",
-      "outcome": "small_loss",
-      "pnl_pp": -2.4,
-      "exit_reason": "stale",
-      "duration_hours": 75.3,
-      "traits": [
-        "high_prob_entry",
-        "no_direction",
-        "weak_signal"
-      ],
-      "entry_prob": 83.0,
-      "direction": "BUY NO",
-      "timestamp": "2026-04-08 23:10 UTC",
-      "lesson": "Liquidation: small loss via stale. PnL: -2.4pp in 75h."
-    },
     {
       "bot": "liquidation",
       "market_id": "pyOPUy9NEg",
@@ -2613,9 +2484,148 @@
       "direction": "BUY YES",
       "timestamp": "2026-04-18 11:09 UTC",
       "lesson": "Liquidation: Held too long with no resolution. Consider shorter max_days."
+    },
+    {
+      "bot": "smart_money",
+      "market_id": "59IZncOtNL",
+      "outcome": "small_win",
+      "pnl_pp": 3.4,
+      "exit_reason": "target_hit",
+      "duration_hours": 3.0,
+      "traits": [
+        "low_prob_entry",
+        "fast_trade",
+        "no_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 21.4,
+      "direction": "BUY NO",
+      "timestamp": "2026-04-18 11:09 UTC",
+      "lesson": "Smart $: small win via target_hit. PnL: +3.4pp in 3h."
+    },
+    {
+      "bot": "sentiment",
+      "market_id": "USpnpA6Idq",
+      "outcome": "small_win",
+      "pnl_pp": 3.4,
+      "exit_reason": "stale",
+      "duration_hours": 141.0,
+      "traits": [
+        "mid_prob_entry",
+        "no_direction",
+        "weak_signal"
+      ],
+      "entry_prob": 33.8,
+      "direction": "BUY NO",
+      "timestamp": "2026-04-18 11:09 UTC",
+      "lesson": "Sentiment: small win via stale. PnL: +3.4pp in 141h."
+    },
+    {
+      "bot": "sentiment",
+      "market_id": "Iq0OnOp0At",
+      "outcome": "strong_win",
+      "pnl_pp": 20.0,
+      "exit_reason": "target_hit",
+      "duration_hours": 15.1,
+      "traits": [
+        "mid_prob_entry",
+        "fast_trade",
+        "no_direction",
+        "weak_signal"
+      ],
+      "entry_prob": 47.0,
+      "direction": "BUY NO",
+      "timestamp": "2026-04-18 14:12 UTC",
+      "lesson": "Sentiment: Quick strong win \u2014 this signal pattern works well."
+    },
+    {
+      "bot": "liquidation",
+      "market_id": "896yytUdzs",
+      "outcome": "small_loss",
+      "pnl_pp": -0.2,
+      "exit_reason": "stale",
+      "duration_hours": 216.8,
+      "traits": [
+        "low_prob_entry",
+        "slow_trade",
+        "yes_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 12.5,
+      "direction": "BUY YES",
+      "timestamp": "2026-04-18 11:09 UTC",
+      "lesson": "Liquidation: small loss via stale. PnL: -0.2pp in 217h."
+    },
+    {
+      "bot": "liquidation",
+      "market_id": "qqPLI9ssOz",
+      "outcome": "big_loss",
+      "pnl_pp": -4.0,
+      "exit_reason": "stale",
+      "duration_hours": 210.3,
+      "traits": [
+        "mid_prob_entry",
+        "slow_trade",
+        "yes_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 36.7,
+      "direction": "BUY YES",
+      "timestamp": "2026-04-18 11:09 UTC",
+      "lesson": "Liquidation: Held too long with no resolution. Consider shorter max_days."
+    },
+    {
+      "bot": "liquidation",
+      "market_id": "LydCCy9EyR",
+      "outcome": "small_win",
+      "pnl_pp": 3.0,
+      "exit_reason": "stale",
+      "duration_hours": 162.3,
+      "traits": [
+        "mid_prob_entry",
+        "yes_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 35.3,
+      "direction": "BUY YES",
+      "timestamp": "2026-04-18 14:12 UTC",
+      "lesson": "Liquidation: small win via stale. PnL: +3.0pp in 162h."
+    },
+    {
+      "bot": "liquidation",
+      "market_id": "AQIsLgzUU8",
+      "outcome": "strong_win",
+      "pnl_pp": 8.1,
+      "exit_reason": "stale",
+      "duration_hours": 162.3,
+      "traits": [
+        "mid_prob_entry",
+        "yes_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 51.9,
+      "direction": "BUY YES",
+      "timestamp": "2026-04-18 14:12 UTC",
+      "lesson": "Liquidation: Strong signal \u2192 strong win. Keep trusting high-confidence entries."
+    },
+    {
+      "bot": "liquidation",
+      "market_id": "9ppn5cCLld",
+      "outcome": "strong_win",
+      "pnl_pp": 15.6,
+      "exit_reason": "stale",
+      "duration_hours": 162.3,
+      "traits": [
+        "low_prob_entry",
+        "yes_direction"
+      ],
+      "entry_prob": 23.7,
+      "direction": "BUY YES",
+      "timestamp": "2026-04-18 14:12 UTC",
+      "lesson": "Liquidation: strong win via stale. PnL: +15.6pp in 162h."
     }
   ],
-  "regime": "cautious",
+  "regime": "normal",
   "regime_history": [
     {
       "from": "normal",
@@ -2682,6 +2692,12 @@
       "to": "cautious",
       "reason": "WR=35%, avg_pnl=-0.5pp on 75 recent trades",
       "timestamp": "2026-04-18 08:09 UTC"
+    },
+    {
+      "from": "cautious",
+      "to": "normal",
+      "reason": "WR=36%, avg_pnl=-0.8pp on 75 recent trades",
+      "timestamp": "2026-04-18 14:12 UTC"
     }
   ],
   "bot_confidence": {
@@ -2699,17 +2715,17 @@
     "reversal": 0.2,
     "smart_money": 0.63,
     "time_decay": 0.23,
-    "sentiment": 0.48,
+    "sentiment": 0.59,
     "accumulation": 0.1,
     "underdog": 0.5,
     "late_mover": 0.2,
     "hedge": 0.45,
-    "liquidation": 0.2,
+    "liquidation": 0.55,
     "weather_temperature": 0.5,
     "weather_precipitation": 0.5,
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-04-18 11:10 UTC",
-  "generation": 79
+  "last_evolution": "2026-04-18 14:12 UTC",
+  "generation": 80
 }

@@ -518,17 +518,17 @@
     "entry_time": "2026-04-17 23:09 UTC",
     "url": "https://manifold.markets/vdb/iran-agrees-to-surrender-enriched-u",
     "stake": 20,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 27.0,
+    "exit_time": "2026-04-18 14:12 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 20.0,
     "crowd_dir": "YES",
     "crowd_pct": 60.0,
     "price_move": -3.4,
     "divergence_score": 2.06,
     "signal_strength": 0.41,
-    "peak_pnl": 14.399999999999999
+    "peak_pnl": 20.0
   },
   {
     "market_id": "PqSQpPyqER",
@@ -548,6 +548,6 @@
     "price_move": -12.2,
     "divergence_score": 9.18,
     "signal_strength": 1.5,
-    "peak_pnl": 1.7999999999999972
+    "peak_pnl": 7.299999999999997
   }
 ]

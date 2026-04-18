@@ -381,11 +381,11 @@
     "entry_time": "2026-04-12 14:11 UTC",
     "url": "https://manifold.markets/xjp/will-the-id-verification-requiremen",
     "stake": 20,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 30.4,
+    "exit_time": "2026-04-18 11:09 UTC",
+    "exit_reason": "stale",
+    "pnl_pp": 3.4,
     "crowd_dir": "YES",
     "crowd_pct": 65.0,
     "price_move": -1.2,
@@ -528,7 +528,7 @@
     "price_move": -3.4,
     "divergence_score": 2.06,
     "signal_strength": 0.41,
-    "peak_pnl": 11.600000000000001
+    "peak_pnl": 14.399999999999999
   },
   {
     "market_id": "PqSQpPyqER",
@@ -547,6 +547,7 @@
     "crowd_pct": 75.0,
     "price_move": -12.2,
     "divergence_score": 9.18,
-    "signal_strength": 1.5
+    "signal_strength": 1.5,
+    "peak_pnl": 1.7999999999999972
   }
 ]
