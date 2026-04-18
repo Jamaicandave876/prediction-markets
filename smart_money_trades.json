@@ -796,7 +796,8 @@
     "smart_user_mana": 5650,
     "price_impact": 18.0,
     "conviction_score": 570.46,
-    "signal_strength": 1.5
+    "signal_strength": 1.5,
+    "peak_pnl": 2.799999999999997
   },
   {
     "market_id": "59IZncOtNL",
@@ -806,15 +807,16 @@
     "entry_time": "2026-04-18 08:09 UTC",
     "url": "https://manifold.markets/LeeBressler/will-trump-make-cuba-an-american-te",
     "stake": 74.5,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 18.0,
+    "exit_time": "2026-04-18 11:09 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 3.4,
     "smart_user_bets": 2,
     "smart_user_mana": 1250,
     "price_impact": 33.5,
     "conviction_score": 33.51,
-    "signal_strength": 1.5
+    "signal_strength": 1.5,
+    "peak_pnl": 3.3999999999999986
   }
 ]

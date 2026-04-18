@@ -1,5 +1,5 @@
 {
-  "last_report": "2026-04-17 11:40 UTC",
+  "last_report": "2026-04-18 11:10 UTC",
   "adjustments": [
     {
       "param": "MIN_DRIFT_SCORE",
@@ -96,12 +96,21 @@
       "old": 2.4,
       "new": 2.7,
       "reason": "System WR 30% < 40% \u2014 tighten signals"
+    },
+    {
+      "param": "MIN_DRIFT_SCORE",
+      "old": 2.1,
+      "new": 2.4,
+      "reason": "System WR 30% < 40% \u2014 tighten signals"
     }
   ],
   "paused": {
-    "mean_reversion": false,
-    "contrarian": false
+    "mean_reversion": true,
+    "contrarian": true
   },
   "consecutive_losses": {},
-  "pause_start": {}
+  "pause_start": {
+    "mean_reversion": "2026-04-18 11:10 UTC",
+    "contrarian": "2026-04-18 11:10 UTC"
+  }
 }
