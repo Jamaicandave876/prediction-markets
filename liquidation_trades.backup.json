@@ -430,5 +430,24 @@
     "liquidation_dir": "NO",
     "impact_score": 0.54,
     "signal_strength": 0.27
+  },
+  {
+    "market_id": "hullyEyECn",
+    "question": "Did Real Median Income Decrease During the Biden Administration?",
+    "direction": "BUY NO",
+    "entry_prob": 59.0,
+    "entry_time": "2026-04-18 19:57 UTC",
+    "url": "https://manifold.markets/SoniaAlbrecht/did-real-median-income-decrease-dur",
+    "stake": 20,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "liquidation_size": 135,
+    "liquidation_impact": 5.9,
+    "liquidation_dir": "YES",
+    "impact_score": 0.79,
+    "signal_strength": 0.39
   }
 ]
