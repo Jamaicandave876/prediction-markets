@@ -459,11 +459,11 @@
     "entry_time": "2026-04-16 12:12 UTC",
     "url": "https://manifold.markets/LessWrong/will-current-ais-seem-pretty-misali",
     "stake": 38.9,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 88.9,
+    "exit_time": "2026-04-18 05:52 UTC",
+    "exit_reason": "stopped_out",
+    "pnl_pp": -8.0,
     "crowd_dir": "YES",
     "crowd_pct": 80.0,
     "price_move": -9.7,
@@ -508,7 +508,7 @@
     "price_move": -7.3,
     "divergence_score": 6.3,
     "signal_strength": 1.26,
-    "peak_pnl": 10.700000000000003
+    "peak_pnl": 10.900000000000002
   },
   {
     "market_id": "Iq0OnOp0At",
@@ -527,6 +527,7 @@
     "crowd_pct": 60.0,
     "price_move": -3.4,
     "divergence_score": 2.06,
-    "signal_strength": 0.41
+    "signal_strength": 0.41,
+    "peak_pnl": 3.1000000000000014
   }
 ]

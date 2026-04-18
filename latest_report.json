@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-04-17 23:09 UTC",
+  "timestamp": "2026-04-18 05:52 UTC",
   "regime": "adverse",
   "pnl_7d": 27.4,
-  "total_open": 8,
+  "total_open": 9,
   "total_closed": 109,
   "total_pnl": -100.1,
   "bots": [
@@ -37,7 +37,7 @@
       "score": 52.7,
       "win_rate": 60.0,
       "total_pnl": -8.3,
-      "open": 1,
+      "open": 2,
       "closed": 5,
       "paused": false,
       "consecutive_losses": 0
@@ -179,8 +179,8 @@
   "adjustments": [
     {
       "param": "MIN_DRIFT_SCORE",
-      "old": 3.0,
-      "new": 2.7,
+      "old": 2.7,
+      "new": 2.4,
       "reason": "Momentum WR 70% > 65% \u2014 loosening"
     }
   ]

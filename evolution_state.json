@@ -61,7 +61,7 @@
     },
     "sentiment": {
       "target_hit": 4,
-      "stopped_out": 13,
+      "stopped_out": 14,
       "trailing_stop": 2
     },
     "smart_money": {
@@ -853,23 +853,6 @@
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "hedge",
-      "market_id": "p8USRRU02t",
-      "outcome": "small_loss",
-      "pnl_pp": -2.7,
-      "exit_reason": "trailing_stop",
-      "duration_hours": 126.6,
-      "traits": [
-        "low_prob_entry",
-        "yes_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 22.3,
-      "direction": "BUY YES",
-      "timestamp": "2026-04-07 16:16 UTC",
-      "lesson": "Hedge: Had profit but trailing stop was too tight. Consider widening trail."
-    },
     {
       "bot": "volume_surge",
       "market_id": "cNINOgdn2N",
@@ -2602,6 +2585,23 @@
       "direction": "BUY NO",
       "timestamp": "2026-04-17 20:09 UTC",
       "lesson": "Momentum: Strong signal \u2192 strong win. Keep trusting high-confidence entries."
+    },
+    {
+      "bot": "sentiment",
+      "market_id": "WewsByywWN",
+      "outcome": "big_loss",
+      "pnl_pp": -8.0,
+      "exit_reason": "stopped_out",
+      "duration_hours": 41.7,
+      "traits": [
+        "high_prob_entry",
+        "no_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 80.9,
+      "direction": "BUY NO",
+      "timestamp": "2026-04-18 05:52 UTC",
+      "lesson": "Sentiment: big loss via stopped_out. PnL: -8.0pp in 42h."
     }
   ],
   "regime": "normal",
@@ -2682,7 +2682,7 @@
     "reversal": 0.2,
     "smart_money": 0.63,
     "time_decay": 0.23,
-    "sentiment": 0.35,
+    "sentiment": 0.2,
     "accumulation": 0.1,
     "underdog": 0.5,
     "late_mover": 0.2,
@@ -2693,6 +2693,6 @@
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-04-17 23:09 UTC",
-  "generation": 76
+  "last_evolution": "2026-04-18 05:52 UTC",
+  "generation": 77
 }
