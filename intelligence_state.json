@@ -90,15 +90,18 @@
       "old": 3.6,
       "new": 3.3,
       "reason": "System WR 70% > 65% \u2014 loosen signals"
+    },
+    {
+      "param": "MIN_DRIFT_SCORE",
+      "old": 2.4,
+      "new": 2.7,
+      "reason": "System WR 30% < 40% \u2014 tighten signals"
     }
   ],
   "paused": {
-    "mean_reversion": true,
-    "contrarian": true
+    "mean_reversion": false,
+    "contrarian": false
   },
   "consecutive_losses": {},
-  "pause_start": {
-    "mean_reversion": "2026-04-16 06:24 UTC",
-    "contrarian": "2026-04-16 06:24 UTC"
-  }
+  "pause_start": {}
 }

@@ -106,5 +106,23 @@
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null
+  },
+  {
+    "market_id": "qZg5E2SdP8",
+    "question": "Will I get accepted to MCSP 2026?",
+    "direction": "BUY YES",
+    "entry_prob": 7.3,
+    "pre_spike_prob": 70.8,
+    "spike_size": 63.5,
+    "spike_ratio": 74.0,
+    "spike_dir": -1,
+    "entry_time": "2026-04-18 05:51 UTC",
+    "url": "https://manifold.markets/vincentWang/will-i-get-accepted-to-mcsp-2026",
+    "stake": 51.1,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]

@@ -391,7 +391,7 @@
     "price_move": -1.2,
     "divergence_score": 0.76,
     "signal_strength": 0.15,
-    "peak_pnl": 2.4999999999999964
+    "peak_pnl": 3.3999999999999986
   },
   {
     "market_id": "dcq0znuAgC",
@@ -528,6 +528,25 @@
     "price_move": -3.4,
     "divergence_score": 2.06,
     "signal_strength": 0.41,
-    "peak_pnl": 3.1000000000000014
+    "peak_pnl": 11.600000000000001
+  },
+  {
+    "market_id": "PqSQpPyqER",
+    "question": "Will 60 ships transit the Strait of Hormuz on any day by end of April? [Polymarket]",
+    "direction": "BUY NO",
+    "entry_prob": 46.8,
+    "entry_time": "2026-04-18 08:09 UTC",
+    "url": "https://manifold.markets/BillClintonBubba/will-60-ships-transit-the-strait-of",
+    "stake": 49.0,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "YES",
+    "crowd_pct": 75.0,
+    "price_move": -12.2,
+    "divergence_score": 9.18,
+    "signal_strength": 1.5
   }
 ]

@@ -61,11 +61,11 @@
     },
     "sentiment": {
       "target_hit": 4,
-      "stopped_out": 14,
+      "stopped_out": 15,
       "trailing_stop": 2
     },
     "smart_money": {
-      "target_hit": 14,
+      "target_hit": 15,
       "stopped_out": 6,
       "trailing_stop": 1,
       "stale": 1
@@ -853,40 +853,6 @@
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "volume_surge",
-      "market_id": "cNINOgdn2N",
-      "outcome": "big_loss",
-      "pnl_pp": -5.4,
-      "exit_reason": "stale",
-      "duration_hours": 72.2,
-      "traits": [
-        "low_prob_entry",
-        "yes_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 22.3,
-      "direction": "BUY YES",
-      "timestamp": "2026-04-07 16:15 UTC",
-      "lesson": "Vol Surge: Held too long with no resolution. Consider shorter max_days."
-    },
-    {
-      "bot": "volume_surge",
-      "market_id": "cNd05lL9SA",
-      "outcome": "small_loss",
-      "pnl_pp": -0.1,
-      "exit_reason": "stale",
-      "duration_hours": 72.2,
-      "traits": [
-        "low_prob_entry",
-        "yes_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 16.9,
-      "direction": "BUY YES",
-      "timestamp": "2026-04-07 16:15 UTC",
-      "lesson": "Vol Surge: small loss via stale. PnL: -0.1pp in 72h."
-    },
     {
       "bot": "smart_money",
       "market_id": "pSPnUEOygL",
@@ -2602,9 +2568,43 @@
       "direction": "BUY NO",
       "timestamp": "2026-04-18 05:52 UTC",
       "lesson": "Sentiment: big loss via stopped_out. PnL: -8.0pp in 42h."
+    },
+    {
+      "bot": "smart_money",
+      "market_id": "Rplhqs8pd8",
+      "outcome": "small_loss",
+      "pnl_pp": 0.0,
+      "exit_reason": "target_hit",
+      "duration_hours": 2.3,
+      "traits": [
+        "low_prob_entry",
+        "fast_trade",
+        "no_direction"
+      ],
+      "entry_prob": 13.5,
+      "direction": "BUY NO",
+      "timestamp": "2026-04-18 08:09 UTC",
+      "lesson": "Smart $: small loss via target_hit. PnL: +0.0pp in 2h."
+    },
+    {
+      "bot": "sentiment",
+      "market_id": "WewsByywWN",
+      "outcome": "big_loss",
+      "pnl_pp": -8.0,
+      "exit_reason": "stopped_out",
+      "duration_hours": 41.7,
+      "traits": [
+        "high_prob_entry",
+        "no_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 80.9,
+      "direction": "BUY NO",
+      "timestamp": "2026-04-18 05:52 UTC",
+      "lesson": "Sentiment: big loss via stopped_out. PnL: -8.0pp in 42h."
     }
   ],
-  "regime": "normal",
+  "regime": "cautious",
   "regime_history": [
     {
       "from": "normal",
@@ -2665,6 +2665,12 @@
       "to": "normal",
       "reason": "WR=36%, avg_pnl=-2.1pp on 75 recent trades",
       "timestamp": "2026-04-15 23:30 UTC"
+    },
+    {
+      "from": "normal",
+      "to": "cautious",
+      "reason": "WR=35%, avg_pnl=-0.5pp on 75 recent trades",
+      "timestamp": "2026-04-18 08:09 UTC"
     }
   ],
   "bot_confidence": {
@@ -2680,7 +2686,7 @@
     "breakout": 0.68,
     "calibration": 1.0,
     "reversal": 0.2,
-    "smart_money": 0.63,
+    "smart_money": 0.57,
     "time_decay": 0.23,
     "sentiment": 0.2,
     "accumulation": 0.1,
@@ -2693,6 +2699,6 @@
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-04-18 05:52 UTC",
-  "generation": 77
+  "last_evolution": "2026-04-18 08:09 UTC",
+  "generation": 78
 }
