@@ -430,7 +430,7 @@
     "liquidation_dir": "NO",
     "impact_score": 0.54,
     "signal_strength": 0.27,
-    "peak_pnl": 5.700000000000003
+    "peak_pnl": 8.100000000000001
   },
   {
     "market_id": "hullyEyECn",
@@ -468,6 +468,45 @@
     "liquidation_impact": 9.1,
     "liquidation_dir": "NO",
     "impact_score": 3.19,
+    "signal_strength": 1.5,
+    "peak_pnl": 3.0
+  },
+  {
+    "market_id": "gOlddESzER",
+    "question": "Major company suffers serious damage from AI agent in 2026?",
+    "direction": "BUY YES",
+    "entry_prob": 18.9,
+    "entry_time": "2026-04-19 06:18 UTC",
+    "url": "https://manifold.markets/A/major-company-suffers-serious-damag",
+    "stake": 40.1,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "liquidation_size": 500,
+    "liquidation_impact": 12.5,
+    "liquidation_dir": "NO",
+    "impact_score": 6.25,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "lzcIuUuPz0",
+    "question": "Is Tyrion Lannister a Targaryen?",
+    "direction": "BUY YES",
+    "entry_prob": 32.2,
+    "entry_time": "2026-04-19 06:18 UTC",
+    "url": "https://manifold.markets/Bayesian/is-tyrion-lannister-a-targaryen",
+    "stake": 39.4,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "liquidation_size": 250,
+    "liquidation_impact": 9.8,
+    "liquidation_dir": "NO",
+    "impact_score": 2.45,
+    "signal_strength": 1.23
   }
 ]
