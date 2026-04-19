@@ -549,5 +549,24 @@
     "divergence_score": 9.18,
     "signal_strength": 1.5,
     "peak_pnl": 25.799999999999997
+  },
+  {
+    "market_id": "CsclUcnR2I",
+    "question": "Will Anthropic provide Mythos to the US government by June 30? [Polymarket]",
+    "direction": "BUY NO",
+    "entry_prob": 54.6,
+    "entry_time": "2026-04-19 06:17 UTC",
+    "url": "https://manifold.markets/vdb/will-anthropic-provide-mythos-to-th",
+    "stake": 20,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "YES",
+    "crowd_pct": 70.0,
+    "price_move": -1.4,
+    "divergence_score": 0.97,
+    "signal_strength": 0.19
   }
 ]

@@ -34,7 +34,7 @@
       "stop_pp": 12
     },
     "breakout": {
-      "stop_pp": 8
+      "stop_pp": 9
     }
   },
   "loss_patterns": {
@@ -899,6 +899,15 @@
       "new": 8,
       "reason": "Too many stop-outs \u2014 stops are too tight",
       "timestamp": "2026-04-19 06:18 UTC"
+    },
+    {
+      "type": "bot_adjustment",
+      "bot": "breakout",
+      "param": "stop_pp",
+      "old": 8,
+      "new": 9,
+      "reason": "Too many stop-outs \u2014 stops are too tight",
+      "timestamp": "2026-04-19 11:09 UTC"
     }
   ],
   "trade_autopsies": [
@@ -2760,6 +2769,6 @@
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-04-19 06:18 UTC",
-  "generation": 84
+  "last_evolution": "2026-04-19 11:09 UTC",
+  "generation": 85
 }

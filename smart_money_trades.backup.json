@@ -837,5 +837,24 @@
     "price_impact": 23.4,
     "conviction_score": 7.57,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "Iq0OnOp0At",
+    "question": "Iran agrees to surrender enriched uranium stockpile by April 30? [Polymarket]",
+    "direction": "BUY YES",
+    "entry_prob": 25.0,
+    "entry_time": "2026-04-19 06:17 UTC",
+    "url": "https://manifold.markets/vdb/iran-agrees-to-surrender-enriched-u",
+    "stake": 30.7,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 5,
+    "smart_user_mana": 215,
+    "price_impact": 7.4,
+    "conviction_score": 3.19,
+    "signal_strength": 1.06
   }
 ]
