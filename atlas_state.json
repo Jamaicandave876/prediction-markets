@@ -27,11 +27,11 @@
       "grade": "B"
     },
     "fade": {
-      "score": 52.7,
-      "win_rate": 60.0,
-      "avg_pnl": -1.7,
-      "total_pnl": -8.3,
-      "closed": 5,
+      "score": 57.7,
+      "win_rate": 66.7,
+      "avg_pnl": -1.1,
+      "total_pnl": -6.8,
+      "closed": 6,
       "open": 2,
       "grade": "C"
     },
@@ -99,12 +99,12 @@
       "grade": "F"
     },
     "breakout": {
-      "score": 60.7,
+      "score": 62.3,
       "win_rate": 70.0,
-      "avg_pnl": -0.6,
-      "total_pnl": -6.3,
-      "closed": 10,
-      "open": 1,
+      "avg_pnl": 0.1,
+      "total_pnl": 1.6,
+      "closed": 11,
+      "open": 0,
       "grade": "C"
     },
     "weather_temperature": {
