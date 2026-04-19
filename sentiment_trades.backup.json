@@ -508,7 +508,7 @@
     "price_move": -7.3,
     "divergence_score": 6.3,
     "signal_strength": 1.26,
-    "peak_pnl": 11.100000000000001
+    "peak_pnl": 13.900000000000002
   },
   {
     "market_id": "Iq0OnOp0At",
@@ -558,11 +558,11 @@
     "entry_time": "2026-04-19 06:17 UTC",
     "url": "https://manifold.markets/vdb/will-anthropic-provide-mythos-to-th",
     "stake": 20,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 72.7,
+    "exit_time": "2026-04-19 19:56 UTC",
+    "exit_reason": "stopped_out",
+    "pnl_pp": -18.1,
     "crowd_dir": "YES",
     "crowd_pct": 70.0,
     "price_move": -1.4,

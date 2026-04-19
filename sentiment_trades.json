@@ -606,5 +606,24 @@
     "price_move": -3.6,
     "divergence_score": 2.71,
     "signal_strength": 0.54
+  },
+  {
+    "market_id": "CIsh2zUqpC",
+    "question": "Will Trump post another religious image deifying himself?",
+    "direction": "BUY NO",
+    "entry_prob": 74.5,
+    "entry_time": "2026-04-19 22:05 UTC",
+    "url": "https://manifold.markets/GnosticGirl/will-trump-post-another-religious-i",
+    "stake": 20,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "YES",
+    "crowd_pct": 70.0,
+    "price_move": -3.0,
+    "divergence_score": 2.09,
+    "signal_strength": 0.42
   }
 ]

@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-04-19 19:57 UTC",
+  "timestamp": "2026-04-19 22:06 UTC",
   "regime": "adverse",
-  "pnl_7d": 26.7,
-  "total_open": 9,
-  "total_closed": 113,
-  "total_pnl": -93.2,
+  "pnl_7d": 48.7,
+  "total_open": 8,
+  "total_closed": 114,
+  "total_pnl": -71.2,
   "bots": [
     {
       "name": "momentum",
@@ -19,6 +19,18 @@
       "consecutive_losses": 0
     },
     {
+      "name": "fade",
+      "display": "Fade",
+      "grade": "B",
+      "score": 67.2,
+      "win_rate": 71.4,
+      "total_pnl": 15.2,
+      "open": 1,
+      "closed": 7,
+      "paused": false,
+      "consecutive_losses": 0
+    },
+    {
       "name": "breakout",
       "display": "Breakout",
       "grade": "C",
@@ -27,18 +39,6 @@
       "total_pnl": 1.6,
       "open": 1,
       "closed": 11,
-      "paused": false,
-      "consecutive_losses": 0
-    },
-    {
-      "name": "fade",
-      "display": "Fade",
-      "grade": "C",
-      "score": 57.7,
-      "win_rate": 66.7,
-      "total_pnl": -6.8,
-      "open": 2,
-      "closed": 6,
       "paused": false,
       "consecutive_losses": 0
     },
