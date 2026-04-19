@@ -568,5 +568,43 @@
     "price_move": -1.4,
     "divergence_score": 0.97,
     "signal_strength": 0.19
+  },
+  {
+    "market_id": "S05Q0AOctQ",
+    "question": "Atletico vs Arsenal, Champions League Semi Final Leg 1, April 29th",
+    "direction": "BUY YES",
+    "entry_prob": 41.8,
+    "entry_time": "2026-04-19 14:12 UTC",
+    "url": "https://manifold.markets/Mochi/atletico-vs-arsenal-champions-leagu",
+    "stake": 26.1,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "NO",
+    "crowd_pct": 60.0,
+    "price_move": 5.8,
+    "divergence_score": 3.49,
+    "signal_strength": 0.7
+  },
+  {
+    "market_id": "PqSQpPyqER",
+    "question": "Will 60 ships transit the Strait of Hormuz on any day by end of April? [Polymarket]",
+    "direction": "BUY NO",
+    "entry_prob": 23.0,
+    "entry_time": "2026-04-19 14:12 UTC",
+    "url": "https://manifold.markets/BillClintonBubba/will-60-ships-transit-the-strait-of",
+    "stake": 51.0,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "YES",
+    "crowd_pct": 75.0,
+    "price_move": -3.6,
+    "divergence_score": 2.71,
+    "signal_strength": 0.54
   }
 ]
