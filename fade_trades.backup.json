@@ -137,10 +137,10 @@
     "entry_time": "2026-04-19 17:03 UTC",
     "url": "https://manifold.markets/fornever/will-stranger-return-me-53",
     "stake": 51.1,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 53.0,
+    "exit_time": "2026-04-19 22:04 UTC",
+    "exit_reason": "normalized",
+    "pnl_pp": 22.0
   }
 ]
