@@ -1,5 +1,5 @@
 {
-  "last_report": "2026-04-19 11:09 UTC",
+  "last_report": "2026-04-20 12:16 UTC",
   "adjustments": [
     {
       "param": "MIN_DRIFT_SCORE",
@@ -117,12 +117,9 @@
     }
   ],
   "paused": {
-    "mean_reversion": true,
-    "contrarian": true
+    "mean_reversion": false,
+    "contrarian": false
   },
   "consecutive_losses": {},
-  "pause_start": {
-    "mean_reversion": "2026-04-18 11:10 UTC",
-    "contrarian": "2026-04-18 11:10 UTC"
-  }
+  "pause_start": {}
 }

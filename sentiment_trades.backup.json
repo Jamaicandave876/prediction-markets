@@ -624,6 +624,26 @@
     "crowd_pct": 70.0,
     "price_move": -3.0,
     "divergence_score": 2.09,
-    "signal_strength": 0.42
+    "signal_strength": 0.42,
+    "peak_pnl": 0.5
+  },
+  {
+    "market_id": "gOlddESzER",
+    "question": "Major company suffers serious damage from AI agent in 2026?",
+    "direction": "BUY YES",
+    "entry_prob": 24.9,
+    "entry_time": "2026-04-20 07:28 UTC",
+    "url": "https://manifold.markets/A/major-company-suffers-serious-damag",
+    "stake": 20,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "NO",
+    "crowd_pct": 75.0,
+    "price_move": 3.8,
+    "divergence_score": 2.83,
+    "signal_strength": 0.57
   }
 ]
