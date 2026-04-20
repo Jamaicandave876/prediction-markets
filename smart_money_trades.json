@@ -916,5 +916,43 @@
     "price_impact": 8.5,
     "conviction_score": 3.31,
     "signal_strength": 1.1
+  },
+  {
+    "market_id": "Uzs8PNOANz",
+    "question": "Will Uar Bernard get drafted in the 2026 NFL draft?",
+    "direction": "BUY YES",
+    "entry_prob": 71.3,
+    "entry_time": "2026-04-20 23:28 UTC",
+    "url": "https://manifold.markets/Zeolite/will-uar-bernard-get-drafted-in-the",
+    "stake": 78.0,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 3,
+    "smart_user_mana": 1000,
+    "price_impact": 23.6,
+    "conviction_score": 28.26,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "pO9058RN6d",
+    "question": "Will Anthropic have a higher market cap than SpaceX after both IPO?",
+    "direction": "BUY NO",
+    "entry_prob": 28.3,
+    "entry_time": "2026-04-20 23:28 UTC",
+    "url": "https://manifold.markets/Simon74fe/will-anthropic-have-a-higher-market-sh9tNdntql",
+    "stake": 78.0,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 4,
+    "smart_user_mana": 600,
+    "price_impact": 19.0,
+    "conviction_score": 18.28,
+    "signal_strength": 1.5
   }
 ]
