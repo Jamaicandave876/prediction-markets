@@ -936,7 +936,7 @@
     "price_impact": 23.6,
     "conviction_score": 28.26,
     "signal_strength": 1.5,
-    "peak_pnl": 0.7000000000000028
+    "peak_pnl": 0.7999999999999972
   },
   {
     "market_id": "pO9058RN6d",
@@ -975,6 +975,7 @@
     "smart_user_mana": 1600,
     "price_impact": 8.4,
     "conviction_score": 26.84,
-    "signal_strength": 1.5
+    "signal_strength": 1.5,
+    "peak_pnl": 2.400000000000002
   }
 ]
