@@ -509,5 +509,24 @@
     "liquidation_dir": "NO",
     "impact_score": 2.45,
     "signal_strength": 1.23
+  },
+  {
+    "market_id": "R885yIqcqn",
+    "question": "Will MNX hire a quant trader before June?",
+    "direction": "BUY YES",
+    "entry_prob": 60.8,
+    "entry_time": "2026-04-20 23:29 UTC",
+    "url": "https://manifold.markets/SG/will-mnx-hire-a-quant-trader-before",
+    "stake": 20,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "liquidation_size": 100,
+    "liquidation_impact": 6.1,
+    "liquidation_dir": "NO",
+    "impact_score": 0.61,
+    "signal_strength": 0.31
   }
 ]

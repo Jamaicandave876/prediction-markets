@@ -646,5 +646,43 @@
     "divergence_score": 2.83,
     "signal_strength": 0.57,
     "peak_pnl": 5.100000000000001
+  },
+  {
+    "market_id": "Uzs8PNOANz",
+    "question": "Will Uar Bernard get drafted in the 2026 NFL draft?",
+    "direction": "BUY YES",
+    "entry_prob": 72.0,
+    "entry_time": "2026-04-21 06:24 UTC",
+    "url": "https://manifold.markets/Zeolite/will-uar-bernard-get-drafted-in-the",
+    "stake": 78.3,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "NO",
+    "crowd_pct": 66.7,
+    "price_move": 22.0,
+    "divergence_score": 14.67,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "gOlddESzER",
+    "question": "Major company suffers serious damage from AI agent in 2026?",
+    "direction": "BUY YES",
+    "entry_prob": 26.0,
+    "entry_time": "2026-04-21 06:24 UTC",
+    "url": "https://manifold.markets/A/major-company-suffers-serious-damag",
+    "stake": 20,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "NO",
+    "crowd_pct": 65.0,
+    "price_move": 6.0,
+    "divergence_score": 3.9,
+    "signal_strength": 0.78
   }
 ]
