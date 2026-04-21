@@ -685,5 +685,24 @@
     "price_move": 6.0,
     "divergence_score": 3.9,
     "signal_strength": 0.78
+  },
+  {
+    "market_id": "Rplhqs8pd8",
+    "question": "Will xAI/SpaceX acquire Cursor in 2026?",
+    "direction": "BUY YES",
+    "entry_prob": 68.5,
+    "entry_time": "2026-04-21 23:10 UTC",
+    "url": "https://manifold.markets/Bayesian/will-xaispacex-acquire-cursor-in-20",
+    "stake": 48.6,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "NO",
+    "crowd_pct": 65.0,
+    "price_move": 5.3,
+    "divergence_score": 3.44,
+    "signal_strength": 0.69
   }
 ]
