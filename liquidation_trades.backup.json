@@ -518,16 +518,16 @@
     "entry_time": "2026-04-20 23:29 UTC",
     "url": "https://manifold.markets/SG/will-mnx-hire-a-quant-trader-before",
     "stake": 20,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 70.0,
+    "exit_time": "2026-04-21 12:11 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 9.2,
     "liquidation_size": 100,
     "liquidation_impact": 6.1,
     "liquidation_dir": "NO",
     "impact_score": 0.61,
     "signal_strength": 0.31,
-    "peak_pnl": 6.900000000000006
+    "peak_pnl": 9.200000000000003
   }
 ]

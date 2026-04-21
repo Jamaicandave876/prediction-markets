@@ -140,12 +140,12 @@
     "liquidation": {
       "low_prob_entry": 4,
       "fast_trade": 4,
-      "yes_direction": 12,
-      "mid_prob_entry": 9,
+      "yes_direction": 13,
+      "mid_prob_entry": 10,
       "no_direction": 3,
       "strong_signal": 7,
       "high_prob_entry": 2,
-      "weak_signal": 1
+      "weak_signal": 2
     },
     "momentum": {
       "mid_prob_entry": 11,
@@ -942,23 +942,6 @@
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "sentiment",
-      "market_id": "USpnpA6Idq",
-      "outcome": "big_loss",
-      "pnl_pp": -8.6,
-      "exit_reason": "stopped_out",
-      "duration_hours": 5.3,
-      "traits": [
-        "mid_prob_entry",
-        "fast_trade",
-        "no_direction"
-      ],
-      "entry_prob": 46.3,
-      "direction": "BUY NO",
-      "timestamp": "2026-04-10 19:59 UTC",
-      "lesson": "Sentiment: big loss via stopped_out. PnL: -8.6pp in 5h."
-    },
     {
       "bot": "sentiment",
       "market_id": "pQRp5tqn2z",
@@ -2694,6 +2677,23 @@
       "direction": "BUY YES",
       "timestamp": "2026-04-21 12:11 UTC",
       "lesson": "Liquidation: Quick strong win \u2014 this signal pattern works well."
+    },
+    {
+      "bot": "liquidation",
+      "market_id": "ZLUA6OECAy",
+      "outcome": "strong_win",
+      "pnl_pp": 7.1,
+      "exit_reason": "stale",
+      "duration_hours": 73.2,
+      "traits": [
+        "mid_prob_entry",
+        "yes_direction",
+        "weak_signal"
+      ],
+      "entry_prob": 51.9,
+      "direction": "BUY YES",
+      "timestamp": "2026-04-21 18:16 UTC",
+      "lesson": "Liquidation: strong win via stale. PnL: +7.1pp in 73h."
     }
   ],
   "regime": "normal",
@@ -2791,12 +2791,12 @@
     "underdog": 0.5,
     "late_mover": 0.2,
     "hedge": 0.45,
-    "liquidation": 0.61,
+    "liquidation": 0.66,
     "weather_temperature": 0.5,
     "weather_precipitation": 0.5,
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-04-21 12:11 UTC",
-  "generation": 95
+  "last_evolution": "2026-04-21 18:16 UTC",
+  "generation": 96
 }

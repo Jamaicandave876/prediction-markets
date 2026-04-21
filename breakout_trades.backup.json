@@ -240,7 +240,8 @@
     "baseline_range": 3.0,
     "breakout_move": -17.6,
     "breakout_strength": 5.9,
-    "signal_strength": 1.5
+    "signal_strength": 1.5,
+    "peak_pnl": 1.3999999999999986
   },
   {
     "market_id": "R885yIqcqn",
@@ -258,7 +259,8 @@
     "baseline_range": 6.7,
     "breakout_move": 9.5,
     "breakout_strength": 1.4,
-    "signal_strength": 0.47294703331738425
+    "signal_strength": 0.47294703331738425,
+    "peak_pnl": 2.299999999999997
   },
   {
     "market_id": "gOlddESzER",
