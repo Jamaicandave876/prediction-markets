@@ -297,5 +297,23 @@
     "breakout_move": -7.2,
     "breakout_strength": 5.2,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "S9ynE25Uz0",
+    "question": "Will the WTI Crude Oil Spot Price be above $88 on April 30, 2026?",
+    "direction": "BUY YES",
+    "entry_prob": 77.1,
+    "entry_time": "2026-04-22 18:16 UTC",
+    "url": "https://manifold.markets/ShaneBo/will-the-wti-crude-oil-spot-price-b-Ut6g2cZ0ZN",
+    "stake": 29.3,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "baseline_range": 6.3,
+    "breakout_move": 6.1,
+    "breakout_strength": 1.0,
+    "signal_strength": 0.3234159314334904
   }
 ]

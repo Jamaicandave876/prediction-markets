@@ -1072,5 +1072,43 @@
     "price_impact": 31.5,
     "conviction_score": 16.74,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "SlyE6Spn8d",
+    "question": "Are tech employees cooked before 2028 (Layoffs.fyi layoffs)?",
+    "direction": "BUY NO",
+    "entry_prob": 36.8,
+    "entry_time": "2026-04-22 23:35 UTC",
+    "url": "https://manifold.markets/windysoup/are-tech-employees-cooked-before-20",
+    "stake": 52.7,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 4,
+    "smart_user_mana": 750,
+    "price_impact": 25.4,
+    "conviction_score": 30.46,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "ZUyOquuQEg",
+    "question": "US x Iran permanent peace deal by April 30? [Polymarket]",
+    "direction": "BUY NO",
+    "entry_prob": 13.9,
+    "entry_time": "2026-04-22 23:35 UTC",
+    "url": "https://manifold.markets/vdb/us-x-iran-permanent-peace-deal-by-a",
+    "stake": 67.9,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 2,
+    "smart_user_mana": 200,
+    "price_impact": 13.7,
+    "conviction_score": 2.2,
+    "signal_strength": 0.73
   }
 ]

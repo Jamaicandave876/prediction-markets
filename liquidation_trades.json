@@ -569,5 +569,24 @@
     "impact_score": 3.16,
     "signal_strength": 1.5,
     "peak_pnl": 21.499999999999996
+  },
+  {
+    "market_id": "0R0ZgSsyp0",
+    "question": "Will an autonomous robot beat an Olympic champion at table tennis before 2028?",
+    "direction": "BUY YES",
+    "entry_prob": 29.6,
+    "entry_time": "2026-04-22 23:36 UTC",
+    "url": "https://manifold.markets/vdb/will-an-autonomous-robot-beat-an-ol",
+    "stake": 30.7,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "liquidation_size": 500,
+    "liquidation_impact": 15.7,
+    "liquidation_dir": "NO",
+    "impact_score": 7.85,
+    "signal_strength": 1.5
   }
 ]
