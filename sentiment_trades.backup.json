@@ -694,15 +694,16 @@
     "entry_time": "2026-04-21 23:10 UTC",
     "url": "https://manifold.markets/Bayesian/will-xaispacex-acquire-cursor-in-20",
     "stake": 48.6,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 75.0,
+    "exit_time": "2026-04-22 06:24 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 6.5,
     "crowd_dir": "NO",
     "crowd_pct": 65.0,
     "price_move": 5.3,
     "divergence_score": 3.44,
-    "signal_strength": 0.69
+    "signal_strength": 0.69,
+    "peak_pnl": 6.5
   }
 ]
