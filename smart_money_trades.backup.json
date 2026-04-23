@@ -1112,5 +1112,43 @@
     "conviction_score": 2.2,
     "signal_strength": 0.73,
     "peak_pnl": 0.9000000000000004
+  },
+  {
+    "market_id": "nOqCgsO9Sh",
+    "question": "Anthropic introduces a individual subscription beyond the 20x Max plan before June 1st?",
+    "direction": "BUY NO",
+    "entry_prob": 27.6,
+    "entry_time": "2026-04-23 12:10 UTC",
+    "url": "https://manifold.markets/AlexanderTheGreater/anthropic-introduces-a-individual-s",
+    "stake": 82.6,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 7,
+    "smart_user_mana": 265,
+    "price_impact": 11.0,
+    "conviction_score": 8.16,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "S9ynE25Uz0",
+    "question": "Will the WTI Crude Oil Spot Price be above $88 on April 30, 2026?",
+    "direction": "BUY YES",
+    "entry_prob": 78.7,
+    "entry_time": "2026-04-23 12:10 UTC",
+    "url": "https://manifold.markets/ShaneBo/will-the-wti-crude-oil-spot-price-b-Ut6g2cZ0ZN",
+    "stake": 82.6,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 6,
+    "smart_user_mana": 250,
+    "price_impact": 7.7,
+    "conviction_score": 4.65,
+    "signal_strength": 1.5
   }
 ]
