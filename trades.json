@@ -216,11 +216,11 @@
     "drift_score": -8.08,
     "url": "https://manifold.markets/SG/will-mnx-hit-100m-in-volume-2026",
     "stake": 30.9,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 31.7,
+    "exit_time": "2026-04-23 12:09 UTC",
+    "exit_reason": "stale",
+    "pnl_pp": 43.5,
     "peak_pnl": 44.2
   },
   {

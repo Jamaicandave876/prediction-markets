@@ -18,12 +18,12 @@
   "pause_start": {},
   "bot_scores": {
     "momentum": {
-      "score": 66.4,
+      "score": 74.8,
       "win_rate": 70.0,
-      "avg_pnl": 2.2,
-      "total_pnl": 75.3,
-      "closed": 21,
-      "open": 5,
+      "avg_pnl": 6.4,
+      "total_pnl": 118.8,
+      "closed": 22,
+      "open": 4,
       "grade": "B"
     },
     "fade": {
@@ -161,5 +161,5 @@
     "weather_divergence": 0
   },
   "regime": "adverse",
-  "last_report": "2026-04-22 12:11 UTC"
+  "last_report": "2026-04-23 12:11 UTC"
 }
