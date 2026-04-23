@@ -306,15 +306,15 @@
     "entry_time": "2026-04-22 18:16 UTC",
     "url": "https://manifold.markets/ShaneBo/will-the-wti-crude-oil-spot-price-b-Ut6g2cZ0ZN",
     "stake": 29.3,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 81.0,
+    "exit_time": "2026-04-23 18:17 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 3.9,
     "baseline_range": 6.3,
     "breakout_move": 6.1,
     "breakout_strength": 1.0,
     "signal_strength": 0.3234159314334904,
-    "peak_pnl": 1.6000000000000085
+    "peak_pnl": 3.9000000000000057
   }
 ]

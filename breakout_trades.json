@@ -316,5 +316,23 @@
     "breakout_strength": 1.0,
     "signal_strength": 0.3234159314334904,
     "peak_pnl": 3.9000000000000057
+  },
+  {
+    "market_id": "CZht20I0Rt",
+    "question": "Will the US unemployment rate be >=6.4% in April 2028?",
+    "direction": "BUY YES",
+    "entry_prob": 27.0,
+    "entry_time": "2026-04-23 23:31 UTC",
+    "url": "https://manifold.markets/WilliamKiely/will-the-us-unemployment-rate-be-64",
+    "stake": 55.6,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "baseline_range": 0.0,
+    "breakout_move": 7.2,
+    "breakout_strength": 7.2,
+    "signal_strength": 1.5
   }
 ]
