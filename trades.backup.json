@@ -424,7 +424,8 @@
     "exit_prob": null,
     "exit_time": null,
     "exit_reason": null,
-    "pnl_pp": null
+    "pnl_pp": null,
+    "peak_pnl": 5.299999999999997
   },
   {
     "market_id": "SlyE6Spn8d",
