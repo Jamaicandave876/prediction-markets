@@ -723,7 +723,8 @@
     "crowd_pct": 95.0,
     "price_move": 7.0,
     "divergence_score": 6.65,
-    "signal_strength": 1.33
+    "signal_strength": 1.33,
+    "peak_pnl": 1.6000000000000014
   },
   {
     "market_id": "S9lE0syPnd",
@@ -743,5 +744,24 @@
     "price_move": 4.7,
     "divergence_score": 3.53,
     "signal_strength": 0.71
+  },
+  {
+    "market_id": "gAy65tNIdz",
+    "question": "Will OpenAI go bankrupt before October 21, 2027?",
+    "direction": "BUY YES",
+    "entry_prob": 15.7,
+    "entry_time": "2026-04-24 13:08 UTC",
+    "url": "https://manifold.markets/Bayesian/will-openai-go-bankrupt-before-octo",
+    "stake": 22.3,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "NO",
+    "crowd_pct": 65.0,
+    "price_move": 6.0,
+    "divergence_score": 3.89,
+    "signal_strength": 0.78
   }
 ]

@@ -627,7 +627,8 @@
     "liquidation_impact": 11.8,
     "liquidation_dir": "NO",
     "impact_score": 2.36,
-    "signal_strength": 1.18
+    "signal_strength": 1.18,
+    "peak_pnl": 1.2999999999999972
   },
   {
     "market_id": "hEtuNluAsd",
