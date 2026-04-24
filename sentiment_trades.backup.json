@@ -705,5 +705,43 @@
     "divergence_score": 3.44,
     "signal_strength": 0.69,
     "peak_pnl": 6.5
+  },
+  {
+    "market_id": "CZht20I0Rt",
+    "question": "Will the US unemployment rate be >=6.4% in April 2028?",
+    "direction": "BUY YES",
+    "entry_prob": 27.0,
+    "entry_time": "2026-04-23 23:32 UTC",
+    "url": "https://manifold.markets/WilliamKiely/will-the-us-unemployment-rate-be-64",
+    "stake": 44.4,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "NO",
+    "crowd_pct": 95.0,
+    "price_move": 7.0,
+    "divergence_score": 6.65,
+    "signal_strength": 1.33
+  },
+  {
+    "market_id": "S9lE0syPnd",
+    "question": "Will the price of WTI Crude Oil experience a single-day rise or fall of $7.00 or more before Thursday, April 30?",
+    "direction": "BUY YES",
+    "entry_prob": 54.7,
+    "entry_time": "2026-04-23 23:32 UTC",
+    "url": "https://manifold.markets/ShaneBo/will-the-price-of-wti-crude-oil-exp-PIZZ5LOpUI",
+    "stake": 38.2,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "NO",
+    "crowd_pct": 75.0,
+    "price_move": 4.7,
+    "divergence_score": 3.53,
+    "signal_strength": 0.71
   }
 ]

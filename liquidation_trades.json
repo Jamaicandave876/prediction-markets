@@ -627,5 +627,43 @@
     "liquidation_dir": "NO",
     "impact_score": 2.36,
     "signal_strength": 1.18
+  },
+  {
+    "market_id": "hEtuNluAsd",
+    "question": "Will SpaceX IPO before Bitcoin hits $100K again?",
+    "direction": "BUY NO",
+    "entry_prob": 78.9,
+    "entry_time": "2026-04-24 02:04 UTC",
+    "url": "https://manifold.markets/Drifting/will-spacex-ipo-before-bitcoin-hits",
+    "stake": 41.3,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "liquidation_size": 410,
+    "liquidation_impact": 24.9,
+    "liquidation_dir": "YES",
+    "impact_score": 10.19,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "SlyE6Spn8d",
+    "question": "Are tech employees cooked before 2028 (Layoffs.fyi layoffs)?",
+    "direction": "BUY YES",
+    "entry_prob": 44.4,
+    "entry_time": "2026-04-24 02:04 UTC",
+    "url": "https://manifold.markets/windysoup/are-tech-employees-cooked-before-20",
+    "stake": 58.6,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "liquidation_size": 307,
+    "liquidation_impact": 11.4,
+    "liquidation_dir": "NO",
+    "impact_score": 3.51,
+    "signal_strength": 1.5
   }
 ]

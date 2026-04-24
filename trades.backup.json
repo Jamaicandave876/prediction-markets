@@ -454,7 +454,8 @@
     "exit_prob": null,
     "exit_time": null,
     "exit_reason": null,
-    "pnl_pp": null
+    "pnl_pp": null,
+    "peak_pnl": 0.6000000000000014
   },
   {
     "market_id": "ytIRCINQ6P",
@@ -465,10 +466,10 @@
     "drift_score": -31.02,
     "url": "https://manifold.markets/OrcaWhale/will-the-montgomery-blair-science-b",
     "stake": 39.7,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 20.3,
+    "exit_time": "2026-04-23 23:31 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 0.0
   }
 ]
