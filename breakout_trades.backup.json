@@ -335,5 +335,23 @@
     "breakout_strength": 7.2,
     "signal_strength": 1.5,
     "peak_pnl": 1.6000000000000014
+  },
+  {
+    "market_id": "ItRzuIdss9",
+    "question": "Trump visits China in May?",
+    "direction": "BUY NO",
+    "entry_prob": 66.6,
+    "entry_time": "2026-04-24 16:01 UTC",
+    "url": "https://manifold.markets/predyx_markets/trump-visits-china-in-may",
+    "stake": 20,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "baseline_range": 4.0,
+    "breakout_move": -5.4,
+    "breakout_strength": 1.4,
+    "signal_strength": 0.45254382294972517
   }
 ]

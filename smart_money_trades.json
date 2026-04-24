@@ -1152,5 +1152,24 @@
     "conviction_score": 4.65,
     "signal_strength": 1.5,
     "peak_pnl": 2.299999999999997
+  },
+  {
+    "market_id": "ECzCZ8Ut8S",
+    "question": "NHL Playoffs 2026 1st Round: Will Ottawa and Carolina play MORE than 5 games in a series?",
+    "direction": "BUY NO",
+    "entry_prob": 24.0,
+    "entry_time": "2026-04-24 18:41 UTC",
+    "url": "https://manifold.markets/Jessef0226/nhl-playoffs-2026-1st-round-will-ot",
+    "stake": 85.9,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 2,
+    "smart_user_mana": 500,
+    "price_impact": 18.2,
+    "conviction_score": 7.27,
+    "signal_strength": 1.5
   }
 ]
