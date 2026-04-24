@@ -435,11 +435,11 @@
     "drift_score": -22.93,
     "url": "https://manifold.markets/windysoup/are-tech-employees-cooked-before-20",
     "stake": 39.7,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 44.4,
+    "exit_time": "2026-04-24 02:02 UTC",
+    "exit_reason": "reversal",
+    "pnl_pp": -12.5
   },
   {
     "market_id": "nOqCgsO9Sh",

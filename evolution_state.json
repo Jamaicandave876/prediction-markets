@@ -74,12 +74,12 @@
     "smart_money": {
       "target_hit": 19,
       "stopped_out": 8,
-      "trailing_stop": 3,
+      "trailing_stop": 4,
       "stale": 1
     },
     "momentum": {
       "trailing_stop": 4,
-      "reversal": 9,
+      "reversal": 10,
       "target_hit": 2
     },
     "contrarian": {
@@ -968,40 +968,6 @@
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "smart_money",
-      "market_id": "C6yR9AyCNq",
-      "outcome": "small_loss",
-      "pnl_pp": 0.0,
-      "exit_reason": "target_hit",
-      "duration_hours": 4.7,
-      "traits": [
-        "low_prob_entry",
-        "fast_trade",
-        "no_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 16.4,
-      "direction": "BUY NO",
-      "timestamp": "2026-04-14 23:30 UTC",
-      "lesson": "Smart $: small loss via target_hit. PnL: +0.0pp in 5h."
-    },
-    {
-      "bot": "breakout",
-      "market_id": "y2ZIUOq0ZC",
-      "outcome": "small_win",
-      "pnl_pp": 0.1,
-      "exit_reason": "trailing_stop",
-      "duration_hours": 24.0,
-      "traits": [
-        "mid_prob_entry",
-        "yes_direction"
-      ],
-      "entry_prob": 58.4,
-      "direction": "BUY YES",
-      "timestamp": "2026-04-15 06:21 UTC",
-      "lesson": "Breakout: small win via trailing_stop. PnL: +0.1pp in 24h."
-    },
     {
       "bot": "smart_money",
       "market_id": "scP5pNszNg",
@@ -2712,6 +2678,41 @@
       "direction": "BUY NO",
       "timestamp": "2026-04-24 02:03 UTC",
       "lesson": "Smart $: big loss via trailing_stop. PnL: -7.6pp in 26h."
+    },
+    {
+      "bot": "momentum",
+      "market_id": "SlyE6Spn8d",
+      "outcome": "big_loss",
+      "pnl_pp": -12.5,
+      "exit_reason": "reversal",
+      "duration_hours": 7.8,
+      "traits": [
+        "mid_prob_entry",
+        "fast_trade",
+        "no_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 31.9,
+      "direction": "BUY NO",
+      "timestamp": "2026-04-24 02:02 UTC",
+      "lesson": "Momentum: big loss via reversal. PnL: -12.5pp in 8h."
+    },
+    {
+      "bot": "smart_money",
+      "market_id": "SlyE6Spn8d",
+      "outcome": "big_loss",
+      "pnl_pp": -7.6,
+      "exit_reason": "trailing_stop",
+      "duration_hours": 26.5,
+      "traits": [
+        "mid_prob_entry",
+        "no_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 36.8,
+      "direction": "BUY NO",
+      "timestamp": "2026-04-24 02:03 UTC",
+      "lesson": "Smart $: big loss via trailing_stop. PnL: -7.6pp in 26h."
     }
   ],
   "regime": "normal",
@@ -2839,6 +2840,6 @@
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-04-24 02:04 UTC",
-  "generation": 106
+  "last_evolution": "2026-04-24 05:30 UTC",
+  "generation": 107
 }
