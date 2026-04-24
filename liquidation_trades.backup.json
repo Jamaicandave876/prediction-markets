@@ -587,7 +587,8 @@
     "liquidation_impact": 15.7,
     "liquidation_dir": "NO",
     "impact_score": 7.85,
-    "signal_strength": 1.5
+    "signal_strength": 1.5,
+    "peak_pnl": 2.3999999999999986
   },
   {
     "market_id": "RcNs5ch6qU",
