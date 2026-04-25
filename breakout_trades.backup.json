@@ -353,5 +353,23 @@
     "breakout_move": -5.4,
     "breakout_strength": 1.4,
     "signal_strength": 0.45254382294972517
+  },
+  {
+    "market_id": "CygSsNudh6",
+    "question": "Will Christian Affiliation in the United States Increase Over Five Years?",
+    "direction": "BUY NO",
+    "entry_prob": 29.9,
+    "entry_time": "2026-04-25 18:41 UTC",
+    "url": "https://manifold.markets/TheUserU2/will-christian-affiliation-in-the-u",
+    "stake": 35.7,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "baseline_range": 5.1,
+    "breakout_move": -6.0,
+    "breakout_strength": 1.2,
+    "signal_strength": 0.39780587327740874
   }
 ]
