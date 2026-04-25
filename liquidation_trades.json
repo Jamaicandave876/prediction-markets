@@ -647,7 +647,8 @@
     "liquidation_impact": 24.9,
     "liquidation_dir": "YES",
     "impact_score": 10.19,
-    "signal_strength": 1.5
+    "signal_strength": 1.5,
+    "peak_pnl": 0.6000000000000085
   },
   {
     "market_id": "SlyE6Spn8d",
