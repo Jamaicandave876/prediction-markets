@@ -263,11 +263,11 @@
     "drift_score": 17.08,
     "url": "https://manifold.markets/cash/will-the-united-states-become-more-QNC56OL95y",
     "stake": 30.8,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 69.1,
+    "exit_time": "2026-04-26 02:06 UTC",
+    "exit_reason": "stale",
+    "pnl_pp": 5.8,
     "peak_pnl": 6.0
   },
   {
@@ -425,7 +425,7 @@
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null,
-    "peak_pnl": 6.5
+    "peak_pnl": 7.5
   },
   {
     "market_id": "SlyE6Spn8d",
@@ -456,7 +456,7 @@
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null,
-    "peak_pnl": 0.6000000000000014
+    "peak_pnl": 1.4000000000000021
   },
   {
     "market_id": "ytIRCINQ6P",

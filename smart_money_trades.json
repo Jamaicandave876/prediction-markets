@@ -926,11 +926,11 @@
     "entry_time": "2026-04-20 23:28 UTC",
     "url": "https://manifold.markets/Zeolite/will-uar-bernard-get-drafted-in-the",
     "stake": 78.0,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 100.0,
+    "exit_time": "2026-04-26 02:07 UTC",
+    "exit_reason": "resolved_win",
+    "pnl_pp": 28.7,
     "smart_user_bets": 3,
     "smart_user_mana": 1000,
     "price_impact": 23.6,
@@ -1131,7 +1131,7 @@
     "price_impact": 11.0,
     "conviction_score": 8.16,
     "signal_strength": 1.5,
-    "peak_pnl": 0.6000000000000014
+    "peak_pnl": 1.4000000000000021
   },
   {
     "market_id": "S9ynE25Uz0",

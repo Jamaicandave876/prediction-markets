@@ -578,11 +578,11 @@
     "entry_time": "2026-04-22 23:36 UTC",
     "url": "https://manifold.markets/vdb/will-an-autonomous-robot-beat-an-ol",
     "stake": 30.7,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 32.0,
+    "exit_time": "2026-04-26 02:07 UTC",
+    "exit_reason": "stale",
+    "pnl_pp": 2.4,
     "liquidation_size": 500,
     "liquidation_impact": 15.7,
     "liquidation_dir": "NO",
@@ -608,7 +608,7 @@
     "liquidation_dir": "YES",
     "impact_score": 1.04,
     "signal_strength": 0.52,
-    "peak_pnl": 5.5
+    "peak_pnl": 7.5
   },
   {
     "market_id": "S9lE0syPnd",
@@ -628,7 +628,7 @@
     "liquidation_dir": "NO",
     "impact_score": 2.36,
     "signal_strength": 1.18,
-    "peak_pnl": 2.299999999999997
+    "peak_pnl": 3.3999999999999986
   },
   {
     "market_id": "hEtuNluAsd",

@@ -1,1 +1,20 @@
-[]
+[
+  {
+    "market_id": "gAy65tNIdz",
+    "question": "Will OpenAI go bankrupt before October 21, 2027?",
+    "direction": "BUY YES",
+    "entry_prob": 17.9,
+    "entry_time": "2026-04-25 21:31 UTC",
+    "url": "https://manifold.markets/Bayesian/will-openai-go-bankrupt-before-octo",
+    "stake": 20,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "baseline_range": 4.5,
+    "crack_move": 3.3,
+    "crack_size": 3.3,
+    "signal_strength": 0.25
+  }
+]
