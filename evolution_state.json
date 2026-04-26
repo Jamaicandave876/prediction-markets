@@ -145,10 +145,10 @@
     "liquidation": {
       "low_prob_entry": 6,
       "fast_trade": 6,
-      "yes_direction": 16,
-      "mid_prob_entry": 14,
+      "yes_direction": 17,
+      "mid_prob_entry": 15,
       "no_direction": 6,
-      "strong_signal": 11,
+      "strong_signal": 12,
       "high_prob_entry": 2,
       "weak_signal": 2
     },
@@ -968,23 +968,6 @@
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "sentiment",
-      "market_id": "sLtAudcPqO",
-      "outcome": "strong_win",
-      "pnl_pp": 49.7,
-      "exit_reason": "target_hit",
-      "duration_hours": 54.9,
-      "traits": [
-        "high_prob_entry",
-        "no_direction",
-        "weak_signal"
-      ],
-      "entry_prob": 74.0,
-      "direction": "BUY NO",
-      "timestamp": "2026-04-16 06:24 UTC",
-      "lesson": "Sentiment: strong win via target_hit. PnL: +49.7pp in 55h."
-    },
     {
       "bot": "liquidation",
       "market_id": "p9c6INORqI",
@@ -2707,6 +2690,23 @@
       "direction": "BUY NO",
       "timestamp": "2026-04-26 07:21 UTC",
       "lesson": "Liquidation: strong win via stale. PnL: +5.5pp in 73h."
+    },
+    {
+      "bot": "liquidation",
+      "market_id": "S9lE0syPnd",
+      "outcome": "small_win",
+      "pnl_pp": 3.4,
+      "exit_reason": "stale",
+      "duration_hours": 72.4,
+      "traits": [
+        "mid_prob_entry",
+        "yes_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 54.7,
+      "direction": "BUY YES",
+      "timestamp": "2026-04-26 18:42 UTC",
+      "lesson": "Liquidation: small win via stale. PnL: +3.4pp in 72h."
     }
   ],
   "regime": "normal",
@@ -2828,12 +2828,12 @@
     "underdog": 0.5,
     "late_mover": 0.2,
     "hedge": 0.3,
-    "liquidation": 0.71,
+    "liquidation": 0.75,
     "weather_temperature": 0.5,
     "weather_precipitation": 0.5,
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-04-26 15:37 UTC",
-  "generation": 127
+  "last_evolution": "2026-04-26 18:42 UTC",
+  "generation": 128
 }
