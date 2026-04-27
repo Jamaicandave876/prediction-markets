@@ -707,7 +707,7 @@
     "liquidation_dir": "YES",
     "impact_score": 0.94,
     "signal_strength": 0.47,
-    "peak_pnl": 1.0
+    "peak_pnl": 7.599999999999994
   },
   {
     "market_id": "tqZUSphphC",
@@ -736,11 +736,11 @@
     "entry_time": "2026-04-27 05:49 UTC",
     "url": "https://manifold.markets/Panfilo/will-my-windows-desktop-sound-devic",
     "stake": 85.6,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 20.9,
+    "exit_time": "2026-04-27 08:12 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 0.0,
     "liquidation_size": 124,
     "liquidation_impact": 11.6,
     "liquidation_dir": "YES",
