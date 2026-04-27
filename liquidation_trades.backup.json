@@ -707,5 +707,24 @@
     "liquidation_dir": "YES",
     "impact_score": 0.94,
     "signal_strength": 0.47
+  },
+  {
+    "market_id": "tqZUSphphC",
+    "question": "Will \"Michael\" receive any Oscar nominations?",
+    "direction": "BUY YES",
+    "entry_prob": 54.8,
+    "entry_time": "2026-04-26 21:33 UTC",
+    "url": "https://manifold.markets/Ziddletwix/will-michael-receive-any-oscar-nomi",
+    "stake": 20,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "liquidation_size": 100,
+    "liquidation_impact": 6.0,
+    "liquidation_dir": "NO",
+    "impact_score": 0.6,
+    "signal_strength": 0.3
   }
 ]
