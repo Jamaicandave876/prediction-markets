@@ -706,7 +706,8 @@
     "liquidation_impact": 6.9,
     "liquidation_dir": "YES",
     "impact_score": 0.94,
-    "signal_strength": 0.47
+    "signal_strength": 0.47,
+    "peak_pnl": 1.0
   },
   {
     "market_id": "tqZUSphphC",
@@ -726,5 +727,24 @@
     "liquidation_dir": "NO",
     "impact_score": 0.6,
     "signal_strength": 0.3
+  },
+  {
+    "market_id": "EccUzAQ8t6",
+    "question": "Will my Windows Desktop sound device flickering problem be fixed within one week?",
+    "direction": "BUY NO",
+    "entry_prob": 20.9,
+    "entry_time": "2026-04-27 05:49 UTC",
+    "url": "https://manifold.markets/Panfilo/will-my-windows-desktop-sound-devic",
+    "stake": 85.6,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "liquidation_size": 124,
+    "liquidation_impact": 11.6,
+    "liquidation_dir": "YES",
+    "impact_score": 1.44,
+    "signal_strength": 0.72
   }
 ]

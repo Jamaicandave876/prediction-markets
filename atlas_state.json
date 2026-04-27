@@ -18,12 +18,12 @@
   "pause_start": {},
   "bot_scores": {
     "momentum": {
-      "score": 68.7,
+      "score": 65.9,
       "win_rate": 60.0,
-      "avg_pnl": 6.3,
-      "total_pnl": 119.7,
-      "closed": 28,
-      "open": 5,
+      "avg_pnl": 4.9,
+      "total_pnl": 123.2,
+      "closed": 30,
+      "open": 3,
       "grade": "B"
     },
     "fade": {
