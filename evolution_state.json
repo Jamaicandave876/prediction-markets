@@ -95,7 +95,8 @@
       "trailing_stop": 4,
       "stale": 9,
       "resolved_loss": 1,
-      "target_hit": 2
+      "target_hit": 2,
+      "stopped_out": 1
     },
     "fade": {
       "stopped_out": 2,
@@ -971,23 +972,6 @@
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "liquidation",
-      "market_id": "LydCCy9EyR",
-      "outcome": "small_win",
-      "pnl_pp": 3.0,
-      "exit_reason": "stale",
-      "duration_hours": 162.3,
-      "traits": [
-        "mid_prob_entry",
-        "yes_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 35.3,
-      "direction": "BUY YES",
-      "timestamp": "2026-04-18 14:12 UTC",
-      "lesson": "Liquidation: small win via stale. PnL: +3.0pp in 162h."
-    },
     {
       "bot": "liquidation",
       "market_id": "AQIsLgzUU8",
@@ -2709,6 +2693,24 @@
       "direction": "BUY NO",
       "timestamp": "2026-04-27 08:12 UTC",
       "lesson": "Liquidation: small loss via target_hit. PnL: +0.0pp in 2h."
+    },
+    {
+      "bot": "liquidation",
+      "market_id": "tqZUSphphC",
+      "outcome": "big_loss",
+      "pnl_pp": -12.0,
+      "exit_reason": "stopped_out",
+      "duration_hours": 15.9,
+      "traits": [
+        "mid_prob_entry",
+        "fast_trade",
+        "yes_direction",
+        "weak_signal"
+      ],
+      "entry_prob": 54.8,
+      "direction": "BUY YES",
+      "timestamp": "2026-04-27 13:25 UTC",
+      "lesson": "Liquidation: Weak signal led to stop-out. Need stronger signals to justify entry."
     }
   ],
   "regime": "normal",
@@ -2830,12 +2832,12 @@
     "underdog": 0.5,
     "late_mover": 0.2,
     "hedge": 0.3,
-    "liquidation": 0.69,
+    "liquidation": 0.59,
     "weather_temperature": 0.5,
     "weather_precipitation": 0.5,
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-04-27 10:57 UTC",
-  "generation": 133
+  "last_evolution": "2026-04-27 13:25 UTC",
+  "generation": 134
 }

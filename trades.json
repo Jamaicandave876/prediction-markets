@@ -517,5 +517,20 @@
     "exit_time": "2026-04-27 08:10 UTC",
     "exit_reason": "target_hit",
     "pnl_pp": 0.0
+  },
+  {
+    "market_id": "8Pzhup6hqh",
+    "question": "Will the winner of the 2026 Kentucky Derby finish in under 2:02.00?",
+    "direction": "BUY NO",
+    "entry_prob": 37.8,
+    "entry_time": "2026-04-27 13:25 UTC",
+    "drift_score": -16.84,
+    "url": "https://manifold.markets/StevetptC8/will-the-winner-of-the-2026-kentuck",
+    "stake": 60.8,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]
