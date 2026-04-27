@@ -117,12 +117,9 @@
     }
   ],
   "paused": {
-    "mean_reversion": true,
-    "contrarian": true
+    "mean_reversion": false,
+    "contrarian": false
   },
   "consecutive_losses": {},
-  "pause_start": {
-    "mean_reversion": "2026-04-25 05:08 UTC",
-    "contrarian": "2026-04-25 05:08 UTC"
-  }
+  "pause_start": {}
 }

@@ -342,11 +342,11 @@
     "drift_score": -35.29,
     "url": "https://manifold.markets/singer/ai-wins-ftl-using-screen-input-and",
     "stake": 44.2,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 24.5,
+    "exit_time": "2026-04-27 02:08 UTC",
+    "exit_reason": "stale",
+    "pnl_pp": 7.8,
     "peak_pnl": 7.799999999999997
   },
   {
@@ -358,11 +358,11 @@
     "drift_score": 13.99,
     "url": "https://manifold.markets/cash/will-the-world-become-more-authorit-2R20yhg9dh",
     "stake": 44.2,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 60.9,
+    "exit_time": "2026-04-27 02:08 UTC",
+    "exit_reason": "stale",
+    "pnl_pp": 2.9,
     "peak_pnl": 2.8999999999999986
   },
   {
@@ -374,11 +374,11 @@
     "drift_score": 13.55,
     "url": "https://manifold.markets/cash/will-iran-become-more-authoritarian-dq20gc8u2I",
     "stake": 44.2,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 55.2,
+    "exit_time": "2026-04-27 02:08 UTC",
+    "exit_reason": "stale",
+    "pnl_pp": -3.1
   },
   {
     "market_id": "sLtAudcPqO",
