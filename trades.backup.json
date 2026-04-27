@@ -456,7 +456,7 @@
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null,
-    "peak_pnl": 1.4000000000000021
+    "peak_pnl": 2.5
   },
   {
     "market_id": "ytIRCINQ6P",
@@ -527,6 +527,21 @@
     "drift_score": -16.84,
     "url": "https://manifold.markets/StevetptC8/will-the-winner-of-the-2026-kentuck",
     "stake": 60.8,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
+  },
+  {
+    "market_id": "tqZUSphphC",
+    "question": "Will \"Michael\" receive any Oscar nominations?",
+    "direction": "BUY NO",
+    "entry_prob": 45.8,
+    "entry_time": "2026-04-27 16:22 UTC",
+    "drift_score": -32.27,
+    "url": "https://manifold.markets/Ziddletwix/will-michael-receive-any-oscar-nomi",
+    "stake": 60.7,
     "status": "open",
     "exit_prob": null,
     "exit_time": null,
