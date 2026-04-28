@@ -746,5 +746,43 @@
     "liquidation_dir": "YES",
     "impact_score": 1.44,
     "signal_strength": 0.72
+  },
+  {
+    "market_id": "AuLy2n9906",
+    "question": "Florida Redistricting Before 2026 Midterms?",
+    "direction": "BUY NO",
+    "entry_prob": 68.3,
+    "entry_time": "2026-04-28 02:16 UTC",
+    "url": "https://manifold.markets/archvenison/florida-redistricting-before-2026-m",
+    "stake": 31.5,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "liquidation_size": 250,
+    "liquidation_impact": 8.6,
+    "liquidation_dir": "YES",
+    "impact_score": 2.14,
+    "signal_strength": 1.07
+  },
+  {
+    "market_id": "nsQ90Zccu0",
+    "question": "Will the 2026 Kentucky Derby have a close finish?",
+    "direction": "BUY NO",
+    "entry_prob": 36.0,
+    "entry_time": "2026-04-28 02:16 UTC",
+    "url": "https://manifold.markets/Zeolite/will-the-2026-kentucky-derby-have-a",
+    "stake": 20,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "liquidation_size": 100,
+    "liquidation_impact": 6.2,
+    "liquidation_dir": "YES",
+    "impact_score": 0.62,
+    "signal_strength": 0.31
   }
 ]
