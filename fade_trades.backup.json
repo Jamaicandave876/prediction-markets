@@ -142,5 +142,23 @@
     "exit_time": "2026-04-19 22:04 UTC",
     "exit_reason": "normalized",
     "pnl_pp": 22.0
+  },
+  {
+    "market_id": "QUOQIUPuAQ",
+    "question": "Will US average gas price reach $4.300 in May 2026?",
+    "direction": "BUY NO",
+    "entry_prob": 52.1,
+    "pre_spike_prob": 35.6,
+    "spike_size": 16.5,
+    "spike_ratio": 16.5,
+    "spike_dir": 1,
+    "entry_time": "2026-04-28 16:48 UTC",
+    "url": "https://manifold.markets/vdb/will-us-average-gas-price-reach-430-E65NZypucQ",
+    "stake": 70.9,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]
