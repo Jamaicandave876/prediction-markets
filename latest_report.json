@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-04-28 08:13 UTC",
+  "timestamp": "2026-04-28 11:00 UTC",
   "regime": "adverse",
-  "pnl_7d": 154.6,
-  "total_open": 10,
-  "total_closed": 129,
-  "total_pnl": 85.0,
+  "pnl_7d": 146.1,
+  "total_open": 9,
+  "total_closed": 130,
+  "total_pnl": 76.5,
   "bots": [
     {
       "name": "fade",
@@ -19,18 +19,6 @@
       "consecutive_losses": 0
     },
     {
-      "name": "momentum",
-      "display": "Momentum",
-      "grade": "B",
-      "score": 65.9,
-      "win_rate": 60.0,
-      "total_pnl": 123.2,
-      "open": 5,
-      "closed": 30,
-      "paused": false,
-      "consecutive_losses": 0
-    },
-    {
       "name": "breakout",
       "display": "Breakout",
       "grade": "C",
@@ -41,6 +29,18 @@
       "closed": 15,
       "paused": false,
       "consecutive_losses": 0
+    },
+    {
+      "name": "momentum",
+      "display": "Momentum",
+      "grade": "C",
+      "score": 57.9,
+      "win_rate": 50.0,
+      "total_pnl": 114.7,
+      "open": 4,
+      "closed": 31,
+      "paused": false,
+      "consecutive_losses": 1
     },
     {
       "name": "weather_temperature",

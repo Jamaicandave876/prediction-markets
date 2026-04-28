@@ -70,7 +70,7 @@
       "target_hit": 6,
       "stopped_out": 18,
       "trailing_stop": 3,
-      "stale": 3
+      "stale": 4
     },
     "smart_money": {
       "target_hit": 20,
@@ -80,7 +80,7 @@
     },
     "momentum": {
       "trailing_stop": 4,
-      "reversal": 10,
+      "reversal": 11,
       "target_hit": 4,
       "stale": 2
     },
@@ -138,10 +138,10 @@
     },
     "smart_money": {
       "mid_prob_entry": 21,
-      "no_direction": 26,
-      "strong_signal": 30,
+      "no_direction": 27,
+      "strong_signal": 31,
       "fast_trade": 22,
-      "low_prob_entry": 9,
+      "low_prob_entry": 10,
       "yes_direction": 9,
       "high_prob_entry": 5,
       "slow_trade": 3
@@ -972,60 +972,6 @@
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "smart_money",
-      "market_id": "Iq0OnOp0At",
-      "outcome": "strong_win",
-      "pnl_pp": 14.8,
-      "exit_reason": "target_hit",
-      "duration_hours": 8.9,
-      "traits": [
-        "mid_prob_entry",
-        "fast_trade",
-        "no_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 35.4,
-      "direction": "BUY NO",
-      "timestamp": "2026-04-18 17:04 UTC",
-      "lesson": "Smart $: Quick strong win \u2014 this signal pattern works well."
-    },
-    {
-      "bot": "sentiment",
-      "market_id": "Iq0OnOp0At",
-      "outcome": "strong_win",
-      "pnl_pp": 20.0,
-      "exit_reason": "target_hit",
-      "duration_hours": 15.1,
-      "traits": [
-        "mid_prob_entry",
-        "fast_trade",
-        "no_direction",
-        "weak_signal"
-      ],
-      "entry_prob": 47.0,
-      "direction": "BUY NO",
-      "timestamp": "2026-04-18 14:12 UTC",
-      "lesson": "Sentiment: Quick strong win \u2014 this signal pattern works well."
-    },
-    {
-      "bot": "sentiment",
-      "market_id": "PqSQpPyqER",
-      "outcome": "strong_win",
-      "pnl_pp": 25.8,
-      "exit_reason": "target_hit",
-      "duration_hours": 8.9,
-      "traits": [
-        "mid_prob_entry",
-        "fast_trade",
-        "no_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 46.8,
-      "direction": "BUY NO",
-      "timestamp": "2026-04-18 17:04 UTC",
-      "lesson": "Sentiment: Quick strong win \u2014 this signal pattern works well."
-    },
     {
       "bot": "liquidation",
       "market_id": "LydCCy9EyR",
@@ -2713,6 +2659,57 @@
       "direction": "BUY YES",
       "timestamp": "2026-04-28 08:13 UTC",
       "lesson": "Sentiment: Held too long with no resolution. Consider shorter max_days."
+    },
+    {
+      "bot": "momentum",
+      "market_id": "ht8PzcPAc2",
+      "outcome": "big_loss",
+      "pnl_pp": -8.5,
+      "exit_reason": "reversal",
+      "duration_hours": 29.2,
+      "traits": [
+        "mid_prob_entry",
+        "yes_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 47.8,
+      "direction": "BUY YES",
+      "timestamp": "2026-04-28 10:58 UTC",
+      "lesson": "Momentum: big loss via reversal. PnL: -8.5pp in 29h."
+    },
+    {
+      "bot": "smart_money",
+      "market_id": "nOqCgsO9Sh",
+      "outcome": "strong_win",
+      "pnl_pp": 5.5,
+      "exit_reason": "target_hit",
+      "duration_hours": 118.8,
+      "traits": [
+        "low_prob_entry",
+        "no_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 27.6,
+      "direction": "BUY NO",
+      "timestamp": "2026-04-28 10:59 UTC",
+      "lesson": "Smart $: Strong signal \u2192 strong win. Keep trusting high-confidence entries."
+    },
+    {
+      "bot": "sentiment",
+      "market_id": "gOlddESzER",
+      "outcome": "big_loss",
+      "pnl_pp": -3.0,
+      "exit_reason": "stale",
+      "duration_hours": 169.8,
+      "traits": [
+        "low_prob_entry",
+        "slow_trade",
+        "yes_direction"
+      ],
+      "entry_prob": 26.0,
+      "direction": "BUY YES",
+      "timestamp": "2026-04-28 08:13 UTC",
+      "lesson": "Sentiment: Held too long with no resolution. Consider shorter max_days."
     }
   ],
   "regime": "normal",
@@ -2815,7 +2812,7 @@
     }
   ],
   "bot_confidence": {
-    "momentum": 0.69,
+    "momentum": 0.59,
     "fade": 0.85,
     "mean_reversion": 0.1,
     "volume_surge": 0.2,
@@ -2827,7 +2824,7 @@
     "breakout": 0.77,
     "calibration": 1.0,
     "reversal": 0.2,
-    "smart_money": 0.56,
+    "smart_money": 0.61,
     "time_decay": 0.23,
     "sentiment": 0.43,
     "accumulation": 0.1,
@@ -2840,6 +2837,6 @@
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-04-28 08:13 UTC",
-  "generation": 140
+  "last_evolution": "2026-04-28 11:00 UTC",
+  "generation": 141
 }
