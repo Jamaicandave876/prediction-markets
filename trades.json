@@ -564,7 +564,8 @@
     "exit_prob": null,
     "exit_time": null,
     "exit_reason": null,
-    "pnl_pp": null
+    "pnl_pp": null,
+    "peak_pnl": 2.799999999999997
   },
   {
     "market_id": "6pO2AZERcP",
@@ -579,7 +580,8 @@
     "exit_prob": null,
     "exit_time": null,
     "exit_reason": null,
-    "pnl_pp": null
+    "pnl_pp": null,
+    "peak_pnl": 2.200000000000003
   },
   {
     "market_id": "QUOQIUPuAQ",
@@ -590,10 +592,10 @@
     "drift_score": 84.28,
     "url": "https://manifold.markets/vdb/will-us-average-gas-price-reach-430-E65NZypucQ",
     "stake": 33.3,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 81.4,
+    "exit_time": "2026-04-29 21:54 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 0.0
   }
 ]

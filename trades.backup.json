@@ -550,5 +550,50 @@
     "exit_reason": null,
     "pnl_pp": null,
     "peak_pnl": 2.3999999999999986
+  },
+  {
+    "market_id": "222UC5Eh0E",
+    "question": "How likely is the farm bill to pass with the save our bacon act provision?",
+    "direction": "BUY NO",
+    "entry_prob": 46.0,
+    "entry_time": "2026-04-29 19:14 UTC",
+    "drift_score": -10.76,
+    "url": "https://manifold.markets/MatthewAdelstein/how-likely-is-the-farm-bill-to-pass",
+    "stake": 33.3,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
+  },
+  {
+    "market_id": "6pO2AZERcP",
+    "question": "Will the farm bill (HR 7567) pass and destroy / federally preempt state animal welfare laws?",
+    "direction": "BUY NO",
+    "entry_prob": 42.7,
+    "entry_time": "2026-04-29 19:14 UTC",
+    "drift_score": -36.39,
+    "url": "https://manifold.markets/Conflux/will-the-farm-bill-with-save-our-ba",
+    "stake": 33.3,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
+  },
+  {
+    "market_id": "QUOQIUPuAQ",
+    "question": "Will US average gas price reach $4.300 in May 2026?",
+    "direction": "BUY YES",
+    "entry_prob": 81.4,
+    "entry_time": "2026-04-29 19:14 UTC",
+    "drift_score": 84.28,
+    "url": "https://manifold.markets/vdb/will-us-average-gas-price-reach-430-E65NZypucQ",
+    "stake": 33.3,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]
