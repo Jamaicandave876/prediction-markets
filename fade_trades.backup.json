@@ -155,10 +155,10 @@
     "entry_time": "2026-04-28 16:48 UTC",
     "url": "https://manifold.markets/vdb/will-us-average-gas-price-reach-430-E65NZypucQ",
     "stake": 70.9,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 75.0,
+    "exit_time": "2026-04-29 10:49 UTC",
+    "exit_reason": "stopped_out",
+    "pnl_pp": -22.9
   }
 ]
