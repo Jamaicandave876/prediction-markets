@@ -93,7 +93,7 @@
     },
     "liquidation": {
       "trailing_stop": 4,
-      "stale": 9,
+      "stale": 10,
       "resolved_loss": 1,
       "target_hit": 2,
       "stopped_out": 2
@@ -972,23 +972,6 @@
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "liquidation",
-      "market_id": "AQIsLgzUU8",
-      "outcome": "strong_win",
-      "pnl_pp": 8.1,
-      "exit_reason": "stale",
-      "duration_hours": 162.3,
-      "traits": [
-        "mid_prob_entry",
-        "yes_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 51.9,
-      "direction": "BUY YES",
-      "timestamp": "2026-04-18 14:12 UTC",
-      "lesson": "Liquidation: Strong signal \u2192 strong win. Keep trusting high-confidence entries."
-    },
     {
       "bot": "liquidation",
       "market_id": "9ppn5cCLld",
@@ -2709,9 +2692,26 @@
       "direction": "BUY YES",
       "timestamp": "2026-04-28 21:52 UTC",
       "lesson": "Sentiment: big loss via stopped_out. PnL: -23.2pp in 118h."
+    },
+    {
+      "bot": "liquidation",
+      "market_id": "NqutNcczys",
+      "outcome": "small_loss",
+      "pnl_pp": -1.7,
+      "exit_reason": "stale",
+      "duration_hours": 72.2,
+      "traits": [
+        "low_prob_entry",
+        "yes_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 24.0,
+      "direction": "BUY YES",
+      "timestamp": "2026-04-29 05:49 UTC",
+      "lesson": "Liquidation: small loss via stale. PnL: -1.7pp in 72h."
     }
   ],
-  "regime": "normal",
+  "regime": "cautious",
   "regime_history": [
     {
       "from": "normal",
@@ -2808,6 +2808,12 @@
       "to": "normal",
       "reason": "WR=36%, avg_pnl=+0.4pp on 78 recent trades",
       "timestamp": "2026-04-23 18:17 UTC"
+    },
+    {
+      "from": "normal",
+      "to": "cautious",
+      "reason": "WR=35%, avg_pnl=+0.4pp on 78 recent trades",
+      "timestamp": "2026-04-29 05:49 UTC"
     }
   ],
   "bot_confidence": {
@@ -2830,12 +2836,12 @@
     "underdog": 0.5,
     "late_mover": 0.2,
     "hedge": 0.3,
-    "liquidation": 0.59,
+    "liquidation": 0.5,
     "weather_temperature": 0.5,
     "weather_precipitation": 0.5,
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-04-29 02:25 UTC",
-  "generation": 145
+  "last_evolution": "2026-04-29 05:49 UTC",
+  "generation": 146
 }
