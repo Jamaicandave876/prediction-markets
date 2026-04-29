@@ -126,15 +126,18 @@
       "old": 1.3,
       "new": 1.6,
       "reason": "System WR 30% < 40% \u2014 tighten signals"
+    },
+    {
+      "param": "MIN_DRIFT_SCORE",
+      "old": 1.6,
+      "new": 1.9,
+      "reason": "System WR 20% < 40% \u2014 tighten signals"
     }
   ],
   "paused": {
-    "mean_reversion": true,
-    "contrarian": true
+    "mean_reversion": false,
+    "contrarian": false
   },
   "consecutive_losses": {},
-  "pause_start": {
-    "mean_reversion": "2026-04-27 08:12 UTC",
-    "contrarian": "2026-04-27 08:12 UTC"
-  }
+  "pause_start": {}
 }
