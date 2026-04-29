@@ -1210,5 +1210,24 @@
     "price_impact": 11.4,
     "conviction_score": 7.72,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "sq5QUqSdLz",
+    "question": "Will I get a Gold Medal on USAMO 2027?",
+    "direction": "BUY YES",
+    "entry_prob": 55.6,
+    "entry_time": "2026-04-29 02:24 UTC",
+    "url": "https://manifold.markets/Tetrahydrofuran/will-i-make-usamo-2027-and-get-a-go",
+    "stake": 20,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 2,
+    "smart_user_mana": 200,
+    "price_impact": 6.5,
+    "conviction_score": 1.04,
+    "signal_strength": 0.35
   }
 ]
