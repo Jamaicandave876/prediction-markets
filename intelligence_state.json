@@ -156,6 +156,12 @@
       "old": 2.8,
       "new": 3.1,
       "reason": "System WR 20% < 40% \u2014 tighten signals"
+    },
+    {
+      "param": "MIN_DRIFT_SCORE",
+      "old": 3.1,
+      "new": 3.4,
+      "reason": "System WR 20% < 40% \u2014 tighten signals"
     }
   ],
   "paused": {

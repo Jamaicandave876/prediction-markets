@@ -1269,5 +1269,43 @@
     "conviction_score": 2.22,
     "signal_strength": 0.74,
     "peak_pnl": 2.799999999999997
+  },
+  {
+    "market_id": "SOUOIIh5Pp",
+    "question": "Will a former pornstar become US president before China overtakes the US in GDP?",
+    "direction": "BUY NO",
+    "entry_prob": 14.2,
+    "entry_time": "2026-04-30 02:25 UTC",
+    "url": "https://manifold.markets/Stralor/will-a-former-pornstar-become-us-pr",
+    "stake": 84.9,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 3,
+    "smart_user_mana": 750,
+    "price_impact": 31.7,
+    "conviction_score": 28.5,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "IUC29N89gt",
+    "question": "Over 1.5 red cards issued for mouth covering at 2026 FIFA World Cup?",
+    "direction": "BUY NO",
+    "entry_prob": 26.2,
+    "entry_time": "2026-04-30 02:25 UTC",
+    "url": "https://manifold.markets/UniversalFC/over-15-red-cards-issued-for-mouth",
+    "stake": 84.9,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 2,
+    "smart_user_mana": 500,
+    "price_impact": 15.7,
+    "conviction_score": 6.27,
+    "signal_strength": 1.5
   }
 ]
