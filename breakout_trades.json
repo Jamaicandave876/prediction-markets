@@ -372,5 +372,23 @@
     "breakout_strength": 1.2,
     "signal_strength": 0.39780587327740874,
     "peak_pnl": 7.599999999999998
+  },
+  {
+    "market_id": "6pO2AZERcP",
+    "question": "Will the farm bill (HR 7567) pass and destroy / federally preempt state animal welfare laws?",
+    "direction": "BUY YES",
+    "entry_prob": 55.9,
+    "entry_time": "2026-04-30 16:15 UTC",
+    "url": "https://manifold.markets/Conflux/will-the-farm-bill-with-save-our-ba",
+    "stake": 40.0,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "baseline_range": 2.5,
+    "breakout_move": 7.3,
+    "breakout_strength": 2.9,
+    "signal_strength": 0.9534776248314197
   }
 ]
