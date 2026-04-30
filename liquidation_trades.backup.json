@@ -823,5 +823,24 @@
     "liquidation_dir": "YES",
     "impact_score": 2.77,
     "signal_strength": 1.39
+  },
+  {
+    "market_id": "uIC5sUz6dR",
+    "question": "Will any current Labour MP call for Keir Starmer to stand down after the local elections?",
+    "direction": "BUY NO",
+    "entry_prob": 70.1,
+    "entry_time": "2026-04-30 10:50 UTC",
+    "url": "https://manifold.markets/Noit/will-any-current-labour-mp-call-for",
+    "stake": 21.6,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "liquidation_size": 250,
+    "liquidation_impact": 8.9,
+    "liquidation_dir": "YES",
+    "impact_score": 2.23,
+    "signal_strength": 1.12
   }
 ]
