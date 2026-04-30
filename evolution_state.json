@@ -80,7 +80,7 @@
     "smart_money": {
       "target_hit": 20,
       "stopped_out": 8,
-      "trailing_stop": 5,
+      "trailing_stop": 6,
       "stale": 9
     },
     "momentum": {
@@ -130,7 +130,7 @@
       "stale": 8
     },
     "underdog": {
-      "stopped_out": 1
+      "stopped_out": 2
     }
   },
   "win_patterns": {
@@ -1084,38 +1084,6 @@
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "hedge",
-      "market_id": "UUyP0862p5",
-      "outcome": "small_loss",
-      "pnl_pp": 0.0,
-      "exit_reason": "stale",
-      "duration_hours": 162.3,
-      "traits": [
-        "mid_prob_entry",
-        "yes_direction"
-      ],
-      "entry_prob": 30.9,
-      "direction": "BUY YES",
-      "timestamp": "2026-04-23 06:29 UTC",
-      "lesson": "Hedge: small loss via stale. PnL: +0.0pp in 162h."
-    },
-    {
-      "bot": "hedge",
-      "market_id": "Fnty2JpQ6W",
-      "outcome": "small_loss",
-      "pnl_pp": -0.4,
-      "exit_reason": "stale",
-      "duration_hours": 162.3,
-      "traits": [
-        "low_prob_entry",
-        "yes_direction"
-      ],
-      "entry_prob": 10.7,
-      "direction": "BUY YES",
-      "timestamp": "2026-04-23 06:29 UTC",
-      "lesson": "Hedge: small loss via stale. PnL: -0.4pp in 162h."
-    },
     {
       "bot": "momentum",
       "market_id": "ngN8cULCyO",
@@ -2828,6 +2796,40 @@
       "direction": "BUY YES",
       "timestamp": "2026-04-30 16:15 UTC",
       "lesson": "Liquidation: big loss via stopped_out. PnL: -13.4pp in 3h."
+    },
+    {
+      "bot": "smart_money",
+      "market_id": "222UC5Eh0E",
+      "outcome": "small_loss",
+      "pnl_pp": -2.6,
+      "exit_reason": "trailing_stop",
+      "duration_hours": 23.9,
+      "traits": [
+        "mid_prob_entry",
+        "fast_trade",
+        "no_direction"
+      ],
+      "entry_prob": 46.0,
+      "direction": "BUY NO",
+      "timestamp": "2026-04-30 19:10 UTC",
+      "lesson": "Smart $: Had profit but trailing stop was too tight. Consider widening trail."
+    },
+    {
+      "bot": "underdog",
+      "market_id": "gAy65tNIdz",
+      "outcome": "big_loss",
+      "pnl_pp": -9.0,
+      "exit_reason": "stopped_out",
+      "duration_hours": 117.7,
+      "traits": [
+        "low_prob_entry",
+        "yes_direction",
+        "weak_signal"
+      ],
+      "entry_prob": 17.9,
+      "direction": "BUY YES",
+      "timestamp": "2026-04-30 19:11 UTC",
+      "lesson": "Underdog: Weak signal led to stop-out. Need stronger signals to justify entry."
     }
   ],
   "regime": "cautious",
@@ -2961,6 +2963,6 @@
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-04-30 19:11 UTC",
-  "generation": 159
+  "last_evolution": "2026-04-30 21:52 UTC",
+  "generation": 160
 }
