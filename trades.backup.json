@@ -576,11 +576,11 @@
     "drift_score": -36.39,
     "url": "https://manifold.markets/Conflux/will-the-farm-bill-with-save-our-ba",
     "stake": 33.3,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 55.9,
+    "exit_time": "2026-04-30 16:15 UTC",
+    "exit_reason": "reversal",
+    "pnl_pp": -13.2,
     "peak_pnl": 2.200000000000003
   },
   {
