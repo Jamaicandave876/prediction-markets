@@ -783,7 +783,8 @@
     "crowd_pct": 60.0,
     "price_move": 17.0,
     "divergence_score": 10.22,
-    "signal_strength": 1.5
+    "signal_strength": 1.5,
+    "peak_pnl": 1.3999999999999986
   },
   {
     "market_id": "p2zNEhRSOC",
