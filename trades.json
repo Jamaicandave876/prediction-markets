@@ -597,5 +597,50 @@
     "exit_time": "2026-04-29 21:54 UTC",
     "exit_reason": "target_hit",
     "pnl_pp": 0.0
+  },
+  {
+    "market_id": "ORng08INE8",
+    "question": "Will the US average gas price fall below $4.00 in May 2026?",
+    "direction": "BUY NO",
+    "entry_prob": 32.2,
+    "entry_time": "2026-05-01 15:50 UTC",
+    "drift_score": -34.9,
+    "url": "https://manifold.markets/Drifting/will-the-us-average-gas-price-fall",
+    "stake": 36.5,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
+  },
+  {
+    "market_id": "uIC5sUz6dR",
+    "question": "Will any current Labour MP call for Keir Starmer to stand down after the local elections?",
+    "direction": "BUY YES",
+    "entry_prob": 82.9,
+    "entry_time": "2026-05-01 15:50 UTC",
+    "drift_score": 56.23,
+    "url": "https://manifold.markets/Noit/will-any-current-labour-mp-call-for",
+    "stake": 36.5,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
+  },
+  {
+    "market_id": "IUC29N89gt",
+    "question": "Over 1.5 red cards issued for mouth covering at 2026 FIFA World Cup?",
+    "direction": "BUY NO",
+    "entry_prob": 23.8,
+    "entry_time": "2026-05-01 15:50 UTC",
+    "drift_score": -47.57,
+    "url": "https://manifold.markets/UniversalFC/over-15-red-cards-issued-for-mouth",
+    "stake": 36.5,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]

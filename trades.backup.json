@@ -451,12 +451,12 @@
     "drift_score": -22.76,
     "url": "https://manifold.markets/AlexanderTheGreater/anthropic-introduces-a-individual-s",
     "stake": 39.7,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
-    "peak_pnl": 5.5
+    "status": "closed",
+    "exit_prob": 19.6,
+    "exit_time": "2026-05-01 13:05 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 8.0,
+    "peak_pnl": 8.0
   },
   {
     "market_id": "ytIRCINQ6P",
@@ -533,7 +533,7 @@
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null,
-    "peak_pnl": 1.0
+    "peak_pnl": 2.6999999999999957
   },
   {
     "market_id": "tqZUSphphC",
