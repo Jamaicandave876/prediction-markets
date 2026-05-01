@@ -344,11 +344,11 @@
     "entry_time": "2026-04-24 16:01 UTC",
     "url": "https://manifold.markets/predyx_markets/trump-visits-china-in-may",
     "stake": 20,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 77.1,
+    "exit_time": "2026-05-01 06:10 UTC",
+    "exit_reason": "stopped_out",
+    "pnl_pp": -10.5,
     "baseline_range": 4.0,
     "breakout_move": -5.4,
     "breakout_strength": 1.4,
@@ -390,6 +390,6 @@
     "breakout_move": 7.3,
     "breakout_strength": 2.9,
     "signal_strength": 0.9534776248314197,
-    "peak_pnl": 6.800000000000004
+    "peak_pnl": 7.100000000000001
   }
 ]

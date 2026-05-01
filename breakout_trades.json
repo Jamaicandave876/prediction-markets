@@ -391,5 +391,23 @@
     "breakout_strength": 2.9,
     "signal_strength": 0.9534776248314197,
     "peak_pnl": 7.100000000000001
+  },
+  {
+    "market_id": "s2NLyA0UsZ",
+    "question": "Will the Virginia Redistricting Referendum be certified by June 30th?",
+    "direction": "BUY NO",
+    "entry_prob": 79.8,
+    "entry_time": "2026-05-01 10:19 UTC",
+    "url": "https://manifold.markets/BillClintonBubba/will-the-virginia-redistricting-ref-8cq9IcCCdh",
+    "stake": 20,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "baseline_range": 1.8,
+    "breakout_move": -5.2,
+    "breakout_strength": 2.9,
+    "signal_strength": 0.9657202114034097
   }
 ]
