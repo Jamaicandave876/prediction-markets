@@ -861,5 +861,43 @@
     "liquidation_dir": "NO",
     "impact_score": 1.46,
     "signal_strength": 0.73
+  },
+  {
+    "market_id": "Cu662CORlh",
+    "question": "Red vs. Blue button (Free Mana, resolves N/A)",
+    "direction": "BUY NO",
+    "entry_prob": 69.1,
+    "entry_time": "2026-05-01 02:30 UTC",
+    "url": "https://manifold.markets/vi/red-vs-blue-button-free-mana",
+    "stake": 26.2,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "liquidation_size": 472,
+    "liquidation_impact": 18.0,
+    "liquidation_dir": "YES",
+    "impact_score": 8.49,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "dlydgnEP59",
+    "question": "Will US Average Gas Prices rise or fall 10 cents in one day in May 2026?",
+    "direction": "BUY NO",
+    "entry_prob": 84.2,
+    "entry_time": "2026-05-01 02:30 UTC",
+    "url": "https://manifold.markets/Jack1/will-us-average-gas-prices-rise-or",
+    "stake": 21.5,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "liquidation_size": 750,
+    "liquidation_impact": 10.3,
+    "liquidation_dir": "YES",
+    "impact_score": 7.75,
+    "signal_strength": 1.5
   }
 ]
