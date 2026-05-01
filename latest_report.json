@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-05-01 02:30 UTC",
+  "timestamp": "2026-05-01 06:11 UTC",
   "regime": "adverse",
-  "pnl_7d": -27.1,
-  "total_open": 9,
-  "total_closed": 135,
-  "total_pnl": 41.0,
+  "pnl_7d": -37.6,
+  "total_open": 8,
+  "total_closed": 136,
+  "total_pnl": 30.5,
   "bots": [
     {
       "name": "fade",
@@ -22,13 +22,13 @@
       "name": "breakout",
       "display": "Breakout",
       "grade": "C",
-      "score": 53.0,
+      "score": 51.9,
       "win_rate": 50.0,
-      "total_pnl": 16.2,
-      "open": 4,
-      "closed": 17,
+      "total_pnl": 5.7,
+      "open": 3,
+      "closed": 18,
       "paused": false,
-      "consecutive_losses": 0
+      "consecutive_losses": 1
     },
     {
       "name": "weather_temperature",

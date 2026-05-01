@@ -832,11 +832,11 @@
     "entry_time": "2026-04-30 10:50 UTC",
     "url": "https://manifold.markets/Noit/will-any-current-labour-mp-call-for",
     "stake": 21.6,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 79.8,
+    "exit_time": "2026-05-01 06:10 UTC",
+    "exit_reason": "stopped_out",
+    "pnl_pp": -9.7,
     "liquidation_size": 250,
     "liquidation_impact": 8.9,
     "liquidation_dir": "YES",
@@ -879,7 +879,8 @@
     "liquidation_impact": 18.0,
     "liquidation_dir": "YES",
     "impact_score": 8.49,
-    "signal_strength": 1.5
+    "signal_strength": 1.5,
+    "peak_pnl": 0.09999999999999432
   },
   {
     "market_id": "dlydgnEP59",
@@ -898,6 +899,25 @@
     "liquidation_impact": 10.3,
     "liquidation_dir": "YES",
     "impact_score": 7.75,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "AuLy2n9906",
+    "question": "Florida Redistricting Before 2026 Midterms?",
+    "direction": "BUY NO",
+    "entry_prob": 80.0,
+    "entry_time": "2026-05-01 06:10 UTC",
+    "url": "https://manifold.markets/archvenison/florida-redistricting-before-2026-m",
+    "stake": 22.4,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "liquidation_size": 450,
+    "liquidation_impact": 9.4,
+    "liquidation_dir": "YES",
+    "impact_score": 4.23,
     "signal_strength": 1.5
   }
 ]
