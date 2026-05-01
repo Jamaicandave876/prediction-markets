@@ -784,5 +784,24 @@
     "price_move": 17.0,
     "divergence_score": 10.22,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "p2zNEhRSOC",
+    "question": "Arsenal vs Atletico, Champions League Semi Final Leg 2, May 5th",
+    "direction": "BUY NO",
+    "entry_prob": 56.4,
+    "entry_time": "2026-05-01 10:20 UTC",
+    "url": "https://manifold.markets/Mochi/arsenal-vs-atletico-champions-leagu",
+    "stake": 20,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "YES",
+    "crowd_pct": 65.0,
+    "price_move": -5.3,
+    "divergence_score": 3.41,
+    "signal_strength": 0.68
   }
 ]

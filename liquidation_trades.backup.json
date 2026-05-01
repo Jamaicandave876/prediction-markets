@@ -899,7 +899,8 @@
     "liquidation_impact": 10.3,
     "liquidation_dir": "YES",
     "impact_score": 7.75,
-    "signal_strength": 1.5
+    "signal_strength": 1.5,
+    "peak_pnl": 17.700000000000003
   },
   {
     "market_id": "AuLy2n9906",
@@ -918,6 +919,44 @@
     "liquidation_impact": 9.4,
     "liquidation_dir": "YES",
     "impact_score": 4.23,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "Rqq9yq8gRC",
+    "question": "Will the 47fucb4r8curb4fc8f8r4bfic8r vs. Eliezer debate be posted publicly before June?",
+    "direction": "BUY NO",
+    "entry_prob": 66.3,
+    "entry_time": "2026-05-01 10:20 UTC",
+    "url": "https://manifold.markets/IsaacKing/will-the-47fucb4r8curb4fc8f8r4bfic8",
+    "stake": 27.0,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "liquidation_size": 300,
+    "liquidation_impact": 11.4,
+    "liquidation_dir": "YES",
+    "impact_score": 3.43,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "IC0h90cyUg",
+    "question": "Will a super-injunction relating to Sir Keir Starmer be revealed in 2026?",
+    "direction": "BUY YES",
+    "entry_prob": 29.7,
+    "entry_time": "2026-05-01 10:20 UTC",
+    "url": "https://manifold.markets/Noit/will-a-superinjunction-relating-to-A58CN95p6d",
+    "stake": 25.5,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "liquidation_size": 184,
+    "liquidation_impact": 18.1,
+    "liquidation_dir": "NO",
+    "impact_score": 3.32,
     "signal_strength": 1.5
   }
 ]
