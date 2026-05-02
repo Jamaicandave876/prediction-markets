@@ -1485,5 +1485,24 @@
     "conviction_score": 3.96,
     "signal_strength": 1.32,
     "peak_pnl": 1.5
+  },
+  {
+    "market_id": "lqhq6OQQPp",
+    "question": "Will US average gas price reach $4.690 in May 2026?",
+    "direction": "BUY NO",
+    "entry_prob": 40.0,
+    "entry_time": "2026-05-02 21:34 UTC",
+    "url": "https://manifold.markets/vdb/will-us-average-gas-price-reach-469",
+    "stake": 43.4,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 3,
+    "smart_user_mana": 250,
+    "price_impact": 10.3,
+    "conviction_score": 3.08,
+    "signal_strength": 1.03
   }
 ]

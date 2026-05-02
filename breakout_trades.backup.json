@@ -419,14 +419,15 @@
     "entry_time": "2026-05-02 02:07 UTC",
     "url": "https://manifold.markets/predyx_markets/bitcoin-80k-in-may",
     "stake": 68.0,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 82.6,
+    "exit_time": "2026-05-02 18:48 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 1.6,
     "baseline_range": 3.1,
     "breakout_move": 7.3,
     "breakout_strength": 2.4,
-    "signal_strength": 0.7899961756793977
+    "signal_strength": 0.7899961756793977,
+    "peak_pnl": 1.5999999999999943
   }
 ]

@@ -429,5 +429,23 @@
     "breakout_strength": 2.4,
     "signal_strength": 0.7899961756793977,
     "peak_pnl": 1.5999999999999943
+  },
+  {
+    "market_id": "Cu662CORlh",
+    "question": "Red vs. Blue button (Free Mana, resolves N/A)",
+    "direction": "BUY YES",
+    "entry_prob": 51.0,
+    "entry_time": "2026-05-02 21:34 UTC",
+    "url": "https://manifold.markets/vi/red-vs-blue-button-free-mana",
+    "stake": 50.7,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "baseline_range": 2.8,
+    "breakout_move": 11.3,
+    "breakout_strength": 4.0,
+    "signal_strength": 1.3264146841305509
   }
 ]

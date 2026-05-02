@@ -180,13 +180,13 @@
     },
     "breakout": {
       "mid_prob_entry": 12,
-      "fast_trade": 6,
-      "yes_direction": 10,
+      "fast_trade": 7,
+      "yes_direction": 11,
       "strong_signal": 6,
       "weak_signal": 6,
       "low_prob_entry": 1,
       "no_direction": 5,
-      "high_prob_entry": 2,
+      "high_prob_entry": 3,
       "slow_trade": 2
     },
     "fade": {
@@ -212,21 +212,21 @@
     },
     "sentiment": {
       "low_prob_entry": 6,
-      "fast_trade": 17,
+      "fast_trade": 18,
       "no_direction": 17,
       "weak_signal": 8,
-      "mid_prob_entry": 13,
-      "strong_signal": 14,
+      "mid_prob_entry": 14,
+      "strong_signal": 15,
       "high_prob_entry": 7,
-      "yes_direction": 9
+      "yes_direction": 10
     },
     "hedge": {
       "low_prob_entry": 3,
-      "yes_direction": 5,
-      "strong_signal": 3,
-      "mid_prob_entry": 2,
+      "yes_direction": 6,
+      "strong_signal": 4,
+      "mid_prob_entry": 3,
       "slow_trade": 1,
-      "fast_trade": 1
+      "fast_trade": 2
     },
     "time_decay": {
       "high_prob_entry": 2,
@@ -1085,58 +1085,6 @@
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "sentiment",
-      "market_id": "CIsh2zUqpC",
-      "outcome": "small_loss",
-      "pnl_pp": -1.8,
-      "exit_reason": "stale",
-      "duration_hours": 172.1,
-      "traits": [
-        "high_prob_entry",
-        "slow_trade",
-        "no_direction",
-        "weak_signal"
-      ],
-      "entry_prob": 74.5,
-      "direction": "BUY NO",
-      "timestamp": "2026-04-27 02:09 UTC",
-      "lesson": "Sentiment: small loss via stale. PnL: -1.8pp in 172h."
-    },
-    {
-      "bot": "liquidation",
-      "market_id": "hEtuNluAsd",
-      "outcome": "small_win",
-      "pnl_pp": 0.6,
-      "exit_reason": "stale",
-      "duration_hours": 72.1,
-      "traits": [
-        "high_prob_entry",
-        "no_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 78.9,
-      "direction": "BUY NO",
-      "timestamp": "2026-04-27 02:09 UTC",
-      "lesson": "Liquidation: small win via stale. PnL: +0.6pp in 72h."
-    },
-    {
-      "bot": "liquidation",
-      "market_id": "SlyE6Spn8d",
-      "outcome": "small_win",
-      "pnl_pp": 0.3,
-      "exit_reason": "stale",
-      "duration_hours": 72.1,
-      "traits": [
-        "mid_prob_entry",
-        "yes_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 44.4,
-      "direction": "BUY YES",
-      "timestamp": "2026-04-27 02:09 UTC",
-      "lesson": "Liquidation: small win via stale. PnL: +0.3pp in 72h."
-    },
     {
       "bot": "momentum",
       "market_id": "0hpcgtI0qO",
@@ -2840,6 +2788,59 @@
       "direction": "BUY YES",
       "timestamp": "2026-05-02 18:49 UTC",
       "lesson": "Hedge: small win via trailing_stop. PnL: +0.6pp in 13h."
+    },
+    {
+      "bot": "breakout",
+      "market_id": "hhSC2Q5pAN",
+      "outcome": "small_win",
+      "pnl_pp": 1.6,
+      "exit_reason": "target_hit",
+      "duration_hours": 16.7,
+      "traits": [
+        "high_prob_entry",
+        "fast_trade",
+        "yes_direction"
+      ],
+      "entry_prob": 81.0,
+      "direction": "BUY YES",
+      "timestamp": "2026-05-02 18:48 UTC",
+      "lesson": "Breakout: small win via target_hit. PnL: +1.6pp in 17h."
+    },
+    {
+      "bot": "sentiment",
+      "market_id": "Cu662CORlh",
+      "outcome": "strong_win",
+      "pnl_pp": 16.4,
+      "exit_reason": "target_hit",
+      "duration_hours": 3.1,
+      "traits": [
+        "mid_prob_entry",
+        "fast_trade",
+        "yes_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 65.4,
+      "direction": "BUY YES",
+      "timestamp": "2026-05-02 18:49 UTC",
+      "lesson": "Sentiment: Quick strong win \u2014 this signal pattern works well."
+    },
+    {
+      "bot": "hedge",
+      "market_id": "lqhq6OQQPp",
+      "outcome": "small_win",
+      "pnl_pp": 0.6,
+      "exit_reason": "trailing_stop",
+      "duration_hours": 13.3,
+      "traits": [
+        "mid_prob_entry",
+        "fast_trade",
+        "yes_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 41.0,
+      "direction": "BUY YES",
+      "timestamp": "2026-05-02 18:49 UTC",
+      "lesson": "Hedge: small win via trailing_stop. PnL: +0.6pp in 13h."
     }
   ],
   "regime": "cautious",
@@ -2973,6 +2974,6 @@
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-05-02 18:49 UTC",
-  "generation": 174
+  "last_evolution": "2026-05-02 21:35 UTC",
+  "generation": 175
 }
