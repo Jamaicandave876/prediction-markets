@@ -202,11 +202,13 @@
   ],
   "paused": {
     "mean_reversion": true,
-    "contrarian": true
+    "contrarian": true,
+    "liquidation": true
   },
   "consecutive_losses": {},
   "pause_start": {
     "mean_reversion": "2026-05-01 19:03 UTC",
-    "contrarian": "2026-05-01 19:03 UTC"
+    "contrarian": "2026-05-01 19:03 UTC",
+    "liquidation": "2026-05-02 05:32 UTC"
   }
 }
