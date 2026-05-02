@@ -611,7 +611,8 @@
     "exit_prob": null,
     "exit_time": null,
     "exit_reason": null,
-    "pnl_pp": null
+    "pnl_pp": null,
+    "peak_pnl": 0.8000000000000043
   },
   {
     "market_id": "uIC5sUz6dR",

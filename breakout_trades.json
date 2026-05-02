@@ -390,7 +390,7 @@
     "breakout_move": 7.3,
     "breakout_strength": 2.9,
     "signal_strength": 0.9534776248314197,
-    "peak_pnl": 8.699999999999996
+    "peak_pnl": 9.800000000000004
   },
   {
     "market_id": "s2NLyA0UsZ",
@@ -409,5 +409,23 @@
     "breakout_move": -5.2,
     "breakout_strength": 2.9,
     "signal_strength": 0.9657202114034097
+  },
+  {
+    "market_id": "hhSC2Q5pAN",
+    "question": "Bitcoin $80K in May?",
+    "direction": "BUY YES",
+    "entry_prob": 81.0,
+    "entry_time": "2026-05-02 02:07 UTC",
+    "url": "https://manifold.markets/predyx_markets/bitcoin-80k-in-may",
+    "stake": 68.0,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "baseline_range": 3.1,
+    "breakout_move": 7.3,
+    "breakout_strength": 2.4,
+    "signal_strength": 0.7899961756793977
   }
 ]

@@ -1365,7 +1365,8 @@
     "smart_user_mana": 844,
     "price_impact": 20.0,
     "conviction_score": 20.21,
-    "signal_strength": 1.5
+    "signal_strength": 1.5,
+    "peak_pnl": 3.3000000000000007
   },
   {
     "market_id": "p2zNEhRSOC",
@@ -1404,6 +1405,7 @@
     "smart_user_mana": 698,
     "price_impact": 12.9,
     "conviction_score": 10.8,
-    "signal_strength": 1.5
+    "signal_strength": 1.5,
+    "peak_pnl": 3.6000000000000014
   }
 ]
