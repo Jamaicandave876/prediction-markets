@@ -101,7 +101,7 @@
       "stale": 13,
       "resolved_loss": 1,
       "target_hit": 2,
-      "stopped_out": 10
+      "stopped_out": 11
     },
     "fade": {
       "stopped_out": 4,
@@ -149,10 +149,10 @@
       "weak_signal": 2
     },
     "smart_money": {
-      "mid_prob_entry": 23,
-      "no_direction": 33,
-      "strong_signal": 39,
-      "fast_trade": 30,
+      "mid_prob_entry": 25,
+      "no_direction": 35,
+      "strong_signal": 41,
+      "fast_trade": 32,
       "low_prob_entry": 14,
       "yes_direction": 11,
       "high_prob_entry": 7,
@@ -1084,58 +1084,6 @@
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "momentum",
-      "market_id": "Acy0pR5gd8",
-      "outcome": "strong_win",
-      "pnl_pp": 5.8,
-      "exit_reason": "stale",
-      "duration_hours": 340.1,
-      "traits": [
-        "mid_prob_entry",
-        "slow_trade",
-        "yes_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 63.3,
-      "direction": "BUY YES",
-      "timestamp": "2026-04-26 02:06 UTC",
-      "lesson": "Momentum: Strong signal \u2192 strong win. Keep trusting high-confidence entries."
-    },
-    {
-      "bot": "smart_money",
-      "market_id": "Uzs8PNOANz",
-      "outcome": "strong_win",
-      "pnl_pp": 28.7,
-      "exit_reason": "resolved_win",
-      "duration_hours": 122.7,
-      "traits": [
-        "high_prob_entry",
-        "yes_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 71.3,
-      "direction": "BUY YES",
-      "timestamp": "2026-04-26 02:07 UTC",
-      "lesson": "Smart $: Strong signal \u2192 strong win. Keep trusting high-confidence entries."
-    },
-    {
-      "bot": "liquidation",
-      "market_id": "0R0ZgSsyp0",
-      "outcome": "small_win",
-      "pnl_pp": 2.4,
-      "exit_reason": "stale",
-      "duration_hours": 74.5,
-      "traits": [
-        "low_prob_entry",
-        "yes_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 29.6,
-      "direction": "BUY YES",
-      "timestamp": "2026-04-26 02:07 UTC",
-      "lesson": "Liquidation: small win via stale. PnL: +2.4pp in 75h."
-    },
     {
       "bot": "liquidation",
       "market_id": "RcNs5ch6qU",
@@ -2833,6 +2781,59 @@
       "direction": "BUY NO",
       "timestamp": "2026-05-02 05:32 UTC",
       "lesson": "Liquidation: big loss via stopped_out. PnL: -16.2pp in 27h."
+    },
+    {
+      "bot": "smart_money",
+      "market_id": "S8g9zQdL9g",
+      "outcome": "strong_win",
+      "pnl_pp": 15.0,
+      "exit_reason": "target_hit",
+      "duration_hours": 19.2,
+      "traits": [
+        "mid_prob_entry",
+        "fast_trade",
+        "no_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 31.0,
+      "direction": "BUY NO",
+      "timestamp": "2026-05-02 05:31 UTC",
+      "lesson": "Smart $: Quick strong win \u2014 this signal pattern works well."
+    },
+    {
+      "bot": "smart_money",
+      "market_id": "ysuy5Pdnuu",
+      "outcome": "strong_win",
+      "pnl_pp": 15.9,
+      "exit_reason": "target_hit",
+      "duration_hours": 13.7,
+      "traits": [
+        "mid_prob_entry",
+        "fast_trade",
+        "no_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 38.7,
+      "direction": "BUY NO",
+      "timestamp": "2026-05-02 05:31 UTC",
+      "lesson": "Smart $: Quick strong win \u2014 this signal pattern works well."
+    },
+    {
+      "bot": "liquidation",
+      "market_id": "Cu662CORlh",
+      "outcome": "big_loss",
+      "pnl_pp": -16.2,
+      "exit_reason": "stopped_out",
+      "duration_hours": 27.0,
+      "traits": [
+        "mid_prob_entry",
+        "no_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 69.1,
+      "direction": "BUY NO",
+      "timestamp": "2026-05-02 05:32 UTC",
+      "lesson": "Liquidation: big loss via stopped_out. PnL: -16.2pp in 27h."
     }
   ],
   "regime": "cautious",
@@ -2966,6 +2967,6 @@
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-05-02 05:32 UTC",
-  "generation": 169
+  "last_evolution": "2026-05-02 07:24 UTC",
+  "generation": 170
 }
