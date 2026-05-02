@@ -1444,6 +1444,26 @@
     "smart_user_mana": 4607,
     "price_impact": 84.3,
     "conviction_score": 310.68,
+    "signal_strength": 1.5,
+    "peak_pnl": 29.6
+  },
+  {
+    "market_id": "SQSdNnylEu",
+    "question": "S&P500 closes at 7,500.00 before End Of May 2026?",
+    "direction": "BUY YES",
+    "entry_prob": 39.6,
+    "entry_time": "2026-05-02 09:56 UTC",
+    "url": "https://manifold.markets/Jack1/sp500-closes-at-750000-before-end-o",
+    "stake": 41.1,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 5,
+    "smart_user_mana": 222,
+    "price_impact": 15.6,
+    "conviction_score": 6.94,
     "signal_strength": 1.5
   }
 ]
