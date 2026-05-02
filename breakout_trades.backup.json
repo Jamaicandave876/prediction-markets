@@ -408,7 +408,8 @@
     "baseline_range": 1.8,
     "breakout_move": -5.2,
     "breakout_strength": 2.9,
-    "signal_strength": 0.9657202114034097
+    "signal_strength": 0.9657202114034097,
+    "peak_pnl": 0.09999999999999432
   },
   {
     "market_id": "hhSC2Q5pAN",
