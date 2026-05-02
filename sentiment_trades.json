@@ -834,15 +834,16 @@
     "entry_time": "2026-05-02 15:40 UTC",
     "url": "https://manifold.markets/vi/red-vs-blue-button-free-mana",
     "stake": 54.3,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 81.8,
+    "exit_time": "2026-05-02 18:49 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 16.4,
     "crowd_dir": "NO",
     "crowd_pct": 60.0,
     "price_move": 10.4,
     "divergence_score": 6.27,
-    "signal_strength": 1.25
+    "signal_strength": 1.25,
+    "peak_pnl": 16.39999999999999
   }
 ]
