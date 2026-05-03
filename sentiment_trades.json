@@ -864,5 +864,24 @@
     "price_move": 19.0,
     "divergence_score": 15.23,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "zASdLnIEzR",
+    "question": "Bitcoin $84K in May?",
+    "direction": "BUY YES",
+    "entry_prob": 53.5,
+    "entry_time": "2026-05-03 15:41 UTC",
+    "url": "https://manifold.markets/predyx_markets/bitcoin-84k-in-may",
+    "stake": 30.1,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "NO",
+    "crowd_pct": 65.0,
+    "price_move": 6.9,
+    "divergence_score": 4.48,
+    "signal_strength": 0.9
   }
 ]
