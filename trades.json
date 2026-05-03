@@ -528,11 +528,11 @@
     "drift_score": -16.84,
     "url": "https://manifold.markets/StevetptC8/will-the-winner-of-the-2026-kentuck",
     "stake": 60.8,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 0.0,
+    "exit_time": "2026-05-03 02:12 UTC",
+    "exit_reason": "resolved_win",
+    "pnl_pp": 37.8,
     "peak_pnl": 2.6999999999999957
   },
   {

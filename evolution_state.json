@@ -169,25 +169,25 @@
       "weak_signal": 6
     },
     "momentum": {
-      "mid_prob_entry": 19,
+      "mid_prob_entry": 20,
       "yes_direction": 16,
-      "strong_signal": 30,
+      "strong_signal": 31,
       "high_prob_entry": 7,
       "fast_trade": 11,
-      "no_direction": 14,
+      "no_direction": 15,
       "low_prob_entry": 4,
       "slow_trade": 12
     },
     "breakout": {
       "mid_prob_entry": 12,
       "fast_trade": 7,
-      "yes_direction": 11,
-      "strong_signal": 6,
+      "yes_direction": 12,
+      "strong_signal": 7,
       "weak_signal": 6,
-      "low_prob_entry": 1,
+      "low_prob_entry": 2,
       "no_direction": 5,
       "high_prob_entry": 3,
-      "slow_trade": 2
+      "slow_trade": 3
     },
     "fade": {
       "mid_prob_entry": 5,
@@ -1085,42 +1085,6 @@
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "momentum",
-      "market_id": "0hpcgtI0qO",
-      "outcome": "strong_win",
-      "pnl_pp": 7.8,
-      "exit_reason": "stale",
-      "duration_hours": 340.1,
-      "traits": [
-        "mid_prob_entry",
-        "slow_trade",
-        "no_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 32.3,
-      "direction": "BUY NO",
-      "timestamp": "2026-04-27 02:08 UTC",
-      "lesson": "Momentum: Strong signal \u2192 strong win. Keep trusting high-confidence entries."
-    },
-    {
-      "bot": "momentum",
-      "market_id": "uPhALPEPOZ",
-      "outcome": "small_win",
-      "pnl_pp": 2.9,
-      "exit_reason": "stale",
-      "duration_hours": 340.1,
-      "traits": [
-        "mid_prob_entry",
-        "slow_trade",
-        "yes_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 58.0,
-      "direction": "BUY YES",
-      "timestamp": "2026-04-27 02:08 UTC",
-      "lesson": "Momentum: small win via stale. PnL: +2.9pp in 340h."
-    },
     {
       "bot": "momentum",
       "market_id": "SRyCqtAp2s",
@@ -2841,6 +2805,41 @@
       "direction": "BUY YES",
       "timestamp": "2026-05-02 18:49 UTC",
       "lesson": "Hedge: small win via trailing_stop. PnL: +0.6pp in 13h."
+    },
+    {
+      "bot": "momentum",
+      "market_id": "8Pzhup6hqh",
+      "outcome": "strong_win",
+      "pnl_pp": 37.8,
+      "exit_reason": "resolved_win",
+      "duration_hours": 132.8,
+      "traits": [
+        "mid_prob_entry",
+        "no_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 37.8,
+      "direction": "BUY NO",
+      "timestamp": "2026-05-03 02:12 UTC",
+      "lesson": "Momentum: Strong signal \u2192 strong win. Keep trusting high-confidence entries."
+    },
+    {
+      "bot": "breakout",
+      "market_id": "CZht20I0Rt",
+      "outcome": "small_win",
+      "pnl_pp": 3.0,
+      "exit_reason": "stale",
+      "duration_hours": 218.7,
+      "traits": [
+        "low_prob_entry",
+        "slow_trade",
+        "yes_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 27.0,
+      "direction": "BUY YES",
+      "timestamp": "2026-05-03 02:13 UTC",
+      "lesson": "Breakout: small win via stale. PnL: +3.0pp in 219h."
     }
   ],
   "regime": "cautious",
@@ -2958,7 +2957,7 @@
     "close_gravity": 0.2,
     "fresh_sniper": 0.2,
     "stability": 0.1,
-    "breakout": 0.61,
+    "breakout": 0.72,
     "calibration": 0.12,
     "reversal": 0.2,
     "smart_money": 0.57,
@@ -2974,6 +2973,6 @@
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-05-02 21:35 UTC",
-  "generation": 175
+  "last_evolution": "2026-05-03 02:14 UTC",
+  "generation": 176
 }
