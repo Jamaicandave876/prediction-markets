@@ -1506,7 +1506,7 @@
     "price_impact": 10.3,
     "conviction_score": 3.08,
     "signal_strength": 1.03,
-    "peak_pnl": 5.5
+    "peak_pnl": 14.0
   },
   {
     "market_id": "0AZZqcUlgt",
@@ -1554,15 +1554,34 @@
     "entry_time": "2026-05-03 18:51 UTC",
     "url": "https://manifold.markets/Rodeo/will-the-experience-machines-substa-PqzP9sNId2",
     "stake": 87.8,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 81.1,
+    "exit_time": "2026-05-03 21:36 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 0.0,
     "smart_user_bets": 4,
     "smart_user_mana": 1000,
     "price_impact": 31.1,
     "conviction_score": 49.83,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "APzUZNUS8I",
+    "question": "Will the WTI Crude Oil Spot Price be above $100 on May 11, 2026?",
+    "direction": "BUY YES",
+    "entry_prob": 62.3,
+    "entry_time": "2026-05-03 21:36 UTC",
+    "url": "https://manifold.markets/ShaneBo/will-the-wti-crude-oil-spot-price-b-uQc5l8UgUI",
+    "stake": 46.3,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 7,
+    "smart_user_mana": 334,
+    "price_impact": 3.6,
+    "conviction_score": 3.37,
+    "signal_strength": 1.12
   }
 ]
