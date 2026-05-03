@@ -150,10 +150,10 @@
     },
     "smart_money": {
       "mid_prob_entry": 27,
-      "no_direction": 35,
-      "strong_signal": 45,
+      "no_direction": 36,
+      "strong_signal": 46,
       "fast_trade": 36,
-      "low_prob_entry": 14,
+      "low_prob_entry": 15,
       "yes_direction": 15,
       "high_prob_entry": 9,
       "slow_trade": 3
@@ -1085,22 +1085,6 @@
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "sentiment",
-      "market_id": "S9lE0syPnd",
-      "outcome": "big_loss",
-      "pnl_pp": -23.2,
-      "exit_reason": "stopped_out",
-      "duration_hours": 118.3,
-      "traits": [
-        "mid_prob_entry",
-        "yes_direction"
-      ],
-      "entry_prob": 54.7,
-      "direction": "BUY YES",
-      "timestamp": "2026-04-28 21:52 UTC",
-      "lesson": "Sentiment: big loss via stopped_out. PnL: -23.2pp in 118h."
-    },
     {
       "bot": "liquidation",
       "market_id": "NqutNcczys",
@@ -2835,6 +2819,23 @@
       "direction": "BUY YES",
       "timestamp": "2026-05-03 12:56 UTC",
       "lesson": "Liquidation: small loss via stale. PnL: +0.0pp in 51h."
+    },
+    {
+      "bot": "smart_money",
+      "market_id": "6puUnhps8E",
+      "outcome": "strong_win",
+      "pnl_pp": 5.4,
+      "exit_reason": "target_hit",
+      "duration_hours": 40.7,
+      "traits": [
+        "low_prob_entry",
+        "no_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 28.0,
+      "direction": "BUY NO",
+      "timestamp": "2026-05-03 18:51 UTC",
+      "lesson": "Smart $: Strong signal \u2192 strong win. Keep trusting high-confidence entries."
     }
   ],
   "regime": "cautious",
@@ -2955,7 +2956,7 @@
     "breakout": 0.72,
     "calibration": 0.12,
     "reversal": 0.2,
-    "smart_money": 0.47,
+    "smart_money": 0.6,
     "time_decay": 0.23,
     "sentiment": 0.33,
     "accumulation": 0.1,
@@ -2968,6 +2969,6 @@
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-05-03 15:42 UTC",
-  "generation": 181
+  "last_evolution": "2026-05-03 18:51 UTC",
+  "generation": 182
 }
