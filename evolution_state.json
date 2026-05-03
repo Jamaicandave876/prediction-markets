@@ -78,7 +78,7 @@
       "stale": 6
     },
     "smart_money": {
-      "target_hit": 22,
+      "target_hit": 23,
       "stopped_out": 9,
       "trailing_stop": 6,
       "stale": 11
@@ -163,31 +163,31 @@
       "fast_trade": 6,
       "yes_direction": 20,
       "mid_prob_entry": 20,
-      "no_direction": 12,
-      "strong_signal": 17,
-      "high_prob_entry": 6,
+      "no_direction": 13,
+      "strong_signal": 18,
+      "high_prob_entry": 7,
       "weak_signal": 6
     },
     "momentum": {
-      "mid_prob_entry": 20,
+      "mid_prob_entry": 21,
       "yes_direction": 16,
-      "strong_signal": 31,
+      "strong_signal": 32,
       "high_prob_entry": 7,
       "fast_trade": 11,
-      "no_direction": 15,
+      "no_direction": 16,
       "low_prob_entry": 4,
       "slow_trade": 12
     },
     "breakout": {
       "mid_prob_entry": 12,
       "fast_trade": 7,
-      "yes_direction": 12,
-      "strong_signal": 7,
+      "yes_direction": 13,
+      "strong_signal": 8,
       "weak_signal": 6,
-      "low_prob_entry": 2,
+      "low_prob_entry": 3,
       "no_direction": 5,
       "high_prob_entry": 3,
-      "slow_trade": 3
+      "slow_trade": 4
     },
     "fade": {
       "mid_prob_entry": 5,
@@ -1085,76 +1085,6 @@
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "momentum",
-      "market_id": "SRyCqtAp2s",
-      "outcome": "big_loss",
-      "pnl_pp": -3.1,
-      "exit_reason": "stale",
-      "duration_hours": 340.1,
-      "traits": [
-        "mid_prob_entry",
-        "slow_trade",
-        "yes_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 58.3,
-      "direction": "BUY YES",
-      "timestamp": "2026-04-27 02:08 UTC",
-      "lesson": "Momentum: Held too long with no resolution. Consider shorter max_days."
-    },
-    {
-      "bot": "sentiment",
-      "market_id": "CIsh2zUqpC",
-      "outcome": "small_loss",
-      "pnl_pp": -1.8,
-      "exit_reason": "stale",
-      "duration_hours": 172.1,
-      "traits": [
-        "high_prob_entry",
-        "slow_trade",
-        "no_direction",
-        "weak_signal"
-      ],
-      "entry_prob": 74.5,
-      "direction": "BUY NO",
-      "timestamp": "2026-04-27 02:09 UTC",
-      "lesson": "Sentiment: small loss via stale. PnL: -1.8pp in 172h."
-    },
-    {
-      "bot": "liquidation",
-      "market_id": "hEtuNluAsd",
-      "outcome": "small_win",
-      "pnl_pp": 0.6,
-      "exit_reason": "stale",
-      "duration_hours": 72.1,
-      "traits": [
-        "high_prob_entry",
-        "no_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 78.9,
-      "direction": "BUY NO",
-      "timestamp": "2026-04-27 02:09 UTC",
-      "lesson": "Liquidation: small win via stale. PnL: +0.6pp in 72h."
-    },
-    {
-      "bot": "liquidation",
-      "market_id": "SlyE6Spn8d",
-      "outcome": "small_win",
-      "pnl_pp": 0.3,
-      "exit_reason": "stale",
-      "duration_hours": 72.1,
-      "traits": [
-        "mid_prob_entry",
-        "yes_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 44.4,
-      "direction": "BUY YES",
-      "timestamp": "2026-04-27 02:09 UTC",
-      "lesson": "Liquidation: small win via stale. PnL: +0.3pp in 72h."
-    },
     {
       "bot": "momentum",
       "market_id": "RcNs5ch6qU",
@@ -2840,6 +2770,76 @@
       "direction": "BUY YES",
       "timestamp": "2026-05-03 02:13 UTC",
       "lesson": "Breakout: small win via stale. PnL: +3.0pp in 219h."
+    },
+    {
+      "bot": "momentum",
+      "market_id": "8Pzhup6hqh",
+      "outcome": "strong_win",
+      "pnl_pp": 37.8,
+      "exit_reason": "resolved_win",
+      "duration_hours": 132.8,
+      "traits": [
+        "mid_prob_entry",
+        "no_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 37.8,
+      "direction": "BUY NO",
+      "timestamp": "2026-05-03 02:12 UTC",
+      "lesson": "Momentum: Strong signal \u2192 strong win. Keep trusting high-confidence entries."
+    },
+    {
+      "bot": "breakout",
+      "market_id": "CZht20I0Rt",
+      "outcome": "small_win",
+      "pnl_pp": 3.0,
+      "exit_reason": "stale",
+      "duration_hours": 218.7,
+      "traits": [
+        "low_prob_entry",
+        "slow_trade",
+        "yes_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 27.0,
+      "direction": "BUY YES",
+      "timestamp": "2026-05-03 02:13 UTC",
+      "lesson": "Breakout: small win via stale. PnL: +3.0pp in 219h."
+    },
+    {
+      "bot": "smart_money",
+      "market_id": "0AZZqcUlgt",
+      "outcome": "small_loss",
+      "pnl_pp": -0.3,
+      "exit_reason": "target_hit",
+      "duration_hours": 3.7,
+      "traits": [
+        "high_prob_entry",
+        "fast_trade",
+        "yes_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 81.2,
+      "direction": "BUY YES",
+      "timestamp": "2026-05-03 05:53 UTC",
+      "lesson": "Smart $: small loss via target_hit. PnL: -0.3pp in 4h."
+    },
+    {
+      "bot": "liquidation",
+      "market_id": "dlydgnEP59",
+      "outcome": "strong_win",
+      "pnl_pp": 30.0,
+      "exit_reason": "stale",
+      "duration_hours": 51.4,
+      "traits": [
+        "high_prob_entry",
+        "no_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 84.2,
+      "direction": "BUY NO",
+      "timestamp": "2026-05-03 05:53 UTC",
+      "lesson": "Liquidation: Strong signal \u2192 strong win. Keep trusting high-confidence entries."
     }
   ],
   "regime": "cautious",
@@ -2960,19 +2960,19 @@
     "breakout": 0.72,
     "calibration": 0.12,
     "reversal": 0.2,
-    "smart_money": 0.57,
+    "smart_money": 0.52,
     "time_decay": 0.23,
     "sentiment": 0.41,
     "accumulation": 0.1,
     "underdog": 0.1,
     "late_mover": 0.2,
     "hedge": 0.4,
-    "liquidation": 0.31,
+    "liquidation": 0.53,
     "weather_temperature": 0.5,
     "weather_precipitation": 0.5,
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-05-03 02:14 UTC",
-  "generation": 176
+  "last_evolution": "2026-05-03 05:53 UTC",
+  "generation": 177
 }

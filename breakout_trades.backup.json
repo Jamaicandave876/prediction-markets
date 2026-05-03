@@ -325,11 +325,11 @@
     "entry_time": "2026-04-23 23:31 UTC",
     "url": "https://manifold.markets/WilliamKiely/will-the-us-unemployment-rate-be-64",
     "stake": 55.6,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 30.0,
+    "exit_time": "2026-05-03 02:13 UTC",
+    "exit_reason": "stale",
+    "pnl_pp": 3.0,
     "baseline_range": 0.0,
     "breakout_move": 7.2,
     "breakout_strength": 7.2,
@@ -446,6 +446,7 @@
     "baseline_range": 2.8,
     "breakout_move": 11.3,
     "breakout_strength": 4.0,
-    "signal_strength": 1.3264146841305509
+    "signal_strength": 1.3264146841305509,
+    "peak_pnl": 13.200000000000003
   }
 ]

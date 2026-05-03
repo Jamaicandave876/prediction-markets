@@ -216,17 +216,22 @@
       "old": 4.4,
       "new": 4.1,
       "reason": "System WR 90% > 65% \u2014 loosen signals"
+    },
+    {
+      "param": "MIN_DRIFT_SCORE",
+      "old": 4.1,
+      "new": 3.8,
+      "reason": "System WR 80% > 65% \u2014 loosen signals"
     }
   ],
   "paused": {
     "mean_reversion": true,
     "contrarian": true,
-    "liquidation": true
+    "liquidation": false
   },
   "consecutive_losses": {},
   "pause_start": {
     "mean_reversion": "2026-05-01 19:03 UTC",
-    "contrarian": "2026-05-01 19:03 UTC",
-    "liquidation": "2026-05-02 05:32 UTC"
+    "contrarian": "2026-05-01 19:03 UTC"
   }
 }

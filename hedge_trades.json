@@ -211,7 +211,8 @@
     "related_prob": 75.0,
     "word_overlap": 100.0,
     "mispricing_pp": 59.0,
-    "signal_strength": 1.5
+    "signal_strength": 1.5,
+    "peak_pnl": 0.3999999999999986
   },
   {
     "market_id": "ysuy5Pdnuu",
@@ -230,7 +231,8 @@
     "related_prob": 75.0,
     "word_overlap": 100.0,
     "mispricing_pp": 53.2,
-    "signal_strength": 1.5
+    "signal_strength": 1.5,
+    "peak_pnl": 0.5999999999999979
   },
   {
     "market_id": "IZc29NLhzS",
@@ -249,6 +251,7 @@
     "related_prob": 75.0,
     "word_overlap": 100.0,
     "mispricing_pp": 45.4,
-    "signal_strength": 1.5
+    "signal_strength": 1.5,
+    "peak_pnl": 0.3999999999999986
   }
 ]
