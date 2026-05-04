@@ -78,7 +78,7 @@
       "stale": 6
     },
     "smart_money": {
-      "target_hit": 25,
+      "target_hit": 26,
       "stopped_out": 11,
       "trailing_stop": 6,
       "stale": 13
@@ -114,7 +114,7 @@
     "hedge": {
       "trailing_stop": 2,
       "stale": 5,
-      "stopped_out": 2
+      "stopped_out": 4
     },
     "mean_reversion": {
       "stale": 5
@@ -128,7 +128,7 @@
       "stale": 2
     },
     "calibration": {
-      "stale": 8
+      "stale": 9
     },
     "underdog": {
       "stopped_out": 2
@@ -150,12 +150,12 @@
       "weak_signal": 2
     },
     "smart_money": {
-      "mid_prob_entry": 30,
+      "mid_prob_entry": 31,
       "no_direction": 39,
-      "strong_signal": 50,
-      "fast_trade": 37,
+      "strong_signal": 51,
+      "fast_trade": 38,
       "low_prob_entry": 16,
-      "yes_direction": 16,
+      "yes_direction": 17,
       "high_prob_entry": 9,
       "slow_trade": 3
     },
@@ -1086,92 +1086,6 @@
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "calibration",
-      "market_id": "Jga7PHMzfZ",
-      "outcome": "small_loss",
-      "pnl_pp": 0.0,
-      "exit_reason": "stale",
-      "duration_hours": 361.8,
-      "traits": [
-        "low_prob_entry",
-        "slow_trade",
-        "yes_direction",
-        "weak_signal"
-      ],
-      "entry_prob": 11.9,
-      "direction": "BUY YES",
-      "timestamp": "2026-04-29 08:07 UTC",
-      "lesson": "Calibration: small loss via stale. PnL: +0.0pp in 362h."
-    },
-    {
-      "bot": "sentiment",
-      "market_id": "CZht20I0Rt",
-      "outcome": "small_win",
-      "pnl_pp": 0.2,
-      "exit_reason": "stale",
-      "duration_hours": 128.6,
-      "traits": [
-        "low_prob_entry",
-        "yes_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 27.0,
-      "direction": "BUY YES",
-      "timestamp": "2026-04-29 08:07 UTC",
-      "lesson": "Sentiment: small win via stale. PnL: +0.2pp in 129h."
-    },
-    {
-      "bot": "sentiment",
-      "market_id": "gAy65tNIdz",
-      "outcome": "small_loss",
-      "pnl_pp": -1.2,
-      "exit_reason": "stale",
-      "duration_hours": 115.0,
-      "traits": [
-        "low_prob_entry",
-        "yes_direction"
-      ],
-      "entry_prob": 15.7,
-      "direction": "BUY YES",
-      "timestamp": "2026-04-29 08:07 UTC",
-      "lesson": "Sentiment: small loss via stale. PnL: -1.2pp in 115h."
-    },
-    {
-      "bot": "liquidation",
-      "market_id": "UzPpQpQl98",
-      "outcome": "small_win",
-      "pnl_pp": 2.3,
-      "exit_reason": "stale",
-      "duration_hours": 61.4,
-      "traits": [
-        "high_prob_entry",
-        "no_direction",
-        "weak_signal"
-      ],
-      "entry_prob": 80.0,
-      "direction": "BUY NO",
-      "timestamp": "2026-04-29 08:07 UTC",
-      "lesson": "Liquidation: small win via stale. PnL: +2.3pp in 61h."
-    },
-    {
-      "bot": "liquidation",
-      "market_id": "QUOQIUPuAQ",
-      "outcome": "big_loss",
-      "pnl_pp": -22.9,
-      "exit_reason": "stopped_out",
-      "duration_hours": 18.0,
-      "traits": [
-        "mid_prob_entry",
-        "fast_trade",
-        "no_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 52.1,
-      "direction": "BUY NO",
-      "timestamp": "2026-04-29 10:50 UTC",
-      "lesson": "Liquidation: big loss via stopped_out. PnL: -22.9pp in 18h."
-    },
     {
       "bot": "fade",
       "market_id": "QUOQIUPuAQ",
@@ -2834,6 +2748,94 @@
       "direction": "BUY YES",
       "timestamp": "2026-05-04 05:59 UTC",
       "lesson": "Hedge: big loss via stopped_out. PnL: -6.2pp in 44h."
+    },
+    {
+      "bot": "calibration",
+      "market_id": "59IZncOtNL",
+      "outcome": "small_loss",
+      "pnl_pp": -0.2,
+      "exit_reason": "stale",
+      "duration_hours": 337.1,
+      "traits": [
+        "low_prob_entry",
+        "slow_trade",
+        "yes_direction",
+        "weak_signal"
+      ],
+      "entry_prob": 7.7,
+      "direction": "BUY YES",
+      "timestamp": "2026-05-04 08:32 UTC",
+      "lesson": "Calibration: small loss via stale. PnL: -0.2pp in 337h."
+    },
+    {
+      "bot": "smart_money",
+      "market_id": "APzUZNUS8I",
+      "outcome": "small_win",
+      "pnl_pp": 1.7,
+      "exit_reason": "trailing_stop",
+      "duration_hours": 8.4,
+      "traits": [
+        "mid_prob_entry",
+        "fast_trade",
+        "yes_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 62.3,
+      "direction": "BUY YES",
+      "timestamp": "2026-05-04 05:59 UTC",
+      "lesson": "Smart $: small win via trailing_stop. PnL: +1.7pp in 8h."
+    },
+    {
+      "bot": "smart_money",
+      "market_id": "9PZUh08RA8",
+      "outcome": "small_loss",
+      "pnl_pp": -1.4,
+      "exit_reason": "target_hit",
+      "duration_hours": 2.5,
+      "traits": [
+        "high_prob_entry",
+        "fast_trade",
+        "yes_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 76.5,
+      "direction": "BUY YES",
+      "timestamp": "2026-05-04 08:32 UTC",
+      "lesson": "Smart $: small loss via target_hit. PnL: -1.4pp in 3h."
+    },
+    {
+      "bot": "hedge",
+      "market_id": "ysuy5Pdnuu",
+      "outcome": "big_loss",
+      "pnl_pp": -4.8,
+      "exit_reason": "stopped_out",
+      "duration_hours": 44.0,
+      "traits": [
+        "low_prob_entry",
+        "yes_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 21.8,
+      "direction": "BUY YES",
+      "timestamp": "2026-05-04 05:59 UTC",
+      "lesson": "Hedge: big loss via stopped_out. PnL: -4.8pp in 44h."
+    },
+    {
+      "bot": "hedge",
+      "market_id": "IZc29NLhzS",
+      "outcome": "big_loss",
+      "pnl_pp": -6.2,
+      "exit_reason": "stopped_out",
+      "duration_hours": 44.0,
+      "traits": [
+        "low_prob_entry",
+        "yes_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 29.6,
+      "direction": "BUY YES",
+      "timestamp": "2026-05-04 05:59 UTC",
+      "lesson": "Hedge: big loss via stopped_out. PnL: -6.2pp in 44h."
     }
   ],
   "regime": "cautious",
@@ -2952,9 +2954,9 @@
     "fresh_sniper": 0.2,
     "stability": 0.1,
     "breakout": 0.72,
-    "calibration": 0.12,
+    "calibration": 0.1,
     "reversal": 0.2,
-    "smart_money": 0.56,
+    "smart_money": 0.52,
     "time_decay": 0.23,
     "sentiment": 0.33,
     "accumulation": 0.1,
@@ -2967,6 +2969,6 @@
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-05-04 05:59 UTC",
-  "generation": 185
+  "last_evolution": "2026-05-04 08:32 UTC",
+  "generation": 186
 }
