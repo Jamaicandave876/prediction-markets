@@ -997,5 +997,43 @@
     "impact_score": 2.58,
     "signal_strength": 1.29,
     "peak_pnl": 5.0
+  },
+  {
+    "market_id": "ysuy5Pdnuu",
+    "question": "Bitcoin $67K in May?",
+    "direction": "BUY YES",
+    "entry_prob": 17.0,
+    "entry_time": "2026-05-04 05:59 UTC",
+    "url": "https://manifold.markets/predyx_markets/bitcoin-67k-in-may",
+    "stake": 20,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "liquidation_size": 345,
+    "liquidation_impact": 5.4,
+    "liquidation_dir": "NO",
+    "impact_score": 1.85,
+    "signal_strength": 0.92
+  },
+  {
+    "market_id": "IZc29NLhzS",
+    "question": "Bitcoin $69K in May?",
+    "direction": "BUY YES",
+    "entry_prob": 23.4,
+    "entry_time": "2026-05-04 05:59 UTC",
+    "url": "https://manifold.markets/predyx_markets/bitcoin-69k-in-may",
+    "stake": 20,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "liquidation_size": 279,
+    "liquidation_impact": 6.5,
+    "liquidation_dir": "NO",
+    "impact_score": 1.82,
+    "signal_strength": 0.91
   }
 ]

@@ -644,5 +644,20 @@
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null
+  },
+  {
+    "market_id": "nR3DkyivzF",
+    "question": "Will \"How Go Players Disempower Themselves to AI\" make the top fifty posts in LessWrong's 2026 Annual Review?",
+    "direction": "BUY YES",
+    "entry_prob": 38.0,
+    "entry_time": "2026-05-04 05:58 UTC",
+    "drift_score": 35.33,
+    "url": "https://manifold.markets/LessWrong/will-how-go-players-disempower-them",
+    "stake": 27.8,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]
