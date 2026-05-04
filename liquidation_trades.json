@@ -1015,7 +1015,8 @@
     "liquidation_impact": 5.4,
     "liquidation_dir": "NO",
     "impact_score": 1.85,
-    "signal_strength": 0.92
+    "signal_strength": 0.92,
+    "peak_pnl": 1.8999999999999986
   },
   {
     "market_id": "IZc29NLhzS",
@@ -1034,6 +1035,26 @@
     "liquidation_impact": 6.5,
     "liquidation_dir": "NO",
     "impact_score": 1.82,
-    "signal_strength": 0.91
+    "signal_strength": 0.91,
+    "peak_pnl": 3.0
+  },
+  {
+    "market_id": "9PZUh08RA8",
+    "question": "Bitcoin $82K in May?",
+    "direction": "BUY YES",
+    "entry_prob": 66.3,
+    "entry_time": "2026-05-04 11:01 UTC",
+    "url": "https://manifold.markets/predyx_markets/bitcoin-82k-in-may",
+    "stake": 25.0,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "liquidation_size": 156,
+    "liquidation_impact": 8.6,
+    "liquidation_dir": "NO",
+    "impact_score": 1.35,
+    "signal_strength": 0.67
   }
 ]

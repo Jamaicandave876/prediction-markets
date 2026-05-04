@@ -884,5 +884,24 @@
     "divergence_score": 4.48,
     "signal_strength": 0.9,
     "peak_pnl": 4.600000000000001
+  },
+  {
+    "market_id": "0u0LdllyhO",
+    "question": "Will I stay in masters this season?",
+    "direction": "BUY NO",
+    "entry_prob": 73.9,
+    "entry_time": "2026-05-04 08:32 UTC",
+    "url": "https://manifold.markets/Jack1/will-i-stay-in-masters-this-season",
+    "stake": 20,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "YES",
+    "crowd_pct": 60.0,
+    "price_move": -6.2,
+    "divergence_score": 3.74,
+    "signal_strength": 0.75
   }
 ]

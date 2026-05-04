@@ -873,11 +873,11 @@
     "entry_time": "2026-05-03 15:41 UTC",
     "url": "https://manifold.markets/predyx_markets/bitcoin-84k-in-may",
     "stake": 30.1,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 53.0,
+    "exit_time": "2026-05-04 11:01 UTC",
+    "exit_reason": "trailing_stop",
+    "pnl_pp": -0.5,
     "crowd_dir": "NO",
     "crowd_pct": 65.0,
     "price_move": 6.9,
@@ -902,6 +902,7 @@
     "crowd_pct": 60.0,
     "price_move": -6.2,
     "divergence_score": 3.74,
-    "signal_strength": 0.75
+    "signal_strength": 0.75,
+    "peak_pnl": 9.0
   }
 ]
