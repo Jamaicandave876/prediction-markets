@@ -607,11 +607,11 @@
     "drift_score": -34.9,
     "url": "https://manifold.markets/Drifting/will-the-us-average-gas-price-fall",
     "stake": 36.5,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 40.7,
+    "exit_time": "2026-05-04 02:11 UTC",
+    "exit_reason": "reversal",
+    "pnl_pp": -8.5,
     "peak_pnl": 3.1000000000000014
   },
   {
