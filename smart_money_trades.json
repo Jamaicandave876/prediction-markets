@@ -1622,5 +1622,43 @@
     "price_impact": 14.1,
     "conviction_score": 10.11,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "lOdA5COORg",
+    "question": "Will a Muslim Majority Country Lose Its Majority Before 2040?",
+    "direction": "BUY YES",
+    "entry_prob": 59.0,
+    "entry_time": "2026-05-04 13:29 UTC",
+    "url": "https://manifold.markets/TheUserU2/will-a-muslim-majority-country-lose",
+    "stake": 51.2,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 9,
+    "smart_user_mana": 320,
+    "price_impact": 9.1,
+    "conviction_score": 10.46,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "ORng08INE8",
+    "question": "Will the US average gas price fall below $4.00 in May 2026?",
+    "direction": "BUY NO",
+    "entry_prob": 24.2,
+    "entry_time": "2026-05-04 13:29 UTC",
+    "url": "https://manifold.markets/Drifting/will-the-us-average-gas-price-fall",
+    "stake": 57.8,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 3,
+    "smart_user_mana": 200,
+    "price_impact": 12.5,
+    "conviction_score": 3.0,
+    "signal_strength": 1.0
   }
 ]
