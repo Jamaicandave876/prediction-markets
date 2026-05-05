@@ -1739,6 +1739,26 @@
     "smart_user_mana": 6000,
     "price_impact": 18.2,
     "conviction_score": 87.26,
+    "signal_strength": 1.5,
+    "peak_pnl": 0.20000000000000284
+  },
+  {
+    "market_id": "tctQhuALnE",
+    "question": "FREE 1K MANA",
+    "direction": "BUY YES",
+    "entry_prob": 80.8,
+    "entry_time": "2026-05-05 08:01 UTC",
+    "url": "https://manifold.markets/Holdino/free-1k-mana",
+    "stake": 89.3,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 2,
+    "smart_user_mana": 1001,
+    "price_impact": 30.8,
+    "conviction_score": 24.66,
     "signal_strength": 1.5
   }
 ]
