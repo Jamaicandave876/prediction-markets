@@ -180,10 +180,10 @@
       "slow_trade": 12
     },
     "breakout": {
-      "mid_prob_entry": 12,
+      "mid_prob_entry": 13,
       "fast_trade": 7,
-      "yes_direction": 13,
-      "strong_signal": 8,
+      "yes_direction": 14,
+      "strong_signal": 9,
       "weak_signal": 8,
       "low_prob_entry": 5,
       "no_direction": 7,
@@ -1086,24 +1086,6 @@
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "liquidation",
-      "market_id": "QUOQIUPuAQ",
-      "outcome": "big_loss",
-      "pnl_pp": -10.1,
-      "exit_reason": "stopped_out",
-      "duration_hours": 5.8,
-      "traits": [
-        "high_prob_entry",
-        "fast_trade",
-        "no_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 87.6,
-      "direction": "BUY NO",
-      "timestamp": "2026-04-30 08:11 UTC",
-      "lesson": "Liquidation: big loss via stopped_out. PnL: -10.1pp in 6h."
-    },
     {
       "bot": "breakout",
       "market_id": "R885yIqcqn",
@@ -2830,6 +2812,23 @@
       "direction": "BUY NO",
       "timestamp": "2026-05-04 21:56 UTC",
       "lesson": "Sentiment: big loss via stopped_out. PnL: -6.5pp in 78h."
+    },
+    {
+      "bot": "breakout",
+      "market_id": "Cu662CORlh",
+      "outcome": "strong_win",
+      "pnl_pp": 11.0,
+      "exit_reason": "trailing_stop",
+      "duration_hours": 52.6,
+      "traits": [
+        "mid_prob_entry",
+        "yes_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 51.0,
+      "direction": "BUY YES",
+      "timestamp": "2026-05-05 02:10 UTC",
+      "lesson": "Breakout: Strong signal \u2192 strong win. Keep trusting high-confidence entries."
     }
   ],
   "regime": "cautious",
@@ -2963,6 +2962,6 @@
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-05-04 21:56 UTC",
-  "generation": 191
+  "last_evolution": "2026-05-05 02:12 UTC",
+  "generation": 192
 }

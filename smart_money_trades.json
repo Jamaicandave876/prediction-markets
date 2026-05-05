@@ -1602,7 +1602,8 @@
     "smart_user_mana": 250,
     "price_impact": 10.2,
     "conviction_score": 3.05,
-    "signal_strength": 1.02
+    "signal_strength": 1.02,
+    "peak_pnl": 1.1999999999999993
   },
   {
     "market_id": "9PZUh08RA8",
@@ -1719,6 +1720,25 @@
     "smart_user_mana": 2250,
     "price_impact": 10.0,
     "conviction_score": 18.06,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "cZgSPppqEn",
+    "question": "Will Chalco's primary aluminum production for calendar year 2028 exceed 6.4 million tonnes?",
+    "direction": "BUY YES",
+    "entry_prob": 67.8,
+    "entry_time": "2026-05-05 02:11 UTC",
+    "url": "https://manifold.markets/MikhailTal/will-chalcos-primary-aluminum-produ-Nl0IyO8Run",
+    "stake": 81.9,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 2,
+    "smart_user_mana": 6000,
+    "price_impact": 18.2,
+    "conviction_score": 87.26,
     "signal_strength": 1.5
   }
 ]

@@ -976,7 +976,8 @@
     "liquidation_impact": 5.5,
     "liquidation_dir": "NO",
     "impact_score": 1.37,
-    "signal_strength": 0.68
+    "signal_strength": 0.68,
+    "peak_pnl": 0.29999999999999716
   },
   {
     "market_id": "APzUZNUS8I",
