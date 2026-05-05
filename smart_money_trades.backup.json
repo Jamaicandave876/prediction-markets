@@ -1740,7 +1740,7 @@
     "price_impact": 18.2,
     "conviction_score": 87.26,
     "signal_strength": 1.5,
-    "peak_pnl": 0.20000000000000284
+    "peak_pnl": 4.0
   },
   {
     "market_id": "tctQhuALnE",
@@ -1759,6 +1759,44 @@
     "smart_user_mana": 1001,
     "price_impact": 30.8,
     "conviction_score": 24.66,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "Rqtnl5LtpL",
+    "question": "Will Emirates Global Aluminium (EGA)'s primary aluminum production for calendar year 2027 exceed 2.8 million tonnes?",
+    "direction": "BUY NO",
+    "entry_prob": 29.6,
+    "entry_time": "2026-05-05 16:22 UTC",
+    "url": "https://manifold.markets/MikhailTal/will-emirates-global-aluminium-egas",
+    "stake": 80.2,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 2,
+    "smart_user_mana": 5500,
+    "price_impact": 20.4,
+    "conviction_score": 89.98,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "QdhhNnNRnO",
+    "question": "Will Emirates Global Aluminium (EGA)'s primary aluminum production for calendar year 2028 exceed 2.8 million tonnes?",
+    "direction": "BUY NO",
+    "entry_prob": 34.6,
+    "entry_time": "2026-05-05 16:22 UTC",
+    "url": "https://manifold.markets/MikhailTal/will-emirates-global-aluminium-egas-hy2gyQZ66S",
+    "stake": 68.6,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 2,
+    "smart_user_mana": 3750,
+    "price_impact": 15.5,
+    "conviction_score": 46.43,
     "signal_strength": 1.5
   }
 ]

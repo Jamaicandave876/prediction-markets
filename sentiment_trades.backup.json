@@ -923,5 +923,43 @@
     "price_move": -9.1,
     "divergence_score": 5.45,
     "signal_strength": 1.09
+  },
+  {
+    "market_id": "Rqtnl5LtpL",
+    "question": "Will Emirates Global Aluminium (EGA)'s primary aluminum production for calendar year 2027 exceed 2.8 million tonnes?",
+    "direction": "BUY NO",
+    "entry_prob": 29.6,
+    "entry_time": "2026-05-05 16:22 UTC",
+    "url": "https://manifold.markets/MikhailTal/will-emirates-global-aluminium-egas",
+    "stake": 65.0,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "YES",
+    "crowd_pct": 82.4,
+    "price_move": -20.4,
+    "divergence_score": 16.81,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "9p8zESLggZ",
+    "question": "Will a Manifolder win the Summer Metaculus Cup",
+    "direction": "BUY NO",
+    "entry_prob": 35.0,
+    "entry_time": "2026-05-05 16:22 UTC",
+    "url": "https://manifold.markets/bens/will-a-manifolder-win-the-summer-me",
+    "stake": 32.2,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "YES",
+    "crowd_pct": 65.0,
+    "price_move": -6.8,
+    "divergence_score": 4.42,
+    "signal_strength": 0.88
   }
 ]

@@ -98,7 +98,7 @@
     },
     "liquidation": {
       "trailing_stop": 4,
-      "stale": 19,
+      "stale": 20,
       "resolved_loss": 1,
       "target_hit": 2,
       "stopped_out": 11
@@ -1086,24 +1086,6 @@
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "calibration",
-      "market_id": "hQNRtAsS9Q",
-      "outcome": "small_loss",
-      "pnl_pp": 0.0,
-      "exit_reason": "stale",
-      "duration_hours": 337.8,
-      "traits": [
-        "low_prob_entry",
-        "slow_trade",
-        "yes_direction",
-        "weak_signal"
-      ],
-      "entry_prob": 11.4,
-      "direction": "BUY YES",
-      "timestamp": "2026-04-30 08:10 UTC",
-      "lesson": "Calibration: small loss via stale. PnL: +0.0pp in 338h."
-    },
     {
       "bot": "liquidation",
       "market_id": "QUOQIUPuAQ",
@@ -2828,6 +2810,22 @@
       "direction": "BUY YES",
       "timestamp": "2026-05-05 10:30 UTC",
       "lesson": "Smart $: small loss via target_hit. PnL: +0.0pp in 2h."
+    },
+    {
+      "bot": "liquidation",
+      "market_id": "6puUnhps8E",
+      "outcome": "small_loss",
+      "pnl_pp": -2.8,
+      "exit_reason": "stale",
+      "duration_hours": 48.3,
+      "traits": [
+        "low_prob_entry",
+        "yes_direction"
+      ],
+      "entry_prob": 22.6,
+      "direction": "BUY YES",
+      "timestamp": "2026-05-05 19:11 UTC",
+      "lesson": "Liquidation: small loss via stale. PnL: -2.8pp in 48h."
     }
   ],
   "regime": "cautious",
@@ -2955,12 +2953,12 @@
     "underdog": 0.1,
     "late_mover": 0.2,
     "hedge": 0.2,
-    "liquidation": 0.49,
+    "liquidation": 0.45,
     "weather_temperature": 0.5,
     "weather_precipitation": 0.5,
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-05-05 16:22 UTC",
-  "generation": 196
+  "last_evolution": "2026-05-05 19:11 UTC",
+  "generation": 197
 }
