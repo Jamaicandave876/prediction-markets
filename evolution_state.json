@@ -98,7 +98,7 @@
     },
     "liquidation": {
       "trailing_stop": 4,
-      "stale": 23,
+      "stale": 25,
       "resolved_loss": 1,
       "target_hit": 2,
       "stopped_out": 11
@@ -1086,41 +1086,6 @@
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "momentum",
-      "market_id": "6pO2AZERcP",
-      "outcome": "big_loss",
-      "pnl_pp": -13.2,
-      "exit_reason": "reversal",
-      "duration_hours": 21.0,
-      "traits": [
-        "mid_prob_entry",
-        "fast_trade",
-        "no_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 42.7,
-      "direction": "BUY NO",
-      "timestamp": "2026-04-30 16:15 UTC",
-      "lesson": "Momentum: big loss via reversal. PnL: -13.2pp in 21h."
-    },
-    {
-      "bot": "smart_money",
-      "market_id": "222UC5Eh0E",
-      "outcome": "small_loss",
-      "pnl_pp": -2.6,
-      "exit_reason": "trailing_stop",
-      "duration_hours": 23.9,
-      "traits": [
-        "mid_prob_entry",
-        "fast_trade",
-        "no_direction"
-      ],
-      "entry_prob": 46.0,
-      "direction": "BUY NO",
-      "timestamp": "2026-04-30 19:10 UTC",
-      "lesson": "Smart $: Had profit but trailing stop was too tight. Consider widening trail."
-    },
     {
       "bot": "underdog",
       "market_id": "gAy65tNIdz",
@@ -2819,6 +2784,38 @@
       "direction": "BUY YES",
       "timestamp": "2026-05-06 08:14 UTC",
       "lesson": "Liquidation: Held too long with no resolution. Consider shorter max_days."
+    },
+    {
+      "bot": "liquidation",
+      "market_id": "ysuy5Pdnuu",
+      "outcome": "small_loss",
+      "pnl_pp": -2.8,
+      "exit_reason": "stale",
+      "duration_hours": 50.2,
+      "traits": [
+        "low_prob_entry",
+        "yes_direction"
+      ],
+      "entry_prob": 17.0,
+      "direction": "BUY YES",
+      "timestamp": "2026-05-06 08:14 UTC",
+      "lesson": "Liquidation: small loss via stale. PnL: -2.8pp in 50h."
+    },
+    {
+      "bot": "liquidation",
+      "market_id": "IZc29NLhzS",
+      "outcome": "big_loss",
+      "pnl_pp": -6.1,
+      "exit_reason": "stale",
+      "duration_hours": 50.2,
+      "traits": [
+        "low_prob_entry",
+        "yes_direction"
+      ],
+      "entry_prob": 23.4,
+      "direction": "BUY YES",
+      "timestamp": "2026-05-06 08:14 UTC",
+      "lesson": "Liquidation: Held too long with no resolution. Consider shorter max_days."
     }
   ],
   "regime": "cautious",
@@ -2952,6 +2949,6 @@
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-05-06 08:14 UTC",
-  "generation": 201
+  "last_evolution": "2026-05-06 11:01 UTC",
+  "generation": 202
 }

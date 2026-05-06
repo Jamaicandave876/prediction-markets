@@ -1117,5 +1117,24 @@
     "impact_score": 2.95,
     "signal_strength": 1.47,
     "peak_pnl": 3.200000000000003
+  },
+  {
+    "market_id": "LyA6dyPtz9",
+    "question": "Lakers vs. Thunder Series Length (>5 Games)",
+    "direction": "BUY YES",
+    "entry_prob": 17.2,
+    "entry_time": "2026-05-06 11:01 UTC",
+    "url": "https://manifold.markets/ShaneBo/lakers-vs-thunder-series-length-5-g",
+    "stake": 20,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "liquidation_size": 372,
+    "liquidation_impact": 6.0,
+    "liquidation_dir": "NO",
+    "impact_score": 2.25,
+    "signal_strength": 1.12
   }
 ]
