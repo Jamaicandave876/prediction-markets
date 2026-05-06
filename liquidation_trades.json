@@ -1157,5 +1157,24 @@
     "liquidation_dir": "NO",
     "impact_score": 7.42,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "NS5IE5dzLs",
+    "question": "Will the Supreme Court uphold the 5th Circuit ruling restricting mifepristone?",
+    "direction": "BUY YES",
+    "entry_prob": 38.6,
+    "entry_time": "2026-05-06 21:53 UTC",
+    "url": "https://manifold.markets/NicholasWeininger/will-the-supreme-court-uphold-the-5",
+    "stake": 24.0,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "liquidation_size": 200,
+    "liquidation_impact": 8.4,
+    "liquidation_dir": "NO",
+    "impact_score": 1.69,
+    "signal_strength": 0.84
   }
 ]
