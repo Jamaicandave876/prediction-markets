@@ -150,12 +150,12 @@
       "weak_signal": 2
     },
     "smart_money": {
-      "mid_prob_entry": 33,
+      "mid_prob_entry": 34,
       "no_direction": 43,
-      "strong_signal": 54,
+      "strong_signal": 55,
       "fast_trade": 41,
       "low_prob_entry": 18,
-      "yes_direction": 18,
+      "yes_direction": 19,
       "high_prob_entry": 10,
       "slow_trade": 3
     },
@@ -1086,23 +1086,6 @@
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "underdog",
-      "market_id": "gAy65tNIdz",
-      "outcome": "big_loss",
-      "pnl_pp": -9.0,
-      "exit_reason": "stopped_out",
-      "duration_hours": 117.7,
-      "traits": [
-        "low_prob_entry",
-        "yes_direction",
-        "weak_signal"
-      ],
-      "entry_prob": 17.9,
-      "direction": "BUY YES",
-      "timestamp": "2026-04-30 19:11 UTC",
-      "lesson": "Underdog: Weak signal led to stop-out. Need stronger signals to justify entry."
-    },
     {
       "bot": "liquidation",
       "market_id": "Cl8tygc5In",
@@ -2816,6 +2799,23 @@
       "direction": "BUY YES",
       "timestamp": "2026-05-06 08:14 UTC",
       "lesson": "Liquidation: Held too long with no resolution. Consider shorter max_days."
+    },
+    {
+      "bot": "smart_money",
+      "market_id": "lOdA5COORg",
+      "outcome": "small_win",
+      "pnl_pp": 1.0,
+      "exit_reason": "stale",
+      "duration_hours": 48.4,
+      "traits": [
+        "mid_prob_entry",
+        "yes_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 59.0,
+      "direction": "BUY YES",
+      "timestamp": "2026-05-06 13:53 UTC",
+      "lesson": "Smart $: small win via stale. PnL: +1.0pp in 48h."
     }
   ],
   "regime": "cautious",
@@ -2936,7 +2936,7 @@
     "breakout": 0.73,
     "calibration": 0.1,
     "reversal": 0.2,
-    "smart_money": 0.56,
+    "smart_money": 0.57,
     "time_decay": 0.23,
     "sentiment": 0.2,
     "accumulation": 0.1,
@@ -2949,6 +2949,6 @@
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-05-06 11:01 UTC",
-  "generation": 202
+  "last_evolution": "2026-05-06 13:53 UTC",
+  "generation": 203
 }
