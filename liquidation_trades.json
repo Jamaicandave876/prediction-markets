@@ -1076,7 +1076,8 @@
     "liquidation_impact": 14.5,
     "liquidation_dir": "YES",
     "impact_score": 7.25,
-    "signal_strength": 1.5
+    "signal_strength": 1.5,
+    "peak_pnl": 0.09999999999999432
   },
   {
     "market_id": "PNddQIQcLE",
@@ -1135,7 +1136,8 @@
     "liquidation_impact": 6.0,
     "liquidation_dir": "NO",
     "impact_score": 2.25,
-    "signal_strength": 1.12
+    "signal_strength": 1.12,
+    "peak_pnl": 0.8000000000000007
   },
   {
     "market_id": "2ESLt0g85E",

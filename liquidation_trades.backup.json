@@ -1136,5 +1136,24 @@
     "liquidation_dir": "NO",
     "impact_score": 2.25,
     "signal_strength": 1.12
+  },
+  {
+    "market_id": "2ESLt0g85E",
+    "question": "Will Anthropic become profitable this year?",
+    "direction": "BUY YES",
+    "entry_prob": 17.5,
+    "entry_time": "2026-05-06 13:53 UTC",
+    "url": "https://manifold.markets/Simon74fe/will-anthropic-become-profitable-th",
+    "stake": 23.3,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "liquidation_size": 500,
+    "liquidation_impact": 14.8,
+    "liquidation_dir": "NO",
+    "impact_score": 7.42,
+    "signal_strength": 1.5
   }
 ]
