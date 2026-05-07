@@ -1177,5 +1177,43 @@
     "impact_score": 1.69,
     "signal_strength": 0.84,
     "peak_pnl": 0.6000000000000014
+  },
+  {
+    "market_id": "QRpZ5sN6uh",
+    "question": "Will QCOM stock reach $300 by the end of 2026?",
+    "direction": "BUY NO",
+    "entry_prob": 78.1,
+    "entry_time": "2026-05-07 16:47 UTC",
+    "url": "https://manifold.markets/sama/will-qcom-stock-reach-300-by-the-en",
+    "stake": 33.0,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "liquidation_size": 500,
+    "liquidation_impact": 12.2,
+    "liquidation_dir": "YES",
+    "impact_score": 6.12,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "c0LcldPQlL",
+    "question": "Bitcoin $85K in May?",
+    "direction": "BUY YES",
+    "entry_prob": 55.0,
+    "entry_time": "2026-05-07 16:47 UTC",
+    "url": "https://manifold.markets/predyx_markets/bitcoin-85k-in-may",
+    "stake": 49.2,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "liquidation_size": 232,
+    "liquidation_impact": 11.1,
+    "liquidation_dir": "NO",
+    "impact_score": 2.58,
+    "signal_strength": 1.29
   }
 ]
