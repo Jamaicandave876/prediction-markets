@@ -18,13 +18,13 @@
   "pause_start": {},
   "bot_scores": {
     "momentum": {
-      "score": 47.6,
-      "win_rate": 40.0,
-      "avg_pnl": 1.8,
-      "total_pnl": 140.9,
-      "closed": 37,
-      "open": 5,
-      "grade": "D"
+      "score": 59.8,
+      "win_rate": 50.0,
+      "avg_pnl": 4.9,
+      "total_pnl": 168.8,
+      "closed": 38,
+      "open": 4,
+      "grade": "C"
     },
     "fade": {
       "score": 78.9,
@@ -99,12 +99,12 @@
       "grade": "F"
     },
     "breakout": {
-      "score": 66.2,
-      "win_rate": 70.0,
-      "avg_pnl": 2.1,
-      "total_pnl": 32.8,
-      "closed": 23,
-      "open": 2,
+      "score": 74.6,
+      "win_rate": 80.0,
+      "avg_pnl": 3.3,
+      "total_pnl": 44.9,
+      "closed": 24,
+      "open": 1,
       "grade": "B"
     },
     "weather_temperature": {
@@ -145,7 +145,7 @@
     }
   },
   "consecutive_losses": {
-    "momentum": 1,
+    "momentum": 0,
     "fade": 1,
     "mean_reversion": 5,
     "volume_surge": 2,

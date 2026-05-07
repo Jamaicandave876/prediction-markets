@@ -560,12 +560,12 @@
     "drift_score": -10.76,
     "url": "https://manifold.markets/MatthewAdelstein/how-likely-is-the-farm-bill-to-pass",
     "stake": 33.3,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
-    "peak_pnl": 20.3
+    "status": "closed",
+    "exit_prob": 18.1,
+    "exit_time": "2026-05-07 19:29 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 27.9,
+    "peak_pnl": 27.9
   },
   {
     "market_id": "6pO2AZERcP",
