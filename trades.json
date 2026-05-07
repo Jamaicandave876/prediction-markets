@@ -659,5 +659,50 @@
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null
+  },
+  {
+    "market_id": "Z8csnnSEdz",
+    "question": "Will a vaccine against the Andes virus (hantavirus) be tested in humans before the end of 2027?",
+    "direction": "BUY YES",
+    "entry_prob": 47.8,
+    "entry_time": "2026-05-07 21:51 UTC",
+    "drift_score": 9.66,
+    "url": "https://manifold.markets/AIBear/will-a-vaccine-against-the-andes-vi",
+    "stake": 38.9,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
+  },
+  {
+    "market_id": "0q2RLlzzqc",
+    "question": "Will this market appear on a mug?",
+    "direction": "BUY NO",
+    "entry_prob": 35.0,
+    "entry_time": "2026-05-07 21:51 UTC",
+    "drift_score": -6.2,
+    "url": "https://manifold.markets/retr0id/will-this-market-appear-on-a-mug",
+    "stake": 38.9,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
+  },
+  {
+    "market_id": "ypuhLI68Nq",
+    "question": "Will SpaceX Plan a booster catch on Flight 12?",
+    "direction": "BUY NO",
+    "entry_prob": 17.3,
+    "entry_time": "2026-05-07 21:51 UTC",
+    "drift_score": -17.28,
+    "url": "https://manifold.markets/RyanTyznar/will-spacex-plan-a-booster-catch-on",
+    "stake": 38.9,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]

@@ -1877,5 +1877,24 @@
     "conviction_score": 2.06,
     "signal_strength": 0.69,
     "peak_pnl": 5.700000000000003
+  },
+  {
+    "market_id": "ypuhLI68Nq",
+    "question": "Will SpaceX Plan a booster catch on Flight 12?",
+    "direction": "BUY NO",
+    "entry_prob": 17.3,
+    "entry_time": "2026-05-07 21:52 UTC",
+    "url": "https://manifold.markets/RyanTyznar/will-spacex-plan-a-booster-catch-on",
+    "stake": 58.2,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 2,
+    "smart_user_mana": 500,
+    "price_impact": 5.9,
+    "conviction_score": 2.37,
+    "signal_strength": 0.79
   }
 ]

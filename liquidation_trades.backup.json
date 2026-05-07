@@ -1195,7 +1195,8 @@
     "liquidation_impact": 12.2,
     "liquidation_dir": "YES",
     "impact_score": 6.12,
-    "signal_strength": 1.5
+    "signal_strength": 1.5,
+    "peak_pnl": 3.1999999999999886
   },
   {
     "market_id": "c0LcldPQlL",
