@@ -699,10 +699,10 @@
     "drift_score": -17.28,
     "url": "https://manifold.markets/RyanTyznar/will-spacex-plan-a-booster-catch-on",
     "stake": 38.9,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 17.3,
+    "exit_time": "2026-05-08 02:29 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 0.0
   }
 ]

@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-05-07 21:53 UTC",
+  "timestamp": "2026-05-08 02:30 UTC",
   "regime": "adverse",
   "pnl_7d": 96.0,
-  "total_open": 8,
-  "total_closed": 147,
+  "total_open": 7,
+  "total_closed": 148,
   "total_pnl": 137.0,
   "bots": [
     {
@@ -34,13 +34,13 @@
       "name": "momentum",
       "display": "Momentum",
       "grade": "C",
-      "score": 59.8,
-      "win_rate": 50.0,
+      "score": 53.1,
+      "win_rate": 40.0,
       "total_pnl": 168.8,
-      "open": 7,
-      "closed": 38,
+      "open": 6,
+      "closed": 39,
       "paused": false,
-      "consecutive_losses": 0
+      "consecutive_losses": 1
     },
     {
       "name": "weather_temperature",
