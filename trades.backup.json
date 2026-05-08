@@ -669,11 +669,11 @@
     "drift_score": 9.66,
     "url": "https://manifold.markets/AIBear/will-a-vaccine-against-the-andes-vi",
     "stake": 38.9,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 38.5,
+    "exit_time": "2026-05-08 05:25 UTC",
+    "exit_reason": "reversal",
+    "pnl_pp": -9.3
   },
   {
     "market_id": "0q2RLlzzqc",

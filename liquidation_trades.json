@@ -1215,6 +1215,26 @@
     "liquidation_impact": 11.1,
     "liquidation_dir": "NO",
     "impact_score": 2.58,
-    "signal_strength": 1.29
+    "signal_strength": 1.29,
+    "peak_pnl": 1.0
+  },
+  {
+    "market_id": "qp98EIPS6n",
+    "question": "Will OKLO reach $200 by the end of 2026?",
+    "direction": "BUY NO",
+    "entry_prob": 38.8,
+    "entry_time": "2026-05-08 07:22 UTC",
+    "url": "https://manifold.markets/sama/will-oklo-reach-200-by-the-end-of-2",
+    "stake": 60.7,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "liquidation_size": 250,
+    "liquidation_impact": 15.8,
+    "liquidation_dir": "YES",
+    "impact_score": 3.95,
+    "signal_strength": 1.5
   }
 ]
