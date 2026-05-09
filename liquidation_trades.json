@@ -1216,7 +1216,7 @@
     "liquidation_dir": "NO",
     "impact_score": 2.58,
     "signal_strength": 1.29,
-    "peak_pnl": 2.299999999999997
+    "peak_pnl": 2.6000000000000014
   },
   {
     "market_id": "qp98EIPS6n",
@@ -1275,5 +1275,24 @@
     "liquidation_dir": "NO",
     "impact_score": 3.44,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "Lzh2g9PINy",
+    "question": "US x China tariff agreement by May 31st? [Polymarket]",
+    "direction": "BUY NO",
+    "entry_prob": 51.5,
+    "entry_time": "2026-05-09 15:45 UTC",
+    "url": "https://manifold.markets/Mochi/us-x-china-tariff-agreement-by-may",
+    "stake": 40.4,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "liquidation_size": 200,
+    "liquidation_impact": 11.7,
+    "liquidation_dir": "YES",
+    "impact_score": 2.35,
+    "signal_strength": 1.17
   }
 ]
