@@ -1226,16 +1226,17 @@
     "entry_time": "2026-05-08 07:22 UTC",
     "url": "https://manifold.markets/sama/will-oklo-reach-200-by-the-end-of-2",
     "stake": 60.7,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 23.0,
+    "exit_time": "2026-05-09 02:14 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 15.8,
     "liquidation_size": 250,
     "liquidation_impact": 15.8,
     "liquidation_dir": "YES",
     "impact_score": 3.95,
-    "signal_strength": 1.5
+    "signal_strength": 1.5,
+    "peak_pnl": 15.799999999999997
   },
   {
     "market_id": "gctNUy8IAy",
@@ -1254,6 +1255,25 @@
     "liquidation_impact": 41.3,
     "liquidation_dir": "YES",
     "impact_score": 82.56,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "pLOp6I9sCg",
+    "question": "US x Iran permanent peace deal by June 30? [Polymarket]",
+    "direction": "BUY YES",
+    "entry_prob": 38.0,
+    "entry_time": "2026-05-09 02:14 UTC",
+    "url": "https://manifold.markets/vdb/us-x-iran-permanent-peace-deal-by-j",
+    "stake": 42.6,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "liquidation_size": 500,
+    "liquidation_impact": 6.9,
+    "liquidation_dir": "NO",
+    "impact_score": 3.44,
     "signal_strength": 1.5
   }
 ]
