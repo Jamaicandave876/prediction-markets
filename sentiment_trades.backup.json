@@ -982,5 +982,43 @@
     "price_move": -15.1,
     "divergence_score": 11.93,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "tllqIchqdq",
+    "question": "My current relationship lasts >6 months (1 Jan to 1 Jul 2026)",
+    "direction": "BUY YES",
+    "entry_prob": 74.7,
+    "entry_time": "2026-05-09 07:48 UTC",
+    "url": "https://manifold.markets/MoreClear/my-current-relationship-lasts-6-mon-hLSd0lz0nz",
+    "stake": 72.2,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "NO",
+    "crowd_pct": 60.0,
+    "price_move": 11.7,
+    "divergence_score": 7.03,
+    "signal_strength": 1.41
+  },
+  {
+    "market_id": "8CAQAAnE0A",
+    "question": "Will Rio Tinto's primary aluminum production for calendar year 2028 exceed 3.4 million tonnes?",
+    "direction": "BUY NO",
+    "entry_prob": 49.7,
+    "entry_time": "2026-05-09 07:48 UTC",
+    "url": "https://manifold.markets/MikhailTal/will-rio-tintos-primary-aluminum-pr-PCtcZhddZU",
+    "stake": 24.0,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "YES",
+    "crowd_pct": 90.0,
+    "price_move": -5.1,
+    "divergence_score": 4.59,
+    "signal_strength": 0.92
   }
 ]
