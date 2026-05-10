@@ -467,5 +467,23 @@
     "breakout_strength": 7.4,
     "signal_strength": 1.5,
     "peak_pnl": 12.099999999999998
+  },
+  {
+    "market_id": "pLOp6I9sCg",
+    "question": "US x Iran permanent peace deal by June 30? [Polymarket]",
+    "direction": "BUY YES",
+    "entry_prob": 50.0,
+    "entry_time": "2026-05-10 05:59 UTC",
+    "url": "https://manifold.markets/vdb/us-x-iran-permanent-peace-deal-by-j",
+    "stake": 36.6,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "baseline_range": 7.0,
+    "breakout_move": 15.0,
+    "breakout_strength": 2.1,
+    "signal_strength": 0.7142857142857153
   }
 ]
