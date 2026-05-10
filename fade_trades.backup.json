@@ -160,5 +160,23 @@
     "exit_time": "2026-04-29 10:49 UTC",
     "exit_reason": "stopped_out",
     "pnl_pp": -22.9
+  },
+  {
+    "market_id": "hyIcPtz2lS",
+    "question": "Will The_real_LV hit 150 followers on twitch?",
+    "direction": "BUY NO",
+    "entry_prob": 94.4,
+    "pre_spike_prob": 1.0,
+    "spike_size": 93.4,
+    "spike_ratio": 8.9,
+    "spike_dir": 1,
+    "entry_time": "2026-05-10 08:10 UTC",
+    "url": "https://manifold.markets/Edwinh5l5/will-thereallv-hit-150-followers-on",
+    "stake": 38.1,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]
