@@ -1020,5 +1020,24 @@
     "price_move": -5.1,
     "divergence_score": 4.59,
     "signal_strength": 0.92
+  },
+  {
+    "market_id": "QtntARQCu9",
+    "question": "Will Democrats have 225 or more seats after the 2026 House Elections?",
+    "direction": "BUY YES",
+    "entry_prob": 65.1,
+    "entry_time": "2026-05-09 21:38 UTC",
+    "url": "https://manifold.markets/ShaneBo/will-democrats-have-225-or-more-sea",
+    "stake": 69.2,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "NO",
+    "crowd_pct": 60.0,
+    "price_move": 11.3,
+    "divergence_score": 6.78,
+    "signal_strength": 1.36
   }
 ]
