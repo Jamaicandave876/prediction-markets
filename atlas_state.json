@@ -104,7 +104,7 @@
       "avg_pnl": 10.2,
       "total_pnl": 117.1,
       "closed": 25,
-      "open": 0,
+      "open": 1,
       "grade": "A"
     },
     "weather_temperature": {
