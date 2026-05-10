@@ -1275,7 +1275,7 @@
     "liquidation_dir": "NO",
     "impact_score": 3.44,
     "signal_strength": 1.5,
-    "peak_pnl": 12.0
+    "peak_pnl": 13.0
   },
   {
     "market_id": "Lzh2g9PINy",
@@ -1285,11 +1285,11 @@
     "entry_time": "2026-05-09 15:45 UTC",
     "url": "https://manifold.markets/Mochi/us-x-china-tariff-agreement-by-may",
     "stake": 40.4,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 62.0,
+    "exit_time": "2026-05-10 15:46 UTC",
+    "exit_reason": "stopped_out",
+    "pnl_pp": -10.5,
     "liquidation_size": 200,
     "liquidation_impact": 11.7,
     "liquidation_dir": "YES",

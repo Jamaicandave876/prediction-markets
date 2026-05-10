@@ -1058,5 +1058,24 @@
     "price_move": 11.7,
     "divergence_score": 7.03,
     "signal_strength": 1.41
+  },
+  {
+    "market_id": "9p8zESLggZ",
+    "question": "Will a Manifolder win the Summer Metaculus Cup",
+    "direction": "BUY NO",
+    "entry_prob": 35.0,
+    "entry_time": "2026-05-10 13:05 UTC",
+    "url": "https://manifold.markets/bens/will-a-manifolder-win-the-summer-me",
+    "stake": 32.9,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "YES",
+    "crowd_pct": 65.0,
+    "price_move": -6.1,
+    "divergence_score": 3.98,
+    "signal_strength": 0.8
   }
 ]
