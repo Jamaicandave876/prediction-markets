@@ -2033,5 +2033,24 @@
     "conviction_score": 4.35,
     "signal_strength": 1.45,
     "peak_pnl": 4.799999999999997
+  },
+  {
+    "market_id": "PZNqZqh2U2",
+    "question": "Will this market get between 55-75 unique traders?",
+    "direction": "BUY NO",
+    "entry_prob": 30.4,
+    "entry_time": "2026-05-10 18:52 UTC",
+    "url": "https://manifold.markets/Mochi/will-this-market-get-between-5575-u",
+    "stake": 42.1,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 2,
+    "smart_user_mana": 200,
+    "price_impact": 14.9,
+    "conviction_score": 2.38,
+    "signal_strength": 0.79
   }
 ]
