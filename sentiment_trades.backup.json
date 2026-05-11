@@ -1096,5 +1096,24 @@
     "price_move": 11.7,
     "divergence_score": 7.03,
     "signal_strength": 1.41
+  },
+  {
+    "market_id": "tllqIchqdq",
+    "question": "My current relationship lasts >6 months (1 Jan to 1 Jul 2026)",
+    "direction": "BUY YES",
+    "entry_prob": 74.7,
+    "entry_time": "2026-05-11 12:01 UTC",
+    "url": "https://manifold.markets/MoreClear/my-current-relationship-lasts-6-mon-hLSd0lz0nz",
+    "stake": 73.3,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "NO",
+    "crowd_pct": 60.0,
+    "price_move": 11.7,
+    "divergence_score": 7.03,
+    "signal_strength": 1.41
   }
 ]
