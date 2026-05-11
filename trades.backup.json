@@ -497,11 +497,11 @@
     "drift_score": 9.6,
     "url": "https://manifold.markets/vdb/uefa-champions-league-202526-final",
     "stake": 60.7,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 57.6,
+    "exit_time": "2026-05-11 06:32 UTC",
+    "exit_reason": "stale",
+    "pnl_pp": -4.8,
     "peak_pnl": 0.3999999999999986
   },
   {

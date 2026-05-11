@@ -704,5 +704,20 @@
     "exit_time": "2026-05-08 02:29 UTC",
     "exit_reason": "target_hit",
     "pnl_pp": 0.0
+  },
+  {
+    "market_id": "ULg0nUz9RR",
+    "question": "Will any frontier lab be near-fully automated before 2029?",
+    "direction": "BUY NO",
+    "entry_prob": 28.3,
+    "entry_time": "2026-05-11 11:59 UTC",
+    "drift_score": -26.97,
+    "url": "https://manifold.markets/LeoGao/will-any-frontier-lab-be-nearfully",
+    "stake": 29.2,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]
