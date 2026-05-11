@@ -1334,5 +1334,24 @@
     "liquidation_dir": "NO",
     "impact_score": 3.86,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "lZ0tchC5N0",
+    "question": "Will a full-scale military conflict between the US/Israel and Iran resume by May 31, 2026?",
+    "direction": "BUY YES",
+    "entry_prob": 33.8,
+    "entry_time": "2026-05-11 06:33 UTC",
+    "url": "https://manifold.markets/IrmiPolonsky/will-a-fullscale-military-conflict",
+    "stake": 28.4,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "liquidation_size": 250,
+    "liquidation_impact": 9.3,
+    "liquidation_dir": "NO",
+    "impact_score": 2.32,
+    "signal_strength": 1.16
   }
 ]
