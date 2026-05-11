@@ -544,11 +544,11 @@
     "drift_score": -32.27,
     "url": "https://manifold.markets/Ziddletwix/will-michael-receive-any-oscar-nomi",
     "stake": 60.7,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 42.7,
+    "exit_time": "2026-05-11 19:39 UTC",
+    "exit_reason": "stale",
+    "pnl_pp": 3.1,
     "peak_pnl": 3.0999999999999943
   },
   {
