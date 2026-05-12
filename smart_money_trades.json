@@ -2206,7 +2206,8 @@
     "smart_user_mana": 1374,
     "price_impact": 14.3,
     "conviction_score": 47.13,
-    "signal_strength": 1.5
+    "signal_strength": 1.5,
+    "peak_pnl": 1.8999999999999986
   },
   {
     "market_id": "Es8cSPUtEq",
@@ -2216,11 +2217,11 @@
     "entry_time": "2026-05-12 11:15 UTC",
     "url": "https://manifold.markets/jgyou/will-at-least-25-of-us-retail-inves",
     "stake": 77.9,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 75.4,
+    "exit_time": "2026-05-12 14:06 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 0.0,
     "smart_user_bets": 2,
     "smart_user_mana": 700,
     "price_impact": 24.3,

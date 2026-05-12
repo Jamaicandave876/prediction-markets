@@ -1392,7 +1392,8 @@
     "liquidation_impact": 15.5,
     "liquidation_dir": "NO",
     "impact_score": 7.75,
-    "signal_strength": 1.5
+    "signal_strength": 1.5,
+    "peak_pnl": 8.0
   },
   {
     "market_id": "qp98EIPS6n",
