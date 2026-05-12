@@ -1393,7 +1393,7 @@
     "liquidation_dir": "NO",
     "impact_score": 7.75,
     "signal_strength": 1.5,
-    "peak_pnl": 10.0
+    "peak_pnl": 10.600000000000001
   },
   {
     "market_id": "qp98EIPS6n",
@@ -1414,5 +1414,43 @@
     "impact_score": 6.0,
     "signal_strength": 1.5,
     "peak_pnl": 6.0
+  },
+  {
+    "market_id": "5zAE9ZAdnA",
+    "question": "Will the WTI Crude Oil Spot Price be above $100 on May 21, 2026?",
+    "direction": "BUY NO",
+    "entry_prob": 74.1,
+    "entry_time": "2026-05-12 17:05 UTC",
+    "url": "https://manifold.markets/ShaneBo/will-the-wti-crude-oil-spot-price-b-0nNnQnpQtR",
+    "stake": 26.6,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "liquidation_size": 500,
+    "liquidation_impact": 5.0,
+    "liquidation_dir": "YES",
+    "impact_score": 2.5,
+    "signal_strength": 1.25
+  },
+  {
+    "market_id": "OcSuStph6L",
+    "question": "Will Xi Jingping visit US before 2027?",
+    "direction": "BUY NO",
+    "entry_prob": 58.4,
+    "entry_time": "2026-05-12 17:05 UTC",
+    "url": "https://manifold.markets/Mochi/will-xi-jingping-visit-us-before-20",
+    "stake": 33.2,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "liquidation_size": 200,
+    "liquidation_impact": 12.3,
+    "liquidation_dir": "YES",
+    "impact_score": 2.46,
+    "signal_strength": 1.23
   }
 ]

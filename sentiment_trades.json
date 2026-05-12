@@ -1135,5 +1135,24 @@
     "divergence_score": 3.45,
     "signal_strength": 0.69,
     "peak_pnl": 2.6000000000000014
+  },
+  {
+    "market_id": "Z8csnnSEdz",
+    "question": "Will a vaccine against the Andes virus (hantavirus) be tested in humans before the end of 2027?",
+    "direction": "BUY YES",
+    "entry_prob": 38.2,
+    "entry_time": "2026-05-12 19:41 UTC",
+    "url": "https://manifold.markets/AIBear/will-a-vaccine-against-the-andes-vi",
+    "stake": 20,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "NO",
+    "crowd_pct": 60.0,
+    "price_move": 7.0,
+    "divergence_score": 4.22,
+    "signal_strength": 0.84
   }
 ]
