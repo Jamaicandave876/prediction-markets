@@ -688,7 +688,8 @@
     "exit_prob": null,
     "exit_time": null,
     "exit_reason": null,
-    "pnl_pp": null
+    "pnl_pp": null,
+    "peak_pnl": 9.3
   },
   {
     "market_id": "ypuhLI68Nq",
@@ -734,6 +735,6 @@
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null,
-    "peak_pnl": 4.5
+    "peak_pnl": 7.699999999999996
   }
 ]
