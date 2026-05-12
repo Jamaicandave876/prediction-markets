@@ -746,11 +746,12 @@
     "drift_score": -5.59,
     "url": "https://manifold.markets/Gen/will-the-trumpbranded-trump-mobile",
     "stake": 35.0,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 16.4,
+    "exit_time": "2026-05-12 22:07 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 0.8,
+    "peak_pnl": 0.8000000000000007
   },
   {
     "market_id": "ndUyU2p5IU",
