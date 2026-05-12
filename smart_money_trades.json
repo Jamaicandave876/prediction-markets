@@ -2169,5 +2169,24 @@
     "price_impact": 22.4,
     "conviction_score": 24.72,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "dCP8cP0CLL",
+    "question": "METR 80% time horizon exceeds 10h before September",
+    "direction": "BUY NO",
+    "entry_prob": 39.0,
+    "entry_time": "2026-05-12 02:28 UTC",
+    "url": "https://manifold.markets/JacobPfau/metr-80-time-horizon-exceeds-10h-be",
+    "stake": 37.7,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 4,
+    "smart_user_mana": 444,
+    "price_impact": 4.9,
+    "conviction_score": 3.46,
+    "signal_strength": 1.15
   }
 ]

@@ -719,5 +719,20 @@
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null
+  },
+  {
+    "market_id": "OcSuStph6L",
+    "question": "Will Xi Jingping visit US before 2027?",
+    "direction": "BUY NO",
+    "entry_prob": 53.8,
+    "entry_time": "2026-05-12 02:27 UTC",
+    "drift_score": -27.21,
+    "url": "https://manifold.markets/Mochi/will-xi-jingping-visit-us-before-20",
+    "stake": 38.9,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]
