@@ -276,13 +276,14 @@
     "mean_reversion": true,
     "contrarian": true,
     "liquidation": false,
-    "calibration": false,
+    "calibration": true,
     "sentiment_divergence": false,
     "smart_money": false
   },
   "consecutive_losses": {},
   "pause_start": {
     "mean_reversion": "2026-05-12 19:42 UTC",
-    "contrarian": "2026-05-12 19:42 UTC"
+    "contrarian": "2026-05-12 19:42 UTC",
+    "calibration": "2026-05-13 06:22 UTC"
   }
 }

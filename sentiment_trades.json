@@ -1134,7 +1134,7 @@
     "price_move": 5.8,
     "divergence_score": 3.45,
     "signal_strength": 0.69,
-    "peak_pnl": 2.6000000000000014
+    "peak_pnl": 7.0
   },
   {
     "market_id": "Z8csnnSEdz",
@@ -1144,15 +1144,16 @@
     "entry_time": "2026-05-12 19:41 UTC",
     "url": "https://manifold.markets/AIBear/will-a-vaccine-against-the-andes-vi",
     "stake": 20,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 81.8,
+    "exit_time": "2026-05-13 06:22 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 43.6,
     "crowd_dir": "NO",
     "crowd_pct": 60.0,
     "price_move": 7.0,
     "divergence_score": 4.22,
-    "signal_strength": 0.84
+    "signal_strength": 0.84,
+    "peak_pnl": 43.599999999999994
   }
 ]
