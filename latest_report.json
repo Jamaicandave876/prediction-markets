@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-05-13 17:13 UTC",
+  "timestamp": "2026-05-13 19:46 UTC",
   "regime": "adverse",
-  "pnl_7d": 146.5,
+  "pnl_7d": 168.6,
   "total_open": 8,
-  "total_closed": 156,
-  "total_pnl": 238.5,
+  "total_closed": 157,
+  "total_pnl": 260.6,
   "bots": [
     {
       "name": "fade",
@@ -12,9 +12,9 @@
       "grade": "A",
       "score": 82.0,
       "win_rate": 70.0,
-      "total_pnl": 140.1,
+      "total_pnl": 162.2,
       "open": 1,
-      "closed": 10,
+      "closed": 11,
       "paused": false,
       "consecutive_losses": 0
     },
