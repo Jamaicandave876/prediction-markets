@@ -1010,11 +1010,11 @@
     "entry_time": "2026-05-09 07:48 UTC",
     "url": "https://manifold.markets/MikhailTal/will-rio-tintos-primary-aluminum-pr-PCtcZhddZU",
     "stake": 24.0,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 49.7,
+    "exit_time": "2026-05-13 11:28 UTC",
+    "exit_reason": "stale",
+    "pnl_pp": 0.0,
     "crowd_dir": "YES",
     "crowd_pct": 90.0,
     "price_move": -5.1,
@@ -1134,7 +1134,7 @@
     "price_move": 5.8,
     "divergence_score": 3.45,
     "signal_strength": 0.69,
-    "peak_pnl": 7.0
+    "peak_pnl": 9.600000000000001
   },
   {
     "market_id": "Z8csnnSEdz",
