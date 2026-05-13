@@ -1164,15 +1164,16 @@
     "entry_time": "2026-05-13 17:13 UTC",
     "url": "https://manifold.markets/SamwiseGamgee/will-i-be-promoted-to-mana-gold-by",
     "stake": 87.3,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 15.4,
+    "exit_time": "2026-05-13 19:46 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 3.9,
     "crowd_dir": "YES",
     "crowd_pct": 70.0,
     "price_move": -22.3,
     "divergence_score": 15.58,
-    "signal_strength": 1.5
+    "signal_strength": 1.5,
+    "peak_pnl": 3.9000000000000004
   }
 ]
