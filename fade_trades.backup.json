@@ -178,5 +178,23 @@
     "exit_time": "2026-05-10 15:45 UTC",
     "exit_reason": "normalized",
     "pnl_pp": 55.1
+  },
+  {
+    "market_id": "dUO9ACE6gy",
+    "question": "Gemini 3.2 released by May 22, 2026?",
+    "direction": "BUY NO",
+    "entry_prob": 90.1,
+    "pre_spike_prob": 51.0,
+    "spike_size": 39.1,
+    "spike_ratio": 7.0,
+    "spike_dir": 1,
+    "entry_time": "2026-05-13 06:21 UTC",
+    "url": "https://manifold.markets/SuryaVino/gemini-32-released-by-may-22-2026",
+    "stake": 50.9,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]
