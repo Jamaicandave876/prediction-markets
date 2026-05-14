@@ -1175,5 +1175,24 @@
     "divergence_score": 15.58,
     "signal_strength": 1.5,
     "peak_pnl": 3.9000000000000004
+  },
+  {
+    "market_id": "2IUQuSy0dQ",
+    "question": "Will my Hantavirus tracking website go viral?",
+    "direction": "BUY YES",
+    "entry_prob": 47.0,
+    "entry_time": "2026-05-14 19:40 UTC",
+    "url": "https://manifold.markets/Bandors/will-my-hantavirus-tracking-website",
+    "stake": 28.9,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "NO",
+    "crowd_pct": 60.0,
+    "price_move": 9.0,
+    "divergence_score": 5.38,
+    "signal_strength": 1.08
   }
 ]
