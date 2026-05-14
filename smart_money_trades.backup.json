@@ -2344,5 +2344,43 @@
     "price_impact": 4.3,
     "conviction_score": 2.06,
     "signal_strength": 0.69
+  },
+  {
+    "market_id": "LsQqEzgNQZ",
+    "question": "Xi JinPing visits USA before July 31?",
+    "direction": "BUY NO",
+    "entry_prob": 22.1,
+    "entry_time": "2026-05-14 06:20 UTC",
+    "url": "https://manifold.markets/predyx_markets/xi-jingping-visits-usa-before-july",
+    "stake": 89.3,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 2,
+    "smart_user_mana": 450,
+    "price_impact": 29.2,
+    "conviction_score": 10.5,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "2IUQuSy0dQ",
+    "question": "Will my Hantavirus tracking website go viral?",
+    "direction": "BUY YES",
+    "entry_prob": 45.6,
+    "entry_time": "2026-05-14 06:20 UTC",
+    "url": "https://manifold.markets/Bandors/will-my-hantavirus-tracking-website",
+    "stake": 43.6,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 5,
+    "smart_user_mana": 677,
+    "price_impact": 5.0,
+    "conviction_score": 6.77,
+    "signal_strength": 1.5
   }
 ]
