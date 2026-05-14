@@ -1452,5 +1452,24 @@
     "liquidation_dir": "YES",
     "impact_score": 2.46,
     "signal_strength": 1.23
+  },
+  {
+    "market_id": "LsQqEzgNQZ",
+    "question": "Xi JinPing visits USA before July 31?",
+    "direction": "BUY YES",
+    "entry_prob": 12.9,
+    "entry_time": "2026-05-14 13:55 UTC",
+    "url": "https://manifold.markets/predyx_markets/xi-jingping-visits-usa-before-july",
+    "stake": 27.1,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "liquidation_size": 1000,
+    "liquidation_impact": 10.3,
+    "liquidation_dir": "NO",
+    "impact_score": 10.31,
+    "signal_strength": 1.5
   }
 ]
