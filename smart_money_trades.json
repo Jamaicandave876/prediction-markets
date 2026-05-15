@@ -2422,5 +2422,24 @@
     "price_impact": 11.7,
     "conviction_score": 5.64,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "hglAAsSAN6",
+    "question": "Will code vulnerabilities (CVE records) more then double in 2026?",
+    "direction": "BUY NO",
+    "entry_prob": 31.1,
+    "entry_time": "2026-05-15 06:28 UTC",
+    "url": "https://manifold.markets/MrBeastly/will-code-vulnerabilities-cve-recor-RyZ9Agdz8y",
+    "stake": 47.7,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 2,
+    "smart_user_mana": 400,
+    "price_impact": 10.8,
+    "conviction_score": 3.46,
+    "signal_strength": 1.15
   }
 ]

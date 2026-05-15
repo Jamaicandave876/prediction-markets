@@ -777,11 +777,11 @@
     "drift_score": 12.36,
     "url": "https://manifold.markets/Zeolite/will-any-nfl-teams-use-significant",
     "stake": 35.0,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 100.0,
+    "exit_time": "2026-05-15 06:27 UTC",
+    "exit_reason": "resolved_win",
+    "pnl_pp": 29.4,
     "peak_pnl": 3.6000000000000085
   },
   {

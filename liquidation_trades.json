@@ -1472,5 +1472,24 @@
     "impact_score": 10.31,
     "signal_strength": 1.5,
     "peak_pnl": 0.7999999999999989
+  },
+  {
+    "market_id": "PAPtPqQZhh",
+    "question": "Will at least 1 non-passenger get hantavirus from the MV Hondius outbreak?",
+    "direction": "BUY NO",
+    "entry_prob": 36.5,
+    "entry_time": "2026-05-15 06:28 UTC",
+    "url": "https://manifold.markets/bens/will-at-least-1-nonpassenger-get-ha",
+    "stake": 31.0,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "liquidation_size": 289,
+    "liquidation_impact": 5.4,
+    "liquidation_dir": "YES",
+    "impact_score": 1.57,
+    "signal_strength": 0.79
   }
 ]

@@ -18,21 +18,21 @@
   "pause_start": {},
   "bot_scores": {
     "momentum": {
-      "score": 58.9,
+      "score": 64.4,
       "win_rate": 50.0,
-      "avg_pnl": 4.5,
-      "total_pnl": 154.0,
-      "closed": 44,
-      "open": 7,
+      "avg_pnl": 7.2,
+      "total_pnl": 183.4,
+      "closed": 45,
+      "open": 6,
       "grade": "C"
     },
     "fade": {
-      "score": 82.0,
-      "win_rate": 70.0,
-      "avg_pnl": 16.6,
-      "total_pnl": 146.8,
-      "closed": 12,
-      "open": 1,
+      "score": 88.0,
+      "win_rate": 80.0,
+      "avg_pnl": 18.2,
+      "total_pnl": 155.8,
+      "closed": 13,
+      "open": 0,
       "grade": "A"
     },
     "mean_reversion": {
@@ -146,7 +146,7 @@
   },
   "consecutive_losses": {
     "momentum": 0,
-    "fade": 1,
+    "fade": 0,
     "mean_reversion": 5,
     "volume_surge": 2,
     "whale": 0,
