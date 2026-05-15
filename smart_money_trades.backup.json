@@ -2441,7 +2441,7 @@
     "price_impact": 10.8,
     "conviction_score": 3.46,
     "signal_strength": 1.15,
-    "peak_pnl": 1.1000000000000014
+    "peak_pnl": 1.6000000000000014
   },
   {
     "market_id": "cSAh00sC2d",
@@ -2451,15 +2451,35 @@
     "entry_time": "2026-05-15 16:48 UTC",
     "url": "https://manifold.markets/predyx_markets/xi-jingping-visits-usa-before-sep-3",
     "stake": 84.2,
+    "status": "closed",
+    "exit_prob": 86.1,
+    "exit_time": "2026-05-15 19:23 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 0.5,
+    "smart_user_bets": 2,
+    "smart_user_mana": 1500,
+    "price_impact": 38.8,
+    "conviction_score": 46.53,
+    "signal_strength": 1.5,
+    "peak_pnl": 0.5
+  },
+  {
+    "market_id": "hs0600PRI6",
+    "question": "Will Andy Burnham be an MP at the same time Keir Starmer is PM?",
+    "direction": "BUY YES",
+    "entry_prob": 50.9,
+    "entry_time": "2026-05-15 19:23 UTC",
+    "url": "https://manifold.markets/Jack1/will-andy-burnham-be-an-mp-at-the-s",
+    "stake": 51.5,
     "status": "open",
     "exit_prob": null,
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null,
-    "smart_user_bets": 2,
-    "smart_user_mana": 1500,
-    "price_impact": 38.8,
-    "conviction_score": 46.53,
-    "signal_strength": 1.5
+    "smart_user_bets": 3,
+    "smart_user_mana": 258,
+    "price_impact": 13.9,
+    "conviction_score": 4.3,
+    "signal_strength": 1.43
   }
 ]
