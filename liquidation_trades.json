@@ -1510,5 +1510,43 @@
     "liquidation_dir": "NO",
     "impact_score": 1.46,
     "signal_strength": 0.73
+  },
+  {
+    "market_id": "OcSuStph6L",
+    "question": "Will Xi Jingping visit US before 2027?",
+    "direction": "BUY NO",
+    "entry_prob": 86.8,
+    "entry_time": "2026-05-15 16:48 UTC",
+    "url": "https://manifold.markets/Mochi/will-xi-jingping-visit-us-before-20",
+    "stake": 24.8,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "liquidation_size": 750,
+    "liquidation_impact": 9.4,
+    "liquidation_dir": "YES",
+    "impact_score": 7.08,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "Q9h0ytCuPP",
+    "question": "Trump meets Xi Jinping again in 2026?",
+    "direction": "BUY NO",
+    "entry_prob": 83.9,
+    "entry_time": "2026-05-15 16:48 UTC",
+    "url": "https://manifold.markets/predyx_markets/trump-meets-xi-jinping-again-in-202",
+    "stake": 25.6,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "liquidation_size": 500,
+    "liquidation_impact": 8.5,
+    "liquidation_dir": "YES",
+    "impact_score": 4.25,
+    "signal_strength": 1.5
   }
 ]

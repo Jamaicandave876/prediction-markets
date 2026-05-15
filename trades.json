@@ -639,11 +639,11 @@
     "drift_score": -47.57,
     "url": "https://manifold.markets/UniversalFC/over-15-red-cards-issued-for-mouth",
     "stake": 36.5,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 24.7,
+    "exit_time": "2026-05-15 16:47 UTC",
+    "exit_reason": "stale",
+    "pnl_pp": -0.9
   },
   {
     "market_id": "nR3DkyivzF",
