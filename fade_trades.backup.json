@@ -227,10 +227,10 @@
     "entry_time": "2026-05-14 11:10 UTC",
     "url": "https://manifold.markets/MrBeastly/will-code-vulnerabilities-cve-recor-RyZ9Agdz8y",
     "stake": 46.2,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 31.1,
+    "exit_time": "2026-05-15 06:27 UTC",
+    "exit_reason": "normalized",
+    "pnl_pp": 9.0
   }
 ]
