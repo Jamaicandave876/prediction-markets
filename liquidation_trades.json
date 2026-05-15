@@ -1490,7 +1490,8 @@
     "liquidation_impact": 5.4,
     "liquidation_dir": "YES",
     "impact_score": 1.57,
-    "signal_strength": 0.79
+    "signal_strength": 0.79,
+    "peak_pnl": 0.5
   },
   {
     "market_id": "Unl6ENOSAP",
