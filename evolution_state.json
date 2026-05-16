@@ -80,7 +80,7 @@
     "smart_money": {
       "target_hit": 50,
       "stopped_out": 21,
-      "trailing_stop": 10,
+      "trailing_stop": 11,
       "stale": 31
     },
     "momentum": {
@@ -98,7 +98,7 @@
     },
     "liquidation": {
       "trailing_stop": 6,
-      "stale": 34,
+      "stale": 35,
       "resolved_loss": 3,
       "target_hit": 4,
       "stopped_out": 15
@@ -1086,42 +1086,6 @@
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "sentiment",
-      "market_id": "tllqIchqdq",
-      "outcome": "small_loss",
-      "pnl_pp": 0.0,
-      "exit_reason": "target_hit",
-      "duration_hours": 3.5,
-      "traits": [
-        "high_prob_entry",
-        "fast_trade",
-        "yes_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 74.7,
-      "direction": "BUY YES",
-      "timestamp": "2026-05-10 05:59 UTC",
-      "lesson": "Sentiment: small loss via target_hit. PnL: +0.0pp in 4h."
-    },
-    {
-      "bot": "sentiment",
-      "market_id": "tllqIchqdq",
-      "outcome": "small_loss",
-      "pnl_pp": 0.0,
-      "exit_reason": "target_hit",
-      "duration_hours": 3.5,
-      "traits": [
-        "high_prob_entry",
-        "fast_trade",
-        "yes_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 74.7,
-      "direction": "BUY YES",
-      "timestamp": "2026-05-10 05:59 UTC",
-      "lesson": "Sentiment: small loss via target_hit. PnL: +0.0pp in 4h."
-    },
     {
       "bot": "fade",
       "market_id": "hyIcPtz2lS",
@@ -2827,6 +2791,41 @@
       "direction": "BUY YES",
       "timestamp": "2026-05-16 15:53 UTC",
       "lesson": "Liquidation: Held too long with no resolution. Consider shorter max_days."
+    },
+    {
+      "bot": "smart_money",
+      "market_id": "PAPtPqQZhh",
+      "outcome": "big_loss",
+      "pnl_pp": -7.5,
+      "exit_reason": "trailing_stop",
+      "duration_hours": 13.1,
+      "traits": [
+        "mid_prob_entry",
+        "fast_trade",
+        "yes_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 47.5,
+      "direction": "BUY YES",
+      "timestamp": "2026-05-16 18:56 UTC",
+      "lesson": "Smart $: big loss via trailing_stop. PnL: -7.5pp in 13h."
+    },
+    {
+      "bot": "liquidation",
+      "market_id": "LsQqEzgNQZ",
+      "outcome": "big_loss",
+      "pnl_pp": -4.2,
+      "exit_reason": "stale",
+      "duration_hours": 50.0,
+      "traits": [
+        "low_prob_entry",
+        "yes_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 12.9,
+      "direction": "BUY YES",
+      "timestamp": "2026-05-16 15:53 UTC",
+      "lesson": "Liquidation: Held too long with no resolution. Consider shorter max_days."
     }
   ],
   "regime": "cautious",
@@ -2947,7 +2946,7 @@
     "breakout": 0.71,
     "calibration": 0.1,
     "reversal": 0.2,
-    "smart_money": 0.3,
+    "smart_money": 0.26,
     "time_decay": 0.23,
     "sentiment": 0.44,
     "accumulation": 0.1,
@@ -2960,6 +2959,6 @@
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-05-16 15:53 UTC",
-  "generation": 278
+  "last_evolution": "2026-05-16 18:57 UTC",
+  "generation": 279
 }
