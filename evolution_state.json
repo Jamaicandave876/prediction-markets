@@ -79,9 +79,9 @@
     },
     "smart_money": {
       "target_hit": 48,
-      "stopped_out": 18,
+      "stopped_out": 19,
       "trailing_stop": 10,
-      "stale": 29
+      "stale": 30
     },
     "momentum": {
       "trailing_stop": 6,
@@ -160,11 +160,11 @@
       "slow_trade": 3
     },
     "liquidation": {
-      "low_prob_entry": 8,
-      "fast_trade": 13,
+      "low_prob_entry": 9,
+      "fast_trade": 14,
       "yes_direction": 34,
       "mid_prob_entry": 36,
-      "no_direction": 22,
+      "no_direction": 23,
       "strong_signal": 34,
       "high_prob_entry": 12,
       "weak_signal": 6
@@ -1086,58 +1086,6 @@
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "liquidation",
-      "market_id": "QRpZ5sN6uh",
-      "outcome": "big_loss",
-      "pnl_pp": -11.6,
-      "exit_reason": "stale",
-      "duration_hours": 50.1,
-      "traits": [
-        "high_prob_entry",
-        "no_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 78.1,
-      "direction": "BUY NO",
-      "timestamp": "2026-05-09 18:52 UTC",
-      "lesson": "Liquidation: Held too long with no resolution. Consider shorter max_days."
-    },
-    {
-      "bot": "liquidation",
-      "market_id": "c0LcldPQlL",
-      "outcome": "small_win",
-      "pnl_pp": 3.6,
-      "exit_reason": "stale",
-      "duration_hours": 50.1,
-      "traits": [
-        "mid_prob_entry",
-        "yes_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 55.0,
-      "direction": "BUY YES",
-      "timestamp": "2026-05-09 18:52 UTC",
-      "lesson": "Liquidation: small win via stale. PnL: +3.6pp in 50h."
-    },
-    {
-      "bot": "liquidation",
-      "market_id": "gctNUy8IAy",
-      "outcome": "small_loss",
-      "pnl_pp": 0.0,
-      "exit_reason": "resolved_loss",
-      "duration_hours": 20.9,
-      "traits": [
-        "high_prob_entry",
-        "fast_trade",
-        "no_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 87.0,
-      "direction": "BUY NO",
-      "timestamp": "2026-05-09 18:52 UTC",
-      "lesson": "Liquidation: small loss via resolved_loss. PnL: +0.0pp in 21h."
-    },
     {
       "bot": "smart_money",
       "market_id": "2IUQuSy0dQ",
@@ -2828,6 +2776,56 @@
       "direction": "BUY YES",
       "timestamp": "2026-05-16 02:26 UTC",
       "lesson": "Smart $: big loss via stopped_out. PnL: -13.9pp in 44h."
+    },
+    {
+      "bot": "smart_money",
+      "market_id": "zqOhAh0OEI",
+      "outcome": "big_loss",
+      "pnl_pp": -9.4,
+      "exit_reason": "stale",
+      "duration_hours": 51.2,
+      "traits": [
+        "mid_prob_entry",
+        "yes_direction"
+      ],
+      "entry_prob": 54.6,
+      "direction": "BUY YES",
+      "timestamp": "2026-05-16 05:49 UTC",
+      "lesson": "Smart $: Held too long with no resolution. Consider shorter max_days."
+    },
+    {
+      "bot": "smart_money",
+      "market_id": "2IUQuSy0dQ",
+      "outcome": "big_loss",
+      "pnl_pp": -13.9,
+      "exit_reason": "stopped_out",
+      "duration_hours": 44.1,
+      "traits": [
+        "mid_prob_entry",
+        "yes_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 45.6,
+      "direction": "BUY YES",
+      "timestamp": "2026-05-16 02:26 UTC",
+      "lesson": "Smart $: big loss via stopped_out. PnL: -13.9pp in 44h."
+    },
+    {
+      "bot": "liquidation",
+      "market_id": "2hOztUzsty",
+      "outcome": "small_win",
+      "pnl_pp": 0.9,
+      "exit_reason": "target_hit",
+      "duration_hours": 3.4,
+      "traits": [
+        "low_prob_entry",
+        "fast_trade",
+        "no_direction"
+      ],
+      "entry_prob": 21.0,
+      "direction": "BUY NO",
+      "timestamp": "2026-05-16 05:50 UTC",
+      "lesson": "Liquidation: small win via target_hit. PnL: +0.9pp in 3h."
     }
   ],
   "regime": "cautious",
@@ -2948,7 +2946,7 @@
     "breakout": 0.71,
     "calibration": 0.1,
     "reversal": 0.2,
-    "smart_money": 0.47,
+    "smart_money": 0.43,
     "time_decay": 0.23,
     "sentiment": 0.31,
     "accumulation": 0.1,
@@ -2961,6 +2959,6 @@
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-05-16 02:27 UTC",
-  "generation": 273
+  "last_evolution": "2026-05-16 05:50 UTC",
+  "generation": 274
 }

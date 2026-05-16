@@ -1529,7 +1529,8 @@
     "liquidation_impact": 9.4,
     "liquidation_dir": "YES",
     "impact_score": 7.08,
-    "signal_strength": 1.5
+    "signal_strength": 1.5,
+    "peak_pnl": 0.5
   },
   {
     "market_id": "Q9h0ytCuPP",
@@ -1549,5 +1550,24 @@
     "liquidation_dir": "YES",
     "impact_score": 4.25,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "2hOztUzsty",
+    "question": "Will the origin of the MV Hondius hantavirus outbreak be revealed to be from rats on the ship itself?",
+    "direction": "BUY NO",
+    "entry_prob": 21.0,
+    "entry_time": "2026-05-16 02:27 UTC",
+    "url": "https://manifold.markets/bens/will-the-origin-of-the-mv-hondius-h",
+    "stake": 68.1,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "liquidation_size": 150,
+    "liquidation_impact": 10.8,
+    "liquidation_dir": "YES",
+    "impact_score": 1.61,
+    "signal_strength": 0.81
   }
 ]
