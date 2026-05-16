@@ -1570,5 +1570,24 @@
     "impact_score": 1.61,
     "signal_strength": 0.81,
     "peak_pnl": 0.8999999999999986
+  },
+  {
+    "market_id": "R6I2UqZySE",
+    "question": "Will Pauline Hanson meet Donald Trump face-to-face in 2026?",
+    "direction": "BUY YES",
+    "entry_prob": 16.0,
+    "entry_time": "2026-05-16 07:55 UTC",
+    "url": "https://manifold.markets/brod/will-pauline-hanson-meet-donald-tru",
+    "stake": 31.5,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "liquidation_size": 500,
+    "liquidation_impact": 6.2,
+    "liquidation_dir": "NO",
+    "impact_score": 3.1,
+    "signal_strength": 1.5
   }
 ]

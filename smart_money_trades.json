@@ -2500,7 +2500,8 @@
     "smart_user_mana": 497,
     "price_impact": 12.3,
     "conviction_score": 19.64,
-    "signal_strength": 1.5
+    "signal_strength": 1.5,
+    "peak_pnl": 2.5
   },
   {
     "market_id": "cSAh00sC2d",
@@ -2510,15 +2511,34 @@
     "entry_time": "2026-05-16 07:55 UTC",
     "url": "https://manifold.markets/predyx_markets/xi-jingping-visits-usa-before-sep-3",
     "stake": 89.5,
+    "status": "closed",
+    "exit_prob": 84.7,
+    "exit_time": "2026-05-16 10:11 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 0.0,
+    "smart_user_bets": 2,
+    "smart_user_mana": 1500,
+    "price_impact": 38.8,
+    "conviction_score": 46.53,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "2hOztUzsty",
+    "question": "Will the origin of the MV Hondius hantavirus outbreak be revealed to be from rats on the ship itself?",
+    "direction": "BUY YES",
+    "entry_prob": 39.0,
+    "entry_time": "2026-05-16 10:11 UTC",
+    "url": "https://manifold.markets/bens/will-the-origin-of-the-mv-hondius-h",
+    "stake": 31.6,
     "status": "open",
     "exit_prob": null,
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null,
-    "smart_user_bets": 2,
-    "smart_user_mana": 1500,
-    "price_impact": 38.8,
-    "conviction_score": 46.53,
+    "smart_user_bets": 3,
+    "smart_user_mana": 1330,
+    "price_impact": 54.3,
+    "conviction_score": 86.61,
     "signal_strength": 1.5
   }
 ]
