@@ -81,7 +81,7 @@
       "target_hit": 48,
       "stopped_out": 19,
       "trailing_stop": 10,
-      "stale": 30
+      "stale": 31
     },
     "momentum": {
       "trailing_stop": 6,
@@ -160,11 +160,11 @@
       "slow_trade": 3
     },
     "liquidation": {
-      "low_prob_entry": 9,
-      "fast_trade": 14,
+      "low_prob_entry": 10,
+      "fast_trade": 15,
       "yes_direction": 34,
       "mid_prob_entry": 36,
-      "no_direction": 23,
+      "no_direction": 24,
       "strong_signal": 34,
       "high_prob_entry": 12,
       "weak_signal": 6
@@ -213,13 +213,13 @@
     },
     "sentiment": {
       "low_prob_entry": 10,
-      "fast_trade": 21,
+      "fast_trade": 22,
       "no_direction": 21,
       "weak_signal": 8,
-      "mid_prob_entry": 17,
+      "mid_prob_entry": 18,
       "strong_signal": 19,
       "high_prob_entry": 7,
-      "yes_direction": 13
+      "yes_direction": 14
     },
     "hedge": {
       "low_prob_entry": 3,
@@ -1086,59 +1086,6 @@
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "smart_money",
-      "market_id": "2IUQuSy0dQ",
-      "outcome": "small_win",
-      "pnl_pp": 1.0,
-      "exit_reason": "target_hit",
-      "duration_hours": 2.8,
-      "traits": [
-        "low_prob_entry",
-        "fast_trade",
-        "no_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 20.4,
-      "direction": "BUY NO",
-      "timestamp": "2026-05-09 21:38 UTC",
-      "lesson": "Smart $: small win via target_hit. PnL: +1.0pp in 3h."
-    },
-    {
-      "bot": "smart_money",
-      "market_id": "qp98EIPS6n",
-      "outcome": "small_loss",
-      "pnl_pp": 0.0,
-      "exit_reason": "target_hit",
-      "duration_hours": 2.8,
-      "traits": [
-        "low_prob_entry",
-        "fast_trade",
-        "no_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 22.7,
-      "direction": "BUY NO",
-      "timestamp": "2026-05-09 21:38 UTC",
-      "lesson": "Smart $: small loss via target_hit. PnL: +0.0pp in 3h."
-    },
-    {
-      "bot": "sentiment",
-      "market_id": "Rqtnl5LtpL",
-      "outcome": "small_win",
-      "pnl_pp": 0.8,
-      "exit_reason": "stale",
-      "duration_hours": 98.5,
-      "traits": [
-        "low_prob_entry",
-        "no_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 29.6,
-      "direction": "BUY NO",
-      "timestamp": "2026-05-09 18:52 UTC",
-      "lesson": "Sentiment: small win via stale. PnL: +0.8pp in 98h."
-    },
     {
       "bot": "sentiment",
       "market_id": "9p8zESLggZ",
@@ -2826,6 +2773,56 @@
       "direction": "BUY NO",
       "timestamp": "2026-05-16 05:50 UTC",
       "lesson": "Liquidation: small win via target_hit. PnL: +0.9pp in 3h."
+    },
+    {
+      "bot": "smart_money",
+      "market_id": "zqOhAh0OEI",
+      "outcome": "big_loss",
+      "pnl_pp": -9.4,
+      "exit_reason": "stale",
+      "duration_hours": 51.2,
+      "traits": [
+        "mid_prob_entry",
+        "yes_direction"
+      ],
+      "entry_prob": 54.6,
+      "direction": "BUY YES",
+      "timestamp": "2026-05-16 05:49 UTC",
+      "lesson": "Smart $: Held too long with no resolution. Consider shorter max_days."
+    },
+    {
+      "bot": "sentiment",
+      "market_id": "PAPtPqQZhh",
+      "outcome": "small_win",
+      "pnl_pp": 3.0,
+      "exit_reason": "trailing_stop",
+      "duration_hours": 5.5,
+      "traits": [
+        "mid_prob_entry",
+        "fast_trade",
+        "yes_direction"
+      ],
+      "entry_prob": 39.9,
+      "direction": "BUY YES",
+      "timestamp": "2026-05-16 07:55 UTC",
+      "lesson": "Sentiment: small win via trailing_stop. PnL: +3.0pp in 5h."
+    },
+    {
+      "bot": "liquidation",
+      "market_id": "2hOztUzsty",
+      "outcome": "small_win",
+      "pnl_pp": 0.9,
+      "exit_reason": "target_hit",
+      "duration_hours": 3.4,
+      "traits": [
+        "low_prob_entry",
+        "fast_trade",
+        "no_direction"
+      ],
+      "entry_prob": 21.0,
+      "direction": "BUY NO",
+      "timestamp": "2026-05-16 05:50 UTC",
+      "lesson": "Liquidation: small win via target_hit. PnL: +0.9pp in 3h."
     }
   ],
   "regime": "cautious",
@@ -2948,7 +2945,7 @@
     "reversal": 0.2,
     "smart_money": 0.43,
     "time_decay": 0.23,
-    "sentiment": 0.31,
+    "sentiment": 0.44,
     "accumulation": 0.1,
     "underdog": 0.1,
     "late_mover": 0.2,
@@ -2959,6 +2956,6 @@
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-05-16 05:50 UTC",
-  "generation": 274
+  "last_evolution": "2026-05-16 07:56 UTC",
+  "generation": 275
 }

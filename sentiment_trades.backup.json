@@ -1213,6 +1213,7 @@
     "crowd_pct": 65.0,
     "price_move": 5.9,
     "divergence_score": 3.86,
-    "signal_strength": 0.77
+    "signal_strength": 0.77,
+    "peak_pnl": 7.600000000000001
   }
 ]
