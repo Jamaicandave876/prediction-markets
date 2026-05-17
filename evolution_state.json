@@ -98,7 +98,7 @@
     },
     "liquidation": {
       "trailing_stop": 6,
-      "stale": 35,
+      "stale": 36,
       "resolved_loss": 3,
       "target_hit": 4,
       "stopped_out": 15
@@ -213,11 +213,11 @@
     },
     "sentiment": {
       "low_prob_entry": 10,
-      "fast_trade": 23,
-      "no_direction": 21,
+      "fast_trade": 24,
+      "no_direction": 22,
       "weak_signal": 8,
-      "mid_prob_entry": 19,
-      "strong_signal": 19,
+      "mid_prob_entry": 20,
+      "strong_signal": 20,
       "high_prob_entry": 7,
       "yes_direction": 15
     },
@@ -1086,42 +1086,6 @@
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "fade",
-      "market_id": "hyIcPtz2lS",
-      "outcome": "strong_win",
-      "pnl_pp": 55.1,
-      "exit_reason": "normalized",
-      "duration_hours": 7.6,
-      "traits": [
-        "high_prob_entry",
-        "fast_trade",
-        "no_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 94.4,
-      "direction": "BUY NO",
-      "timestamp": "2026-05-10 15:45 UTC",
-      "lesson": "Fade: Quick strong win \u2014 this signal pattern works well."
-    },
-    {
-      "bot": "smart_money",
-      "market_id": "2IUQuSy0dQ",
-      "outcome": "small_loss",
-      "pnl_pp": 0.0,
-      "exit_reason": "trailing_stop",
-      "duration_hours": 5.6,
-      "traits": [
-        "mid_prob_entry",
-        "fast_trade",
-        "yes_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 53.0,
-      "direction": "BUY YES",
-      "timestamp": "2026-05-10 15:45 UTC",
-      "lesson": "Smart $: Had profit but trailing stop was too tight. Consider widening trail."
-    },
     {
       "bot": "liquidation",
       "market_id": "Lzh2g9PINy",
@@ -2825,6 +2789,40 @@
       "direction": "BUY NO",
       "timestamp": "2026-05-17 10:20 UTC",
       "lesson": "Smart $: small win via stale. PnL: +3.8pp in 52h."
+    },
+    {
+      "bot": "sentiment",
+      "market_id": "PAPtPqQZhh",
+      "outcome": "small_win",
+      "pnl_pp": 1.1,
+      "exit_reason": "trailing_stop",
+      "duration_hours": 13.4,
+      "traits": [
+        "mid_prob_entry",
+        "fast_trade",
+        "no_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 40.1,
+      "direction": "BUY NO",
+      "timestamp": "2026-05-17 15:54 UTC",
+      "lesson": "Sentiment: small win via trailing_stop. PnL: +1.1pp in 13h."
+    },
+    {
+      "bot": "liquidation",
+      "market_id": "Unl6ENOSAP",
+      "outcome": "small_loss",
+      "pnl_pp": 0.0,
+      "exit_reason": "stale",
+      "duration_hours": 50.0,
+      "traits": [
+        "low_prob_entry",
+        "yes_direction"
+      ],
+      "entry_prob": 23.7,
+      "direction": "BUY YES",
+      "timestamp": "2026-05-17 15:54 UTC",
+      "lesson": "Liquidation: small loss via stale. PnL: +0.0pp in 50h."
     }
   ],
   "regime": "cautious",
@@ -2947,17 +2945,17 @@
     "reversal": 0.2,
     "smart_money": 0.47,
     "time_decay": 0.23,
-    "sentiment": 0.44,
+    "sentiment": 0.49,
     "accumulation": 0.1,
     "underdog": 0.1,
     "late_mover": 0.2,
     "hedge": 0.2,
-    "liquidation": 0.56,
+    "liquidation": 0.48,
     "weather_temperature": 0.5,
     "weather_precipitation": 0.5,
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-05-17 13:06 UTC",
-  "generation": 284
+  "last_evolution": "2026-05-17 15:54 UTC",
+  "generation": 285
 }
