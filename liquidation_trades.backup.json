@@ -1589,5 +1589,24 @@
     "liquidation_dir": "NO",
     "impact_score": 3.1,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "ANpdgU2dPh",
+    "question": "Will any horse win the Triple Crown in 2027?",
+    "direction": "BUY YES",
+    "entry_prob": 13.1,
+    "entry_time": "2026-05-17 06:17 UTC",
+    "url": "https://manifold.markets/10thOfficial/will-any-horse-win-the-triple-crown-PyQ6dtpQO5",
+    "stake": 22.7,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "liquidation_size": 450,
+    "liquidation_impact": 5.6,
+    "liquidation_dir": "NO",
+    "impact_score": 2.52,
+    "signal_strength": 1.26
   }
 ]
