@@ -232,5 +232,23 @@
     "exit_time": "2026-05-15 06:27 UTC",
     "exit_reason": "normalized",
     "pnl_pp": 9.0
+  },
+  {
+    "market_id": "cSl98uE2dt",
+    "question": "Restore Britain \u22654% in Makerfield by-election?",
+    "direction": "BUY NO",
+    "entry_prob": 61.9,
+    "pre_spike_prob": 48.5,
+    "spike_size": 13.4,
+    "spike_ratio": 11.7,
+    "spike_dir": 1,
+    "entry_time": "2026-05-18 02:42 UTC",
+    "url": "https://manifold.markets/Simon74fe/restore-britain-4-in-makerfield-bye",
+    "stake": 51.7,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]

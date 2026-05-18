@@ -1608,5 +1608,24 @@
     "liquidation_dir": "NO",
     "impact_score": 2.52,
     "signal_strength": 1.26
+  },
+  {
+    "market_id": "cSl98uE2dt",
+    "question": "Restore Britain \u22654% in Makerfield by-election?",
+    "direction": "BUY NO",
+    "entry_prob": 62.5,
+    "entry_time": "2026-05-17 21:50 UTC",
+    "url": "https://manifold.markets/Simon74fe/restore-britain-4-in-makerfield-bye",
+    "stake": 41.9,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "liquidation_size": 300,
+    "liquidation_impact": 13.0,
+    "liquidation_dir": "YES",
+    "impact_score": 3.89,
+    "signal_strength": 1.5
   }
 ]
