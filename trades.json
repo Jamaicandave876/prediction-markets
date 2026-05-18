@@ -799,5 +799,20 @@
     "exit_reason": null,
     "pnl_pp": null,
     "peak_pnl": 9.5
+  },
+  {
+    "market_id": "IdOl88s9cE",
+    "question": "Will a humanoid robot walk on the mars before a human does?",
+    "direction": "BUY NO",
+    "entry_prob": 38.2,
+    "entry_time": "2026-05-18 19:28 UTC",
+    "drift_score": -10.67,
+    "url": "https://manifold.markets/Mochi/will-a-humanoid-robot-walk-on-the-m-EsPuyOc8np",
+    "stake": 31.0,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]
