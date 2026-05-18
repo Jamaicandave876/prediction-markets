@@ -654,11 +654,11 @@
     "drift_score": 35.33,
     "url": "https://manifold.markets/LessWrong/will-how-go-players-disempower-them",
     "stake": 27.8,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 34.1,
+    "exit_time": "2026-05-18 06:50 UTC",
+    "exit_reason": "stale",
+    "pnl_pp": -3.9
   },
   {
     "market_id": "Z8csnnSEdz",

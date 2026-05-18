@@ -21,7 +21,8 @@
     },
     "momentum": {
       "trailing_stop_pp": 8,
-      "stop_pp": 3
+      "stop_pp": 3,
+      "max_days": 5
     },
     "close_gravity": {
       "stop_pp": 12
@@ -87,7 +88,7 @@
       "trailing_stop": 6,
       "reversal": 17,
       "target_hit": 7,
-      "stale": 5
+      "stale": 6
     },
     "contrarian": {
       "trailing_stop": 2,
@@ -1083,27 +1084,18 @@
       "new": 12,
       "reason": "Too many stop-outs \u2014 stops are too tight",
       "timestamp": "2026-04-30 05:53 UTC"
+    },
+    {
+      "type": "bot_adjustment",
+      "bot": "momentum",
+      "param": "max_days",
+      "old": 7,
+      "new": 5,
+      "reason": "Too many stale exits \u2014 holding too long",
+      "timestamp": "2026-05-18 06:51 UTC"
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "momentum",
-      "market_id": "UtAp0z5PhC",
-      "outcome": "big_loss",
-      "pnl_pp": -4.8,
-      "exit_reason": "stale",
-      "duration_hours": 336.8,
-      "traits": [
-        "mid_prob_entry",
-        "slow_trade",
-        "yes_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 62.4,
-      "direction": "BUY YES",
-      "timestamp": "2026-05-11 06:32 UTC",
-      "lesson": "Momentum: Held too long with no resolution. Consider shorter max_days."
-    },
     {
       "bot": "smart_money",
       "market_id": "QtntARQCu9",
@@ -2822,6 +2814,24 @@
       "direction": "BUY NO",
       "timestamp": "2026-05-17 18:59 UTC",
       "lesson": "Liquidation: small loss via stale. PnL: +0.0pp in 50h."
+    },
+    {
+      "bot": "momentum",
+      "market_id": "nR3DkyivzF",
+      "outcome": "big_loss",
+      "pnl_pp": -3.9,
+      "exit_reason": "stale",
+      "duration_hours": 336.9,
+      "traits": [
+        "mid_prob_entry",
+        "slow_trade",
+        "yes_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 38.0,
+      "direction": "BUY YES",
+      "timestamp": "2026-05-18 06:50 UTC",
+      "lesson": "Momentum: Held too long with no resolution. Consider shorter max_days."
     }
   ],
   "regime": "cautious",
@@ -2930,7 +2940,7 @@
     }
   ],
   "bot_confidence": {
-    "momentum": 0.54,
+    "momentum": 0.49,
     "fade": 0.79,
     "mean_reversion": 0.1,
     "volume_surge": 0.2,
@@ -2955,6 +2965,6 @@
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-05-18 02:43 UTC",
-  "generation": 288
+  "last_evolution": "2026-05-18 06:51 UTC",
+  "generation": 289
 }
