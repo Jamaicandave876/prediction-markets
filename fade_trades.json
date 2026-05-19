@@ -245,10 +245,10 @@
     "entry_time": "2026-05-18 02:42 UTC",
     "url": "https://manifold.markets/Simon74fe/restore-britain-4-in-makerfield-bye",
     "stake": 51.7,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 74.8,
+    "exit_time": "2026-05-19 02:39 UTC",
+    "exit_reason": "stopped_out",
+    "pnl_pp": -12.9
   }
 ]

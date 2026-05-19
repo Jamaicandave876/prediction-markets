@@ -102,10 +102,10 @@
       "stale": 40,
       "resolved_loss": 3,
       "target_hit": 4,
-      "stopped_out": 16
+      "stopped_out": 17
     },
     "fade": {
-      "stopped_out": 6,
+      "stopped_out": 7,
       "stale": 2
     },
     "late_mover": {
@@ -1105,42 +1105,6 @@
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "sentiment",
-      "market_id": "tllqIchqdq",
-      "outcome": "small_loss",
-      "pnl_pp": 0.0,
-      "exit_reason": "target_hit",
-      "duration_hours": 3.4,
-      "traits": [
-        "high_prob_entry",
-        "fast_trade",
-        "yes_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 74.7,
-      "direction": "BUY YES",
-      "timestamp": "2026-05-11 15:26 UTC",
-      "lesson": "Sentiment: small loss via target_hit. PnL: +0.0pp in 3h."
-    },
-    {
-      "bot": "momentum",
-      "market_id": "tqZUSphphC",
-      "outcome": "small_win",
-      "pnl_pp": 3.1,
-      "exit_reason": "stale",
-      "duration_hours": 339.3,
-      "traits": [
-        "mid_prob_entry",
-        "slow_trade",
-        "no_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 45.8,
-      "direction": "BUY NO",
-      "timestamp": "2026-05-11 19:39 UTC",
-      "lesson": "Momentum: small win via stale. PnL: +3.1pp in 339h."
-    },
     {
       "bot": "momentum",
       "market_id": "tqZUSphphC",
@@ -2841,6 +2805,41 @@
       "direction": "BUY NO",
       "timestamp": "2026-05-18 12:25 UTC",
       "lesson": "Liquidation: big loss via stopped_out. PnL: -10.1pp in 6h."
+    },
+    {
+      "bot": "fade",
+      "market_id": "cSl98uE2dt",
+      "outcome": "big_loss",
+      "pnl_pp": -12.9,
+      "exit_reason": "stopped_out",
+      "duration_hours": 23.9,
+      "traits": [
+        "mid_prob_entry",
+        "fast_trade",
+        "no_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 61.9,
+      "direction": "BUY NO",
+      "timestamp": "2026-05-19 02:39 UTC",
+      "lesson": "Fade: big loss via stopped_out. PnL: -12.9pp in 24h."
+    },
+    {
+      "bot": "liquidation",
+      "market_id": "cSl98uE2dt",
+      "outcome": "big_loss",
+      "pnl_pp": -12.3,
+      "exit_reason": "stopped_out",
+      "duration_hours": 28.8,
+      "traits": [
+        "mid_prob_entry",
+        "no_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 62.5,
+      "direction": "BUY NO",
+      "timestamp": "2026-05-19 02:40 UTC",
+      "lesson": "Liquidation: big loss via stopped_out. PnL: -12.3pp in 29h."
     }
   ],
   "regime": "cautious",
@@ -2950,7 +2949,7 @@
   ],
   "bot_confidence": {
     "momentum": 0.49,
-    "fade": 0.79,
+    "fade": 0.68,
     "mean_reversion": 0.1,
     "volume_surge": 0.2,
     "whale": 0.23,
@@ -2968,12 +2967,12 @@
     "underdog": 0.1,
     "late_mover": 0.2,
     "hedge": 0.2,
-    "liquidation": 0.44,
+    "liquidation": 0.4,
     "weather_temperature": 0.5,
     "weather_precipitation": 0.5,
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-05-18 22:01 UTC",
-  "generation": 293
+  "last_evolution": "2026-05-19 02:40 UTC",
+  "generation": 294
 }
