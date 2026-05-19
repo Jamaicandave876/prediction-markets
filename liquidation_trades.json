@@ -1598,11 +1598,11 @@
     "entry_time": "2026-05-17 06:17 UTC",
     "url": "https://manifold.markets/10thOfficial/will-any-horse-win-the-triple-crown-PyQ6dtpQO5",
     "stake": 22.7,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 13.1,
+    "exit_time": "2026-05-19 06:49 UTC",
+    "exit_reason": "stale",
+    "pnl_pp": 0.0,
     "liquidation_size": 450,
     "liquidation_impact": 5.6,
     "liquidation_dir": "NO",
@@ -1684,7 +1684,8 @@
     "liquidation_impact": 14.7,
     "liquidation_dir": "NO",
     "impact_score": 7.34,
-    "signal_strength": 1.5
+    "signal_strength": 1.5,
+    "peak_pnl": 0.5
   },
   {
     "market_id": "RqCuspq8Nn",
@@ -1703,6 +1704,7 @@
     "liquidation_impact": 13.3,
     "liquidation_dir": "YES",
     "impact_score": 3.33,
-    "signal_strength": 1.5
+    "signal_strength": 1.5,
+    "peak_pnl": 4.799999999999997
   }
 ]
