@@ -1235,5 +1235,24 @@
     "divergence_score": 6.71,
     "signal_strength": 1.34,
     "peak_pnl": 5.100000000000001
+  },
+  {
+    "market_id": "6sR508pyy0",
+    "question": "Will Anthropic or OpenAI add a higher tier subscription >= 400$ in 2026?",
+    "direction": "BUY YES",
+    "entry_prob": 53.1,
+    "entry_time": "2026-05-19 19:45 UTC",
+    "url": "https://manifold.markets/Soli/will-anthropic-or-openai-add-a-high",
+    "stake": 25.7,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "NO",
+    "crowd_pct": 65.0,
+    "price_move": 5.4,
+    "divergence_score": 3.49,
+    "signal_strength": 0.7
   }
 ]

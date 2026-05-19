@@ -311,7 +311,7 @@
   "paused": {
     "mean_reversion": true,
     "contrarian": true,
-    "liquidation": false,
+    "liquidation": true,
     "calibration": true,
     "sentiment_divergence": false,
     "smart_money": false
@@ -320,6 +320,7 @@
   "pause_start": {
     "mean_reversion": "2026-05-19 14:52 UTC",
     "contrarian": "2026-05-19 14:52 UTC",
-    "calibration": "2026-05-19 19:46 UTC"
+    "calibration": "2026-05-19 19:46 UTC",
+    "liquidation": "2026-05-19 22:11 UTC"
   }
 }
