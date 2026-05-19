@@ -1707,5 +1707,24 @@
     "impact_score": 3.33,
     "signal_strength": 1.5,
     "peak_pnl": 4.799999999999997
+  },
+  {
+    "market_id": "UIqUE80RhN",
+    "question": "Will Andy Burnham win a majority of the vote in the Makerfield byelection?",
+    "direction": "BUY NO",
+    "entry_prob": 35.0,
+    "entry_time": "2026-05-19 17:36 UTC",
+    "url": "https://manifold.markets/Jack1/will-andy-burnham-win-a-majority-of",
+    "stake": 53.8,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "liquidation_size": 300,
+    "liquidation_impact": 19.3,
+    "liquidation_dir": "YES",
+    "impact_score": 5.78,
+    "signal_strength": 1.5
   }
 ]
