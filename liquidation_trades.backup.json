@@ -1727,5 +1727,43 @@
     "impact_score": 5.78,
     "signal_strength": 1.5,
     "peak_pnl": 5.600000000000001
+  },
+  {
+    "market_id": "0PROUQh9dn",
+    "question": "The Boys: Does Ryan still have his powers?",
+    "direction": "BUY NO",
+    "entry_prob": 70.8,
+    "entry_time": "2026-05-20 20:06 UTC",
+    "url": "https://manifold.markets/HillaryClinton/the-boys-does-ryan-still-have-his-p",
+    "stake": 36.6,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "liquidation_size": 350,
+    "liquidation_impact": 14.6,
+    "liquidation_dir": "YES",
+    "impact_score": 5.1,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "Z9shOszgAS",
+    "question": "Will Elon Musk become a trillionaire before July 2026?",
+    "direction": "BUY YES",
+    "entry_prob": 43.0,
+    "entry_time": "2026-05-20 20:06 UTC",
+    "url": "https://manifold.markets/Jack1/will-elon-musk-become-a-trillionair-PAcZIOEydd",
+    "stake": 45.4,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "liquidation_size": 500,
+    "liquidation_impact": 6.6,
+    "liquidation_dir": "NO",
+    "impact_score": 3.32,
+    "signal_strength": 1.5
   }
 ]
