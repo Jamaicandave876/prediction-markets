@@ -151,9 +151,9 @@
       "weak_signal": 2
     },
     "smart_money": {
-      "mid_prob_entry": 51,
-      "no_direction": 58,
-      "strong_signal": 81,
+      "mid_prob_entry": 52,
+      "no_direction": 59,
+      "strong_signal": 82,
       "fast_trade": 56,
       "low_prob_entry": 28,
       "yes_direction": 34,
@@ -1105,23 +1105,6 @@
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "smart_money",
-      "market_id": "ULg0nUz9RR",
-      "outcome": "strong_win",
-      "pnl_pp": 7.3,
-      "exit_reason": "stale",
-      "duration_hours": 48.4,
-      "traits": [
-        "mid_prob_entry",
-        "no_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 37.4,
-      "direction": "BUY NO",
-      "timestamp": "2026-05-12 22:08 UTC",
-      "lesson": "Smart $: Strong signal \u2192 strong win. Keep trusting high-confidence entries."
-    },
     {
       "bot": "smart_money",
       "market_id": "pZ2Cz0E92d",
@@ -2839,6 +2822,23 @@
       "direction": "BUY NO",
       "timestamp": "2026-05-20 14:46 UTC",
       "lesson": "Liquidation: Quick strong win \u2014 this signal pattern works well."
+    },
+    {
+      "bot": "smart_money",
+      "market_id": "IdOl88s9cE",
+      "outcome": "small_win",
+      "pnl_pp": 1.2,
+      "exit_reason": "stale",
+      "duration_hours": 48.6,
+      "traits": [
+        "mid_prob_entry",
+        "no_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 38.2,
+      "direction": "BUY NO",
+      "timestamp": "2026-05-20 20:05 UTC",
+      "lesson": "Smart $: small win via stale. PnL: +1.2pp in 49h."
     }
   ],
   "regime": "cautious",
@@ -2959,7 +2959,7 @@
     "breakout": 0.71,
     "calibration": 0.1,
     "reversal": 0.2,
-    "smart_money": 0.51,
+    "smart_money": 0.55,
     "time_decay": 0.23,
     "sentiment": 0.49,
     "accumulation": 0.1,
@@ -2972,6 +2972,6 @@
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-05-20 17:51 UTC",
-  "generation": 305
+  "last_evolution": "2026-05-20 20:06 UTC",
+  "generation": 306
 }
