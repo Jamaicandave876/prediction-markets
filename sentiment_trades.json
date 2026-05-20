@@ -1254,5 +1254,24 @@
     "price_move": 5.4,
     "divergence_score": 3.49,
     "signal_strength": 0.7
+  },
+  {
+    "market_id": "RqCuspq8Nn",
+    "question": "Will the next full gemini model be as good as opus 4.7 or gpt 5.5 at coding?",
+    "direction": "BUY NO",
+    "entry_prob": 65.7,
+    "entry_time": "2026-05-20 06:43 UTC",
+    "url": "https://manifold.markets/ian/will-the-next-full-gemini-model-be",
+    "stake": 38.9,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "YES",
+    "crowd_pct": 75.0,
+    "price_move": -10.8,
+    "divergence_score": 8.09,
+    "signal_strength": 1.5
   }
 ]

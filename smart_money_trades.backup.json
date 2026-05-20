@@ -2579,7 +2579,7 @@
     "price_impact": 8.3,
     "conviction_score": 41.27,
     "signal_strength": 1.5,
-    "peak_pnl": 5.5
+    "peak_pnl": 5.700000000000003
   },
   {
     "market_id": "IdOl88s9cE",
@@ -2677,6 +2677,44 @@
     "smart_user_mana": 1000,
     "price_impact": 29.5,
     "conviction_score": 23.59,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "UIqUE80RhN",
+    "question": "Will Andy Burnham win a majority of the vote in the Makerfield byelection?",
+    "direction": "BUY NO",
+    "entry_prob": 33.0,
+    "entry_time": "2026-05-20 02:41 UTC",
+    "url": "https://manifold.markets/Jack1/will-andy-burnham-win-a-majority-of",
+    "stake": 62.8,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 5,
+    "smart_user_mana": 419,
+    "price_impact": 7.8,
+    "conviction_score": 6.52,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "ttPRZRQOUg",
+    "question": "Hurricanes vs Canadiens series winner, Stanley Cup 2026",
+    "direction": "BUY YES",
+    "entry_prob": 69.0,
+    "entry_time": "2026-05-20 02:41 UTC",
+    "url": "https://manifold.markets/Mochi/hurricanes-vs-canadiens-series-winn",
+    "stake": 66.9,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 2,
+    "smart_user_mana": 1165,
+    "price_impact": 5.0,
+    "conviction_score": 4.66,
     "signal_strength": 1.5
   }
 ]
