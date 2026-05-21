@@ -1273,6 +1273,25 @@
     "price_move": -10.8,
     "divergence_score": 8.09,
     "signal_strength": 1.5,
-    "peak_pnl": 10.800000000000004
+    "peak_pnl": 12.900000000000006
+  },
+  {
+    "market_id": "UNsOOIL0LE",
+    "question": "Who will be the new presindent in colombia",
+    "direction": "BUY YES",
+    "entry_prob": 56.9,
+    "entry_time": "2026-05-21 02:43 UTC",
+    "url": "https://manifold.markets/EmanuelNunez/who-will-be-the-new-presindent-in-c",
+    "stake": 55.8,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "NO",
+    "crowd_pct": 65.0,
+    "price_move": 10.9,
+    "divergence_score": 7.1,
+    "signal_strength": 1.42
   }
 ]
