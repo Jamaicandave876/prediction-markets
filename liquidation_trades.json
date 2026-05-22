@@ -1785,5 +1785,24 @@
     "liquidation_dir": "NO",
     "impact_score": 1.9,
     "signal_strength": 0.95
+  },
+  {
+    "market_id": "tPAPhPPgld",
+    "question": "Will a model saturate AISI's \"The Last Ones\" before August 2026?",
+    "direction": "BUY YES",
+    "entry_prob": 22.6,
+    "entry_time": "2026-05-22 02:44 UTC",
+    "url": "https://manifold.markets/Bayesian/will-a-model-saturate-aisis-the-las",
+    "stake": 20,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "liquidation_size": 250,
+    "liquidation_impact": 5.5,
+    "liquidation_dir": "NO",
+    "impact_score": 1.37,
+    "signal_strength": 0.69
   }
 ]

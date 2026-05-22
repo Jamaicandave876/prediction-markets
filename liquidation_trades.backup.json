@@ -1766,5 +1766,24 @@
     "impact_score": 3.32,
     "signal_strength": 1.5,
     "peak_pnl": 27.0
+  },
+  {
+    "market_id": "CZhy8gASLp",
+    "question": "AI data center in space by December 31, 2027? [Polymarket]",
+    "direction": "BUY YES",
+    "entry_prob": 16.1,
+    "entry_time": "2026-05-21 22:17 UTC",
+    "url": "https://manifold.markets/vdb/ai-data-center-in-space-by-december",
+    "stake": 20,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "liquidation_size": 350,
+    "liquidation_impact": 5.4,
+    "liquidation_dir": "NO",
+    "impact_score": 1.9,
+    "signal_strength": 0.95
   }
 ]
