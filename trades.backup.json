@@ -816,5 +816,20 @@
     "exit_reason": null,
     "pnl_pp": null,
     "peak_pnl": 3.8000000000000043
+  },
+  {
+    "market_id": "gU0L26L098",
+    "question": "Will the CTFC be granted its preliminary injunction against Minnesota before 1 August 2026?",
+    "direction": "BUY YES",
+    "entry_prob": 67.7,
+    "entry_time": "2026-05-22 02:43 UTC",
+    "drift_score": 10.74,
+    "url": "https://manifold.markets/astroblob/will-the-ctfc-be-granted-its-prelim",
+    "stake": 30.4,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]
