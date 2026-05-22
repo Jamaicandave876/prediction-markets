@@ -1803,6 +1803,26 @@
     "liquidation_impact": 5.5,
     "liquidation_dir": "NO",
     "impact_score": 1.37,
-    "signal_strength": 0.69
+    "signal_strength": 0.69,
+    "peak_pnl": 2.0
+  },
+  {
+    "market_id": "CLZNZAPQgl",
+    "question": "Will Democrats begin to call the $1.776 billion dollar slush fund the \u201cEpstein Loyalty Fund\u201d by the midterms election?",
+    "direction": "BUY YES",
+    "entry_prob": 17.5,
+    "entry_time": "2026-05-22 06:45 UTC",
+    "url": "https://manifold.markets/KevinBlaw/will-democrats-begin-to-call-the-17",
+    "stake": 31.0,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "liquidation_size": 1000,
+    "liquidation_impact": 23.9,
+    "liquidation_dir": "NO",
+    "impact_score": 23.87,
+    "signal_strength": 1.5
   }
 ]

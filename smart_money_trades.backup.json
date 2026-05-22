@@ -2814,6 +2814,45 @@
     "smart_user_mana": 253,
     "price_impact": 5.7,
     "conviction_score": 3.44,
-    "signal_strength": 1.15
+    "signal_strength": 1.15,
+    "peak_pnl": 2.200000000000003
+  },
+  {
+    "market_id": "EdQZNzAOtl",
+    "question": "Can I get into the 2026 World Cup final for under $500 by showing up at the stadium 30 minutes before kickoff?",
+    "direction": "BUY NO",
+    "entry_prob": 13.1,
+    "entry_time": "2026-05-22 06:45 UTC",
+    "url": "https://manifold.markets/nsokolsky/can-i-get-into-the-2026-world-cup-f",
+    "stake": 86.6,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 2,
+    "smart_user_mana": 1500,
+    "price_impact": 36.2,
+    "conviction_score": 43.45,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "QQuRLUNQhs",
+    "question": "Will the United States Government introduce UBI before 2040?",
+    "direction": "BUY NO",
+    "entry_prob": 33.1,
+    "entry_time": "2026-05-22 06:45 UTC",
+    "url": "https://manifold.markets/JaundicedBaboon/will-the-united-states-government-i",
+    "stake": 77.3,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 2,
+    "smart_user_mana": 400,
+    "price_impact": 15.3,
+    "conviction_score": 4.91,
+    "signal_strength": 1.5
   }
 ]
