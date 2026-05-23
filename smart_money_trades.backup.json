@@ -2795,7 +2795,8 @@
     "smart_user_mana": 355,
     "price_impact": 10.2,
     "conviction_score": 7.23,
-    "signal_strength": 1.5
+    "signal_strength": 1.5,
+    "peak_pnl": 4.600000000000001
   },
   {
     "market_id": "Z9shOszgAS",
@@ -2855,5 +2856,43 @@
     "conviction_score": 4.91,
     "signal_strength": 1.5,
     "peak_pnl": 0.7000000000000028
+  },
+  {
+    "market_id": "q6yS8PUSOq",
+    "question": "Will the WTI Crude Oil Spot Price be above $98.50 on May 28, 2026?",
+    "direction": "BUY YES",
+    "entry_prob": 60.9,
+    "entry_time": "2026-05-23 02:30 UTC",
+    "url": "https://manifold.markets/ShaneBo/will-the-wti-crude-oil-spot-price-b-Cqgnq2tICg",
+    "stake": 58.9,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 4,
+    "smart_user_mana": 601,
+    "price_impact": 10.9,
+    "conviction_score": 10.48,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "sZzIqycRcS",
+    "question": "Will national gas prices in the US average above $3.60",
+    "direction": "BUY YES",
+    "entry_prob": 73.5,
+    "entry_time": "2026-05-23 02:30 UTC",
+    "url": "https://manifold.markets/StaceyVanekSmith/will-national-gas-prices-in-the-us",
+    "stake": 39.4,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 3,
+    "smart_user_mana": 250,
+    "price_impact": 6.8,
+    "conviction_score": 2.04,
+    "signal_strength": 0.68
   }
 ]
