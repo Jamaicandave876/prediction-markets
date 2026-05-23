@@ -2796,7 +2796,7 @@
     "price_impact": 10.2,
     "conviction_score": 7.23,
     "signal_strength": 1.5,
-    "peak_pnl": 4.600000000000001
+    "peak_pnl": 6.899999999999999
   },
   {
     "market_id": "Z9shOszgAS",
@@ -2894,6 +2894,26 @@
     "smart_user_mana": 250,
     "price_impact": 6.8,
     "conviction_score": 2.04,
-    "signal_strength": 0.68
+    "signal_strength": 0.68,
+    "peak_pnl": 1.0999999999999943
+  },
+  {
+    "market_id": "5C022SpgR6",
+    "question": "Will every team score a goal at the 2026 FIFA World Cup?",
+    "direction": "BUY NO",
+    "entry_prob": 14.4,
+    "entry_time": "2026-05-23 15:58 UTC",
+    "url": "https://manifold.markets/Jack1/will-every-team-score-a-goal-at-the",
+    "stake": 86.9,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 4,
+    "smart_user_mana": 715,
+    "price_impact": 5.7,
+    "conviction_score": 6.53,
+    "signal_strength": 1.5
   }
 ]
