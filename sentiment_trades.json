@@ -1312,5 +1312,24 @@
     "price_move": 14.0,
     "divergence_score": 8.39,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "q6yS8PUSOq",
+    "question": "Will the WTI Crude Oil Spot Price be above $98.50 on May 28, 2026?",
+    "direction": "BUY YES",
+    "entry_prob": 50.7,
+    "entry_time": "2026-05-24 15:57 UTC",
+    "url": "https://manifold.markets/ShaneBo/will-the-wti-crude-oil-spot-price-b-Cqgnq2tICg",
+    "stake": 40.0,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "NO",
+    "crowd_pct": 65.0,
+    "price_move": 8.9,
+    "divergence_score": 5.79,
+    "signal_strength": 1.16
   }
 ]

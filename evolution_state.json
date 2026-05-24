@@ -163,8 +163,8 @@
     "liquidation": {
       "low_prob_entry": 14,
       "fast_trade": 19,
-      "yes_direction": 41,
-      "mid_prob_entry": 41,
+      "yes_direction": 42,
+      "mid_prob_entry": 42,
       "no_direction": 28,
       "strong_signal": 42,
       "high_prob_entry": 14,
@@ -1105,23 +1105,6 @@
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "smart_money",
-      "market_id": "qp98EIPS6n",
-      "outcome": "big_loss",
-      "pnl_pp": -3.1,
-      "exit_reason": "stale",
-      "duration_hours": 50.6,
-      "traits": [
-        "low_prob_entry",
-        "yes_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 29.1,
-      "direction": "BUY YES",
-      "timestamp": "2026-05-14 13:54 UTC",
-      "lesson": "Smart $: Held too long with no resolution. Consider shorter max_days."
-    },
     {
       "bot": "smart_money",
       "market_id": "Cuy6R2npyq",
@@ -2834,6 +2817,22 @@
       "direction": "BUY YES",
       "timestamp": "2026-05-24 13:10 UTC",
       "lesson": "Liquidation: strong win via stale. PnL: +14.5pp in 49h."
+    },
+    {
+      "bot": "liquidation",
+      "market_id": "UNsOOIL0LE",
+      "outcome": "strong_win",
+      "pnl_pp": 14.5,
+      "exit_reason": "stale",
+      "duration_hours": 49.5,
+      "traits": [
+        "mid_prob_entry",
+        "yes_direction"
+      ],
+      "entry_prob": 41.5,
+      "direction": "BUY YES",
+      "timestamp": "2026-05-24 13:10 UTC",
+      "lesson": "Liquidation: strong win via stale. PnL: +14.5pp in 49h."
     }
   ],
   "regime": "cautious",
@@ -2967,6 +2966,6 @@
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-05-24 13:11 UTC",
-  "generation": 330
+  "last_evolution": "2026-05-24 15:57 UTC",
+  "generation": 331
 }
