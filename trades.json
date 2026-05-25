@@ -715,11 +715,11 @@
     "drift_score": -26.97,
     "url": "https://manifold.markets/LeoGao/will-any-frontier-lab-be-nearfully",
     "stake": 29.2,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 31.8,
+    "exit_time": "2026-05-25 12:21 UTC",
+    "exit_reason": "stale",
+    "pnl_pp": -3.5
   },
   {
     "market_id": "OcSuStph6L",
