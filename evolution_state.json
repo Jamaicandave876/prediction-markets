@@ -99,7 +99,7 @@
     },
     "liquidation": {
       "trailing_stop": 6,
-      "stale": 44,
+      "stale": 46,
       "resolved_loss": 3,
       "target_hit": 4,
       "stopped_out": 20
@@ -1105,40 +1105,6 @@
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "liquidation",
-      "market_id": "5zAE9ZAdnA",
-      "outcome": "big_loss",
-      "pnl_pp": -3.0,
-      "exit_reason": "stale",
-      "duration_hours": 50.6,
-      "traits": [
-        "high_prob_entry",
-        "no_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 74.1,
-      "direction": "BUY NO",
-      "timestamp": "2026-05-14 19:40 UTC",
-      "lesson": "Liquidation: Held too long with no resolution. Consider shorter max_days."
-    },
-    {
-      "bot": "liquidation",
-      "market_id": "5zAE9ZAdnA",
-      "outcome": "big_loss",
-      "pnl_pp": -3.0,
-      "exit_reason": "stale",
-      "duration_hours": 50.6,
-      "traits": [
-        "high_prob_entry",
-        "no_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 74.1,
-      "direction": "BUY NO",
-      "timestamp": "2026-05-14 19:40 UTC",
-      "lesson": "Liquidation: Held too long with no resolution. Consider shorter max_days."
-    },
     {
       "bot": "sentiment",
       "market_id": "2IUQuSy0dQ",
@@ -2835,6 +2801,39 @@
       "direction": "BUY NO",
       "timestamp": "2026-05-25 02:49 UTC",
       "lesson": "Smart $: Quick strong win \u2014 this signal pattern works well."
+    },
+    {
+      "bot": "liquidation",
+      "market_id": "zC9tyhLsyd",
+      "outcome": "small_loss",
+      "pnl_pp": -0.5,
+      "exit_reason": "stale",
+      "duration_hours": 49.0,
+      "traits": [
+        "low_prob_entry",
+        "yes_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 12.2,
+      "direction": "BUY YES",
+      "timestamp": "2026-05-25 07:09 UTC",
+      "lesson": "Liquidation: small loss via stale. PnL: -0.5pp in 49h."
+    },
+    {
+      "bot": "liquidation",
+      "market_id": "hdy0nPpEsA",
+      "outcome": "small_loss",
+      "pnl_pp": -1.8,
+      "exit_reason": "stale",
+      "duration_hours": 49.0,
+      "traits": [
+        "high_prob_entry",
+        "no_direction"
+      ],
+      "entry_prob": 70.3,
+      "direction": "BUY NO",
+      "timestamp": "2026-05-25 07:09 UTC",
+      "lesson": "Liquidation: small loss via stale. PnL: -1.8pp in 49h."
     }
   ],
   "regime": "cautious",
@@ -2962,12 +2961,12 @@
     "underdog": 0.1,
     "late_mover": 0.2,
     "hedge": 0.2,
-    "liquidation": 0.52,
+    "liquidation": 0.4,
     "weather_temperature": 0.5,
     "weather_precipitation": 0.5,
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-05-25 02:50 UTC",
-  "generation": 334
+  "last_evolution": "2026-05-25 07:09 UTC",
+  "generation": 335
 }
