@@ -87,7 +87,7 @@
     "momentum": {
       "trailing_stop": 6,
       "reversal": 17,
-      "target_hit": 7,
+      "target_hit": 8,
       "stale": 7
     },
     "contrarian": {
@@ -1105,23 +1105,6 @@
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "momentum",
-      "market_id": "RE9uNLtn0u",
-      "outcome": "strong_win",
-      "pnl_pp": 29.4,
-      "exit_reason": "resolved_win",
-      "duration_hours": 58.8,
-      "traits": [
-        "high_prob_entry",
-        "yes_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 70.6,
-      "direction": "BUY YES",
-      "timestamp": "2026-05-15 06:27 UTC",
-      "lesson": "Momentum: Strong signal \u2192 strong win. Keep trusting high-confidence entries."
-    },
     {
       "bot": "fade",
       "market_id": "hglAAsSAN6",
@@ -2834,6 +2817,24 @@
       "direction": "BUY NO",
       "timestamp": "2026-05-25 12:21 UTC",
       "lesson": "Momentum: Held too long with no resolution. Consider shorter max_days."
+    },
+    {
+      "bot": "momentum",
+      "market_id": "ztU6pg52OI",
+      "outcome": "small_loss",
+      "pnl_pp": 0.0,
+      "exit_reason": "target_hit",
+      "duration_hours": 2.3,
+      "traits": [
+        "low_prob_entry",
+        "fast_trade",
+        "no_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 21.9,
+      "direction": "BUY NO",
+      "timestamp": "2026-05-25 19:19 UTC",
+      "lesson": "Momentum: small loss via target_hit. PnL: +0.0pp in 2h."
     }
   ],
   "regime": "cautious",
@@ -2942,7 +2943,7 @@
     }
   ],
   "bot_confidence": {
-    "momentum": 0.54,
+    "momentum": 0.45,
     "fade": 0.68,
     "mean_reversion": 0.1,
     "volume_surge": 0.2,
@@ -2967,6 +2968,6 @@
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-05-25 17:03 UTC",
-  "generation": 337
+  "last_evolution": "2026-05-25 19:21 UTC",
+  "generation": 338
 }

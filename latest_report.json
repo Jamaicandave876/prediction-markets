@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-05-25 17:03 UTC",
+  "timestamp": "2026-05-25 19:21 UTC",
   "regime": "adverse",
   "pnl_7d": -7.6,
-  "total_open": 5,
-  "total_closed": 165,
+  "total_open": 4,
+  "total_closed": 166,
   "total_pnl": 271.2,
   "bots": [
     {
@@ -82,13 +82,13 @@
       "name": "momentum",
       "display": "Momentum",
       "grade": "D",
-      "score": 47.0,
+      "score": 48.9,
       "win_rate": 40.0,
       "total_pnl": 183.9,
-      "open": 5,
-      "closed": 49,
+      "open": 4,
+      "closed": 50,
       "paused": false,
-      "consecutive_losses": 1
+      "consecutive_losses": 2
     },
     {
       "name": "whale",

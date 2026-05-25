@@ -18,12 +18,12 @@
   "pause_start": {},
   "bot_scores": {
     "momentum": {
-      "score": 47.0,
+      "score": 48.9,
       "win_rate": 40.0,
-      "avg_pnl": 1.5,
+      "avg_pnl": 2.4,
       "total_pnl": 183.9,
-      "closed": 49,
-      "open": 5,
+      "closed": 50,
+      "open": 4,
       "grade": "D"
     },
     "fade": {
@@ -145,7 +145,7 @@
     }
   },
   "consecutive_losses": {
-    "momentum": 1,
+    "momentum": 2,
     "fade": 1,
     "mean_reversion": 5,
     "volume_surge": 2,
@@ -161,5 +161,5 @@
     "weather_divergence": 0
   },
   "regime": "adverse",
-  "last_report": "2026-05-24 19:07 UTC"
+  "last_report": "2026-05-25 19:21 UTC"
 }
