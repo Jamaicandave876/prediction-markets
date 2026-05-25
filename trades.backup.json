@@ -841,10 +841,10 @@
     "drift_score": -17.83,
     "url": "https://manifold.markets/TweedBeetle/will-credible-evidence-show-openai",
     "stake": 27.3,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 21.9,
+    "exit_time": "2026-05-25 19:19 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 0.0
   }
 ]
