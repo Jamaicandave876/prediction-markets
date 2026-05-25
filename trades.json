@@ -831,5 +831,20 @@
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null
+  },
+  {
+    "market_id": "ztU6pg52OI",
+    "question": "Will credible evidence show OpenAI paid \u2265100 NYC households to install indoor 360\u00b0 cameras for home-activity recording?",
+    "direction": "BUY NO",
+    "entry_prob": 21.9,
+    "entry_time": "2026-05-25 17:02 UTC",
+    "drift_score": -17.83,
+    "url": "https://manifold.markets/TweedBeetle/will-credible-evidence-show-openai",
+    "stake": 27.3,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]
