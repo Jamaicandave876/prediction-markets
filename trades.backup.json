@@ -846,5 +846,20 @@
     "exit_time": "2026-05-25 19:19 UTC",
     "exit_reason": "target_hit",
     "pnl_pp": 0.0
+  },
+  {
+    "market_id": "tP56pOcREp",
+    "question": "Will we learn that Anthropic lied to investors about operating profitable in Q2 2026 before 2028?",
+    "direction": "BUY NO",
+    "entry_prob": 21.1,
+    "entry_time": "2026-05-26 06:40 UTC",
+    "drift_score": -31.5,
+    "url": "https://manifold.markets/MachiNi/will-it-learn-that-anthropic-lied-t",
+    "stake": 24.5,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]

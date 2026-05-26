@@ -1350,5 +1350,24 @@
     "price_move": 5.5,
     "divergence_score": 4.4,
     "signal_strength": 0.88
+  },
+  {
+    "market_id": "hdy0nPpEsA",
+    "question": "OpenAI completes an IPO in 2026 and has a market cap of $1 trillion+?",
+    "direction": "BUY NO",
+    "entry_prob": 65.8,
+    "entry_time": "2026-05-26 15:40 UTC",
+    "url": "https://manifold.markets/Jack1/openai-completes-an-ipo-in-2026-and",
+    "stake": 23.8,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "YES",
+    "crowd_pct": 90.0,
+    "price_move": -6.3,
+    "divergence_score": 5.63,
+    "signal_strength": 1.13
   }
 ]
