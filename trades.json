@@ -762,11 +762,11 @@
     "drift_score": -37.97,
     "url": "https://manifold.markets/Jack1/will-aoc-endorse-saikat-chakrabarti",
     "stake": 35.0,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 32.0,
+    "exit_time": "2026-05-26 20:01 UTC",
+    "exit_reason": "stale",
+    "pnl_pp": -6.0,
     "peak_pnl": 3.3999999999999986
   },
   {
@@ -794,11 +794,11 @@
     "drift_score": 14.75,
     "url": "https://manifold.markets/StevetptC8/will-my-dahlia-tuber-sprout",
     "stake": 35.0,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 62.7,
+    "exit_time": "2026-05-26 20:01 UTC",
+    "exit_reason": "stale",
+    "pnl_pp": 9.5,
     "peak_pnl": 9.599999999999994
   },
   {
