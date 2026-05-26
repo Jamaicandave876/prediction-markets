@@ -74,7 +74,7 @@
     },
     "sentiment": {
       "target_hit": 12,
-      "stopped_out": 33,
+      "stopped_out": 34,
       "trailing_stop": 5,
       "stale": 18
     },
@@ -1105,24 +1105,6 @@
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "sentiment",
-      "market_id": "2IUQuSy0dQ",
-      "outcome": "big_loss",
-      "pnl_pp": -6.7,
-      "exit_reason": "stopped_out",
-      "duration_hours": 6.9,
-      "traits": [
-        "mid_prob_entry",
-        "fast_trade",
-        "yes_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 47.0,
-      "direction": "BUY YES",
-      "timestamp": "2026-05-15 02:35 UTC",
-      "lesson": "Sentiment: big loss via stopped_out. PnL: -6.7pp in 7h."
-    },
     {
       "bot": "momentum",
       "market_id": "IUC29N89gt",
@@ -2835,6 +2817,23 @@
       "direction": "BUY NO",
       "timestamp": "2026-05-25 19:19 UTC",
       "lesson": "Momentum: small loss via target_hit. PnL: +0.0pp in 2h."
+    },
+    {
+      "bot": "sentiment",
+      "market_id": "lR8AP6cUps",
+      "outcome": "big_loss",
+      "pnl_pp": -6.8,
+      "exit_reason": "stopped_out",
+      "duration_hours": 7.3,
+      "traits": [
+        "mid_prob_entry",
+        "fast_trade",
+        "yes_direction"
+      ],
+      "entry_prob": 35.0,
+      "direction": "BUY YES",
+      "timestamp": "2026-05-26 02:38 UTC",
+      "lesson": "Sentiment: big loss via stopped_out. PnL: -6.8pp in 7h."
     }
   ],
   "regime": "cautious",
@@ -2957,7 +2956,7 @@
     "reversal": 0.2,
     "smart_money": 0.64,
     "time_decay": 0.23,
-    "sentiment": 0.34,
+    "sentiment": 0.3,
     "accumulation": 0.1,
     "underdog": 0.1,
     "late_mover": 0.2,
@@ -2968,6 +2967,6 @@
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-05-25 22:05 UTC",
-  "generation": 339
+  "last_evolution": "2026-05-26 02:38 UTC",
+  "generation": 340
 }
