@@ -871,10 +871,10 @@
     "drift_score": -33.3,
     "url": "https://manifold.markets/Jack1/us-gas-price-4400-or-below-in-may-2",
     "stake": 27.4,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 21.2,
+    "exit_time": "2026-05-27 02:46 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": -0.2
   }
 ]
