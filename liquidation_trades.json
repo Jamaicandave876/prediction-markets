@@ -2002,5 +2002,24 @@
     "liquidation_dir": "YES",
     "impact_score": 5.09,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "usCZylAAE8",
+    "question": "Will UFC Freedom 250 End Early due to a Disruption/Safety Concern?",
+    "direction": "BUY YES",
+    "entry_prob": 25.0,
+    "entry_time": "2026-05-27 20:07 UTC",
+    "url": "https://manifold.markets/ArtZ/will-ufc-250-end-early",
+    "stake": 30.7,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "liquidation_size": 994,
+    "liquidation_impact": 5.8,
+    "liquidation_dir": "NO",
+    "impact_score": 5.72,
+    "signal_strength": 1.5
   }
 ]
