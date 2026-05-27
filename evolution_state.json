@@ -151,12 +151,12 @@
       "weak_signal": 2
     },
     "smart_money": {
-      "mid_prob_entry": 63,
+      "mid_prob_entry": 64,
       "no_direction": 67,
-      "strong_signal": 94,
-      "fast_trade": 62,
+      "strong_signal": 95,
+      "fast_trade": 63,
       "low_prob_entry": 29,
-      "yes_direction": 40,
+      "yes_direction": 41,
       "high_prob_entry": 15,
       "slow_trade": 3
     },
@@ -1105,23 +1105,6 @@
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "liquidation",
-      "market_id": "LsQqEzgNQZ",
-      "outcome": "big_loss",
-      "pnl_pp": -4.2,
-      "exit_reason": "stale",
-      "duration_hours": 50.0,
-      "traits": [
-        "low_prob_entry",
-        "yes_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 12.9,
-      "direction": "BUY YES",
-      "timestamp": "2026-05-16 15:53 UTC",
-      "lesson": "Liquidation: Held too long with no resolution. Consider shorter max_days."
-    },
     {
       "bot": "smart_money",
       "market_id": "PAPtPqQZhh",
@@ -2836,6 +2819,24 @@
       "direction": "BUY NO",
       "timestamp": "2026-05-27 17:54 UTC",
       "lesson": "Liquidation: Strong signal \u2192 strong win. Keep trusting high-confidence entries."
+    },
+    {
+      "bot": "smart_money",
+      "market_id": "RQ82y9Uhc2",
+      "outcome": "small_win",
+      "pnl_pp": 0.5,
+      "exit_reason": "trailing_stop",
+      "duration_hours": 10.2,
+      "traits": [
+        "mid_prob_entry",
+        "fast_trade",
+        "yes_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 54.8,
+      "direction": "BUY YES",
+      "timestamp": "2026-05-27 22:27 UTC",
+      "lesson": "Smart $: small win via trailing_stop. PnL: +0.5pp in 10h."
     }
   ],
   "regime": "cautious",
@@ -2969,6 +2970,6 @@
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-05-27 20:07 UTC",
-  "generation": 349
+  "last_evolution": "2026-05-27 22:28 UTC",
+  "generation": 350
 }
