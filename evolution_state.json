@@ -87,7 +87,7 @@
     "momentum": {
       "trailing_stop": 6,
       "reversal": 17,
-      "target_hit": 10,
+      "target_hit": 11,
       "stale": 9
     },
     "contrarian": {
@@ -99,7 +99,7 @@
     },
     "liquidation": {
       "trailing_stop": 6,
-      "stale": 48,
+      "stale": 49,
       "resolved_loss": 3,
       "target_hit": 4,
       "stopped_out": 21
@@ -165,19 +165,19 @@
       "fast_trade": 19,
       "yes_direction": 42,
       "mid_prob_entry": 42,
-      "no_direction": 28,
-      "strong_signal": 42,
-      "high_prob_entry": 14,
+      "no_direction": 29,
+      "strong_signal": 43,
+      "high_prob_entry": 15,
       "weak_signal": 6
     },
     "momentum": {
       "mid_prob_entry": 28,
       "yes_direction": 19,
-      "strong_signal": 41,
+      "strong_signal": 42,
       "high_prob_entry": 8,
-      "fast_trade": 12,
-      "no_direction": 22,
-      "low_prob_entry": 5,
+      "fast_trade": 13,
+      "no_direction": 23,
+      "low_prob_entry": 6,
       "slow_trade": 19
     },
     "breakout": {
@@ -1105,74 +1105,6 @@
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "smart_money",
-      "market_id": "zqOhAh0OEI",
-      "outcome": "big_loss",
-      "pnl_pp": -9.4,
-      "exit_reason": "stale",
-      "duration_hours": 51.2,
-      "traits": [
-        "mid_prob_entry",
-        "yes_direction"
-      ],
-      "entry_prob": 54.6,
-      "direction": "BUY YES",
-      "timestamp": "2026-05-16 05:49 UTC",
-      "lesson": "Smart $: Held too long with no resolution. Consider shorter max_days."
-    },
-    {
-      "bot": "sentiment",
-      "market_id": "PAPtPqQZhh",
-      "outcome": "small_win",
-      "pnl_pp": 3.0,
-      "exit_reason": "trailing_stop",
-      "duration_hours": 5.5,
-      "traits": [
-        "mid_prob_entry",
-        "fast_trade",
-        "yes_direction"
-      ],
-      "entry_prob": 39.9,
-      "direction": "BUY YES",
-      "timestamp": "2026-05-16 07:55 UTC",
-      "lesson": "Sentiment: small win via trailing_stop. PnL: +3.0pp in 5h."
-    },
-    {
-      "bot": "liquidation",
-      "market_id": "2hOztUzsty",
-      "outcome": "small_win",
-      "pnl_pp": 0.9,
-      "exit_reason": "target_hit",
-      "duration_hours": 3.4,
-      "traits": [
-        "low_prob_entry",
-        "fast_trade",
-        "no_direction"
-      ],
-      "entry_prob": 21.0,
-      "direction": "BUY NO",
-      "timestamp": "2026-05-16 05:50 UTC",
-      "lesson": "Liquidation: small win via target_hit. PnL: +0.9pp in 3h."
-    },
-    {
-      "bot": "smart_money",
-      "market_id": "cSAh00sC2d",
-      "outcome": "small_loss",
-      "pnl_pp": 0.0,
-      "exit_reason": "target_hit",
-      "duration_hours": 2.3,
-      "traits": [
-        "high_prob_entry",
-        "fast_trade",
-        "yes_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 84.7,
-      "direction": "BUY YES",
-      "timestamp": "2026-05-16 10:11 UTC",
-      "lesson": "Smart $: small loss via target_hit. PnL: +0.0pp in 2h."
-    },
     {
       "bot": "sentiment",
       "market_id": "PAPtPqQZhh",
@@ -2837,6 +2769,75 @@
       "direction": "BUY NO",
       "timestamp": "2026-05-27 12:15 UTC",
       "lesson": "Liquidation: big loss via stopped_out. PnL: -20.5pp in 5h."
+    },
+    {
+      "bot": "momentum",
+      "market_id": "tP56pOcREp",
+      "outcome": "small_loss",
+      "pnl_pp": -0.9,
+      "exit_reason": "target_hit",
+      "duration_hours": 35.2,
+      "traits": [
+        "low_prob_entry",
+        "no_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 21.1,
+      "direction": "BUY NO",
+      "timestamp": "2026-05-27 17:54 UTC",
+      "lesson": "Momentum: small loss via target_hit. PnL: -0.9pp in 35h."
+    },
+    {
+      "bot": "momentum",
+      "market_id": "cItdqnc5p2",
+      "outcome": "small_win",
+      "pnl_pp": 1.0,
+      "exit_reason": "target_hit",
+      "duration_hours": 5.7,
+      "traits": [
+        "low_prob_entry",
+        "fast_trade",
+        "no_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 16.8,
+      "direction": "BUY NO",
+      "timestamp": "2026-05-27 17:54 UTC",
+      "lesson": "Momentum: small win via target_hit. PnL: +1.0pp in 6h."
+    },
+    {
+      "bot": "liquidation",
+      "market_id": "8hyIALhpqN",
+      "outcome": "small_loss",
+      "pnl_pp": -1.2,
+      "exit_reason": "stale",
+      "duration_hours": 53.5,
+      "traits": [
+        "mid_prob_entry",
+        "yes_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 32.2,
+      "direction": "BUY YES",
+      "timestamp": "2026-05-27 17:54 UTC",
+      "lesson": "Liquidation: small loss via stale. PnL: -1.2pp in 54h."
+    },
+    {
+      "bot": "liquidation",
+      "market_id": "6luuud0Psu",
+      "outcome": "strong_win",
+      "pnl_pp": 14.1,
+      "exit_reason": "stale",
+      "duration_hours": 53.5,
+      "traits": [
+        "high_prob_entry",
+        "no_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 75.2,
+      "direction": "BUY NO",
+      "timestamp": "2026-05-27 17:54 UTC",
+      "lesson": "Liquidation: Strong signal \u2192 strong win. Keep trusting high-confidence entries."
     }
   ],
   "regime": "cautious",
@@ -2945,7 +2946,7 @@
     }
   ],
   "bot_confidence": {
-    "momentum": 0.42,
+    "momentum": 0.49,
     "fade": 0.68,
     "mean_reversion": 0.1,
     "volume_surge": 0.2,
@@ -2964,12 +2965,12 @@
     "underdog": 0.1,
     "late_mover": 0.2,
     "hedge": 0.2,
-    "liquidation": 0.29,
+    "liquidation": 0.44,
     "weather_temperature": 0.5,
     "weather_precipitation": 0.5,
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-05-27 12:15 UTC",
-  "generation": 347
+  "last_evolution": "2026-05-27 17:54 UTC",
+  "generation": 348
 }

@@ -876,5 +876,35 @@
     "exit_time": "2026-05-27 02:46 UTC",
     "exit_reason": "target_hit",
     "pnl_pp": -0.2
+  },
+  {
+    "market_id": "RQ82y9Uhc2",
+    "question": "S&P 500 hits 8000 in 2026?",
+    "direction": "BUY YES",
+    "entry_prob": 54.8,
+    "entry_time": "2026-05-27 12:14 UTC",
+    "drift_score": 11.72,
+    "url": "https://manifold.markets/predyx_markets/sp-500-hits-8000-in-2026",
+    "stake": 30.8,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
+  },
+  {
+    "market_id": "cItdqnc5p2",
+    "question": "Hawk Tuah themed sidequest in Gta6?",
+    "direction": "BUY NO",
+    "entry_prob": 16.8,
+    "entry_time": "2026-05-27 12:14 UTC",
+    "drift_score": -27.97,
+    "url": "https://manifold.markets/Bandors/hawk-tuah-themed-sidequest-in-gta6",
+    "stake": 30.8,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]
