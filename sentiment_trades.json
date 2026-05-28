@@ -1369,5 +1369,24 @@
     "price_move": -6.3,
     "divergence_score": 5.63,
     "signal_strength": 1.13
+  },
+  {
+    "market_id": "tyuPl606Cy",
+    "question": "US Gas Price $4.400 or below in May 2026?",
+    "direction": "BUY YES",
+    "entry_prob": 78.4,
+    "entry_time": "2026-05-28 02:35 UTC",
+    "url": "https://manifold.markets/Jack1/us-gas-price-4400-or-below-in-may-2",
+    "stake": 86.6,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "NO",
+    "crowd_pct": 60.0,
+    "price_move": 12.7,
+    "divergence_score": 7.59,
+    "signal_strength": 1.5
   }
 ]

@@ -2021,5 +2021,24 @@
     "liquidation_dir": "NO",
     "impact_score": 5.72,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "Np0QUuA96q",
+    "question": "Will large amounts of GTA VI-related time-off requests be reported within two weeks of release?",
+    "direction": "BUY NO",
+    "entry_prob": 31.2,
+    "entry_time": "2026-05-27 22:28 UTC",
+    "url": "https://manifold.markets/super61/will-large-amounts-of-gta-virelated",
+    "stake": 62.5,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "liquidation_size": 200,
+    "liquidation_impact": 12.7,
+    "liquidation_dir": "YES",
+    "impact_score": 2.54,
+    "signal_strength": 1.27
   }
 ]
