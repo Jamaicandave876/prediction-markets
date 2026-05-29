@@ -1972,11 +1972,11 @@
     "entry_time": "2026-05-27 02:48 UTC",
     "url": "https://manifold.markets/Bayesian/30t-market-cap-company-before-2030",
     "stake": 21.4,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 26.0,
+    "exit_time": "2026-05-29 06:49 UTC",
+    "exit_reason": "stale",
+    "pnl_pp": -8.0,
     "liquidation_size": 250,
     "liquidation_impact": 9.0,
     "liquidation_dir": "NO",
@@ -2040,7 +2040,8 @@
     "liquidation_impact": 12.7,
     "liquidation_dir": "YES",
     "impact_score": 2.54,
-    "signal_strength": 1.27
+    "signal_strength": 1.27,
+    "peak_pnl": 0.09999999999999787
   },
   {
     "market_id": "tyuPl606Cy",

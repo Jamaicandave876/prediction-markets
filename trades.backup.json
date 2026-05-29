@@ -908,5 +908,20 @@
     "exit_reason": "target_hit",
     "pnl_pp": 1.0,
     "peak_pnl": 1.0
+  },
+  {
+    "market_id": "uqnSdhyL8P",
+    "question": "LessOnline 2027 will use brand new event software",
+    "direction": "BUY YES",
+    "entry_prob": 60.5,
+    "entry_time": "2026-05-29 02:38 UTC",
+    "drift_score": 12.63,
+    "url": "https://manifold.markets/SkylerCrossman/lessonline-2027-will-use-brand-new",
+    "stake": 27.1,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]
