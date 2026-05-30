@@ -2100,5 +2100,24 @@
     "liquidation_dir": "NO",
     "impact_score": 30.0,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "nt6ypEL0N5",
+    "question": "Resolves to Square root of a random number between 1-10,000",
+    "direction": "BUY NO",
+    "entry_prob": 70.0,
+    "entry_time": "2026-05-30 10:45 UTC",
+    "url": "https://manifold.markets/Jack1/resolves-to-square-root-of-a-random-8AlSd8CuRy",
+    "stake": 20,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "liquidation_size": 200,
+    "liquidation_impact": 6.6,
+    "liquidation_dir": "YES",
+    "impact_score": 1.31,
+    "signal_strength": 0.66
   }
 ]
