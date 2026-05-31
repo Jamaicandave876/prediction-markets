@@ -2120,5 +2120,24 @@
     "impact_score": 1.31,
     "signal_strength": 0.66,
     "peak_pnl": 4.0
+  },
+  {
+    "market_id": "QASC2q8qOt",
+    "question": "OPQA (OpenAI-proof QA) hits 20% before 2027",
+    "direction": "BUY NO",
+    "entry_prob": 52.8,
+    "entry_time": "2026-05-31 10:53 UTC",
+    "url": "https://manifold.markets/JacobPfau/opqa-openaiproof-qa-hits-20-before",
+    "stake": 47.9,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "liquidation_size": 714,
+    "liquidation_impact": 6.2,
+    "liquidation_dir": "YES",
+    "impact_score": 4.46,
+    "signal_strength": 1.5
   }
 ]
