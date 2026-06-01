@@ -810,11 +810,11 @@
     "drift_score": -10.67,
     "url": "https://manifold.markets/Mochi/will-a-humanoid-robot-walk-on-the-m-EsPuyOc8np",
     "stake": 31.0,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 42.9,
+    "exit_time": "2026-06-01 19:53 UTC",
+    "exit_reason": "stale",
+    "pnl_pp": -4.7,
     "peak_pnl": 3.8000000000000043
   },
   {
