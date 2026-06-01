@@ -3132,6 +3132,25 @@
     "price_impact": 17.6,
     "conviction_score": 24.67,
     "signal_strength": 1.5,
-    "peak_pnl": 1.0
+    "peak_pnl": 12.700000000000003
+  },
+  {
+    "market_id": "P02upA8h5t",
+    "question": "US Gas Price $3.800 or below in June 2026?",
+    "direction": "BUY NO",
+    "entry_prob": 12.7,
+    "entry_time": "2026-06-01 19:54 UTC",
+    "url": "https://manifold.markets/Jack1/us-gas-price-3800-or-below-in-june",
+    "stake": 85.4,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 3,
+    "smart_user_mana": 450,
+    "price_impact": 5.5,
+    "conviction_score": 2.95,
+    "signal_strength": 0.98
   }
 ]
