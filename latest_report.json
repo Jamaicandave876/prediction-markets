@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-06-01 02:58 UTC",
+  "timestamp": "2026-06-01 08:36 UTC",
   "regime": "adverse",
   "pnl_7d": -0.1,
-  "total_open": 6,
+  "total_open": 7,
   "total_closed": 171,
   "total_pnl": 274.6,
   "bots": [
@@ -25,7 +25,7 @@
       "score": 79.8,
       "win_rate": 70.0,
       "total_pnl": 106.1,
-      "open": 0,
+      "open": 1,
       "closed": 26,
       "paused": false,
       "consecutive_losses": 1
