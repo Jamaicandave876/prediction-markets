@@ -309,13 +309,17 @@
     }
   ],
   "paused": {
-    "mean_reversion": false,
-    "contrarian": false,
+    "mean_reversion": true,
+    "contrarian": true,
     "liquidation": false,
-    "calibration": false,
+    "calibration": true,
     "sentiment_divergence": false,
     "smart_money": false
   },
   "consecutive_losses": {},
-  "pause_start": {}
+  "pause_start": {
+    "mean_reversion": "2026-06-02 07:22 UTC",
+    "contrarian": "2026-06-02 07:22 UTC",
+    "calibration": "2026-06-02 07:22 UTC"
+  }
 }
