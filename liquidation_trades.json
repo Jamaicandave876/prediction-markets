@@ -2237,5 +2237,24 @@
     "liquidation_dir": "YES",
     "impact_score": 1.64,
     "signal_strength": 0.82
+  },
+  {
+    "market_id": "95NgkvZKJx",
+    "question": "Will \"Lighthaven East - A Feasibility Study\" make the top fifty posts in LessWrong's 2026 Annual Review?",
+    "direction": "BUY YES",
+    "entry_prob": 16.6,
+    "entry_time": "2026-06-02 18:37 UTC",
+    "url": "https://manifold.markets/LessWrong/will-lighthaven-east-a-feasibility",
+    "stake": 22.1,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "liquidation_size": 500,
+    "liquidation_impact": 19.7,
+    "liquidation_dir": "NO",
+    "impact_score": 9.86,
+    "signal_strength": 1.5
   }
 ]
