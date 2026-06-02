@@ -1407,6 +1407,25 @@
     "price_move": -6.2,
     "divergence_score": 3.75,
     "signal_strength": 0.75,
-    "peak_pnl": 2.799999999999997
+    "peak_pnl": 3.3999999999999986
+  },
+  {
+    "market_id": "9CZcph9nNC",
+    "question": "Will the US average gas price fall below $4.00 in June 2026?",
+    "direction": "BUY NO",
+    "entry_prob": 25.8,
+    "entry_time": "2026-06-02 22:57 UTC",
+    "url": "https://manifold.markets/Drifting/will-the-us-average-gas-price-fall-UNUCP2RZd0",
+    "stake": 71.3,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "YES",
+    "crowd_pct": 63.2,
+    "price_move": -24.2,
+    "divergence_score": 15.3,
+    "signal_strength": 1.5
   }
 ]

@@ -2178,7 +2178,7 @@
     "liquidation_dir": "NO",
     "impact_score": 3.72,
     "signal_strength": 1.5,
-    "peak_pnl": 12.700000000000003
+    "peak_pnl": 17.700000000000003
   },
   {
     "market_id": "8I9sIUzglq",
@@ -2255,6 +2255,44 @@
     "liquidation_impact": 19.7,
     "liquidation_dir": "NO",
     "impact_score": 9.86,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "gOLP0tE0yO",
+    "question": "Will I hold a session at Less.Online 2026",
+    "direction": "BUY NO",
+    "entry_prob": 72.0,
+    "entry_time": "2026-06-02 22:58 UTC",
+    "url": "https://manifold.markets/JoeandSeth/will-i-hold-a-session-at-lessonline",
+    "stake": 25.5,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "liquidation_size": 500,
+    "liquidation_impact": 17.1,
+    "liquidation_dir": "YES",
+    "impact_score": 8.53,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "Z2OtAS5g2S",
+    "question": "US Gas Price $4.250 or below in June 2026?",
+    "direction": "BUY NO",
+    "entry_prob": 86.9,
+    "entry_time": "2026-06-02 22:58 UTC",
+    "url": "https://manifold.markets/Jack1/us-gas-price-4250-or-below-in-june",
+    "stake": 21.2,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "liquidation_size": 500,
+    "liquidation_impact": 7.0,
+    "liquidation_dir": "YES",
+    "impact_score": 3.5,
     "signal_strength": 1.5
   }
 ]
