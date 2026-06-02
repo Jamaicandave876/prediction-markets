@@ -952,7 +952,8 @@
     "exit_prob": null,
     "exit_time": null,
     "exit_reason": null,
-    "pnl_pp": null
+    "pnl_pp": null,
+    "peak_pnl": 1.3000000000000007
   },
   {
     "market_id": "tspQZZ0dgE",
@@ -963,11 +964,11 @@
     "drift_score": 18.9,
     "url": "https://manifold.markets/Jack1/will-i-stay-in-masters-this-season-QQp02n8SLQ",
     "stake": 24.2,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 83.3,
+    "exit_time": "2026-06-02 02:54 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": -1.2
   },
   {
     "market_id": "yIE285S5un",
@@ -982,7 +983,8 @@
     "exit_prob": null,
     "exit_time": null,
     "exit_reason": null,
-    "pnl_pp": null
+    "pnl_pp": null,
+    "peak_pnl": 1.1000000000000014
   },
   {
     "market_id": "65QUhEqqc5",

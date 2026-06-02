@@ -2159,5 +2159,24 @@
     "impact_score": 2.18,
     "signal_strength": 1.09,
     "peak_pnl": 1.3999999999999986
+  },
+  {
+    "market_id": "EZN9QQCnAA",
+    "question": "Will I stay in masters this season?",
+    "direction": "BUY YES",
+    "entry_prob": 37.3,
+    "entry_time": "2026-06-01 23:00 UTC",
+    "url": "https://manifold.markets/ZandaZhu/will-i-stay-in-masters-this-season-U8sqIZut02",
+    "stake": 40.2,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "liquidation_size": 300,
+    "liquidation_impact": 12.4,
+    "liquidation_dir": "NO",
+    "impact_score": 3.72,
+    "signal_strength": 1.5
   }
 ]
