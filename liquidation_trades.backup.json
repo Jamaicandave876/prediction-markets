@@ -2178,7 +2178,7 @@
     "liquidation_dir": "NO",
     "impact_score": 3.72,
     "signal_strength": 1.5,
-    "peak_pnl": 0.6000000000000014
+    "peak_pnl": 12.700000000000003
   },
   {
     "market_id": "8I9sIUzglq",
@@ -2216,6 +2216,26 @@
     "liquidation_impact": 11.0,
     "liquidation_dir": "NO",
     "impact_score": 2.74,
-    "signal_strength": 1.37
+    "signal_strength": 1.37,
+    "peak_pnl": 3.1000000000000014
+  },
+  {
+    "market_id": "dOLR5g2EhI",
+    "question": "Bitcoin $67K in June?",
+    "direction": "BUY NO",
+    "entry_prob": 62.0,
+    "entry_time": "2026-06-02 07:21 UTC",
+    "url": "https://manifold.markets/predyx_markets/bitcoin-67k-in-june",
+    "stake": 20.2,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "liquidation_size": 199,
+    "liquidation_impact": 8.2,
+    "liquidation_dir": "YES",
+    "impact_score": 1.64,
+    "signal_strength": 0.82
   }
 ]
