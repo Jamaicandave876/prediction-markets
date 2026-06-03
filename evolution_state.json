@@ -79,7 +79,7 @@
       "stale": 20
     },
     "smart_money": {
-      "target_hit": 59,
+      "target_hit": 60,
       "stopped_out": 26,
       "trailing_stop": 12,
       "stale": 38
@@ -152,10 +152,10 @@
     },
     "smart_money": {
       "mid_prob_entry": 67,
-      "no_direction": 73,
-      "strong_signal": 105,
-      "fast_trade": 70,
-      "low_prob_entry": 35,
+      "no_direction": 74,
+      "strong_signal": 106,
+      "fast_trade": 71,
+      "low_prob_entry": 36,
       "yes_direction": 46,
       "high_prob_entry": 17,
       "slow_trade": 3
@@ -163,10 +163,10 @@
     "liquidation": {
       "low_prob_entry": 14,
       "fast_trade": 19,
-      "yes_direction": 43,
-      "mid_prob_entry": 46,
+      "yes_direction": 44,
+      "mid_prob_entry": 47,
       "no_direction": 33,
-      "strong_signal": 47,
+      "strong_signal": 48,
       "high_prob_entry": 16,
       "weak_signal": 6
     },
@@ -1105,58 +1105,6 @@
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "smart_money",
-      "market_id": "UIqUE80RhN",
-      "outcome": "strong_win",
-      "pnl_pp": 5.8,
-      "exit_reason": "stale",
-      "duration_hours": 48.0,
-      "traits": [
-        "mid_prob_entry",
-        "no_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 33.0,
-      "direction": "BUY NO",
-      "timestamp": "2026-05-22 02:44 UTC",
-      "lesson": "Smart $: Strong signal \u2192 strong win. Keep trusting high-confidence entries."
-    },
-    {
-      "bot": "smart_money",
-      "market_id": "ttPRZRQOUg",
-      "outcome": "big_loss",
-      "pnl_pp": -11.0,
-      "exit_reason": "stale",
-      "duration_hours": 48.0,
-      "traits": [
-        "mid_prob_entry",
-        "yes_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 69.0,
-      "direction": "BUY YES",
-      "timestamp": "2026-05-22 02:44 UTC",
-      "lesson": "Smart $: Held too long with no resolution. Consider shorter max_days."
-    },
-    {
-      "bot": "smart_money",
-      "market_id": "EdQZNzAOtl",
-      "outcome": "small_loss",
-      "pnl_pp": 0.0,
-      "exit_reason": "target_hit",
-      "duration_hours": 4.9,
-      "traits": [
-        "low_prob_entry",
-        "fast_trade",
-        "no_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 13.1,
-      "direction": "BUY NO",
-      "timestamp": "2026-05-22 11:41 UTC",
-      "lesson": "Smart $: small loss via target_hit. PnL: +0.0pp in 5h."
-    },
     {
       "bot": "smart_money",
       "market_id": "EdQZNzAOtl",
@@ -2834,6 +2782,59 @@
       "direction": "BUY NO",
       "timestamp": "2026-06-03 16:25 UTC",
       "lesson": "Smart $: small win via target_hit. PnL: +3.7pp in 6h."
+    },
+    {
+      "bot": "smart_money",
+      "market_id": "U6EcNQ605d",
+      "outcome": "small_win",
+      "pnl_pp": 1.4,
+      "exit_reason": "target_hit",
+      "duration_hours": 2.2,
+      "traits": [
+        "low_prob_entry",
+        "fast_trade",
+        "no_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 12.0,
+      "direction": "BUY NO",
+      "timestamp": "2026-06-03 23:00 UTC",
+      "lesson": "Smart $: small win via target_hit. PnL: +1.4pp in 2h."
+    },
+    {
+      "bot": "smart_money",
+      "market_id": "SUhLcuL2t8",
+      "outcome": "small_loss",
+      "pnl_pp": 0.0,
+      "exit_reason": "target_hit",
+      "duration_hours": 2.2,
+      "traits": [
+        "low_prob_entry",
+        "fast_trade",
+        "no_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 19.9,
+      "direction": "BUY NO",
+      "timestamp": "2026-06-03 23:00 UTC",
+      "lesson": "Smart $: small loss via target_hit. PnL: +0.0pp in 2h."
+    },
+    {
+      "bot": "liquidation",
+      "market_id": "EZN9QQCnAA",
+      "outcome": "strong_win",
+      "pnl_pp": 17.7,
+      "exit_reason": "stale",
+      "duration_hours": 48.0,
+      "traits": [
+        "mid_prob_entry",
+        "yes_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 37.3,
+      "direction": "BUY YES",
+      "timestamp": "2026-06-03 23:00 UTC",
+      "lesson": "Liquidation: Strong signal \u2192 strong win. Keep trusting high-confidence entries."
     }
   ],
   "regime": "cautious",
@@ -2954,19 +2955,19 @@
     "breakout": 0.78,
     "calibration": 0.1,
     "reversal": 0.2,
-    "smart_money": 0.64,
+    "smart_money": 0.6,
     "time_decay": 0.23,
     "sentiment": 0.2,
     "accumulation": 0.1,
     "underdog": 0.1,
     "late_mover": 0.2,
     "hedge": 0.2,
-    "liquidation": 0.2,
+    "liquidation": 0.37,
     "weather_temperature": 0.5,
     "weather_precipitation": 0.5,
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-06-03 20:51 UTC",
-  "generation": 389
+  "last_evolution": "2026-06-03 23:01 UTC",
+  "generation": 390
 }

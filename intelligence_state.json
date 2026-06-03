@@ -1,5 +1,5 @@
 {
-  "last_report": "2026-06-02 22:58 UTC",
+  "last_report": "2026-06-03 23:00 UTC",
   "adjustments": [
     {
       "param": "MIN_DRIFT_SCORE",
@@ -311,7 +311,7 @@
   "paused": {
     "mean_reversion": true,
     "contrarian": true,
-    "liquidation": true,
+    "liquidation": false,
     "calibration": true,
     "sentiment_divergence": true,
     "smart_money": false
@@ -321,7 +321,6 @@
     "mean_reversion": "2026-06-02 07:22 UTC",
     "contrarian": "2026-06-02 07:22 UTC",
     "calibration": "2026-06-02 07:22 UTC",
-    "sentiment_divergence": "2026-06-03 03:55 UTC",
-    "liquidation": "2026-06-03 03:55 UTC"
+    "sentiment_divergence": "2026-06-03 03:55 UTC"
   }
 }

@@ -3250,5 +3250,43 @@
     "conviction_score": 22.79,
     "signal_strength": 1.5,
     "peak_pnl": 3.6999999999999993
+  },
+  {
+    "market_id": "U6EcNQ605d",
+    "question": "Will Trump and Iran\u2019s Supreme Leader meet in 2026?",
+    "direction": "BUY NO",
+    "entry_prob": 12.0,
+    "entry_time": "2026-06-03 20:50 UTC",
+    "url": "https://manifold.markets/MachiNi/will-trump-and-khamenei-meet-in-202",
+    "stake": 85.2,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 3,
+    "smart_user_mana": 1750,
+    "price_impact": 18.5,
+    "conviction_score": 38.79,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "SUhLcuL2t8",
+    "question": "Will there be a live action planecrash adaptation before 2029? (Including in development)",
+    "direction": "BUY NO",
+    "entry_prob": 19.9,
+    "entry_time": "2026-06-03 20:50 UTC",
+    "url": "https://manifold.markets/jacksonpolack/will-there-be-a-live-action-planecr",
+    "stake": 85.2,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 2,
+    "smart_user_mana": 500,
+    "price_impact": 19.2,
+    "conviction_score": 7.69,
+    "signal_strength": 1.5
   }
 ]
