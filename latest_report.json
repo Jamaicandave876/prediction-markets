@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-06-04 17:40 UTC",
+  "timestamp": "2026-06-04 19:57 UTC",
   "regime": "adverse",
-  "pnl_7d": 6.6,
-  "total_open": 10,
-  "total_closed": 174,
-  "total_pnl": 281.2,
+  "pnl_7d": 5.6,
+  "total_open": 9,
+  "total_closed": 175,
+  "total_pnl": 280.2,
   "bots": [
     {
       "name": "breakout",
@@ -21,14 +21,14 @@
     {
       "name": "fade",
       "display": "Fade",
-      "grade": "A",
-      "score": 82.0,
-      "win_rate": 70.0,
-      "total_pnl": 142.9,
-      "open": 1,
-      "closed": 14,
+      "grade": "B",
+      "score": 76.0,
+      "win_rate": 60.0,
+      "total_pnl": 141.9,
+      "open": 0,
+      "closed": 15,
       "paused": false,
-      "consecutive_losses": 1
+      "consecutive_losses": 2
     },
     {
       "name": "weather_temperature",
