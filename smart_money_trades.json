@@ -3307,6 +3307,26 @@
     "smart_user_mana": 250,
     "price_impact": 17.1,
     "conviction_score": 6.84,
+    "signal_strength": 1.5,
+    "peak_pnl": 19.299999999999997
+  },
+  {
+    "market_id": "pch50lngIc",
+    "question": "Will Tom Steyer finish top 2 in the California governor primary?",
+    "direction": "BUY YES",
+    "entry_prob": 30.0,
+    "entry_time": "2026-06-04 02:59 UTC",
+    "url": "https://manifold.markets/Jack1/will-tom-steyer-finish-top-2-in-the",
+    "stake": 36.2,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 11,
+    "smart_user_mana": 436,
+    "price_impact": 3.0,
+    "conviction_score": 5.75,
     "signal_strength": 1.5
   }
 ]

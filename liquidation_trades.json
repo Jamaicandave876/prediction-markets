@@ -2294,5 +2294,24 @@
     "liquidation_dir": "YES",
     "impact_score": 3.5,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "C0sAnhhLt0",
+    "question": "Will the 2026 NBA Finals be tied 1-1 after Game 2?",
+    "direction": "BUY NO",
+    "entry_prob": 52.0,
+    "entry_time": "2026-06-04 03:00 UTC",
+    "url": "https://manifold.markets/ShaneBo/will-the-2026-nba-finals-be-tied-11",
+    "stake": 21.8,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "liquidation_size": 160,
+    "liquidation_impact": 8.3,
+    "liquidation_dir": "YES",
+    "impact_score": 1.33,
+    "signal_strength": 0.67
   }
 ]
