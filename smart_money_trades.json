@@ -3328,5 +3328,43 @@
     "price_impact": 3.0,
     "conviction_score": 5.75,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "pZdppAlUu5",
+    "question": "Clarity Act will pass in September",
+    "direction": "BUY NO",
+    "entry_prob": 26.4,
+    "entry_time": "2026-06-04 07:27 UTC",
+    "url": "https://manifold.markets/Corppp/clarity-act-will-pass-in-september",
+    "stake": 85.9,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 2,
+    "smart_user_mana": 750,
+    "price_impact": 24.3,
+    "conviction_score": 14.55,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "ppPhqSSddu",
+    "question": "Will Navier-Stokes be considered solved on June 3th 2027?",
+    "direction": "BUY NO",
+    "entry_prob": 23.8,
+    "entry_time": "2026-06-04 07:27 UTC",
+    "url": "https://manifold.markets/Bayesian/will-navierstokes-be-considered-sol",
+    "stake": 85.9,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 2,
+    "smart_user_mana": 750,
+    "price_impact": 23.8,
+    "conviction_score": 14.25,
+    "signal_strength": 1.5
   }
 ]
