@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-06-04 22:18 UTC",
+  "timestamp": "2026-06-05 02:48 UTC",
   "regime": "adverse",
   "pnl_7d": 5.6,
-  "total_open": 9,
-  "total_closed": 175,
+  "total_open": 8,
+  "total_closed": 176,
   "total_pnl": 280.2,
   "bots": [
     {
@@ -79,18 +79,6 @@
       "consecutive_losses": 0
     },
     {
-      "name": "momentum",
-      "display": "Momentum",
-      "grade": "D",
-      "score": 38.6,
-      "win_rate": 30.0,
-      "total_pnl": 181.4,
-      "open": 8,
-      "closed": 57,
-      "paused": false,
-      "consecutive_losses": 3
-    },
-    {
       "name": "whale",
       "display": "Whale Tracker",
       "grade": "D",
@@ -113,6 +101,18 @@
       "closed": 21,
       "paused": false,
       "consecutive_losses": 1
+    },
+    {
+      "name": "momentum",
+      "display": "Momentum",
+      "grade": "F",
+      "score": 30.8,
+      "win_rate": 20.0,
+      "total_pnl": 181.4,
+      "open": 7,
+      "closed": 58,
+      "paused": false,
+      "consecutive_losses": 4
     },
     {
       "name": "volume_surge",
