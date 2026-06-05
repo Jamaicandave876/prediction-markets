@@ -826,11 +826,11 @@
     "drift_score": 10.74,
     "url": "https://manifold.markets/astroblob/will-the-ctfc-be-granted-its-prelim",
     "stake": 30.4,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 67.7,
+    "exit_time": "2026-06-05 02:46 UTC",
+    "exit_reason": "stale",
+    "pnl_pp": 0.0
   },
   {
     "market_id": "ztU6pg52OI",
@@ -984,7 +984,7 @@
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null,
-    "peak_pnl": 1.6000000000000014
+    "peak_pnl": 2.6000000000000014
   },
   {
     "market_id": "65QUhEqqc5",
