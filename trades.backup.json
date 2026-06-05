@@ -886,11 +886,11 @@
     "drift_score": 11.72,
     "url": "https://manifold.markets/predyx_markets/sp-500-hits-8000-in-2026",
     "stake": 30.8,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 54.2,
+    "exit_time": "2026-06-05 19:45 UTC",
+    "exit_reason": "trailing_stop",
+    "pnl_pp": -0.6,
     "peak_pnl": 6.200000000000003
   },
   {

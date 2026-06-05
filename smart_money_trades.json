@@ -3376,11 +3376,11 @@
     "entry_time": "2026-06-05 19:46 UTC",
     "url": "https://manifold.markets/jgyou/before-2029-will-openai-derive-less",
     "stake": 86.4,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 21.6,
+    "exit_time": "2026-06-05 22:12 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 0.0,
     "smart_user_bets": 4,
     "smart_user_mana": 900,
     "price_impact": 28.3,
@@ -3404,7 +3404,8 @@
     "smart_user_mana": 350,
     "price_impact": 14.6,
     "conviction_score": 4.08,
-    "signal_strength": 1.36
+    "signal_strength": 1.36,
+    "peak_pnl": 1.0999999999999943
   },
   {
     "market_id": "Qg52RCQudU",
@@ -3424,5 +3425,24 @@
     "price_impact": 6.4,
     "conviction_score": 2.05,
     "signal_strength": 0.68
+  },
+  {
+    "market_id": "udz2NO08P5",
+    "question": "Will Spacex close above a $2.5 Trillion Market Cap on it's first day of trading (IPO)?",
+    "direction": "BUY NO",
+    "entry_prob": 14.7,
+    "entry_time": "2026-06-05 22:12 UTC",
+    "url": "https://manifold.markets/BillClintonBubba/will-spacex-close-above-a-25-trilli",
+    "stake": 86.4,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 2,
+    "smart_user_mana": 750,
+    "price_impact": 11.4,
+    "conviction_score": 6.86,
+    "signal_strength": 1.5
   }
 ]
