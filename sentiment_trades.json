@@ -1427,5 +1427,24 @@
     "price_move": -24.2,
     "divergence_score": 15.3,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "y8LztqQUPS",
+    "question": "Will Russia gain more territory than it loses in June 2026?",
+    "direction": "BUY YES",
+    "entry_prob": 51.4,
+    "entry_time": "2026-06-05 11:58 UTC",
+    "url": "https://manifold.markets/a_l_e_x/will-russia-gain-more-territory-tha-pPnUl9s9Ig",
+    "stake": 38.1,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "NO",
+    "crowd_pct": 65.0,
+    "price_move": 12.6,
+    "divergence_score": 8.2,
+    "signal_strength": 1.5
   }
 ]
