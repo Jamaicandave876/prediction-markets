@@ -979,12 +979,12 @@
     "drift_score": -27.08,
     "url": "https://manifold.markets/Kraalnaxx/will-the-amazing-digital-circus-the",
     "stake": 24.2,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
-    "peak_pnl": 2.6000000000000014
+    "status": "closed",
+    "exit_prob": 22.0,
+    "exit_time": "2026-06-05 22:11 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 3.5,
+    "peak_pnl": 3.5
   },
   {
     "market_id": "65QUhEqqc5",
