@@ -3463,5 +3463,24 @@
     "price_impact": 11.2,
     "conviction_score": 5.47,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "UznOuC0cqU",
+    "question": "Resolves to the side with the most holders at market close",
+    "direction": "BUY NO",
+    "entry_prob": 23.9,
+    "entry_time": "2026-06-06 06:24 UTC",
+    "url": "https://manifold.markets/Jack1/resolves-to-the-side-with-the-most-gdncq5PA0p",
+    "stake": 86.1,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 5,
+    "smart_user_mana": 611,
+    "price_impact": 17.7,
+    "conviction_score": 21.59,
+    "signal_strength": 1.5
   }
 ]
