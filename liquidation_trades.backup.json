@@ -2352,5 +2352,24 @@
     "liquidation_dir": "NO",
     "impact_score": 2.09,
     "signal_strength": 1.05
+  },
+  {
+    "market_id": "yy95266Q0Z",
+    "question": "Will Silver drop below $65 per ounce by close of market on Friday June 12?",
+    "direction": "BUY YES",
+    "entry_prob": 54.5,
+    "entry_time": "2026-06-06 16:03 UTC",
+    "url": "https://manifold.markets/SamwiseGamgee/will-silver-drop-below-65-per-ounce",
+    "stake": 43.8,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "liquidation_size": 200,
+    "liquidation_impact": 11.8,
+    "liquidation_dir": "NO",
+    "impact_score": 2.35,
+    "signal_strength": 1.18
   }
 ]
