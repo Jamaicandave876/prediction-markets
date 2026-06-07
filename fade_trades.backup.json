@@ -268,5 +268,23 @@
     "exit_time": "2026-06-04 19:56 UTC",
     "exit_reason": "resolved_loss",
     "pnl_pp": -1.0
+  },
+  {
+    "market_id": "QUCP6Ph0Ld",
+    "question": "Will Platner, El-Sayed, and Talarico all win their Senate seats?",
+    "direction": "BUY YES",
+    "entry_prob": 22.0,
+    "pre_spike_prob": 47.6,
+    "spike_size": 25.6,
+    "spike_ratio": 5.8,
+    "spike_dir": -1,
+    "entry_time": "2026-06-07 02:54 UTC",
+    "url": "https://manifold.markets/PaperBoy/will-platner-elsayed-and-talarico-a",
+    "stake": 35.2,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]

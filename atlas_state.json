@@ -102,9 +102,9 @@
       "score": 88.0,
       "win_rate": 80.0,
       "avg_pnl": 10.2,
-      "total_pnl": 118.6,
-      "closed": 27,
-      "open": 1,
+      "total_pnl": 107.9,
+      "closed": 28,
+      "open": 0,
       "grade": "A"
     },
     "weather_temperature": {
@@ -154,7 +154,7 @@
     "close_gravity": 1,
     "fresh_sniper": 1,
     "stability": 2,
-    "breakout": 0,
+    "breakout": 1,
     "weather_temperature": 0,
     "weather_precipitation": 0,
     "weather_storm": 0,
