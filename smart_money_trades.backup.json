@@ -3484,5 +3484,43 @@
     "conviction_score": 21.59,
     "signal_strength": 1.5,
     "peak_pnl": 1.3999999999999986
+  },
+  {
+    "market_id": "qpdlSsQzdU",
+    "question": "can you just balenciaga it? Before 2028",
+    "direction": "BUY YES",
+    "entry_prob": 56.0,
+    "entry_time": "2026-06-07 07:03 UTC",
+    "url": "https://manifold.markets/Bayesian/can-you-just-balenciaga-it-before-2",
+    "stake": 57.2,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 5,
+    "smart_user_mana": 50030,
+    "price_impact": 8.0,
+    "conviction_score": 800.48,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "yy95266Q0Z",
+    "question": "Will Silver drop below $65 per ounce by close of market on Friday June 12?",
+    "direction": "BUY YES",
+    "entry_prob": 59.6,
+    "entry_time": "2026-06-07 07:03 UTC",
+    "url": "https://manifold.markets/SamwiseGamgee/will-silver-drop-below-65-per-ounce",
+    "stake": 62.3,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 12,
+    "smart_user_mana": 521,
+    "price_impact": 9.7,
+    "conviction_score": 24.3,
+    "signal_strength": 1.5
   }
 ]
