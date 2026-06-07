@@ -1446,7 +1446,8 @@
     "price_move": 12.6,
     "divergence_score": 8.2,
     "signal_strength": 1.5,
-    "api_errors": 1
+    "api_errors": 1,
+    "peak_pnl": 1.6000000000000014
   },
   {
     "market_id": "qA0RNy2tR8",
@@ -1475,11 +1476,11 @@
     "entry_time": "2026-06-07 16:09 UTC",
     "url": "https://manifold.markets/Tyler31/will-us-inflation-be-3-or-more-in-2-PuUNSCuL99",
     "stake": 41.2,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 50.1,
+    "exit_time": "2026-06-07 19:11 UTC",
+    "exit_reason": "stopped_out",
+    "pnl_pp": -5.4,
     "crowd_dir": "YES",
     "crowd_pct": 65.0,
     "price_move": -13.7,

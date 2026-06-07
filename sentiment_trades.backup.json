@@ -1447,5 +1447,43 @@
     "divergence_score": 8.2,
     "signal_strength": 1.5,
     "api_errors": 1
+  },
+  {
+    "market_id": "qA0RNy2tR8",
+    "question": "Feature movie about the Bricks and Minifigs/Reckless Ben dispute announced by EoY 2027",
+    "direction": "BUY NO",
+    "entry_prob": 29.6,
+    "entry_time": "2026-06-07 16:09 UTC",
+    "url": "https://manifold.markets/dgga/feature-movie-about-the-bricks-and",
+    "stake": 62.2,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "YES",
+    "crowd_pct": 86.7,
+    "price_move": -20.4,
+    "divergence_score": 17.64,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "gqOP0upcRI",
+    "question": "Will US inflation be 3% or more in 2027?",
+    "direction": "BUY NO",
+    "entry_prob": 44.7,
+    "entry_time": "2026-06-07 16:09 UTC",
+    "url": "https://manifold.markets/Tyler31/will-us-inflation-be-3-or-more-in-2-PuUNSCuL99",
+    "stake": 41.2,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "YES",
+    "crowd_pct": 65.0,
+    "price_move": -13.7,
+    "divergence_score": 8.93,
+    "signal_strength": 1.5
   }
 ]
