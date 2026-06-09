@@ -922,7 +922,8 @@
     "exit_prob": null,
     "exit_time": null,
     "exit_reason": null,
-    "pnl_pp": null
+    "pnl_pp": null,
+    "peak_pnl": 9.5
   },
   {
     "market_id": "Np0QUuA96q",
