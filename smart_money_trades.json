@@ -3701,5 +3701,24 @@
     "conviction_score": 7.83,
     "signal_strength": 1.5,
     "peak_pnl": 7.799999999999997
+  },
+  {
+    "market_id": "L8EuhySAdp",
+    "question": "CATL receives license renewal for Yichun Lithium mine by end of Feb 2027?",
+    "direction": "BUY YES",
+    "entry_prob": 55.4,
+    "entry_time": "2026-06-09 20:00 UTC",
+    "url": "https://manifold.markets/MikhailTal/catl-receives-license-renewal-for-y-UAuzRyILcp",
+    "stake": 57.2,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 2,
+    "smart_user_mana": 20000,
+    "price_impact": 9.3,
+    "conviction_score": 148.78,
+    "signal_strength": 1.5
   }
 ]
