@@ -1,5 +1,5 @@
 {
-  "last_report": "2026-06-08 22:21 UTC",
+  "last_report": "2026-06-09 22:19 UTC",
   "adjustments": [
     {
       "param": "MIN_DRIFT_SCORE",
@@ -317,6 +317,12 @@
       "param": "MIN_DRIFT_SCORE",
       "old": 4.7,
       "new": 4.4,
+      "reason": "System WR 70% > 65% \u2014 loosen signals"
+    },
+    {
+      "param": "MIN_DRIFT_SCORE",
+      "old": 5.0,
+      "new": 4.7,
       "reason": "System WR 70% > 65% \u2014 loosen signals"
     }
   ],
