@@ -286,5 +286,23 @@
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null
+  },
+  {
+    "market_id": "52US8IcU6g",
+    "question": "Will someone managram me 1k mana",
+    "direction": "BUY NO",
+    "entry_prob": 98.7,
+    "pre_spike_prob": 39.6,
+    "spike_size": 59.1,
+    "spike_ratio": 35.6,
+    "spike_dir": 1,
+    "entry_time": "2026-06-08 22:20 UTC",
+    "url": "https://manifold.markets/Velaris/will-someone-managram-me-1k-mana",
+    "stake": 35.2,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]
