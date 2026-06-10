@@ -304,5 +304,23 @@
     "exit_time": "2026-06-09 06:42 UTC",
     "exit_reason": "resolved_loss",
     "pnl_pp": -1.3
+  },
+  {
+    "market_id": "5ZPCudLN5I",
+    "question": "Will Claude Fable 5 be a accessible in a Claude max 20x subscription on June 23 2026?",
+    "direction": "BUY YES",
+    "entry_prob": 31.8,
+    "pre_spike_prob": 48.4,
+    "spike_size": 16.5,
+    "spike_ratio": 13.2,
+    "spike_dir": -1,
+    "entry_time": "2026-06-10 12:15 UTC",
+    "url": "https://manifold.markets/Bayesian/will-claude-fable-5-be-a-accessible",
+    "stake": 31.7,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]
