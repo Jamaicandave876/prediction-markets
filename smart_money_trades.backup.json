@@ -3680,7 +3680,7 @@
     "price_impact": 9.0,
     "conviction_score": 17.31,
     "signal_strength": 1.5,
-    "peak_pnl": 2.0
+    "peak_pnl": 2.1999999999999957
   },
   {
     "market_id": "yNSnLRchRt",
@@ -3721,5 +3721,24 @@
     "conviction_score": 148.78,
     "signal_strength": 1.5,
     "peak_pnl": 3.0
+  },
+  {
+    "market_id": "dAcNc9EZqE",
+    "question": "Will Elon Musk become a trillionaire by June 22, 2026?",
+    "direction": "BUY YES",
+    "entry_prob": 74.8,
+    "entry_time": "2026-06-10 02:51 UTC",
+    "url": "https://manifold.markets/100Anonymous/will-elon-musk-become-a-trillionair-LCgSyZytdq",
+    "stake": 86.5,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 2,
+    "smart_user_mana": 485,
+    "price_impact": 24.8,
+    "conviction_score": 9.62,
+    "signal_strength": 1.5
   }
 ]
