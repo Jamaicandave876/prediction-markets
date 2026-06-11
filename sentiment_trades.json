@@ -1504,7 +1504,8 @@
     "crowd_pct": 70.0,
     "price_move": -18.3,
     "divergence_score": 12.81,
-    "signal_strength": 1.5
+    "signal_strength": 1.5,
+    "peak_pnl": 2.200000000000003
   },
   {
     "market_id": "68ZsS8QUtZ",
@@ -1514,11 +1515,11 @@
     "entry_time": "2026-06-11 07:28 UTC",
     "url": "https://manifold.markets/ZandaZhu/will-elon-musk-be-worth-less-than-1",
     "stake": 77.7,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 40.3,
+    "exit_time": "2026-06-11 12:39 UTC",
+    "exit_reason": "stopped_out",
+    "pnl_pp": -7.0,
     "crowd_dir": "YES",
     "crowd_pct": 60.0,
     "price_move": -15.3,
