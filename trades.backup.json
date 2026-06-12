@@ -918,11 +918,11 @@
     "drift_score": 12.63,
     "url": "https://manifold.markets/SkylerCrossman/lessonline-2027-will-use-brand-new",
     "stake": 27.1,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 70.0,
+    "exit_time": "2026-06-12 02:53 UTC",
+    "exit_reason": "stale",
+    "pnl_pp": 9.5,
     "peak_pnl": 9.5
   },
   {

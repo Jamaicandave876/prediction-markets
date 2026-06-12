@@ -1544,5 +1544,24 @@
     "price_move": -6.7,
     "divergence_score": 4.59,
     "signal_strength": 0.92
+  },
+  {
+    "market_id": "q9U02Oq2h5",
+    "question": "Will SpaceX close worth more than $2 trillion on IPO day?",
+    "direction": "BUY YES",
+    "entry_prob": 62.0,
+    "entry_time": "2026-06-12 02:53 UTC",
+    "url": "https://manifold.markets/brod/will-spacex-close-worth-more-than-2",
+    "stake": 49.2,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "NO",
+    "crowd_pct": 75.0,
+    "price_move": 12.0,
+    "divergence_score": 9.0,
+    "signal_strength": 1.5
   }
 ]

@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-06-12 02:53 UTC",
+  "timestamp": "2026-06-12 07:18 UTC",
   "regime": "adverse",
-  "pnl_7d": 0.4,
-  "total_open": 7,
-  "total_closed": 181,
-  "total_pnl": 280.6,
+  "pnl_7d": 0.2,
+  "total_open": 11,
+  "total_closed": 182,
+  "total_pnl": 280.4,
   "bots": [
     {
       "name": "breakout",
@@ -82,13 +82,13 @@
       "name": "momentum",
       "display": "Momentum",
       "grade": "D",
-      "score": 47.2,
-      "win_rate": 40.0,
-      "total_pnl": 193.8,
-      "open": 4,
-      "closed": 61,
+      "score": 39.2,
+      "win_rate": 30.0,
+      "total_pnl": 193.6,
+      "open": 8,
+      "closed": 62,
       "paused": false,
-      "consecutive_losses": 0
+      "consecutive_losses": 1
     },
     {
       "name": "whale",
@@ -176,5 +176,12 @@
     }
   ],
   "warnings": [],
-  "adjustments": []
+  "adjustments": [
+    {
+      "param": "MIN_DRIFT_SCORE",
+      "old": 4.7,
+      "new": 5.0,
+      "reason": "Momentum WR 30% < 40% \u2014 tightening"
+    }
+  ]
 }
