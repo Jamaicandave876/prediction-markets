@@ -87,7 +87,7 @@
     "momentum": {
       "trailing_stop": 8,
       "reversal": 17,
-      "target_hit": 13,
+      "target_hit": 14,
       "stale": 13
     },
     "contrarian": {
@@ -1106,24 +1106,6 @@
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "smart_money",
-      "market_id": "tyuPl606Cy",
-      "outcome": "strong_win",
-      "pnl_pp": 7.9,
-      "exit_reason": "target_hit",
-      "duration_hours": 2.5,
-      "traits": [
-        "high_prob_entry",
-        "fast_trade",
-        "yes_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 71.8,
-      "direction": "BUY YES",
-      "timestamp": "2026-05-28 20:30 UTC",
-      "lesson": "Smart $: Quick strong win \u2014 this signal pattern works well."
-    },
     {
       "bot": "liquidation",
       "market_id": "AECygQPPpP",
@@ -2846,6 +2828,24 @@
       "direction": "BUY NO",
       "timestamp": "2026-06-12 07:17 UTC",
       "lesson": "Momentum: small loss via stale. PnL: -0.2pp in 336h."
+    },
+    {
+      "bot": "momentum",
+      "market_id": "Qg6d5c6d2P",
+      "outcome": "small_loss",
+      "pnl_pp": 0.0,
+      "exit_reason": "target_hit",
+      "duration_hours": 4.9,
+      "traits": [
+        "high_prob_entry",
+        "fast_trade",
+        "yes_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 83.8,
+      "direction": "BUY YES",
+      "timestamp": "2026-06-12 12:12 UTC",
+      "lesson": "Momentum: small loss via target_hit. PnL: +0.0pp in 5h."
     }
   ],
   "regime": "cautious",
@@ -2954,7 +2954,7 @@
     }
   ],
   "bot_confidence": {
-    "momentum": 0.45,
+    "momentum": 0.38,
     "fade": 0.48,
     "mean_reversion": 0.1,
     "volume_surge": 0.2,
@@ -2979,6 +2979,6 @@
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-06-12 07:18 UTC",
-  "generation": 444
+  "last_evolution": "2026-06-12 12:13 UTC",
+  "generation": 445
 }
