@@ -1031,7 +1031,8 @@
     "exit_prob": null,
     "exit_time": null,
     "exit_reason": null,
-    "pnl_pp": null
+    "pnl_pp": null,
+    "peak_pnl": 1.0
   },
   {
     "market_id": "n0yhNS6nzl",
@@ -1087,10 +1088,10 @@
     "drift_score": 5.18,
     "url": "https://manifold.markets/CombatWombat/will-i-be-promoted-to-platinum-at-t",
     "stake": 27.3,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 83.8,
+    "exit_time": "2026-06-12 12:12 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 0.0
   }
 ]

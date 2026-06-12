@@ -1553,17 +1553,17 @@
     "entry_time": "2026-06-12 02:53 UTC",
     "url": "https://manifold.markets/brod/will-spacex-close-worth-more-than-2",
     "stake": 49.2,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 92.4,
+    "exit_time": "2026-06-12 17:34 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 30.4,
     "crowd_dir": "NO",
     "crowd_pct": 75.0,
     "price_move": 12.0,
     "divergence_score": 9.0,
     "signal_strength": 1.5,
-    "peak_pnl": 9.0
+    "peak_pnl": 30.400000000000006
   },
   {
     "market_id": "lARLsRs9hn",
@@ -1582,6 +1582,7 @@
     "crowd_pct": 65.0,
     "price_move": 8.3,
     "divergence_score": 5.41,
-    "signal_strength": 1.08
+    "signal_strength": 1.08,
+    "peak_pnl": 1.2000000000000028
   }
 ]
