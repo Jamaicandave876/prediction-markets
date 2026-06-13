@@ -3770,16 +3770,17 @@
     "entry_time": "2026-06-13 06:55 UTC",
     "url": "https://manifold.markets/rg26/will-someone-streak-during-the-worl",
     "stake": 89.0,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 15.9,
+    "exit_time": "2026-06-13 11:10 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 0.6,
     "smart_user_bets": 7,
     "smart_user_mana": 1200,
     "price_impact": 32.9,
     "conviction_score": 110.47,
-    "signal_strength": 1.5
+    "signal_strength": 1.5,
+    "peak_pnl": 0.5999999999999996
   },
   {
     "market_id": "St56zcg5N6",
@@ -3799,5 +3800,24 @@
     "price_impact": 13.5,
     "conviction_score": 2.71,
     "signal_strength": 0.9
+  },
+  {
+    "market_id": "UdcA9P2ts6",
+    "question": "Will SpaceX (SPCX) stock drop below $100 by the end of 2026?",
+    "direction": "BUY NO",
+    "entry_prob": 44.6,
+    "entry_time": "2026-06-13 11:10 UTC",
+    "url": "https://manifold.markets/sama/will-spacex-spcx-stock-drop-below-1",
+    "stake": 31.2,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 2,
+    "smart_user_mana": 296,
+    "price_impact": 9.9,
+    "conviction_score": 2.36,
+    "signal_strength": 0.79
   }
 ]

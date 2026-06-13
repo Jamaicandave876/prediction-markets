@@ -1027,12 +1027,12 @@
     "drift_score": -17.57,
     "url": "https://manifold.markets/jim/time-and-location-of-signing-ceremo",
     "stake": 27.3,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
-    "peak_pnl": 1.0
+    "status": "closed",
+    "exit_prob": 21.0,
+    "exit_time": "2026-06-13 06:54 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 4.0,
+    "peak_pnl": 4.0
   },
   {
     "market_id": "n0yhNS6nzl",
