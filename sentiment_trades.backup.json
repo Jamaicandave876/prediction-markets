@@ -1602,7 +1602,8 @@
     "crowd_pct": 80.0,
     "price_move": 5.5,
     "divergence_score": 4.39,
-    "signal_strength": 0.88
+    "signal_strength": 0.88,
+    "peak_pnl": 0.7000000000000028
   },
   {
     "market_id": "I2l2s22u5L",
@@ -1622,5 +1623,43 @@
     "price_move": -6.0,
     "divergence_score": 3.6,
     "signal_strength": 0.72
+  },
+  {
+    "market_id": "gsLOSpU5hO",
+    "question": "Will Elliott Lehrer and Caroline Ellison go on a date in June?",
+    "direction": "BUY NO",
+    "entry_prob": 35.3,
+    "entry_time": "2026-06-13 16:10 UTC",
+    "url": "https://manifold.markets/derikk/will-elliott-lehrer-and-caroline-el",
+    "stake": 67.5,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "YES",
+    "crowd_pct": 60.0,
+    "price_move": -14.7,
+    "divergence_score": 8.82,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "SCdunNyldp",
+    "question": "Will Claude Fable 5 be re-enabled for Non-Americans before July 1st, 2026?",
+    "direction": "BUY YES",
+    "entry_prob": 36.9,
+    "entry_time": "2026-06-13 16:10 UTC",
+    "url": "https://manifold.markets/TheHouseAlwaysResolves/will-claude-fable-5-be-reenabled-fo",
+    "stake": 37.7,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "NO",
+    "crowd_pct": 60.0,
+    "price_move": 14.5,
+    "divergence_score": 8.67,
+    "signal_strength": 1.5
   }
 ]

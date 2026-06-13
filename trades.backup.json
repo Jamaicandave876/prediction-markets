@@ -1120,10 +1120,10 @@
     "drift_score": -46.23,
     "url": "https://manifold.markets/rg26/will-someone-streak-during-the-worl",
     "stake": 39.1,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 15.9,
+    "exit_time": "2026-06-13 16:09 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 0.0
   }
 ]
