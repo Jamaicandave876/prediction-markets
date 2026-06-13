@@ -317,10 +317,10 @@
     "entry_time": "2026-06-10 12:15 UTC",
     "url": "https://manifold.markets/Bayesian/will-claude-fable-5-be-a-accessible",
     "stake": 31.7,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 41.0,
+    "exit_time": "2026-06-13 16:09 UTC",
+    "exit_reason": "normalized",
+    "pnl_pp": 9.2
   }
 ]

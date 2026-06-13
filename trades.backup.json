@@ -1095,5 +1095,35 @@
     "exit_time": "2026-06-12 12:12 UTC",
     "exit_reason": "target_hit",
     "pnl_pp": 0.0
+  },
+  {
+    "market_id": "UN8ght0QUL",
+    "question": "Will the World Cup winner be a country from Europe?",
+    "direction": "BUY YES",
+    "entry_prob": 73.8,
+    "entry_time": "2026-06-13 13:44 UTC",
+    "drift_score": 73.17,
+    "url": "https://manifold.markets/rg26/will-the-world-cup-winner-be-a-coun",
+    "stake": 39.1,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
+  },
+  {
+    "market_id": "2Ap060gIN6",
+    "question": "Will someone streak during the World Cup 2026 final match?",
+    "direction": "BUY NO",
+    "entry_prob": 15.9,
+    "entry_time": "2026-06-13 13:44 UTC",
+    "drift_score": -46.23,
+    "url": "https://manifold.markets/rg26/will-someone-streak-during-the-worl",
+    "stake": 39.1,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]
