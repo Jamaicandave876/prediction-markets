@@ -996,12 +996,12 @@
     "drift_score": -8.89,
     "url": "https://manifold.markets/Jack1/steve-hilton-or-spencer-pratt-win",
     "stake": 24.2,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
-    "peak_pnl": 2.200000000000003
+    "status": "closed",
+    "exit_prob": 6.4,
+    "exit_time": "2026-06-13 11:09 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 19.2,
+    "peak_pnl": 19.200000000000003
   },
   {
     "market_id": "RSnRuqp05S",
