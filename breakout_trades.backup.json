@@ -544,5 +544,23 @@
     "breakout_strength": 6.9,
     "signal_strength": 1.5,
     "peak_pnl": 3.0
+  },
+  {
+    "market_id": "I2l2s22u5L",
+    "question": "Will Fable be reenabled for Americans before June 20?",
+    "direction": "BUY NO",
+    "entry_prob": 73.8,
+    "entry_time": "2026-06-13 02:46 UTC",
+    "url": "https://manifold.markets/IsaacKing/will-fable-be-reenabled-for-america",
+    "stake": 46.7,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "baseline_range": 0.9,
+    "breakout_move": -5.2,
+    "breakout_strength": 5.2,
+    "signal_strength": 1.5
   }
 ]

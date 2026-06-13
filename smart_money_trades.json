@@ -3761,5 +3761,43 @@
     "conviction_score": 7.71,
     "signal_strength": 1.5,
     "peak_pnl": 19.5
+  },
+  {
+    "market_id": "2Ap060gIN6",
+    "question": "Will someone streak during the World Cup 2026 final match?",
+    "direction": "BUY NO",
+    "entry_prob": 16.5,
+    "entry_time": "2026-06-13 06:55 UTC",
+    "url": "https://manifold.markets/rg26/will-someone-streak-during-the-worl",
+    "stake": 89.0,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 7,
+    "smart_user_mana": 1200,
+    "price_impact": 32.9,
+    "conviction_score": 110.47,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "St56zcg5N6",
+    "question": "Will Anthropic have KYC for customers before June 22?",
+    "direction": "BUY YES",
+    "entry_prob": 52.3,
+    "entry_time": "2026-06-13 06:55 UTC",
+    "url": "https://manifold.markets/Bayesian/will-anthropic-have-kyc-for-custome",
+    "stake": 33.0,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 2,
+    "smart_user_mana": 250,
+    "price_impact": 13.5,
+    "conviction_score": 2.71,
+    "signal_strength": 0.9
   }
 ]

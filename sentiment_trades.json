@@ -1584,5 +1584,24 @@
     "divergence_score": 5.41,
     "signal_strength": 1.08,
     "peak_pnl": 2.5999999999999943
+  },
+  {
+    "market_id": "P0R6uAC2nU",
+    "question": "Will Anthropic restore access to Fable 5 to all customers by the end of June?",
+    "direction": "BUY YES",
+    "entry_prob": 52.5,
+    "entry_time": "2026-06-13 06:55 UTC",
+    "url": "https://manifold.markets/PhilipDowdell/will-anthropic-restore-access-to-fa",
+    "stake": 29.2,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "NO",
+    "crowd_pct": 80.0,
+    "price_move": 5.5,
+    "divergence_score": 4.39,
+    "signal_strength": 0.88
   }
 ]
