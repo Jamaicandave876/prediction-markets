@@ -1593,11 +1593,11 @@
     "entry_time": "2026-06-13 06:55 UTC",
     "url": "https://manifold.markets/PhilipDowdell/will-anthropic-restore-access-to-fa",
     "stake": 29.2,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 37.7,
+    "exit_time": "2026-06-13 19:15 UTC",
+    "exit_reason": "stopped_out",
+    "pnl_pp": -14.8,
     "crowd_dir": "NO",
     "crowd_pct": 80.0,
     "price_move": 5.5,
@@ -1613,11 +1613,11 @@
     "entry_time": "2026-06-13 13:45 UTC",
     "url": "https://manifold.markets/IsaacKing/will-fable-be-reenabled-for-america",
     "stake": 21.5,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 58.4,
+    "exit_time": "2026-06-13 19:15 UTC",
+    "exit_reason": "stopped_out",
+    "pnl_pp": -5.4,
     "crowd_dir": "YES",
     "crowd_pct": 60.0,
     "price_move": -6.0,
@@ -1641,7 +1641,8 @@
     "crowd_pct": 60.0,
     "price_move": -14.7,
     "divergence_score": 8.82,
-    "signal_strength": 1.5
+    "signal_strength": 1.5,
+    "peak_pnl": 0.19999999999999574
   },
   {
     "market_id": "SCdunNyldp",
@@ -1660,6 +1661,7 @@
     "crowd_pct": 60.0,
     "price_move": 14.5,
     "divergence_score": 8.67,
-    "signal_strength": 1.5
+    "signal_strength": 1.5,
+    "peak_pnl": 13.5
   }
 ]
