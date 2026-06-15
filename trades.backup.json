@@ -1043,12 +1043,12 @@
     "drift_score": -12.59,
     "url": "https://manifold.markets/ShaneBo/will-the-wti-crude-oil-spot-price-b-tN26znclup",
     "stake": 27.3,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
-    "peak_pnl": 12.700000000000003
+    "status": "closed",
+    "exit_prob": 19.2,
+    "exit_time": "2026-06-14 22:03 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 17.0,
+    "peak_pnl": 17.000000000000004
   },
   {
     "market_id": "y0uQlRpphd",

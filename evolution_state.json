@@ -73,7 +73,7 @@
       "target_hit": 2
     },
     "sentiment": {
-      "target_hit": 13,
+      "target_hit": 14,
       "stopped_out": 44,
       "trailing_stop": 6,
       "stale": 21
@@ -1106,24 +1106,6 @@
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "smart_money",
-      "market_id": "SUhLcuL2t8",
-      "outcome": "small_loss",
-      "pnl_pp": 0.0,
-      "exit_reason": "target_hit",
-      "duration_hours": 2.2,
-      "traits": [
-        "low_prob_entry",
-        "fast_trade",
-        "no_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 19.9,
-      "direction": "BUY NO",
-      "timestamp": "2026-06-03 23:00 UTC",
-      "lesson": "Smart $: small loss via target_hit. PnL: +0.0pp in 2h."
-    },
     {
       "bot": "liquidation",
       "market_id": "EZN9QQCnAA",
@@ -2861,6 +2843,23 @@
       "direction": "BUY NO",
       "timestamp": "2026-06-14 19:16 UTC",
       "lesson": "Smart $: small loss via target_hit. PnL: +0.0pp in 3h."
+    },
+    {
+      "bot": "sentiment",
+      "market_id": "UL6cZqsuIc",
+      "outcome": "small_loss",
+      "pnl_pp": -1.6,
+      "exit_reason": "target_hit",
+      "duration_hours": 5.5,
+      "traits": [
+        "low_prob_entry",
+        "fast_trade",
+        "no_direction"
+      ],
+      "entry_prob": 23.0,
+      "direction": "BUY NO",
+      "timestamp": "2026-06-15 03:31 UTC",
+      "lesson": "Sentiment: small loss via target_hit. PnL: -1.6pp in 5h."
     }
   ],
   "regime": "cautious",
@@ -2994,6 +2993,6 @@
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-06-14 22:05 UTC",
-  "generation": 462
+  "last_evolution": "2026-06-15 03:32 UTC",
+  "generation": 463
 }
