@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-06-15 11:53 UTC",
+  "timestamp": "2026-06-15 17:05 UTC",
   "regime": "adverse",
-  "pnl_7d": 95.5,
-  "total_open": 9,
-  "total_closed": 191,
-  "total_pnl": 367.9,
+  "pnl_7d": 100.3,
+  "total_open": 8,
+  "total_closed": 192,
+  "total_pnl": 372.7,
   "bots": [
     {
       "name": "breakout",
@@ -22,11 +22,11 @@
       "name": "momentum",
       "display": "Momentum",
       "grade": "B",
-      "score": 70.7,
-      "win_rate": 60.0,
-      "total_pnl": 255.1,
-      "open": 7,
-      "closed": 68,
+      "score": 77.8,
+      "win_rate": 70.0,
+      "total_pnl": 259.9,
+      "open": 6,
+      "closed": 69,
       "paused": false,
       "consecutive_losses": 0
     },
@@ -176,5 +176,12 @@
     }
   ],
   "warnings": [],
-  "adjustments": []
+  "adjustments": [
+    {
+      "param": "MIN_DRIFT_SCORE",
+      "old": 4.4,
+      "new": 4.1,
+      "reason": "Momentum WR 70% > 65% \u2014 loosening"
+    }
+  ]
 }

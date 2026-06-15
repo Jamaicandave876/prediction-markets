@@ -1136,12 +1136,12 @@
     "drift_score": -9.35,
     "url": "https://manifold.markets/Bayesian/will-i-drop-out-of-undergrad",
     "stake": 43.3,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
-    "peak_pnl": 0.40000000000000213
+    "status": "closed",
+    "exit_prob": 19.5,
+    "exit_time": "2026-06-15 17:04 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 4.8,
+    "peak_pnl": 4.800000000000001
   },
   {
     "market_id": "tcPEE2nL8P",
