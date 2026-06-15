@@ -1672,15 +1672,34 @@
     "entry_time": "2026-06-14 22:04 UTC",
     "url": "https://manifold.markets/CharlesFoster/will-the-us-government-introduce-an",
     "stake": 62.4,
+    "status": "closed",
+    "exit_prob": 24.6,
+    "exit_time": "2026-06-15 03:31 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": -1.6,
+    "crowd_dir": "YES",
+    "crowd_pct": 60.0,
+    "price_move": -6.8,
+    "divergence_score": 4.07,
+    "signal_strength": 0.81
+  },
+  {
+    "market_id": "I2l2s22u5L",
+    "question": "Will Fable be reenabled for Americans before June 20?",
+    "direction": "BUY NO",
+    "entry_prob": 39.0,
+    "entry_time": "2026-06-15 03:32 UTC",
+    "url": "https://manifold.markets/IsaacKing/will-fable-be-reenabled-for-america",
+    "stake": 27.4,
     "status": "open",
     "exit_prob": null,
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null,
     "crowd_dir": "YES",
-    "crowd_pct": 60.0,
-    "price_move": -6.8,
-    "divergence_score": 4.07,
-    "signal_strength": 0.81
+    "crowd_pct": 75.0,
+    "price_move": -4.4,
+    "divergence_score": 3.33,
+    "signal_strength": 0.67
   }
 ]

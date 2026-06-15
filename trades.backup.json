@@ -1126,5 +1126,50 @@
     "exit_time": "2026-06-13 16:09 UTC",
     "exit_reason": "target_hit",
     "pnl_pp": 0.0
+  },
+  {
+    "market_id": "thEQ2Q06Un",
+    "question": "Will I drop out of undergrad?",
+    "direction": "BUY NO",
+    "entry_prob": 24.3,
+    "entry_time": "2026-06-15 03:30 UTC",
+    "drift_score": -9.35,
+    "url": "https://manifold.markets/Bayesian/will-i-drop-out-of-undergrad",
+    "stake": 43.3,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
+  },
+  {
+    "market_id": "tcPEE2nL8P",
+    "question": "Will Claude Fable 5 be API Pricing Only when public access returns?",
+    "direction": "BUY NO",
+    "entry_prob": 25.5,
+    "entry_time": "2026-06-15 03:30 UTC",
+    "drift_score": -20.35,
+    "url": "https://manifold.markets/Shihan/will-claude-fable-5-be-api-pricing",
+    "stake": 43.3,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
+  },
+  {
+    "market_id": "gsLOSpU5hO",
+    "question": "Will Elliott Lehrer and Caroline Ellison go on a date in June?",
+    "direction": "BUY NO",
+    "entry_prob": 29.1,
+    "entry_time": "2026-06-15 03:30 UTC",
+    "drift_score": -36.83,
+    "url": "https://manifold.markets/derikk/will-elliott-lehrer-and-caroline-el",
+    "stake": 43.3,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]
