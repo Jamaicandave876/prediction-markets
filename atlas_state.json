@@ -18,12 +18,12 @@
   "pause_start": {},
   "bot_scores": {
     "momentum": {
-      "score": 78.2,
+      "score": 77.1,
       "win_rate": 70.0,
-      "avg_pnl": 8.1,
-      "total_pnl": 265.4,
-      "closed": 70,
-      "open": 5,
+      "avg_pnl": 7.5,
+      "total_pnl": 269.1,
+      "closed": 72,
+      "open": 3,
       "grade": "B"
     },
     "fade": {
@@ -104,7 +104,7 @@
       "avg_pnl": 11.6,
       "total_pnl": 123.3,
       "closed": 29,
-      "open": 2,
+      "open": 3,
       "grade": "A"
     },
     "weather_temperature": {
@@ -161,5 +161,5 @@
     "weather_divergence": 0
   },
   "regime": "adverse",
-  "last_report": "2026-06-14 22:05 UTC"
+  "last_report": "2026-06-15 23:00 UTC"
 }

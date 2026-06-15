@@ -949,11 +949,11 @@
     "drift_score": -21.73,
     "url": "https://manifold.markets/Bayesian/will-openai-publicly-share-software",
     "stake": 24.2,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 25.7,
+    "exit_time": "2026-06-15 22:58 UTC",
+    "exit_reason": "stale",
+    "pnl_pp": 4.3,
     "peak_pnl": 4.300000000000001
   },
   {
@@ -1012,11 +1012,11 @@
     "drift_score": -18.16,
     "url": "https://manifold.markets/Robincvgr/under-us-law-does-dynamic-linking-a",
     "stake": 24.2,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 30.5,
+    "exit_time": "2026-06-15 22:58 UTC",
+    "exit_reason": "stale",
+    "pnl_pp": -0.6
   },
   {
     "market_id": "Ozyz9cPcc0",
