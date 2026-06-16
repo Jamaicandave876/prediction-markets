@@ -1189,5 +1189,20 @@
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null
+  },
+  {
+    "market_id": "yAu8NOISAQ",
+    "question": "Will Trump annex/take military action against Brazil by EOY 2028?",
+    "direction": "BUY NO",
+    "entry_prob": 44.4,
+    "entry_time": "2026-06-16 20:42 UTC",
+    "drift_score": -15.7,
+    "url": "https://manifold.markets/WilliamBrodhead/will-trump-annextake-military-actio",
+    "stake": 43.0,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]
