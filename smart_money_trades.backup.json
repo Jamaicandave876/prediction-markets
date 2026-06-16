@@ -4071,7 +4071,8 @@
     "smart_user_mana": 439,
     "price_impact": 22.6,
     "conviction_score": 11.9,
-    "signal_strength": 1.5
+    "signal_strength": 1.5,
+    "peak_pnl": 8.200000000000003
   },
   {
     "market_id": "tcPEE2nL8P",
@@ -4081,15 +4082,34 @@
     "entry_time": "2026-06-15 22:59 UTC",
     "url": "https://manifold.markets/Shihan/will-claude-fable-5-be-api-pricing",
     "stake": 72.4,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 19.2,
+    "exit_time": "2026-06-16 03:28 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 0.0,
     "smart_user_bets": 2,
     "smart_user_mana": 400,
     "price_impact": 9.1,
     "conviction_score": 2.92,
     "signal_strength": 0.97
+  },
+  {
+    "market_id": "5OsZzsZhpA",
+    "question": "Will Dan J. Sullivan be on the ballot as a Republican for the US Senate Primary election in Alaska?",
+    "direction": "BUY NO",
+    "entry_prob": 40.2,
+    "entry_time": "2026-06-16 03:28 UTC",
+    "url": "https://manifold.markets/Dssc/will-dan-j-sullivan-be-on-the-ballo",
+    "stake": 48.1,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 5,
+    "smart_user_mana": 275,
+    "price_impact": 13.0,
+    "conviction_score": 7.13,
+    "signal_strength": 1.5
   }
 ]
