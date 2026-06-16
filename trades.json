@@ -1174,5 +1174,20 @@
     "exit_reason": null,
     "pnl_pp": null,
     "peak_pnl": 0.3000000000000007
+  },
+  {
+    "market_id": "sdu9y2zIL6",
+    "question": "Will I ban mobile devices from my bedroom until July? (\u1e4010 Bonus)",
+    "direction": "BUY YES",
+    "entry_prob": 62.5,
+    "entry_time": "2026-06-16 16:29 UTC",
+    "drift_score": 15.51,
+    "url": "https://manifold.markets/redcat/will-i-ban-mobile-devices-from-my-b-glUtcOClUS",
+    "stake": 43.1,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]

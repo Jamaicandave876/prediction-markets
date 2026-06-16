@@ -23,7 +23,7 @@
       "avg_pnl": 7.5,
       "total_pnl": 269.1,
       "closed": 72,
-      "open": 3,
+      "open": 4,
       "grade": "B"
     },
     "fade": {
@@ -104,7 +104,7 @@
       "avg_pnl": 11.3,
       "total_pnl": 123.3,
       "closed": 30,
-      "open": 2,
+      "open": 3,
       "grade": "A"
     },
     "weather_temperature": {
