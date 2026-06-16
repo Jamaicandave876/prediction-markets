@@ -1642,7 +1642,7 @@
     "price_move": -14.7,
     "divergence_score": 8.82,
     "signal_strength": 1.5,
-    "peak_pnl": 6.199999999999996
+    "peak_pnl": 6.4999999999999964
   },
   {
     "market_id": "SCdunNyldp",
@@ -1720,5 +1720,24 @@
     "price_move": -4.7,
     "divergence_score": 3.29,
     "signal_strength": 0.66
+  },
+  {
+    "market_id": "5hqSlZpSg6",
+    "question": "Will more US AI models be subject to US export control directives by the end of 2026?",
+    "direction": "BUY NO",
+    "entry_prob": 55.4,
+    "entry_time": "2026-06-16 03:28 UTC",
+    "url": "https://manifold.markets/PhilipDowdell/will-more-us-ai-models-be-subject-t",
+    "stake": 20,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "YES",
+    "crowd_pct": 60.0,
+    "price_move": -5.7,
+    "divergence_score": 3.42,
+    "signal_strength": 0.68
   }
 ]
