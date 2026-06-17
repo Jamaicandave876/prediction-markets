@@ -4171,5 +4171,24 @@
     "price_impact": 6.8,
     "conviction_score": 10.86,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "gn2qhp6hsQ",
+    "question": "Putin, Xi Jinping, or Kim Jong Un out by 2028",
+    "direction": "BUY NO",
+    "entry_prob": 37.1,
+    "entry_time": "2026-06-17 08:32 UTC",
+    "url": "https://manifold.markets/rg26/putin-xi-jinping-or-kim-jong-un-out",
+    "stake": 50.3,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 4,
+    "smart_user_mana": 250,
+    "price_impact": 11.0,
+    "conviction_score": 4.39,
+    "signal_strength": 1.46
   }
 ]
