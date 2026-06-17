@@ -468,22 +468,23 @@
       "old": 1.4,
       "new": 1.7,
       "reason": "System WR 10% < 40% \u2014 tighten signals"
+    },
+    {
+      "param": "MIN_DRIFT_SCORE",
+      "old": 1.1,
+      "new": 1.4,
+      "reason": "System WR 30% < 40% \u2014 tighten signals"
     }
   ],
   "paused": {
-    "mean_reversion": true,
-    "contrarian": true,
+    "mean_reversion": false,
+    "contrarian": false,
     "liquidation": false,
-    "calibration": true,
-    "sentiment_divergence": true,
+    "calibration": false,
+    "sentiment_divergence": false,
     "smart_money": false,
     "momentum": false
   },
   "consecutive_losses": {},
-  "pause_start": {
-    "mean_reversion": "2026-06-15 17:05 UTC",
-    "contrarian": "2026-06-15 17:05 UTC",
-    "calibration": "2026-06-15 17:05 UTC",
-    "sentiment_divergence": "2026-06-16 11:00 UTC"
-  }
+  "pause_start": {}
 }
