@@ -340,5 +340,23 @@
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null
+  },
+  {
+    "market_id": "nLI9ddQy5c",
+    "question": "2\u043a \u043d\u0430 \u0442\u0433\u043a \u0434\u043e \u043a\u043e\u043d\u0446\u0430 \u043d\u0435\u0434\u0435\u043b\u0438?",
+    "direction": "BUY YES",
+    "entry_prob": 26.3,
+    "pre_spike_prob": 40.0,
+    "spike_size": 13.7,
+    "spike_ratio": 3.2,
+    "spike_dir": -1,
+    "entry_time": "2026-06-18 20:21 UTC",
+    "url": "https://manifold.markets/toffexcrf/2-0chz6SOyIC",
+    "stake": 40.5,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]
