@@ -1777,7 +1777,8 @@
     "crowd_pct": 65.0,
     "price_move": -14.8,
     "divergence_score": 9.61,
-    "signal_strength": 1.5
+    "signal_strength": 1.5,
+    "peak_pnl": 6.099999999999994
   },
   {
     "market_id": "ISUuclN9C0",
@@ -1787,11 +1788,11 @@
     "entry_time": "2026-06-18 02:54 UTC",
     "url": "https://manifold.markets/predyx_markets/fable-reenabled-for-americans-by-ju",
     "stake": 60.4,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 41.9,
+    "exit_time": "2026-06-18 07:30 UTC",
+    "exit_reason": "stopped_out",
+    "pnl_pp": -8.1,
     "crowd_dir": "YES",
     "crowd_pct": 70.0,
     "price_move": -8.2,
