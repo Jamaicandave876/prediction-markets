@@ -1807,15 +1807,16 @@
     "entry_time": "2026-06-18 12:19 UTC",
     "url": "https://manifold.markets/JoshSnider/will-anthropic-release-a-nonfable-m",
     "stake": 62.0,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 17.8,
+    "exit_time": "2026-06-18 17:57 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 15.7,
     "crowd_dir": "YES",
     "crowd_pct": 80.0,
     "price_move": -7.2,
     "divergence_score": 5.78,
-    "signal_strength": 1.16
+    "signal_strength": 1.16,
+    "peak_pnl": 15.7
   }
 ]
