@@ -1748,17 +1748,17 @@
     "entry_time": "2026-06-16 11:00 UTC",
     "url": "https://manifold.markets/TheHouseAlwaysResolves/will-claude-fable-5-be-reenabled-fo",
     "stake": 27.2,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 26.8,
+    "exit_time": "2026-06-18 02:54 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 12.1,
     "crowd_dir": "YES",
     "crowd_pct": 80.0,
     "price_move": -5.1,
     "divergence_score": 4.1,
     "signal_strength": 0.82,
-    "peak_pnl": 9.7
+    "peak_pnl": 12.099999999999998
   },
   {
     "market_id": "5hqSlZpSg6",
@@ -1778,5 +1778,24 @@
     "price_move": -14.8,
     "divergence_score": 9.61,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "ISUuclN9C0",
+    "question": "Fable 5 reenabled for Americans by June 30?",
+    "direction": "BUY NO",
+    "entry_prob": 33.8,
+    "entry_time": "2026-06-18 02:54 UTC",
+    "url": "https://manifold.markets/predyx_markets/fable-reenabled-for-americans-by-ju",
+    "stake": 60.4,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "YES",
+    "crowd_pct": 70.0,
+    "price_move": -8.2,
+    "divergence_score": 5.71,
+    "signal_strength": 1.14
   }
 ]
