@@ -353,10 +353,10 @@
     "entry_time": "2026-06-18 20:21 UTC",
     "url": "https://manifold.markets/toffexcrf/2-0chz6SOyIC",
     "stake": 40.5,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 42.6,
+    "exit_time": "2026-06-18 22:52 UTC",
+    "exit_reason": "normalized",
+    "pnl_pp": 16.3
   }
 ]

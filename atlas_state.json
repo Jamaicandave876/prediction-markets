@@ -27,13 +27,13 @@
       "grade": "B"
     },
     "fade": {
-      "score": 58.7,
-      "win_rate": 50.0,
-      "avg_pnl": 4.3,
-      "total_pnl": 151.2,
-      "closed": 18,
-      "open": 2,
-      "grade": "C"
+      "score": 72.5,
+      "win_rate": 60.0,
+      "avg_pnl": 8.3,
+      "total_pnl": 167.5,
+      "closed": 19,
+      "open": 1,
+      "grade": "B"
     },
     "mean_reversion": {
       "score": 20.0,
@@ -161,5 +161,5 @@
     "weather_divergence": 0
   },
   "regime": "adverse",
-  "last_report": "2026-06-17 22:43 UTC"
+  "last_report": "2026-06-18 22:53 UTC"
 }
