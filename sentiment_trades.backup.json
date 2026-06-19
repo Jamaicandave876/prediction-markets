@@ -1818,5 +1818,24 @@
     "divergence_score": 5.78,
     "signal_strength": 1.16,
     "peak_pnl": 15.7
+  },
+  {
+    "market_id": "90nEs8ylPn",
+    "question": "Fable 5 reenabled for Americans by July 15?",
+    "direction": "BUY YES",
+    "entry_prob": 80.5,
+    "entry_time": "2026-06-19 10:17 UTC",
+    "url": "https://manifold.markets/predyx_markets/fable-5-reenabled-for-americans-by",
+    "stake": 83.1,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "NO",
+    "crowd_pct": 60.0,
+    "price_move": 7.3,
+    "divergence_score": 4.41,
+    "signal_strength": 0.88
   }
 ]
