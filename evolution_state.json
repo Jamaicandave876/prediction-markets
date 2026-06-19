@@ -44,7 +44,7 @@
     },
     "fade": {
       "stop_pp": 12,
-      "max_days": 5
+      "max_days": 3
     }
   },
   "loss_patterns": {
@@ -1113,6 +1113,15 @@
       "new": 5,
       "reason": "Holding to resolution and losing \u2014 exit earlier",
       "timestamp": "2026-06-18 22:53 UTC"
+    },
+    {
+      "type": "bot_adjustment",
+      "bot": "fade",
+      "param": "max_days",
+      "old": 5,
+      "new": 3,
+      "reason": "Holding to resolution and losing \u2014 exit earlier",
+      "timestamp": "2026-06-19 03:41 UTC"
     }
   ],
   "trade_autopsies": [
@@ -3013,6 +3022,6 @@
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-06-18 22:53 UTC",
-  "generation": 484
+  "last_evolution": "2026-06-19 03:41 UTC",
+  "generation": 485
 }
