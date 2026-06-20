@@ -74,7 +74,7 @@
       "target_hit": 2
     },
     "sentiment": {
-      "target_hit": 14,
+      "target_hit": 15,
       "stopped_out": 49,
       "trailing_stop": 6,
       "stale": 23
@@ -1125,23 +1125,6 @@
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "sentiment",
-      "market_id": "qA0RNy2tR8",
-      "outcome": "small_loss",
-      "pnl_pp": 0.0,
-      "exit_reason": "stale",
-      "duration_hours": 98.0,
-      "traits": [
-        "low_prob_entry",
-        "no_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 29.6,
-      "direction": "BUY NO",
-      "timestamp": "2026-06-11 18:09 UTC",
-      "lesson": "Sentiment: small loss via stale. PnL: +0.0pp in 98h."
-    },
     {
       "bot": "smart_money",
       "market_id": "L8EuhySAdp",
@@ -2890,6 +2873,23 @@
       "direction": "BUY NO",
       "timestamp": "2026-06-19 21:59 UTC",
       "lesson": "Smart $: Quick strong win \u2014 this signal pattern works well."
+    },
+    {
+      "bot": "sentiment",
+      "market_id": "Q8y2sNLQzq",
+      "outcome": "small_loss",
+      "pnl_pp": 0.0,
+      "exit_reason": "target_hit",
+      "duration_hours": 4.8,
+      "traits": [
+        "high_prob_entry",
+        "fast_trade",
+        "yes_direction"
+      ],
+      "entry_prob": 82.0,
+      "direction": "BUY YES",
+      "timestamp": "2026-06-20 02:45 UTC",
+      "lesson": "Sentiment: small loss via target_hit. PnL: +0.0pp in 5h."
     }
   ],
   "regime": "cautious",
@@ -3012,7 +3012,7 @@
     "reversal": 0.2,
     "smart_money": 0.65,
     "time_decay": 0.23,
-    "sentiment": 0.28,
+    "sentiment": 0.24,
     "accumulation": 0.1,
     "underdog": 0.1,
     "late_mover": 0.2,
@@ -3023,6 +3023,6 @@
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-06-19 22:00 UTC",
-  "generation": 490
+  "last_evolution": "2026-06-20 02:46 UTC",
+  "generation": 491
 }
