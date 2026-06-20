@@ -1877,5 +1877,24 @@
     "price_move": 8.2,
     "divergence_score": 4.89,
     "signal_strength": 0.98
+  },
+  {
+    "market_id": "A2UNpQu8yS",
+    "question": "Will The Amazing Digital Circus Episode 9 reach 35 million views by the end of June?",
+    "direction": "BUY YES",
+    "entry_prob": 70.0,
+    "entry_time": "2026-06-20 06:57 UTC",
+    "url": "https://manifold.markets/Kraalnaxx/will-the-amazing-digital-circus-epi-EAI5ZyPuNs",
+    "stake": 83.7,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "NO",
+    "crowd_pct": 68.4,
+    "price_move": 20.0,
+    "divergence_score": 13.68,
+    "signal_strength": 1.5
   }
 ]
