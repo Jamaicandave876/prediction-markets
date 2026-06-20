@@ -1886,17 +1886,17 @@
     "entry_time": "2026-06-20 06:57 UTC",
     "url": "https://manifold.markets/Kraalnaxx/will-the-amazing-digital-circus-epi-EAI5ZyPuNs",
     "stake": 83.7,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 73.6,
+    "exit_time": "2026-06-20 16:14 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 3.6,
     "crowd_dir": "NO",
     "crowd_pct": 68.4,
     "price_move": 20.0,
     "divergence_score": 13.68,
     "signal_strength": 1.5,
-    "peak_pnl": 0.09999999999999432
+    "peak_pnl": 3.5999999999999943
   },
   {
     "market_id": "90nEs8ylPn",
