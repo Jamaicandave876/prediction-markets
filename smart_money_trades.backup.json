@@ -4388,5 +4388,24 @@
     "conviction_score": 9.26,
     "signal_strength": 1.5,
     "peak_pnl": 13.799999999999999
+  },
+  {
+    "market_id": "ISUuclN9C0",
+    "question": "Fable 5 reenabled for Americans by June 30?",
+    "direction": "BUY NO",
+    "entry_prob": 59.2,
+    "entry_time": "2026-06-20 02:45 UTC",
+    "url": "https://manifold.markets/predyx_markets/fable-reenabled-for-americans-by-ju",
+    "stake": 42.7,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 3,
+    "smart_user_mana": 300,
+    "price_impact": 11.3,
+    "conviction_score": 4.07,
+    "signal_strength": 1.36
   }
 ]
