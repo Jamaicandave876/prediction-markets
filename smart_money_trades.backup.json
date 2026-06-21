@@ -4448,5 +4448,24 @@
     "price_impact": 24.2,
     "conviction_score": 17.1,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "5CU68Sc52N",
+    "question": "Strait of Hormuz traffic returns to normal by August 15? [Polymarket]",
+    "direction": "BUY NO",
+    "entry_prob": 52.4,
+    "entry_time": "2026-06-21 03:27 UTC",
+    "url": "https://manifold.markets/HillaryClinton/strait-of-hormuz-traffic-returns-to-ShRpNyAIO9",
+    "stake": 54.0,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 3,
+    "smart_user_mana": 385,
+    "price_impact": 16.5,
+    "conviction_score": 7.64,
+    "signal_strength": 1.5
   }
 ]
