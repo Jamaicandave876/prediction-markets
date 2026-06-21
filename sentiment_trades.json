@@ -1916,5 +1916,24 @@
     "price_move": 6.4,
     "divergence_score": 3.86,
     "signal_strength": 0.77
+  },
+  {
+    "market_id": "E9CNZA0LZ0",
+    "question": "Does China have an ASML EUV machine? (as of June 19, 2026)",
+    "direction": "BUY YES",
+    "entry_prob": 18.0,
+    "entry_time": "2026-06-21 19:21 UTC",
+    "url": "https://manifold.markets/JamesSanders/does-china-have-an-asml-euv-machine",
+    "stake": 22.5,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "NO",
+    "crowd_pct": 80.0,
+    "price_move": 5.9,
+    "divergence_score": 4.69,
+    "signal_strength": 0.94
   }
 ]
