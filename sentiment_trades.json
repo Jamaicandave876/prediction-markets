@@ -1935,5 +1935,43 @@
     "price_move": 5.9,
     "divergence_score": 4.69,
     "signal_strength": 0.94
+  },
+  {
+    "market_id": "c59Ez0Zctq",
+    "question": "Will Anthropic release a non-Fable model before Fable is rereleased?",
+    "direction": "BUY YES",
+    "entry_prob": 42.6,
+    "entry_time": "2026-06-22 11:41 UTC",
+    "url": "https://manifold.markets/JoshSnider/will-anthropic-release-a-nonfable-m",
+    "stake": 51.5,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "NO",
+    "crowd_pct": 70.0,
+    "price_move": 23.5,
+    "divergence_score": 16.48,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "U8pI0phR5c",
+    "question": "Will OpenAI release a Mythos-class model before Fable is reenabled?",
+    "direction": "BUY YES",
+    "entry_prob": 26.3,
+    "entry_time": "2026-06-22 11:41 UTC",
+    "url": "https://manifold.markets/IsaacKing/will-openai-release-a-mythosclass-m",
+    "stake": 29.2,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "NO",
+    "crowd_pct": 80.0,
+    "price_move": 6.8,
+    "divergence_score": 5.47,
+    "signal_strength": 1.09
   }
 ]

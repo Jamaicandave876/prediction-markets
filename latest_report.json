@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-06-22 03:33 UTC",
+  "timestamp": "2026-06-22 11:42 UTC",
   "regime": "adverse",
-  "pnl_7d": 110.1,
-  "total_open": 8,
-  "total_closed": 201,
-  "total_pnl": 478.0,
+  "pnl_7d": 122.5,
+  "total_open": 7,
+  "total_closed": 202,
+  "total_pnl": 490.4,
   "bots": [
     {
       "name": "momentum",
@@ -36,9 +36,9 @@
       "grade": "B",
       "score": 75.2,
       "win_rate": 60.0,
-      "total_pnl": 128.7,
-      "open": 2,
-      "closed": 33,
+      "total_pnl": 141.1,
+      "open": 1,
+      "closed": 34,
       "paused": false,
       "consecutive_losses": 0
     },
