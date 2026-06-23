@@ -4486,7 +4486,7 @@
     "price_impact": 11.0,
     "conviction_score": 2.63,
     "signal_strength": 0.88,
-    "peak_pnl": 4.799999999999997
+    "peak_pnl": 10.0
   },
   {
     "market_id": "REqC55n2Qq",
@@ -4524,6 +4524,7 @@
     "smart_user_mana": 550,
     "price_impact": 31.2,
     "conviction_score": 13.73,
-    "signal_strength": 1.5
+    "signal_strength": 1.5,
+    "peak_pnl": 0.3999999999999986
   }
 ]
