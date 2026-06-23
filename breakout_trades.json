@@ -656,5 +656,23 @@
     "breakout_strength": 2.2,
     "signal_strength": 0.7487756805393073,
     "peak_pnl": 17.500000000000004
+  },
+  {
+    "market_id": "OPuuE6L6St",
+    "question": "Will SpaceX catch Ship before New Glenn RTF?",
+    "direction": "BUY YES",
+    "entry_prob": 56.1,
+    "entry_time": "2026-06-23 19:52 UTC",
+    "url": "https://manifold.markets/EvanDaniel/will-spacex-catch-ship-before-new-g",
+    "stake": 29.3,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "baseline_range": 4.5,
+    "breakout_move": 5.5,
+    "breakout_strength": 1.2,
+    "signal_strength": 0.40949589858238283
   }
 ]

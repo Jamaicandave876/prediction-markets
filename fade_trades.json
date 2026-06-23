@@ -376,5 +376,23 @@
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null
+  },
+  {
+    "market_id": "pIRQ6LCPyP",
+    "question": "Will US Congress pass a law that substantially preempts state AI regulation before January 1, 2027?",
+    "direction": "BUY YES",
+    "entry_prob": 15.0,
+    "pre_spike_prob": 30.0,
+    "spike_size": 15.0,
+    "spike_ratio": 8.8,
+    "spike_dir": -1,
+    "entry_time": "2026-06-23 19:52 UTC",
+    "url": "https://manifold.markets/Chimpy/will-us-congress-pass-a-law-that-su",
+    "stake": 65.7,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]
