@@ -27,12 +27,12 @@
       "grade": "B"
     },
     "fade": {
-      "score": 76.0,
+      "score": 73.5,
       "win_rate": 60.0,
-      "avg_pnl": 10.2,
-      "total_pnl": 241.9,
-      "closed": 20,
-      "open": 2,
+      "avg_pnl": 8.8,
+      "total_pnl": 249.9,
+      "closed": 21,
+      "open": 1,
       "grade": "B"
     },
     "mean_reversion": {
