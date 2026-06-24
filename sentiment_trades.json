@@ -1973,7 +1973,8 @@
     "crowd_pct": 80.0,
     "price_move": 6.8,
     "divergence_score": 5.47,
-    "signal_strength": 1.09
+    "signal_strength": 1.09,
+    "peak_pnl": 1.8000000000000007
   },
   {
     "market_id": "dOp5llIlQ6",
@@ -2022,11 +2023,11 @@
     "entry_time": "2026-06-24 02:39 UTC",
     "url": "https://manifold.markets/ZandaZhu/will-somebody-managram-me-at-least-2csp5z6sqc",
     "stake": 103.2,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 79.8,
+    "exit_time": "2026-06-24 06:40 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 0.0,
     "crowd_dir": "NO",
     "crowd_pct": 65.0,
     "price_move": 12.8,
