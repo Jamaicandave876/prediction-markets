@@ -1184,11 +1184,11 @@
     "drift_score": 15.51,
     "url": "https://manifold.markets/redcat/will-i-ban-mobile-devices-from-my-b-glUtcOClUS",
     "stake": 43.1,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 0.0,
+    "exit_time": "2026-06-24 17:01 UTC",
+    "exit_reason": "resolved_loss",
+    "pnl_pp": -62.5
   },
   {
     "market_id": "yAu8NOISAQ",
