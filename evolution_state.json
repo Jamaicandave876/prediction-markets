@@ -155,11 +155,11 @@
     "smart_money": {
       "mid_prob_entry": 97,
       "no_direction": 107,
-      "strong_signal": 160,
-      "fast_trade": 107,
+      "strong_signal": 161,
+      "fast_trade": 108,
       "low_prob_entry": 51,
-      "yes_direction": 67,
-      "high_prob_entry": 26,
+      "yes_direction": 68,
+      "high_prob_entry": 27,
       "slow_trade": 3
     },
     "liquidation": {
@@ -1125,24 +1125,6 @@
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "smart_money",
-      "market_id": "I2l2s22u5L",
-      "outcome": "big_loss",
-      "pnl_pp": -11.0,
-      "exit_reason": "stopped_out",
-      "duration_hours": 6.4,
-      "traits": [
-        "mid_prob_entry",
-        "fast_trade",
-        "yes_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 45.0,
-      "direction": "BUY YES",
-      "timestamp": "2026-06-14 13:48 UTC",
-      "lesson": "Smart $: big loss via stopped_out. PnL: -11.0pp in 6h."
-    },
     {
       "bot": "smart_money",
       "market_id": "tcPEE2nL8P",
@@ -2887,6 +2869,24 @@
       "direction": "BUY YES",
       "timestamp": "2026-06-24 06:40 UTC",
       "lesson": "Sentiment: small loss via target_hit. PnL: +0.0pp in 4h."
+    },
+    {
+      "bot": "smart_money",
+      "market_id": "yhA0PQ5qAP",
+      "outcome": "small_win",
+      "pnl_pp": 0.2,
+      "exit_reason": "target_hit",
+      "duration_hours": 5.0,
+      "traits": [
+        "high_prob_entry",
+        "fast_trade",
+        "yes_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 80.7,
+      "direction": "BUY YES",
+      "timestamp": "2026-06-24 11:41 UTC",
+      "lesson": "Smart $: small win via target_hit. PnL: +0.2pp in 5h."
     }
   ],
   "regime": "normal",
@@ -3013,7 +3013,7 @@
     "breakout": 0.81,
     "calibration": 0.1,
     "reversal": 0.2,
-    "smart_money": 0.6,
+    "smart_money": 0.7,
     "time_decay": 0.23,
     "sentiment": 0.3,
     "accumulation": 0.1,
@@ -3026,6 +3026,6 @@
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-06-24 06:40 UTC",
-  "generation": 517
+  "last_evolution": "2026-06-24 11:41 UTC",
+  "generation": 518
 }
