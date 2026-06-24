@@ -74,13 +74,13 @@
       "target_hit": 2
     },
     "sentiment": {
-      "target_hit": 19,
+      "target_hit": 20,
       "stopped_out": 49,
       "trailing_stop": 6,
       "stale": 23
     },
     "smart_money": {
-      "target_hit": 81,
+      "target_hit": 82,
       "stopped_out": 36,
       "trailing_stop": 12,
       "stale": 44
@@ -155,11 +155,11 @@
     "smart_money": {
       "mid_prob_entry": 97,
       "no_direction": 107,
-      "strong_signal": 161,
-      "fast_trade": 108,
+      "strong_signal": 162,
+      "fast_trade": 109,
       "low_prob_entry": 51,
-      "yes_direction": 68,
-      "high_prob_entry": 27,
+      "yes_direction": 69,
+      "high_prob_entry": 28,
       "slow_trade": 3
     },
     "liquidation": {
@@ -1125,60 +1125,6 @@
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "smart_money",
-      "market_id": "tcPEE2nL8P",
-      "outcome": "strong_win",
-      "pnl_pp": 7.5,
-      "exit_reason": "target_hit",
-      "duration_hours": 6.4,
-      "traits": [
-        "mid_prob_entry",
-        "fast_trade",
-        "no_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 30.8,
-      "direction": "BUY NO",
-      "timestamp": "2026-06-14 13:48 UTC",
-      "lesson": "Smart $: Quick strong win \u2014 this signal pattern works well."
-    },
-    {
-      "bot": "smart_money",
-      "market_id": "I2l2s22u5L",
-      "outcome": "big_loss",
-      "pnl_pp": -11.0,
-      "exit_reason": "stopped_out",
-      "duration_hours": 6.4,
-      "traits": [
-        "mid_prob_entry",
-        "fast_trade",
-        "yes_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 45.0,
-      "direction": "BUY YES",
-      "timestamp": "2026-06-14 13:48 UTC",
-      "lesson": "Smart $: big loss via stopped_out. PnL: -11.0pp in 6h."
-    },
-    {
-      "bot": "smart_money",
-      "market_id": "tcPEE2nL8P",
-      "outcome": "strong_win",
-      "pnl_pp": 7.5,
-      "exit_reason": "target_hit",
-      "duration_hours": 6.4,
-      "traits": [
-        "mid_prob_entry",
-        "fast_trade",
-        "no_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 30.8,
-      "direction": "BUY NO",
-      "timestamp": "2026-06-14 13:48 UTC",
-      "lesson": "Smart $: Quick strong win \u2014 this signal pattern works well."
-    },
     {
       "bot": "smart_money",
       "market_id": "UN8ght0QUL",
@@ -2887,9 +2833,63 @@
       "direction": "BUY YES",
       "timestamp": "2026-06-24 11:41 UTC",
       "lesson": "Smart $: small win via target_hit. PnL: +0.2pp in 5h."
+    },
+    {
+      "bot": "smart_money",
+      "market_id": "yhA0PQ5qAP",
+      "outcome": "small_win",
+      "pnl_pp": 0.2,
+      "exit_reason": "target_hit",
+      "duration_hours": 5.0,
+      "traits": [
+        "high_prob_entry",
+        "fast_trade",
+        "yes_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 80.7,
+      "direction": "BUY YES",
+      "timestamp": "2026-06-24 11:41 UTC",
+      "lesson": "Smart $: small win via target_hit. PnL: +0.2pp in 5h."
+    },
+    {
+      "bot": "smart_money",
+      "market_id": "It2uEtshcU",
+      "outcome": "small_loss",
+      "pnl_pp": 0.0,
+      "exit_reason": "target_hit",
+      "duration_hours": 2.5,
+      "traits": [
+        "low_prob_entry",
+        "fast_trade",
+        "no_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 24.5,
+      "direction": "BUY NO",
+      "timestamp": "2026-06-24 14:13 UTC",
+      "lesson": "Smart $: small loss via target_hit. PnL: +0.0pp in 3h."
+    },
+    {
+      "bot": "sentiment",
+      "market_id": "It2uEtshcU",
+      "outcome": "small_loss",
+      "pnl_pp": 0.0,
+      "exit_reason": "target_hit",
+      "duration_hours": 2.5,
+      "traits": [
+        "low_prob_entry",
+        "fast_trade",
+        "no_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 24.5,
+      "direction": "BUY NO",
+      "timestamp": "2026-06-24 14:13 UTC",
+      "lesson": "Sentiment: small loss via target_hit. PnL: +0.0pp in 3h."
     }
   ],
-  "regime": "normal",
+  "regime": "cautious",
   "regime_history": [
     {
       "from": "normal",
@@ -2998,6 +2998,12 @@
       "to": "normal",
       "reason": "WR=36%, avg_pnl=+0.9pp on 83 recent trades",
       "timestamp": "2026-06-23 17:13 UTC"
+    },
+    {
+      "from": "normal",
+      "to": "cautious",
+      "reason": "WR=34%, avg_pnl=+0.8pp on 83 recent trades",
+      "timestamp": "2026-06-24 14:13 UTC"
     }
   ],
   "bot_confidence": {
@@ -3013,9 +3019,9 @@
     "breakout": 0.81,
     "calibration": 0.1,
     "reversal": 0.2,
-    "smart_money": 0.7,
+    "smart_money": 0.6,
     "time_decay": 0.23,
-    "sentiment": 0.3,
+    "sentiment": 0.25,
     "accumulation": 0.1,
     "underdog": 0.1,
     "late_mover": 0.2,
@@ -3026,6 +3032,6 @@
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-06-24 11:41 UTC",
-  "generation": 518
+  "last_evolution": "2026-06-24 14:13 UTC",
+  "generation": 519
 }

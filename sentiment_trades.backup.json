@@ -2033,5 +2033,24 @@
     "price_move": 12.8,
     "divergence_score": 8.34,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "It2uEtshcU",
+    "question": "Will I burnout by the end of 2026?",
+    "direction": "BUY NO",
+    "entry_prob": 24.5,
+    "entry_time": "2026-06-24 11:41 UTC",
+    "url": "https://manifold.markets/DMorrison/will-i-burnout-by-the-end-of-2026",
+    "stake": 103.2,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "YES",
+    "crowd_pct": 75.0,
+    "price_move": -29.5,
+    "divergence_score": 22.14,
+    "signal_strength": 1.5
   }
 ]
