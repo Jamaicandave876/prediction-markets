@@ -1934,7 +1934,8 @@
     "crowd_pct": 80.0,
     "price_move": 5.9,
     "divergence_score": 4.69,
-    "signal_strength": 0.94
+    "signal_strength": 0.94,
+    "api_errors": 1
   },
   {
     "market_id": "c59Ez0Zctq",
@@ -1974,7 +1975,8 @@
     "price_move": 6.8,
     "divergence_score": 5.47,
     "signal_strength": 1.09,
-    "peak_pnl": 1.8000000000000007
+    "peak_pnl": 1.8000000000000007,
+    "api_errors": 1
   },
   {
     "market_id": "dOp5llIlQ6",

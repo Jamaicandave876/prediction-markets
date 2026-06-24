@@ -4546,7 +4546,8 @@
     "price_impact": 12.1,
     "conviction_score": 1.94,
     "signal_strength": 0.65,
-    "peak_pnl": 4.100000000000001
+    "peak_pnl": 4.100000000000001,
+    "api_errors": 1
   },
   {
     "market_id": "yu2OdIqPPU",

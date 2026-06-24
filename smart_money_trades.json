@@ -4546,7 +4546,7 @@
     "price_impact": 12.1,
     "conviction_score": 1.94,
     "signal_strength": 0.65,
-    "peak_pnl": 4.100000000000001,
+    "peak_pnl": 9.100000000000001,
     "api_errors": 1
   },
   {
@@ -4606,5 +4606,43 @@
     "price_impact": 22.0,
     "conviction_score": 57.83,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "E9py8sOuS6",
+    "question": "Will Messi play in the 2030 FIFA World Cup?",
+    "direction": "BUY NO",
+    "entry_prob": 19.4,
+    "entry_time": "2026-06-24 22:12 UTC",
+    "url": "https://manifold.markets/10thOfficial/will-messi-play-in-the-2030-fifa-wo",
+    "stake": 101.4,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 2,
+    "smart_user_mana": 500,
+    "price_impact": 19.4,
+    "conviction_score": 7.78,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "yu2OdIqPPU",
+    "question": "Will somebody managram me at least 1500 mana before market close?",
+    "direction": "BUY NO",
+    "entry_prob": 77.4,
+    "entry_time": "2026-06-24 22:12 UTC",
+    "url": "https://manifold.markets/ZandaZhu/will-somebody-managram-me-at-least-2csp5z6sqc",
+    "stake": 22.7,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 3,
+    "smart_user_mana": 200,
+    "price_impact": 11.0,
+    "conviction_score": 2.64,
+    "signal_strength": 0.88
   }
 ]
