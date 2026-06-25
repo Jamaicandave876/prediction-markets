@@ -1229,11 +1229,11 @@
     "drift_score": -48.46,
     "url": "https://manifold.markets/Simon74fe/will-meta-launch-a-prediction-marke",
     "stake": 39.9,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 58.0,
+    "exit_time": "2026-06-25 17:06 UTC",
+    "exit_reason": "reversal",
+    "pnl_pp": -10.0
   },
   {
     "market_id": "cpd5u22ntO",
