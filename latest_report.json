@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-06-26 14:11 UTC",
+  "timestamp": "2026-06-26 16:57 UTC",
   "regime": "adverse",
   "pnl_7d": 24.1,
-  "total_open": 8,
-  "total_closed": 208,
+  "total_open": 7,
+  "total_closed": 209,
   "total_pnl": 426.3,
   "bots": [
     {
@@ -97,10 +97,10 @@
       "score": 35.7,
       "win_rate": 40.0,
       "total_pnl": 196.6,
-      "open": 5,
-      "closed": 76,
+      "open": 4,
+      "closed": 77,
       "paused": false,
-      "consecutive_losses": 4
+      "consecutive_losses": 5
     },
     {
       "name": "fresh_sniper",

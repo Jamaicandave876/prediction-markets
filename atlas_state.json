@@ -22,8 +22,8 @@
       "win_rate": 40.0,
       "avg_pnl": -4.2,
       "total_pnl": 196.6,
-      "closed": 76,
-      "open": 5,
+      "closed": 77,
+      "open": 4,
       "grade": "D"
     },
     "fade": {
@@ -145,7 +145,7 @@
     }
   },
   "consecutive_losses": {
-    "momentum": 4,
+    "momentum": 5,
     "fade": 0,
     "mean_reversion": 5,
     "volume_surge": 2,

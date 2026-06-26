@@ -558,6 +558,12 @@
       "old": 4.3,
       "new": 4.6,
       "reason": "System WR 0% < 40% \u2014 tighten signals"
+    },
+    {
+      "param": "MIN_DRIFT_SCORE",
+      "old": 4.6,
+      "new": 4.9,
+      "reason": "System WR 0% < 40% \u2014 tighten signals"
     }
   ],
   "paused": {
@@ -567,7 +573,7 @@
     "calibration": true,
     "sentiment_divergence": true,
     "smart_money": true,
-    "momentum": false
+    "momentum": true
   },
   "consecutive_losses": {},
   "pause_start": {
@@ -575,6 +581,7 @@
     "contrarian": "2026-06-24 17:02 UTC",
     "calibration": "2026-06-24 17:02 UTC",
     "sentiment_divergence": "2026-06-25 06:43 UTC",
-    "smart_money": "2026-06-26 11:42 UTC"
+    "smart_money": "2026-06-26 11:42 UTC",
+    "momentum": "2026-06-26 16:57 UTC"
   }
 }
