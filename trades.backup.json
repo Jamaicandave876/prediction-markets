@@ -1059,11 +1059,11 @@
     "drift_score": -9.35,
     "url": "https://manifold.markets/TheOtherKC/will-openai-or-google-announce-an-r",
     "stake": 27.3,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 40.0,
+    "exit_time": "2026-06-26 11:40 UTC",
+    "exit_reason": "stale",
+    "pnl_pp": 0.0
   },
   {
     "market_id": "ygNzUlqC9g",

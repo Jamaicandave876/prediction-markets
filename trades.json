@@ -1250,5 +1250,20 @@
     "exit_reason": null,
     "pnl_pp": null,
     "peak_pnl": 0.10000000000000142
+  },
+  {
+    "market_id": "E9py8sOuS6",
+    "question": "Will Messi play in the 2030 FIFA World Cup?",
+    "direction": "BUY NO",
+    "entry_prob": 19.1,
+    "entry_time": "2026-06-26 14:09 UTC",
+    "drift_score": -40.92,
+    "url": "https://manifold.markets/10thOfficial/will-messi-play-in-the-2030-fifa-wo",
+    "stake": 25.5,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]
