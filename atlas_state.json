@@ -27,12 +27,12 @@
       "grade": "D"
     },
     "fade": {
-      "score": 73.5,
+      "score": 74.7,
       "win_rate": 60.0,
-      "avg_pnl": 8.8,
-      "total_pnl": 249.9,
-      "closed": 21,
-      "open": 2,
+      "avg_pnl": 9.3,
+      "total_pnl": 240.2,
+      "closed": 22,
+      "open": 1,
       "grade": "B"
     },
     "mean_reversion": {
@@ -146,7 +146,7 @@
   },
   "consecutive_losses": {
     "momentum": 5,
-    "fade": 0,
+    "fade": 1,
     "mean_reversion": 5,
     "volume_surge": 2,
     "whale": 0,
@@ -161,5 +161,5 @@
     "weather_divergence": 0
   },
   "regime": "adverse",
-  "last_report": "2026-06-25 22:19 UTC"
+  "last_report": "2026-06-26 22:08 UTC"
 }

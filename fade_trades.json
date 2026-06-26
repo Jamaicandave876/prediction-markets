@@ -407,10 +407,10 @@
     "entry_time": "2026-06-26 06:48 UTC",
     "url": "https://manifold.markets/predyx_markets/gpt56-released-by-july-10",
     "stake": 45.0,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 73.4,
+    "exit_time": "2026-06-26 22:06 UTC",
+    "exit_reason": "stopped_out",
+    "pnl_pp": -9.7
   }
 ]
