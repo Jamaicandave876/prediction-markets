@@ -394,5 +394,23 @@
     "exit_time": "2026-06-24 02:38 UTC",
     "exit_reason": "normalized",
     "pnl_pp": 8.0
+  },
+  {
+    "market_id": "l80yg0ZEgl",
+    "question": "GPT-5.6 released by July 10?",
+    "direction": "BUY NO",
+    "entry_prob": 63.7,
+    "pre_spike_prob": 49.2,
+    "spike_size": 14.5,
+    "spike_ratio": 5.2,
+    "spike_dir": 1,
+    "entry_time": "2026-06-26 06:48 UTC",
+    "url": "https://manifold.markets/predyx_markets/gpt56-released-by-july-10",
+    "stake": 45.0,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]
