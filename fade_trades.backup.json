@@ -430,5 +430,23 @@
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null
+  },
+  {
+    "market_id": "g0sUhuNUnR",
+    "question": "Will GTA VI be delayed again?",
+    "direction": "BUY YES",
+    "entry_prob": 8.9,
+    "pre_spike_prob": 41.0,
+    "spike_size": 32.1,
+    "spike_ratio": 5.3,
+    "spike_dir": -1,
+    "entry_time": "2026-06-27 10:54 UTC",
+    "url": "https://manifold.markets/SlyBoyZPcL/will-gta-vi-be-delayed-again",
+    "stake": 40.3,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]
