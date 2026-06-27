@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-27 16:01 UTC",
+  "timestamp": "2026-06-27 19:10 UTC",
   "regime": "adverse",
   "pnl_7d": 8.2,
   "total_open": 8,
@@ -175,8 +175,6 @@
       "consecutive_losses": 1
     }
   ],
-  "warnings": [
-    "Momentum PAUSED \u2014 6 consecutive losses"
-  ],
+  "warnings": [],
   "adjustments": []
 }
