@@ -412,5 +412,23 @@
     "exit_time": "2026-06-26 22:06 UTC",
     "exit_reason": "stopped_out",
     "pnl_pp": -9.7
+  },
+  {
+    "market_id": "ZgCu9u8Ncg",
+    "question": "Will the US Supreme Court substantially strike down rent control during Trump's term?",
+    "direction": "BUY YES",
+    "entry_prob": 12.7,
+    "pre_spike_prob": 50.0,
+    "spike_size": 37.3,
+    "spike_ratio": 42.5,
+    "spike_dir": -1,
+    "entry_time": "2026-06-27 06:25 UTC",
+    "url": "https://manifold.markets/QuimLast/will-the-us-supreme-court-substanti",
+    "stake": 40.3,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]
