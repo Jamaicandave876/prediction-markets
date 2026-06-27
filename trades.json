@@ -1105,11 +1105,11 @@
     "drift_score": 73.17,
     "url": "https://manifold.markets/rg26/will-the-world-cup-winner-be-a-coun",
     "stake": 39.1,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 69.0,
+    "exit_time": "2026-06-27 15:59 UTC",
+    "exit_reason": "stale",
+    "pnl_pp": -4.8,
     "peak_pnl": 2.0
   },
   {

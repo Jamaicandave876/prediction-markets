@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-06-27 13:20 UTC",
+  "timestamp": "2026-06-27 16:01 UTC",
   "regime": "adverse",
-  "pnl_7d": 14.4,
-  "total_open": 9,
-  "total_closed": 210,
-  "total_pnl": 416.6,
+  "pnl_7d": 8.2,
+  "total_open": 8,
+  "total_closed": 211,
+  "total_pnl": 411.8,
   "bots": [
     {
       "name": "fade",
@@ -91,18 +91,6 @@
       "consecutive_losses": 0
     },
     {
-      "name": "momentum",
-      "display": "Momentum",
-      "grade": "D",
-      "score": 35.7,
-      "win_rate": 40.0,
-      "total_pnl": 196.6,
-      "open": 4,
-      "closed": 77,
-      "paused": false,
-      "consecutive_losses": 5
-    },
-    {
       "name": "fresh_sniper",
       "display": "Fresh Sniper",
       "grade": "F",
@@ -125,6 +113,18 @@
       "closed": 21,
       "paused": false,
       "consecutive_losses": 2
+    },
+    {
+      "name": "momentum",
+      "display": "Momentum",
+      "grade": "F",
+      "score": 25.3,
+      "win_rate": 30.0,
+      "total_pnl": 191.8,
+      "open": 3,
+      "closed": 78,
+      "paused": true,
+      "consecutive_losses": 6
     },
     {
       "name": "contrarian",
@@ -175,6 +175,8 @@
       "consecutive_losses": 1
     }
   ],
-  "warnings": [],
+  "warnings": [
+    "Momentum PAUSED \u2014 6 consecutive losses"
+  ],
   "adjustments": []
 }

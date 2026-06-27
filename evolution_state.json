@@ -74,7 +74,7 @@
       "target_hit": 2
     },
     "sentiment": {
-      "target_hit": 22,
+      "target_hit": 23,
       "stopped_out": 50,
       "trailing_stop": 6,
       "stale": 25
@@ -89,7 +89,7 @@
       "trailing_stop": 8,
       "reversal": 19,
       "target_hit": 19,
-      "stale": 16,
+      "stale": 17,
       "resolved_loss": 2
     },
     "contrarian": {
@@ -1126,41 +1126,6 @@
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "sentiment",
-      "market_id": "5hqSlZpSg6",
-      "outcome": "big_loss",
-      "pnl_pp": -10.7,
-      "exit_reason": "stopped_out",
-      "duration_hours": 7.5,
-      "traits": [
-        "mid_prob_entry",
-        "fast_trade",
-        "no_direction"
-      ],
-      "entry_prob": 55.4,
-      "direction": "BUY NO",
-      "timestamp": "2026-06-16 11:00 UTC",
-      "lesson": "Sentiment: big loss via stopped_out. PnL: -10.7pp in 8h."
-    },
-    {
-      "bot": "smart_money",
-      "market_id": "P0R6uAC2nU",
-      "outcome": "big_loss",
-      "pnl_pp": -10.7,
-      "exit_reason": "stopped_out",
-      "duration_hours": 17.5,
-      "traits": [
-        "mid_prob_entry",
-        "fast_trade",
-        "yes_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 43.4,
-      "direction": "BUY YES",
-      "timestamp": "2026-06-16 16:30 UTC",
-      "lesson": "Smart $: big loss via stopped_out. PnL: -10.7pp in 18h."
-    },
     {
       "bot": "breakout",
       "market_id": "EU2P5AdyuE",
@@ -2883,6 +2848,42 @@
       "direction": "BUY NO",
       "timestamp": "2026-06-26 22:06 UTC",
       "lesson": "Fade: big loss via stopped_out. PnL: -9.7pp in 15h."
+    },
+    {
+      "bot": "momentum",
+      "market_id": "UN8ght0QUL",
+      "outcome": "big_loss",
+      "pnl_pp": -4.8,
+      "exit_reason": "stale",
+      "duration_hours": 338.2,
+      "traits": [
+        "high_prob_entry",
+        "slow_trade",
+        "yes_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 73.8,
+      "direction": "BUY YES",
+      "timestamp": "2026-06-27 15:59 UTC",
+      "lesson": "Momentum: Held too long with no resolution. Consider shorter max_days."
+    },
+    {
+      "bot": "sentiment",
+      "market_id": "u8dEtZcR0E",
+      "outcome": "small_loss",
+      "pnl_pp": 0.0,
+      "exit_reason": "target_hit",
+      "duration_hours": 2.7,
+      "traits": [
+        "low_prob_entry",
+        "fast_trade",
+        "no_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 24.3,
+      "direction": "BUY NO",
+      "timestamp": "2026-06-27 16:01 UTC",
+      "lesson": "Sentiment: small loss via target_hit. PnL: +0.0pp in 3h."
     }
   ],
   "regime": "cautious",
@@ -3028,6 +3029,6 @@
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-06-27 13:20 UTC",
-  "generation": 540
+  "last_evolution": "2026-06-27 16:01 UTC",
+  "generation": 541
 }

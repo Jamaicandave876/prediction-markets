@@ -2073,5 +2073,24 @@
     "price_move": -29.5,
     "divergence_score": 22.14,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "u8dEtZcR0E",
+    "question": "Will Colombia defeat Portugal?",
+    "direction": "BUY NO",
+    "entry_prob": 24.3,
+    "entry_time": "2026-06-27 13:19 UTC",
+    "url": "https://manifold.markets/UdinRorw/will-the-united-states-mens-nationa",
+    "stake": 88.1,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "YES",
+    "crowd_pct": 60.0,
+    "price_move": -44.7,
+    "divergence_score": 26.79,
+    "signal_strength": 1.5
   }
 ]
