@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-06-28 19:09 UTC",
+  "timestamp": "2026-06-28 21:58 UTC",
   "regime": "adverse",
   "pnl_7d": -60.5,
-  "total_open": 6,
+  "total_open": 10,
   "total_closed": 213,
   "total_pnl": 417.5,
   "bots": [
@@ -121,7 +121,7 @@
       "score": 25.3,
       "win_rate": 30.0,
       "total_pnl": 191.8,
-      "open": 3,
+      "open": 7,
       "closed": 78,
       "paused": true,
       "consecutive_losses": 6
@@ -175,8 +175,6 @@
       "consecutive_losses": 1
     }
   ],
-  "warnings": [
-    "Momentum PAUSED \u2014 6 consecutive losses"
-  ],
+  "warnings": [],
   "adjustments": []
 }
