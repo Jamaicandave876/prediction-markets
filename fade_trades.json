@@ -443,10 +443,10 @@
     "entry_time": "2026-06-27 10:54 UTC",
     "url": "https://manifold.markets/SlyBoyZPcL/will-gta-vi-be-delayed-again",
     "stake": 40.3,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 25.0,
+    "exit_time": "2026-06-28 06:57 UTC",
+    "exit_reason": "normalized",
+    "pnl_pp": 16.1
   }
 ]

@@ -4761,5 +4761,24 @@
     "price_impact": 6.6,
     "conviction_score": 6.81,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "ydOd58sqyS",
+    "question": "Will typical Americans be able to use GPT-5.6 Sol before Fable 5 again?",
+    "direction": "BUY NO",
+    "entry_prob": 30.3,
+    "entry_time": "2026-06-28 02:49 UTC",
+    "url": "https://manifold.markets/BenAybar/will-typical-americans-be-able-to-u",
+    "stake": 96.0,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 3,
+    "smart_user_mana": 400,
+    "price_impact": 14.2,
+    "conviction_score": 6.82,
+    "signal_strength": 1.5
   }
 ]

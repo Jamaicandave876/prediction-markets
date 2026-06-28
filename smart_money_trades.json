@@ -4693,11 +4693,11 @@
     "entry_time": "2026-06-26 06:49 UTC",
     "url": "https://manifold.markets/predyx_markets/gpt56-released-by-july-13",
     "stake": 70.5,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 65.4,
+    "exit_time": "2026-06-28 06:59 UTC",
+    "exit_reason": "stale",
+    "pnl_pp": -6.5,
     "smart_user_bets": 2,
     "smart_user_mana": 400,
     "price_impact": 12.9,
@@ -4760,7 +4760,8 @@
     "smart_user_mana": 325,
     "price_impact": 6.6,
     "conviction_score": 6.81,
-    "signal_strength": 1.5
+    "signal_strength": 1.5,
+    "peak_pnl": 13.800000000000004
   },
   {
     "market_id": "ydOd58sqyS",
@@ -4779,6 +4780,25 @@
     "smart_user_mana": 400,
     "price_impact": 14.2,
     "conviction_score": 6.82,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "QyRSUc8qRl",
+    "question": "Will GPT-6 be released before the end of October 2026?",
+    "direction": "BUY NO",
+    "entry_prob": 40.2,
+    "entry_time": "2026-06-28 06:59 UTC",
+    "url": "https://manifold.markets/Jack1/will-gpt6-be-released-before-the-en",
+    "stake": 65.5,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 2,
+    "smart_user_mana": 500,
+    "price_impact": 18.7,
+    "conviction_score": 7.5,
     "signal_strength": 1.5
   }
 ]
