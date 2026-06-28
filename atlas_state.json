@@ -2,7 +2,7 @@
   "paused": {
     "fresh_sniper": false,
     "whale": false,
-    "momentum": false,
+    "momentum": true,
     "fade": false,
     "mean_reversion": false,
     "volume_surge": false,
@@ -15,7 +15,9 @@
     "weather_storm": false,
     "weather_divergence": false
   },
-  "pause_start": {},
+  "pause_start": {
+    "momentum": "2026-06-28 19:09 UTC"
+  },
   "bot_scores": {
     "momentum": {
       "score": 25.3,

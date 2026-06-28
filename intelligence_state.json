@@ -579,11 +579,10 @@
     "calibration": true,
     "sentiment_divergence": true,
     "smart_money": false,
-    "momentum": true
+    "momentum": false
   },
   "consecutive_losses": {},
   "pause_start": {
-    "momentum": "2026-06-26 16:57 UTC",
     "mean_reversion": "2026-06-26 22:08 UTC",
     "contrarian": "2026-06-26 22:08 UTC",
     "calibration": "2026-06-26 22:08 UTC",

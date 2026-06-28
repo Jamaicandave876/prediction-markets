@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-06-28 16:05 UTC",
+  "timestamp": "2026-06-28 19:09 UTC",
   "regime": "adverse",
-  "pnl_7d": 13.9,
+  "pnl_7d": -60.5,
   "total_open": 6,
   "total_closed": 213,
   "total_pnl": 417.5,
@@ -123,7 +123,7 @@
       "total_pnl": 191.8,
       "open": 3,
       "closed": 78,
-      "paused": false,
+      "paused": true,
       "consecutive_losses": 6
     },
     {
@@ -176,7 +176,7 @@
     }
   ],
   "warnings": [
-    "Momentum AUTO-UNPAUSED after 1 days"
+    "Momentum PAUSED \u2014 6 consecutive losses"
   ],
   "adjustments": []
 }
