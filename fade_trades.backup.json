@@ -371,11 +371,11 @@
     "entry_time": "2026-06-22 03:32 UTC",
     "url": "https://manifold.markets/boboyno1/will-cristiano-ronaldo-get-a-yellow",
     "stake": 46.0,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 9.4,
+    "exit_time": "2026-06-29 07:24 UTC",
+    "exit_reason": "stale",
+    "pnl_pp": -1.2
   },
   {
     "market_id": "pIRQ6LCPyP",
