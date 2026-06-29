@@ -1168,11 +1168,11 @@
     "drift_score": -36.83,
     "url": "https://manifold.markets/derikk/will-elliott-lehrer-and-caroline-el",
     "stake": 43.3,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 24.4,
+    "exit_time": "2026-06-29 07:24 UTC",
+    "exit_reason": "stale",
+    "pnl_pp": 4.7,
     "peak_pnl": 4.700000000000003
   },
   {
