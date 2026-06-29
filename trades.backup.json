@@ -1336,11 +1336,11 @@
     "drift_score": -10.17,
     "url": "https://manifold.markets/Deadly/will-england-make-semifinals-of-the",
     "stake": 26.0,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 38.0,
+    "exit_time": "2026-06-29 17:31 UTC",
+    "exit_reason": "reversal",
+    "pnl_pp": -9.5
   },
   {
     "market_id": "QUc6ALgEuO",
@@ -1351,10 +1351,10 @@
     "drift_score": -17.89,
     "url": "https://manifold.markets/Deadly/will-spain-win-the-2026-world-cup",
     "stake": 26.0,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 17.9,
+    "exit_time": "2026-06-29 17:31 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 0.0
   }
 ]
