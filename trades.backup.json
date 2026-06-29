@@ -1326,5 +1326,35 @@
     "exit_time": "2026-06-29 02:49 UTC",
     "exit_reason": "target_hit",
     "pnl_pp": 0.0
+  },
+  {
+    "market_id": "ht5Ol0RS9N",
+    "question": "Will England make Semi-finals of the 2026 World Cup?",
+    "direction": "BUY NO",
+    "entry_prob": 28.5,
+    "entry_time": "2026-06-29 13:00 UTC",
+    "drift_score": -10.17,
+    "url": "https://manifold.markets/Deadly/will-england-make-semifinals-of-the",
+    "stake": 26.0,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
+  },
+  {
+    "market_id": "QUc6ALgEuO",
+    "question": "Will Spain win the 2026 World Cup?",
+    "direction": "BUY NO",
+    "entry_prob": 17.9,
+    "entry_time": "2026-06-29 13:00 UTC",
+    "drift_score": -17.89,
+    "url": "https://manifold.markets/Deadly/will-spain-win-the-2026-world-cup",
+    "stake": 26.0,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]
