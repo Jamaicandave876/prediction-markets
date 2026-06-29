@@ -1290,11 +1290,12 @@
     "drift_score": 6.14,
     "url": "https://manifold.markets/10thOfficial/will-usa-beat-bosnia-herzegovina-20",
     "stake": 20,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 90.0,
+    "exit_time": "2026-06-29 02:48 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 5.8,
+    "peak_pnl": 5.799999999999997
   },
   {
     "market_id": "ssczcq588P",
@@ -1320,10 +1321,10 @@
     "drift_score": -5.54,
     "url": "https://manifold.markets/Bayesian/will-gpt-56-sol-and-claude-fable-5",
     "stake": 20,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 17.2,
+    "exit_time": "2026-06-29 02:49 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 0.0
   }
 ]

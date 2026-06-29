@@ -2,7 +2,7 @@
   "paused": {
     "fresh_sniper": false,
     "whale": false,
-    "momentum": true,
+    "momentum": false,
     "fade": false,
     "mean_reversion": false,
     "volume_surge": false,
@@ -15,17 +15,15 @@
     "weather_storm": false,
     "weather_divergence": false
   },
-  "pause_start": {
-    "momentum": "2026-06-28 19:09 UTC"
-  },
+  "pause_start": {},
   "bot_scores": {
     "momentum": {
-      "score": 25.3,
-      "win_rate": 30.0,
-      "avg_pnl": -6.3,
-      "total_pnl": 191.8,
-      "closed": 78,
-      "open": 7,
+      "score": 18.4,
+      "win_rate": 20.0,
+      "avg_pnl": -6.8,
+      "total_pnl": 197.6,
+      "closed": 80,
+      "open": 5,
       "grade": "F"
     },
     "fade": {
@@ -147,7 +145,7 @@
     }
   },
   "consecutive_losses": {
-    "momentum": 6,
+    "momentum": 1,
     "fade": 0,
     "mean_reversion": 5,
     "volume_surge": 2,
