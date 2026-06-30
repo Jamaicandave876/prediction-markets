@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-06-30 11:41 UTC",
+  "timestamp": "2026-06-30 14:05 UTC",
   "regime": "adverse",
-  "pnl_7d": -73.1,
-  "total_open": 9,
-  "total_closed": 219,
-  "total_pnl": 417.3,
+  "pnl_7d": -68.5,
+  "total_open": 7,
+  "total_closed": 221,
+  "total_pnl": 421.9,
   "bots": [
     {
       "name": "fade",
@@ -22,13 +22,13 @@
       "name": "breakout",
       "display": "Breakout",
       "grade": "C",
-      "score": 61.0,
+      "score": 59.3,
       "win_rate": 60.0,
-      "total_pnl": 131.1,
-      "open": 2,
-      "closed": 36,
+      "total_pnl": 135.2,
+      "open": 1,
+      "closed": 37,
       "paused": false,
-      "consecutive_losses": 1
+      "consecutive_losses": 0
     },
     {
       "name": "weather_temperature",
@@ -91,6 +91,18 @@
       "consecutive_losses": 0
     },
     {
+      "name": "momentum",
+      "display": "Momentum",
+      "grade": "D",
+      "score": 35.3,
+      "win_rate": 30.0,
+      "total_pnl": 193.3,
+      "open": 4,
+      "closed": 84,
+      "paused": false,
+      "consecutive_losses": 0
+    },
+    {
       "name": "fresh_sniper",
       "display": "Fresh Sniper",
       "grade": "F",
@@ -101,18 +113,6 @@
       "closed": 21,
       "paused": false,
       "consecutive_losses": 1
-    },
-    {
-      "name": "momentum",
-      "display": "Momentum",
-      "grade": "F",
-      "score": 29.2,
-      "win_rate": 20.0,
-      "total_pnl": 192.8,
-      "open": 5,
-      "closed": 83,
-      "paused": false,
-      "consecutive_losses": 2
     },
     {
       "name": "volume_surge",

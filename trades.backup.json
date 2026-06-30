@@ -1356,5 +1356,20 @@
     "exit_time": "2026-06-29 17:31 UTC",
     "exit_reason": "target_hit",
     "pnl_pp": 0.0
+  },
+  {
+    "market_id": "8dZ0LIlstE",
+    "question": "Will the EU cease to exist within the next 10 years?",
+    "direction": "BUY NO",
+    "entry_prob": 20.6,
+    "entry_time": "2026-06-30 11:40 UTC",
+    "drift_score": -12.9,
+    "url": "https://manifold.markets/redcat/will-the-eu-cease-to-exist-in-the-n",
+    "stake": 21.0,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]

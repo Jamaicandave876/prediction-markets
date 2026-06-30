@@ -154,11 +154,11 @@
       "weak_signal": 2
     },
     "smart_money": {
-      "mid_prob_entry": 103,
-      "no_direction": 111,
-      "strong_signal": 166,
-      "fast_trade": 109,
-      "low_prob_entry": 51,
+      "mid_prob_entry": 104,
+      "no_direction": 113,
+      "strong_signal": 168,
+      "fast_trade": 110,
+      "low_prob_entry": 52,
       "yes_direction": 71,
       "high_prob_entry": 28,
       "slow_trade": 3
@@ -176,21 +176,21 @@
     "momentum": {
       "mid_prob_entry": 31,
       "yes_direction": 23,
-      "strong_signal": 58,
+      "strong_signal": 59,
       "high_prob_entry": 11,
-      "fast_trade": 22,
-      "no_direction": 35,
-      "low_prob_entry": 16,
+      "fast_trade": 23,
+      "no_direction": 36,
+      "low_prob_entry": 17,
       "slow_trade": 24
     },
     "breakout": {
       "mid_prob_entry": 24,
-      "fast_trade": 13,
+      "fast_trade": 14,
       "yes_direction": 23,
       "strong_signal": 20,
       "weak_signal": 8,
-      "low_prob_entry": 5,
-      "no_direction": 15,
+      "low_prob_entry": 6,
+      "no_direction": 16,
       "high_prob_entry": 9,
       "slow_trade": 12
     },
@@ -1126,77 +1126,6 @@
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "smart_money",
-      "market_id": "ts8nClp2Cn",
-      "outcome": "strong_win",
-      "pnl_pp": 5.2,
-      "exit_reason": "stale",
-      "duration_hours": 50.1,
-      "traits": [
-        "mid_prob_entry",
-        "no_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 35.8,
-      "direction": "BUY NO",
-      "timestamp": "2026-06-18 22:53 UTC",
-      "lesson": "Smart $: Strong signal \u2192 strong win. Keep trusting high-confidence entries."
-    },
-    {
-      "bot": "smart_money",
-      "market_id": "qsttIyIOZ8",
-      "outcome": "small_loss",
-      "pnl_pp": 0.0,
-      "exit_reason": "target_hit",
-      "duration_hours": 2.4,
-      "traits": [
-        "low_prob_entry",
-        "fast_trade",
-        "no_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 12.5,
-      "direction": "BUY NO",
-      "timestamp": "2026-06-18 20:22 UTC",
-      "lesson": "Smart $: small loss via target_hit. PnL: +0.0pp in 2h."
-    },
-    {
-      "bot": "smart_money",
-      "market_id": "5hqSlZpSg6",
-      "outcome": "big_loss",
-      "pnl_pp": -11.4,
-      "exit_reason": "stopped_out",
-      "duration_hours": 4.9,
-      "traits": [
-        "mid_prob_entry",
-        "fast_trade",
-        "no_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 45.6,
-      "direction": "BUY NO",
-      "timestamp": "2026-06-18 22:53 UTC",
-      "lesson": "Smart $: big loss via stopped_out. PnL: -11.4pp in 5h."
-    },
-    {
-      "bot": "smart_money",
-      "market_id": "c59Ez0Zctq",
-      "outcome": "small_win",
-      "pnl_pp": 1.0,
-      "exit_reason": "target_hit",
-      "duration_hours": 2.5,
-      "traits": [
-        "low_prob_entry",
-        "fast_trade",
-        "no_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 19.6,
-      "direction": "BUY NO",
-      "timestamp": "2026-06-18 22:53 UTC",
-      "lesson": "Smart $: small win via target_hit. PnL: +1.0pp in 3h."
-    },
     {
       "bot": "smart_money",
       "market_id": "90nEs8ylPn",
@@ -2883,6 +2812,76 @@
       "direction": "BUY NO",
       "timestamp": "2026-06-30 11:41 UTC",
       "lesson": "Smart $: small win via stale. PnL: +0.6pp in 53h."
+    },
+    {
+      "bot": "momentum",
+      "market_id": "8dZ0LIlstE",
+      "outcome": "small_win",
+      "pnl_pp": 0.5,
+      "exit_reason": "target_hit",
+      "duration_hours": 2.4,
+      "traits": [
+        "low_prob_entry",
+        "fast_trade",
+        "no_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 20.6,
+      "direction": "BUY NO",
+      "timestamp": "2026-06-30 14:04 UTC",
+      "lesson": "Momentum: small win via target_hit. PnL: +0.5pp in 2h."
+    },
+    {
+      "bot": "breakout",
+      "market_id": "uOzStcAZ9C",
+      "outcome": "small_win",
+      "pnl_pp": 4.1,
+      "exit_reason": "target_hit",
+      "duration_hours": 18.3,
+      "traits": [
+        "low_prob_entry",
+        "fast_trade",
+        "no_direction"
+      ],
+      "entry_prob": 23.5,
+      "direction": "BUY NO",
+      "timestamp": "2026-06-30 14:04 UTC",
+      "lesson": "Breakout: small win via target_hit. PnL: +4.1pp in 18h."
+    },
+    {
+      "bot": "smart_money",
+      "market_id": "QyRSUc8qRl",
+      "outcome": "small_win",
+      "pnl_pp": 0.6,
+      "exit_reason": "stale",
+      "duration_hours": 52.7,
+      "traits": [
+        "mid_prob_entry",
+        "no_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 40.2,
+      "direction": "BUY NO",
+      "timestamp": "2026-06-30 11:41 UTC",
+      "lesson": "Smart $: small win via stale. PnL: +0.6pp in 53h."
+    },
+    {
+      "bot": "smart_money",
+      "market_id": "8dZ0LIlstE",
+      "outcome": "small_win",
+      "pnl_pp": 0.5,
+      "exit_reason": "target_hit",
+      "duration_hours": 2.4,
+      "traits": [
+        "low_prob_entry",
+        "fast_trade",
+        "no_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 20.6,
+      "direction": "BUY NO",
+      "timestamp": "2026-06-30 14:05 UTC",
+      "lesson": "Smart $: small win via target_hit. PnL: +0.5pp in 2h."
     }
   ],
   "regime": "cautious",
@@ -3003,7 +3002,7 @@
     }
   ],
   "bot_confidence": {
-    "momentum": 0.41,
+    "momentum": 0.49,
     "fade": 0.65,
     "mean_reversion": 0.1,
     "volume_surge": 0.2,
@@ -3012,10 +3011,10 @@
     "close_gravity": 0.2,
     "fresh_sniper": 0.2,
     "stability": 0.1,
-    "breakout": 0.7,
+    "breakout": 0.77,
     "calibration": 0.1,
     "reversal": 0.2,
-    "smart_money": 0.45,
+    "smart_money": 0.49,
     "time_decay": 0.23,
     "sentiment": 0.2,
     "accumulation": 0.1,
@@ -3028,6 +3027,6 @@
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-06-30 11:41 UTC",
-  "generation": 559
+  "last_evolution": "2026-06-30 14:05 UTC",
+  "generation": 560
 }
