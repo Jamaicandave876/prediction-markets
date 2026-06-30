@@ -448,5 +448,23 @@
     "exit_time": "2026-06-28 06:57 UTC",
     "exit_reason": "normalized",
     "pnl_pp": 16.1
+  },
+  {
+    "market_id": "CP5I9OpUZg",
+    "question": "Will I work 9/9/6 for the rest of 2026?",
+    "direction": "BUY YES",
+    "entry_prob": 36.1,
+    "pre_spike_prob": 63.6,
+    "spike_size": 27.4,
+    "spike_ratio": 14.7,
+    "spike_dir": -1,
+    "entry_time": "2026-06-30 02:43 UTC",
+    "url": "https://manifold.markets/DrewSpartz/will-i-work-996-for-the-rest-of-202",
+    "stake": 40.5,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]
