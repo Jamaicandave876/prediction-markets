@@ -1373,5 +1373,20 @@
     "exit_reason": "target_hit",
     "pnl_pp": 0.5,
     "peak_pnl": 0.5
+  },
+  {
+    "market_id": "dgRnsEsucl",
+    "question": "Strait of Hormuz traffic returns to actual normal of 100 ships per day during Trump's presidency.",
+    "direction": "BUY YES",
+    "entry_prob": 63.0,
+    "entry_time": "2026-06-30 19:45 UTC",
+    "drift_score": 28.1,
+    "url": "https://manifold.markets/BillClintonBubba/strait-of-hormuz-traffic-returns-to-68UlQPh6IR",
+    "stake": 34.5,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]
