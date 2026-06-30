@@ -22,7 +22,7 @@
       "win_rate": 40.0,
       "avg_pnl": -0.2,
       "total_pnl": 194.7,
-      "closed": 85,
+      "closed": 86,
       "open": 4,
       "grade": "D"
     },
@@ -32,7 +32,7 @@
       "avg_pnl": 10.4,
       "total_pnl": 245.5,
       "closed": 25,
-      "open": 1,
+      "open": 3,
       "grade": "B"
     },
     "mean_reversion": {
@@ -145,7 +145,7 @@
     }
   },
   "consecutive_losses": {
-    "momentum": 0,
+    "momentum": 1,
     "fade": 2,
     "mean_reversion": 5,
     "volume_surge": 2,
@@ -161,5 +161,5 @@
     "weather_divergence": 0
   },
   "regime": "adverse",
-  "last_report": "2026-06-29 22:07 UTC"
+  "last_report": "2026-06-30 22:13 UTC"
 }

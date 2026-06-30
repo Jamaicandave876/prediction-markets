@@ -466,5 +466,41 @@
     "exit_time": "2026-06-30 17:01 UTC",
     "exit_reason": "stopped_out",
     "pnl_pp": -9.6
+  },
+  {
+    "market_id": "NQRE0A5062",
+    "question": "Will Lebron James and Anthony Davis both join the Golden State Warriors before next season?",
+    "direction": "BUY YES",
+    "entry_prob": 19.0,
+    "pre_spike_prob": 32.6,
+    "spike_size": 13.6,
+    "spike_ratio": 5.7,
+    "spike_dir": -1,
+    "entry_time": "2026-06-30 22:11 UTC",
+    "url": "https://manifold.markets/Zeolite/will-lebron-james-and-anthony-davis",
+    "stake": 36.3,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
+  },
+  {
+    "market_id": "UNt56uQshd",
+    "question": "Fable reenabled for Europeans before the first of August 2026?",
+    "direction": "BUY YES",
+    "entry_prob": 47.6,
+    "pre_spike_prob": 61.3,
+    "spike_size": 13.6,
+    "spike_ratio": 4.7,
+    "spike_dir": -1,
+    "entry_time": "2026-06-30 22:11 UTC",
+    "url": "https://manifold.markets/JasonMendoza2008/fable-reenabled-for-europeans-befor",
+    "stake": 36.3,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]
