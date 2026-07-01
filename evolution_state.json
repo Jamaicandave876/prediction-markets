@@ -75,7 +75,7 @@
     },
     "sentiment": {
       "target_hit": 25,
-      "stopped_out": 50,
+      "stopped_out": 51,
       "trailing_stop": 6,
       "stale": 25
     },
@@ -107,7 +107,7 @@
       "stopped_out": 28
     },
     "fade": {
-      "stopped_out": 10,
+      "stopped_out": 11,
       "stale": 3,
       "resolved_loss": 3
     },
@@ -1126,41 +1126,6 @@
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "sentiment",
-      "market_id": "90nEs8ylPn",
-      "outcome": "small_loss",
-      "pnl_pp": 0.0,
-      "exit_reason": "target_hit",
-      "duration_hours": 2.6,
-      "traits": [
-        "high_prob_entry",
-        "fast_trade",
-        "yes_direction"
-      ],
-      "entry_prob": 80.0,
-      "direction": "BUY YES",
-      "timestamp": "2026-06-20 13:47 UTC",
-      "lesson": "Sentiment: small loss via target_hit. PnL: +0.0pp in 3h."
-    },
-    {
-      "bot": "breakout",
-      "market_id": "ISUuclN9C0",
-      "outcome": "small_win",
-      "pnl_pp": 1.4,
-      "exit_reason": "trailing_stop",
-      "duration_hours": 20.6,
-      "traits": [
-        "mid_prob_entry",
-        "fast_trade",
-        "no_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 63.4,
-      "direction": "BUY NO",
-      "timestamp": "2026-06-20 13:46 UTC",
-      "lesson": "Breakout: small win via trailing_stop. PnL: +1.4pp in 21h."
-    },
     {
       "bot": "smart_money",
       "market_id": "E9CNZA0LZ0",
@@ -2882,6 +2847,41 @@
       "direction": "BUY YES",
       "timestamp": "2026-07-01 02:49 UTC",
       "lesson": "Fade: Quick strong win \u2014 this signal pattern works well."
+    },
+    {
+      "bot": "fade",
+      "market_id": "A6gSEUAUuU",
+      "outcome": "big_loss",
+      "pnl_pp": -35.9,
+      "exit_reason": "stopped_out",
+      "duration_hours": 4.3,
+      "traits": [
+        "mid_prob_entry",
+        "fast_trade",
+        "no_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 60.0,
+      "direction": "BUY NO",
+      "timestamp": "2026-07-01 07:06 UTC",
+      "lesson": "Fade: big loss via stopped_out. PnL: -35.9pp in 4h."
+    },
+    {
+      "bot": "sentiment",
+      "market_id": "hPzCNhccnL",
+      "outcome": "big_loss",
+      "pnl_pp": -18.5,
+      "exit_reason": "stopped_out",
+      "duration_hours": 35.3,
+      "traits": [
+        "mid_prob_entry",
+        "yes_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 60.0,
+      "direction": "BUY YES",
+      "timestamp": "2026-07-01 07:07 UTC",
+      "lesson": "Sentiment: big loss via stopped_out. PnL: -18.5pp in 35h."
     }
   ],
   "regime": "cautious",
@@ -3003,7 +3003,7 @@
   ],
   "bot_confidence": {
     "momentum": 0.45,
-    "fade": 0.67,
+    "fade": 0.6,
     "mean_reversion": 0.1,
     "volume_surge": 0.2,
     "whale": 0.23,
@@ -3027,6 +3027,6 @@
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-07-01 02:49 UTC",
-  "generation": 564
+  "last_evolution": "2026-07-01 07:07 UTC",
+  "generation": 565
 }

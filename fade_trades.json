@@ -515,10 +515,10 @@
     "entry_time": "2026-07-01 02:49 UTC",
     "url": "https://manifold.markets/Jack1/will-denver-county-vote-for-kiros-w",
     "stake": 44.9,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 95.9,
+    "exit_time": "2026-07-01 07:06 UTC",
+    "exit_reason": "stopped_out",
+    "pnl_pp": -35.9
   }
 ]

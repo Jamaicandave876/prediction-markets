@@ -1,22 +1,22 @@
 {
-  "timestamp": "2026-07-01 02:49 UTC",
+  "timestamp": "2026-07-01 07:07 UTC",
   "regime": "adverse",
-  "pnl_7d": -34.8,
-  "total_open": 8,
-  "total_closed": 225,
-  "total_pnl": 464.0,
+  "pnl_7d": -70.7,
+  "total_open": 7,
+  "total_closed": 226,
+  "total_pnl": 428.1,
   "bots": [
     {
       "name": "fade",
       "display": "Fade",
-      "grade": "A",
-      "score": 82.0,
-      "win_rate": 70.0,
-      "total_pnl": 295.8,
-      "open": 3,
-      "closed": 26,
+      "grade": "B",
+      "score": 76.0,
+      "win_rate": 60.0,
+      "total_pnl": 259.9,
+      "open": 2,
+      "closed": 27,
       "paused": false,
-      "consecutive_losses": 0
+      "consecutive_losses": 1
     },
     {
       "name": "breakout",
