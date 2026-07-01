@@ -1199,11 +1199,11 @@
     "drift_score": -15.7,
     "url": "https://manifold.markets/WilliamBrodhead/will-trump-annextake-military-actio",
     "stake": 43.0,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 44.4,
+    "exit_time": "2026-06-30 22:11 UTC",
+    "exit_reason": "stale",
+    "pnl_pp": 0.0
   },
   {
     "market_id": "h0NzPhngCs",
@@ -1383,6 +1383,21 @@
     "drift_score": 28.1,
     "url": "https://manifold.markets/BillClintonBubba/strait-of-hormuz-traffic-returns-to-68UlQPh6IR",
     "stake": 34.5,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
+  },
+  {
+    "market_id": "pAy6nsRA8O",
+    "question": "Will Labor lead One Nation in the polls at the end of July 2026?",
+    "direction": "BUY YES",
+    "entry_prob": 43.2,
+    "entry_time": "2026-06-30 22:11 UTC",
+    "drift_score": 6.32,
+    "url": "https://manifold.markets/a_l_e_x/will-labor-lead-one-nation-in-the-p-q0Cqqq5NSE",
+    "stake": 31.1,
     "status": "open",
     "exit_prob": null,
     "exit_time": null,

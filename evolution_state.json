@@ -195,14 +195,14 @@
       "slow_trade": 12
     },
     "fade": {
-      "mid_prob_entry": 8,
+      "mid_prob_entry": 9,
       "no_direction": 8,
-      "strong_signal": 23,
+      "strong_signal": 24,
       "slow_trade": 3,
-      "yes_direction": 15,
+      "yes_direction": 16,
       "low_prob_entry": 10,
       "high_prob_entry": 5,
-      "fast_trade": 9
+      "fast_trade": 10
     },
     "close_gravity": {
       "mid_prob_entry": 2,
@@ -1126,24 +1126,6 @@
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "smart_money",
-      "market_id": "E9CNZA0LZ0",
-      "outcome": "small_loss",
-      "pnl_pp": 0.0,
-      "exit_reason": "target_hit",
-      "duration_hours": 2.6,
-      "traits": [
-        "low_prob_entry",
-        "fast_trade",
-        "no_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 12.1,
-      "direction": "BUY NO",
-      "timestamp": "2026-06-20 13:47 UTC",
-      "lesson": "Smart $: small loss via target_hit. PnL: +0.0pp in 3h."
-    },
     {
       "bot": "sentiment",
       "market_id": "90nEs8ylPn",
@@ -2882,6 +2864,24 @@
       "direction": "BUY YES",
       "timestamp": "2026-06-30 22:12 UTC",
       "lesson": "Smart $: big loss via stopped_out. PnL: -17.4pp in 15h."
+    },
+    {
+      "bot": "fade",
+      "market_id": "UNt56uQshd",
+      "outcome": "strong_win",
+      "pnl_pp": 50.3,
+      "exit_reason": "normalized",
+      "duration_hours": 4.6,
+      "traits": [
+        "mid_prob_entry",
+        "fast_trade",
+        "yes_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 47.6,
+      "direction": "BUY YES",
+      "timestamp": "2026-07-01 02:49 UTC",
+      "lesson": "Fade: Quick strong win \u2014 this signal pattern works well."
     }
   ],
   "regime": "cautious",
@@ -3003,7 +3003,7 @@
   ],
   "bot_confidence": {
     "momentum": 0.45,
-    "fade": 0.55,
+    "fade": 0.67,
     "mean_reversion": 0.1,
     "volume_surge": 0.2,
     "whale": 0.23,
@@ -3027,6 +3027,6 @@
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-06-30 22:13 UTC",
-  "generation": 563
+  "last_evolution": "2026-07-01 02:49 UTC",
+  "generation": 564
 }
