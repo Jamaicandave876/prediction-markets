@@ -4879,5 +4879,24 @@
     "conviction_score": 7.69,
     "signal_strength": 1.5,
     "peak_pnl": 8.499999999999993
+  },
+  {
+    "market_id": "dURCA5OnZO",
+    "question": "Will GPT-5.6-Sol score at least 59 on the Artificial Analysis Index?",
+    "direction": "BUY YES",
+    "entry_prob": 57.4,
+    "entry_time": "2026-07-01 22:14 UTC",
+    "url": "https://manifold.markets/ZviMowshowitz/will-gpt56sol-score-at-least-59-on",
+    "stake": 60.6,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 2,
+    "smart_user_mana": 350,
+    "price_impact": 17.8,
+    "conviction_score": 4.99,
+    "signal_strength": 1.5
   }
 ]
