@@ -4888,17 +4888,17 @@
     "entry_time": "2026-07-01 22:14 UTC",
     "url": "https://manifold.markets/ZviMowshowitz/will-gpt56sol-score-at-least-59-on",
     "stake": 60.6,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 75.1,
+    "exit_time": "2026-07-02 11:28 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 17.7,
     "smart_user_bets": 2,
     "smart_user_mana": 350,
     "price_impact": 17.8,
     "conviction_score": 4.99,
     "signal_strength": 1.5,
-    "peak_pnl": 16.6
+    "peak_pnl": 17.699999999999996
   },
   {
     "market_id": "ScC6n9C8dP",

@@ -154,12 +154,12 @@
       "weak_signal": 2
     },
     "smart_money": {
-      "mid_prob_entry": 104,
+      "mid_prob_entry": 105,
       "no_direction": 114,
-      "strong_signal": 169,
-      "fast_trade": 111,
+      "strong_signal": 170,
+      "fast_trade": 112,
       "low_prob_entry": 53,
-      "yes_direction": 71,
+      "yes_direction": 72,
       "high_prob_entry": 28,
       "slow_trade": 3
     },
@@ -1126,24 +1126,6 @@
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "sentiment",
-      "market_id": "A2UNpQu8yS",
-      "outcome": "small_win",
-      "pnl_pp": 3.6,
-      "exit_reason": "target_hit",
-      "duration_hours": 9.3,
-      "traits": [
-        "mid_prob_entry",
-        "fast_trade",
-        "yes_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 70.0,
-      "direction": "BUY YES",
-      "timestamp": "2026-06-20 16:14 UTC",
-      "lesson": "Sentiment: small win via target_hit. PnL: +3.6pp in 9h."
-    },
     {
       "bot": "sentiment",
       "market_id": "90nEs8ylPn",
@@ -2882,6 +2864,24 @@
       "direction": "BUY YES",
       "timestamp": "2026-07-02 06:35 UTC",
       "lesson": "Smart $: big loss via target_hit. PnL: -8.4pp in 4h."
+    },
+    {
+      "bot": "smart_money",
+      "market_id": "dURCA5OnZO",
+      "outcome": "strong_win",
+      "pnl_pp": 17.7,
+      "exit_reason": "target_hit",
+      "duration_hours": 13.2,
+      "traits": [
+        "mid_prob_entry",
+        "fast_trade",
+        "yes_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 57.4,
+      "direction": "BUY YES",
+      "timestamp": "2026-07-02 11:28 UTC",
+      "lesson": "Smart $: Quick strong win \u2014 this signal pattern works well."
     }
   ],
   "regime": "cautious",
@@ -3014,7 +3014,7 @@
     "breakout": 0.77,
     "calibration": 0.1,
     "reversal": 0.2,
-    "smart_money": 0.38,
+    "smart_money": 0.49,
     "time_decay": 0.23,
     "sentiment": 0.2,
     "accumulation": 0.1,
@@ -3027,6 +3027,6 @@
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-07-02 06:35 UTC",
-  "generation": 572
+  "last_evolution": "2026-07-02 11:29 UTC",
+  "generation": 573
 }
