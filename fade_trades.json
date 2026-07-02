@@ -520,5 +520,23 @@
     "exit_time": "2026-07-01 07:06 UTC",
     "exit_reason": "stopped_out",
     "pnl_pp": -35.9
+  },
+  {
+    "market_id": "y9scPusnPz",
+    "question": "Will I qualify for RMM 2027?",
+    "direction": "BUY YES",
+    "entry_prob": 60.0,
+    "pre_spike_prob": 74.0,
+    "spike_size": 14.0,
+    "spike_ratio": 11.8,
+    "spike_dir": -1,
+    "entry_time": "2026-07-02 19:14 UTC",
+    "url": "https://manifold.markets/vincentWang/will-i-qualify-for-rmm-2027",
+    "stake": 40.4,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]
