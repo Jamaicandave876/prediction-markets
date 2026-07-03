@@ -4955,6 +4955,7 @@
     "smart_user_mana": 1026,
     "price_impact": 10.0,
     "conviction_score": 8.21,
-    "signal_strength": 1.5
+    "signal_strength": 1.5,
+    "peak_pnl": 8.599999999999994
   }
 ]

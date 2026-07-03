@@ -533,10 +533,10 @@
     "entry_time": "2026-07-02 19:14 UTC",
     "url": "https://manifold.markets/vincentWang/will-i-qualify-for-rmm-2027",
     "stake": 40.4,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 68.6,
+    "exit_time": "2026-07-03 06:24 UTC",
+    "exit_reason": "normalized",
+    "pnl_pp": 8.6
   }
 ]
