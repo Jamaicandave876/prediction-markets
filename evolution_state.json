@@ -80,7 +80,7 @@
       "stale": 25
     },
     "smart_money": {
-      "target_hit": 92,
+      "target_hit": 93,
       "stopped_out": 40,
       "trailing_stop": 14,
       "stale": 48
@@ -1126,23 +1126,6 @@
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "fade",
-      "market_id": "dzqOAR2yA8",
-      "outcome": "strong_win",
-      "pnl_pp": 74.4,
-      "exit_reason": "normalized",
-      "duration_hours": 70.5,
-      "traits": [
-        "low_prob_entry",
-        "yes_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 12.0,
-      "direction": "BUY YES",
-      "timestamp": "2026-06-21 16:26 UTC",
-      "lesson": "Fade: Strong signal \u2192 strong win. Keep trusting high-confidence entries."
-    },
     {
       "bot": "smart_money",
       "market_id": "5hqSlZpSg6",
@@ -2884,6 +2867,24 @@
       "direction": "BUY NO",
       "timestamp": "2026-07-03 06:25 UTC",
       "lesson": "Sentiment: big loss via stopped_out. PnL: -8.0pp in 83h."
+    },
+    {
+      "bot": "smart_money",
+      "market_id": "q05NNN2ChL",
+      "outcome": "big_loss",
+      "pnl_pp": -3.2,
+      "exit_reason": "target_hit",
+      "duration_hours": 2.9,
+      "traits": [
+        "high_prob_entry",
+        "fast_trade",
+        "yes_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 80.8,
+      "direction": "BUY YES",
+      "timestamp": "2026-07-03 22:00 UTC",
+      "lesson": "Smart $: big loss via target_hit. PnL: -3.2pp in 3h."
     }
   ],
   "regime": "cautious",
@@ -3016,7 +3017,7 @@
     "breakout": 0.77,
     "calibration": 0.1,
     "reversal": 0.2,
-    "smart_money": 0.53,
+    "smart_money": 0.49,
     "time_decay": 0.23,
     "sentiment": 0.2,
     "accumulation": 0.1,
@@ -3029,6 +3030,6 @@
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-07-03 19:09 UTC",
-  "generation": 583
+  "last_evolution": "2026-07-03 22:00 UTC",
+  "generation": 584
 }
