@@ -1249,7 +1249,7 @@
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null,
-    "peak_pnl": 0.10000000000000142
+    "peak_pnl": 3.5
   },
   {
     "market_id": "E9py8sOuS6",
@@ -1403,7 +1403,7 @@
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null,
-    "peak_pnl": 3.799999999999997
+    "peak_pnl": 5.5
   },
   {
     "market_id": "Cu9EUERsSg",

@@ -4956,7 +4956,7 @@
     "price_impact": 10.0,
     "conviction_score": 8.21,
     "signal_strength": 1.5,
-    "peak_pnl": 12.700000000000003
+    "peak_pnl": 14.400000000000006
   },
   {
     "market_id": "U9C8quRIyd",
@@ -5014,6 +5014,25 @@
     "smart_user_mana": 292,
     "price_impact": 5.0,
     "conviction_score": 7.6,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "U9C8quRIyd",
+    "question": "Will somebody managram me at least 1500 mana before market close?",
+    "direction": "BUY YES",
+    "entry_prob": 77.7,
+    "entry_time": "2026-07-04 15:57 UTC",
+    "url": "https://manifold.markets/ZandaZhu/will-somebody-managram-me-at-least-PAdzEQS6ZL",
+    "stake": 98.0,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 14,
+    "smart_user_mana": 304,
+    "price_impact": 3.5,
+    "conviction_score": 5.91,
     "signal_strength": 1.5
   }
 ]

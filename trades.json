@@ -1414,11 +1414,11 @@
     "drift_score": -16.44,
     "url": "https://manifold.markets/Eliza/will-a-rider-from-alpecin-premier-t-cttZ2SNslZ",
     "stake": 30.6,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 0.0,
+    "exit_time": "2026-07-04 19:00 UTC",
+    "exit_reason": "resolved_win",
+    "pnl_pp": 30.3,
     "peak_pnl": 0.6999999999999993
   }
 ]

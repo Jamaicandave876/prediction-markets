@@ -5034,5 +5034,24 @@
     "price_impact": 3.5,
     "conviction_score": 5.91,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "88C0llR2pU",
+    "question": "Will anyone managram me 5000 mana in 1 week?",
+    "direction": "BUY NO",
+    "entry_prob": 21.9,
+    "entry_time": "2026-07-04 19:01 UTC",
+    "url": "https://manifold.markets/LeNamPhong/will-anyone-managram-me-5000-mana-i",
+    "stake": 98.7,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 2,
+    "smart_user_mana": 599,
+    "price_impact": 13.7,
+    "conviction_score": 6.58,
+    "signal_strength": 1.5
   }
 ]
