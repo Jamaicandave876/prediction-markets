@@ -156,11 +156,11 @@
     "smart_money": {
       "mid_prob_entry": 107,
       "no_direction": 114,
-      "strong_signal": 172,
-      "fast_trade": 113,
+      "strong_signal": 173,
+      "fast_trade": 114,
       "low_prob_entry": 53,
-      "yes_direction": 74,
-      "high_prob_entry": 28,
+      "yes_direction": 75,
+      "high_prob_entry": 29,
       "slow_trade": 3
     },
     "liquidation": {
@@ -1126,23 +1126,6 @@
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "smart_money",
-      "market_id": "5hqSlZpSg6",
-      "outcome": "strong_win",
-      "pnl_pp": 6.9,
-      "exit_reason": "stale",
-      "duration_hours": 49.6,
-      "traits": [
-        "mid_prob_entry",
-        "no_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 42.5,
-      "direction": "BUY NO",
-      "timestamp": "2026-06-21 16:27 UTC",
-      "lesson": "Smart $: Strong signal \u2192 strong win. Keep trusting high-confidence entries."
-    },
     {
       "bot": "smart_money",
       "market_id": "ISUuclN9C0",
@@ -2885,6 +2868,24 @@
       "direction": "BUY YES",
       "timestamp": "2026-07-03 22:00 UTC",
       "lesson": "Smart $: big loss via target_hit. PnL: -3.2pp in 3h."
+    },
+    {
+      "bot": "smart_money",
+      "market_id": "U9C8quRIyd",
+      "outcome": "strong_win",
+      "pnl_pp": 9.2,
+      "exit_reason": "target_hit",
+      "duration_hours": 7.1,
+      "traits": [
+        "high_prob_entry",
+        "fast_trade",
+        "yes_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 70.1,
+      "direction": "BUY YES",
+      "timestamp": "2026-07-04 02:13 UTC",
+      "lesson": "Smart $: Quick strong win \u2014 this signal pattern works well."
     }
   ],
   "regime": "cautious",
@@ -3017,7 +3018,7 @@
     "breakout": 0.77,
     "calibration": 0.1,
     "reversal": 0.2,
-    "smart_money": 0.49,
+    "smart_money": 0.57,
     "time_decay": 0.23,
     "sentiment": 0.2,
     "accumulation": 0.1,
@@ -3030,6 +3031,6 @@
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-07-03 22:00 UTC",
-  "generation": 584
+  "last_evolution": "2026-07-04 02:13 UTC",
+  "generation": 585
 }
