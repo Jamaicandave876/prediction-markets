@@ -107,7 +107,7 @@
       "stopped_out": 28
     },
     "fade": {
-      "stopped_out": 11,
+      "stopped_out": 12,
       "stale": 3,
       "resolved_loss": 3
     },
@@ -1126,23 +1126,6 @@
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "smart_money",
-      "market_id": "ISUuclN9C0",
-      "outcome": "strong_win",
-      "pnl_pp": 39.8,
-      "exit_reason": "target_hit",
-      "duration_hours": 35.1,
-      "traits": [
-        "mid_prob_entry",
-        "no_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 59.2,
-      "direction": "BUY NO",
-      "timestamp": "2026-06-21 13:54 UTC",
-      "lesson": "Smart $: Strong signal \u2192 strong win. Keep trusting high-confidence entries."
-    },
     {
       "bot": "fade",
       "market_id": "dzqOAR2yA8",
@@ -2886,6 +2869,23 @@
       "direction": "BUY YES",
       "timestamp": "2026-07-04 02:13 UTC",
       "lesson": "Smart $: Quick strong win \u2014 this signal pattern works well."
+    },
+    {
+      "bot": "fade",
+      "market_id": "NQRE0A5062",
+      "outcome": "big_loss",
+      "pnl_pp": -9.3,
+      "exit_reason": "stopped_out",
+      "duration_hours": 80.0,
+      "traits": [
+        "low_prob_entry",
+        "yes_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 19.0,
+      "direction": "BUY YES",
+      "timestamp": "2026-07-04 06:13 UTC",
+      "lesson": "Fade: big loss via stopped_out. PnL: -9.3pp in 80h."
     }
   ],
   "regime": "cautious",
@@ -3007,7 +3007,7 @@
   ],
   "bot_confidence": {
     "momentum": 0.45,
-    "fade": 0.66,
+    "fade": 0.6,
     "mean_reversion": 0.1,
     "volume_surge": 0.2,
     "whale": 0.23,
@@ -3031,6 +3031,6 @@
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-07-04 02:13 UTC",
-  "generation": 585
+  "last_evolution": "2026-07-04 06:14 UTC",
+  "generation": 586
 }
