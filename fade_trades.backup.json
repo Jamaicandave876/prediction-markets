@@ -479,11 +479,11 @@
     "entry_time": "2026-06-30 22:11 UTC",
     "url": "https://manifold.markets/Zeolite/will-lebron-james-and-anthony-davis",
     "stake": 36.3,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 9.7,
+    "exit_time": "2026-07-04 06:13 UTC",
+    "exit_reason": "stopped_out",
+    "pnl_pp": -9.3
   },
   {
     "market_id": "UNt56uQshd",

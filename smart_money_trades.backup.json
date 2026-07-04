@@ -4996,5 +4996,24 @@
     "price_impact": 26.0,
     "conviction_score": 9.53,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "ScC6n9C8dP",
+    "question": "Mitch McConnell alive all of July 2026?",
+    "direction": "BUY YES",
+    "entry_prob": 79.7,
+    "entry_time": "2026-07-04 06:14 UTC",
+    "url": "https://manifold.markets/CryptoNeoLiberalist/mitch-mcconnell-alive-all-of-july-2",
+    "stake": 98.1,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 13,
+    "smart_user_mana": 292,
+    "price_impact": 5.0,
+    "conviction_score": 7.6,
+    "signal_strength": 1.5
   }
 ]

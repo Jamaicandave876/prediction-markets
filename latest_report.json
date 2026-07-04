@@ -1,23 +1,11 @@
 {
-  "timestamp": "2026-07-04 06:14 UTC",
+  "timestamp": "2026-07-04 10:50 UTC",
   "regime": "adverse",
-  "pnl_7d": 12.9,
-  "total_open": 7,
-  "total_closed": 229,
-  "total_pnl": 429.5,
+  "pnl_7d": 13.9,
+  "total_open": 6,
+  "total_closed": 230,
+  "total_pnl": 430.5,
   "bots": [
-    {
-      "name": "fade",
-      "display": "Fade",
-      "grade": "B",
-      "score": 68.3,
-      "win_rate": 50.0,
-      "total_pnl": 259.2,
-      "open": 1,
-      "closed": 29,
-      "paused": false,
-      "consecutive_losses": 1
-    },
     {
       "name": "breakout",
       "display": "Breakout",
@@ -27,6 +15,18 @@
       "total_pnl": 137.3,
       "open": 1,
       "closed": 38,
+      "paused": false,
+      "consecutive_losses": 0
+    },
+    {
+      "name": "fade",
+      "display": "Fade",
+      "grade": "C",
+      "score": 53.7,
+      "win_rate": 50.0,
+      "total_pnl": 260.2,
+      "open": 0,
+      "closed": 30,
       "paused": false,
       "consecutive_losses": 0
     },

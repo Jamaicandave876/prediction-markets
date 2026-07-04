@@ -425,11 +425,11 @@
     "entry_time": "2026-06-27 06:25 UTC",
     "url": "https://manifold.markets/QuimLast/will-the-us-supreme-court-substanti",
     "stake": 40.3,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 13.7,
+    "exit_time": "2026-07-04 10:50 UTC",
+    "exit_reason": "stale",
+    "pnl_pp": 1.0
   },
   {
     "market_id": "g0sUhuNUnR",
