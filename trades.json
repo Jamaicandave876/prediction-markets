@@ -1420,5 +1420,50 @@
     "exit_reason": "resolved_win",
     "pnl_pp": 30.3,
     "peak_pnl": 0.6999999999999993
+  },
+  {
+    "market_id": "uZn8q8Nz2Q",
+    "question": "Will \"Obsession\" be nominated for Best Picture?",
+    "direction": "BUY NO",
+    "entry_prob": 40.4,
+    "entry_time": "2026-07-04 21:51 UTC",
+    "drift_score": -7.0,
+    "url": "https://manifold.markets/Ziddletwix/will-obsession-be-nominated-for-bes",
+    "stake": 43.2,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
+  },
+  {
+    "market_id": "PlhznIAdcC",
+    "question": "Will Manifold have a mana purchase goal meter?",
+    "direction": "BUY NO",
+    "entry_prob": 28.0,
+    "entry_time": "2026-07-04 21:51 UTC",
+    "drift_score": -15.81,
+    "url": "https://manifold.markets/Quroe/will-manifold-have-a-mana-purchase",
+    "stake": 43.2,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
+  },
+  {
+    "market_id": "d90I0E9NpO",
+    "question": "Will Anthropic's closing price be greater than its opening price on its first trading day?",
+    "direction": "BUY YES",
+    "entry_prob": 80.2,
+    "entry_time": "2026-07-04 21:51 UTC",
+    "drift_score": 55.6,
+    "url": "https://manifold.markets/bessarabov/will-anthropics-closing-price-be-gr",
+    "stake": 43.2,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]
