@@ -5111,5 +5111,43 @@
     "price_impact": 25.5,
     "conviction_score": 10.2,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "zNpp5nS2n8",
+    "question": "If Mitch McConnell vacates his senate seat before the term ends, will Andy Beshear appoint a Democrat to the seat?",
+    "direction": "BUY NO",
+    "entry_prob": 20.7,
+    "entry_time": "2026-07-05 16:02 UTC",
+    "url": "https://manifold.markets/Jack1/if-mitch-mcconnell-vacates-his-sena",
+    "stake": 98.5,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 3,
+    "smart_user_mana": 1000,
+    "price_impact": 31.4,
+    "conviction_score": 37.71,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "hncLtcuts8",
+    "question": "Will Temu go out of business in the EU before 2028?",
+    "direction": "BUY NO",
+    "entry_prob": 23.6,
+    "entry_time": "2026-07-05 16:02 UTC",
+    "url": "https://manifold.markets/JimiuUOL/will-temu-go-out-of-business-in-the",
+    "stake": 89.9,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 2,
+    "smart_user_mana": 500,
+    "price_impact": 21.3,
+    "conviction_score": 8.5,
+    "signal_strength": 1.5
   }
 ]
