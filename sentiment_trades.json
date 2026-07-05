@@ -2227,5 +2227,43 @@
     "price_move": 14.8,
     "divergence_score": 8.85,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "lUUZ0dhQSn",
+    "question": "Will Jay Feely win the Republican Primary for Arizona's 1st Congressional District on July 21, 2026?",
+    "direction": "BUY YES",
+    "entry_prob": 74.5,
+    "entry_time": "2026-07-05 19:06 UTC",
+    "url": "https://manifold.markets/ShaneBo/will-jay-feely-win-the-republican-p",
+    "stake": 99.5,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "NO",
+    "crowd_pct": 60.0,
+    "price_move": 28.7,
+    "divergence_score": 17.21,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "gZLC8SUuZs",
+    "question": "Will there be a significant antipope by EOY 2040?",
+    "direction": "BUY YES",
+    "entry_prob": 19.0,
+    "entry_time": "2026-07-05 19:06 UTC",
+    "url": "https://manifold.markets/TheOtherKC/will-there-be-a-significant-antipop",
+    "stake": 22.5,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "NO",
+    "crowd_pct": 65.0,
+    "price_move": 7.2,
+    "divergence_score": 4.65,
+    "signal_strength": 0.93
   }
 ]
