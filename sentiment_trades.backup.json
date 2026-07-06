@@ -2265,5 +2265,24 @@
     "price_move": 7.2,
     "divergence_score": 4.65,
     "signal_strength": 0.93
+  },
+  {
+    "market_id": "RUh9QZScCU",
+    "question": "Will a community college win top 5 at the 2026 Putnam?",
+    "direction": "BUY NO",
+    "entry_prob": 30.7,
+    "entry_time": "2026-07-06 12:40 UTC",
+    "url": "https://manifold.markets/twk/will-a-community-college-win-top-5",
+    "stake": 76.8,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "YES",
+    "crowd_pct": 60.0,
+    "price_move": -16.0,
+    "divergence_score": 9.62,
+    "signal_strength": 1.5
   }
 ]
