@@ -2274,16 +2274,16 @@
     "entry_time": "2026-07-06 12:40 UTC",
     "url": "https://manifold.markets/twk/will-a-community-college-win-top-5",
     "stake": 76.8,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 27.5,
+    "exit_time": "2026-07-07 06:40 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 3.2,
     "crowd_dir": "YES",
     "crowd_pct": 60.0,
     "price_move": -16.0,
     "divergence_score": 9.62,
     "signal_strength": 1.5,
-    "peak_pnl": 1.3999999999999986
+    "peak_pnl": 3.1999999999999993
   }
 ]
