@@ -75,7 +75,7 @@
     },
     "sentiment": {
       "target_hit": 28,
-      "stopped_out": 52,
+      "stopped_out": 53,
       "trailing_stop": 6,
       "stale": 26
     },
@@ -87,7 +87,7 @@
     },
     "momentum": {
       "trailing_stop": 8,
-      "reversal": 21,
+      "reversal": 22,
       "target_hit": 23,
       "stale": 19,
       "resolved_loss": 2
@@ -1126,41 +1126,6 @@
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "momentum",
-      "market_id": "h0NzPhngCs",
-      "outcome": "small_loss",
-      "pnl_pp": 0.0,
-      "exit_reason": "target_hit",
-      "duration_hours": 2.7,
-      "traits": [
-        "high_prob_entry",
-        "fast_trade",
-        "yes_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 78.9,
-      "direction": "BUY YES",
-      "timestamp": "2026-06-24 22:11 UTC",
-      "lesson": "Momentum: small loss via target_hit. PnL: +0.0pp in 3h."
-    },
-    {
-      "bot": "sentiment",
-      "market_id": "U8pI0phR5c",
-      "outcome": "big_loss",
-      "pnl_pp": -7.8,
-      "exit_reason": "stopped_out",
-      "duration_hours": 58.5,
-      "traits": [
-        "low_prob_entry",
-        "yes_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 26.3,
-      "direction": "BUY YES",
-      "timestamp": "2026-06-24 22:12 UTC",
-      "lesson": "Sentiment: big loss via stopped_out. PnL: -7.8pp in 59h."
-    },
     {
       "bot": "smart_money",
       "market_id": "REqC55n2Qq",
@@ -2888,6 +2853,40 @@
       "direction": "BUY NO",
       "timestamp": "2026-07-07 06:40 UTC",
       "lesson": "Sentiment: small win via target_hit. PnL: +3.2pp in 18h."
+    },
+    {
+      "bot": "momentum",
+      "market_id": "dgRnsEsucl",
+      "outcome": "big_loss",
+      "pnl_pp": -11.3,
+      "exit_reason": "reversal",
+      "duration_hours": 165.4,
+      "traits": [
+        "mid_prob_entry",
+        "yes_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 63.0,
+      "direction": "BUY YES",
+      "timestamp": "2026-07-07 17:08 UTC",
+      "lesson": "Momentum: big loss via reversal. PnL: -11.3pp in 165h."
+    },
+    {
+      "bot": "sentiment",
+      "market_id": "dgRnsEsucl",
+      "outcome": "big_loss",
+      "pnl_pp": -8.3,
+      "exit_reason": "stopped_out",
+      "duration_hours": 78.3,
+      "traits": [
+        "mid_prob_entry",
+        "yes_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 60.0,
+      "direction": "BUY YES",
+      "timestamp": "2026-07-07 17:08 UTC",
+      "lesson": "Sentiment: big loss via stopped_out. PnL: -8.3pp in 78h."
     }
   ],
   "regime": "cautious",
@@ -3008,7 +3007,7 @@
     }
   ],
   "bot_confidence": {
-    "momentum": 0.45,
+    "momentum": 0.41,
     "fade": 0.7,
     "mean_reversion": 0.1,
     "volume_surge": 0.2,
@@ -3033,6 +3032,6 @@
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-07-07 14:14 UTC",
-  "generation": 608
+  "last_evolution": "2026-07-07 17:08 UTC",
+  "generation": 609
 }

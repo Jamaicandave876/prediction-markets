@@ -2217,11 +2217,11 @@
     "entry_time": "2026-07-04 10:50 UTC",
     "url": "https://manifold.markets/BillClintonBubba/strait-of-hormuz-traffic-returns-to-68UlQPh6IR",
     "stake": 52.7,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 51.7,
+    "exit_time": "2026-07-07 17:08 UTC",
+    "exit_reason": "stopped_out",
+    "pnl_pp": -8.3,
     "crowd_dir": "NO",
     "crowd_pct": 60.0,
     "price_move": 14.8,
@@ -2303,6 +2303,7 @@
     "crowd_pct": 60.0,
     "price_move": -8.3,
     "divergence_score": 4.98,
-    "signal_strength": 1.0
+    "signal_strength": 1.0,
+    "peak_pnl": 0.29999999999999716
   }
 ]
