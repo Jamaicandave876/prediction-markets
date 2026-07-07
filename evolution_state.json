@@ -75,19 +75,19 @@
     },
     "sentiment": {
       "target_hit": 28,
-      "stopped_out": 53,
+      "stopped_out": 54,
       "trailing_stop": 6,
       "stale": 26
     },
     "smart_money": {
-      "target_hit": 100,
+      "target_hit": 101,
       "stopped_out": 43,
       "trailing_stop": 14,
       "stale": 48
     },
     "momentum": {
       "trailing_stop": 8,
-      "reversal": 22,
+      "reversal": 23,
       "target_hit": 23,
       "stale": 19,
       "resolved_loss": 2
@@ -1126,59 +1126,6 @@
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "smart_money",
-      "market_id": "REqC55n2Qq",
-      "outcome": "small_loss",
-      "pnl_pp": -0.4,
-      "exit_reason": "stale",
-      "duration_hours": 48.0,
-      "traits": [
-        "mid_prob_entry",
-        "yes_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 55.0,
-      "direction": "BUY YES",
-      "timestamp": "2026-06-25 02:40 UTC",
-      "lesson": "Smart $: small loss via stale. PnL: -0.4pp in 48h."
-    },
-    {
-      "bot": "smart_money",
-      "market_id": "E9py8sOuS6",
-      "outcome": "big_loss",
-      "pnl_pp": -9.7,
-      "exit_reason": "stopped_out",
-      "duration_hours": 4.5,
-      "traits": [
-        "low_prob_entry",
-        "fast_trade",
-        "no_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 19.4,
-      "direction": "BUY NO",
-      "timestamp": "2026-06-25 02:40 UTC",
-      "lesson": "Smart $: big loss via stopped_out. PnL: -9.7pp in 4h."
-    },
-    {
-      "bot": "sentiment",
-      "market_id": "It2uEtshcU",
-      "outcome": "small_loss",
-      "pnl_pp": 0.0,
-      "exit_reason": "target_hit",
-      "duration_hours": 4.0,
-      "traits": [
-        "low_prob_entry",
-        "fast_trade",
-        "no_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 24.5,
-      "direction": "BUY NO",
-      "timestamp": "2026-06-25 06:43 UTC",
-      "lesson": "Sentiment: small loss via target_hit. PnL: +0.0pp in 4h."
-    },
     {
       "bot": "momentum",
       "market_id": "yAUR5PtqpO",
@@ -2887,6 +2834,58 @@
       "direction": "BUY YES",
       "timestamp": "2026-07-07 17:08 UTC",
       "lesson": "Sentiment: big loss via stopped_out. PnL: -8.3pp in 78h."
+    },
+    {
+      "bot": "momentum",
+      "market_id": "dgRnsEsucl",
+      "outcome": "big_loss",
+      "pnl_pp": -11.3,
+      "exit_reason": "reversal",
+      "duration_hours": 165.4,
+      "traits": [
+        "mid_prob_entry",
+        "yes_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 63.0,
+      "direction": "BUY YES",
+      "timestamp": "2026-07-07 17:08 UTC",
+      "lesson": "Momentum: big loss via reversal. PnL: -11.3pp in 165h."
+    },
+    {
+      "bot": "smart_money",
+      "market_id": "sypQg2tslh",
+      "outcome": "small_loss",
+      "pnl_pp": 0.0,
+      "exit_reason": "target_hit",
+      "duration_hours": 2.6,
+      "traits": [
+        "low_prob_entry",
+        "fast_trade",
+        "no_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 12.8,
+      "direction": "BUY NO",
+      "timestamp": "2026-07-07 19:46 UTC",
+      "lesson": "Smart $: small loss via target_hit. PnL: +0.0pp in 3h."
+    },
+    {
+      "bot": "sentiment",
+      "market_id": "dgRnsEsucl",
+      "outcome": "big_loss",
+      "pnl_pp": -8.3,
+      "exit_reason": "stopped_out",
+      "duration_hours": 78.3,
+      "traits": [
+        "mid_prob_entry",
+        "yes_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 60.0,
+      "direction": "BUY YES",
+      "timestamp": "2026-07-07 17:08 UTC",
+      "lesson": "Sentiment: big loss via stopped_out. PnL: -8.3pp in 78h."
     }
   ],
   "regime": "cautious",
@@ -3019,7 +3018,7 @@
     "breakout": 0.77,
     "calibration": 0.1,
     "reversal": 0.2,
-    "smart_money": 0.53,
+    "smart_money": 0.49,
     "time_decay": 0.23,
     "sentiment": 0.2,
     "accumulation": 0.1,
@@ -3032,6 +3031,6 @@
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-07-07 17:08 UTC",
-  "generation": 609
+  "last_evolution": "2026-07-07 19:47 UTC",
+  "generation": 610
 }
