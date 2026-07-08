@@ -2314,15 +2314,16 @@
     "entry_time": "2026-07-07 22:06 UTC",
     "url": "https://manifold.markets/Conflux/will-trump-and-xi-meet-in-september",
     "stake": 98.3,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 80.6,
+    "exit_time": "2026-07-08 02:03 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 1.6,
     "crowd_dir": "NO",
     "crowd_pct": 70.6,
     "price_move": 29.0,
     "divergence_score": 20.47,
-    "signal_strength": 1.5
+    "signal_strength": 1.5,
+    "peak_pnl": 1.5999999999999943
   }
 ]
