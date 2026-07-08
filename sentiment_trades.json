@@ -2344,5 +2344,24 @@
     "price_move": -21.8,
     "divergence_score": 13.05,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "Cud0ycyAd0",
+    "question": "Will Trump and Xi meet in September 2026?",
+    "direction": "BUY YES",
+    "entry_prob": 80.6,
+    "entry_time": "2026-07-08 16:26 UTC",
+    "url": "https://manifold.markets/Conflux/will-trump-and-xi-meet-in-september",
+    "stake": 100.6,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "NO",
+    "crowd_pct": 66.7,
+    "price_move": 30.6,
+    "divergence_score": 20.41,
+    "signal_strength": 1.5
   }
 ]
