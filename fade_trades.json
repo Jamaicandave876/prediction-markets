@@ -538,5 +538,23 @@
     "exit_time": "2026-07-03 06:24 UTC",
     "exit_reason": "normalized",
     "pnl_pp": 8.6
+  },
+  {
+    "market_id": "pFzctpJBat",
+    "question": "Will \"AI 2040: Plan A\" make the top fifty posts in LessWrong's 2026 Annual Review?",
+    "direction": "BUY YES",
+    "entry_prob": 48.1,
+    "pre_spike_prob": 85.9,
+    "spike_size": 37.9,
+    "spike_ratio": 5.7,
+    "spike_dir": -1,
+    "entry_time": "2026-07-09 22:15 UTC",
+    "url": "https://manifold.markets/LessWrong/will-ai-2040-plan-a-make-the-top-fi",
+    "stake": 41.1,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]
