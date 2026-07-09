@@ -1491,11 +1491,12 @@
     "drift_score": 20.31,
     "url": "https://manifold.markets/danftz/will-israel-attack-iran-in-july-202",
     "stake": 44.0,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 84.7,
+    "exit_time": "2026-07-09 06:36 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 0.4,
+    "peak_pnl": 0.4000000000000057
   },
   {
     "market_id": "z0SAl99Qn6",
@@ -1521,10 +1522,10 @@
     "drift_score": -42.93,
     "url": "https://manifold.markets/TheWabiSabi/hegseth-patel-or-rfk-is-out-within-6ShZILSE0z",
     "stake": 44.0,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 20.4,
+    "exit_time": "2026-07-09 06:36 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 0.0
   }
 ]
