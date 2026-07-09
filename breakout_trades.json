@@ -732,5 +732,41 @@
     "breakout_strength": 3.6,
     "signal_strength": 1.2160315875499528,
     "peak_pnl": 23.700000000000003
+  },
+  {
+    "market_id": "ONQ2P0t6Pd",
+    "question": "Will the US reimpose a blockade on Iran by the end of July 2026?",
+    "direction": "BUY YES",
+    "entry_prob": 45.8,
+    "entry_time": "2026-07-09 19:27 UTC",
+    "url": "https://manifold.markets/ChadCotty/will-the-us-reimpose-a-blockade-on",
+    "stake": 41.1,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "baseline_range": 3.1,
+    "breakout_move": 8.6,
+    "breakout_strength": 2.8,
+    "signal_strength": 0.9187519366674483
+  },
+  {
+    "market_id": "qd6I6IqOhs",
+    "question": "Will Mitch McConnell make a verifiable, live public appearance before August 3, 2026?",
+    "direction": "BUY NO",
+    "entry_prob": 14.4,
+    "entry_time": "2026-07-09 19:27 UTC",
+    "url": "https://manifold.markets/yeeta/will-mitch-mcconnell-make-a-verifia",
+    "stake": 100.7,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "baseline_range": 4.5,
+    "breakout_move": -11.6,
+    "breakout_strength": 2.6,
+    "signal_strength": 0.8641255032938361
   }
 ]
