@@ -2363,5 +2363,43 @@
     "price_move": 30.6,
     "divergence_score": 20.41,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "Cud0ycyAd0",
+    "question": "Will Trump and Xi meet in September 2026?",
+    "direction": "BUY YES",
+    "entry_prob": 80.6,
+    "entry_time": "2026-07-09 11:50 UTC",
+    "url": "https://manifold.markets/Conflux/will-trump-and-xi-meet-in-september",
+    "stake": 100.7,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "NO",
+    "crowd_pct": 68.4,
+    "price_move": 30.6,
+    "divergence_score": 20.91,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "S29zRUAR0d",
+    "question": "Will Mitch McConnell speak this year?",
+    "direction": "BUY YES",
+    "entry_prob": 70.0,
+    "entry_time": "2026-07-09 11:50 UTC",
+    "url": "https://manifold.markets/bens/will-mitch-mcconnell-speak-this-yea",
+    "stake": 50.6,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "NO",
+    "crowd_pct": 60.0,
+    "price_move": 7.1,
+    "divergence_score": 4.23,
+    "signal_strength": 0.85
   }
 ]
