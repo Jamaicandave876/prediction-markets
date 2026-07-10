@@ -551,10 +551,10 @@
     "entry_time": "2026-07-09 22:15 UTC",
     "url": "https://manifold.markets/LessWrong/will-ai-2040-plan-a-make-the-top-fi",
     "stake": 41.1,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 67.6,
+    "exit_time": "2026-07-10 06:37 UTC",
+    "exit_reason": "normalized",
+    "pnl_pp": 19.5
   }
 ]
