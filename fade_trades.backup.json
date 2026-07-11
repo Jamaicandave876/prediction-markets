@@ -556,5 +556,23 @@
     "exit_time": "2026-07-10 06:37 UTC",
     "exit_reason": "normalized",
     "pnl_pp": 19.5
+  },
+  {
+    "market_id": "hnC5dO8EZ5",
+    "question": "Will Nigel Farage win the Clacton by election?",
+    "direction": "BUY YES",
+    "entry_prob": 1.4,
+    "pre_spike_prob": 82.8,
+    "spike_size": 81.4,
+    "spike_ratio": 44.2,
+    "spike_dir": -1,
+    "entry_time": "2026-07-11 13:02 UTC",
+    "url": "https://manifold.markets/NFNL2zc/will-nigel-farage-win-the-clacton-b",
+    "stake": 41.4,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]
