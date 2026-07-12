@@ -2458,5 +2458,24 @@
     "price_move": -8.0,
     "divergence_score": 6.03,
     "signal_strength": 1.21
+  },
+  {
+    "market_id": "dnZyn66N69",
+    "question": "Lewandowski to score in first match playing for Chicago Fire?",
+    "direction": "BUY YES",
+    "entry_prob": 41.2,
+    "entry_time": "2026-07-12 05:50 UTC",
+    "url": "https://manifold.markets/UniversalFC/lewandowski-to-score-in-first-match",
+    "stake": 20,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "NO",
+    "crowd_pct": 65.0,
+    "price_move": 5.3,
+    "divergence_score": 3.44,
+    "signal_strength": 0.69
   }
 ]
