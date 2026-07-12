@@ -2496,5 +2496,24 @@
     "price_move": 32.0,
     "divergence_score": 20.81,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "IthqZyRtI8",
+    "question": "Will an LLM directly read Ghost Font by EOY 2027?",
+    "direction": "BUY NO",
+    "entry_prob": 61.2,
+    "entry_time": "2026-07-12 15:53 UTC",
+    "url": "https://manifold.markets/Bayesian/will-an-llm-directly-read-ghost-fon-zNtuqNA9AN",
+    "stake": 36.1,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "YES",
+    "crowd_pct": 70.0,
+    "price_move": -14.1,
+    "divergence_score": 9.9,
+    "signal_strength": 1.5
   }
 ]
