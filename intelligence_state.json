@@ -601,7 +601,7 @@
     "contrarian": true,
     "liquidation": false,
     "calibration": true,
-    "sentiment_divergence": false,
+    "sentiment_divergence": true,
     "smart_money": false,
     "momentum": false
   },
@@ -609,6 +609,7 @@
   "pause_start": {
     "mean_reversion": "2026-07-12 18:56 UTC",
     "contrarian": "2026-07-12 18:56 UTC",
-    "calibration": "2026-07-12 18:56 UTC"
+    "calibration": "2026-07-12 18:56 UTC",
+    "sentiment_divergence": "2026-07-13 11:56 UTC"
   }
 }
