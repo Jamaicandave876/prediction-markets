@@ -1275,11 +1275,11 @@
     "drift_score": -6.86,
     "url": "https://manifold.markets/redcat/will-i-leave-the-house-before-11-am-0QndztRgN6",
     "stake": 20,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 44.6,
+    "exit_time": "2026-07-13 02:06 UTC",
+    "exit_reason": "stale",
+    "pnl_pp": -0.8
   },
   {
     "market_id": "nNUn6tQ5u2",

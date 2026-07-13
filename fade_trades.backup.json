@@ -574,5 +574,23 @@
     "exit_time": "2026-07-11 15:47 UTC",
     "exit_reason": "normalized",
     "pnl_pp": 86.0
+  },
+  {
+    "market_id": "uAgqpy5S9q",
+    "question": "Will Fable be available for a continuous 30 days on the subscription plan between July 15 and October 31?",
+    "direction": "BUY NO",
+    "entry_prob": 92.3,
+    "pre_spike_prob": 79.3,
+    "spike_size": 13.0,
+    "spike_ratio": 4.5,
+    "spike_dir": 1,
+    "entry_time": "2026-07-13 02:06 UTC",
+    "url": "https://manifold.markets/realTomBayes/will-fable-be-available-for-a-conti",
+    "stake": 46.9,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]
