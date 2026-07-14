@@ -1553,11 +1553,11 @@
     "drift_score": -50.9,
     "url": "https://manifold.markets/Technocrat/will-the-ratio-of-males-to-females",
     "stake": 45.4,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 19.8,
+    "exit_time": "2026-07-14 13:17 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 0.0
   },
   {
     "market_id": "N9Oqq6NhIZ",
@@ -1613,11 +1613,11 @@
     "drift_score": -30.87,
     "url": "https://manifold.markets/Jack1/if-there-is-a-special-senate-electi",
     "stake": 45.4,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 16.3,
+    "exit_time": "2026-07-14 13:17 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 0.0
   },
   {
     "market_id": "CZgSnUs52L",
