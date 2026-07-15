@@ -1538,11 +1538,11 @@
     "drift_score": -9.95,
     "url": "https://manifold.markets/Sketchy/will-trump-announce-that-jon-ossof",
     "stake": 45.4,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 50.9,
+    "exit_time": "2026-07-15 05:23 UTC",
+    "exit_reason": "reversal",
+    "pnl_pp": -9.1,
     "peak_pnl": 2.0
   },
   {

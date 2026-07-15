@@ -87,7 +87,7 @@
     },
     "momentum": {
       "trailing_stop": 8,
-      "reversal": 26,
+      "reversal": 27,
       "target_hit": 28,
       "stale": 20,
       "resolved_loss": 2
@@ -1126,24 +1126,6 @@
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "smart_money",
-      "market_id": "88C0llR2pU",
-      "outcome": "small_loss",
-      "pnl_pp": 0.0,
-      "exit_reason": "target_hit",
-      "duration_hours": 2.3,
-      "traits": [
-        "low_prob_entry",
-        "fast_trade",
-        "no_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 17.3,
-      "direction": "BUY NO",
-      "timestamp": "2026-07-05 13:17 UTC",
-      "lesson": "Smart $: small loss via target_hit. PnL: +0.0pp in 2h."
-    },
     {
       "bot": "smart_money",
       "market_id": "88C0llR2pU",
@@ -2886,6 +2868,24 @@
       "direction": "BUY NO",
       "timestamp": "2026-07-15 01:49 UTC",
       "lesson": "Smart $: small loss via target_hit. PnL: +0.0pp in 4h."
+    },
+    {
+      "bot": "momentum",
+      "market_id": "8Qzzsunhgh",
+      "outcome": "big_loss",
+      "pnl_pp": -9.1,
+      "exit_reason": "reversal",
+      "duration_hours": 18.7,
+      "traits": [
+        "mid_prob_entry",
+        "fast_trade",
+        "no_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 41.8,
+      "direction": "BUY NO",
+      "timestamp": "2026-07-15 05:23 UTC",
+      "lesson": "Momentum: big loss via reversal. PnL: -9.1pp in 19h."
     }
   ],
   "regime": "cautious",
@@ -3031,6 +3031,6 @@
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-07-15 05:24 UTC",
-  "generation": 666
+  "last_evolution": "2026-07-15 07:56 UTC",
+  "generation": 667
 }
