@@ -587,10 +587,10 @@
     "entry_time": "2026-07-13 02:06 UTC",
     "url": "https://manifold.markets/realTomBayes/will-fable-be-available-for-a-conti",
     "stake": 46.9,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 85.0,
+    "exit_time": "2026-07-15 01:48 UTC",
+    "exit_reason": "normalized",
+    "pnl_pp": 7.3
   }
 ]
