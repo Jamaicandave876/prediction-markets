@@ -77,13 +77,13 @@
       "target_hit": 37,
       "stopped_out": 59,
       "trailing_stop": 6,
-      "stale": 30
+      "stale": 31
     },
     "smart_money": {
       "target_hit": 110,
       "stopped_out": 46,
       "trailing_stop": 15,
-      "stale": 55
+      "stale": 56
     },
     "momentum": {
       "trailing_stop": 8,
@@ -1126,42 +1126,6 @@
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "smart_money",
-      "market_id": "Nd8cNsun06",
-      "outcome": "small_win",
-      "pnl_pp": 0.2,
-      "exit_reason": "target_hit",
-      "duration_hours": 19.4,
-      "traits": [
-        "low_prob_entry",
-        "fast_trade",
-        "no_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 22.6,
-      "direction": "BUY NO",
-      "timestamp": "2026-07-05 21:56 UTC",
-      "lesson": "Smart $: small win via target_hit. PnL: +0.2pp in 19h."
-    },
-    {
-      "bot": "smart_money",
-      "market_id": "hncLtcuts8",
-      "outcome": "small_loss",
-      "pnl_pp": -0.6,
-      "exit_reason": "target_hit",
-      "duration_hours": 3.1,
-      "traits": [
-        "low_prob_entry",
-        "fast_trade",
-        "no_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 23.6,
-      "direction": "BUY NO",
-      "timestamp": "2026-07-05 19:06 UTC",
-      "lesson": "Smart $: small loss via target_hit. PnL: -0.6pp in 3h."
-    },
     {
       "bot": "sentiment",
       "market_id": "lUUZ0dhQSn",
@@ -2886,6 +2850,39 @@
       "direction": "BUY YES",
       "timestamp": "2026-07-16 01:59 UTC",
       "lesson": "Smart $: Strong signal \u2192 strong win. Keep trusting high-confidence entries."
+    },
+    {
+      "bot": "smart_money",
+      "market_id": "58hzg6qddE",
+      "outcome": "big_loss",
+      "pnl_pp": -3.3,
+      "exit_reason": "stale",
+      "duration_hours": 48.2,
+      "traits": [
+        "mid_prob_entry",
+        "no_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 38.8,
+      "direction": "BUY NO",
+      "timestamp": "2026-07-16 08:01 UTC",
+      "lesson": "Smart $: Held too long with no resolution. Consider shorter max_days."
+    },
+    {
+      "bot": "sentiment",
+      "market_id": "dnZyn66N69",
+      "outcome": "small_loss",
+      "pnl_pp": -0.4,
+      "exit_reason": "stale",
+      "duration_hours": 98.2,
+      "traits": [
+        "mid_prob_entry",
+        "yes_direction"
+      ],
+      "entry_prob": 41.2,
+      "direction": "BUY YES",
+      "timestamp": "2026-07-16 08:01 UTC",
+      "lesson": "Sentiment: small loss via stale. PnL: -0.4pp in 98h."
     }
   ],
   "regime": "cautious",
@@ -3018,7 +3015,7 @@
     "breakout": 0.77,
     "calibration": 0.1,
     "reversal": 0.2,
-    "smart_money": 0.65,
+    "smart_money": 0.56,
     "time_decay": 0.23,
     "sentiment": 0.2,
     "accumulation": 0.1,
@@ -3031,6 +3028,6 @@
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-07-16 05:33 UTC",
-  "generation": 674
+  "last_evolution": "2026-07-16 08:01 UTC",
+  "generation": 675
 }
