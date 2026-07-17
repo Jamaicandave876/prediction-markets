@@ -592,5 +592,23 @@
     "exit_time": "2026-07-15 01:48 UTC",
     "exit_reason": "normalized",
     "pnl_pp": 7.3
+  },
+  {
+    "market_id": "8Qzzsunhgh",
+    "question": "Will Trump announce that Jon Ossof and Raphael Warnock are illegitimate Senators by the end of the week?",
+    "direction": "BUY YES",
+    "entry_prob": 4.7,
+    "pre_spike_prob": 41.8,
+    "spike_size": 37.0,
+    "spike_ratio": 5.3,
+    "spike_dir": -1,
+    "entry_time": "2026-07-17 07:57 UTC",
+    "url": "https://manifold.markets/Sketchy/will-trump-announce-that-jon-ossof",
+    "stake": 46.2,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]
