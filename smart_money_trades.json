@@ -5706,11 +5706,11 @@
     "entry_time": "2026-07-17 02:03 UTC",
     "url": "https://manifold.markets/KR7PT0N/will-meta-quest-die-out-in-early-20-AAq5dz02hE",
     "stake": 101.8,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 15.5,
+    "exit_time": "2026-07-17 05:35 UTC",
+    "exit_reason": "resolved_loss",
+    "pnl_pp": 0.0,
     "smart_user_bets": 3,
     "smart_user_mana": 700,
     "price_impact": 38.0,
@@ -5734,6 +5734,7 @@
     "smart_user_mana": 300,
     "price_impact": 12.5,
     "conviction_score": 4.49,
-    "signal_strength": 1.5
+    "signal_strength": 1.5,
+    "peak_pnl": 1.4000000000000057
   }
 ]
