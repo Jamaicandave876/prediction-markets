@@ -5755,5 +5755,24 @@
     "price_impact": 9.8,
     "conviction_score": 4.32,
     "signal_strength": 1.44
+  },
+  {
+    "market_id": "Z5QA6NLz82",
+    "question": "Will \"The Odyssey\" gross >$1 billion worldwide?",
+    "direction": "BUY YES",
+    "entry_prob": 45.4,
+    "entry_time": "2026-07-17 16:09 UTC",
+    "url": "https://manifold.markets/Ziddletwix/will-the-odyssey-gross-1-billion-wo",
+    "stake": 20,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 3,
+    "smart_user_mana": 222,
+    "price_impact": 8.4,
+    "conviction_score": 2.25,
+    "signal_strength": 0.75
   }
 ]
