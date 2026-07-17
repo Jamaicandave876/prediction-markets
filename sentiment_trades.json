@@ -2553,5 +2553,43 @@
     "price_move": -11.7,
     "divergence_score": 7.01,
     "signal_strength": 1.4
+  },
+  {
+    "market_id": "Z5QA6NLz82",
+    "question": "Will \"The Odyssey\" gross >$1 billion worldwide?",
+    "direction": "BUY YES",
+    "entry_prob": 65.2,
+    "entry_time": "2026-07-17 21:45 UTC",
+    "url": "https://manifold.markets/Ziddletwix/will-the-odyssey-gross-1-billion-wo",
+    "stake": 62.4,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "NO",
+    "crowd_pct": 65.0,
+    "price_move": 14.1,
+    "divergence_score": 9.15,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "UCUCEq9SIU",
+    "question": "Kimi Moonshoot IPO before 2028?",
+    "direction": "BUY NO",
+    "entry_prob": 48.7,
+    "entry_time": "2026-07-17 21:45 UTC",
+    "url": "https://manifold.markets/SG/kimi-moonshoot-ipo-before-2028",
+    "stake": 27.3,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "YES",
+    "crowd_pct": 65.0,
+    "price_move": -7.1,
+    "divergence_score": 4.61,
+    "signal_strength": 0.92
   }
 ]
