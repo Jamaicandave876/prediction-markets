@@ -75,7 +75,7 @@
     },
     "sentiment": {
       "target_hit": 37,
-      "stopped_out": 59,
+      "stopped_out": 60,
       "trailing_stop": 6,
       "stale": 34
     },
@@ -1127,23 +1127,6 @@
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "sentiment",
-      "market_id": "dgRnsEsucl",
-      "outcome": "big_loss",
-      "pnl_pp": -8.3,
-      "exit_reason": "stopped_out",
-      "duration_hours": 78.3,
-      "traits": [
-        "mid_prob_entry",
-        "yes_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 60.0,
-      "direction": "BUY YES",
-      "timestamp": "2026-07-07 17:08 UTC",
-      "lesson": "Sentiment: big loss via stopped_out. PnL: -8.3pp in 78h."
-    },
     {
       "bot": "smart_money",
       "market_id": "sypQg2tslh",
@@ -2883,6 +2866,23 @@
       "direction": "BUY YES",
       "timestamp": "2026-07-17 10:41 UTC",
       "lesson": "Smart $: big loss via stopped_out. PnL: -15.3pp in 9h."
+    },
+    {
+      "bot": "sentiment",
+      "market_id": "UCUCEq9SIU",
+      "outcome": "big_loss",
+      "pnl_pp": -8.9,
+      "exit_reason": "stopped_out",
+      "duration_hours": 7.6,
+      "traits": [
+        "mid_prob_entry",
+        "fast_trade",
+        "no_direction"
+      ],
+      "entry_prob": 48.7,
+      "direction": "BUY NO",
+      "timestamp": "2026-07-18 05:19 UTC",
+      "lesson": "Sentiment: big loss via stopped_out. PnL: -8.9pp in 8h."
     }
   ],
   "regime": "cautious",
@@ -3028,6 +3028,6 @@
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-07-18 01:53 UTC",
-  "generation": 689
+  "last_evolution": "2026-07-18 05:19 UTC",
+  "generation": 690
 }
