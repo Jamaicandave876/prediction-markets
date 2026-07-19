@@ -99,12 +99,12 @@
       "grade": "F"
     },
     "breakout": {
-      "score": 74.9,
+      "score": 74.8,
       "win_rate": 80.0,
-      "avg_pnl": 3.5,
-      "total_pnl": 155.4,
-      "closed": 41,
-      "open": 2,
+      "avg_pnl": 3.4,
+      "total_pnl": 161.5,
+      "closed": 42,
+      "open": 1,
       "grade": "B"
     },
     "weather_temperature": {
@@ -161,5 +161,5 @@
     "weather_divergence": 0
   },
   "regime": "adverse",
-  "last_report": "2026-07-18 21:44 UTC"
+  "last_report": "2026-07-19 21:47 UTC"
 }
