@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-07-18 21:44 UTC",
+  "timestamp": "2026-07-19 02:04 UTC",
   "regime": "adverse",
-  "pnl_7d": -31.6,
-  "total_open": 9,
-  "total_closed": 248,
-  "total_pnl": 543.7,
+  "pnl_7d": -22.8,
+  "total_open": 7,
+  "total_closed": 250,
+  "total_pnl": 552.5,
   "bots": [
     {
       "name": "fade",
@@ -91,6 +91,18 @@
       "consecutive_losses": 0
     },
     {
+      "name": "momentum",
+      "display": "Momentum",
+      "grade": "F",
+      "score": 32.1,
+      "win_rate": 30.0,
+      "total_pnl": 185.8,
+      "open": 5,
+      "closed": 100,
+      "paused": false,
+      "consecutive_losses": 0
+    },
+    {
       "name": "fresh_sniper",
       "display": "Fresh Sniper",
       "grade": "F",
@@ -101,18 +113,6 @@
       "closed": 21,
       "paused": false,
       "consecutive_losses": 1
-    },
-    {
-      "name": "momentum",
-      "display": "Momentum",
-      "grade": "F",
-      "score": 28.4,
-      "win_rate": 30.0,
-      "total_pnl": 177.0,
-      "open": 7,
-      "closed": 98,
-      "paused": false,
-      "consecutive_losses": 4
     },
     {
       "name": "volume_surge",
