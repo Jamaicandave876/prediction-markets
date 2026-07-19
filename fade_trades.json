@@ -610,5 +610,23 @@
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null
+  },
+  {
+    "market_id": "Isp09PtAE8",
+    "question": "Will Remco Evenepoel be in 2nd place at the conclusion of any stage of the 2026 Tour de France?",
+    "direction": "BUY NO",
+    "entry_prob": 89.1,
+    "pre_spike_prob": 46.7,
+    "spike_size": 42.4,
+    "spike_ratio": 21.9,
+    "spike_dir": 1,
+    "entry_time": "2026-07-19 15:51 UTC",
+    "url": "https://manifold.markets/Eliza/will-remco-evenepoel-be-in-2nd-plac",
+    "stake": 46.4,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]
