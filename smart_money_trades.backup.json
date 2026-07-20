@@ -5853,5 +5853,24 @@
     "price_impact": 12.3,
     "conviction_score": 9.87,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "gZPEZANyhn",
+    "question": "Will the USMV stay at or under \u1e40300 per share for 1 hour before Aug 2026?",
+    "direction": "BUY YES",
+    "entry_prob": 73.6,
+    "entry_time": "2026-07-20 16:21 UTC",
+    "url": "https://manifold.markets/Quroe/will-the-usmv-stay-at-or-under-m300",
+    "stake": 101.2,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 2,
+    "smart_user_mana": 450,
+    "price_impact": 17.8,
+    "conviction_score": 6.4,
+    "signal_strength": 1.5
   }
 ]
