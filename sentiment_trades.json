@@ -2592,5 +2592,24 @@
     "price_move": -7.1,
     "divergence_score": 4.61,
     "signal_strength": 0.92
+  },
+  {
+    "market_id": "Ot86QRUSqd",
+    "question": "Will Andrew Tate be extradited by the end of the year?",
+    "direction": "BUY YES",
+    "entry_prob": 46.8,
+    "entry_time": "2026-07-20 13:53 UTC",
+    "url": "https://manifold.markets/Sketchy/will-andrew-tate-be-extradited-by-t",
+    "stake": 24.3,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "NO",
+    "crowd_pct": 80.0,
+    "price_move": 4.5,
+    "divergence_score": 3.6,
+    "signal_strength": 0.72
   }
 ]

@@ -5832,7 +5832,8 @@
     "smart_user_mana": 550,
     "price_impact": 22.8,
     "conviction_score": 15.04,
-    "signal_strength": 1.5
+    "signal_strength": 1.5,
+    "peak_pnl": 2.3000000000000007
   },
   {
     "market_id": "UCUCEq9SIU",
@@ -5842,11 +5843,11 @@
     "entry_time": "2026-07-20 11:39 UTC",
     "url": "https://manifold.markets/SG/kimi-moonshoot-ipo-before-2028",
     "stake": 101.2,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 85.9,
+    "exit_time": "2026-07-20 13:53 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 0.0,
     "smart_user_bets": 2,
     "smart_user_mana": 1000,
     "price_impact": 12.3,
