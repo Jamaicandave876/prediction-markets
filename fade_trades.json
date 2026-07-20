@@ -605,11 +605,11 @@
     "entry_time": "2026-07-17 07:57 UTC",
     "url": "https://manifold.markets/Sketchy/will-trump-announce-that-jon-ossof",
     "stake": 46.2,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 0.0,
+    "exit_time": "2026-07-20 11:38 UTC",
+    "exit_reason": "resolved_loss",
+    "pnl_pp": -4.7
   },
   {
     "market_id": "Isp09PtAE8",
