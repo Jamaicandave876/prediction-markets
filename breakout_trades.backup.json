@@ -796,14 +796,15 @@
     "entry_time": "2026-07-19 08:05 UTC",
     "url": "https://manifold.markets/SG/kimi-moonshoot-ipo-before-2028",
     "stake": 101.3,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 89.1,
+    "exit_time": "2026-07-19 21:47 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 6.1,
     "baseline_range": 7.8,
     "breakout_move": 25.4,
     "breakout_strength": 3.3,
-    "signal_strength": 1.0880463928780773
+    "signal_strength": 1.0880463928780773,
+    "peak_pnl": 6.099999999999994
   }
 ]

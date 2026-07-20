@@ -623,10 +623,10 @@
     "entry_time": "2026-07-19 15:51 UTC",
     "url": "https://manifold.markets/Eliza/will-remco-evenepoel-be-in-2nd-plac",
     "stake": 46.4,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 100.0,
+    "exit_time": "2026-07-20 02:22 UTC",
+    "exit_reason": "resolved_loss",
+    "pnl_pp": -10.9
   }
 ]
