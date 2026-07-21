@@ -2611,5 +2611,24 @@
     "price_move": 4.5,
     "divergence_score": 3.6,
     "signal_strength": 0.72
+  },
+  {
+    "market_id": "LRZAyzqqhP",
+    "question": "Silver below $50/ oz by close on Friday?",
+    "direction": "BUY NO",
+    "entry_prob": 22.4,
+    "entry_time": "2026-07-21 02:01 UTC",
+    "url": "https://manifold.markets/Ludacrisllama/silver-below-50-oz-by-close-on-frid",
+    "stake": 104.2,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "YES",
+    "crowd_pct": 60.0,
+    "price_move": -15.6,
+    "divergence_score": 9.35,
+    "signal_strength": 1.5
   }
 ]
