@@ -32,7 +32,7 @@
       "avg_pnl": 11.2,
       "total_pnl": 357.4,
       "closed": 35,
-      "open": 0,
+      "open": 1,
       "grade": "B"
     },
     "mean_reversion": {
@@ -161,5 +161,5 @@
     "weather_divergence": 0
   },
   "regime": "adverse",
-  "last_report": "2026-07-20 21:57 UTC"
+  "last_report": "2026-07-21 22:00 UTC"
 }

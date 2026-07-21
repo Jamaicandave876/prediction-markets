@@ -628,5 +628,23 @@
     "exit_time": "2026-07-20 02:22 UTC",
     "exit_reason": "resolved_loss",
     "pnl_pp": -10.9
+  },
+  {
+    "market_id": "pCULI98gss",
+    "question": "Will Daniel Ortega lose power in 2026?",
+    "direction": "BUY YES",
+    "entry_prob": 58.8,
+    "pre_spike_prob": 93.9,
+    "spike_size": 35.1,
+    "spike_ratio": 3.5,
+    "spike_dir": -1,
+    "entry_time": "2026-07-21 21:58 UTC",
+    "url": "https://manifold.markets/danftz/will-daniel-ortega-lose-power-in-20",
+    "stake": 37.3,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]

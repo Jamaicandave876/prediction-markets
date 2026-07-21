@@ -5912,5 +5912,24 @@
     "conviction_score": 2.45,
     "signal_strength": 0.82,
     "peak_pnl": 7.1
+  },
+  {
+    "market_id": "NESEdRQ9O0",
+    "question": "Will Opus 4.6 pay back his loan?",
+    "direction": "BUY NO",
+    "entry_prob": 15.0,
+    "entry_time": "2026-07-21 19:09 UTC",
+    "url": "https://manifold.markets/Bayesian/will-opus-46-pay-back-his-loan",
+    "stake": 105.5,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 2,
+    "smart_user_mana": 391,
+    "price_impact": 7.9,
+    "conviction_score": 2.45,
+    "signal_strength": 0.82
   }
 ]
