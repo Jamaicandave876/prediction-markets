@@ -2650,5 +2650,24 @@
     "price_move": 19.8,
     "divergence_score": 12.87,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "Cd8cPI5yI6",
+    "question": "Lebron James to sign with a former team?",
+    "direction": "BUY NO",
+    "entry_prob": 79.3,
+    "entry_time": "2026-07-22 13:28 UTC",
+    "url": "https://manifold.markets/Jessef0226/lebron-james-to-sign-with-a-former",
+    "stake": 20,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "YES",
+    "crowd_pct": 80.0,
+    "price_move": -4.8,
+    "divergence_score": 3.86,
+    "signal_strength": 0.77
   }
 ]
