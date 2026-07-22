@@ -641,10 +641,10 @@
     "entry_time": "2026-07-21 21:58 UTC",
     "url": "https://manifold.markets/danftz/will-daniel-ortega-lose-power-in-20",
     "stake": 37.3,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 30.3,
+    "exit_time": "2026-07-22 01:59 UTC",
+    "exit_reason": "stopped_out",
+    "pnl_pp": -28.5
   }
 ]
