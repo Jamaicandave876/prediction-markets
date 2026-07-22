@@ -806,5 +806,23 @@
     "breakout_strength": 3.3,
     "signal_strength": 1.0880463928780773,
     "peak_pnl": 6.099999999999994
+  },
+  {
+    "market_id": "OUlL2NLEZ0",
+    "question": "Will a consumer AI meaningfully hack something to answer a question for a regular user by eoy 2027?",
+    "direction": "BUY NO",
+    "entry_prob": 42.7,
+    "entry_time": "2026-07-22 11:02 UTC",
+    "url": "https://manifold.markets/Gen/will-a-consumer-ai-meaningfully-hac",
+    "stake": 51.0,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "baseline_range": 2.4,
+    "breakout_move": -6.3,
+    "breakout_strength": 2.6,
+    "signal_strength": 0.868755123342939
   }
 ]
