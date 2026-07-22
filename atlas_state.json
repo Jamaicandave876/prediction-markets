@@ -99,12 +99,12 @@
       "grade": "F"
     },
     "breakout": {
-      "score": 74.8,
-      "win_rate": 80.0,
-      "avg_pnl": 3.4,
-      "total_pnl": 161.5,
-      "closed": 42,
-      "open": 2,
+      "score": 66.4,
+      "win_rate": 70.0,
+      "avg_pnl": 2.2,
+      "total_pnl": 150.5,
+      "closed": 43,
+      "open": 1,
       "grade": "B"
     },
     "weather_temperature": {
@@ -154,12 +154,12 @@
     "close_gravity": 1,
     "fresh_sniper": 1,
     "stability": 2,
-    "breakout": 0,
+    "breakout": 1,
     "weather_temperature": 0,
     "weather_precipitation": 0,
     "weather_storm": 0,
     "weather_divergence": 0
   },
   "regime": "adverse",
-  "last_report": "2026-07-21 22:00 UTC"
+  "last_report": "2026-07-22 22:01 UTC"
 }

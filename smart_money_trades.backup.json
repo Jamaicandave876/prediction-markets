@@ -5989,5 +5989,24 @@
     "price_impact": 18.3,
     "conviction_score": 5.4,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "6ZhzAtpqLp",
+    "question": "Interest rates above 10% before 2030?",
+    "direction": "BUY NO",
+    "entry_prob": 27.3,
+    "entry_time": "2026-07-22 19:02 UTC",
+    "url": "https://manifold.markets/brod/interest-rates-above-10-before-2030",
+    "stake": 91.3,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 2,
+    "smart_user_mana": 425,
+    "price_impact": 15.1,
+    "conviction_score": 5.13,
+    "signal_strength": 1.5
   }
 ]
