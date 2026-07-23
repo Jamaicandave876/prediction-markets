@@ -6049,5 +6049,24 @@
     "conviction_score": 4.26,
     "signal_strength": 1.42,
     "peak_pnl": 17.60000000000001
+  },
+  {
+    "market_id": "2R8yASSOLQ",
+    "question": "Will Intel Stock (INTC) reach $150 in 2026?",
+    "direction": "BUY YES",
+    "entry_prob": 75.8,
+    "entry_time": "2026-07-23 19:04 UTC",
+    "url": "https://manifold.markets/sama/will-intel-stock-intc-reach-150-in",
+    "stake": 104.9,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 5,
+    "smart_user_mana": 1705,
+    "price_impact": 30.2,
+    "conviction_score": 103.05,
+    "signal_strength": 1.5
   }
 ]
