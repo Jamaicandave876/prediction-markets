@@ -1476,11 +1476,11 @@
     "drift_score": 35.5,
     "url": "https://manifold.markets/Conflux/will-illinois-ai-safety-bill-have-a",
     "stake": 44.0,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 75.3,
+    "exit_time": "2026-07-23 05:47 UTC",
+    "exit_reason": "stale",
+    "pnl_pp": 0.7,
     "peak_pnl": 1.3000000000000114
   },
   {
@@ -1508,11 +1508,11 @@
     "drift_score": -14.14,
     "url": "https://manifold.markets/TimeTravelr/will-the-president-have-his-federal",
     "stake": 44.0,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 55.7,
+    "exit_time": "2026-07-23 05:47 UTC",
+    "exit_reason": "stale",
+    "pnl_pp": -3.8
   },
   {
     "market_id": "lCqlsLyZA6",
