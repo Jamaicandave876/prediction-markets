@@ -2670,5 +2670,24 @@
     "divergence_score": 3.86,
     "signal_strength": 0.77,
     "peak_pnl": 3.0999999999999943
+  },
+  {
+    "market_id": "dIqpLLZl0z",
+    "question": "Will Paul Seixas win a grand tour before 2030?",
+    "direction": "BUY YES",
+    "entry_prob": 68.0,
+    "entry_time": "2026-07-23 02:07 UTC",
+    "url": "https://manifold.markets/MachiNi/will-paul-seixas-win-a-grand-tour-b",
+    "stake": 78.0,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "NO",
+    "crowd_pct": 62.5,
+    "price_move": 18.0,
+    "divergence_score": 11.27,
+    "signal_strength": 1.5
   }
 ]

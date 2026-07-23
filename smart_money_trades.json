@@ -5998,16 +5998,17 @@
     "entry_time": "2026-07-22 19:02 UTC",
     "url": "https://manifold.markets/brod/interest-rates-above-10-before-2030",
     "stake": 91.3,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 15.0,
+    "exit_time": "2026-07-23 02:07 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 12.3,
     "smart_user_bets": 2,
     "smart_user_mana": 425,
     "price_impact": 15.1,
     "conviction_score": 5.13,
-    "signal_strength": 1.5
+    "signal_strength": 1.5,
+    "peak_pnl": 12.3
   },
   {
     "market_id": "5nRUlICpy6",
@@ -6026,6 +6027,26 @@
     "smart_user_mana": 300,
     "price_impact": 12.8,
     "conviction_score": 3.08,
-    "signal_strength": 1.03
+    "signal_strength": 1.03,
+    "peak_pnl": 0.3999999999999986
+  },
+  {
+    "market_id": "2R8yASSOLQ",
+    "question": "Will Intel Stock (INTC) reach $150 in 2026?",
+    "direction": "BUY YES",
+    "entry_prob": 64.8,
+    "entry_time": "2026-07-23 02:07 UTC",
+    "url": "https://manifold.markets/sama/will-intel-stock-intc-reach-150-in",
+    "stake": 82.2,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 2,
+    "smart_user_mana": 300,
+    "price_impact": 17.8,
+    "conviction_score": 4.26,
+    "signal_strength": 1.42
   }
 ]
