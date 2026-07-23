@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-07-23 08:19 UTC",
+  "timestamp": "2026-07-23 11:04 UTC",
   "regime": "adverse",
   "pnl_7d": -43.3,
-  "total_open": 7,
-  "total_closed": 257,
+  "total_open": 6,
+  "total_closed": 258,
   "total_pnl": 500.4,
   "bots": [
     {
@@ -106,13 +106,13 @@
       "name": "momentum",
       "display": "Momentum",
       "grade": "F",
-      "score": 31.4,
+      "score": 31.5,
       "win_rate": 30.0,
       "total_pnl": 182.7,
-      "open": 6,
-      "closed": 102,
+      "open": 5,
+      "closed": 103,
       "paused": false,
-      "consecutive_losses": 0
+      "consecutive_losses": 1
     },
     {
       "name": "volume_surge",

@@ -1635,5 +1635,50 @@
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null
+  },
+  {
+    "market_id": "OUlL2NLEZ0",
+    "question": "Will a consumer AI meaningfully hack something to answer a question for a regular user by eoy 2027?",
+    "direction": "BUY YES",
+    "entry_prob": 59.7,
+    "entry_time": "2026-07-23 08:17 UTC",
+    "drift_score": 12.73,
+    "url": "https://manifold.markets/Gen/will-a-consumer-ai-meaningfully-hac",
+    "stake": 27.7,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
+  },
+  {
+    "market_id": "ONORslngSP",
+    "question": "US government nationalizes OpenAI or Anthropic before 2029?",
+    "direction": "BUY NO",
+    "entry_prob": 16.4,
+    "entry_time": "2026-07-23 08:18 UTC",
+    "drift_score": -7.28,
+    "url": "https://manifold.markets/brod/us-government-nationalizes-openai-o",
+    "stake": 27.7,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
+  },
+  {
+    "market_id": "9y2tspZtdp",
+    "question": "If Judit Polg\u00e1r becomes President of Hungary, will she play an in-person game of chess with a world leader this year?",
+    "direction": "BUY NO",
+    "entry_prob": 24.6,
+    "entry_time": "2026-07-23 08:18 UTC",
+    "drift_score": -55.64,
+    "url": "https://manifold.markets/Zeolite/if-judit-polgar-becomes-president-o",
+    "stake": 27.7,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]

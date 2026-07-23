@@ -1649,7 +1649,8 @@
     "exit_prob": null,
     "exit_time": null,
     "exit_reason": null,
-    "pnl_pp": null
+    "pnl_pp": null,
+    "peak_pnl": 1.2999999999999972
   },
   {
     "market_id": "ONORslngSP",
@@ -1660,11 +1661,11 @@
     "drift_score": -7.28,
     "url": "https://manifold.markets/brod/us-government-nationalizes-openai-o",
     "stake": 27.7,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 16.4,
+    "exit_time": "2026-07-23 11:03 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 0.0
   },
   {
     "market_id": "9y2tspZtdp",
