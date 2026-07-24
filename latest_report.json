@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-07-23 22:01 UTC",
+  "timestamp": "2026-07-24 02:04 UTC",
   "regime": "adverse",
-  "pnl_7d": -43.3,
-  "total_open": 6,
-  "total_closed": 258,
-  "total_pnl": 500.4,
+  "pnl_7d": -51.9,
+  "total_open": 5,
+  "total_closed": 259,
+  "total_pnl": 491.8,
   "bots": [
     {
       "name": "breakout",
@@ -103,18 +103,6 @@
       "consecutive_losses": 1
     },
     {
-      "name": "momentum",
-      "display": "Momentum",
-      "grade": "F",
-      "score": 31.5,
-      "win_rate": 30.0,
-      "total_pnl": 182.7,
-      "open": 5,
-      "closed": 103,
-      "paused": false,
-      "consecutive_losses": 1
-    },
-    {
       "name": "volume_surge",
       "display": "Volume Surge",
       "grade": "F",
@@ -123,6 +111,18 @@
       "total_pnl": -18.5,
       "open": 0,
       "closed": 21,
+      "paused": false,
+      "consecutive_losses": 2
+    },
+    {
+      "name": "momentum",
+      "display": "Momentum",
+      "grade": "F",
+      "score": 20.4,
+      "win_rate": 20.0,
+      "total_pnl": 174.1,
+      "open": 4,
+      "closed": 104,
       "paused": false,
       "consecutive_losses": 2
     },

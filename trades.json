@@ -1600,11 +1600,11 @@
     "drift_score": -21.44,
     "url": "https://manifold.markets/BenAybar/will-gpt-6-be-released-by-september",
     "stake": 45.4,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 47.4,
+    "exit_time": "2026-07-24 02:02 UTC",
+    "exit_reason": "reversal",
+    "pnl_pp": -8.6
   },
   {
     "market_id": "RdUP0Qq2IL",
@@ -1650,7 +1650,7 @@
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null,
-    "peak_pnl": 4.3999999999999915
+    "peak_pnl": 6.3999999999999915
   },
   {
     "market_id": "ONORslngSP",

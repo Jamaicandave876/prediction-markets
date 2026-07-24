@@ -2708,5 +2708,24 @@
     "price_move": 23.4,
     "divergence_score": 17.52,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "SOQRCQZ5AI",
+    "question": "Will Andrew Tate be in jail through the end of August?",
+    "direction": "BUY NO",
+    "entry_prob": 73.8,
+    "entry_time": "2026-07-23 22:00 UTC",
+    "url": "https://manifold.markets/Sketchy/will-andrew-tate-be-in-jail-through",
+    "stake": 20,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "YES",
+    "crowd_pct": 60.0,
+    "price_move": -6.0,
+    "divergence_score": 3.6,
+    "signal_strength": 0.72
   }
 ]
