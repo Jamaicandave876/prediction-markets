@@ -1681,5 +1681,20 @@
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null
+  },
+  {
+    "market_id": "ES2E8uZI2S",
+    "question": "Will Anthropic allow me to have a daily or weekly usage credit limit in 2026?",
+    "direction": "BUY NO",
+    "entry_prob": 26.2,
+    "entry_time": "2026-07-24 05:43 UTC",
+    "drift_score": -6.17,
+    "url": "https://manifold.markets/Gen/will-anthropic-allow-me-to-have-a-d",
+    "stake": 22.2,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]
