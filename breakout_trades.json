@@ -824,5 +824,23 @@
     "breakout_move": -6.3,
     "breakout_strength": 2.6,
     "signal_strength": 0.868755123342939
+  },
+  {
+    "market_id": "9zEtQ2NsQO",
+    "question": "Will Grok Imagine\u2019s full-length Odyssey film be released this year? [Kalshi]",
+    "direction": "BUY YES",
+    "entry_prob": 24.2,
+    "entry_time": "2026-07-24 05:43 UTC",
+    "url": "https://manifold.markets/Bayesian/will-grok-imagines-fulllength-odyss",
+    "stake": 44.8,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "baseline_range": 0.0,
+    "breakout_move": 10.2,
+    "breakout_strength": 10.2,
+    "signal_strength": 1.5
   }
 ]
