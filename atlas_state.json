@@ -18,12 +18,12 @@
   "pause_start": {},
   "bot_scores": {
     "momentum": {
-      "score": 20.4,
+      "score": 20.2,
       "win_rate": 20.0,
-      "avg_pnl": -5.8,
-      "total_pnl": 174.1,
-      "closed": 104,
-      "open": 5,
+      "avg_pnl": -5.9,
+      "total_pnl": 173.4,
+      "closed": 105,
+      "open": 4,
       "grade": "F"
     },
     "fade": {
@@ -99,13 +99,13 @@
       "grade": "F"
     },
     "breakout": {
-      "score": 66.4,
-      "win_rate": 70.0,
-      "avg_pnl": 2.2,
-      "total_pnl": 150.5,
-      "closed": 43,
-      "open": 2,
-      "grade": "B"
+      "score": 55.9,
+      "win_rate": 60.0,
+      "avg_pnl": -0.0,
+      "total_pnl": 140.8,
+      "closed": 44,
+      "open": 1,
+      "grade": "C"
     },
     "weather_temperature": {
       "score": 50,
@@ -145,7 +145,7 @@
     }
   },
   "consecutive_losses": {
-    "momentum": 2,
+    "momentum": 3,
     "fade": 3,
     "mean_reversion": 5,
     "volume_surge": 2,
@@ -154,7 +154,7 @@
     "close_gravity": 1,
     "fresh_sniper": 1,
     "stability": 2,
-    "breakout": 1,
+    "breakout": 2,
     "weather_temperature": 0,
     "weather_precipitation": 0,
     "weather_storm": 0,

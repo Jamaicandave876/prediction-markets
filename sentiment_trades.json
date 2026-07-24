@@ -2659,17 +2659,17 @@
     "entry_time": "2026-07-22 13:28 UTC",
     "url": "https://manifold.markets/Jessef0226/lebron-james-to-sign-with-a-former",
     "stake": 20,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 1.0,
+    "exit_time": "2026-07-24 16:35 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 78.3,
     "crowd_dir": "YES",
     "crowd_pct": 80.0,
     "price_move": -4.8,
     "divergence_score": 3.86,
     "signal_strength": 0.77,
-    "peak_pnl": 3.0999999999999943
+    "peak_pnl": 78.3
   },
   {
     "market_id": "dIqpLLZl0z",

@@ -1,23 +1,11 @@
 {
-  "timestamp": "2026-07-24 13:23 UTC",
+  "timestamp": "2026-07-24 16:35 UTC",
   "regime": "adverse",
-  "pnl_7d": -51.9,
-  "total_open": 7,
-  "total_closed": 259,
-  "total_pnl": 491.8,
+  "pnl_7d": -62.3,
+  "total_open": 5,
+  "total_closed": 261,
+  "total_pnl": 481.4,
   "bots": [
-    {
-      "name": "breakout",
-      "display": "Breakout",
-      "grade": "B",
-      "score": 66.4,
-      "win_rate": 70.0,
-      "total_pnl": 150.5,
-      "open": 2,
-      "closed": 43,
-      "paused": false,
-      "consecutive_losses": 1
-    },
     {
       "name": "fade",
       "display": "Fade",
@@ -29,6 +17,18 @@
       "closed": 36,
       "paused": false,
       "consecutive_losses": 3
+    },
+    {
+      "name": "breakout",
+      "display": "Breakout",
+      "grade": "C",
+      "score": 55.9,
+      "win_rate": 60.0,
+      "total_pnl": 140.8,
+      "open": 1,
+      "closed": 44,
+      "paused": false,
+      "consecutive_losses": 2
     },
     {
       "name": "weather_temperature",
@@ -115,18 +115,6 @@
       "consecutive_losses": 2
     },
     {
-      "name": "momentum",
-      "display": "Momentum",
-      "grade": "F",
-      "score": 20.4,
-      "win_rate": 20.0,
-      "total_pnl": 174.1,
-      "open": 5,
-      "closed": 104,
-      "paused": false,
-      "consecutive_losses": 2
-    },
-    {
       "name": "contrarian",
       "display": "Contrarian",
       "grade": "F",
@@ -137,6 +125,18 @@
       "closed": 9,
       "paused": true,
       "consecutive_losses": 6
+    },
+    {
+      "name": "momentum",
+      "display": "Momentum",
+      "grade": "F",
+      "score": 20.2,
+      "win_rate": 20.0,
+      "total_pnl": 173.4,
+      "open": 4,
+      "closed": 105,
+      "paused": false,
+      "consecutive_losses": 3
     },
     {
       "name": "mean_reversion",

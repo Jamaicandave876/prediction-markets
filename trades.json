@@ -1645,11 +1645,11 @@
     "drift_score": 12.73,
     "url": "https://manifold.markets/Gen/will-a-consumer-ai-meaningfully-hac",
     "stake": 27.7,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 59.0,
+    "exit_time": "2026-07-24 16:35 UTC",
+    "exit_reason": "trailing_stop",
+    "pnl_pp": -0.7,
     "peak_pnl": 6.3999999999999915
   },
   {
