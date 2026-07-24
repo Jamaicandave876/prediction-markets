@@ -1696,5 +1696,20 @@
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null
+  },
+  {
+    "market_id": "26puOnSzdp",
+    "question": "Will a Mythos-tier-at-cybersecurity open-source model be released before end of 2027?",
+    "direction": "BUY YES",
+    "entry_prob": 64.1,
+    "entry_time": "2026-07-24 21:58 UTC",
+    "drift_score": 39.85,
+    "url": "https://manifold.markets/Interrobang/will-a-mythostieratcybersecurity-op",
+    "stake": 20.2,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]

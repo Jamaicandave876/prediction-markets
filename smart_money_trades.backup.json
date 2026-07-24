@@ -6125,5 +6125,43 @@
     "price_impact": 19.7,
     "conviction_score": 4.4,
     "signal_strength": 1.47
+  },
+  {
+    "market_id": "SAsZdISqLL",
+    "question": "Will San Francisco voters pass the \"reopen the Great Highway\" ballot measure in 2026",
+    "direction": "BUY NO",
+    "entry_prob": 20.8,
+    "entry_time": "2026-07-24 19:16 UTC",
+    "url": "https://manifold.markets/MingweiSamuel/will-san-francisco-voters-pass-the",
+    "stake": 83.2,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 2,
+    "smart_user_mana": 300,
+    "price_impact": 12.8,
+    "conviction_score": 3.08,
+    "signal_strength": 1.03
+  },
+  {
+    "market_id": "QQCNClElyS",
+    "question": "2 of the top 5 AI's are open source at eoy 2027? (ECI)",
+    "direction": "BUY NO",
+    "entry_prob": 26.0,
+    "entry_time": "2026-07-24 19:16 UTC",
+    "url": "https://manifold.markets/Gen/2-of-the-top-5-ais-are-open-source",
+    "stake": 44.6,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 2,
+    "smart_user_mana": 500,
+    "price_impact": 5.2,
+    "conviction_score": 2.07,
+    "signal_strength": 0.69
   }
 ]
