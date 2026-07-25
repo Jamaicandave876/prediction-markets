@@ -2726,7 +2726,8 @@
     "crowd_pct": 60.0,
     "price_move": -6.0,
     "divergence_score": 3.6,
-    "signal_strength": 0.72
+    "signal_strength": 0.72,
+    "peak_pnl": 2.0
   },
   {
     "market_id": "2R8yASSOLQ",
