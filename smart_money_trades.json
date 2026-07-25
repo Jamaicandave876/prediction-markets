@@ -6162,6 +6162,26 @@
     "smart_user_mana": 500,
     "price_impact": 5.2,
     "conviction_score": 2.07,
-    "signal_strength": 0.69
+    "signal_strength": 0.69,
+    "peak_pnl": 0.3999999999999986
+  },
+  {
+    "market_id": "csqpIqLA8t",
+    "question": "Will Bitcoin be higher 7 days from now?",
+    "direction": "BUY NO",
+    "entry_prob": 30.1,
+    "entry_time": "2026-07-25 05:37 UTC",
+    "url": "https://manifold.markets/OnlySlides/will-bitcoin-be-higher-7-days-from-PI6OUEgURQ",
+    "stake": 39.2,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 2,
+    "smart_user_mana": 273,
+    "price_impact": 10.6,
+    "conviction_score": 2.33,
+    "signal_strength": 0.78
   }
 ]
