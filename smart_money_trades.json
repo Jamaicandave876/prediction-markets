@@ -6253,15 +6253,34 @@
     "entry_time": "2026-07-26 05:54 UTC",
     "url": "https://manifold.markets/MingweiSamuel/will-san-francisco-voters-pass-the",
     "stake": 105.7,
+    "status": "closed",
+    "exit_prob": 13.8,
+    "exit_time": "2026-07-26 08:14 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 0.0,
+    "smart_user_bets": 2,
+    "smart_user_mana": 500,
+    "price_impact": 6.2,
+    "conviction_score": 2.48,
+    "signal_strength": 0.83
+  },
+  {
+    "market_id": "PA5P0ypOzp",
+    "question": "AOC will be first female POTUS?",
+    "direction": "BUY NO",
+    "entry_prob": 17.3,
+    "entry_time": "2026-07-26 08:14 UTC",
+    "url": "https://manifold.markets/Stralor/aoc-will-be-first-female-potus",
+    "stake": 106.9,
     "status": "open",
     "exit_prob": null,
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null,
     "smart_user_bets": 2,
-    "smart_user_mana": 500,
-    "price_impact": 6.2,
-    "conviction_score": 2.48,
-    "signal_strength": 0.83
+    "smart_user_mana": 4500,
+    "price_impact": 9.9,
+    "conviction_score": 35.53,
+    "signal_strength": 1.5
   }
 ]
