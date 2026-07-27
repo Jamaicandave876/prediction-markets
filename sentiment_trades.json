@@ -2805,5 +2805,43 @@
     "price_move": 4.7,
     "divergence_score": 3.31,
     "signal_strength": 0.66
+  },
+  {
+    "market_id": "8Z896gSZEy",
+    "question": "Will twitter / x.com be open source before September?",
+    "direction": "BUY YES",
+    "entry_prob": 19.0,
+    "entry_time": "2026-07-27 12:15 UTC",
+    "url": "https://manifold.markets/Bayesian/will-twitter-xcom-be-open-source-be",
+    "stake": 22.5,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "NO",
+    "crowd_pct": 90.0,
+    "price_move": 6.5,
+    "divergence_score": 5.88,
+    "signal_strength": 1.18
+  },
+  {
+    "market_id": "N6qp6AuQcP",
+    "question": "Is Argentina being favoured by FIFA?",
+    "direction": "BUY YES",
+    "entry_prob": 80.7,
+    "entry_time": "2026-07-27 12:15 UTC",
+    "url": "https://manifold.markets/ZaydK/is-argentina-being-favoured-by-fifa",
+    "stake": 52.8,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "NO",
+    "crowd_pct": 70.0,
+    "price_move": 4.7,
+    "divergence_score": 3.31,
+    "signal_strength": 0.66
   }
 ]
