@@ -2747,7 +2747,7 @@
     "price_move": -21.0,
     "divergence_score": 12.6,
     "signal_strength": 1.5,
-    "peak_pnl": 2.799999999999997
+    "peak_pnl": 6.0
   },
   {
     "market_id": "N6qp6AuQcP",
@@ -2814,11 +2814,11 @@
     "entry_time": "2026-07-27 12:15 UTC",
     "url": "https://manifold.markets/Bayesian/will-twitter-xcom-be-open-source-be",
     "stake": 22.5,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 7.6,
+    "exit_time": "2026-07-27 19:17 UTC",
+    "exit_reason": "stopped_out",
+    "pnl_pp": -11.4,
     "crowd_dir": "NO",
     "crowd_pct": 90.0,
     "price_move": 6.5,
