@@ -6379,5 +6379,24 @@
     "price_impact": 20.1,
     "conviction_score": 7.25,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "hSA0p9SEOz",
+    "question": "Will \"The Odyssey\" surpass \"Deadpool & Wolverine\" as the highest grossing R-rated movie of all time?",
+    "direction": "BUY YES",
+    "entry_prob": 79.5,
+    "entry_time": "2026-07-27 21:59 UTC",
+    "url": "https://manifold.markets/Ziddletwix/will-the-odyssey-surpass-deadpool-w",
+    "stake": 107.4,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 2,
+    "smart_user_mana": 950,
+    "price_impact": 29.2,
+    "conviction_score": 22.17,
+    "signal_strength": 1.5
   }
 ]
