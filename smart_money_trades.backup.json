@@ -6398,5 +6398,24 @@
     "price_impact": 29.2,
     "conviction_score": 22.17,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "cSs6yOzqL8",
+    "question": "Will Tesla have more autonomous vehicles providing ridehailing than  Waymo on Dec 31 2027?",
+    "direction": "BUY NO",
+    "entry_prob": 23.1,
+    "entry_time": "2026-07-28 16:29 UTC",
+    "url": "https://manifold.markets/HillaryClinton/will-tesla-have-more-autonomous-veh-qLuQQPP6Cy",
+    "stake": 98.4,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 3,
+    "smart_user_mana": 600,
+    "price_impact": 15.6,
+    "conviction_score": 11.25,
+    "signal_strength": 1.5
   }
 ]

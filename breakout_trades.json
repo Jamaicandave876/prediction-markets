@@ -851,14 +851,32 @@
     "entry_time": "2026-07-28 16:29 UTC",
     "url": "https://manifold.markets/cash/will-americans-overall-confidence-i-CZdIp8t6RQ",
     "stake": 81.3,
+    "status": "closed",
+    "exit_prob": 86.0,
+    "exit_time": "2026-07-28 19:15 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": -1.3,
+    "baseline_range": 8.0,
+    "breakout_move": 18.3,
+    "breakout_strength": 2.3,
+    "signal_strength": 0.7666202715205664
+  },
+  {
+    "market_id": "hSA0p9SEOz",
+    "question": "Will \"The Odyssey\" surpass \"Deadpool & Wolverine\" as the highest grossing R-rated movie of all time?",
+    "direction": "BUY YES",
+    "entry_prob": 70.8,
+    "entry_time": "2026-07-28 19:16 UTC",
+    "url": "https://manifold.markets/Ziddletwix/will-the-odyssey-surpass-deadpool-w",
+    "stake": 51.9,
     "status": "open",
     "exit_prob": null,
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null,
-    "baseline_range": 8.0,
-    "breakout_move": 18.3,
-    "breakout_strength": 2.3,
-    "signal_strength": 0.7666202715205664
+    "baseline_range": 4.7,
+    "breakout_move": 15.8,
+    "breakout_strength": 3.4,
+    "signal_strength": 1.124303936505654
   }
 ]

@@ -842,5 +842,23 @@
     "breakout_move": 10.2,
     "breakout_strength": 10.2,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "ccp9dIOCN2",
+    "question": "Will Americans' overall confidence in US institutions decline in 2027, according to Gallup?",
+    "direction": "BUY YES",
+    "entry_prob": 87.3,
+    "entry_time": "2026-07-28 16:29 UTC",
+    "url": "https://manifold.markets/cash/will-americans-overall-confidence-i-CZdIp8t6RQ",
+    "stake": 81.3,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "baseline_range": 8.0,
+    "breakout_move": 18.3,
+    "breakout_strength": 2.3,
+    "signal_strength": 0.7666202715205664
   }
 ]
