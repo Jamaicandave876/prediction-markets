@@ -1569,11 +1569,11 @@
     "drift_score": -28.87,
     "url": "https://manifold.markets/Jack1/will-the-gop-ticket-in-2028-be-jd-v",
     "stake": 45.4,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 22.7,
+    "exit_time": "2026-07-28 11:10 UTC",
+    "exit_reason": "stale",
+    "pnl_pp": 2.3,
     "peak_pnl": 2.3999999999999986
   },
   {
@@ -1630,11 +1630,11 @@
     "drift_score": -45.86,
     "url": "https://manifold.markets/Bayesian/will-an-llm-directly-read-ghost-fon",
     "stake": 45.4,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 31.8,
+    "exit_time": "2026-07-28 11:10 UTC",
+    "exit_reason": "stale",
+    "pnl_pp": -4.5
   },
   {
     "market_id": "OUlL2NLEZ0",
