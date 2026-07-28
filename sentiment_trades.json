@@ -2843,5 +2843,24 @@
     "price_move": 4.7,
     "divergence_score": 3.31,
     "signal_strength": 0.66
+  },
+  {
+    "market_id": "N6qp6AuQcP",
+    "question": "Is Argentina being favoured by FIFA?",
+    "direction": "BUY YES",
+    "entry_prob": 80.7,
+    "entry_time": "2026-07-28 08:22 UTC",
+    "url": "https://manifold.markets/ZaydK/is-argentina-being-favoured-by-fifa",
+    "stake": 71.1,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "NO",
+    "crowd_pct": 70.0,
+    "price_move": 4.7,
+    "divergence_score": 3.31,
+    "signal_strength": 0.66
   }
 ]
