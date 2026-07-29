@@ -1759,5 +1759,35 @@
     "exit_reason": "target_hit",
     "pnl_pp": 14.7,
     "peak_pnl": 14.700000000000003
+  },
+  {
+    "market_id": "Z85P8Pq8Oh",
+    "question": "Will the news identify a 2002 SARS level outbreak event as having been caused by an open weight AI model by EOY 2028?",
+    "direction": "BUY NO",
+    "entry_prob": 20.6,
+    "entry_time": "2026-07-29 05:44 UTC",
+    "drift_score": -7.98,
+    "url": "https://manifold.markets/JohnDavidPressman/will-the-news-identify-a-2002-sars",
+    "stake": 37.3,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
+  },
+  {
+    "market_id": "9sOlOcIqUn",
+    "question": "Minecraft RSG no-reset average time by AI below 25 min before EOY 2028?",
+    "direction": "BUY NO",
+    "entry_prob": 18.7,
+    "entry_time": "2026-07-29 05:44 UTC",
+    "drift_score": -9.86,
+    "url": "https://manifold.markets/Bayesian/minecraft-rsg-noreset-average-time",
+    "stake": 37.3,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]

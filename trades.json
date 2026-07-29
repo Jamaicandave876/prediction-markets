@@ -1769,11 +1769,12 @@
     "drift_score": -7.98,
     "url": "https://manifold.markets/JohnDavidPressman/will-the-news-identify-a-2002-sars",
     "stake": 37.3,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 5.7,
+    "exit_time": "2026-07-29 08:27 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 14.9,
+    "peak_pnl": 14.900000000000002
   },
   {
     "market_id": "9sOlOcIqUn",
@@ -1784,10 +1785,10 @@
     "drift_score": -9.86,
     "url": "https://manifold.markets/Bayesian/minecraft-rsg-noreset-average-time",
     "stake": 37.3,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 18.7,
+    "exit_time": "2026-07-29 08:27 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 0.0
   }
 ]
