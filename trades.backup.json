@@ -1753,11 +1753,11 @@
     "drift_score": 13.2,
     "url": "https://manifold.markets/Ziddletwix/will-the-odyssey-surpass-deadpool-w",
     "stake": 33.3,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
-    "peak_pnl": 5.1000000000000085
+    "status": "closed",
+    "exit_prob": 85.5,
+    "exit_time": "2026-07-29 01:58 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 14.7,
+    "peak_pnl": 14.700000000000003
   }
 ]
