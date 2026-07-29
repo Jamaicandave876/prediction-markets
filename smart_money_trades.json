@@ -6456,5 +6456,24 @@
     "price_impact": 14.9,
     "conviction_score": 9.21,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "gq5RCCO6PN",
+    "question": "T Coronae Borealis reaches magnitude 5.0 before November 11th, 2026?",
+    "direction": "BUY NO",
+    "entry_prob": 20.1,
+    "entry_time": "2026-07-29 11:17 UTC",
+    "url": "https://manifold.markets/EstMtz/t-coronae-borealis-reaches-magnitud-SpAug080pQ",
+    "stake": 106.9,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 2,
+    "smart_user_mana": 450,
+    "price_impact": 9.9,
+    "conviction_score": 3.55,
+    "signal_strength": 1.18
   }
 ]
