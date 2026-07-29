@@ -6475,5 +6475,43 @@
     "price_impact": 9.9,
     "conviction_score": 3.55,
     "signal_strength": 1.18
+  },
+  {
+    "market_id": "snz9hPU9I2",
+    "question": "Will Jason Arday's 'Great and Unfortunate Things' be available for purchase in the UK on or before August 27, 2026?",
+    "direction": "BUY YES",
+    "entry_prob": 56.2,
+    "entry_time": "2026-07-29 19:03 UTC",
+    "url": "https://manifold.markets/vitamind/will-jason-ardays-great-and-unfortu",
+    "stake": 43.2,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 2,
+    "smart_user_mana": 300,
+    "price_impact": 15.3,
+    "conviction_score": 3.66,
+    "signal_strength": 1.22
+  },
+  {
+    "market_id": "hSA0p9SEOz",
+    "question": "Will \"The Odyssey\" surpass \"Deadpool & Wolverine\" as the highest grossing R-rated movie of all time?",
+    "direction": "BUY YES",
+    "entry_prob": 76.4,
+    "entry_time": "2026-07-29 19:03 UTC",
+    "url": "https://manifold.markets/Ziddletwix/will-the-odyssey-surpass-deadpool-w",
+    "stake": 49.9,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 2,
+    "smart_user_mana": 500,
+    "price_impact": 5.7,
+    "conviction_score": 2.27,
+    "signal_strength": 0.76
   }
 ]
