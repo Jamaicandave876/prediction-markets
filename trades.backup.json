@@ -1790,5 +1790,20 @@
     "exit_time": "2026-07-29 08:27 UTC",
     "exit_reason": "target_hit",
     "pnl_pp": 0.0
+  },
+  {
+    "market_id": "s5sENEnERR",
+    "question": "Will Opus 5 Slay Spires better than Sol?",
+    "direction": "BUY YES",
+    "entry_prob": 56.8,
+    "entry_time": "2026-07-29 19:02 UTC",
+    "drift_score": 8.13,
+    "url": "https://manifold.markets/ZviMowshowitz/will-opus-5-slay-spires-better-than",
+    "stake": 37.8,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]

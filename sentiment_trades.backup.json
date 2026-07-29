@@ -2902,5 +2902,24 @@
     "divergence_score": 4.8,
     "signal_strength": 0.96,
     "peak_pnl": 13.900000000000006
+  },
+  {
+    "market_id": "tudEdsSqLR",
+    "question": "Will Infantino win the upcoming vote for selling the FIFA World Cup?",
+    "direction": "BUY NO",
+    "entry_prob": 68.5,
+    "entry_time": "2026-07-29 19:03 UTC",
+    "url": "https://manifold.markets/Primer/will-infantino-win-the-upcoming-vot",
+    "stake": 46.5,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "YES",
+    "crowd_pct": 66.7,
+    "price_move": -11.5,
+    "divergence_score": 7.64,
+    "signal_strength": 1.5
   }
 ]
