@@ -2921,5 +2921,24 @@
     "price_move": -11.5,
     "divergence_score": 7.64,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "PNd6IL0lzA",
+    "question": "Will communists arrest me for speech violations within the next year?",
+    "direction": "BUY YES",
+    "entry_prob": 35.9,
+    "entry_time": "2026-07-30 01:50 UTC",
+    "url": "https://manifold.markets/Bandors/will-communists-arrest-me-for-speec",
+    "stake": 49.8,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "NO",
+    "crowd_pct": 75.0,
+    "price_move": 17.0,
+    "divergence_score": 12.72,
+    "signal_strength": 1.5
   }
 ]
