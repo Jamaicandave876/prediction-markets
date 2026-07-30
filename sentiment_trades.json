@@ -2920,7 +2920,8 @@
     "crowd_pct": 66.7,
     "price_move": -11.5,
     "divergence_score": 7.64,
-    "signal_strength": 1.5
+    "signal_strength": 1.5,
+    "peak_pnl": 4.0
   },
   {
     "market_id": "PNd6IL0lzA",
