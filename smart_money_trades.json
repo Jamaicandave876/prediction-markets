@@ -6592,5 +6592,24 @@
     "price_impact": 5.9,
     "conviction_score": 5.67,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "RguNRzu86Q",
+    "question": "Will Abdul El Sayed win the Michigan Democratic primary for senate by 10.00000% or more?",
+    "direction": "BUY YES",
+    "entry_prob": 42.6,
+    "entry_time": "2026-07-30 16:22 UTC",
+    "url": "https://manifold.markets/Jack1/will-abdul-el-sayed-win-the-michiga",
+    "stake": 55.0,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 6,
+    "smart_user_mana": 200,
+    "price_impact": 11.8,
+    "conviction_score": 5.64,
+    "signal_strength": 1.5
   }
 ]
