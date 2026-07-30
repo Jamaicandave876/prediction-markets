@@ -2930,15 +2930,34 @@
     "entry_time": "2026-07-30 01:50 UTC",
     "url": "https://manifold.markets/Bandors/will-communists-arrest-me-for-speec",
     "stake": 49.8,
+    "status": "closed",
+    "exit_prob": 23.6,
+    "exit_time": "2026-07-30 05:33 UTC",
+    "exit_reason": "stopped_out",
+    "pnl_pp": -12.3,
+    "crowd_dir": "NO",
+    "crowd_pct": 75.0,
+    "price_move": 17.0,
+    "divergence_score": 12.72,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "hSA0p9SEOz",
+    "question": "Will \"The Odyssey\" surpass \"Deadpool & Wolverine\" as the highest grossing R-rated movie of all time?",
+    "direction": "BUY YES",
+    "entry_prob": 78.9,
+    "entry_time": "2026-07-30 05:33 UTC",
+    "url": "https://manifold.markets/Ziddletwix/will-the-odyssey-surpass-deadpool-w",
+    "stake": 107.2,
     "status": "open",
     "exit_prob": null,
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null,
     "crowd_dir": "NO",
-    "crowd_pct": 75.0,
-    "price_move": 17.0,
-    "divergence_score": 12.72,
-    "signal_strength": 1.5
+    "crowd_pct": 60.0,
+    "price_move": 9.9,
+    "divergence_score": 5.96,
+    "signal_strength": 1.19
   }
 ]

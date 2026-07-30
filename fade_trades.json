@@ -646,5 +646,23 @@
     "exit_time": "2026-07-22 01:59 UTC",
     "exit_reason": "stopped_out",
     "pnl_pp": -28.5
+  },
+  {
+    "market_id": "RA2pOqpdgg",
+    "question": "Will a frontier model exfiltrate its own weights by EoY 2028?",
+    "direction": "BUY YES",
+    "entry_prob": 26.0,
+    "pre_spike_prob": 41.0,
+    "spike_size": 15.0,
+    "spike_ratio": 13.5,
+    "spike_dir": -1,
+    "entry_time": "2026-07-30 08:11 UTC",
+    "url": "https://manifold.markets/EvanDaniel/will-a-frontier-model-exfiltrate-it",
+    "stake": 30.4,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]
