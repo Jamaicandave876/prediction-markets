@@ -659,11 +659,11 @@
     "entry_time": "2026-07-30 08:11 UTC",
     "url": "https://manifold.markets/EvanDaniel/will-a-frontier-model-exfiltrate-it",
     "stake": 30.4,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 16.2,
+    "exit_time": "2026-07-31 08:53 UTC",
+    "exit_reason": "stopped_out",
+    "pnl_pp": -9.8
   },
   {
     "market_id": "tudEdsSqLR",
