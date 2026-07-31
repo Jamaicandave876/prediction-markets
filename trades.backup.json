@@ -1806,5 +1806,35 @@
     "exit_reason": "reversal",
     "pnl_pp": -32.4,
     "peak_pnl": 4.100000000000001
+  },
+  {
+    "market_id": "p82s6h2P0I",
+    "question": "Will Bitcoin be higher 7 days from now?",
+    "direction": "BUY YES",
+    "entry_prob": 58.5,
+    "entry_time": "2026-07-31 02:07 UTC",
+    "drift_score": 13.69,
+    "url": "https://manifold.markets/OnlySlides/will-bitcoin-be-higher-7-days-from-8dO0I5Ruus",
+    "stake": 33.6,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
+  },
+  {
+    "market_id": "gq5RCCO6PN",
+    "question": "T Coronae Borealis reaches magnitude 5.0 before November 11th, 2026?",
+    "direction": "BUY NO",
+    "entry_prob": 19.5,
+    "entry_time": "2026-07-31 02:07 UTC",
+    "drift_score": -6.57,
+    "url": "https://manifold.markets/EstMtz/t-coronae-borealis-reaches-magnitud-SpAug080pQ",
+    "stake": 33.6,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]
