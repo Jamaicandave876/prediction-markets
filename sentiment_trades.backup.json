@@ -3017,5 +3017,24 @@
     "price_move": 9.0,
     "divergence_score": 7.23,
     "signal_strength": 1.45
+  },
+  {
+    "market_id": "LlCsAAZNs0",
+    "question": "Spider-Man: Brand New Day grosses over $2B?",
+    "direction": "BUY YES",
+    "entry_prob": 58.6,
+    "entry_time": "2026-08-01 05:49 UTC",
+    "url": "https://manifold.markets/delfinasu/spiderman-brand-new-day-grosses-ove-EIZQ9pzpcq",
+    "stake": 25.0,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "NO",
+    "crowd_pct": 75.0,
+    "price_move": 4.6,
+    "divergence_score": 3.45,
+    "signal_strength": 0.69
   }
 ]
