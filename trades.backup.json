@@ -1861,11 +1861,11 @@
     "drift_score": -37.82,
     "url": "https://manifold.markets/EvanDaniel/will-a-frontier-model-exfiltrate-it",
     "stake": 20.3,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 16.2,
+    "exit_time": "2026-08-01 02:08 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 0.0
   },
   {
     "market_id": "RLERSpg8AA",
@@ -1876,10 +1876,11 @@
     "drift_score": 5.13,
     "url": "https://manifold.markets/KeenanPepper/will-anthropic-somehow-patch-the-op",
     "stake": 20.3,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 80.8,
+    "exit_time": "2026-08-01 02:08 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 7.2,
+    "peak_pnl": 7.200000000000003
   }
 ]
