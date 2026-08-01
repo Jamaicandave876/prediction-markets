@@ -18,13 +18,13 @@
   "pause_start": {},
   "bot_scores": {
     "momentum": {
-      "score": 34.6,
+      "score": 35.8,
       "win_rate": 30.0,
-      "avg_pnl": -1.7,
-      "total_pnl": 157.3,
-      "closed": 114,
-      "open": 7,
-      "grade": "F"
+      "avg_pnl": -1.1,
+      "total_pnl": 164.5,
+      "closed": 116,
+      "open": 5,
+      "grade": "D"
     },
     "fade": {
       "score": 67.9,
@@ -145,7 +145,7 @@
     }
   },
   "consecutive_losses": {
-    "momentum": 3,
+    "momentum": 1,
     "fade": 1,
     "mean_reversion": 5,
     "volume_surge": 2,

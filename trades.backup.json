@@ -1836,5 +1836,50 @@
     "exit_time": "2026-07-31 05:58 UTC",
     "exit_reason": "target_hit",
     "pnl_pp": 0.0
+  },
+  {
+    "market_id": "CZzI5N09N5",
+    "question": "Will a European team make it to the 2030 FIFA World Cup Final?",
+    "direction": "BUY YES",
+    "entry_prob": 76.7,
+    "entry_time": "2026-07-31 21:59 UTC",
+    "drift_score": 14.92,
+    "url": "https://manifold.markets/UniversalFC/will-a-european-team-make-it-to-the",
+    "stake": 20.3,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
+  },
+  {
+    "market_id": "RA2pOqpdgg",
+    "question": "Will a frontier model exfiltrate its own weights by EoY 2028?",
+    "direction": "BUY NO",
+    "entry_prob": 16.2,
+    "entry_time": "2026-07-31 21:59 UTC",
+    "drift_score": -37.82,
+    "url": "https://manifold.markets/EvanDaniel/will-a-frontier-model-exfiltrate-it",
+    "stake": 20.3,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
+  },
+  {
+    "market_id": "RLERSpg8AA",
+    "question": "Will Anthropic somehow patch the Opus 5 base-model-like behavior from \"---\" prompts (or pull the model) by September 1?",
+    "direction": "BUY YES",
+    "entry_prob": 73.6,
+    "entry_time": "2026-07-31 21:59 UTC",
+    "drift_score": 5.13,
+    "url": "https://manifold.markets/KeenanPepper/will-anthropic-somehow-patch-the-op",
+    "stake": 20.3,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]
