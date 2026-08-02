@@ -6940,5 +6940,24 @@
     "conviction_score": 5.84,
     "signal_strength": 1.5,
     "peak_pnl": 0.10000000000000142
+  },
+  {
+    "market_id": "sU5hlS58hd",
+    "question": "Will SPX (SP500) be > 10,000 on 2030-01-01 ?",
+    "direction": "BUY YES",
+    "entry_prob": 78.5,
+    "entry_time": "2026-08-02 10:28 UTC",
+    "url": "https://manifold.markets/nikthink/will-spx-sp500-be-10000-on-20300101",
+    "stake": 106.3,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 2,
+    "smart_user_mana": 598,
+    "price_impact": 23.8,
+    "conviction_score": 11.4,
+    "signal_strength": 1.5
   }
 ]
