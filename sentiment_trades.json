@@ -3076,5 +3076,24 @@
     "price_move": 4.0,
     "divergence_score": 3.43,
     "signal_strength": 0.69
+  },
+  {
+    "market_id": "Zu8IRlZp8A",
+    "question": "Will Situational Awareness be bigger than Citadel by EOY 2029?",
+    "direction": "BUY YES",
+    "entry_prob": 23.2,
+    "entry_time": "2026-08-02 08:10 UTC",
+    "url": "https://manifold.markets/Bayesian/will-situational-awareness-be-bigge-Z0gIhE2cZU",
+    "stake": 26.5,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "NO",
+    "crowd_pct": 75.0,
+    "price_move": 7.2,
+    "divergence_score": 5.42,
+    "signal_strength": 1.08
   }
 ]
