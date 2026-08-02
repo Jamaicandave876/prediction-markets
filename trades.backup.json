@@ -1883,5 +1883,35 @@
     "exit_reason": "target_hit",
     "pnl_pp": 7.2,
     "peak_pnl": 7.200000000000003
+  },
+  {
+    "market_id": "Nps9qsyI0h",
+    "question": "Will Ukrainian drones hit Kaliningrad before the war is over?",
+    "direction": "BUY YES",
+    "entry_prob": 53.7,
+    "entry_time": "2026-08-02 18:59 UTC",
+    "drift_score": 11.55,
+    "url": "https://manifold.markets/GazDownright/will-ukrainian-drones-hit-kaliningr",
+    "stake": 37.2,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
+  },
+  {
+    "market_id": "Q0yg9ly9y6",
+    "question": "Will Astra solve Elliot Glazer's prototype FrontierMath problem?",
+    "direction": "BUY NO",
+    "entry_prob": 22.8,
+    "entry_time": "2026-08-02 18:59 UTC",
+    "drift_score": -33.3,
+    "url": "https://manifold.markets/Bayesian/will-astra-solve-elliot-glazers-pro",
+    "stake": 37.2,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]
