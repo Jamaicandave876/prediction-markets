@@ -1846,11 +1846,12 @@
     "drift_score": 14.92,
     "url": "https://manifold.markets/UniversalFC/will-a-european-team-make-it-to-the",
     "stake": 20.3,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 83.0,
+    "exit_time": "2026-08-02 05:49 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 6.3,
+    "peak_pnl": 6.299999999999997
   },
   {
     "market_id": "RA2pOqpdgg",
