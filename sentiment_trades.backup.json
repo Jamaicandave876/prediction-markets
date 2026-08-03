@@ -3154,5 +3154,24 @@
     "price_move": 10.5,
     "divergence_score": 6.31,
     "signal_strength": 1.26
+  },
+  {
+    "market_id": "hh62cpzClz",
+    "question": "Will something happen this week in AI (by 5pm EST August 7)?",
+    "direction": "BUY NO",
+    "entry_prob": 38.6,
+    "entry_time": "2026-08-03 06:14 UTC",
+    "url": "https://manifold.markets/ZviMowshowitz/will-something-happen-this-week-in",
+    "stake": 65.3,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "YES",
+    "crowd_pct": 65.0,
+    "price_move": -11.4,
+    "divergence_score": 7.43,
+    "signal_strength": 1.49
   }
 ]
