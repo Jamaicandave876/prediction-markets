@@ -6978,7 +6978,7 @@
     "price_impact": 16.1,
     "conviction_score": 14.2,
     "signal_strength": 1.5,
-    "peak_pnl": 0.5
+    "peak_pnl": 1.9000000000000021
   },
   {
     "market_id": "Q0yg9ly9y6",
@@ -7075,6 +7075,26 @@
     "smart_user_mana": 400,
     "price_impact": 3.1,
     "conviction_score": 3.43,
-    "signal_strength": 1.14
+    "signal_strength": 1.14,
+    "peak_pnl": 6.0
+  },
+  {
+    "market_id": "dERC8cuINn",
+    "question": "Is OpenAI's upcoming \"Astra\" model going to be called GPT-6?",
+    "direction": "BUY YES",
+    "entry_prob": 66.9,
+    "entry_time": "2026-08-04 01:54 UTC",
+    "url": "https://manifold.markets/Bayesian/is-openais-upcoming-astra-model-goi",
+    "stake": 67.1,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 3,
+    "smart_user_mana": 600,
+    "price_impact": 27.5,
+    "conviction_score": 19.78,
+    "signal_strength": 1.5
   }
 ]

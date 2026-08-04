@@ -7066,11 +7066,11 @@
     "entry_time": "2026-08-03 22:02 UTC",
     "url": "https://manifold.markets/Zeolite/spiderman-brand-new-day-breaks-the-LCyIqUycEP",
     "stake": 35.3,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 59.4,
+    "exit_time": "2026-08-04 05:42 UTC",
+    "exit_reason": "stopped_out",
+    "pnl_pp": -11.5,
     "smart_user_bets": 7,
     "smart_user_mana": 400,
     "price_impact": 3.1,
@@ -7095,6 +7095,7 @@
     "smart_user_mana": 600,
     "price_impact": 27.5,
     "conviction_score": 19.78,
-    "signal_strength": 1.5
+    "signal_strength": 1.5,
+    "peak_pnl": 1.5
   }
 ]
