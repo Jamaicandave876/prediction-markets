@@ -7097,5 +7097,43 @@
     "conviction_score": 19.78,
     "signal_strength": 1.5,
     "peak_pnl": 1.5
+  },
+  {
+    "market_id": "6pqRtydqtP",
+    "question": "\"Spider-Man: Brand New Day\" breaks the record for the biggest domestic lifetime gross of all time?",
+    "direction": "BUY NO",
+    "entry_prob": 48.1,
+    "entry_time": "2026-08-04 19:22 UTC",
+    "url": "https://manifold.markets/Zeolite/spiderman-brand-new-day-breaks-the-LCyIqUycEP",
+    "stake": 63.0,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 13,
+    "smart_user_mana": 675,
+    "price_impact": 18.7,
+    "conviction_score": 65.5,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "l6Spn8Epcc",
+    "question": "Gianni Infantino announces he is out as FIFA President before end of 2026?",
+    "direction": "BUY NO",
+    "entry_prob": 29.0,
+    "entry_time": "2026-08-04 19:22 UTC",
+    "url": "https://manifold.markets/Jack1/gianni-infantino-announces-he-is-ou",
+    "stake": 55.8,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 2,
+    "smart_user_mana": 251,
+    "price_impact": 11.9,
+    "conviction_score": 2.39,
+    "signal_strength": 0.8
   }
 ]
