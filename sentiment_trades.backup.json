@@ -3173,5 +3173,24 @@
     "price_move": -11.4,
     "divergence_score": 7.43,
     "signal_strength": 1.49
+  },
+  {
+    "market_id": "l6Spn8Epcc",
+    "question": "Gianni Infantino announces he is out as FIFA President before end of 2026?",
+    "direction": "BUY YES",
+    "entry_prob": 55.3,
+    "entry_time": "2026-08-04 13:54 UTC",
+    "url": "https://manifold.markets/Jack1/gianni-infantino-announces-he-is-ou",
+    "stake": 49.6,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "NO",
+    "crowd_pct": 75.0,
+    "price_move": 14.3,
+    "divergence_score": 10.75,
+    "signal_strength": 1.5
   }
 ]

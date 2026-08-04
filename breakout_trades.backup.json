@@ -916,5 +916,23 @@
     "breakout_strength": 2.8,
     "signal_strength": 0.9368931930517017,
     "peak_pnl": 28.5
+  },
+  {
+    "market_id": "RIPSIquuSA",
+    "question": "Will Mitch McConnell make a verifiable, live public appearance before 2027?",
+    "direction": "BUY YES",
+    "entry_prob": 75.0,
+    "entry_time": "2026-08-04 13:54 UTC",
+    "url": "https://manifold.markets/yeeta/will-mitch-mcconnell-make-a-verifia-6lZQULNEc2",
+    "stake": 102.9,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "baseline_range": 3.7,
+    "breakout_move": 14.9,
+    "breakout_strength": 4.0,
+    "signal_strength": 1.3317731817072673
   }
 ]
