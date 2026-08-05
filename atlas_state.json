@@ -32,7 +32,7 @@
       "avg_pnl": 9.0,
       "total_pnl": 358.2,
       "closed": 38,
-      "open": 2,
+      "open": 3,
       "grade": "B"
     },
     "mean_reversion": {
@@ -99,13 +99,13 @@
       "grade": "F"
     },
     "breakout": {
-      "score": 59.9,
-      "win_rate": 50.0,
-      "avg_pnl": 4.9,
-      "total_pnl": 181.1,
-      "closed": 50,
-      "open": 2,
-      "grade": "C"
+      "score": 44.6,
+      "win_rate": 40.0,
+      "avg_pnl": 0.3,
+      "total_pnl": 158.5,
+      "closed": 51,
+      "open": 1,
+      "grade": "D"
     },
     "weather_temperature": {
       "score": 50,
@@ -154,12 +154,12 @@
     "close_gravity": 1,
     "fresh_sniper": 1,
     "stability": 2,
-    "breakout": 0,
+    "breakout": 1,
     "weather_temperature": 0,
     "weather_precipitation": 0,
     "weather_storm": 0,
     "weather_divergence": 0
   },
   "regime": "adverse",
-  "last_report": "2026-08-04 22:07 UTC"
+  "last_report": "2026-08-05 22:08 UTC"
 }
