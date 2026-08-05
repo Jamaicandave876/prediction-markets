@@ -953,5 +953,23 @@
     "breakout_move": -9.8,
     "breakout_strength": 2.8,
     "signal_strength": 0.9441304643337335
+  },
+  {
+    "market_id": "6pqRtydqtP",
+    "question": "\"Spider-Man: Brand New Day\" breaks the record for the biggest domestic lifetime gross of all time?",
+    "direction": "BUY NO",
+    "entry_prob": 40.2,
+    "entry_time": "2026-08-05 13:51 UTC",
+    "url": "https://manifold.markets/Zeolite/spiderman-brand-new-day-breaks-the-LCyIqUycEP",
+    "stake": 43.6,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "baseline_range": 4.7,
+    "breakout_move": -10.8,
+    "breakout_strength": 2.3,
+    "signal_strength": 0.7706405500831552
   }
 ]
