@@ -700,5 +700,23 @@
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null
+  },
+  {
+    "market_id": "qPUzyOICc2",
+    "question": "Will I be wowed by whatever SSI releases in August?",
+    "direction": "BUY YES",
+    "entry_prob": 10.7,
+    "pre_spike_prob": 33.0,
+    "spike_size": 22.3,
+    "spike_ratio": 13.2,
+    "spike_dir": -1,
+    "entry_time": "2026-08-05 05:39 UTC",
+    "url": "https://manifold.markets/JohnDavidPressman/will-i-be-wowed-by-whatever-ssi-rel",
+    "stake": 41.1,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]
