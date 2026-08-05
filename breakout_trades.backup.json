@@ -935,5 +935,23 @@
     "breakout_strength": 4.0,
     "signal_strength": 1.3317731817072673,
     "peak_pnl": 12.5
+  },
+  {
+    "market_id": "hh62cpzClz",
+    "question": "Will something happen this week in AI (by 5pm EST August 7)?",
+    "direction": "BUY NO",
+    "entry_prob": 73.6,
+    "entry_time": "2026-08-05 11:14 UTC",
+    "url": "https://manifold.markets/ZviMowshowitz/will-something-happen-this-week-in",
+    "stake": 29.1,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "baseline_range": 3.5,
+    "breakout_move": -9.8,
+    "breakout_strength": 2.8,
+    "signal_strength": 0.9441304643337335
   }
 ]
