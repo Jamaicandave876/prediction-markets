@@ -925,14 +925,15 @@
     "entry_time": "2026-08-04 13:54 UTC",
     "url": "https://manifold.markets/yeeta/will-mitch-mcconnell-make-a-verifia-6lZQULNEc2",
     "stake": 102.9,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 87.5,
+    "exit_time": "2026-08-04 22:06 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 12.5,
     "baseline_range": 3.7,
     "breakout_move": 14.9,
     "breakout_strength": 4.0,
-    "signal_strength": 1.3317731817072673
+    "signal_strength": 1.3317731817072673,
+    "peak_pnl": 12.5
   }
 ]

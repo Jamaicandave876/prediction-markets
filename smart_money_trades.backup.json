@@ -7115,7 +7115,8 @@
     "smart_user_mana": 675,
     "price_impact": 18.7,
     "conviction_score": 65.5,
-    "signal_strength": 1.5
+    "signal_strength": 1.5,
+    "peak_pnl": 3.1000000000000014
   },
   {
     "market_id": "l6Spn8Epcc",
