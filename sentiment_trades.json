@@ -3210,6 +3210,26 @@
     "crowd_pct": 75.0,
     "price_move": -6.3,
     "divergence_score": 4.7,
-    "signal_strength": 0.94
+    "signal_strength": 0.94,
+    "peak_pnl": 13.800000000000004
+  },
+  {
+    "market_id": "UhCl6Auc6I",
+    "question": "Will \"Spider-Man: Brand New Day\" earns more than $170M in domestic gross earnings during their second weekend?",
+    "direction": "BUY YES",
+    "entry_prob": 56.3,
+    "entry_time": "2026-08-06 13:49 UTC",
+    "url": "https://manifold.markets/delfinasu/will-spiderman-brand-new-day-earns",
+    "stake": 35.0,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "NO",
+    "crowd_pct": 65.0,
+    "price_move": 5.6,
+    "divergence_score": 3.64,
+    "signal_strength": 0.73
   }
 ]
