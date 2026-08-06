@@ -29,10 +29,10 @@
     "fade": {
       "score": 76.0,
       "win_rate": 60.0,
-      "avg_pnl": 16.5,
-      "total_pnl": 425.3,
-      "closed": 40,
-      "open": 1,
+      "avg_pnl": 16.9,
+      "total_pnl": 448.8,
+      "closed": 41,
+      "open": 0,
       "grade": "B"
     },
     "mean_reversion": {
@@ -99,13 +99,13 @@
       "grade": "F"
     },
     "breakout": {
-      "score": 44.6,
-      "win_rate": 40.0,
-      "avg_pnl": 0.3,
-      "total_pnl": 158.5,
-      "closed": 51,
-      "open": 1,
-      "grade": "D"
+      "score": 32.8,
+      "win_rate": 30.0,
+      "avg_pnl": -2.6,
+      "total_pnl": 135.5,
+      "closed": 52,
+      "open": 0,
+      "grade": "F"
     },
     "weather_temperature": {
       "score": 50,
@@ -154,12 +154,12 @@
     "close_gravity": 1,
     "fresh_sniper": 1,
     "stability": 2,
-    "breakout": 1,
+    "breakout": 2,
     "weather_temperature": 0,
     "weather_precipitation": 0,
     "weather_storm": 0,
     "weather_divergence": 0
   },
   "regime": "adverse",
-  "last_report": "2026-08-05 22:08 UTC"
+  "last_report": "2026-08-06 23:53 UTC"
 }
