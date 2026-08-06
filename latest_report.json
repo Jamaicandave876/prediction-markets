@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-08-06 08:23 UTC",
+  "timestamp": "2026-08-06 11:15 UTC",
   "regime": "adverse",
-  "pnl_7d": 55.4,
-  "total_open": 8,
-  "total_closed": 284,
-  "total_pnl": 577.4,
+  "pnl_7d": 70.9,
+  "total_open": 7,
+  "total_closed": 285,
+  "total_pnl": 592.9,
   "bots": [
     {
       "name": "fade",
@@ -12,9 +12,9 @@
       "grade": "B",
       "score": 76.0,
       "win_rate": 60.0,
-      "total_pnl": 409.8,
-      "open": 2,
-      "closed": 39,
+      "total_pnl": 425.3,
+      "open": 1,
+      "closed": 40,
       "paused": false,
       "consecutive_losses": 0
     },
