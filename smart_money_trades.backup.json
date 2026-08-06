@@ -7157,5 +7157,43 @@
     "conviction_score": 4.68,
     "signal_strength": 1.5,
     "peak_pnl": 1.1000000000000085
+  },
+  {
+    "market_id": "OP9E0Oq6Zl",
+    "question": "Will SpaceX (SPCX) stock drop below $75 by the end of 2026?",
+    "direction": "BUY NO",
+    "entry_prob": 53.6,
+    "entry_time": "2026-08-05 22:08 UTC",
+    "url": "https://manifold.markets/sama/will-spacex-spcx-stock-drop-below-7",
+    "stake": 57.1,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 11,
+    "smart_user_mana": 950,
+    "price_impact": 19.1,
+    "conviction_score": 80.0,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "PLNNpc5pEZ",
+    "question": "Will an LLM started by AI safety researchers successfully create and launch an Internet worm or virus by Sept 1, 2027?",
+    "direction": "BUY NO",
+    "entry_prob": 36.7,
+    "entry_time": "2026-08-05 22:08 UTC",
+    "url": "https://manifold.markets/CraigDemel/will-an-llm-started-by-ai-safety-re",
+    "stake": 83.4,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 2,
+    "smart_user_mana": 500,
+    "price_impact": 19.2,
+    "conviction_score": 7.69,
+    "signal_strength": 1.5
   }
 ]

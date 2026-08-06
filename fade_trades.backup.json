@@ -718,5 +718,23 @@
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null
+  },
+  {
+    "market_id": "yZ2SuLnOPp",
+    "question": "Will Bitcoin be higher by close on Friday?",
+    "direction": "BUY YES",
+    "entry_prob": 1.0,
+    "pre_spike_prob": 82.6,
+    "spike_size": 81.6,
+    "spike_ratio": 16.2,
+    "spike_dir": -1,
+    "entry_time": "2026-08-05 22:06 UTC",
+    "url": "https://manifold.markets/bigyahu/will-bitcoin-be-higher-by-close-on",
+    "stake": 41.1,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]
