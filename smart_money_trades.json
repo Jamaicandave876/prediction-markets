@@ -7195,6 +7195,26 @@
     "smart_user_mana": 500,
     "price_impact": 19.2,
     "conviction_score": 7.69,
+    "signal_strength": 1.5,
+    "peak_pnl": 0.20000000000000284
+  },
+  {
+    "market_id": "zLLqS9sg2d",
+    "question": "Will something happen in AI every single week between now and Dec 31st?",
+    "direction": "BUY NO",
+    "entry_prob": 12.9,
+    "entry_time": "2026-08-06 05:41 UTC",
+    "url": "https://manifold.markets/nsokolsky/will-something-happen-in-ai-every-s",
+    "stake": 105.3,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 2,
+    "smart_user_mana": 300,
+    "price_impact": 37.0,
+    "conviction_score": 8.89,
     "signal_strength": 1.5
   }
 ]

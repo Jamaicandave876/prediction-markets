@@ -731,10 +731,10 @@
     "entry_time": "2026-08-05 22:06 UTC",
     "url": "https://manifold.markets/bigyahu/will-bitcoin-be-higher-by-close-on",
     "stake": 41.1,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 52.6,
+    "exit_time": "2026-08-06 01:55 UTC",
+    "exit_reason": "normalized",
+    "pnl_pp": 51.6
   }
 ]
