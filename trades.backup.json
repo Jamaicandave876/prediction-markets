@@ -1929,7 +1929,8 @@
     "exit_prob": null,
     "exit_time": null,
     "exit_reason": null,
-    "pnl_pp": null
+    "pnl_pp": null,
+    "peak_pnl": 0.7000000000000028
   },
   {
     "market_id": "Rg5nN52Ud8",

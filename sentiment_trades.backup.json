@@ -3271,5 +3271,43 @@
     "price_move": 11.0,
     "divergence_score": 7.14,
     "signal_strength": 1.43
+  },
+  {
+    "market_id": "UEEz9h0gyR",
+    "question": "Will the WTI Crude Oil Spot Price be above $78.50 on August 11, 2026?",
+    "direction": "BUY YES",
+    "entry_prob": 61.9,
+    "entry_time": "2026-08-07 15:50 UTC",
+    "url": "https://manifold.markets/ShaneBo/will-the-wti-crude-oil-spot-price-b-Cun2dLL5UZ",
+    "stake": 54.5,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "NO",
+    "crowd_pct": 70.0,
+    "price_move": 9.8,
+    "divergence_score": 6.88,
+    "signal_strength": 1.38
+  },
+  {
+    "market_id": "Nps9qsyI0h",
+    "question": "Will Ukrainian drones hit Kaliningrad before the war is over?",
+    "direction": "BUY YES",
+    "entry_prob": 57.0,
+    "entry_time": "2026-08-07 15:50 UTC",
+    "url": "https://manifold.markets/GazDownright/will-ukrainian-drones-hit-kaliningr",
+    "stake": 32.6,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "NO",
+    "crowd_pct": 60.0,
+    "price_move": 7.7,
+    "divergence_score": 4.63,
+    "signal_strength": 0.93
   }
 ]

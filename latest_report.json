@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-08-07 15:51 UTC",
+  "timestamp": "2026-08-07 18:44 UTC",
   "regime": "adverse",
-  "pnl_7d": 88.8,
-  "total_open": 8,
-  "total_closed": 288,
-  "total_pnl": 593.6,
+  "pnl_7d": 108.5,
+  "total_open": 7,
+  "total_closed": 290,
+  "total_pnl": 613.3,
   "bots": [
     {
       "name": "fade",
@@ -70,11 +70,11 @@
       "name": "momentum",
       "display": "Momentum",
       "grade": "D",
-      "score": 41.1,
-      "win_rate": 40.0,
-      "total_pnl": 171.0,
-      "open": 8,
-      "closed": 119,
+      "score": 48.0,
+      "win_rate": 50.0,
+      "total_pnl": 190.7,
+      "open": 6,
+      "closed": 121,
       "paused": false,
       "consecutive_losses": 0
     },
@@ -97,7 +97,7 @@
       "score": 32.8,
       "win_rate": 30.0,
       "total_pnl": 135.5,
-      "open": 0,
+      "open": 1,
       "closed": 52,
       "paused": false,
       "consecutive_losses": 2
