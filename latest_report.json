@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-08-07 18:44 UTC",
+  "timestamp": "2026-08-07 21:33 UTC",
   "regime": "adverse",
-  "pnl_7d": 108.5,
-  "total_open": 7,
-  "total_closed": 290,
-  "total_pnl": 613.3,
+  "pnl_7d": 125.0,
+  "total_open": 6,
+  "total_closed": 291,
+  "total_pnl": 618.9,
   "bots": [
     {
       "name": "fade",
@@ -79,6 +79,18 @@
       "consecutive_losses": 0
     },
     {
+      "name": "breakout",
+      "display": "Breakout",
+      "grade": "D",
+      "score": 42.1,
+      "win_rate": 40.0,
+      "total_pnl": 141.1,
+      "open": 0,
+      "closed": 53,
+      "paused": false,
+      "consecutive_losses": 0
+    },
+    {
       "name": "whale",
       "display": "Whale Tracker",
       "grade": "D",
@@ -89,18 +101,6 @@
       "closed": 13,
       "paused": false,
       "consecutive_losses": 0
-    },
-    {
-      "name": "breakout",
-      "display": "Breakout",
-      "grade": "F",
-      "score": 32.8,
-      "win_rate": 30.0,
-      "total_pnl": 135.5,
-      "open": 1,
-      "closed": 52,
-      "paused": false,
-      "consecutive_losses": 2
     },
     {
       "name": "fresh_sniper",

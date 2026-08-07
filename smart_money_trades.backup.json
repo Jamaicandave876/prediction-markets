@@ -7301,17 +7301,17 @@
     "entry_time": "2026-08-07 07:04 UTC",
     "url": "https://manifold.markets/WillJevons/will-scotus-strike-down-alaskas-950",
     "stake": 67.5,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 86.6,
+    "exit_time": "2026-08-07 18:44 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 20.3,
     "smart_user_bets": 2,
     "smart_user_mana": 450,
     "price_impact": 18.7,
     "conviction_score": 6.73,
     "signal_strength": 1.5,
-    "peak_pnl": 4.0
+    "peak_pnl": 20.299999999999997
   },
   {
     "market_id": "6pqRtydqtP",
@@ -7350,6 +7350,25 @@
     "smart_user_mana": 1500,
     "price_impact": 28.2,
     "conviction_score": 33.79,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "UhCl6Auc6I",
+    "question": "Will \"Spider-Man: Brand New Day\" earns more than $170M in domestic gross earnings during their second weekend?",
+    "direction": "BUY NO",
+    "entry_prob": 23.0,
+    "entry_time": "2026-08-07 18:44 UTC",
+    "url": "https://manifold.markets/delfinasu/will-spiderman-brand-new-day-earns",
+    "stake": 105.5,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 2,
+    "smart_user_mana": 1000,
+    "price_impact": 35.4,
+    "conviction_score": 28.33,
     "signal_strength": 1.5
   }
 ]

@@ -1925,12 +1925,12 @@
     "drift_score": 40.75,
     "url": "https://manifold.markets/WillJevons/will-scotus-strike-down-alaskas-950",
     "stake": 36.6,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
-    "peak_pnl": 0.7000000000000028
+    "status": "closed",
+    "exit_prob": 86.6,
+    "exit_time": "2026-08-07 18:43 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 17.0,
+    "peak_pnl": 17.0
   },
   {
     "market_id": "Rg5nN52Ud8",
@@ -1971,10 +1971,11 @@
     "drift_score": -34.36,
     "url": "https://manifold.markets/brod/gta-vi-released-on-switch-2-by-eoy",
     "stake": 36.6,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 20.5,
+    "exit_time": "2026-08-07 18:43 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 2.7,
+    "peak_pnl": 2.6999999999999993
   }
 ]
