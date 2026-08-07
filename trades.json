@@ -1691,11 +1691,11 @@
     "drift_score": -6.17,
     "url": "https://manifold.markets/Gen/will-anthropic-allow-me-to-have-a-d",
     "stake": 22.2,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 26.0,
+    "exit_time": "2026-08-07 07:03 UTC",
+    "exit_reason": "stale",
+    "pnl_pp": 0.2,
     "peak_pnl": 0.1999999999999993
   },
   {
