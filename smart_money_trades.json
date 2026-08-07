@@ -7311,6 +7311,44 @@
     "price_impact": 18.7,
     "conviction_score": 6.73,
     "signal_strength": 1.5,
-    "peak_pnl": 3.0
+    "peak_pnl": 3.299999999999997
+  },
+  {
+    "market_id": "6pqRtydqtP",
+    "question": "\"Spider-Man: Brand New Day\" breaks the record for the biggest domestic lifetime gross of all time?",
+    "direction": "BUY YES",
+    "entry_prob": 73.7,
+    "entry_time": "2026-08-07 12:46 UTC",
+    "url": "https://manifold.markets/Zeolite/spiderman-brand-new-day-breaks-the-LCyIqUycEP",
+    "stake": 85.5,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 4,
+    "smart_user_mana": 1000,
+    "price_impact": 35.8,
+    "conviction_score": 57.33,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "890guhq0OE",
+    "question": "Will the US Unemployment Rate Exceed Dotcom Bubble Levels before 2030?",
+    "direction": "BUY YES",
+    "entry_prob": 82.7,
+    "entry_time": "2026-08-07 12:46 UTC",
+    "url": "https://manifold.markets/JaundicedBaboon/will-the-us-unemployment-rate-excee-RpOcR6lSIA",
+    "stake": 104.5,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 2,
+    "smart_user_mana": 1500,
+    "price_impact": 28.2,
+    "conviction_score": 33.79,
+    "signal_strength": 1.5
   }
 ]
