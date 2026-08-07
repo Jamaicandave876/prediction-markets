@@ -3144,11 +3144,11 @@
     "entry_time": "2026-08-03 02:08 UTC",
     "url": "https://manifold.markets/GazDownright/will-ukrainian-drones-hit-kaliningr",
     "stake": 52.8,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 57.0,
+    "exit_time": "2026-08-07 02:19 UTC",
+    "exit_reason": "stale",
+    "pnl_pp": -2.6,
     "crowd_dir": "NO",
     "crowd_pct": 60.0,
     "price_move": 10.5,
@@ -3230,6 +3230,7 @@
     "crowd_pct": 65.0,
     "price_move": 5.6,
     "divergence_score": 3.64,
-    "signal_strength": 0.73
+    "signal_strength": 0.73,
+    "peak_pnl": 1.0
   }
 ]
