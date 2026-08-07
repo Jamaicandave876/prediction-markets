@@ -3232,5 +3232,24 @@
     "divergence_score": 3.64,
     "signal_strength": 0.73,
     "peak_pnl": 1.0
+  },
+  {
+    "market_id": "thIdLIgS6Z",
+    "question": "Will a frontier model be found to have exfiltrated its weights and run an outside copy of itself before Q2 2027?",
+    "direction": "BUY YES",
+    "entry_prob": 23.8,
+    "entry_time": "2026-08-07 07:04 UTC",
+    "url": "https://manifold.markets/JohnDavidPressman/will-a-frontier-model-be-found-to-h",
+    "stake": 34.2,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "NO",
+    "crowd_pct": 70.0,
+    "price_move": 10.0,
+    "divergence_score": 6.98,
+    "signal_strength": 1.4
   }
 ]
