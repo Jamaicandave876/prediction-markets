@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-08-08 01:07 UTC",
+  "timestamp": "2026-08-08 04:07 UTC",
   "regime": "adverse",
-  "pnl_7d": 125.5,
-  "total_open": 6,
-  "total_closed": 292,
-  "total_pnl": 619.4,
+  "pnl_7d": 110.1,
+  "total_open": 5,
+  "total_closed": 293,
+  "total_pnl": 611.2,
   "bots": [
     {
       "name": "fade",
@@ -22,13 +22,13 @@
       "name": "momentum",
       "display": "Momentum",
       "grade": "C",
-      "score": 60.6,
+      "score": 59.0,
       "win_rate": 60.0,
-      "total_pnl": 191.2,
-      "open": 5,
-      "closed": 122,
+      "total_pnl": 183.0,
+      "open": 4,
+      "closed": 123,
       "paused": false,
-      "consecutive_losses": 0
+      "consecutive_losses": 1
     },
     {
       "name": "weather_temperature",
