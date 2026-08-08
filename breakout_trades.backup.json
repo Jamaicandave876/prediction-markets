@@ -991,5 +991,23 @@
     "breakout_strength": 8.7,
     "signal_strength": 1.5,
     "peak_pnl": 5.600000000000001
+  },
+  {
+    "market_id": "OP9E0Oq6Zl",
+    "question": "Will SpaceX (SPCX) stock drop below $75 by the end of 2026?",
+    "direction": "BUY NO",
+    "entry_prob": 23.0,
+    "entry_time": "2026-08-08 15:23 UTC",
+    "url": "https://manifold.markets/sama/will-spacex-spcx-stock-drop-below-7",
+    "stake": 69.2,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "baseline_range": 5.8,
+    "breakout_move": -15.0,
+    "breakout_strength": 2.6,
+    "signal_strength": 0.8612289464573784
   }
 ]

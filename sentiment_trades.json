@@ -3368,6 +3368,25 @@
     "price_move": 17.0,
     "divergence_score": 11.02,
     "signal_strength": 1.5,
-    "peak_pnl": 2.3999999999999915
+    "peak_pnl": 4.0
+  },
+  {
+    "market_id": "UAzPpgZNIU",
+    "question": "Demis Hassabis still at Google end of 2027?",
+    "direction": "BUY NO",
+    "entry_prob": 42.1,
+    "entry_time": "2026-08-08 18:28 UTC",
+    "url": "https://manifold.markets/Simon74fe/demis-hassabis-still-at-google-end",
+    "stake": 43.6,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "YES",
+    "crowd_pct": 68.8,
+    "price_move": -7.9,
+    "divergence_score": 5.44,
+    "signal_strength": 1.09
   }
 ]
