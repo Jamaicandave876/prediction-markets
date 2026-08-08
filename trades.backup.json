@@ -1977,5 +1977,50 @@
     "exit_reason": "target_hit",
     "pnl_pp": 2.7,
     "peak_pnl": 2.6999999999999993
+  },
+  {
+    "market_id": "guC9g9y22O",
+    "question": "Faster S&P 500 Crash than the Dotcom Bubble before 2030?",
+    "direction": "BUY YES",
+    "entry_prob": 49.8,
+    "entry_time": "2026-08-08 06:38 UTC",
+    "drift_score": 4.44,
+    "url": "https://manifold.markets/JaundicedBaboon/faster-sp-500-crash-than-the-dotcom",
+    "stake": 41.6,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
+  },
+  {
+    "market_id": "nLh9Q89Szt",
+    "question": "Will Bitcoin be higher a month from now?",
+    "direction": "BUY YES",
+    "entry_prob": 61.1,
+    "entry_time": "2026-08-08 06:38 UTC",
+    "drift_score": 17.23,
+    "url": "https://manifold.markets/OnlySlides/will-bitcoin-be-higher-a-month-from",
+    "stake": 41.6,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
+  },
+  {
+    "market_id": "zNLCSQZSgz",
+    "question": "Will Bitcoin be higher 14 days from now?",
+    "direction": "BUY YES",
+    "entry_prob": 55.2,
+    "entry_time": "2026-08-08 06:38 UTC",
+    "drift_score": 5.14,
+    "url": "https://manifold.markets/prismatic/will-bitcoin-be-higher-14-days-from",
+    "stake": 41.6,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]
