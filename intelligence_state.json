@@ -1,5 +1,5 @@
 {
-  "last_report": "2026-08-06 23:53 UTC",
+  "last_report": "2026-08-08 01:07 UTC",
   "adjustments": [
     {
       "param": "MIN_DRIFT_SCORE",
@@ -600,21 +600,23 @@
       "old": 5.0,
       "new": 4.7,
       "reason": "System WR 80% > 65% \u2014 loosen signals"
+    },
+    {
+      "param": "MIN_DRIFT_SCORE",
+      "old": 4.7,
+      "new": 4.4,
+      "reason": "System WR 80% > 65% \u2014 loosen signals"
     }
   ],
   "paused": {
-    "mean_reversion": true,
-    "contrarian": true,
+    "mean_reversion": false,
+    "contrarian": false,
     "liquidation": false,
-    "calibration": true,
+    "calibration": false,
     "sentiment_divergence": false,
     "smart_money": false,
     "momentum": false
   },
   "consecutive_losses": {},
-  "pause_start": {
-    "mean_reversion": "2026-08-05 22:08 UTC",
-    "contrarian": "2026-08-05 22:08 UTC",
-    "calibration": "2026-08-05 22:08 UTC"
-  }
+  "pause_start": {}
 }

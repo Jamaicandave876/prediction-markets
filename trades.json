@@ -1707,11 +1707,11 @@
     "drift_score": 39.85,
     "url": "https://manifold.markets/Interrobang/will-a-mythostieratcybersecurity-op",
     "stake": 20.2,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 64.6,
+    "exit_time": "2026-08-08 01:05 UTC",
+    "exit_reason": "stale",
+    "pnl_pp": 0.5,
     "peak_pnl": 0.5
   },
   {

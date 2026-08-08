@@ -736,5 +736,23 @@
     "exit_time": "2026-08-06 01:55 UTC",
     "exit_reason": "normalized",
     "pnl_pp": 51.6
+  },
+  {
+    "market_id": "QR2SdUd0OQ",
+    "question": "Will Opus 4.6 pay back its loan",
+    "direction": "BUY YES",
+    "entry_prob": 7.0,
+    "pre_spike_prob": 22.0,
+    "spike_size": 15.0,
+    "spike_ratio": 10.1,
+    "spike_dir": -1,
+    "entry_time": "2026-08-08 01:05 UTC",
+    "url": "https://manifold.markets/MarkoSammul/will-opus-46-pay-back-its-loan",
+    "stake": 47.4,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]
