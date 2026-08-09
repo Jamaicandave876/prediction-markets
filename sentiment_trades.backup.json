@@ -3397,11 +3397,11 @@
     "entry_time": "2026-08-08 21:24 UTC",
     "url": "https://manifold.markets/Jack1/will-francesca-hong-win-the-2026-wi",
     "stake": 90.9,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 75.0,
+    "exit_time": "2026-08-09 01:10 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 0.0,
     "crowd_dir": "NO",
     "crowd_pct": 65.0,
     "price_move": 17.0,
@@ -3425,7 +3425,8 @@
     "crowd_pct": 60.0,
     "price_move": -8.2,
     "divergence_score": 4.9,
-    "signal_strength": 0.98
+    "signal_strength": 0.98,
+    "peak_pnl": 2.799999999999997
   },
   {
     "market_id": "ZC6gdANScC",
@@ -3444,6 +3445,7 @@
     "crowd_pct": 70.0,
     "price_move": -5.8,
     "divergence_score": 4.04,
-    "signal_strength": 0.81
+    "signal_strength": 0.81,
+    "peak_pnl": 2.0
   }
 ]
