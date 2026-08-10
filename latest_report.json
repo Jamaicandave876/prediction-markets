@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-08-10 18:47 UTC",
+  "timestamp": "2026-08-10 21:35 UTC",
   "regime": "adverse",
-  "pnl_7d": 68.3,
-  "total_open": 9,
-  "total_closed": 294,
-  "total_pnl": 604.2,
+  "pnl_7d": 73.2,
+  "total_open": 8,
+  "total_closed": 295,
+  "total_pnl": 609.1,
   "bots": [
     {
       "name": "fade",
@@ -29,6 +29,18 @@
       "closed": 123,
       "paused": false,
       "consecutive_losses": 1
+    },
+    {
+      "name": "breakout",
+      "display": "Breakout",
+      "grade": "C",
+      "score": 51.0,
+      "win_rate": 50.0,
+      "total_pnl": 146.0,
+      "open": 0,
+      "closed": 54,
+      "paused": false,
+      "consecutive_losses": 0
     },
     {
       "name": "weather_temperature",
@@ -75,18 +87,6 @@
       "total_pnl": 0,
       "open": 0,
       "closed": 0,
-      "paused": false,
-      "consecutive_losses": 0
-    },
-    {
-      "name": "breakout",
-      "display": "Breakout",
-      "grade": "D",
-      "score": 42.1,
-      "win_rate": 40.0,
-      "total_pnl": 141.1,
-      "open": 1,
-      "closed": 53,
       "paused": false,
       "consecutive_losses": 0
     },
