@@ -1,22 +1,22 @@
 {
-  "timestamp": "2026-08-10 15:54 UTC",
+  "timestamp": "2026-08-10 18:47 UTC",
   "regime": "adverse",
-  "pnl_7d": 75.3,
-  "total_open": 10,
-  "total_closed": 293,
-  "total_pnl": 611.2,
+  "pnl_7d": 68.3,
+  "total_open": 9,
+  "total_closed": 294,
+  "total_pnl": 604.2,
   "bots": [
     {
       "name": "fade",
       "display": "Fade",
       "grade": "B",
-      "score": 76.0,
-      "win_rate": 60.0,
-      "total_pnl": 448.8,
-      "open": 2,
-      "closed": 41,
+      "score": 65.2,
+      "win_rate": 50.0,
+      "total_pnl": 441.8,
+      "open": 1,
+      "closed": 42,
       "paused": false,
-      "consecutive_losses": 0
+      "consecutive_losses": 1
     },
     {
       "name": "momentum",
