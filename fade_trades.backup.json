@@ -754,5 +754,23 @@
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null
+  },
+  {
+    "market_id": "tIdutyQ2lE",
+    "question": "Will this market attract at least 5 unique traders before it closes?",
+    "direction": "BUY NO",
+    "entry_prob": 97.9,
+    "pre_spike_prob": 75.0,
+    "spike_size": 22.9,
+    "spike_ratio": 7.7,
+    "spike_dir": 1,
+    "entry_time": "2026-08-10 12:52 UTC",
+    "url": "https://manifold.markets/szepvagy/will-this-market-attract-at-least-5-LPZcnP8nUu",
+    "stake": 47.3,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]
