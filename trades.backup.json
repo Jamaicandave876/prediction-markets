@@ -2024,5 +2024,20 @@
     "exit_reason": "reversal",
     "pnl_pp": -8.5,
     "peak_pnl": 5.599999999999994
+  },
+  {
+    "market_id": "AUzQClL5qt",
+    "question": "Will perpetual markets become a permanent feature of Manifold?",
+    "direction": "BUY YES",
+    "entry_prob": 78.7,
+    "entry_time": "2026-08-11 18:52 UTC",
+    "drift_score": 45.52,
+    "url": "https://manifold.markets/frankjiang/will-perpetual-markets-become-a-per",
+    "stake": 33.3,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]

@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-08-11 18:53 UTC",
+  "timestamp": "2026-08-11 21:39 UTC",
   "regime": "adverse",
   "pnl_7d": 54.7,
-  "total_open": 6,
-  "total_closed": 298,
+  "total_open": 5,
+  "total_closed": 299,
   "total_pnl": 590.6,
   "bots": [
     {
@@ -29,18 +29,6 @@
       "closed": 54,
       "paused": false,
       "consecutive_losses": 0
-    },
-    {
-      "name": "momentum",
-      "display": "Momentum",
-      "grade": "C",
-      "score": 50.0,
-      "win_rate": 50.0,
-      "total_pnl": 164.5,
-      "open": 5,
-      "closed": 126,
-      "paused": false,
-      "consecutive_losses": 4
     },
     {
       "name": "weather_temperature",
@@ -89,6 +77,18 @@
       "closed": 0,
       "paused": false,
       "consecutive_losses": 0
+    },
+    {
+      "name": "momentum",
+      "display": "Momentum",
+      "grade": "D",
+      "score": 42.7,
+      "win_rate": 40.0,
+      "total_pnl": 164.5,
+      "open": 4,
+      "closed": 127,
+      "paused": false,
+      "consecutive_losses": 5
     },
     {
       "name": "whale",
