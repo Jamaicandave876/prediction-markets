@@ -1738,11 +1738,11 @@
     "drift_score": 5.49,
     "url": "https://manifold.markets/Ronan/will-stripe-acquire-openrouter-in-2",
     "stake": 37.0,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 61.6,
+    "exit_time": "2026-08-11 15:53 UTC",
+    "exit_reason": "stale",
+    "pnl_pp": 0.0
   },
   {
     "market_id": "hSA0p9SEOz",
@@ -2002,11 +2002,11 @@
     "drift_score": 17.23,
     "url": "https://manifold.markets/OnlySlides/will-bitcoin-be-higher-a-month-from",
     "stake": 41.6,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 51.1,
+    "exit_time": "2026-08-11 15:53 UTC",
+    "exit_reason": "reversal",
+    "pnl_pp": -10.0,
     "peak_pnl": 0.10000000000000142
   },
   {
