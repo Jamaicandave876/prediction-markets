@@ -7602,5 +7602,24 @@
     "price_impact": 9.6,
     "conviction_score": 5.74,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "LqQUuhyOLs",
+    "question": "Will Darline Graham get 60.00% or more in the SC Senate primary Runoff?",
+    "direction": "BUY NO",
+    "entry_prob": 41.2,
+    "entry_time": "2026-08-12 07:14 UTC",
+    "url": "https://manifold.markets/Jack1/will-darline-graham-get-6000-or-mor",
+    "stake": 49.1,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 5,
+    "smart_user_mana": 300,
+    "price_impact": 6.8,
+    "conviction_score": 4.06,
+    "signal_strength": 1.35
   }
 ]
