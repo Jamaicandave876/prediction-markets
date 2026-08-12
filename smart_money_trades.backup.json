@@ -7583,5 +7583,24 @@
     "price_impact": 9.6,
     "conviction_score": 5.74,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "O5QzPIZ5nu",
+    "question": "Will I regret investing $500 into my startup?",
+    "direction": "BUY NO",
+    "entry_prob": 19.0,
+    "entry_time": "2026-08-12 01:19 UTC",
+    "url": "https://manifold.markets/Bandors/will-i-regret-investing-500-into-my",
+    "stake": 104.3,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 3,
+    "smart_user_mana": 500,
+    "price_impact": 9.6,
+    "conviction_score": 5.74,
+    "signal_strength": 1.5
   }
 ]
