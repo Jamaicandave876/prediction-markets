@@ -7621,7 +7621,7 @@
     "price_impact": 6.8,
     "conviction_score": 4.06,
     "signal_strength": 1.35,
-    "peak_pnl": 1.4000000000000057
+    "peak_pnl": 3.200000000000003
   },
   {
     "market_id": "g0zN5ghS90",
@@ -7640,6 +7640,25 @@
     "smart_user_mana": 1200,
     "price_impact": 3.6,
     "conviction_score": 8.72,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "upLA0td9LC",
+    "question": "Will the Dan Sullivan \u2018impostor\u2019 advance to the general election in the Alaska senate primary on August 18 2026?",
+    "direction": "BUY YES",
+    "entry_prob": 58.9,
+    "entry_time": "2026-08-12 12:53 UTC",
+    "url": "https://manifold.markets/Jack1/will-the-dan-sullivan-impostor-adva",
+    "stake": 54.7,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 2,
+    "smart_user_mana": 500,
+    "price_impact": 26.7,
+    "conviction_score": 10.66,
     "signal_strength": 1.5
   }
 ]
