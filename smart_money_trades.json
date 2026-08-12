@@ -7621,7 +7621,7 @@
     "price_impact": 6.8,
     "conviction_score": 4.06,
     "signal_strength": 1.35,
-    "peak_pnl": 5.0
+    "peak_pnl": 8.100000000000001
   },
   {
     "market_id": "g0zN5ghS90",
@@ -7631,16 +7631,17 @@
     "entry_time": "2026-08-12 09:55 UTC",
     "url": "https://manifold.markets/Jack1/will-democrats-win-the-2026-wiscons",
     "stake": 90.2,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 79.0,
+    "exit_time": "2026-08-12 18:52 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 3.9,
     "smart_user_bets": 5,
     "smart_user_mana": 1200,
     "price_impact": 3.6,
     "conviction_score": 8.72,
-    "signal_strength": 1.5
+    "signal_strength": 1.5,
+    "peak_pnl": 3.9000000000000057
   },
   {
     "market_id": "upLA0td9LC",
@@ -7659,6 +7660,25 @@
     "smart_user_mana": 500,
     "price_impact": 26.7,
     "conviction_score": 10.66,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "duZC8ZIlzS",
+    "question": "Will I solve an unsolved math problem with AI in August?",
+    "direction": "BUY NO",
+    "entry_prob": 15.9,
+    "entry_time": "2026-08-12 18:52 UTC",
+    "url": "https://manifold.markets/Bayesian/will-i-solve-an-unsolved-math-probl",
+    "stake": 104.3,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 3,
+    "smart_user_mana": 4215,
+    "price_impact": 3.0,
+    "conviction_score": 15.17,
     "signal_strength": 1.5
   }
 ]
