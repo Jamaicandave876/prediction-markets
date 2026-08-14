@@ -7759,5 +7759,24 @@
     "price_impact": 11.1,
     "conviction_score": 22.15,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "Ut58RyQt69",
+    "question": "Will a US presidential candidate make an anti data center remark during their campaign for 2028?",
+    "direction": "BUY YES",
+    "entry_prob": 77.9,
+    "entry_time": "2026-08-14 07:14 UTC",
+    "url": "https://manifold.markets/Yoae/will-a-us-presidential-candidate-ma",
+    "stake": 102.1,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 2,
+    "smart_user_mana": 780,
+    "price_impact": 24.6,
+    "conviction_score": 15.32,
+    "signal_strength": 1.5
   }
 ]
