@@ -1010,5 +1010,23 @@
     "breakout_strength": 2.6,
     "signal_strength": 0.8612289464573784,
     "peak_pnl": 4.899999999999999
+  },
+  {
+    "market_id": "duZC8ZIlzS",
+    "question": "Will I solve an unsolved math problem with AI in August?",
+    "direction": "BUY YES",
+    "entry_prob": 15.8,
+    "entry_time": "2026-08-14 01:19 UTC",
+    "url": "https://manifold.markets/Bayesian/will-i-solve-an-unsolved-math-probl",
+    "stake": 20,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "baseline_range": 3.1,
+    "breakout_move": 6.6,
+    "breakout_strength": 2.2,
+    "signal_strength": 0.7190650478128494
   }
 ]

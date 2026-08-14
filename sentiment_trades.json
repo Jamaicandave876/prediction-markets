@@ -3475,15 +3475,16 @@
     "entry_time": "2026-08-14 01:19 UTC",
     "url": "https://manifold.markets/Jack1/will-byron-donalds-get-50000-or-mor",
     "stake": 104.7,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 85.5,
+    "exit_time": "2026-08-14 04:43 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 1.5,
     "crowd_dir": "NO",
     "crowd_pct": 70.0,
     "price_move": 8.1,
     "divergence_score": 5.66,
-    "signal_strength": 1.13
+    "signal_strength": 1.13,
+    "peak_pnl": 1.5
   }
 ]

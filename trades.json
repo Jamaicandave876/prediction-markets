@@ -2039,5 +2039,20 @@
     "exit_time": "2026-08-11 21:38 UTC",
     "exit_reason": "target_hit",
     "pnl_pp": 0.0
+  },
+  {
+    "market_id": "AcCAdd59A8",
+    "question": "Will James Fishback get second in the Florida Republican primary for governor?",
+    "direction": "BUY NO",
+    "entry_prob": 29.2,
+    "entry_time": "2026-08-14 04:43 UTC",
+    "drift_score": -15.92,
+    "url": "https://manifold.markets/Jack1/will-james-fishback-get-second-in-t",
+    "stake": 26.7,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]
