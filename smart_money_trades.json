@@ -7799,5 +7799,24 @@
     "conviction_score": 8.21,
     "signal_strength": 1.5,
     "peak_pnl": 2.9000000000000057
+  },
+  {
+    "market_id": "lz2lu8Q9qI",
+    "question": "Mitch McConnell alive all of October 2026?",
+    "direction": "BUY YES",
+    "entry_prob": 85.1,
+    "entry_time": "2026-08-15 21:14 UTC",
+    "url": "https://manifold.markets/CryptoNeoLiberalist/mitch-mcconnell-alive-all-of-octobe",
+    "stake": 104.8,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 3,
+    "smart_user_mana": 498,
+    "price_impact": 51.1,
+    "conviction_score": 30.53,
+    "signal_strength": 1.5
   }
 ]
