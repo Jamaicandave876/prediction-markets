@@ -7837,5 +7837,24 @@
     "price_impact": 14.6,
     "conviction_score": 4.08,
     "signal_strength": 1.36
+  },
+  {
+    "market_id": "RUnECznclC",
+    "question": "70%+ regular wearable use by EOY 2031?",
+    "direction": "BUY NO",
+    "entry_prob": 23.0,
+    "entry_time": "2026-08-16 18:19 UTC",
+    "url": "https://manifold.markets/notbayesian/70-regular-wearable-use-by-eoy-2031",
+    "stake": 104.8,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 4,
+    "smart_user_mana": 301,
+    "price_impact": 27.1,
+    "conviction_score": 13.03,
+    "signal_strength": 1.5
   }
 ]
