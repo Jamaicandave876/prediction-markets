@@ -1029,5 +1029,23 @@
     "breakout_strength": 2.2,
     "signal_strength": 0.7190650478128494,
     "peak_pnl": 1.6999999999999993
+  },
+  {
+    "market_id": "pEy2RL0gIy",
+    "question": "Will Bitcoin be higher 7 days from now?",
+    "direction": "BUY NO",
+    "entry_prob": 35.6,
+    "entry_time": "2026-08-16 03:42 UTC",
+    "url": "https://manifold.markets/OnlySlides/will-bitcoin-be-higher-7-days-from-UIqhpuqItz",
+    "stake": 47.6,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "baseline_range": 3.6,
+    "breakout_move": -8.0,
+    "breakout_strength": 2.2,
+    "signal_strength": 0.738389714795701
   }
 ]
