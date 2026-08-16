@@ -1048,5 +1048,23 @@
     "breakout_strength": 2.2,
     "signal_strength": 0.738389714795701,
     "peak_pnl": 0.7000000000000028
+  },
+  {
+    "market_id": "Z99pyn2z0n",
+    "question": "Will Jared Moskowitz get 65.00% or more of the vote in the Florida 25 Democratic house primary?",
+    "direction": "BUY YES",
+    "entry_prob": 54.4,
+    "entry_time": "2026-08-16 15:14 UTC",
+    "url": "https://manifold.markets/Jack1/will-jared-moskowitz-get-6500-or-mo",
+    "stake": 44.1,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "baseline_range": 7.0,
+    "breakout_move": 18.5,
+    "breakout_strength": 2.6,
+    "signal_strength": 0.8769057964313314
   }
 ]
