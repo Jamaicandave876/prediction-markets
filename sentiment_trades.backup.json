@@ -3524,7 +3524,7 @@
     "price_move": 8.3,
     "divergence_score": 5.22,
     "signal_strength": 1.04,
-    "peak_pnl": 4.0
+    "peak_pnl": 9.299999999999997
   },
   {
     "market_id": "pEy2RL0gIy",
@@ -3543,7 +3543,8 @@
     "crowd_pct": 60.0,
     "price_move": -8.3,
     "divergence_score": 4.99,
-    "signal_strength": 1.0
+    "signal_strength": 1.0,
+    "peak_pnl": 1.7000000000000028
   },
   {
     "market_id": "g5ScEgtOpQ",
@@ -3562,6 +3563,7 @@
     "crowd_pct": 80.0,
     "price_move": 7.9,
     "divergence_score": 6.35,
-    "signal_strength": 1.27
+    "signal_strength": 1.27,
+    "peak_pnl": 2.0
   }
 ]

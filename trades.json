@@ -1893,11 +1893,11 @@
     "drift_score": 11.55,
     "url": "https://manifold.markets/GazDownright/will-ukrainian-drones-hit-kaliningr",
     "stake": 37.2,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 53.7,
+    "exit_time": "2026-08-16 21:12 UTC",
+    "exit_reason": "stale",
+    "pnl_pp": 0.0,
     "peak_pnl": 5.899999999999999
   },
   {
@@ -1909,11 +1909,11 @@
     "drift_score": -33.3,
     "url": "https://manifold.markets/Bayesian/will-astra-solve-elliot-glazers-pro",
     "stake": 37.2,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 22.5,
+    "exit_time": "2026-08-16 21:12 UTC",
+    "exit_reason": "stale",
+    "pnl_pp": 0.3,
     "peak_pnl": 0.3000000000000007
   },
   {

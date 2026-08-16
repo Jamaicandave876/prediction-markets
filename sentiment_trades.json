@@ -3524,7 +3524,7 @@
     "price_move": 8.3,
     "divergence_score": 5.22,
     "signal_strength": 1.04,
-    "peak_pnl": 9.299999999999997
+    "peak_pnl": 12.799999999999997
   },
   {
     "market_id": "pEy2RL0gIy",
@@ -3565,5 +3565,24 @@
     "divergence_score": 6.35,
     "signal_strength": 1.27,
     "peak_pnl": 2.0
+  },
+  {
+    "market_id": "lcRPAdgLuR",
+    "question": "Will the Telethon cast perform the \"Six-Seven\" when they reach 67 million pesos?",
+    "direction": "BUY YES",
+    "entry_prob": 58.7,
+    "entry_time": "2026-08-16 21:14 UTC",
+    "url": "https://manifold.markets/chine1/will-the-telethon-cast-perform-the",
+    "stake": 56.2,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "NO",
+    "crowd_pct": 72.2,
+    "price_move": 8.7,
+    "divergence_score": 6.27,
+    "signal_strength": 1.25
   }
 ]

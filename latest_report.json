@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-08-16 18:19 UTC",
+  "timestamp": "2026-08-16 21:14 UTC",
   "regime": "adverse",
-  "pnl_7d": -20.6,
-  "total_open": 9,
-  "total_closed": 299,
-  "total_pnl": 590.6,
+  "pnl_7d": -20.3,
+  "total_open": 7,
+  "total_closed": 301,
+  "total_pnl": 590.9,
   "bots": [
     {
       "name": "fade",
@@ -82,13 +82,13 @@
       "name": "momentum",
       "display": "Momentum",
       "grade": "D",
-      "score": 42.7,
+      "score": 42.8,
       "win_rate": 40.0,
-      "total_pnl": 164.5,
-      "open": 5,
-      "closed": 127,
+      "total_pnl": 164.8,
+      "open": 3,
+      "closed": 129,
       "paused": false,
-      "consecutive_losses": 5
+      "consecutive_losses": 1
     },
     {
       "name": "whale",
