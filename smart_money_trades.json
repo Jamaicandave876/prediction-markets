@@ -7818,5 +7818,24 @@
     "price_impact": 51.1,
     "conviction_score": 30.53,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "gPL2SgyzIZ",
+    "question": "G20 countries merge?",
+    "direction": "BUY NO",
+    "entry_prob": 24.6,
+    "entry_time": "2026-08-16 12:24 UTC",
+    "url": "https://manifold.markets/Stralor/g20-countries-merge",
+    "stake": 102.7,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 2,
+    "smart_user_mana": 350,
+    "price_impact": 14.6,
+    "conviction_score": 4.08,
+    "signal_strength": 1.36
   }
 ]
