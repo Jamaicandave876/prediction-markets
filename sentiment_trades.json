@@ -3622,5 +3622,24 @@
     "price_move": 11.8,
     "divergence_score": 8.29,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "OuQIQtgL0g",
+    "question": "Will the existence of a non-MF group be proved this month?",
+    "direction": "BUY NO",
+    "entry_prob": 78.3,
+    "entry_time": "2026-08-17 21:20 UTC",
+    "url": "https://manifold.markets/SCS/will-the-existence-of-a-nonmf-group",
+    "stake": 28.2,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "YES",
+    "crowd_pct": 75.0,
+    "price_move": -14.4,
+    "divergence_score": 10.82,
+    "signal_strength": 1.5
   }
 ]

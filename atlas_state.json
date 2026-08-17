@@ -99,12 +99,12 @@
       "grade": "F"
     },
     "breakout": {
-      "score": 46.9,
+      "score": 42.1,
       "win_rate": 50.0,
-      "avg_pnl": -1.5,
-      "total_pnl": 125.4,
-      "closed": 55,
-      "open": 4,
+      "avg_pnl": -3.9,
+      "total_pnl": 114.8,
+      "closed": 57,
+      "open": 2,
       "grade": "D"
     },
     "weather_temperature": {
