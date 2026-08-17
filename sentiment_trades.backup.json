@@ -3514,17 +3514,17 @@
     "entry_time": "2026-08-16 09:20 UTC",
     "url": "https://manifold.markets/senso/will-yes-have-more-holders-than-no",
     "stake": 45.2,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 74.8,
+    "exit_time": "2026-08-17 00:53 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 17.5,
     "crowd_dir": "NO",
     "crowd_pct": 63.2,
     "price_move": 8.3,
     "divergence_score": 5.22,
     "signal_strength": 1.04,
-    "peak_pnl": 12.799999999999997
+    "peak_pnl": 17.5
   },
   {
     "market_id": "pEy2RL0gIy",
