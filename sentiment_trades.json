@@ -3584,5 +3584,24 @@
     "price_move": 8.7,
     "divergence_score": 6.27,
     "signal_strength": 1.25
+  },
+  {
+    "market_id": "sEgQ0zQqRA",
+    "question": "Will Byron Donalds get 50.000% or more of the vote in the Florida Republican Primary for Governor?",
+    "direction": "BUY YES",
+    "entry_prob": 85.0,
+    "entry_time": "2026-08-17 12:29 UTC",
+    "url": "https://manifold.markets/Jack1/will-byron-donalds-get-50000-or-mor",
+    "stake": 103.8,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "NO",
+    "crowd_pct": 75.0,
+    "price_move": 6.0,
+    "divergence_score": 4.53,
+    "signal_strength": 0.91
   }
 ]
