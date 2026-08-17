@@ -1066,5 +1066,41 @@
     "breakout_move": 18.5,
     "breakout_strength": 2.6,
     "signal_strength": 0.8769057964313314
+  },
+  {
+    "market_id": "OuQIQtgL0g",
+    "question": "Will the existence of a non-MF group be proved this month?",
+    "direction": "BUY NO",
+    "entry_prob": 82.7,
+    "entry_time": "2026-08-17 18:28 UTC",
+    "url": "https://manifold.markets/SCS/will-the-existence-of-a-nonmf-group",
+    "stake": 20,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "baseline_range": 4.4,
+    "breakout_move": -11.1,
+    "breakout_strength": 2.5,
+    "signal_strength": 0.8479439940448911
+  },
+  {
+    "market_id": "zRZzP9lccI",
+    "question": "Will the WTI Crude Oil Spot Price be above $82 on August 20, 2026?",
+    "direction": "BUY YES",
+    "entry_prob": 79.1,
+    "entry_time": "2026-08-17 18:28 UTC",
+    "url": "https://manifold.markets/ShaneBo/will-the-wti-crude-oil-spot-price-b-C22zR92ICs",
+    "stake": 54.3,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "baseline_range": 4.3,
+    "breakout_move": 9.1,
+    "breakout_strength": 2.1,
+    "signal_strength": 0.7007143583259777
   }
 ]
