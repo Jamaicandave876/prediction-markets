@@ -2054,5 +2054,50 @@
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null
+  },
+  {
+    "market_id": "gPL2SgyzIZ",
+    "question": "G20 countries merge?",
+    "direction": "BUY NO",
+    "entry_prob": 21.7,
+    "entry_time": "2026-08-17 00:51 UTC",
+    "drift_score": -34.66,
+    "url": "https://manifold.markets/Stralor/g20-countries-merge",
+    "stake": 33.0,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
+  },
+  {
+    "market_id": "Q8822E9Qy0",
+    "question": "Will an AI Event/Consequence cause a recession by end of 2030?",
+    "direction": "BUY NO",
+    "entry_prob": 23.0,
+    "entry_time": "2026-08-17 00:51 UTC",
+    "drift_score": -19.36,
+    "url": "https://manifold.markets/JRR/will-an-ai-eventconsequence-cause-a",
+    "stake": 33.0,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
+  },
+  {
+    "market_id": "ssOsyLL889",
+    "question": "Strait of Hormuz traffic returns to normal by February 28th 2027? [Polymarket]",
+    "direction": "BUY NO",
+    "entry_prob": 40.4,
+    "entry_time": "2026-08-17 00:51 UTC",
+    "drift_score": -9.33,
+    "url": "https://manifold.markets/BillClintonBubba/strait-of-hormuz-traffic-returns-to-QI2ZPqRRIg",
+    "stake": 33.0,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]
