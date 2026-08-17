@@ -1028,7 +1028,7 @@
     "breakout_move": 6.6,
     "breakout_strength": 2.2,
     "signal_strength": 0.7190650478128494,
-    "peak_pnl": 1.6999999999999993
+    "peak_pnl": 4.199999999999999
   },
   {
     "market_id": "pEy2RL0gIy",
@@ -1038,11 +1038,11 @@
     "entry_time": "2026-08-16 03:42 UTC",
     "url": "https://manifold.markets/OnlySlides/will-bitcoin-be-higher-7-days-from-UIqhpuqItz",
     "stake": 47.6,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 56.2,
+    "exit_time": "2026-08-17 03:43 UTC",
+    "exit_reason": "stopped_out",
+    "pnl_pp": -20.6,
     "baseline_range": 3.6,
     "breakout_move": -8.0,
     "breakout_strength": 2.2,
