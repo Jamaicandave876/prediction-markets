@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-08-18 03:39 UTC",
+  "timestamp": "2026-08-18 06:31 UTC",
   "regime": "adverse",
-  "pnl_7d": -42.0,
-  "total_open": 7,
-  "total_closed": 306,
-  "total_pnl": 558.6,
+  "pnl_7d": -30.4,
+  "total_open": 6,
+  "total_closed": 307,
+  "total_pnl": 570.2,
   "bots": [
     {
       "name": "fade",
@@ -17,6 +17,18 @@
       "closed": 43,
       "paused": false,
       "consecutive_losses": 2
+    },
+    {
+      "name": "breakout",
+      "display": "Breakout",
+      "grade": "C",
+      "score": 53.3,
+      "win_rate": 60.0,
+      "total_pnl": 126.4,
+      "open": 1,
+      "closed": 58,
+      "paused": false,
+      "consecutive_losses": 0
     },
     {
       "name": "weather_temperature",
@@ -65,18 +77,6 @@
       "closed": 0,
       "paused": false,
       "consecutive_losses": 0
-    },
-    {
-      "name": "breakout",
-      "display": "Breakout",
-      "grade": "D",
-      "score": 42.1,
-      "win_rate": 50.0,
-      "total_pnl": 114.8,
-      "open": 2,
-      "closed": 57,
-      "paused": false,
-      "consecutive_losses": 1
     },
     {
       "name": "whale",
