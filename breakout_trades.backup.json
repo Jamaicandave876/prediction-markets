@@ -1057,11 +1057,11 @@
     "entry_time": "2026-08-16 15:14 UTC",
     "url": "https://manifold.markets/Jack1/will-jared-moskowitz-get-6500-or-mo",
     "stake": 44.1,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 42.2,
+    "exit_time": "2026-08-17 21:19 UTC",
+    "exit_reason": "stopped_out",
+    "pnl_pp": -12.2,
     "baseline_range": 7.0,
     "breakout_move": 18.5,
     "breakout_strength": 2.6,
@@ -1083,7 +1083,8 @@
     "baseline_range": 4.4,
     "breakout_move": -11.1,
     "breakout_strength": 2.5,
-    "signal_strength": 0.8479439940448911
+    "signal_strength": 0.8479439940448911,
+    "peak_pnl": 4.400000000000006
   },
   {
     "market_id": "zRZzP9lccI",
@@ -1093,14 +1094,15 @@
     "entry_time": "2026-08-17 18:28 UTC",
     "url": "https://manifold.markets/ShaneBo/will-the-wti-crude-oil-spot-price-b-C22zR92ICs",
     "stake": 54.3,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 80.7,
+    "exit_time": "2026-08-17 21:19 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 1.6,
     "baseline_range": 4.3,
     "breakout_move": 9.1,
     "breakout_strength": 2.1,
-    "signal_strength": 0.7007143583259777
+    "signal_strength": 0.7007143583259777,
+    "peak_pnl": 1.6000000000000085
   }
 ]
