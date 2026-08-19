@@ -2049,12 +2049,12 @@
     "drift_score": -15.92,
     "url": "https://manifold.markets/Jack1/will-james-fishback-get-second-in-t",
     "stake": 26.7,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
-    "peak_pnl": 2.1999999999999993
+    "status": "closed",
+    "exit_prob": 1.0,
+    "exit_time": "2026-08-19 00:51 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 28.2,
+    "peak_pnl": 28.2
   },
   {
     "market_id": "gPL2SgyzIZ",
