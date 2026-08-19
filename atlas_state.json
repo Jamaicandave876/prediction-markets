@@ -18,13 +18,13 @@
   "pause_start": {},
   "bot_scores": {
     "momentum": {
-      "score": 33.4,
+      "score": 38.5,
       "win_rate": 30.0,
-      "avg_pnl": -2.3,
-      "total_pnl": 164.8,
-      "closed": 130,
-      "open": 5,
-      "grade": "F"
+      "avg_pnl": 0.2,
+      "total_pnl": 193.0,
+      "closed": 131,
+      "open": 4,
+      "grade": "D"
     },
     "fade": {
       "score": 57.5,
@@ -145,7 +145,7 @@
     }
   },
   "consecutive_losses": {
-    "momentum": 2,
+    "momentum": 0,
     "fade": 2,
     "mean_reversion": 5,
     "volume_surge": 2,
@@ -161,5 +161,5 @@
     "weather_divergence": 0
   },
   "regime": "adverse",
-  "last_report": "2026-08-18 00:51 UTC"
+  "last_report": "2026-08-19 00:51 UTC"
 }

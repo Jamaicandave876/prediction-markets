@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-08-18 21:18 UTC",
+  "timestamp": "2026-08-19 00:51 UTC",
   "regime": "adverse",
-  "pnl_7d": -20.4,
-  "total_open": 6,
-  "total_closed": 307,
-  "total_pnl": 570.2,
+  "pnl_7d": 7.8,
+  "total_open": 5,
+  "total_closed": 308,
+  "total_pnl": 598.4,
   "bots": [
     {
       "name": "fade",
@@ -79,6 +79,18 @@
       "consecutive_losses": 0
     },
     {
+      "name": "momentum",
+      "display": "Momentum",
+      "grade": "D",
+      "score": 38.5,
+      "win_rate": 30.0,
+      "total_pnl": 193.0,
+      "open": 4,
+      "closed": 131,
+      "paused": false,
+      "consecutive_losses": 0
+    },
+    {
       "name": "whale",
       "display": "Whale Tracker",
       "grade": "D",
@@ -89,18 +101,6 @@
       "closed": 13,
       "paused": false,
       "consecutive_losses": 0
-    },
-    {
-      "name": "momentum",
-      "display": "Momentum",
-      "grade": "F",
-      "score": 33.4,
-      "win_rate": 30.0,
-      "total_pnl": 164.8,
-      "open": 5,
-      "closed": 130,
-      "paused": false,
-      "consecutive_losses": 2
     },
     {
       "name": "fresh_sniper",
