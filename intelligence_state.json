@@ -626,7 +626,7 @@
     "liquidation": false,
     "calibration": true,
     "sentiment_divergence": true,
-    "smart_money": false,
+    "smart_money": true,
     "momentum": false
   },
   "consecutive_losses": {},
@@ -634,6 +634,7 @@
     "sentiment_divergence": "2026-08-18 00:51 UTC",
     "mean_reversion": "2026-08-19 06:31 UTC",
     "contrarian": "2026-08-19 06:31 UTC",
-    "calibration": "2026-08-19 06:31 UTC"
+    "calibration": "2026-08-19 06:31 UTC",
+    "smart_money": "2026-08-19 15:24 UTC"
   }
 }
