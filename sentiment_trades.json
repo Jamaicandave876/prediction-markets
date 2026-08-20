@@ -3642,5 +3642,43 @@
     "price_move": -14.4,
     "divergence_score": 10.82,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "g5ScEgtOpQ",
+    "question": "Will at least one U.S. state enact a binding statewide moratorium on new hyperscale data centers before 2027?",
+    "direction": "BUY NO",
+    "entry_prob": 27.7,
+    "entry_time": "2026-08-20 03:40 UTC",
+    "url": "https://manifold.markets/Yoae/will-at-least-one-us-state-enact-a",
+    "stake": 81.0,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "YES",
+    "crowd_pct": 60.0,
+    "price_move": -30.5,
+    "divergence_score": 18.31,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "URzCzhZ5Ag",
+    "question": "Will Bitcoin hit $100.000 before 34000$?",
+    "direction": "BUY YES",
+    "entry_prob": 64.6,
+    "entry_time": "2026-08-20 03:40 UTC",
+    "url": "https://manifold.markets/Base/will-bitcoin-hit-100000-before-3400",
+    "stake": 63.4,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "NO",
+    "crowd_pct": 70.0,
+    "price_move": 12.1,
+    "divergence_score": 8.5,
+    "signal_strength": 1.5
   }
 ]
