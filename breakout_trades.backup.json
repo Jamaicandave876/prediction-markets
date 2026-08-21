@@ -1113,15 +1113,15 @@
     "entry_time": "2026-08-20 18:28 UTC",
     "url": "https://manifold.markets/OnlySlides/will-bitcoin-be-higher-7-days-from-CZSZLlZl0g",
     "stake": 44.3,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 81.5,
+    "exit_time": "2026-08-21 06:34 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 19.1,
     "baseline_range": 4.3,
     "breakout_move": 9.3,
     "breakout_strength": 2.2,
     "signal_strength": 0.7253603769389048,
-    "peak_pnl": 13.000000000000007
+    "peak_pnl": 19.1
   }
 ]
