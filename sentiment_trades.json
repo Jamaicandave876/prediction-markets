@@ -3681,5 +3681,24 @@
     "divergence_score": 8.5,
     "signal_strength": 1.5,
     "peak_pnl": 1.6000000000000085
+  },
+  {
+    "market_id": "g5ScEgtOpQ",
+    "question": "Will at least one U.S. state enact a binding statewide moratorium on new hyperscale data centers before 2027?",
+    "direction": "BUY NO",
+    "entry_prob": 27.7,
+    "entry_time": "2026-08-21 00:54 UTC",
+    "url": "https://manifold.markets/Yoae/will-at-least-one-us-state-enact-a",
+    "stake": 105.6,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "YES",
+    "crowd_pct": 60.0,
+    "price_move": -30.5,
+    "divergence_score": 18.31,
+    "signal_strength": 1.5
   }
 ]
