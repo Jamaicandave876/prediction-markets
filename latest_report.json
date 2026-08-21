@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-08-21 12:34 UTC",
+  "timestamp": "2026-08-21 15:27 UTC",
   "regime": "adverse",
   "pnl_7d": 26.9,
-  "total_open": 9,
-  "total_closed": 309,
+  "total_open": 8,
+  "total_closed": 310,
   "total_pnl": 617.5,
   "bots": [
     {
@@ -79,18 +79,6 @@
       "consecutive_losses": 0
     },
     {
-      "name": "momentum",
-      "display": "Momentum",
-      "grade": "D",
-      "score": 38.5,
-      "win_rate": 30.0,
-      "total_pnl": 193.0,
-      "open": 8,
-      "closed": 131,
-      "paused": false,
-      "consecutive_losses": 0
-    },
-    {
       "name": "whale",
       "display": "Whale Tracker",
       "grade": "D",
@@ -101,6 +89,18 @@
       "closed": 13,
       "paused": false,
       "consecutive_losses": 0
+    },
+    {
+      "name": "momentum",
+      "display": "Momentum",
+      "grade": "F",
+      "score": 32.4,
+      "win_rate": 20.0,
+      "total_pnl": 193.0,
+      "open": 7,
+      "closed": 132,
+      "paused": false,
+      "consecutive_losses": 1
     },
     {
       "name": "fresh_sniper",
@@ -176,5 +176,12 @@
     }
   ],
   "warnings": [],
-  "adjustments": []
+  "adjustments": [
+    {
+      "param": "MIN_DRIFT_SCORE",
+      "old": 4.7,
+      "new": 5.0,
+      "reason": "Momentum WR 20% < 40% \u2014 tightening"
+    }
+  ]
 }
