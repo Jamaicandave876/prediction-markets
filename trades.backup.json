@@ -1987,11 +1987,11 @@
     "drift_score": 4.44,
     "url": "https://manifold.markets/JaundicedBaboon/faster-sp-500-crash-than-the-dotcom",
     "stake": 41.6,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 49.0,
+    "exit_time": "2026-08-22 09:19 UTC",
+    "exit_reason": "stale",
+    "pnl_pp": -0.8
   },
   {
     "market_id": "nLh9Q89Szt",
