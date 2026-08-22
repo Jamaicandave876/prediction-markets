@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-08-22 06:29 UTC",
+  "timestamp": "2026-08-22 09:21 UTC",
   "regime": "adverse",
-  "pnl_7d": 16.4,
-  "total_open": 8,
-  "total_closed": 311,
-  "total_pnl": 607.0,
+  "pnl_7d": 15.6,
+  "total_open": 7,
+  "total_closed": 312,
+  "total_pnl": 606.2,
   "bots": [
     {
       "name": "fade",
@@ -94,13 +94,13 @@
       "name": "momentum",
       "display": "Momentum",
       "grade": "F",
-      "score": 32.4,
+      "score": 33.8,
       "win_rate": 20.0,
-      "total_pnl": 193.0,
-      "open": 7,
-      "closed": 132,
+      "total_pnl": 192.2,
+      "open": 6,
+      "closed": 133,
       "paused": false,
-      "consecutive_losses": 1
+      "consecutive_losses": 2
     },
     {
       "name": "fresh_sniper",
