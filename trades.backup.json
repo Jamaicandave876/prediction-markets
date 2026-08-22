@@ -2141,11 +2141,11 @@
     "drift_score": -14.09,
     "url": "https://manifold.markets/Yoae/will-monero-xmr-coin-be-worth-more",
     "stake": 36.0,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 48.0,
+    "exit_time": "2026-08-22 12:23 UTC",
+    "exit_reason": "reversal",
+    "pnl_pp": -9.9
   },
   {
     "market_id": "g52tSltgqh",
