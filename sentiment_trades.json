@@ -3680,7 +3680,7 @@
     "price_move": 12.1,
     "divergence_score": 8.5,
     "signal_strength": 1.5,
-    "peak_pnl": 3.200000000000003
+    "peak_pnl": 4.6000000000000085
   },
   {
     "market_id": "g5ScEgtOpQ",
@@ -3758,5 +3758,24 @@
     "price_move": -30.5,
     "divergence_score": 18.31,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "9C5RE6dRyg",
+    "question": "Will YES have more holders than NO?",
+    "direction": "BUY YES",
+    "entry_prob": 77.1,
+    "entry_time": "2026-08-22 00:51 UTC",
+    "url": "https://manifold.markets/senso/will-yes-have-more-holders-than-no",
+    "stake": 110.3,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "NO",
+    "crowd_pct": 60.0,
+    "price_move": 10.0,
+    "divergence_score": 5.98,
+    "signal_strength": 1.2
   }
 ]
