@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-08-22 00:51 UTC",
+  "last_run": "2026-08-22 03:36 UTC",
   "conflicts": [],
   "overlaps": {},
   "direction_exposure": {
@@ -22,6 +22,6 @@
     "close_gravity": 0.6,
     "fresh_sniper": 0.6,
     "stability": 0.6,
-    "breakout": 1.0
+    "breakout": 0.8
   }
 }
