@@ -8149,5 +8149,24 @@
     "conviction_score": 19.39,
     "signal_strength": 1.5,
     "peak_pnl": 1.1999999999999993
+  },
+  {
+    "market_id": "gPA98L9uQS",
+    "question": "Will GTA 6 come out on November 19, 2026?",
+    "direction": "BUY YES",
+    "entry_prob": 83.9,
+    "entry_time": "2026-08-23 00:56 UTC",
+    "url": "https://manifold.markets/JayzRSCE/will-gta-6-come-out-on-november-19",
+    "stake": 110.0,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 2,
+    "smart_user_mana": 260,
+    "price_impact": 17.4,
+    "conviction_score": 3.61,
+    "signal_strength": 1.2
   }
 ]
