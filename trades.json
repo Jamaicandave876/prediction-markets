@@ -2111,12 +2111,12 @@
     "drift_score": -69.99,
     "url": "https://manifold.markets/Nahiz97/apakah-aptos-akan-naik-75-september",
     "stake": 36.0,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
-    "peak_pnl": 1.6000000000000014
+    "status": "closed",
+    "exit_prob": 21.8,
+    "exit_time": "2026-08-23 15:14 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 3.2,
+    "peak_pnl": 3.1999999999999993
   },
   {
     "market_id": "t9yEc2Od90",
