@@ -790,5 +790,23 @@
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null
+  },
+  {
+    "market_id": "O9UUpys8QS",
+    "question": "Will this market's probability ever go above 70% before it closes?",
+    "direction": "BUY NO",
+    "entry_prob": 98.8,
+    "pre_spike_prob": 81.0,
+    "spike_size": 17.8,
+    "spike_ratio": 6.6,
+    "spike_dir": 1,
+    "entry_time": "2026-08-24 03:47 UTC",
+    "url": "https://manifold.markets/szepvagy/will-this-markets-probability-ever-qnt5dSRLAl",
+    "stake": 34.6,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]
