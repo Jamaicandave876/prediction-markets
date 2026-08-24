@@ -2192,7 +2192,8 @@
     "exit_prob": null,
     "exit_time": null,
     "exit_reason": null,
-    "pnl_pp": null
+    "pnl_pp": null,
+    "peak_pnl": 0.20000000000000284
   },
   {
     "market_id": "8S6pLSS6P2",
