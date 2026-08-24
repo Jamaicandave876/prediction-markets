@@ -3948,5 +3948,24 @@
     "price_move": -5.9,
     "divergence_score": 4.13,
     "signal_strength": 0.83
+  },
+  {
+    "market_id": "n9CLPpszd6",
+    "question": "Will Ye / Kanye West perform in St. Petersburg on both 10 and 11 October 2026, as planned?",
+    "direction": "BUY NO",
+    "entry_prob": 46.5,
+    "entry_time": "2026-08-24 21:22 UTC",
+    "url": "https://manifold.markets/CommanderKeen/will-ye-kanye-west-perform-in-st-pe",
+    "stake": 28.2,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "YES",
+    "crowd_pct": 65.0,
+    "price_move": -5.8,
+    "divergence_score": 3.74,
+    "signal_strength": 0.75
   }
 ]
