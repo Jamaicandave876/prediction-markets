@@ -3929,5 +3929,24 @@
     "price_move": 9.3,
     "divergence_score": 5.58,
     "signal_strength": 1.12
+  },
+  {
+    "market_id": "h5yNspEpdz",
+    "question": "Will Ghent fire Nathan Cofnas before 2028?",
+    "direction": "BUY NO",
+    "entry_prob": 65.5,
+    "entry_time": "2026-08-24 15:32 UTC",
+    "url": "https://manifold.markets/Khazar_Man_From_Turan/will-ghent-fire-nathan-cofnas-befor",
+    "stake": 22.2,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "YES",
+    "crowd_pct": 70.0,
+    "price_move": -5.9,
+    "divergence_score": 4.13,
+    "signal_strength": 0.83
   }
 ]
