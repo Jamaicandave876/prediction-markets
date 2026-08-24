@@ -8188,5 +8188,43 @@
     "price_impact": 21.0,
     "conviction_score": 13.45,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "tUsOlOuZy9",
+    "question": "Will Lorena Wiebes lose a group sprint before EOY 2027?",
+    "direction": "BUY YES",
+    "entry_prob": 83.7,
+    "entry_time": "2026-08-24 03:48 UTC",
+    "url": "https://manifold.markets/RedzoneITG/will-lorena-wiebes-lose-a-group-spr",
+    "stake": 109.3,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 2,
+    "smart_user_mana": 1250,
+    "price_impact": 32.8,
+    "conviction_score": 32.76,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "hcEAR6SsO0",
+    "question": "Will Shohei Ohtani hit at least 43 home runs in 2026?",
+    "direction": "BUY YES",
+    "entry_prob": 26.7,
+    "entry_time": "2026-08-24 03:48 UTC",
+    "url": "https://manifold.markets/Yoae/will-shohei-ohtani-hit-at-least-43",
+    "stake": 39.6,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 3,
+    "smart_user_mana": 443,
+    "price_impact": 17.0,
+    "conviction_score": 9.05,
+    "signal_strength": 1.5
   }
 ]

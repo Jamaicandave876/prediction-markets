@@ -3891,5 +3891,43 @@
     "price_move": 10.0,
     "divergence_score": 5.98,
     "signal_strength": 1.2
+  },
+  {
+    "market_id": "sPyzsLLZnd",
+    "question": "Trump meets Kim Jong Un in 2026?",
+    "direction": "BUY NO",
+    "entry_prob": 23.0,
+    "entry_time": "2026-08-24 06:42 UTC",
+    "url": "https://manifold.markets/predyx_markets/trump-meets-kim-jong-un-in-2026",
+    "stake": 109.5,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "YES",
+    "crowd_pct": 60.0,
+    "price_move": -19.0,
+    "divergence_score": 11.43,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "dQ55LhL9zu",
+    "question": "Will the WTI Crude Oil Spot Price be above $86.50 on August 27, 2026?",
+    "direction": "BUY YES",
+    "entry_prob": 80.5,
+    "entry_time": "2026-08-24 06:43 UTC",
+    "url": "https://manifold.markets/ShaneBo/will-the-wti-crude-oil-spot-price-b-IRZC9y0ZNQ",
+    "stake": 109.5,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "NO",
+    "crowd_pct": 60.0,
+    "price_move": 9.3,
+    "divergence_score": 5.58,
+    "signal_strength": 1.12
   }
 ]
