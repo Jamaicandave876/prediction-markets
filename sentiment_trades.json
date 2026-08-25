@@ -3986,5 +3986,24 @@
     "price_move": -19.0,
     "divergence_score": 11.43,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "sPyzsLLZnd",
+    "question": "Trump meets Kim Jong Un in 2026?",
+    "direction": "BUY NO",
+    "entry_prob": 23.7,
+    "entry_time": "2026-08-25 18:30 UTC",
+    "url": "https://manifold.markets/predyx_markets/trump-meets-kim-jong-un-in-2026",
+    "stake": 99.7,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "YES",
+    "crowd_pct": 60.0,
+    "price_move": -18.2,
+    "divergence_score": 10.92,
+    "signal_strength": 1.5
   }
 ]
