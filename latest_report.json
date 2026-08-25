@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-08-25 18:31 UTC",
+  "timestamp": "2026-08-25 21:21 UTC",
   "regime": "adverse",
-  "pnl_7d": 46.0,
-  "total_open": 9,
-  "total_closed": 319,
-  "total_pnl": 616.2,
+  "pnl_7d": 61.9,
+  "total_open": 8,
+  "total_closed": 320,
+  "total_pnl": 632.1,
   "bots": [
     {
       "name": "fade",
@@ -21,12 +21,12 @@
     {
       "name": "breakout",
       "display": "Breakout",
-      "grade": "C",
-      "score": 53.3,
-      "win_rate": 60.0,
-      "total_pnl": 145.0,
-      "open": 2,
-      "closed": 61,
+      "grade": "B",
+      "score": 67.1,
+      "win_rate": 70.0,
+      "total_pnl": 160.9,
+      "open": 1,
+      "closed": 62,
       "paused": false,
       "consecutive_losses": 0
     },

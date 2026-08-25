@@ -8244,7 +8244,8 @@
     "smart_user_mana": 230,
     "price_impact": 17.2,
     "conviction_score": 3.16,
-    "signal_strength": 1.05
+    "signal_strength": 1.05,
+    "peak_pnl": 1.2999999999999972
   },
   {
     "market_id": "hACld8CSRI",
