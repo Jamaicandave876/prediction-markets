@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-08-25 12:35 UTC",
+  "timestamp": "2026-08-25 15:37 UTC",
   "regime": "adverse",
   "pnl_7d": 46.0,
-  "total_open": 7,
+  "total_open": 9,
   "total_closed": 319,
   "total_pnl": 616.2,
   "bots": [
@@ -25,7 +25,7 @@
       "score": 53.3,
       "win_rate": 60.0,
       "total_pnl": 145.0,
-      "open": 0,
+      "open": 2,
       "closed": 61,
       "paused": false,
       "consecutive_losses": 0
