@@ -1159,7 +1159,8 @@
     "baseline_range": 4.1,
     "breakout_move": 14.2,
     "breakout_strength": 3.5,
-    "signal_strength": 1.1651953010118623
+    "signal_strength": 1.1651953010118623,
+    "peak_pnl": 4.800000000000004
   },
   {
     "market_id": "dQ55LhL9zu",
