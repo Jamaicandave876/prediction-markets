@@ -157,10 +157,10 @@
     },
     "smart_money": {
       "mid_prob_entry": 153,
-      "no_direction": 174,
-      "strong_signal": 282,
+      "no_direction": 175,
+      "strong_signal": 283,
       "fast_trade": 211,
-      "low_prob_entry": 91,
+      "low_prob_entry": 92,
       "yes_direction": 135,
       "high_prob_entry": 65,
       "slow_trade": 3
@@ -1128,24 +1128,6 @@
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "sentiment",
-      "market_id": "OuQIQtgL0g",
-      "outcome": "big_loss",
-      "pnl_pp": -13.7,
-      "exit_reason": "stopped_out",
-      "duration_hours": 3.5,
-      "traits": [
-        "high_prob_entry",
-        "fast_trade",
-        "no_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 78.3,
-      "direction": "BUY NO",
-      "timestamp": "2026-08-18 00:51 UTC",
-      "lesson": "Sentiment: big loss via stopped_out. PnL: -13.7pp in 4h."
-    },
     {
       "bot": "breakout",
       "market_id": "OuQIQtgL0g",
@@ -2895,6 +2877,23 @@
       "direction": "BUY YES",
       "timestamp": "2026-08-26 03:48 UTC",
       "lesson": "Smart $: Held too long with no resolution. Consider shorter max_days."
+    },
+    {
+      "bot": "smart_money",
+      "market_id": "ZySPqSnS95",
+      "outcome": "small_win",
+      "pnl_pp": 1.3,
+      "exit_reason": "stale",
+      "duration_hours": 49.2,
+      "traits": [
+        "low_prob_entry",
+        "no_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 29.9,
+      "direction": "BUY NO",
+      "timestamp": "2026-08-26 19:42 UTC",
+      "lesson": "Smart $: small win via stale. PnL: +1.3pp in 49h."
     }
   ],
   "regime": "cautious",
@@ -3027,7 +3026,7 @@
     "breakout": 0.71,
     "calibration": 0.1,
     "reversal": 0.2,
-    "smart_money": 0.58,
+    "smart_money": 0.64,
     "time_decay": 0.23,
     "sentiment": 0.2,
     "accumulation": 0.1,
@@ -3040,6 +3039,6 @@
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-08-26 16:13 UTC",
-  "generation": 997
+  "last_evolution": "2026-08-26 19:42 UTC",
+  "generation": 998
 }
