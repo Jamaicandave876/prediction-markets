@@ -186,10 +186,10 @@
       "slow_trade": 39
     },
     "breakout": {
-      "mid_prob_entry": 34,
+      "mid_prob_entry": 35,
       "fast_trade": 32,
-      "yes_direction": 37,
-      "strong_signal": 31,
+      "yes_direction": 38,
+      "strong_signal": 32,
       "weak_signal": 9,
       "low_prob_entry": 12,
       "no_direction": 27,
@@ -220,9 +220,9 @@
     "sentiment": {
       "low_prob_entry": 15,
       "fast_trade": 62,
-      "no_direction": 56,
+      "no_direction": 57,
       "weak_signal": 8,
-      "mid_prob_entry": 67,
+      "mid_prob_entry": 68,
       "strong_signal": 71,
       "high_prob_entry": 21,
       "yes_direction": 47
@@ -1128,40 +1128,6 @@
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "breakout",
-      "market_id": "OuQIQtgL0g",
-      "outcome": "strong_win",
-      "pnl_pp": 11.6,
-      "exit_reason": "trailing_stop",
-      "duration_hours": 12.1,
-      "traits": [
-        "high_prob_entry",
-        "fast_trade",
-        "no_direction"
-      ],
-      "entry_prob": 82.7,
-      "direction": "BUY NO",
-      "timestamp": "2026-08-18 06:31 UTC",
-      "lesson": "Breakout: Quick strong win \u2014 this signal pattern works well."
-    },
-    {
-      "bot": "momentum",
-      "market_id": "AcCAdd59A8",
-      "outcome": "strong_win",
-      "pnl_pp": 28.2,
-      "exit_reason": "target_hit",
-      "duration_hours": 116.1,
-      "traits": [
-        "low_prob_entry",
-        "no_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 29.2,
-      "direction": "BUY NO",
-      "timestamp": "2026-08-19 00:51 UTC",
-      "lesson": "Momentum: Strong signal \u2192 strong win. Keep trusting high-confidence entries."
-    },
     {
       "bot": "momentum",
       "market_id": "AcCAdd59A8",
@@ -2894,6 +2860,39 @@
       "direction": "BUY NO",
       "timestamp": "2026-08-27 00:23 UTC",
       "lesson": "Smart $: Held too long with no resolution. Consider shorter max_days."
+    },
+    {
+      "bot": "breakout",
+      "market_id": "RIccp0dnEl",
+      "outcome": "strong_win",
+      "pnl_pp": 26.9,
+      "exit_reason": "target_hit",
+      "duration_hours": 56.6,
+      "traits": [
+        "mid_prob_entry",
+        "yes_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 53.8,
+      "direction": "BUY YES",
+      "timestamp": "2026-08-28 00:11 UTC",
+      "lesson": "Breakout: Strong signal \u2192 strong win. Keep trusting high-confidence entries."
+    },
+    {
+      "bot": "sentiment",
+      "market_id": "h5yNspEpdz",
+      "outcome": "strong_win",
+      "pnl_pp": 48.1,
+      "exit_reason": "target_hit",
+      "duration_hours": 80.7,
+      "traits": [
+        "mid_prob_entry",
+        "no_direction"
+      ],
+      "entry_prob": 65.5,
+      "direction": "BUY NO",
+      "timestamp": "2026-08-28 00:12 UTC",
+      "lesson": "Sentiment: strong win via target_hit. PnL: +48.1pp in 81h."
     }
   ],
   "regime": "cautious",
@@ -3023,7 +3022,7 @@
     "close_gravity": 0.2,
     "fresh_sniper": 0.2,
     "stability": 0.1,
-    "breakout": 0.71,
+    "breakout": 0.75,
     "calibration": 0.1,
     "reversal": 0.2,
     "smart_money": 0.55,
@@ -3039,6 +3038,6 @@
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-08-27 13:29 UTC",
-  "generation": 1000
+  "last_evolution": "2026-08-28 00:12 UTC",
+  "generation": 1001
 }
