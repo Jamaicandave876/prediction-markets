@@ -2162,7 +2162,7 @@
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null,
-    "peak_pnl": 10.400000000000002
+    "peak_pnl": 12.000000000000004
   },
   {
     "market_id": "gPA98L9uQS",
@@ -2204,11 +2204,12 @@
     "drift_score": -33.24,
     "url": "https://manifold.markets/Yoae/will-the-silver-spot-price-be-above",
     "stake": 38.1,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 9.9,
+    "exit_time": "2026-08-28 23:48 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 17.5,
+    "peak_pnl": 17.5
   },
   {
     "market_id": "sPyzsLLZnd",
