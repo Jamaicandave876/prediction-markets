@@ -4045,7 +4045,7 @@
     "price_move": -8.6,
     "divergence_score": 6.0,
     "signal_strength": 1.2,
-    "peak_pnl": 3.8999999999999986
+    "peak_pnl": 15.799999999999997
   },
   {
     "market_id": "Z00OIP86ZQ",
@@ -4084,5 +4084,43 @@
     "price_move": 5.1,
     "divergence_score": 3.3,
     "signal_strength": 0.66
+  },
+  {
+    "market_id": "qEI65RPOCU",
+    "question": "Will Bitcoin be higher 7 days from now?",
+    "direction": "BUY NO",
+    "entry_prob": 44.0,
+    "entry_time": "2026-08-29 12:05 UTC",
+    "url": "https://manifold.markets/bigyahu/will-bitcoin-be-higher-in-7-days",
+    "stake": 31.3,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "YES",
+    "crowd_pct": 65.0,
+    "price_move": -6.0,
+    "divergence_score": 3.87,
+    "signal_strength": 0.77
+  },
+  {
+    "market_id": "c2d9tOE6U0",
+    "question": "Google Maps renames Lake Ontario to \"Lake America\" in 2026?",
+    "direction": "BUY NO",
+    "entry_prob": 80.5,
+    "entry_time": "2026-08-29 12:05 UTC",
+    "url": "https://manifold.markets/ChadCotty/google-maps-renames-lake-ontario-to",
+    "stake": 20,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "YES",
+    "crowd_pct": 70.0,
+    "price_move": -5.2,
+    "divergence_score": 3.66,
+    "signal_strength": 0.73
   }
 ]
