@@ -8324,5 +8324,24 @@
     "conviction_score": 3.8,
     "signal_strength": 1.27,
     "peak_pnl": 4.5
+  },
+  {
+    "market_id": "c2d9tOE6U0",
+    "question": "Google Maps renames Lake Ontario to \"Lake America\" in 2026?",
+    "direction": "BUY YES",
+    "entry_prob": 86.1,
+    "entry_time": "2026-08-29 05:06 UTC",
+    "url": "https://manifold.markets/ChadCotty/google-maps-renames-lake-ontario-to",
+    "stake": 112.6,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 4,
+    "smart_user_mana": 500,
+    "price_impact": 5.6,
+    "conviction_score": 4.44,
+    "signal_strength": 1.48
   }
 ]
