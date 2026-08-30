@@ -157,10 +157,10 @@
     },
     "smart_money": {
       "mid_prob_entry": 153,
-      "no_direction": 177,
+      "no_direction": 178,
       "strong_signal": 284,
-      "fast_trade": 214,
-      "low_prob_entry": 94,
+      "fast_trade": 215,
+      "low_prob_entry": 95,
       "yes_direction": 136,
       "high_prob_entry": 66,
       "slow_trade": 3
@@ -1128,24 +1128,6 @@
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "smart_money",
-      "market_id": "IUgtSpszNS",
-      "outcome": "strong_win",
-      "pnl_pp": 21.1,
-      "exit_reason": "target_hit",
-      "duration_hours": 14.6,
-      "traits": [
-        "mid_prob_entry",
-        "fast_trade",
-        "no_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 42.5,
-      "direction": "BUY NO",
-      "timestamp": "2026-08-20 15:26 UTC",
-      "lesson": "Smart $: Quick strong win \u2014 this signal pattern works well."
-    },
     {
       "bot": "smart_money",
       "market_id": "IUgtSpszNS",
@@ -2886,6 +2868,23 @@
       "direction": "BUY NO",
       "timestamp": "2026-08-30 14:13 UTC",
       "lesson": "Sentiment: Had profit but trailing stop was too tight. Consider widening trail."
+    },
+    {
+      "bot": "smart_money",
+      "market_id": "I8ygISRUdA",
+      "outcome": "small_win",
+      "pnl_pp": 1.5,
+      "exit_reason": "target_hit",
+      "duration_hours": 4.2,
+      "traits": [
+        "low_prob_entry",
+        "fast_trade",
+        "no_direction"
+      ],
+      "entry_prob": 16.4,
+      "direction": "BUY NO",
+      "timestamp": "2026-08-30 18:21 UTC",
+      "lesson": "Smart $: small win via target_hit. PnL: +1.5pp in 4h."
     }
   ],
   "regime": "cautious",
@@ -3031,6 +3030,6 @@
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-08-30 14:13 UTC",
-  "generation": 1010
+  "last_evolution": "2026-08-30 18:21 UTC",
+  "generation": 1011
 }
