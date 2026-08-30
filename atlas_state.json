@@ -99,13 +99,13 @@
       "grade": "F"
     },
     "breakout": {
-      "score": 71.3,
-      "win_rate": 70.0,
-      "avg_pnl": 4.7,
-      "total_pnl": 187.8,
-      "closed": 63,
-      "open": 1,
-      "grade": "B"
+      "score": 60.4,
+      "win_rate": 60.0,
+      "avg_pnl": 2.2,
+      "total_pnl": 168.2,
+      "closed": 64,
+      "open": 0,
+      "grade": "C"
     },
     "weather_temperature": {
       "score": 50,
@@ -154,7 +154,7 @@
     "close_gravity": 1,
     "fresh_sniper": 1,
     "stability": 2,
-    "breakout": 0,
+    "breakout": 1,
     "weather_temperature": 0,
     "weather_precipitation": 0,
     "weather_storm": 0,

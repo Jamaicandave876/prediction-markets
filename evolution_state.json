@@ -75,7 +75,7 @@
     },
     "sentiment": {
       "target_hit": 87,
-      "stopped_out": 103,
+      "stopped_out": 104,
       "trailing_stop": 8,
       "stale": 46,
       "resolved_loss": 2
@@ -126,7 +126,7 @@
       "stale": 5
     },
     "breakout": {
-      "stopped_out": 24,
+      "stopped_out": 25,
       "target_hit": 7,
       "stale": 4
     },
@@ -1128,42 +1128,6 @@
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "sentiment",
-      "market_id": "g5ScEgtOpQ",
-      "outcome": "small_loss",
-      "pnl_pp": 0.0,
-      "exit_reason": "target_hit",
-      "duration_hours": 2.9,
-      "traits": [
-        "low_prob_entry",
-        "fast_trade",
-        "no_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 27.7,
-      "direction": "BUY NO",
-      "timestamp": "2026-08-20 06:34 UTC",
-      "lesson": "Sentiment: small loss via target_hit. PnL: +0.0pp in 3h."
-    },
-    {
-      "bot": "smart_money",
-      "market_id": "ZsZIPZnl8c",
-      "outcome": "small_loss",
-      "pnl_pp": 0.0,
-      "exit_reason": "target_hit",
-      "duration_hours": 2.9,
-      "traits": [
-        "high_prob_entry",
-        "fast_trade",
-        "yes_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 76.4,
-      "direction": "BUY YES",
-      "timestamp": "2026-08-20 09:27 UTC",
-      "lesson": "Smart $: small loss via target_hit. PnL: +0.0pp in 3h."
-    },
     {
       "bot": "smart_money",
       "market_id": "NUnqqQZAlE",
@@ -2890,6 +2854,40 @@
       "direction": "BUY NO",
       "timestamp": "2026-08-29 22:57 UTC",
       "lesson": "Smart $: Quick strong win \u2014 this signal pattern works well."
+    },
+    {
+      "bot": "breakout",
+      "market_id": "c2d9tOE6U0",
+      "outcome": "big_loss",
+      "pnl_pp": -19.6,
+      "exit_reason": "stopped_out",
+      "duration_hours": 6.0,
+      "traits": [
+        "high_prob_entry",
+        "fast_trade",
+        "no_direction"
+      ],
+      "entry_prob": 79.4,
+      "direction": "BUY NO",
+      "timestamp": "2026-08-30 08:53 UTC",
+      "lesson": "Breakout: big loss via stopped_out. PnL: -19.6pp in 6h."
+    },
+    {
+      "bot": "sentiment",
+      "market_id": "c2d9tOE6U0",
+      "outcome": "big_loss",
+      "pnl_pp": -18.5,
+      "exit_reason": "stopped_out",
+      "duration_hours": 20.8,
+      "traits": [
+        "high_prob_entry",
+        "fast_trade",
+        "no_direction"
+      ],
+      "entry_prob": 80.5,
+      "direction": "BUY NO",
+      "timestamp": "2026-08-30 08:53 UTC",
+      "lesson": "Sentiment: big loss via stopped_out. PnL: -18.5pp in 21h."
     }
   ],
   "regime": "cautious",
@@ -3019,7 +3017,7 @@
     "close_gravity": 0.2,
     "fresh_sniper": 0.2,
     "stability": 0.1,
-    "breakout": 0.75,
+    "breakout": 0.65,
     "calibration": 0.1,
     "reversal": 0.2,
     "smart_money": 0.56,
@@ -3035,6 +3033,6 @@
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-08-30 02:56 UTC",
-  "generation": 1008
+  "last_evolution": "2026-08-30 08:53 UTC",
+  "generation": 1009
 }
