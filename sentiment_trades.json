@@ -4055,11 +4055,11 @@
     "entry_time": "2026-08-28 23:48 UTC",
     "url": "https://manifold.markets/ShaneBo/will-the-odyssey-ever-surpass-spide",
     "stake": 38.4,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 52.4,
+    "exit_time": "2026-08-31 18:35 UTC",
+    "exit_reason": "stopped_out",
+    "pnl_pp": -15.4,
     "crowd_dir": "YES",
     "crowd_pct": 65.0,
     "price_move": -6.1,
@@ -4085,7 +4085,7 @@
     "price_move": 5.1,
     "divergence_score": 3.3,
     "signal_strength": 0.66,
-    "peak_pnl": 9.5
+    "peak_pnl": 14.199999999999996
   },
   {
     "market_id": "qEI65RPOCU",

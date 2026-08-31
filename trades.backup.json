@@ -2241,5 +2241,50 @@
     "exit_time": "2026-08-23 21:14 UTC",
     "exit_reason": "target_hit",
     "pnl_pp": 0.0
+  },
+  {
+    "market_id": "P8hUP8dNCO",
+    "question": "Will there be another HuggingFace like public incident (of the same scale) before Sep 2027?",
+    "direction": "BUY YES",
+    "entry_prob": 51.8,
+    "entry_time": "2026-08-31 09:10 UTC",
+    "drift_score": 29.4,
+    "url": "https://manifold.markets/nsokolsky/will-there-be-another-huggingface-l",
+    "stake": 44.2,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
+  },
+  {
+    "market_id": "2QNgzytgzn",
+    "question": "What lasting peace deal will come first? Russia's or Iran's?",
+    "direction": "BUY NO",
+    "entry_prob": 28.2,
+    "entry_time": "2026-08-31 09:10 UTC",
+    "drift_score": -42.06,
+    "url": "https://manifold.markets/Velaris/what-lasting-peace-deal-will-come-f",
+    "stake": 44.2,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
+  },
+  {
+    "market_id": "dEQndpqO6P",
+    "question": "Will human genetic enhancement of embryos be legally permitted in at least one country by EOY 2040?",
+    "direction": "BUY YES",
+    "entry_prob": 76.6,
+    "entry_time": "2026-08-31 09:10 UTC",
+    "drift_score": 31.75,
+    "url": "https://manifold.markets/Chimpy/will-human-genetic-enhancement-of-e",
+    "stake": 44.2,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]
