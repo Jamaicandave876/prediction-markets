@@ -2080,11 +2080,11 @@
     "drift_score": -19.36,
     "url": "https://manifold.markets/JRR/will-an-ai-eventconsequence-cause-a",
     "stake": 33.0,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 23.0,
+    "exit_time": "2026-08-31 02:50 UTC",
+    "exit_reason": "stale",
+    "pnl_pp": 0.0
   },
   {
     "market_id": "ssOsyLL889",
@@ -2095,11 +2095,11 @@
     "drift_score": -9.33,
     "url": "https://manifold.markets/BillClintonBubba/strait-of-hormuz-traffic-returns-to-QI2ZPqRRIg",
     "stake": 33.0,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 35.9,
+    "exit_time": "2026-08-31 02:50 UTC",
+    "exit_reason": "stale",
+    "pnl_pp": 4.5,
     "peak_pnl": 4.5
   },
   {
