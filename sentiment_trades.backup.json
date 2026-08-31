@@ -4084,7 +4084,8 @@
     "crowd_pct": 65.0,
     "price_move": 5.1,
     "divergence_score": 3.3,
-    "signal_strength": 0.66
+    "signal_strength": 0.66,
+    "peak_pnl": 7.399999999999999
   },
   {
     "market_id": "qEI65RPOCU",

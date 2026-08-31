@@ -4126,5 +4126,24 @@
     "divergence_score": 3.66,
     "signal_strength": 0.73,
     "peak_pnl": 1.0999999999999943
+  },
+  {
+    "market_id": "Zq2Ocus8uA",
+    "question": "Will any model at least as good as Claude Fable 5 and 10x cheaper be released by the end of March 2027?",
+    "direction": "BUY YES",
+    "entry_prob": 83.9,
+    "entry_time": "2026-08-31 02:50 UTC",
+    "url": "https://manifold.markets/BenAybar/will-any-model-at-least-as-good-as",
+    "stake": 112.3,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "NO",
+    "crowd_pct": 80.0,
+    "price_move": 15.2,
+    "divergence_score": 12.12,
+    "signal_strength": 1.5
   }
 ]
