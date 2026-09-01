@@ -2131,7 +2131,8 @@
     "exit_prob": null,
     "exit_time": null,
     "exit_reason": null,
-    "pnl_pp": null
+    "pnl_pp": null,
+    "peak_pnl": 34.199999999999996
   },
   {
     "market_id": "2Zld5OsINN",
