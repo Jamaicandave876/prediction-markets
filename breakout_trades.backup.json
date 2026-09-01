@@ -1198,5 +1198,23 @@
     "breakout_move": -5.4,
     "breakout_strength": 2.0,
     "signal_strength": 0.6667699799444199
+  },
+  {
+    "market_id": "Z00OIP86ZQ",
+    "question": "Will The Odyssey ever surpass Spider-Man: Brand New Day in daily domestic box office gross during their initial runs?",
+    "direction": "BUY YES",
+    "entry_prob": 52.4,
+    "entry_time": "2026-09-01 00:17 UTC",
+    "url": "https://manifold.markets/ShaneBo/will-the-odyssey-ever-surpass-spide",
+    "stake": 44.2,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "baseline_range": 7.7,
+    "breakout_move": 22.1,
+    "breakout_strength": 2.9,
+    "signal_strength": 0.9624592837368294
   }
 ]
