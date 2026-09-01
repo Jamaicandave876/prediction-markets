@@ -2220,12 +2220,12 @@
     "drift_score": -41.61,
     "url": "https://manifold.markets/predyx_markets/trump-meets-kim-jong-un-in-2026",
     "stake": 38.1,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
-    "peak_pnl": 0.3999999999999986
+    "status": "closed",
+    "exit_prob": 21.7,
+    "exit_time": "2026-09-01 08:10 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 1.3,
+    "peak_pnl": 1.3000000000000007
   },
   {
     "market_id": "ZsZIPZnl8c",
