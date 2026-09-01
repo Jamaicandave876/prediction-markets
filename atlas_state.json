@@ -104,7 +104,7 @@
       "avg_pnl": 2.2,
       "total_pnl": 168.2,
       "closed": 64,
-      "open": 0,
+      "open": 1,
       "grade": "C"
     },
     "weather_temperature": {
