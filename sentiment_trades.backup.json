@@ -4184,5 +4184,24 @@
     "divergence_score": 9.27,
     "signal_strength": 1.5,
     "peak_pnl": 1.1999999999999957
+  },
+  {
+    "market_id": "zQAul5qpPz",
+    "question": "At the end of August 2028, will California be in a widespread drought?",
+    "direction": "BUY NO",
+    "entry_prob": 34.9,
+    "entry_time": "2026-09-01 18:06 UTC",
+    "url": "https://manifold.markets/ParadoxRain/at-the-end-of-august-2028-will-cali",
+    "stake": 43.8,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "YES",
+    "crowd_pct": 65.0,
+    "price_move": -6.0,
+    "divergence_score": 3.92,
+    "signal_strength": 0.78
   }
 ]

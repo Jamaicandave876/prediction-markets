@@ -1216,6 +1216,24 @@
     "breakout_move": 22.1,
     "breakout_strength": 2.9,
     "signal_strength": 0.9624592837368294,
-    "peak_pnl": 3.200000000000003
+    "peak_pnl": 21.1
+  },
+  {
+    "market_id": "R9Ush2qIO9",
+    "question": "Will the address for math.eg.rego.re have a balance of more than $100 before Sep 8?",
+    "direction": "BUY NO",
+    "entry_prob": 18.4,
+    "entry_time": "2026-09-01 18:05 UTC",
+    "url": "https://manifold.markets/vi/will-the-address-for-mathegregore-h-2NP9RA9O8C",
+    "stake": 110.6,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "baseline_range": 5.9,
+    "breakout_move": -22.8,
+    "breakout_strength": 3.8,
+    "signal_strength": 1.2802261686427643
   }
 ]
