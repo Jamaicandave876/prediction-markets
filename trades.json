@@ -2299,11 +2299,12 @@
     "drift_score": -38.05,
     "url": "https://manifold.markets/LeoA/will-studyofuscom-aellas-facerankin",
     "stake": 56.5,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 19.3,
+    "exit_time": "2026-09-02 22:55 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 1.1,
+    "peak_pnl": 1.0999999999999979
   },
   {
     "market_id": "EptlI0nRch",

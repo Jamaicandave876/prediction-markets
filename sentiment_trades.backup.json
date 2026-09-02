@@ -4241,7 +4241,8 @@
     "crowd_pct": 77.8,
     "price_move": -18.4,
     "divergence_score": 14.31,
-    "signal_strength": 1.5
+    "signal_strength": 1.5,
+    "peak_pnl": 0.40000000000000213
   },
   {
     "market_id": "P8hUP8dNCO",
@@ -4270,11 +4271,11 @@
     "entry_time": "2026-09-02 13:08 UTC",
     "url": "https://manifold.markets/Bayesian/will-i-solve-an-unsolved-math-probl-5ZR0n0LOlE",
     "stake": 37.1,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 10.4,
+    "exit_time": "2026-09-02 18:19 UTC",
+    "exit_reason": "stopped_out",
+    "pnl_pp": -13.6,
     "crowd_dir": "NO",
     "crowd_pct": 60.0,
     "price_move": 14.0,
