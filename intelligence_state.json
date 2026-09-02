@@ -654,17 +654,27 @@
       "old": 4.7,
       "new": 4.4,
       "reason": "System WR 70% > 65% \u2014 loosen signals"
+    },
+    {
+      "param": "MIN_DRIFT_SCORE",
+      "old": 4.4,
+      "new": 4.1,
+      "reason": "System WR 70% > 65% \u2014 loosen signals"
     }
   ],
   "paused": {
-    "mean_reversion": false,
-    "contrarian": false,
+    "mean_reversion": true,
+    "contrarian": true,
     "liquidation": false,
-    "calibration": false,
+    "calibration": true,
     "sentiment_divergence": false,
     "smart_money": false,
     "momentum": false
   },
   "consecutive_losses": {},
-  "pause_start": {}
+  "pause_start": {
+    "mean_reversion": "2026-09-02 07:30 UTC",
+    "contrarian": "2026-09-02 07:30 UTC",
+    "calibration": "2026-09-02 07:30 UTC"
+  }
 }

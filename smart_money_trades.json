@@ -8560,5 +8560,24 @@
     "conviction_score": 17.96,
     "signal_strength": 1.5,
     "peak_pnl": 2.799999999999997
+  },
+  {
+    "market_id": "RCytR9OOOl",
+    "question": "Will studyofus.com (Aella's face-ranking site) have a serious data leak before 2027?",
+    "direction": "BUY NO",
+    "entry_prob": 23.1,
+    "entry_time": "2026-09-02 07:30 UTC",
+    "url": "https://manifold.markets/LeoA/will-studyofuscom-aellas-facerankin",
+    "stake": 117.3,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 4,
+    "smart_user_mana": 1500,
+    "price_impact": 26.2,
+    "conviction_score": 62.87,
+    "signal_strength": 1.5
   }
 ]

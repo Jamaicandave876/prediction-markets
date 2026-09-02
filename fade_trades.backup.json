@@ -808,5 +808,23 @@
     "exit_time": "2026-08-24 18:29 UTC",
     "exit_reason": "resolved_loss",
     "pnl_pp": -1.2
+  },
+  {
+    "market_id": "ASQZd8hL58",
+    "question": "Will my brother start reading Harry Potter in the next week?",
+    "direction": "BUY YES",
+    "entry_prob": 8.3,
+    "pre_spike_prob": 40.0,
+    "spike_size": 31.7,
+    "spike_ratio": 11.2,
+    "spike_dir": -1,
+    "entry_time": "2026-09-02 02:19 UTC",
+    "url": "https://manifold.markets/Sister/will-my-brother-start-reading-harry",
+    "stake": 42.7,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]
