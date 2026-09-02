@@ -821,10 +821,10 @@
     "entry_time": "2026-09-02 02:19 UTC",
     "url": "https://manifold.markets/Sister/will-my-brother-start-reading-harry",
     "stake": 42.7,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 80.2,
+    "exit_time": "2026-09-02 18:18 UTC",
+    "exit_reason": "normalized",
+    "pnl_pp": 71.9
   }
 ]

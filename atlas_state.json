@@ -27,12 +27,12 @@
       "grade": "B"
     },
     "fade": {
-      "score": 68.0,
-      "win_rate": 50.0,
-      "avg_pnl": 9.0,
-      "total_pnl": 447.4,
-      "closed": 45,
-      "open": 1,
+      "score": 76.0,
+      "win_rate": 60.0,
+      "avg_pnl": 19.0,
+      "total_pnl": 519.3,
+      "closed": 46,
+      "open": 0,
       "grade": "B"
     },
     "mean_reversion": {
@@ -146,7 +146,7 @@
   },
   "consecutive_losses": {
     "momentum": 0,
-    "fade": 1,
+    "fade": 0,
     "mean_reversion": 5,
     "volume_surge": 2,
     "whale": 0,
@@ -161,5 +161,5 @@
     "weather_divergence": 0
   },
   "regime": "adverse",
-  "last_report": "2026-09-01 18:06 UTC"
+  "last_report": "2026-09-02 18:20 UTC"
 }
