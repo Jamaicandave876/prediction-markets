@@ -2127,11 +2127,11 @@
     "drift_score": 13.14,
     "url": "https://manifold.markets/makeworld/will-toronto-bike-lanes-be-removed-uUSSdln5Ry",
     "stake": 36.0,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 68.3,
+    "exit_time": "2026-09-02 07:29 UTC",
+    "exit_reason": "stale",
+    "pnl_pp": 34.2,
     "peak_pnl": 34.199999999999996
   },
   {
@@ -2158,11 +2158,11 @@
     "drift_score": -8.27,
     "url": "https://manifold.markets/Tantalost/bsw-receives-at-least-5-and-enters",
     "stake": 36.0,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 22.1,
+    "exit_time": "2026-09-02 07:29 UTC",
+    "exit_reason": "stale",
+    "pnl_pp": 20.1,
     "peak_pnl": 20.1
   },
   {
@@ -2288,6 +2288,6 @@
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null,
-    "peak_pnl": 0.10000000000000853
+    "peak_pnl": 0.9000000000000057
   }
 ]
