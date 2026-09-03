@@ -74,14 +74,14 @@
       "target_hit": 2
     },
     "sentiment": {
-      "target_hit": 91,
+      "target_hit": 92,
       "stopped_out": 106,
       "trailing_stop": 9,
       "stale": 46,
       "resolved_loss": 2
     },
     "smart_money": {
-      "target_hit": 213,
+      "target_hit": 215,
       "stopped_out": 70,
       "trailing_stop": 19,
       "stale": 87,
@@ -1128,60 +1128,6 @@
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "sentiment",
-      "market_id": "g5ScEgtOpQ",
-      "outcome": "small_loss",
-      "pnl_pp": 0.0,
-      "exit_reason": "target_hit",
-      "duration_hours": 3.1,
-      "traits": [
-        "low_prob_entry",
-        "fast_trade",
-        "no_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 27.7,
-      "direction": "BUY NO",
-      "timestamp": "2026-08-22 12:24 UTC",
-      "lesson": "Sentiment: small loss via target_hit. PnL: +0.0pp in 3h."
-    },
-    {
-      "bot": "sentiment",
-      "market_id": "sPyzsLLZnd",
-      "outcome": "small_loss",
-      "pnl_pp": 0.0,
-      "exit_reason": "target_hit",
-      "duration_hours": 3.1,
-      "traits": [
-        "low_prob_entry",
-        "fast_trade",
-        "no_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 23.1,
-      "direction": "BUY NO",
-      "timestamp": "2026-08-22 12:24 UTC",
-      "lesson": "Sentiment: small loss via target_hit. PnL: +0.0pp in 3h."
-    },
-    {
-      "bot": "smart_money",
-      "market_id": "NEylShPdCn",
-      "outcome": "small_win",
-      "pnl_pp": 1.2,
-      "exit_reason": "target_hit",
-      "duration_hours": 3.1,
-      "traits": [
-        "low_prob_entry",
-        "fast_trade",
-        "no_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 21.9,
-      "direction": "BUY NO",
-      "timestamp": "2026-08-22 18:19 UTC",
-      "lesson": "Smart $: small win via target_hit. PnL: +1.2pp in 3h."
-    },
     {
       "bot": "smart_money",
       "market_id": "gtCq60pPgy",
@@ -2881,6 +2827,59 @@
       "direction": "BUY NO",
       "timestamp": "2026-09-03 07:36 UTC",
       "lesson": "Smart $: small loss via target_hit. PnL: -2.1pp in 5h."
+    },
+    {
+      "bot": "smart_money",
+      "market_id": "PRh6RyZsRR",
+      "outcome": "small_loss",
+      "pnl_pp": -0.1,
+      "exit_reason": "target_hit",
+      "duration_hours": 4.7,
+      "traits": [
+        "low_prob_entry",
+        "fast_trade",
+        "no_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 19.2,
+      "direction": "BUY NO",
+      "timestamp": "2026-09-03 22:56 UTC",
+      "lesson": "Smart $: small loss via target_hit. PnL: -0.1pp in 5h."
+    },
+    {
+      "bot": "smart_money",
+      "market_id": "L6A605uzhP",
+      "outcome": "small_loss",
+      "pnl_pp": -2.7,
+      "exit_reason": "target_hit",
+      "duration_hours": 4.7,
+      "traits": [
+        "low_prob_entry",
+        "fast_trade",
+        "no_direction"
+      ],
+      "entry_prob": 14.3,
+      "direction": "BUY NO",
+      "timestamp": "2026-09-03 22:56 UTC",
+      "lesson": "Smart $: small loss via target_hit. PnL: -2.7pp in 5h."
+    },
+    {
+      "bot": "sentiment",
+      "market_id": "96CURIACOh",
+      "outcome": "big_loss",
+      "pnl_pp": -3.4,
+      "exit_reason": "target_hit",
+      "duration_hours": 4.7,
+      "traits": [
+        "low_prob_entry",
+        "fast_trade",
+        "no_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 18.0,
+      "direction": "BUY NO",
+      "timestamp": "2026-09-03 22:56 UTC",
+      "lesson": "Sentiment: big loss via target_hit. PnL: -3.4pp in 5h."
     }
   ],
   "regime": "cautious",
@@ -3013,7 +3012,7 @@
     "breakout": 0.75,
     "calibration": 0.1,
     "reversal": 0.2,
-    "smart_money": 0.59,
+    "smart_money": 0.45,
     "time_decay": 0.23,
     "sentiment": 0.2,
     "accumulation": 0.1,
@@ -3026,6 +3025,6 @@
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-09-03 18:17 UTC",
-  "generation": 1029
+  "last_evolution": "2026-09-03 22:56 UTC",
+  "generation": 1030
 }

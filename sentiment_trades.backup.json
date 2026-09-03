@@ -4300,5 +4300,24 @@
     "price_move": -11.7,
     "divergence_score": 7.04,
     "signal_strength": 1.41
+  },
+  {
+    "market_id": "96CURIACOh",
+    "question": "Will nadya271 reach Codeforces International Master in or before 2027?",
+    "direction": "BUY NO",
+    "entry_prob": 18.0,
+    "entry_time": "2026-09-03 18:16 UTC",
+    "url": "https://manifold.markets/MattTheNub/will-nadya271-reach-codeforces-inte",
+    "stake": 120.1,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "YES",
+    "crowd_pct": 60.0,
+    "price_move": -11.7,
+    "divergence_score": 7.04,
+    "signal_strength": 1.41
   }
 ]

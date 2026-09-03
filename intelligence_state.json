@@ -684,6 +684,12 @@
       "old": 3.2,
       "new": 2.9,
       "reason": "System WR 70% > 65% \u2014 loosen signals"
+    },
+    {
+      "param": "MIN_DRIFT_SCORE",
+      "old": 2.0,
+      "new": 2.3,
+      "reason": "System WR 30% < 40% \u2014 tighten signals"
     }
   ],
   "paused": {
@@ -691,7 +697,7 @@
     "contrarian": true,
     "liquidation": false,
     "calibration": true,
-    "sentiment_divergence": false,
+    "sentiment_divergence": true,
     "smart_money": false,
     "momentum": false
   },
@@ -699,6 +705,7 @@
   "pause_start": {
     "mean_reversion": "2026-09-02 07:30 UTC",
     "contrarian": "2026-09-02 07:30 UTC",
-    "calibration": "2026-09-02 07:30 UTC"
+    "calibration": "2026-09-02 07:30 UTC",
+    "sentiment_divergence": "2026-09-03 22:56 UTC"
   }
 }

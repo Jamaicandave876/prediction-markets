@@ -8676,5 +8676,43 @@
     "price_impact": 30.0,
     "conviction_score": 150.97,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "PRh6RyZsRR",
+    "question": "Will the Ban Superintelligence Act pass by the end of 2027?",
+    "direction": "BUY NO",
+    "entry_prob": 19.2,
+    "entry_time": "2026-09-03 18:16 UTC",
+    "url": "https://manifold.markets/Jarizu/will-the-ban-superintelligence-act",
+    "stake": 120.1,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 5,
+    "smart_user_mana": 900,
+    "price_impact": 25.2,
+    "conviction_score": 45.45,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "L6A605uzhP",
+    "question": "Will I solve an unsolved math problem with AI in September?",
+    "direction": "BUY NO",
+    "entry_prob": 14.3,
+    "entry_time": "2026-09-03 18:16 UTC",
+    "url": "https://manifold.markets/Bayesian/will-i-solve-an-unsolved-math-probl-5ZR0n0LOlE",
+    "stake": 120.1,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 4,
+    "smart_user_mana": 270,
+    "price_impact": 6.9,
+    "conviction_score": 2.97,
+    "signal_strength": 0.99
   }
 ]
