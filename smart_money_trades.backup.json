@@ -8637,5 +8637,24 @@
     "price_impact": 8.5,
     "conviction_score": 3.78,
     "signal_strength": 1.26
+  },
+  {
+    "market_id": "tdUSAnquZL",
+    "question": "ULTIMATUM GAME: two random traders negotiate this market's resolution",
+    "direction": "BUY YES",
+    "entry_prob": 52.6,
+    "entry_time": "2026-09-02 22:56 UTC",
+    "url": "https://manifold.markets/Simon74fe/ultimatum-game-two-random-traders-n",
+    "stake": 62.0,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 3,
+    "smart_user_mana": 800,
+    "price_impact": 3.9,
+    "conviction_score": 3.72,
+    "signal_strength": 1.24
   }
 ]
