@@ -4358,5 +4358,24 @@
     "price_move": 9.3,
     "divergence_score": 6.94,
     "signal_strength": 1.39
+  },
+  {
+    "market_id": "6OsRAnAIPA",
+    "question": "Will the Supreme Court decide that sports event contracts are protected under the Commodities Exchange Act? [1k subsidy]",
+    "direction": "BUY NO",
+    "entry_prob": 33.5,
+    "entry_time": "2026-09-06 19:51 UTC",
+    "url": "https://manifold.markets/realTomBayes/will-the-supreme-court-decide-that",
+    "stake": 84.4,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "YES",
+    "crowd_pct": 65.0,
+    "price_move": -10.5,
+    "divergence_score": 6.8,
+    "signal_strength": 1.36
   }
 ]
