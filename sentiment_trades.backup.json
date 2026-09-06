@@ -4320,5 +4320,43 @@
     "price_move": -11.7,
     "divergence_score": 7.04,
     "signal_strength": 1.41
+  },
+  {
+    "market_id": "cQtULdcn0I",
+    "question": "Nigel Farage out as Reform UK Leader before 1st March 2027?",
+    "direction": "BUY YES",
+    "entry_prob": 22.5,
+    "entry_time": "2026-09-05 22:33 UTC",
+    "url": "https://manifold.markets/Noit/nigel-farage-out-as-reform-uk-leade",
+    "stake": 44.9,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "NO",
+    "crowd_pct": 80.0,
+    "price_move": 10.1,
+    "divergence_score": 8.11,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "yAA259LCdu",
+    "question": "Will Anthropic announce a solution to the Navier-Stokes Millennium problem before IPO? ",
+    "direction": "BUY YES",
+    "entry_prob": 29.6,
+    "entry_time": "2026-09-05 22:33 UTC",
+    "url": "https://manifold.markets/Bayesian/did-claude-just-solve-navier-stokes",
+    "stake": 45.8,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "NO",
+    "crowd_pct": 75.0,
+    "price_move": 9.3,
+    "divergence_score": 6.94,
+    "signal_strength": 1.39
   }
 ]
