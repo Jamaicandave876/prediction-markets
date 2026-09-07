@@ -826,5 +826,23 @@
     "exit_time": "2026-09-02 18:18 UTC",
     "exit_reason": "normalized",
     "pnl_pp": 71.9
+  },
+  {
+    "market_id": "LN2cOId8gd",
+    "question": "Will an official manifold account make markets for every state in every presidential election up to 2040",
+    "direction": "BUY NO",
+    "entry_prob": 41.8,
+    "pre_spike_prob": 13.4,
+    "spike_size": 28.4,
+    "spike_ratio": 9.5,
+    "spike_dir": 1,
+    "entry_time": "2026-09-07 14:39 UTC",
+    "url": "https://manifold.markets/Jack1/will-an-official-manifold-account-m",
+    "stake": 49.4,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]
