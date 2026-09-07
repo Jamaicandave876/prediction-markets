@@ -8733,5 +8733,43 @@
     "price_impact": 5.0,
     "conviction_score": 17.88,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "LzQPnUqOAq",
+    "question": "Will Opportunity party get 9.000% or more of the party vote in the 2026 NZ general election?",
+    "direction": "BUY NO",
+    "entry_prob": 13.3,
+    "entry_time": "2026-09-06 22:37 UTC",
+    "url": "https://manifold.markets/Jack1/will-opportunity-party-get-9000-or",
+    "stake": 105.0,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 20,
+    "smart_user_mana": 1850,
+    "price_impact": 30.5,
+    "conviction_score": 451.66,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "9q0l0s9ypU",
+    "question": "Will The Opportunities Party get a higher party vote percent than any of ACT, NZ First or greens?",
+    "direction": "BUY NO",
+    "entry_prob": 35.0,
+    "entry_time": "2026-09-06 22:37 UTC",
+    "url": "https://manifold.markets/Jack1/will-the-opportunities-party-get-a",
+    "stake": 72.1,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 2,
+    "smart_user_mana": 1000,
+    "price_impact": 14.0,
+    "conviction_score": 11.2,
+    "signal_strength": 1.5
   }
 ]
