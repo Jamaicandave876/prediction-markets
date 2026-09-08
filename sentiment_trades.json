@@ -4396,6 +4396,25 @@
     "price_move": -8.6,
     "divergence_score": 5.16,
     "signal_strength": 1.03,
-    "peak_pnl": 2.0
+    "peak_pnl": 3.5
+  },
+  {
+    "market_id": "ZgU8h6QcPu",
+    "question": "Will Lindsay Clancy stand trial again for killing her three children?",
+    "direction": "BUY YES",
+    "entry_prob": 75.0,
+    "entry_time": "2026-09-08 13:14 UTC",
+    "url": "https://manifold.markets/JimD/will-lindsay-clancy-stand-trial-aga",
+    "stake": 117.3,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "NO",
+    "crowd_pct": 60.0,
+    "price_move": 15.0,
+    "divergence_score": 9.0,
+    "signal_strength": 1.5
   }
 ]
