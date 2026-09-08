@@ -4396,7 +4396,7 @@
     "price_move": -8.6,
     "divergence_score": 5.16,
     "signal_strength": 1.03,
-    "peak_pnl": 3.5
+    "peak_pnl": 8.300000000000004
   },
   {
     "market_id": "ZgU8h6QcPu",
@@ -4406,15 +4406,34 @@
     "entry_time": "2026-09-08 13:14 UTC",
     "url": "https://manifold.markets/JimD/will-lindsay-clancy-stand-trial-aga",
     "stake": 117.3,
+    "status": "closed",
+    "exit_prob": 75.0,
+    "exit_time": "2026-09-08 18:14 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 0.0,
+    "crowd_dir": "NO",
+    "crowd_pct": 60.0,
+    "price_move": 15.0,
+    "divergence_score": 9.0,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "yE9hCulnEq",
+    "question": "Will Anthropic release a new frontier model before their IPO?",
+    "direction": "BUY YES",
+    "entry_prob": 67.0,
+    "entry_time": "2026-09-08 18:14 UTC",
+    "url": "https://manifold.markets/BenAybar/will-anthropic-release-a-new-fronti",
+    "stake": 38.5,
     "status": "open",
     "exit_prob": null,
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null,
     "crowd_dir": "NO",
-    "crowd_pct": 60.0,
-    "price_move": 15.0,
-    "divergence_score": 9.0,
-    "signal_strength": 1.5
+    "crowd_pct": 75.0,
+    "price_move": 4.5,
+    "divergence_score": 3.38,
+    "signal_strength": 0.68
   }
 ]

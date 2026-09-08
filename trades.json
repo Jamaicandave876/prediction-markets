@@ -2330,11 +2330,11 @@
     "drift_score": 4.35,
     "url": "https://manifold.markets/Simon74fe/ultimatum-game-two-random-traders-n",
     "stake": 56.5,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 32.5,
+    "exit_time": "2026-09-08 23:05 UTC",
+    "exit_reason": "reversal",
+    "pnl_pp": -19.8,
     "peak_pnl": 12.700000000000003
   },
   {
