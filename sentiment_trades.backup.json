@@ -4377,5 +4377,24 @@
     "price_move": -10.5,
     "divergence_score": 6.8,
     "signal_strength": 1.36
+  },
+  {
+    "market_id": "8q2IhsRCly",
+    "question": "Will Bitcoin be higher 7 days from now?",
+    "direction": "BUY NO",
+    "entry_prob": 46.7,
+    "entry_time": "2026-09-07 23:14 UTC",
+    "url": "https://manifold.markets/OnlySlides/will-bitcoin-be-higher-7-days-from-O58ZgtgAzE",
+    "stake": 45.8,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "YES",
+    "crowd_pct": 60.0,
+    "price_move": -8.6,
+    "divergence_score": 5.16,
+    "signal_strength": 1.03
   }
 ]
