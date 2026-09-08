@@ -74,7 +74,7 @@
       "target_hit": 2
     },
     "sentiment": {
-      "target_hit": 93,
+      "target_hit": 94,
       "stopped_out": 107,
       "trailing_stop": 9,
       "stale": 49,
@@ -1128,24 +1128,6 @@
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "momentum",
-      "market_id": "gPA98L9uQS",
-      "outcome": "small_loss",
-      "pnl_pp": 0.0,
-      "exit_reason": "target_hit",
-      "duration_hours": 2.9,
-      "traits": [
-        "high_prob_entry",
-        "fast_trade",
-        "yes_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 85.0,
-      "direction": "BUY YES",
-      "timestamp": "2026-08-23 21:14 UTC",
-      "lesson": "Momentum: small loss via target_hit. PnL: +0.0pp in 3h."
-    },
     {
       "bot": "momentum",
       "market_id": "ZsZIPZnl8c",
@@ -2873,6 +2855,24 @@
       "direction": "BUY NO",
       "timestamp": "2026-09-07 02:17 UTC",
       "lesson": "Smart $: small loss via target_hit. PnL: +0.0pp in 4h."
+    },
+    {
+      "bot": "sentiment",
+      "market_id": "ZgU8h6QcPu",
+      "outcome": "small_loss",
+      "pnl_pp": 0.0,
+      "exit_reason": "target_hit",
+      "duration_hours": 5.0,
+      "traits": [
+        "high_prob_entry",
+        "fast_trade",
+        "yes_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 75.0,
+      "direction": "BUY YES",
+      "timestamp": "2026-09-08 18:14 UTC",
+      "lesson": "Sentiment: small loss via target_hit. PnL: +0.0pp in 5h."
     }
   ],
   "regime": "cautious",
@@ -3018,6 +3018,6 @@
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-09-08 13:14 UTC",
-  "generation": 1056
+  "last_evolution": "2026-09-08 18:15 UTC",
+  "generation": 1057
 }
