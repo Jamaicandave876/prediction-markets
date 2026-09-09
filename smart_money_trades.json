@@ -8829,5 +8829,43 @@
     "conviction_score": 2.92,
     "signal_strength": 0.97,
     "peak_pnl": 2.9000000000000004
+  },
+  {
+    "market_id": "9shSz6N0zd",
+    "question": "Will Anthropic announce progress on a cure for cancer before their IPO?",
+    "direction": "BUY NO",
+    "entry_prob": 25.0,
+    "entry_time": "2026-09-09 13:18 UTC",
+    "url": "https://manifold.markets/brod/will-anthropic-announce-progress-on",
+    "stake": 111.7,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 2,
+    "smart_user_mana": 500,
+    "price_impact": 19.2,
+    "conviction_score": 7.69,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "EgUptqcOsL",
+    "question": "US Average Gas Price Is $4.100 or more on September 14 2026?",
+    "direction": "BUY YES",
+    "entry_prob": 84.3,
+    "entry_time": "2026-09-09 13:18 UTC",
+    "url": "https://manifold.markets/Jack1/us-average-gas-price-is-4100-or-mor",
+    "stake": 116.7,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 3,
+    "smart_user_mana": 300,
+    "price_impact": 8.7,
+    "conviction_score": 3.14,
+    "signal_strength": 1.05
   }
 ]
