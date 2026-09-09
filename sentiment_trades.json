@@ -4436,5 +4436,24 @@
     "divergence_score": 3.38,
     "signal_strength": 0.68,
     "peak_pnl": 2.9000000000000057
+  },
+  {
+    "market_id": "OI65QnIIys",
+    "question": "All Millennium Prize Problems solved before 2030?",
+    "direction": "BUY NO",
+    "entry_prob": 23.4,
+    "entry_time": "2026-09-09 02:32 UTC",
+    "url": "https://manifold.markets/SG/all-millennium-prize-problem-solved",
+    "stake": 116.5,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "YES",
+    "crowd_pct": 60.0,
+    "price_move": -24.8,
+    "divergence_score": 14.91,
+    "signal_strength": 1.5
   }
 ]

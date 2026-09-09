@@ -4386,11 +4386,11 @@
     "entry_time": "2026-09-07 23:14 UTC",
     "url": "https://manifold.markets/OnlySlides/will-bitcoin-be-higher-7-days-from-O58ZgtgAzE",
     "stake": 45.8,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 42.2,
+    "exit_time": "2026-09-08 23:06 UTC",
+    "exit_reason": "trailing_stop",
+    "pnl_pp": 4.5,
     "crowd_dir": "YES",
     "crowd_pct": 60.0,
     "price_move": -8.6,
@@ -4434,6 +4434,7 @@
     "crowd_pct": 75.0,
     "price_move": 4.5,
     "divergence_score": 3.38,
-    "signal_strength": 0.68
+    "signal_strength": 0.68,
+    "peak_pnl": 2.9000000000000057
   }
 ]
