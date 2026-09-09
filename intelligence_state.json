@@ -872,14 +872,13 @@
     "liquidation": false,
     "calibration": true,
     "sentiment_divergence": false,
-    "smart_money": true,
+    "smart_money": false,
     "momentum": false
   },
   "consecutive_losses": {},
   "pause_start": {
     "mean_reversion": "2026-09-09 02:32 UTC",
     "contrarian": "2026-09-09 02:32 UTC",
-    "calibration": "2026-09-09 02:32 UTC",
-    "smart_money": "2026-09-09 02:32 UTC"
+    "calibration": "2026-09-09 02:32 UTC"
   }
 }
