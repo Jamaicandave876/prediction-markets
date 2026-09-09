@@ -32,7 +32,7 @@
       "avg_pnl": 19.0,
       "total_pnl": 519.3,
       "closed": 46,
-      "open": 1,
+      "open": 2,
       "grade": "B"
     },
     "mean_reversion": {
@@ -104,7 +104,7 @@
       "avg_pnl": 10.6,
       "total_pnl": 219.2,
       "closed": 66,
-      "open": 0,
+      "open": 1,
       "grade": "A"
     },
     "weather_temperature": {

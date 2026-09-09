@@ -1236,5 +1236,23 @@
     "breakout_strength": 3.8,
     "signal_strength": 1.2802261686427643,
     "peak_pnl": 3.3999999999999986
+  },
+  {
+    "market_id": "sRZh88Suty",
+    "question": "Anthropic IPO in October?",
+    "direction": "BUY NO",
+    "entry_prob": 46.8,
+    "entry_time": "2026-09-09 22:52 UTC",
+    "url": "https://manifold.markets/Jack1/anthropic-ipo-in-october",
+    "stake": 53.9,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "baseline_range": 6.0,
+    "breakout_move": -13.5,
+    "breakout_strength": 2.3,
+    "signal_strength": 0.7542436815299478
   }
 ]
