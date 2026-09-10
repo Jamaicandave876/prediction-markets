@@ -857,11 +857,11 @@
     "entry_time": "2026-09-09 22:51 UTC",
     "url": "https://manifold.markets/a_clown/will-calvin-wang-complete-problem-s",
     "stake": 48.9,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 98.8,
+    "exit_time": "2026-09-10 22:52 UTC",
+    "exit_reason": "stopped_out",
+    "pnl_pp": -8.8
   },
   {
     "market_id": "CL56c9sqQp",
