@@ -8888,5 +8888,43 @@
     "price_impact": 11.0,
     "conviction_score": 3.3,
     "signal_strength": 1.1
+  },
+  {
+    "market_id": "CL56c9sqQp",
+    "question": "Will ANOTHER millennium prize problem be solved in 2026?",
+    "direction": "BUY NO",
+    "entry_prob": 14.6,
+    "entry_time": "2026-09-09 22:52 UTC",
+    "url": "https://manifold.markets/HumanClanker/will-another-millennium-prize-probl",
+    "stake": 117.6,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 6,
+    "smart_user_mana": 490,
+    "price_impact": 13.7,
+    "conviction_score": 16.1,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "qz2nqEt0u6",
+    "question": "Will the 46% improvement to the nanogpt speedrun be accepted?",
+    "direction": "BUY YES",
+    "entry_prob": 75.5,
+    "entry_time": "2026-09-09 22:52 UTC",
+    "url": "https://manifold.markets/Bayesian/will-the-46-improvement-to-the-nano",
+    "stake": 117.6,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 5,
+    "smart_user_mana": 550,
+    "price_impact": 13.7,
+    "conviction_score": 15.03,
+    "signal_strength": 1.5
   }
 ]

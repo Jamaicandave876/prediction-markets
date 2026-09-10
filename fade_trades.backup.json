@@ -844,5 +844,23 @@
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null
+  },
+  {
+    "market_id": "phPlh9zqu2",
+    "question": "Will Calvin Wang complete problem set 1 of 18.701 on time?",
+    "direction": "BUY NO",
+    "entry_prob": 90.0,
+    "pre_spike_prob": 53.0,
+    "spike_size": 37.0,
+    "spike_ratio": 22.1,
+    "spike_dir": 1,
+    "entry_time": "2026-09-09 22:51 UTC",
+    "url": "https://manifold.markets/a_clown/will-calvin-wang-complete-problem-s",
+    "stake": 48.9,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]
