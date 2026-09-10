@@ -4474,6 +4474,26 @@
     "crowd_pct": 60.0,
     "price_move": -10.0,
     "divergence_score": 5.98,
-    "signal_strength": 1.2
+    "signal_strength": 1.2,
+    "peak_pnl": 2.6999999999999957
+  },
+  {
+    "market_id": "CL56c9sqQp",
+    "question": "Will ANOTHER millennium prize problem be solved in 2026?",
+    "direction": "BUY YES",
+    "entry_prob": 32.9,
+    "entry_time": "2026-09-10 02:32 UTC",
+    "url": "https://manifold.markets/HumanClanker/will-another-millennium-prize-probl",
+    "stake": 51.2,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "NO",
+    "crowd_pct": 65.0,
+    "price_move": 16.3,
+    "divergence_score": 10.57,
+    "signal_strength": 1.5
   }
 ]

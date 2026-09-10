@@ -4475,7 +4475,7 @@
     "price_move": -10.0,
     "divergence_score": 5.98,
     "signal_strength": 1.2,
-    "peak_pnl": 2.6999999999999957
+    "peak_pnl": 3.5
   },
   {
     "market_id": "CL56c9sqQp",
@@ -4485,11 +4485,11 @@
     "entry_time": "2026-09-10 02:32 UTC",
     "url": "https://manifold.markets/HumanClanker/will-another-millennium-prize-probl",
     "stake": 51.2,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 20.3,
+    "exit_time": "2026-09-10 07:45 UTC",
+    "exit_reason": "stopped_out",
+    "pnl_pp": -12.6,
     "crowd_dir": "NO",
     "crowd_pct": 65.0,
     "price_move": 16.3,
