@@ -1255,5 +1255,23 @@
     "breakout_strength": 2.3,
     "signal_strength": 0.7542436815299478,
     "peak_pnl": 3.5
+  },
+  {
+    "market_id": "c8nSUqShdt",
+    "question": "US Average Gas Price Is $4.000 or more on November 1 2026?",
+    "direction": "BUY YES",
+    "entry_prob": 64.6,
+    "entry_time": "2026-09-11 07:40 UTC",
+    "url": "https://manifold.markets/Jack1/us-average-gas-price-is-4000-or-mor-9cSRdQIAcE",
+    "stake": 82.3,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "baseline_range": 2.5,
+    "breakout_move": 6.6,
+    "breakout_strength": 2.7,
+    "signal_strength": 0.887549180144335
   }
 ]
