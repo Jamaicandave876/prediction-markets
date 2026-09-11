@@ -1274,5 +1274,23 @@
     "breakout_strength": 2.7,
     "signal_strength": 0.887549180144335,
     "peak_pnl": 8.300000000000011
+  },
+  {
+    "market_id": "9ygCgnyECl",
+    "question": "Will an AI do Magic before EOY 2027? [See description]",
+    "direction": "BUY NO",
+    "entry_prob": 23.6,
+    "entry_time": "2026-09-11 22:55 UTC",
+    "url": "https://manifold.markets/calour/will-an-ai-do-magic-in-2027-see-des",
+    "stake": 104.2,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "baseline_range": 4.4,
+    "breakout_move": -9.9,
+    "breakout_strength": 2.3,
+    "signal_strength": 0.7579345225180579
   }
 ]
