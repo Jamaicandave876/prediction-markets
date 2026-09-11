@@ -875,10 +875,10 @@
     "entry_time": "2026-09-10 13:15 UTC",
     "url": "https://manifold.markets/HumanClanker/will-another-millennium-prize-probl",
     "stake": 48.9,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 66.0,
+    "exit_time": "2026-09-11 13:09 UTC",
+    "exit_reason": "normalized",
+    "pnl_pp": 11.4
   }
 ]

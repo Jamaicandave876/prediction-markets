@@ -4514,7 +4514,7 @@
     "price_move": -5.8,
     "divergence_score": 3.48,
     "signal_strength": 0.7,
-    "peak_pnl": 5.200000000000003
+    "peak_pnl": 8.200000000000003
   },
   {
     "market_id": "9ygCgnyECl",
@@ -4524,11 +4524,11 @@
     "entry_time": "2026-09-11 07:41 UTC",
     "url": "https://manifold.markets/calour/will-an-ai-do-magic-in-2027-see-des",
     "stake": 48.4,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 36.3,
+    "exit_time": "2026-09-11 13:09 UTC",
+    "exit_reason": "stopped_out",
+    "pnl_pp": -12.9,
     "crowd_dir": "NO",
     "crowd_pct": 60.0,
     "price_move": 19.1,
