@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-09-12 12:34 UTC",
+  "timestamp": "2026-09-12 17:38 UTC",
   "regime": "adverse",
-  "pnl_7d": 18.7,
-  "total_open": 9,
-  "total_closed": 339,
-  "total_pnl": 859.7,
+  "pnl_7d": 8.7,
+  "total_open": 8,
+  "total_closed": 340,
+  "total_pnl": 849.7,
   "bots": [
     {
       "name": "momentum",
@@ -19,18 +19,6 @@
       "consecutive_losses": 0
     },
     {
-      "name": "breakout",
-      "display": "Breakout",
-      "grade": "B",
-      "score": 79.7,
-      "win_rate": 70.0,
-      "total_pnl": 215.1,
-      "open": 2,
-      "closed": 68,
-      "paused": false,
-      "consecutive_losses": 0
-    },
-    {
       "name": "fade",
       "display": "Fade",
       "grade": "B",
@@ -41,6 +29,18 @@
       "closed": 48,
       "paused": false,
       "consecutive_losses": 0
+    },
+    {
+      "name": "breakout",
+      "display": "Breakout",
+      "grade": "B",
+      "score": 67.9,
+      "win_rate": 60.0,
+      "total_pnl": 205.1,
+      "open": 1,
+      "closed": 69,
+      "paused": false,
+      "consecutive_losses": 1
     },
     {
       "name": "weather_temperature",
@@ -179,8 +179,8 @@
   "adjustments": [
     {
       "param": "MIN_DRIFT_SCORE",
-      "old": 4.4,
-      "new": 4.1,
+      "old": 4.1,
+      "new": 3.8,
       "reason": "Momentum WR 70% > 65% \u2014 loosening"
     }
   ]

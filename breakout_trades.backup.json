@@ -1283,14 +1283,33 @@
     "entry_time": "2026-09-11 22:55 UTC",
     "url": "https://manifold.markets/calour/will-an-ai-do-magic-in-2027-see-des",
     "stake": 104.2,
+    "status": "closed",
+    "exit_prob": 15.6,
+    "exit_time": "2026-09-12 12:33 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 8.0,
+    "baseline_range": 4.4,
+    "breakout_move": -9.9,
+    "breakout_strength": 2.3,
+    "signal_strength": 0.7579345225180579,
+    "peak_pnl": 8.000000000000002
+  },
+  {
+    "market_id": "cp2QNqZ2Cy",
+    "question": "Will 0x53a125F03c90B8E07BA50356B312F4b7b9bA47A7 REACH again more than 267.8431 USDC Base by September 14th 11:59 pm UTC",
+    "direction": "BUY YES",
+    "entry_prob": 12.9,
+    "entry_time": "2026-09-12 12:34 UTC",
+    "url": "https://manifold.markets/JasonMendoza2008/will-0x53a125f03c90b8e07ba50356b312-0S0LqQcOnC",
+    "stake": 56.6,
     "status": "open",
     "exit_prob": null,
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null,
-    "baseline_range": 4.4,
-    "breakout_move": -9.9,
-    "breakout_strength": 2.3,
-    "signal_strength": 0.7579345225180579
+    "baseline_range": 0.7,
+    "breakout_move": 11.2,
+    "breakout_strength": 11.2,
+    "signal_strength": 1.5
   }
 ]
