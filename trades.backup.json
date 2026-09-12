@@ -2252,12 +2252,12 @@
     "drift_score": 29.4,
     "url": "https://manifold.markets/nsokolsky/will-there-be-another-huggingface-l",
     "stake": 44.2,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
-    "peak_pnl": 16.700000000000003
+    "status": "closed",
+    "exit_prob": 94.7,
+    "exit_time": "2026-09-12 02:33 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 42.9,
+    "peak_pnl": 42.900000000000006
   },
   {
     "market_id": "2QNgzytgzn",
