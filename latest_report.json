@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-09-12 07:33 UTC",
+  "timestamp": "2026-09-12 12:34 UTC",
   "regime": "adverse",
-  "pnl_7d": 10.7,
+  "pnl_7d": 18.7,
   "total_open": 9,
-  "total_closed": 338,
-  "total_pnl": 851.7,
+  "total_closed": 339,
+  "total_pnl": 859.7,
   "bots": [
     {
       "name": "momentum",
@@ -21,14 +21,14 @@
     {
       "name": "breakout",
       "display": "Breakout",
-      "grade": "A",
-      "score": 80.5,
+      "grade": "B",
+      "score": 79.7,
       "win_rate": 70.0,
-      "total_pnl": 207.1,
+      "total_pnl": 215.1,
       "open": 2,
-      "closed": 67,
+      "closed": 68,
       "paused": false,
-      "consecutive_losses": 1
+      "consecutive_losses": 0
     },
     {
       "name": "fade",
@@ -179,8 +179,8 @@
   "adjustments": [
     {
       "param": "MIN_DRIFT_SCORE",
-      "old": 4.7,
-      "new": 4.4,
+      "old": 4.4,
+      "new": 4.1,
       "reason": "Momentum WR 70% > 65% \u2014 loosening"
     }
   ]

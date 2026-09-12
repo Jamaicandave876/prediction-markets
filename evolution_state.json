@@ -84,7 +84,7 @@
       "target_hit": 226,
       "stopped_out": 73,
       "trailing_stop": 19,
-      "stale": 92,
+      "stale": 93,
       "resolved_loss": 2
     },
     "momentum": {
@@ -157,10 +157,10 @@
     },
     "smart_money": {
       "mid_prob_entry": 158,
-      "no_direction": 185,
-      "strong_signal": 299,
-      "fast_trade": 230,
-      "low_prob_entry": 101,
+      "no_direction": 186,
+      "strong_signal": 300,
+      "fast_trade": 231,
+      "low_prob_entry": 102,
       "yes_direction": 147,
       "high_prob_entry": 73,
       "slow_trade": 3
@@ -187,12 +187,12 @@
     },
     "breakout": {
       "mid_prob_entry": 37,
-      "fast_trade": 36,
+      "fast_trade": 37,
       "yes_direction": 40,
       "strong_signal": 34,
       "weak_signal": 9,
-      "low_prob_entry": 14,
-      "no_direction": 29,
+      "low_prob_entry": 15,
+      "no_direction": 30,
       "high_prob_entry": 18,
       "slow_trade": 15
     },
@@ -1128,57 +1128,6 @@
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "smart_money",
-      "market_id": "I8ygISRUdA",
-      "outcome": "strong_win",
-      "pnl_pp": 7.2,
-      "exit_reason": "target_hit",
-      "duration_hours": 4.8,
-      "traits": [
-        "low_prob_entry",
-        "fast_trade",
-        "no_direction"
-      ],
-      "entry_prob": 28.7,
-      "direction": "BUY NO",
-      "timestamp": "2026-08-29 22:57 UTC",
-      "lesson": "Smart $: Quick strong win \u2014 this signal pattern works well."
-    },
-    {
-      "bot": "breakout",
-      "market_id": "c2d9tOE6U0",
-      "outcome": "big_loss",
-      "pnl_pp": -19.6,
-      "exit_reason": "stopped_out",
-      "duration_hours": 6.0,
-      "traits": [
-        "high_prob_entry",
-        "fast_trade",
-        "no_direction"
-      ],
-      "entry_prob": 79.4,
-      "direction": "BUY NO",
-      "timestamp": "2026-08-30 08:53 UTC",
-      "lesson": "Breakout: big loss via stopped_out. PnL: -19.6pp in 6h."
-    },
-    {
-      "bot": "sentiment",
-      "market_id": "c2d9tOE6U0",
-      "outcome": "big_loss",
-      "pnl_pp": -18.5,
-      "exit_reason": "stopped_out",
-      "duration_hours": 20.8,
-      "traits": [
-        "high_prob_entry",
-        "fast_trade",
-        "no_direction"
-      ],
-      "entry_prob": 80.5,
-      "direction": "BUY NO",
-      "timestamp": "2026-08-30 08:53 UTC",
-      "lesson": "Sentiment: big loss via stopped_out. PnL: -18.5pp in 21h."
-    },
     {
       "bot": "sentiment",
       "market_id": "qEI65RPOCU",
@@ -2879,6 +2828,58 @@
       "direction": "BUY NO",
       "timestamp": "2026-09-12 02:35 UTC",
       "lesson": "Sentiment: big loss via stopped_out. PnL: -5.2pp in 8h."
+    },
+    {
+      "bot": "breakout",
+      "market_id": "9ygCgnyECl",
+      "outcome": "strong_win",
+      "pnl_pp": 8.0,
+      "exit_reason": "target_hit",
+      "duration_hours": 13.6,
+      "traits": [
+        "low_prob_entry",
+        "fast_trade",
+        "no_direction"
+      ],
+      "entry_prob": 23.6,
+      "direction": "BUY NO",
+      "timestamp": "2026-09-12 12:33 UTC",
+      "lesson": "Breakout: Quick strong win \u2014 this signal pattern works well."
+    },
+    {
+      "bot": "smart_money",
+      "market_id": "uscUhISQnp",
+      "outcome": "small_loss",
+      "pnl_pp": 0.0,
+      "exit_reason": "stale",
+      "duration_hours": 52.8,
+      "traits": [
+        "mid_prob_entry",
+        "no_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 30.1,
+      "direction": "BUY NO",
+      "timestamp": "2026-09-12 12:34 UTC",
+      "lesson": "Smart $: small loss via stale. PnL: +0.0pp in 53h."
+    },
+    {
+      "bot": "smart_money",
+      "market_id": "9ygCgnyECl",
+      "outcome": "strong_win",
+      "pnl_pp": 8.0,
+      "exit_reason": "target_hit",
+      "duration_hours": 13.7,
+      "traits": [
+        "low_prob_entry",
+        "fast_trade",
+        "no_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 23.6,
+      "direction": "BUY NO",
+      "timestamp": "2026-09-12 12:34 UTC",
+      "lesson": "Smart $: Quick strong win \u2014 this signal pattern works well."
     }
   ],
   "regime": "cautious",
@@ -3008,10 +3009,10 @@
     "close_gravity": 0.2,
     "fresh_sniper": 0.2,
     "stability": 0.1,
-    "breakout": 0.69,
+    "breakout": 0.75,
     "calibration": 0.1,
     "reversal": 0.2,
-    "smart_money": 0.56,
+    "smart_money": 0.51,
     "time_decay": 0.23,
     "sentiment": 0.2,
     "accumulation": 0.1,
@@ -3024,6 +3025,6 @@
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-09-12 07:33 UTC",
-  "generation": 1076
+  "last_evolution": "2026-09-12 12:34 UTC",
+  "generation": 1077
 }
