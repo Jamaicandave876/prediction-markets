@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-13 20:09 UTC",
+  "timestamp": "2026-09-13 22:46 UTC",
   "regime": "adverse",
   "pnl_7d": 11.6,
   "total_open": 8,
@@ -179,8 +179,8 @@
   "adjustments": [
     {
       "param": "MIN_DRIFT_SCORE",
-      "old": 2.0,
-      "new": 1.7,
+      "old": 1.7,
+      "new": 1.4,
       "reason": "Momentum WR 70% > 65% \u2014 loosening"
     }
   ]

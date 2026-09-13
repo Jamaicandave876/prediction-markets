@@ -9161,7 +9161,7 @@
     "price_impact": 10.4,
     "conviction_score": 23.13,
     "signal_strength": 1.5,
-    "peak_pnl": 2.299999999999997
+    "peak_pnl": 2.8999999999999986
   },
   {
     "market_id": "CcAIzgUqu2",
@@ -9219,5 +9219,24 @@
     "price_impact": 15.1,
     "conviction_score": 2.71,
     "signal_strength": 0.9
+  },
+  {
+    "market_id": "S68QEEzRl9",
+    "question": "Will I ban mobile devices from my bedroom next week? (\u1e4010 Bonus)",
+    "direction": "BUY YES",
+    "entry_prob": 66.0,
+    "entry_time": "2026-09-13 20:08 UTC",
+    "url": "https://manifold.markets/redcat/will-i-ban-mobile-devices-from-my-b-URcPqL2sz2",
+    "stake": 91.2,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 18,
+    "smart_user_mana": 431,
+    "price_impact": 13.8,
+    "conviction_score": 42.84,
+    "signal_strength": 1.5
   }
 ]
