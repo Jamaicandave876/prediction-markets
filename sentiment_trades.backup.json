@@ -4553,5 +4553,24 @@
     "price_move": -6.1,
     "divergence_score": 5.78,
     "signal_strength": 1.16
+  },
+  {
+    "market_id": "qz2nqEt0u6",
+    "question": "Will the 46% improvement to the nanogpt speedrun be accepted?",
+    "direction": "BUY NO",
+    "entry_prob": 68.9,
+    "entry_time": "2026-09-12 22:45 UTC",
+    "url": "https://manifold.markets/Bayesian/will-the-46-improvement-to-the-nano",
+    "stake": 33.8,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "YES",
+    "crowd_pct": 75.0,
+    "price_move": -6.7,
+    "divergence_score": 5.04,
+    "signal_strength": 1.01
   }
 ]
