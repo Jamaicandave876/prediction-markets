@@ -4609,7 +4609,8 @@
     "crowd_pct": 70.0,
     "price_move": 6.5,
     "divergence_score": 4.58,
-    "signal_strength": 0.92
+    "signal_strength": 0.92,
+    "peak_pnl": 0.6000000000000014
   },
   {
     "market_id": "Ophn0RNnRL",

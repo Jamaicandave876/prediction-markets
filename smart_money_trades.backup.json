@@ -9160,7 +9160,8 @@
     "smart_user_mana": 1850,
     "price_impact": 10.4,
     "conviction_score": 23.13,
-    "signal_strength": 1.5
+    "signal_strength": 1.5,
+    "peak_pnl": 2.299999999999997
   },
   {
     "market_id": "CcAIzgUqu2",
@@ -9180,5 +9181,43 @@
     "price_impact": 28.3,
     "conviction_score": 10.64,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "hUI0Lgt9Az",
+    "question": "Will I avoid media and distracting apps before 1 p.m. every day next week? (\u1e4010 Bonus)",
+    "direction": "BUY YES",
+    "entry_prob": 69.0,
+    "entry_time": "2026-09-13 17:49 UTC",
+    "url": "https://manifold.markets/redcat/will-i-avoid-media-and-distracting-PENLUzlPc9",
+    "stake": 100.0,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 12,
+    "smart_user_mana": 493,
+    "price_impact": 14.2,
+    "conviction_score": 33.66,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "pppdULuL6q",
+    "question": "Will Abdul El-Sayed win by 7 points or more?",
+    "direction": "BUY NO",
+    "entry_prob": 34.9,
+    "entry_time": "2026-09-13 17:49 UTC",
+    "url": "https://manifold.markets/BenAybar/will-abdul-elsayed-win-by-7-points",
+    "stake": 53.3,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 2,
+    "smart_user_mana": 225,
+    "price_impact": 15.1,
+    "conviction_score": 2.71,
+    "signal_strength": 0.9
   }
 ]
