@@ -4591,5 +4591,43 @@
     "price_move": -18.0,
     "divergence_score": 12.6,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "9ygCgnyECl",
+    "question": "Will an AI do Magic before EOY 2027? [See description]",
+    "direction": "BUY YES",
+    "entry_prob": 25.0,
+    "entry_time": "2026-09-13 13:35 UTC",
+    "url": "https://manifold.markets/calour/will-an-ai-do-magic-in-2027-see-des",
+    "stake": 25.4,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "NO",
+    "crowd_pct": 70.0,
+    "price_move": 6.5,
+    "divergence_score": 4.58,
+    "signal_strength": 0.92
+  },
+  {
+    "market_id": "Ophn0RNnRL",
+    "question": "Will Bitcoin be higher than $77,777 at the end of 2026?",
+    "direction": "BUY YES",
+    "entry_prob": 58.6,
+    "entry_time": "2026-09-13 13:35 UTC",
+    "url": "https://manifold.markets/GregF/will-bitcoin-be-higher-than-77777-a",
+    "stake": 39.5,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "NO",
+    "crowd_pct": 70.0,
+    "price_move": 5.6,
+    "divergence_score": 3.94,
+    "signal_strength": 0.79
   }
 ]
