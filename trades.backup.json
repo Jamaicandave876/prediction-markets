@@ -2268,11 +2268,11 @@
     "drift_score": -42.06,
     "url": "https://manifold.markets/Velaris/what-lasting-peace-deal-will-come-f",
     "stake": 44.2,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 29.6,
+    "exit_time": "2026-09-14 15:32 UTC",
+    "exit_reason": "stale",
+    "pnl_pp": -1.4
   },
   {
     "market_id": "dEQndpqO6P",
@@ -2283,11 +2283,11 @@
     "drift_score": 31.75,
     "url": "https://manifold.markets/Chimpy/will-human-genetic-enhancement-of-e",
     "stake": 44.2,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 76.9,
+    "exit_time": "2026-09-14 15:32 UTC",
+    "exit_reason": "stale",
+    "pnl_pp": 0.3,
     "peak_pnl": 0.9000000000000057
   },
   {

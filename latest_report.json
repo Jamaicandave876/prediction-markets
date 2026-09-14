@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-09-14 15:33 UTC",
+  "timestamp": "2026-09-14 21:17 UTC",
   "regime": "adverse",
   "pnl_7d": 10.5,
-  "total_open": 5,
+  "total_open": 15,
   "total_closed": 343,
   "total_pnl": 848.6,
   "bots": [
@@ -13,7 +13,7 @@
       "score": 78.1,
       "win_rate": 70.0,
       "total_pnl": 283.3,
-      "open": 4,
+      "open": 13,
       "closed": 149,
       "paused": false,
       "consecutive_losses": 1
@@ -37,7 +37,7 @@
       "score": 67.9,
       "win_rate": 60.0,
       "total_pnl": 205.1,
-      "open": 1,
+      "open": 2,
       "closed": 69,
       "paused": false,
       "consecutive_losses": 1
