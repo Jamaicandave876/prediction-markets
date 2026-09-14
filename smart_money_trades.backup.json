@@ -9218,7 +9218,8 @@
     "smart_user_mana": 225,
     "price_impact": 15.1,
     "conviction_score": 2.71,
-    "signal_strength": 0.9
+    "signal_strength": 0.9,
+    "peak_pnl": 8.399999999999999
   },
   {
     "market_id": "S68QEEzRl9",
