@@ -4630,7 +4630,7 @@
     "price_move": 5.6,
     "divergence_score": 3.94,
     "signal_strength": 0.79,
-    "peak_pnl": 1.1000000000000014
+    "peak_pnl": 4.299999999999997
   },
   {
     "market_id": "gIIuCu8tCS",
@@ -4640,15 +4640,16 @@
     "entry_time": "2026-09-15 08:17 UTC",
     "url": "https://manifold.markets/Gabrielle/will-the-mailin-ballot-restriction",
     "stake": 116.6,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 12.9,
+    "exit_time": "2026-09-15 14:05 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 3.1,
     "crowd_dir": "YES",
     "crowd_pct": 60.0,
     "price_move": -10.4,
     "divergence_score": 6.22,
-    "signal_strength": 1.24
+    "signal_strength": 1.24,
+    "peak_pnl": 3.0999999999999996
   }
 ]
