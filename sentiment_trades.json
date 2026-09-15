@@ -4631,5 +4631,24 @@
     "divergence_score": 3.94,
     "signal_strength": 0.79,
     "peak_pnl": 1.1000000000000014
+  },
+  {
+    "market_id": "gIIuCu8tCS",
+    "question": "Will the mail-in ballot restriction go into effect for the 2026 election?",
+    "direction": "BUY NO",
+    "entry_prob": 16.0,
+    "entry_time": "2026-09-15 08:17 UTC",
+    "url": "https://manifold.markets/Gabrielle/will-the-mailin-ballot-restriction",
+    "stake": 116.6,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "YES",
+    "crowd_pct": 60.0,
+    "price_move": -10.4,
+    "divergence_score": 6.22,
+    "signal_strength": 1.24
   }
 ]
