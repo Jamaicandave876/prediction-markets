@@ -9317,7 +9317,8 @@
     "smart_user_mana": 750,
     "price_impact": 25.4,
     "conviction_score": 15.23,
-    "signal_strength": 1.5
+    "signal_strength": 1.5,
+    "peak_pnl": 1.1000000000000014
   },
   {
     "market_id": "5gLqZ9hdIp",
@@ -9336,7 +9337,8 @@
     "smart_user_mana": 606,
     "price_impact": 7.0,
     "conviction_score": 20.36,
-    "signal_strength": 1.5
+    "signal_strength": 1.5,
+    "peak_pnl": 37.3
   },
   {
     "market_id": "phulqQcEQ9",
@@ -9346,16 +9348,17 @@
     "entry_time": "2026-09-16 13:58 UTC",
     "url": "https://manifold.markets/vi/will-the-address-for-mathegregore-h-6cnQUlsO00",
     "stake": 100.1,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 78.3,
+    "exit_time": "2026-09-16 23:28 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 8.4,
     "smart_user_bets": 20,
     "smart_user_mana": 2765,
     "price_impact": 47.0,
     "conviction_score": 1040.45,
-    "signal_strength": 1.5
+    "signal_strength": 1.5,
+    "peak_pnl": 8.399999999999991
   },
   {
     "market_id": "9qI5pctc9s",
@@ -9394,6 +9397,7 @@
     "smart_user_mana": 493,
     "price_impact": 9.0,
     "conviction_score": 7.11,
-    "signal_strength": 1.5
+    "signal_strength": 1.5,
+    "peak_pnl": 1.5999999999999943
   }
 ]

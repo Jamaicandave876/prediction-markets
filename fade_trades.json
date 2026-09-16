@@ -898,5 +898,23 @@
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null
+  },
+  {
+    "market_id": "5gLqZ9hdIp",
+    "question": "Opus 5.2 released in September?",
+    "direction": "BUY YES",
+    "entry_prob": 51.3,
+    "pre_spike_prob": 72.0,
+    "spike_size": 20.7,
+    "spike_ratio": 7.7,
+    "spike_dir": -1,
+    "entry_time": "2026-09-16 23:27 UTC",
+    "url": "https://manifold.markets/Bayesian/opus-52-released-in-september",
+    "stake": 44.7,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]
