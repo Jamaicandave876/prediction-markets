@@ -9337,5 +9337,43 @@
     "price_impact": 7.0,
     "conviction_score": 20.36,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "phulqQcEQ9",
+    "question": "Will the address for math.eg.rego.re have a balance of more than $25 before Sep 23?",
+    "direction": "BUY YES",
+    "entry_prob": 69.9,
+    "entry_time": "2026-09-16 13:58 UTC",
+    "url": "https://manifold.markets/vi/will-the-address-for-mathegregore-h-6cnQUlsO00",
+    "stake": 100.1,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 20,
+    "smart_user_mana": 2765,
+    "price_impact": 47.0,
+    "conviction_score": 1040.45,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "9qI5pctc9s",
+    "question": "US Average Gas Price Is $4.400 or more on September 21 2026?",
+    "direction": "BUY NO",
+    "entry_prob": 86.3,
+    "entry_time": "2026-09-16 13:58 UTC",
+    "url": "https://manifold.markets/Jack1/us-average-gas-price-is-4400-or-mor-8qPAuEcQ6I",
+    "stake": 34.9,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 9,
+    "smart_user_mana": 302,
+    "price_impact": 11.5,
+    "conviction_score": 12.5,
+    "signal_strength": 1.5
   }
 ]

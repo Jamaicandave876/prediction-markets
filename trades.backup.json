@@ -2347,11 +2347,11 @@
     "drift_score": -9.85,
     "url": "https://manifold.markets/ParadoxRain/at-the-end-of-august-2028-will-cali",
     "stake": 56.5,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 35.3,
+    "exit_time": "2026-09-16 13:57 UTC",
+    "exit_reason": "stale",
+    "pnl_pp": -0.8
   },
   {
     "market_id": "h9S9dcPq6N",
@@ -2362,11 +2362,11 @@
     "drift_score": 32.78,
     "url": "https://manifold.markets/IsaacKing/will-apple-fix-its-ip-address-leaks",
     "stake": 56.5,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 67.4,
+    "exit_time": "2026-09-16 13:57 UTC",
+    "exit_reason": "stale",
+    "pnl_pp": -3.7
   },
   {
     "market_id": "0hhRIO5tsz",
@@ -2377,11 +2377,11 @@
     "drift_score": -32.48,
     "url": "https://manifold.markets/BillClintonBubba/will-hakeem-jeffries-be-speaker-fol",
     "stake": 56.5,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 65.4,
+    "exit_time": "2026-09-16 13:57 UTC",
+    "exit_reason": "stale",
+    "pnl_pp": -1.4
   },
   {
     "market_id": "LdLdRuqucQ",
@@ -2427,7 +2427,7 @@
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null,
-    "peak_pnl": 3.6000000000000014
+    "peak_pnl": 7.300000000000004
   },
   {
     "market_id": "p0PnRQLz96",

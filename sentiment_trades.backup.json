@@ -4651,5 +4651,24 @@
     "divergence_score": 6.22,
     "signal_strength": 1.24,
     "peak_pnl": 3.0999999999999996
+  },
+  {
+    "market_id": "cdRlEgRhUp",
+    "question": "Will 0x876611867717dE6b6dff30da5CeF9feB620eE1ea REACH more than 100.00 USDC Base by September 21th 11:59 pm UTC",
+    "direction": "BUY NO",
+    "entry_prob": 47.5,
+    "entry_time": "2026-09-16 13:58 UTC",
+    "url": "https://manifold.markets/JasonMendoza2008/will-0x876611867717de6b6dff30da5cef",
+    "stake": 63.4,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "YES",
+    "crowd_pct": 70.0,
+    "price_move": -27.1,
+    "divergence_score": 18.99,
+    "signal_strength": 1.5
   }
 ]
