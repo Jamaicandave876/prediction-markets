@@ -2315,12 +2315,12 @@
     "drift_score": -35.67,
     "url": "https://manifold.markets/NicholasWeininger/will-usps-reject-at-least-100000-ma",
     "stake": 56.5,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
-    "peak_pnl": 3.3000000000000007
+    "status": "closed",
+    "exit_prob": 20.9,
+    "exit_time": "2026-09-16 02:46 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 5.2,
+    "peak_pnl": 5.200000000000003
   },
   {
     "market_id": "tdUSAnquZL",
@@ -2442,7 +2442,8 @@
     "exit_prob": null,
     "exit_time": null,
     "exit_reason": null,
-    "pnl_pp": null
+    "pnl_pp": null,
+    "peak_pnl": 0.7000000000000028
   },
   {
     "market_id": "S68QEEzRl9",
