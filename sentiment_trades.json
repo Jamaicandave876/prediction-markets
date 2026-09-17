@@ -4670,5 +4670,24 @@
     "price_move": -27.1,
     "divergence_score": 18.99,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "qOC0QLOPNd",
+    "question": "Will trump say or write \"effective altruism\"?",
+    "direction": "BUY NO",
+    "entry_prob": 41.0,
+    "entry_time": "2026-09-17 08:17 UTC",
+    "url": "https://manifold.markets/JacobWoessner/will-trump-say-or-write-effective-a",
+    "stake": 44.5,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "YES",
+    "crowd_pct": 62.5,
+    "price_move": -9.0,
+    "divergence_score": 5.65,
+    "signal_strength": 1.13
   }
 ]
