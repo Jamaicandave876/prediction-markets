@@ -2422,12 +2422,12 @@
     "drift_score": 21.41,
     "url": "https://manifold.markets/Jack1/us-average-gas-price-is-4400-or-mor-sLUUcA6EsS",
     "stake": 50.5,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
-    "peak_pnl": 14.399999999999999
+    "status": "closed",
+    "exit_prob": 78.6,
+    "exit_time": "2026-09-17 18:43 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 16.2,
+    "peak_pnl": 16.199999999999996
   },
   {
     "market_id": "p0PnRQLz96",
