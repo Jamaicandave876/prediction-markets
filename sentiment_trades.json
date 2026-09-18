@@ -4709,5 +4709,24 @@
     "price_move": -5.1,
     "divergence_score": 3.31,
     "signal_strength": 0.66
+  },
+  {
+    "market_id": "gRpZ9qqsEN",
+    "question": "Will the WTI Crude Oil Spot Price be above $102 on September 24, 2026?",
+    "direction": "BUY YES",
+    "entry_prob": 50.5,
+    "entry_time": "2026-09-18 02:37 UTC",
+    "url": "https://manifold.markets/ShaneBo/will-the-wti-crude-oil-spot-price-b-8pEtuAzuIn",
+    "stake": 48.5,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "NO",
+    "crowd_pct": 100.0,
+    "price_move": 9.8,
+    "divergence_score": 9.8,
+    "signal_strength": 1.5
   }
 ]

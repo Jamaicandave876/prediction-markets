@@ -76,13 +76,13 @@
     "sentiment": {
       "target_hit": 95,
       "stopped_out": 114,
-      "trailing_stop": 14,
+      "trailing_stop": 15,
       "stale": 53,
       "resolved_loss": 2
     },
     "smart_money": {
       "target_hit": 229,
-      "stopped_out": 75,
+      "stopped_out": 76,
       "trailing_stop": 20,
       "stale": 97,
       "resolved_loss": 2
@@ -1128,39 +1128,6 @@
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "sentiment",
-      "market_id": "sdUutQ5hq0",
-      "outcome": "big_loss",
-      "pnl_pp": -7.2,
-      "exit_reason": "stale",
-      "duration_hours": 100.1,
-      "traits": [
-        "mid_prob_entry",
-        "yes_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 39.1,
-      "direction": "BUY YES",
-      "timestamp": "2026-09-05 12:16 UTC",
-      "lesson": "Sentiment: Held too long with no resolution. Consider shorter max_days."
-    },
-    {
-      "bot": "sentiment",
-      "market_id": "zQAul5qpPz",
-      "outcome": "small_win",
-      "pnl_pp": 0.4,
-      "exit_reason": "stale",
-      "duration_hours": 97.7,
-      "traits": [
-        "mid_prob_entry",
-        "no_direction"
-      ],
-      "entry_prob": 34.9,
-      "direction": "BUY NO",
-      "timestamp": "2026-09-05 19:47 UTC",
-      "lesson": "Sentiment: small win via stale. PnL: +0.4pp in 98h."
-    },
     {
       "bot": "sentiment",
       "market_id": "zQAul5qpPz",
@@ -2876,6 +2843,42 @@
       "direction": "BUY NO",
       "timestamp": "2026-09-17 23:18 UTC",
       "lesson": "Sentiment: Had profit but trailing stop was too tight. Consider widening trail."
+    },
+    {
+      "bot": "smart_money",
+      "market_id": "gRpZ9qqsEN",
+      "outcome": "big_loss",
+      "pnl_pp": -15.7,
+      "exit_reason": "stopped_out",
+      "duration_hours": 3.3,
+      "traits": [
+        "mid_prob_entry",
+        "fast_trade",
+        "no_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 34.8,
+      "direction": "BUY NO",
+      "timestamp": "2026-09-18 02:37 UTC",
+      "lesson": "Smart $: big loss via stopped_out. PnL: -15.7pp in 3h."
+    },
+    {
+      "bot": "sentiment",
+      "market_id": "qOC0QLOPNd",
+      "outcome": "small_loss",
+      "pnl_pp": -2.6,
+      "exit_reason": "trailing_stop",
+      "duration_hours": 15.0,
+      "traits": [
+        "mid_prob_entry",
+        "fast_trade",
+        "no_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 41.0,
+      "direction": "BUY NO",
+      "timestamp": "2026-09-17 23:18 UTC",
+      "lesson": "Sentiment: Had profit but trailing stop was too tight. Consider widening trail."
     }
   ],
   "regime": "cautious",
@@ -3008,7 +3011,7 @@
     "breakout": 0.65,
     "calibration": 0.1,
     "reversal": 0.2,
-    "smart_money": 0.6,
+    "smart_money": 0.51,
     "time_decay": 0.23,
     "sentiment": 0.2,
     "accumulation": 0.1,
@@ -3021,6 +3024,6 @@
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-09-17 23:19 UTC",
-  "generation": 1105
+  "last_evolution": "2026-09-18 02:37 UTC",
+  "generation": 1106
 }
