@@ -916,5 +916,23 @@
     "exit_time": "2026-09-17 02:50 UTC",
     "exit_reason": "stopped_out",
     "pnl_pp": -23.7
+  },
+  {
+    "market_id": "5yL0R9ugSR",
+    "question": "US Average Gas Price Is $4.5000 or more on September 21 2026?",
+    "direction": "BUY YES",
+    "entry_prob": 43.8,
+    "pre_spike_prob": 75.0,
+    "spike_size": 31.2,
+    "spike_ratio": 28.2,
+    "spike_dir": -1,
+    "entry_time": "2026-09-18 20:43 UTC",
+    "url": "https://manifold.markets/Jack1/us-average-gas-price-is-4500-or-mor",
+    "stake": 36.5,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]
