@@ -159,11 +159,11 @@
     "smart_money": {
       "mid_prob_entry": 172,
       "no_direction": 190,
-      "strong_signal": 319,
-      "fast_trade": 242,
+      "strong_signal": 320,
+      "fast_trade": 243,
       "low_prob_entry": 104,
-      "yes_direction": 163,
-      "high_prob_entry": 77,
+      "yes_direction": 164,
+      "high_prob_entry": 78,
       "slow_trade": 3
     },
     "liquidation": {
@@ -1165,24 +1165,6 @@
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "sentiment",
-      "market_id": "8q2IhsRCly",
-      "outcome": "small_win",
-      "pnl_pp": 4.5,
-      "exit_reason": "trailing_stop",
-      "duration_hours": 23.9,
-      "traits": [
-        "mid_prob_entry",
-        "fast_trade",
-        "no_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 46.7,
-      "direction": "BUY NO",
-      "timestamp": "2026-09-08 23:06 UTC",
-      "lesson": "Sentiment: small win via trailing_stop. PnL: +4.5pp in 24h."
-    },
     {
       "bot": "momentum",
       "market_id": "tdUSAnquZL",
@@ -2919,6 +2901,24 @@
       "direction": "BUY YES",
       "timestamp": "2026-09-19 12:49 UTC",
       "lesson": "Smart $: small loss via stale. PnL: -0.2pp in 53h."
+    },
+    {
+      "bot": "smart_money",
+      "market_id": "phulqQcEQ9",
+      "outcome": "small_win",
+      "pnl_pp": 2.2,
+      "exit_reason": "target_hit",
+      "duration_hours": 4.8,
+      "traits": [
+        "high_prob_entry",
+        "fast_trade",
+        "yes_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 85.9,
+      "direction": "BUY YES",
+      "timestamp": "2026-09-19 17:40 UTC",
+      "lesson": "Smart $: small win via target_hit. PnL: +2.2pp in 5h."
     }
   ],
   "regime": "cautious",
@@ -3051,7 +3051,7 @@
     "breakout": 0.65,
     "calibration": 0.1,
     "reversal": 0.2,
-    "smart_money": 0.55,
+    "smart_money": 0.6,
     "time_decay": 0.23,
     "sentiment": 0.2,
     "accumulation": 0.1,
@@ -3064,6 +3064,6 @@
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-09-19 12:49 UTC",
-  "generation": 1114
+  "last_evolution": "2026-09-19 17:40 UTC",
+  "generation": 1115
 }
