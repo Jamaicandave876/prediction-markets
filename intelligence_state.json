@@ -912,6 +912,18 @@
       "old": 2.8,
       "new": 3.1,
       "reason": "System WR 30% < 40% \u2014 tighten signals"
+    },
+    {
+      "param": "MIN_DRIFT_SCORE",
+      "old": 3.1,
+      "new": 3.4,
+      "reason": "System WR 30% < 40% \u2014 tighten signals"
+    },
+    {
+      "param": "SPIKE_MIN_RATIO",
+      "old": 2.5,
+      "new": 3.0,
+      "reason": "Fade WR 30% < 40%"
     }
   ],
   "paused": {

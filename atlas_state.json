@@ -27,13 +27,13 @@
       "grade": "C"
     },
     "fade": {
-      "score": 58.6,
-      "win_rate": 40.0,
-      "avg_pnl": 7.3,
-      "total_pnl": 498.2,
-      "closed": 50,
-      "open": 2,
-      "grade": "C"
+      "score": 45.4,
+      "win_rate": 30.0,
+      "avg_pnl": 3.7,
+      "total_pnl": 485.9,
+      "closed": 51,
+      "open": 1,
+      "grade": "D"
     },
     "mean_reversion": {
       "score": 20.0,
@@ -146,7 +146,7 @@
   },
   "consecutive_losses": {
     "momentum": 0,
-    "fade": 2,
+    "fade": 3,
     "mean_reversion": 5,
     "volume_surge": 2,
     "whale": 0,

@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-09-19 02:38 UTC",
+  "timestamp": "2026-09-19 07:43 UTC",
   "regime": "adverse",
-  "pnl_7d": -11.3,
-  "total_open": 12,
-  "total_closed": 349,
-  "total_pnl": 840.4,
+  "pnl_7d": -23.6,
+  "total_open": 11,
+  "total_closed": 350,
+  "total_pnl": 828.1,
   "bots": [
     {
       "name": "breakout",
@@ -17,18 +17,6 @@
       "closed": 69,
       "paused": false,
       "consecutive_losses": 1
-    },
-    {
-      "name": "fade",
-      "display": "Fade",
-      "grade": "C",
-      "score": 58.6,
-      "win_rate": 40.0,
-      "total_pnl": 498.2,
-      "open": 2,
-      "closed": 50,
-      "paused": false,
-      "consecutive_losses": 2
     },
     {
       "name": "momentum",
@@ -89,6 +77,18 @@
       "closed": 0,
       "paused": false,
       "consecutive_losses": 0
+    },
+    {
+      "name": "fade",
+      "display": "Fade",
+      "grade": "D",
+      "score": 45.4,
+      "win_rate": 30.0,
+      "total_pnl": 485.9,
+      "open": 1,
+      "closed": 51,
+      "paused": false,
+      "consecutive_losses": 3
     },
     {
       "name": "whale",
@@ -176,5 +176,12 @@
     }
   ],
   "warnings": [],
-  "adjustments": []
+  "adjustments": [
+    {
+      "param": "SPIKE_MIN_RATIO",
+      "old": 2.5,
+      "new": 3.0,
+      "reason": "Fade WR 30% < 40% \u2014 tightening"
+    }
+  ]
 }
