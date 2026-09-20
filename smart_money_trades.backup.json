@@ -9615,5 +9615,24 @@
     "conviction_score": 7.92,
     "signal_strength": 1.5,
     "peak_pnl": 11.0
+  },
+  {
+    "market_id": "U8NZAllglZ",
+    "question": "Will Steven Pinker and Scott Alexander have a debate on AI safety in 2026?",
+    "direction": "BUY NO",
+    "entry_prob": 44.8,
+    "entry_time": "2026-09-20 13:23 UTC",
+    "url": "https://manifold.markets/chrisjbillington/will-steven-pinker-and-scott-alexan",
+    "stake": 59.7,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 2,
+    "smart_user_mana": 1090,
+    "price_impact": 5.2,
+    "conviction_score": 4.51,
+    "signal_strength": 1.5
   }
 ]
