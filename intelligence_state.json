@@ -978,6 +978,12 @@
       "old": 6.5,
       "new": 7.0,
       "reason": "Fade WR 30% < 40%"
+    },
+    {
+      "param": "SPIKE_MIN_RATIO",
+      "old": 7.0,
+      "new": 7.5,
+      "reason": "Fade WR 30% < 40%"
     }
   ],
   "paused": {

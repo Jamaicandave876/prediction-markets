@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-20 17:51 UTC",
+  "timestamp": "2026-09-20 20:07 UTC",
   "regime": "adverse",
   "pnl_7d": -11.9,
   "total_open": 10,
@@ -179,8 +179,8 @@
   "adjustments": [
     {
       "param": "SPIKE_MIN_RATIO",
-      "old": 6.5,
-      "new": 7.0,
+      "old": 7.0,
+      "new": 7.5,
       "reason": "Fade WR 30% < 40% \u2014 tightening"
     }
   ]

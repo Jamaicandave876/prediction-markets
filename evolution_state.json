@@ -157,12 +157,12 @@
       "weak_signal": 2
     },
     "smart_money": {
-      "mid_prob_entry": 172,
+      "mid_prob_entry": 173,
       "no_direction": 190,
       "strong_signal": 321,
       "fast_trade": 244,
       "low_prob_entry": 104,
-      "yes_direction": 165,
+      "yes_direction": 166,
       "high_prob_entry": 79,
       "slow_trade": 3
     },
@@ -1165,24 +1165,6 @@
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "smart_money",
-      "market_id": "sy0uCq2L6R",
-      "outcome": "small_loss",
-      "pnl_pp": 0.0,
-      "exit_reason": "target_hit",
-      "duration_hours": 5.2,
-      "traits": [
-        "high_prob_entry",
-        "fast_trade",
-        "yes_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 80.9,
-      "direction": "BUY YES",
-      "timestamp": "2026-09-09 07:44 UTC",
-      "lesson": "Smart $: small loss via target_hit. PnL: +0.0pp in 5h."
-    },
     {
       "bot": "smart_money",
       "market_id": "5EyEO0nZRu",
@@ -2919,6 +2901,22 @@
       "direction": "BUY YES",
       "timestamp": "2026-09-20 08:11 UTC",
       "lesson": "Smart $: big loss via trailing_stop. PnL: -4.4pp in 15h."
+    },
+    {
+      "bot": "smart_money",
+      "market_id": "LyhR8090l8",
+      "outcome": "strong_win",
+      "pnl_pp": 22.3,
+      "exit_reason": "stale",
+      "duration_hours": 50.1,
+      "traits": [
+        "mid_prob_entry",
+        "yes_direction"
+      ],
+      "entry_prob": 44.8,
+      "direction": "BUY YES",
+      "timestamp": "2026-09-20 20:07 UTC",
+      "lesson": "Smart $: strong win via stale. PnL: +22.3pp in 50h."
     }
   ],
   "regime": "cautious",
@@ -3051,7 +3049,7 @@
     "breakout": 0.75,
     "calibration": 0.1,
     "reversal": 0.2,
-    "smart_money": 0.47,
+    "smart_money": 0.6,
     "time_decay": 0.23,
     "sentiment": 0.2,
     "accumulation": 0.1,
@@ -3064,6 +3062,6 @@
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-09-20 17:51 UTC",
-  "generation": 1121
+  "last_evolution": "2026-09-20 20:07 UTC",
+  "generation": 1122
 }

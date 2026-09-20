@@ -9535,7 +9535,7 @@
     "price_impact": 9.4,
     "conviction_score": 2.25,
     "signal_strength": 0.75,
-    "peak_pnl": 19.900000000000006
+    "peak_pnl": 22.299999999999997
   },
   {
     "market_id": "gRpZ9qqsEN",
@@ -9574,7 +9574,8 @@
     "smart_user_mana": 250,
     "price_impact": 11.7,
     "conviction_score": 2.34,
-    "signal_strength": 0.78
+    "signal_strength": 0.78,
+    "peak_pnl": 0.3999999999999986
   },
   {
     "market_id": "phulqQcEQ9",
@@ -9633,6 +9634,7 @@
     "smart_user_mana": 1090,
     "price_impact": 5.2,
     "conviction_score": 4.51,
-    "signal_strength": 1.5
+    "signal_strength": 1.5,
+    "peak_pnl": 2.0999999999999943
   }
 ]
