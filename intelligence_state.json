@@ -966,19 +966,28 @@
       "old": 5.5,
       "new": 6.0,
       "reason": "Fade WR 30% < 40%"
+    },
+    {
+      "param": "SPIKE_MIN_RATIO",
+      "old": 6.0,
+      "new": 6.5,
+      "reason": "Fade WR 30% < 40%"
     }
   ],
   "paused": {
-    "mean_reversion": false,
-    "contrarian": false,
+    "mean_reversion": true,
+    "contrarian": true,
     "liquidation": false,
-    "calibration": false,
+    "calibration": true,
     "sentiment_divergence": true,
     "smart_money": false,
     "momentum": false
   },
   "consecutive_losses": {},
   "pause_start": {
-    "sentiment_divergence": "2026-09-18 20:45 UTC"
+    "sentiment_divergence": "2026-09-18 20:45 UTC",
+    "mean_reversion": "2026-09-20 13:24 UTC",
+    "contrarian": "2026-09-20 13:24 UTC",
+    "calibration": "2026-09-20 13:24 UTC"
   }
 }
