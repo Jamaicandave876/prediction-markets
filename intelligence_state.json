@@ -1,5 +1,5 @@
 {
-  "last_report": "2026-09-19 22:36 UTC",
+  "last_report": "2026-09-20 22:52 UTC",
   "adjustments": [
     {
       "param": "MIN_DRIFT_SCORE",
@@ -984,6 +984,12 @@
       "old": 7.0,
       "new": 7.5,
       "reason": "Fade WR 30% < 40%"
+    },
+    {
+      "param": "SPIKE_MIN_RATIO",
+      "old": 7.5,
+      "new": 8.0,
+      "reason": "Fade WR 30% < 40%"
     }
   ],
   "paused": {
@@ -991,13 +997,12 @@
     "contrarian": true,
     "liquidation": false,
     "calibration": true,
-    "sentiment_divergence": true,
+    "sentiment_divergence": false,
     "smart_money": false,
     "momentum": false
   },
   "consecutive_losses": {},
   "pause_start": {
-    "sentiment_divergence": "2026-09-18 20:45 UTC",
     "mean_reversion": "2026-09-20 13:24 UTC",
     "contrarian": "2026-09-20 13:24 UTC",
     "calibration": "2026-09-20 13:24 UTC"
