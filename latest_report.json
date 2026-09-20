@@ -1,22 +1,22 @@
 {
-  "timestamp": "2026-09-20 02:48 UTC",
+  "timestamp": "2026-09-20 08:11 UTC",
   "regime": "adverse",
-  "pnl_7d": -21.6,
-  "total_open": 11,
-  "total_closed": 350,
-  "total_pnl": 828.1,
+  "pnl_7d": -11.9,
+  "total_open": 10,
+  "total_closed": 351,
+  "total_pnl": 837.8,
   "bots": [
     {
       "name": "breakout",
       "display": "Breakout",
       "grade": "B",
-      "score": 67.9,
-      "win_rate": 60.0,
-      "total_pnl": 205.1,
-      "open": 2,
-      "closed": 69,
+      "score": 78.0,
+      "win_rate": 70.0,
+      "total_pnl": 214.8,
+      "open": 1,
+      "closed": 70,
       "paused": false,
-      "consecutive_losses": 1
+      "consecutive_losses": 0
     },
     {
       "name": "momentum",
@@ -179,8 +179,8 @@
   "adjustments": [
     {
       "param": "SPIKE_MIN_RATIO",
-      "old": 5.0,
-      "new": 5.5,
+      "old": 5.5,
+      "new": 6.0,
       "reason": "Fade WR 30% < 40% \u2014 tightening"
     }
   ]
