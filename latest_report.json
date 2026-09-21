@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-09-21 08:28 UTC",
+  "timestamp": "2026-09-21 15:34 UTC",
   "regime": "adverse",
-  "pnl_7d": 47.2,
-  "total_open": 8,
-  "total_closed": 353,
-  "total_pnl": 896.9,
+  "pnl_7d": 35.4,
+  "total_open": 7,
+  "total_closed": 354,
+  "total_pnl": 884.0,
   "bots": [
     {
       "name": "breakout",
@@ -82,13 +82,13 @@
       "name": "fade",
       "display": "Fade",
       "grade": "D",
-      "score": 45.4,
+      "score": 44.2,
       "win_rate": 30.0,
-      "total_pnl": 485.9,
-      "open": 1,
-      "closed": 51,
+      "total_pnl": 473.0,
+      "open": 0,
+      "closed": 52,
       "paused": false,
-      "consecutive_losses": 3
+      "consecutive_losses": 4
     },
     {
       "name": "whale",

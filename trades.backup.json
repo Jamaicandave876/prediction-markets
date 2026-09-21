@@ -2444,7 +2444,7 @@
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null,
-    "peak_pnl": 3.0
+    "peak_pnl": 4.700000000000003
   },
   {
     "market_id": "S68QEEzRl9",
@@ -2455,11 +2455,11 @@
     "drift_score": 21.52,
     "url": "https://manifold.markets/redcat/will-i-ban-mobile-devices-from-my-b-URcPqL2sz2",
     "stake": 50.5,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 100.0,
+    "exit_time": "2026-09-21 08:27 UTC",
+    "exit_reason": "resolved_win",
+    "pnl_pp": 34.0,
     "peak_pnl": 0.4000000000000057
   },
   {
@@ -2471,11 +2471,11 @@
     "drift_score": 40.3,
     "url": "https://manifold.markets/redcat/will-i-avoid-media-and-distracting-PENLUzlPc9",
     "stake": 50.5,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 100.0,
+    "exit_time": "2026-09-21 08:27 UTC",
+    "exit_reason": "resolved_win",
+    "pnl_pp": 25.1
   },
   {
     "market_id": "tELI6nst5h",
