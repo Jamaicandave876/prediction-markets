@@ -893,11 +893,11 @@
     "entry_time": "2026-09-15 23:20 UTC",
     "url": "https://manifold.markets/JasonMendoza2008/will-0x876611867717de6b6dff30da5cef",
     "stake": 44.7,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 98.0,
+    "exit_time": "2026-09-21 15:32 UTC",
+    "exit_reason": "stopped_out",
+    "pnl_pp": -12.9
   },
   {
     "market_id": "5gLqZ9hdIp",
