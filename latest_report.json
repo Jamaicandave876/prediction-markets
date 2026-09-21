@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-09-21 02:46 UTC",
+  "timestamp": "2026-09-21 08:28 UTC",
   "regime": "adverse",
-  "pnl_7d": -11.9,
-  "total_open": 10,
-  "total_closed": 351,
-  "total_pnl": 837.8,
+  "pnl_7d": 47.2,
+  "total_open": 8,
+  "total_closed": 353,
+  "total_pnl": 896.9,
   "bots": [
     {
       "name": "breakout",
@@ -21,12 +21,12 @@
     {
       "name": "momentum",
       "display": "Momentum",
-      "grade": "C",
-      "score": 50.9,
-      "win_rate": 40.0,
-      "total_pnl": 298.8,
-      "open": 8,
-      "closed": 154,
+      "grade": "B",
+      "score": 76.0,
+      "win_rate": 60.0,
+      "total_pnl": 357.9,
+      "open": 6,
+      "closed": 156,
       "paused": false,
       "consecutive_losses": 0
     },
