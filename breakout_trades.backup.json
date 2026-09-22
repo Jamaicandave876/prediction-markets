@@ -1329,5 +1329,41 @@
     "breakout_move": -6.0,
     "breakout_strength": 6.0,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "AN6lnyQdcI",
+    "question": "US Average Gas Price Is $4.4500 or more on September 24 2026?",
+    "direction": "BUY YES",
+    "entry_prob": 79.9,
+    "entry_time": "2026-09-21 21:32 UTC",
+    "url": "https://manifold.markets/Jack1/us-average-gas-price-is-44500-or-mo-C5gEquS6lg",
+    "stake": 114.2,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "baseline_range": 5.6,
+    "breakout_move": 30.4,
+    "breakout_strength": 5.4,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "gRpZ9qqsEN",
+    "question": "Will the WTI Crude Oil Spot Price be above $102 on September 24, 2026?",
+    "direction": "BUY NO",
+    "entry_prob": 15.1,
+    "entry_time": "2026-09-21 21:32 UTC",
+    "url": "https://manifold.markets/ShaneBo/will-the-wti-crude-oil-spot-price-b-8pEtuAzuIn",
+    "stake": 114.2,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "baseline_range": 5.8,
+    "breakout_move": -18.8,
+    "breakout_strength": 3.3,
+    "signal_strength": 1.0865400634771836
   }
 ]
