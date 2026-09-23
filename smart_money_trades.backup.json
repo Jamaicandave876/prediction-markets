@@ -9753,5 +9753,24 @@
     "price_impact": 8.2,
     "conviction_score": 1.97,
     "signal_strength": 0.66
+  },
+  {
+    "market_id": "ySzsOCghyy",
+    "question": "Summer of 2027: Major Unrest in the USA?",
+    "direction": "BUY NO",
+    "entry_prob": 37.2,
+    "entry_time": "2026-09-23 08:11 UTC",
+    "url": "https://manifold.markets/CryptoNeoLiberalist/summer-of-2027-major-unrest-in-the",
+    "stake": 81.9,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 6,
+    "smart_user_mana": 650,
+    "price_impact": 14.6,
+    "conviction_score": 22.74,
+    "signal_strength": 1.5
   }
 ]
