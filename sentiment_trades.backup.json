@@ -4729,5 +4729,43 @@
     "divergence_score": 9.8,
     "signal_strength": 1.5,
     "peak_pnl": 3.6000000000000014
+  },
+  {
+    "market_id": "dy9CL09gSI",
+    "question": "Will a hurricane make landfall in a US state (Pacific)?",
+    "direction": "BUY NO",
+    "entry_prob": 24.0,
+    "entry_time": "2026-09-25 14:22 UTC",
+    "url": "https://manifold.markets/MachiNi/will-a-hurricane-make-landfall-in-a-QzIzSZSuS0",
+    "stake": 102.8,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "YES",
+    "crowd_pct": 60.0,
+    "price_move": -19.1,
+    "divergence_score": 11.43,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "nc80A2p6yy",
+    "question": "Before 2040 will most of the historical anthropic slack be made public",
+    "direction": "BUY NO",
+    "entry_prob": 25.5,
+    "entry_time": "2026-09-25 14:22 UTC",
+    "url": "https://manifold.markets/Bayesian/before-2040-will-most-of-the-histor",
+    "stake": 96.8,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "YES",
+    "crowd_pct": 65.0,
+    "price_move": -14.0,
+    "divergence_score": 9.13,
+    "signal_strength": 1.5
   }
 ]
