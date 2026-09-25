@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-09-25 08:27 UTC",
+  "timestamp": "2026-09-25 14:22 UTC",
   "regime": "adverse",
-  "pnl_7d": 34.8,
-  "total_open": 6,
-  "total_closed": 358,
-  "total_pnl": 875.2,
+  "pnl_7d": 15.1,
+  "total_open": 5,
+  "total_closed": 359,
+  "total_pnl": 855.5,
   "bots": [
     {
       "name": "momentum",
@@ -24,11 +24,11 @@
       "grade": "C",
       "score": 55.5,
       "win_rate": 50.0,
-      "total_pnl": 215.5,
-      "open": 1,
-      "closed": 73,
+      "total_pnl": 195.8,
+      "open": 0,
+      "closed": 74,
       "paused": false,
-      "consecutive_losses": 1
+      "consecutive_losses": 2
     },
     {
       "name": "weather_temperature",
