@@ -104,7 +104,7 @@
       "avg_pnl": 2.8,
       "total_pnl": 215.5,
       "closed": 73,
-      "open": 0,
+      "open": 1,
       "grade": "C"
     },
     "weather_temperature": {
@@ -161,5 +161,5 @@
     "weather_divergence": 0
   },
   "regime": "adverse",
-  "last_report": "2026-09-24 02:38 UTC"
+  "last_report": "2026-09-25 02:55 UTC"
 }
