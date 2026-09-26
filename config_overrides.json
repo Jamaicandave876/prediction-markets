@@ -1,4 +1,4 @@
 {
-  "MIN_DRIFT_SCORE": 4.9,
+  "MIN_DRIFT_SCORE": 5.0,
   "SPIKE_MIN_RATIO": 8.0
 }
