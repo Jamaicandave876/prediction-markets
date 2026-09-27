@@ -10028,5 +10028,24 @@
     "conviction_score": 50.75,
     "signal_strength": 1.5,
     "peak_pnl": 0.3000000000000007
+  },
+  {
+    "market_id": "lIqyQZz8gt",
+    "question": "Will any ballot boxes or mail in ballots be confiscated in the 2026 midterms?",
+    "direction": "BUY YES",
+    "entry_prob": 59.2,
+    "entry_time": "2026-09-27 20:41 UTC",
+    "url": "https://manifold.markets/TimeTravelr/will-any-ballot-boxes-or-mail-in-ba",
+    "stake": 43.1,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 2,
+    "smart_user_mana": 250,
+    "price_impact": 11.5,
+    "conviction_score": 2.3,
+    "signal_strength": 0.77
   }
 ]
