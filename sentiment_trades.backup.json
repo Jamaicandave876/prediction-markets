@@ -4825,5 +4825,24 @@
     "price_move": 6.8,
     "divergence_score": 4.09,
     "signal_strength": 0.82
+  },
+  {
+    "market_id": "5R52URuRCt",
+    "question": "Will the US ban diesel exports before Election Day?",
+    "direction": "BUY YES",
+    "entry_prob": 23.0,
+    "entry_time": "2026-09-28 02:59 UTC",
+    "url": "https://manifold.markets/Fastcar99/will-the-us-ban-diesel-exports-befo",
+    "stake": 20.2,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "NO",
+    "crowd_pct": 85.0,
+    "price_move": 4.0,
+    "divergence_score": 3.4,
+    "signal_strength": 0.68
   }
 ]
