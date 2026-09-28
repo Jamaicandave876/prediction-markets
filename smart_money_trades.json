@@ -9978,11 +9978,11 @@
     "entry_time": "2026-09-26 18:13 UTC",
     "url": "https://manifold.markets/MichaelBlume/resolves-january-31-will-the-senate",
     "stake": 71.6,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 61.4,
+    "exit_time": "2026-09-28 19:05 UTC",
+    "exit_reason": "stale",
+    "pnl_pp": -0.3,
     "smart_user_bets": 2,
     "smart_user_mana": 2262,
     "price_impact": 10.1,
@@ -10046,7 +10046,8 @@
     "smart_user_mana": 250,
     "price_impact": 11.5,
     "conviction_score": 2.3,
-    "signal_strength": 0.77
+    "signal_strength": 0.77,
+    "peak_pnl": 0.3999999999999986
   },
   {
     "market_id": "6PNhz6phZc",
@@ -10065,7 +10066,8 @@
     "smart_user_mana": 250,
     "price_impact": 12.1,
     "conviction_score": 4.83,
-    "signal_strength": 1.5
+    "signal_strength": 1.5,
+    "peak_pnl": 7.100000000000001
   },
   {
     "market_id": "uCChUuUQnc",

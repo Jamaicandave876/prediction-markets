@@ -1412,15 +1412,15 @@
     "entry_time": "2026-09-27 11:09 UTC",
     "url": "https://manifold.markets/Jack1/us-average-gas-price-is-44900-or-mo",
     "stake": 116.0,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 14.0,
+    "exit_time": "2026-09-28 09:30 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 11.2,
     "baseline_range": 3.6,
     "breakout_move": -26.8,
     "breakout_strength": 7.5,
     "signal_strength": 1.5,
-    "peak_pnl": 3.3999999999999986
+    "peak_pnl": 11.2
   }
 ]
