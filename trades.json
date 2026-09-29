@@ -2392,11 +2392,11 @@
     "drift_score": 6.9,
     "url": "https://manifold.markets/Jack1/will-democrats-us-house-popular-vot",
     "stake": 50.5,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 54.4,
+    "exit_time": "2026-09-29 00:46 UTC",
+    "exit_reason": "stale",
+    "pnl_pp": -5.4
   },
   {
     "market_id": "RQNlquZh8d",
@@ -2407,11 +2407,11 @@
     "drift_score": -4.27,
     "url": "https://manifold.markets/Jack1/2028-democratic-nominee-is-newsom-o",
     "stake": 50.5,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 46.0,
+    "exit_time": "2026-09-29 00:46 UTC",
+    "exit_reason": "stale",
+    "pnl_pp": 1.0,
     "peak_pnl": 1.7999999999999972
   },
   {
@@ -2439,11 +2439,11 @@
     "drift_score": 21.58,
     "url": "https://manifold.markets/BenAybar/will-roy-cooper-win-by-4-points-or",
     "stake": 50.5,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 69.6,
+    "exit_time": "2026-09-29 00:46 UTC",
+    "exit_reason": "stale",
+    "pnl_pp": 6.3,
     "peak_pnl": 6.299999999999997
   },
   {
@@ -2501,11 +2501,11 @@
     "drift_score": -32.97,
     "url": "https://manifold.markets/BenAybar/will-abdul-elsayed-win-by-7-points",
     "stake": 50.5,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 31.8,
+    "exit_time": "2026-09-29 00:46 UTC",
+    "exit_reason": "stale",
+    "pnl_pp": 0.3,
     "peak_pnl": 0.3000000000000007
   },
   {
@@ -2517,10 +2517,10 @@
     "drift_score": -23.51,
     "url": "https://manifold.markets/Eliza/will-there-be-a-bald-us-president-b",
     "stake": 50.5,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 36.1,
+    "exit_time": "2026-09-29 00:46 UTC",
+    "exit_reason": "stale",
+    "pnl_pp": 0.0
   }
 ]
