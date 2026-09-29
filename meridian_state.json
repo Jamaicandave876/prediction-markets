@@ -1,19 +1,19 @@
 {
-  "last_run": "2026-09-29 17:27 UTC",
+  "last_run": "2026-09-29 21:45 UTC",
   "conflicts": [],
   "overlaps": {},
   "direction_exposure": {
-    "yes_count": 2,
-    "no_count": 1,
-    "total": 3,
-    "yes_stake": 155.7,
-    "no_stake": 50.6,
-    "total_stake": 206.3,
-    "yes_pct": 75.5,
+    "yes_count": 3,
+    "no_count": 2,
+    "total": 5,
+    "yes_stake": 196.6,
+    "no_stake": 91.5,
+    "total_stake": 288.1,
+    "yes_pct": 68.2,
     "balance": "YES-heavy"
   },
   "capital_weights": {
-    "momentum": 1.1,
+    "momentum": 0.8,
     "fade": 0.8,
     "mean_reversion": 0.6,
     "volume_surge": 0.6,
