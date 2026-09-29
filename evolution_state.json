@@ -75,14 +75,14 @@
       "target_hit": 2
     },
     "sentiment": {
-      "target_hit": 100,
+      "target_hit": 101,
       "stopped_out": 115,
-      "trailing_stop": 17,
+      "trailing_stop": 18,
       "stale": 53,
       "resolved_loss": 2
     },
     "smart_money": {
-      "target_hit": 235,
+      "target_hit": 236,
       "stopped_out": 78,
       "trailing_stop": 23,
       "stale": 101,
@@ -1174,58 +1174,6 @@
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "smart_money",
-      "market_id": "CL56c9sqQp",
-      "outcome": "big_loss",
-      "pnl_pp": -4.3,
-      "exit_reason": "stale",
-      "duration_hours": 48.5,
-      "traits": [
-        "mid_prob_entry",
-        "yes_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 56.5,
-      "direction": "BUY YES",
-      "timestamp": "2026-09-15 14:05 UTC",
-      "lesson": "Smart $: Held too long with no resolution. Consider shorter max_days."
-    },
-    {
-      "bot": "smart_money",
-      "market_id": "CcAIzgUqu2",
-      "outcome": "small_loss",
-      "pnl_pp": -0.3,
-      "exit_reason": "stale",
-      "duration_hours": 48.5,
-      "traits": [
-        "low_prob_entry",
-        "no_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 27.3,
-      "direction": "BUY NO",
-      "timestamp": "2026-09-15 14:05 UTC",
-      "lesson": "Smart $: small loss via stale. PnL: -0.3pp in 48h."
-    },
-    {
-      "bot": "sentiment",
-      "market_id": "gIIuCu8tCS",
-      "outcome": "small_win",
-      "pnl_pp": 3.1,
-      "exit_reason": "target_hit",
-      "duration_hours": 5.8,
-      "traits": [
-        "low_prob_entry",
-        "fast_trade",
-        "no_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 16.0,
-      "direction": "BUY NO",
-      "timestamp": "2026-09-15 14:05 UTC",
-      "lesson": "Sentiment: small win via target_hit. PnL: +3.1pp in 6h."
-    },
     {
       "bot": "smart_money",
       "market_id": "hUI0Lgt9Az",
@@ -2930,6 +2878,59 @@
       "direction": "BUY YES",
       "timestamp": "2026-09-29 00:46 UTC",
       "lesson": "Sentiment: small loss via target_hit. PnL: +0.0pp in 6h."
+    },
+    {
+      "bot": "smart_money",
+      "market_id": "uOZOuEO80l",
+      "outcome": "small_loss",
+      "pnl_pp": 0.0,
+      "exit_reason": "target_hit",
+      "duration_hours": 8.6,
+      "traits": [
+        "low_prob_entry",
+        "fast_trade",
+        "no_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 16.8,
+      "direction": "BUY NO",
+      "timestamp": "2026-09-29 09:21 UTC",
+      "lesson": "Smart $: small loss via target_hit. PnL: +0.0pp in 9h."
+    },
+    {
+      "bot": "sentiment",
+      "market_id": "EzuZRncgSd",
+      "outcome": "big_loss",
+      "pnl_pp": -4.4,
+      "exit_reason": "trailing_stop",
+      "duration_hours": 14.3,
+      "traits": [
+        "mid_prob_entry",
+        "fast_trade",
+        "yes_direction"
+      ],
+      "entry_prob": 35.0,
+      "direction": "BUY YES",
+      "timestamp": "2026-09-29 09:21 UTC",
+      "lesson": "Sentiment: big loss via trailing_stop. PnL: -4.4pp in 14h."
+    },
+    {
+      "bot": "sentiment",
+      "market_id": "usc5uzsuNd",
+      "outcome": "small_loss",
+      "pnl_pp": 0.0,
+      "exit_reason": "target_hit",
+      "duration_hours": 8.6,
+      "traits": [
+        "low_prob_entry",
+        "fast_trade",
+        "no_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 16.1,
+      "direction": "BUY NO",
+      "timestamp": "2026-09-29 09:21 UTC",
+      "lesson": "Sentiment: small loss via target_hit. PnL: +0.0pp in 9h."
     }
   ],
   "regime": "cautious",
@@ -3062,7 +3063,7 @@
     "breakout": 0.71,
     "calibration": 0.1,
     "reversal": 0.2,
-    "smart_money": 0.47,
+    "smart_money": 0.42,
     "time_decay": 0.23,
     "sentiment": 0.2,
     "accumulation": 0.1,
@@ -3075,6 +3076,6 @@
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-09-29 00:46 UTC",
-  "generation": 1161
+  "last_evolution": "2026-09-29 09:22 UTC",
+  "generation": 1162
 }

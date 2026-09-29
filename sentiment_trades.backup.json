@@ -4864,7 +4864,8 @@
     "crowd_pct": 65.0,
     "price_move": 7.6,
     "divergence_score": 4.95,
-    "signal_strength": 0.99
+    "signal_strength": 0.99,
+    "peak_pnl": 3.299999999999997
   },
   {
     "market_id": "9S2ZhnAZul",
@@ -4874,15 +4875,34 @@
     "entry_time": "2026-09-28 19:05 UTC",
     "url": "https://manifold.markets/PaperBoy/will-ai-revenues-be-greater-than-50",
     "stake": 103.9,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 81.8,
+    "exit_time": "2026-09-29 00:46 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 0.0,
     "crowd_dir": "NO",
     "crowd_pct": 60.0,
     "price_move": 6.8,
     "divergence_score": 4.09,
     "signal_strength": 0.82
+  },
+  {
+    "market_id": "usc5uzsuNd",
+    "question": "Will a16z have a dedicated AI safety fund before 2030?",
+    "direction": "BUY NO",
+    "entry_prob": 16.1,
+    "entry_time": "2026-09-29 00:46 UTC",
+    "url": "https://manifold.markets/SG/will-a16z-have-a-dedicated-ai-safet",
+    "stake": 116.9,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "YES",
+    "crowd_pct": 60.0,
+    "price_move": -33.9,
+    "divergence_score": 20.34,
+    "signal_strength": 1.5
   }
 ]

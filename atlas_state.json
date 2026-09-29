@@ -23,7 +23,7 @@
       "avg_pnl": 6.7,
       "total_pnl": 350.6,
       "closed": 162,
-      "open": 0,
+      "open": 6,
       "grade": "B"
     },
     "fade": {
@@ -161,5 +161,5 @@
     "weather_divergence": 0
   },
   "regime": "adverse",
-  "last_report": "2026-09-28 03:00 UTC"
+  "last_report": "2026-09-29 09:22 UTC"
 }
