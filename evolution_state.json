@@ -75,8 +75,8 @@
       "target_hit": 2
     },
     "sentiment": {
-      "target_hit": 101,
-      "stopped_out": 115,
+      "target_hit": 102,
+      "stopped_out": 116,
       "trailing_stop": 18,
       "stale": 53,
       "resolved_loss": 2
@@ -1174,40 +1174,6 @@
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "sentiment",
-      "market_id": "Ophn0RNnRL",
-      "outcome": "small_loss",
-      "pnl_pp": -2.7,
-      "exit_reason": "trailing_stop",
-      "duration_hours": 57.8,
-      "traits": [
-        "mid_prob_entry",
-        "yes_direction"
-      ],
-      "entry_prob": 58.6,
-      "direction": "BUY YES",
-      "timestamp": "2026-09-15 23:21 UTC",
-      "lesson": "Sentiment: Had profit but trailing stop was too tight. Consider widening trail."
-    },
-    {
-      "bot": "momentum",
-      "market_id": "EptlI0nRch",
-      "outcome": "strong_win",
-      "pnl_pp": 5.2,
-      "exit_reason": "target_hit",
-      "duration_hours": 325.6,
-      "traits": [
-        "low_prob_entry",
-        "slow_trade",
-        "no_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 26.1,
-      "direction": "BUY NO",
-      "timestamp": "2026-09-16 02:46 UTC",
-      "lesson": "Momentum: Strong signal \u2192 strong win. Keep trusting high-confidence entries."
-    },
     {
       "bot": "smart_money",
       "market_id": "S68QEEzRl9",
@@ -2932,6 +2898,41 @@
       "direction": "BUY YES",
       "timestamp": "2026-09-29 21:45 UTC",
       "lesson": "Smart $: small win via stale. PnL: +0.4pp in 49h."
+    },
+    {
+      "bot": "sentiment",
+      "market_id": "n8ACyZAlg6",
+      "outcome": "big_loss",
+      "pnl_pp": -5.0,
+      "exit_reason": "stopped_out",
+      "duration_hours": 10.0,
+      "traits": [
+        "mid_prob_entry",
+        "fast_trade",
+        "yes_direction"
+      ],
+      "entry_prob": 58.6,
+      "direction": "BUY YES",
+      "timestamp": "2026-09-30 03:26 UTC",
+      "lesson": "Sentiment: big loss via stopped_out. PnL: -5.0pp in 10h."
+    },
+    {
+      "bot": "sentiment",
+      "market_id": "usc5uzsuNd",
+      "outcome": "small_loss",
+      "pnl_pp": 0.0,
+      "exit_reason": "target_hit",
+      "duration_hours": 5.7,
+      "traits": [
+        "low_prob_entry",
+        "fast_trade",
+        "no_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 16.1,
+      "direction": "BUY NO",
+      "timestamp": "2026-09-30 03:26 UTC",
+      "lesson": "Sentiment: small loss via target_hit. PnL: +0.0pp in 6h."
     }
   ],
   "regime": "cautious",
@@ -3077,6 +3078,6 @@
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-09-29 21:45 UTC",
-  "generation": 1164
+  "last_evolution": "2026-09-30 03:27 UTC",
+  "generation": 1165
 }

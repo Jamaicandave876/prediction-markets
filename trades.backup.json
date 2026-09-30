@@ -2553,7 +2553,7 @@
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null,
-    "peak_pnl": 1.5
+    "peak_pnl": 1.8000000000000043
   },
   {
     "market_id": "qEu2NAzlhl",
@@ -2615,5 +2615,35 @@
     "exit_time": "2026-09-29 17:26 UTC",
     "exit_reason": "target_hit",
     "pnl_pp": 0.0
+  },
+  {
+    "market_id": "LIugunSZPZ",
+    "question": "Will 2026 be a bigger blue wave than 2018?",
+    "direction": "BUY YES",
+    "entry_prob": 56.2,
+    "entry_time": "2026-09-29 21:44 UTC",
+    "drift_score": 8.48,
+    "url": "https://manifold.markets/BenAybar/will-2026-be-a-bigger-blue-wave-tha",
+    "stake": 40.9,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
+  },
+  {
+    "market_id": "0tE26608Py",
+    "question": "Will bitcoin rise to 105k before the Strait of Hormuz is freely open?",
+    "direction": "BUY NO",
+    "entry_prob": 40.9,
+    "entry_time": "2026-09-29 21:44 UTC",
+    "drift_score": -13.24,
+    "url": "https://manifold.markets/apol/will-bitcoin-rise-to-105k-before-th",
+    "stake": 40.9,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]

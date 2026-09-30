@@ -4923,5 +4923,24 @@
     "price_move": 4.1,
     "divergence_score": 3.49,
     "signal_strength": 0.7
+  },
+  {
+    "market_id": "usc5uzsuNd",
+    "question": "Will a16z have a dedicated AI safety fund before 2030?",
+    "direction": "BUY NO",
+    "entry_prob": 16.1,
+    "entry_time": "2026-09-29 21:45 UTC",
+    "url": "https://manifold.markets/SG/will-a16z-have-a-dedicated-ai-safet",
+    "stake": 115.6,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "YES",
+    "crowd_pct": 60.0,
+    "price_move": -33.9,
+    "divergence_score": 20.34,
+    "signal_strength": 1.5
   }
 ]
