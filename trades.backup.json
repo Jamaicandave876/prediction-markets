@@ -2646,5 +2646,20 @@
     "exit_reason": null,
     "pnl_pp": null,
     "peak_pnl": 0.6000000000000014
+  },
+  {
+    "market_id": "s2NUROI52u",
+    "question": "US Average DIESEL Price Is $6.3000 or more on October 5 2026?",
+    "direction": "BUY YES",
+    "entry_prob": 85.0,
+    "entry_time": "2026-09-30 17:23 UTC",
+    "drift_score": 24.94,
+    "url": "https://manifold.markets/Jack1/us-average-diesel-price-is-63000-or",
+    "stake": 41.0,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]

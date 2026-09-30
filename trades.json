@@ -2656,10 +2656,11 @@
     "drift_score": 24.94,
     "url": "https://manifold.markets/Jack1/us-average-diesel-price-is-63000-or",
     "stake": 41.0,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 88.8,
+    "exit_time": "2026-09-30 21:44 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 3.8,
+    "peak_pnl": 3.799999999999997
   }
 ]
