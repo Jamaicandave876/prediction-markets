@@ -10164,5 +10164,43 @@
     "price_impact": 5.7,
     "conviction_score": 4.1,
     "signal_strength": 1.37
+  },
+  {
+    "market_id": "s2NUROI52u",
+    "question": "US Average DIESEL Price Is $6.3000 or more on October 5 2026?",
+    "direction": "BUY YES",
+    "entry_prob": 85.0,
+    "entry_time": "2026-09-30 17:23 UTC",
+    "url": "https://manifold.markets/Jack1/us-average-diesel-price-is-63000-or",
+    "stake": 117.2,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 11,
+    "smart_user_mana": 912,
+    "price_impact": 16.0,
+    "conviction_score": 64.22,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "lcSz5QLqlt",
+    "question": "NFL Week 4: Will the Philadelphia Eagles defeat the Los Angeles Rams by 3 or more points in Week 4?",
+    "direction": "BUY NO",
+    "entry_prob": 36.3,
+    "entry_time": "2026-09-30 17:23 UTC",
+    "url": "https://manifold.markets/Web3ICP/will-the-philadelphia-eagles-defeat-uU2sznlI6P",
+    "stake": 95.4,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 14,
+    "smart_user_mana": 533,
+    "price_impact": 3.3,
+    "conviction_score": 9.91,
+    "signal_strength": 1.5
   }
 ]
