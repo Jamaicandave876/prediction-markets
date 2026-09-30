@@ -10145,5 +10145,24 @@
     "price_impact": 5.0,
     "conviction_score": 6.03,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "qONQZ8Eldz",
+    "question": "Will Control of the Senate be called on Election night?",
+    "direction": "BUY YES",
+    "entry_prob": 37.2,
+    "entry_time": "2026-09-30 03:26 UTC",
+    "url": "https://manifold.markets/BillClintonBubba/will-control-of-the-senate-be-calle",
+    "stake": 50.2,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 3,
+    "smart_user_mana": 600,
+    "price_impact": 5.7,
+    "conviction_score": 4.1,
+    "signal_strength": 1.37
   }
 ]
