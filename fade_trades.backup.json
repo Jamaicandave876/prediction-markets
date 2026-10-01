@@ -934,5 +934,23 @@
     "exit_time": "2026-09-19 07:42 UTC",
     "exit_reason": "stopped_out",
     "pnl_pp": -12.3
+  },
+  {
+    "market_id": "qh0ssI85UZ",
+    "question": "US Average Gas Price Is $4.3800 or more on October 5 2026?",
+    "direction": "BUY NO",
+    "entry_prob": 64.0,
+    "pre_spike_prob": 30.4,
+    "spike_size": 33.6,
+    "spike_ratio": 9.4,
+    "spike_dir": 1,
+    "entry_time": "2026-09-30 21:44 UTC",
+    "url": "https://manifold.markets/Jack1/us-average-gas-price-is-43800-or-mo",
+    "stake": 26.7,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]

@@ -1422,5 +1422,23 @@
     "breakout_strength": 7.5,
     "signal_strength": 1.5,
     "peak_pnl": 11.2
+  },
+  {
+    "market_id": "lcSz5QLqlt",
+    "question": "NFL Week 4: Will the Philadelphia Eagles defeat the Los Angeles Rams by 3 or more points in Week 4?",
+    "direction": "BUY NO",
+    "entry_prob": 37.7,
+    "entry_time": "2026-10-01 03:32 UTC",
+    "url": "https://manifold.markets/Web3ICP/will-the-philadelphia-eagles-defeat-uU2sznlI6P",
+    "stake": 37.1,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "baseline_range": 6.1,
+    "breakout_move": -12.3,
+    "breakout_strength": 2.0,
+    "signal_strength": 0.6784287380817059
   }
 ]

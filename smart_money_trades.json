@@ -10204,5 +10204,24 @@
     "conviction_score": 9.91,
     "signal_strength": 1.5,
     "peak_pnl": 0.29999999999999716
+  },
+  {
+    "market_id": "lgyQdUSy0C",
+    "question": "Will Calvin Wang submit the 21W.023 Discussion Post Homework on time? (Writing Advice from Stephen King)",
+    "direction": "BUY NO",
+    "entry_prob": 58.1,
+    "entry_time": "2026-10-01 03:33 UTC",
+    "url": "https://manifold.markets/DottedCalculator/will-calvin-wang-submit-the-21w023",
+    "stake": 59.8,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 8,
+    "smart_user_mana": 400,
+    "price_impact": 25.8,
+    "conviction_score": 33.03,
+    "signal_strength": 1.5
   }
 ]
