@@ -2645,7 +2645,7 @@
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null,
-    "peak_pnl": 0.6000000000000014
+    "peak_pnl": 1.5
   },
   {
     "market_id": "s2NUROI52u",
@@ -2662,5 +2662,20 @@
     "exit_reason": "target_hit",
     "pnl_pp": 3.8,
     "peak_pnl": 3.799999999999997
+  },
+  {
+    "market_id": "0SdcdSCnlZ",
+    "question": "Will I weigh >160lbs at the end of October?",
+    "direction": "BUY YES",
+    "entry_prob": 33.1,
+    "entry_time": "2026-10-01 12:12 UTC",
+    "drift_score": 18.74,
+    "url": "https://manifold.markets/Parallax/will-i-weigh-160lbs-at-the-end-of-o",
+    "stake": 51.5,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]
