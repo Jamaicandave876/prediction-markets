@@ -4942,5 +4942,24 @@
     "price_move": -33.9,
     "divergence_score": 20.34,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "sgUZP8EzSq",
+    "question": "Bitcoin $87,500 in October 2026?",
+    "direction": "BUY NO",
+    "entry_prob": 63.7,
+    "entry_time": "2026-10-02 21:42 UTC",
+    "url": "https://manifold.markets/Jack1/bitcoin-87500-in-october-2026",
+    "stake": 54.5,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "YES",
+    "crowd_pct": 75.0,
+    "price_move": -18.7,
+    "divergence_score": 13.99,
+    "signal_strength": 1.5
   }
 ]
