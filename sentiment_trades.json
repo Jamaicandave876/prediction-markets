@@ -4970,15 +4970,34 @@
     "entry_time": "2026-10-03 15:33 UTC",
     "url": "https://manifold.markets/dreev/does-claude-opus-55-make-egregious",
     "stake": 110.7,
+    "status": "closed",
+    "exit_prob": 19.0,
+    "exit_time": "2026-10-03 20:27 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 0.0,
+    "crowd_dir": "YES",
+    "crowd_pct": 60.0,
+    "price_move": -8.5,
+    "divergence_score": 5.08,
+    "signal_strength": 1.02
+  },
+  {
+    "market_id": "Qgu99q9Lpu",
+    "question": "Will Gemini 4 Argon be released publicly before October 15",
+    "direction": "BUY NO",
+    "entry_prob": 48.0,
+    "entry_time": "2026-10-03 20:27 UTC",
+    "url": "https://manifold.markets/HumanClanker/will-gemini-4-argon-be-released-pub",
+    "stake": 45.2,
     "status": "open",
     "exit_prob": null,
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null,
     "crowd_dir": "YES",
-    "crowd_pct": 60.0,
-    "price_move": -8.5,
-    "divergence_score": 5.08,
-    "signal_strength": 1.02
+    "crowd_pct": 65.0,
+    "price_move": -9.0,
+    "divergence_score": 5.83,
+    "signal_strength": 1.17
   }
 ]
