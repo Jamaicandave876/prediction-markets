@@ -4951,15 +4951,34 @@
     "entry_time": "2026-10-02 21:42 UTC",
     "url": "https://manifold.markets/Jack1/bitcoin-87500-in-october-2026",
     "stake": 54.5,
+    "status": "closed",
+    "exit_prob": 69.4,
+    "exit_time": "2026-10-03 15:33 UTC",
+    "exit_reason": "stopped_out",
+    "pnl_pp": -5.7,
+    "crowd_dir": "YES",
+    "crowd_pct": 75.0,
+    "price_move": -18.7,
+    "divergence_score": 13.99,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "pcEc5O9CPc",
+    "question": "Does Claude Opus 5.5 make egregious errors?",
+    "direction": "BUY NO",
+    "entry_prob": 19.0,
+    "entry_time": "2026-10-03 15:33 UTC",
+    "url": "https://manifold.markets/dreev/does-claude-opus-55-make-egregious",
+    "stake": 110.7,
     "status": "open",
     "exit_prob": null,
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null,
     "crowd_dir": "YES",
-    "crowd_pct": 75.0,
-    "price_move": -18.7,
-    "divergence_score": 13.99,
-    "signal_strength": 1.5
+    "crowd_pct": 60.0,
+    "price_move": -8.5,
+    "divergence_score": 5.08,
+    "signal_strength": 1.02
   }
 ]

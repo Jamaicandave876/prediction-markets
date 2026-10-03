@@ -952,5 +952,23 @@
     "exit_time": "2026-10-01 20:02 UTC",
     "exit_reason": "normalized",
     "pnl_pp": 33.7
+  },
+  {
+    "market_id": "tplhuRgdCS",
+    "question": "GPT-6.1+ Astra released in October?",
+    "direction": "BUY YES",
+    "entry_prob": 17.0,
+    "pre_spike_prob": 37.3,
+    "spike_size": 20.3,
+    "spike_ratio": 20.0,
+    "spike_dir": -1,
+    "entry_time": "2026-10-03 10:55 UTC",
+    "url": "https://manifold.markets/Bayesian/gpt61-astra-released-in-october",
+    "stake": 46.1,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]
