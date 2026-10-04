@@ -5000,5 +5000,24 @@
     "divergence_score": 5.83,
     "signal_strength": 1.17,
     "peak_pnl": 1.2000000000000028
+  },
+  {
+    "market_id": "nROOLlp5Cc",
+    "question": "GPT Astra 6.1+ Released By End of November 2026?",
+    "direction": "BUY YES",
+    "entry_prob": 74.0,
+    "entry_time": "2026-10-04 03:44 UTC",
+    "url": "https://manifold.markets/Jack1/gpt-astra-61-released-by-end-of-nov",
+    "stake": 107.2,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "NO",
+    "crowd_pct": 66.7,
+    "price_move": 14.0,
+    "divergence_score": 9.34,
+    "signal_strength": 1.5
   }
 ]
