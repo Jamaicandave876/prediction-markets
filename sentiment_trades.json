@@ -4999,7 +4999,7 @@
     "price_move": -9.0,
     "divergence_score": 5.83,
     "signal_strength": 1.17,
-    "peak_pnl": 1.2000000000000028
+    "peak_pnl": 2.700000000000003
   },
   {
     "market_id": "nROOLlp5Cc",
@@ -5029,11 +5029,11 @@
     "entry_time": "2026-10-04 11:38 UTC",
     "url": "https://manifold.markets/dreev/does-claude-opus-55-make-egregious",
     "stake": 116.5,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 19.0,
+    "exit_time": "2026-10-04 16:16 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 0.0,
     "crowd_dir": "YES",
     "crowd_pct": 60.0,
     "price_move": -8.5,
