@@ -10466,16 +10466,17 @@
     "entry_time": "2026-10-04 16:16 UTC",
     "url": "https://manifold.markets/Technocrat/real-us-spending-on-math-rd-at-high",
     "stake": 116.7,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 19.2,
+    "exit_time": "2026-10-04 20:46 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 5.4,
     "smart_user_bets": 5,
     "smart_user_mana": 6750,
     "price_impact": 21.8,
     "conviction_score": 293.96,
-    "signal_strength": 1.5
+    "signal_strength": 1.5,
+    "peak_pnl": 5.400000000000002
   },
   {
     "market_id": "RZC6hdUtgs",
@@ -10485,15 +10486,16 @@
     "entry_time": "2026-10-04 16:16 UTC",
     "url": "https://manifold.markets/Anthem/will-the-irkutsk-antiplague-institu",
     "stake": 116.7,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 21.3,
+    "exit_time": "2026-10-04 20:46 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 4.6,
     "smart_user_bets": 7,
     "smart_user_mana": 653,
     "price_impact": 15.5,
     "conviction_score": 28.42,
-    "signal_strength": 1.5
+    "signal_strength": 1.5,
+    "peak_pnl": 4.599999999999998
   }
 ]
