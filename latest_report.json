@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-10-05 21:46 UTC",
+  "timestamp": "2026-10-06 04:16 UTC",
   "regime": "adverse",
-  "pnl_7d": 94.3,
-  "total_open": 6,
-  "total_closed": 373,
-  "total_pnl": 961.0,
+  "pnl_7d": 89.1,
+  "total_open": 5,
+  "total_closed": 374,
+  "total_pnl": 958.0,
   "bots": [
     {
       "name": "fade",
@@ -34,13 +34,13 @@
       "name": "breakout",
       "display": "Breakout",
       "grade": "C",
-      "score": 55.1,
+      "score": 56.9,
       "win_rate": 50.0,
-      "total_pnl": 244.7,
-      "open": 1,
-      "closed": 76,
+      "total_pnl": 241.7,
+      "open": 0,
+      "closed": 77,
       "paused": false,
-      "consecutive_losses": 0
+      "consecutive_losses": 1
     },
     {
       "name": "weather_temperature",
