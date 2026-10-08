@@ -5079,5 +5079,24 @@
     "divergence_score": 11.81,
     "signal_strength": 1.5,
     "peak_pnl": 0.5
+  },
+  {
+    "market_id": "ll0hlRZQg0",
+    "question": "Will there be a \"Gentle Singularity\"?",
+    "direction": "BUY NO",
+    "entry_prob": 38.8,
+    "entry_time": "2026-10-08 00:40 UTC",
+    "url": "https://manifold.markets/AdamK/will-there-be-a-gentle-singularity",
+    "stake": 80.7,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "YES",
+    "crowd_pct": 72.2,
+    "price_move": -11.2,
+    "divergence_score": 8.12,
+    "signal_strength": 1.5
   }
 ]
