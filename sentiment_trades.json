@@ -5117,5 +5117,24 @@
     "price_move": -20.7,
     "divergence_score": 12.44,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "zSE2S22SCn",
+    "question": "Will Nidal Hasans execution be livestreamed in 2026?",
+    "direction": "BUY NO",
+    "entry_prob": 44.1,
+    "entry_time": "2026-10-09 17:52 UTC",
+    "url": "https://manifold.markets/Jack1/will-nidal-hasans-execution-be-live",
+    "stake": 62.1,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "YES",
+    "crowd_pct": 65.0,
+    "price_move": -15.3,
+    "divergence_score": 9.97,
+    "signal_strength": 1.5
   }
 ]

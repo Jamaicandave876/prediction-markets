@@ -10670,5 +10670,24 @@
     "price_impact": 18.1,
     "conviction_score": 4.34,
     "signal_strength": 1.45
+  },
+  {
+    "market_id": "9gLpZQ5OPz",
+    "question": "Will any independent win a U.S. House seat in the 2026 elections?",
+    "direction": "BUY NO",
+    "entry_prob": 24.0,
+    "entry_time": "2026-10-09 09:54 UTC",
+    "url": "https://manifold.markets/ManifoldPolitics/will-any-independent-win-a-us-house",
+    "stake": 60.8,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 2,
+    "smart_user_mana": 363,
+    "price_impact": 7.5,
+    "conviction_score": 2.17,
+    "signal_strength": 0.72
   }
 ]
