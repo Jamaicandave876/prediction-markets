@@ -5137,5 +5137,24 @@
     "divergence_score": 9.97,
     "signal_strength": 1.5,
     "peak_pnl": 12.3
+  },
+  {
+    "market_id": "RhsItQhU9n",
+    "question": "Will Russia deliver the promised 4.8 million tons of diesel?",
+    "direction": "BUY YES",
+    "entry_prob": 37.0,
+    "entry_time": "2026-10-10 21:01 UTC",
+    "url": "https://manifold.markets/Gabrielle/will-russia-deliver-the-promised-48",
+    "stake": 44.0,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "NO",
+    "crowd_pct": 60.0,
+    "price_move": 15.0,
+    "divergence_score": 9.03,
+    "signal_strength": 1.5
   }
 ]
