@@ -10698,15 +10698,34 @@
     "entry_time": "2026-10-09 17:51 UTC",
     "url": "https://manifold.markets/Gen/will-xai-merge-with-anthropic-befor",
     "stake": 114.4,
+    "status": "closed",
+    "exit_prob": 13.8,
+    "exit_time": "2026-10-09 22:06 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 0.0,
+    "smart_user_bets": 2,
+    "smart_user_mana": 500,
+    "price_impact": 14.6,
+    "conviction_score": 5.85,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "zSE2S22SCn",
+    "question": "Will Nidal Hasans execution be livestreamed in 2026?",
+    "direction": "BUY NO",
+    "entry_prob": 31.8,
+    "entry_time": "2026-10-09 22:06 UTC",
+    "url": "https://manifold.markets/Jack1/will-nidal-hasans-execution-be-live",
+    "stake": 42.3,
     "status": "open",
     "exit_prob": null,
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null,
     "smart_user_bets": 2,
-    "smart_user_mana": 500,
-    "price_impact": 14.6,
-    "conviction_score": 5.85,
-    "signal_strength": 1.5
+    "smart_user_mana": 250,
+    "price_impact": 12.3,
+    "conviction_score": 2.45,
+    "signal_strength": 0.82
   }
 ]
