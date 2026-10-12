@@ -5136,7 +5136,7 @@
     "price_move": -15.3,
     "divergence_score": 9.97,
     "signal_strength": 1.5,
-    "peak_pnl": 12.3
+    "peak_pnl": 12.5
   },
   {
     "market_id": "RhsItQhU9n",
@@ -5155,6 +5155,25 @@
     "crowd_pct": 60.0,
     "price_move": 15.0,
     "divergence_score": 9.03,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "yp52Q9RQnL",
+    "question": "Will building datacenters in the US be much more difficult by mid-2029?",
+    "direction": "BUY NO",
+    "entry_prob": 31.8,
+    "entry_time": "2026-10-11 21:21 UTC",
+    "url": "https://manifold.markets/JonasVollmer/will-building-datacenters-in-the-us",
+    "stake": 78.2,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "YES",
+    "crowd_pct": 72.2,
+    "price_move": -18.2,
+    "divergence_score": 13.14,
     "signal_strength": 1.5
   }
 ]
