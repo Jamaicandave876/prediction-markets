@@ -5088,11 +5088,11 @@
     "entry_time": "2026-10-08 00:40 UTC",
     "url": "https://manifold.markets/AdamK/will-there-be-a-gentle-singularity",
     "stake": 80.7,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 41.7,
+    "exit_time": "2026-10-12 03:42 UTC",
+    "exit_reason": "stale",
+    "pnl_pp": -2.9,
     "crowd_dir": "YES",
     "crowd_pct": 72.2,
     "price_move": -11.2,
@@ -5174,6 +5174,7 @@
     "crowd_pct": 72.2,
     "price_move": -18.2,
     "divergence_score": 13.14,
-    "signal_strength": 1.5
+    "signal_strength": 1.5,
+    "peak_pnl": 0.40000000000000213
   }
 ]

@@ -5176,5 +5176,24 @@
     "divergence_score": 13.14,
     "signal_strength": 1.5,
     "peak_pnl": 0.40000000000000213
+  },
+  {
+    "market_id": "NzRzcstQpI",
+    "question": "Will there be a serious incident caused by AI before 2030? (AI Chernobyl)",
+    "direction": "BUY NO",
+    "entry_prob": 25.5,
+    "entry_time": "2026-10-12 14:06 UTC",
+    "url": "https://manifold.markets/HansPeter/will-there-be-a-serious-incident-ca",
+    "stake": 97.4,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "YES",
+    "crowd_pct": 66.7,
+    "price_move": -24.5,
+    "divergence_score": 16.32,
+    "signal_strength": 1.5
   }
 ]
