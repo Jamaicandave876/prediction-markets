@@ -10825,5 +10825,24 @@
     "price_impact": 14.6,
     "conviction_score": 4.08,
     "signal_strength": 1.36
+  },
+  {
+    "market_id": "Azl6Zpc0pz",
+    "question": "Will Cyberleek release his gta6 build?",
+    "direction": "BUY NO",
+    "entry_prob": 33.2,
+    "entry_time": "2026-10-12 14:06 UTC",
+    "url": "https://manifold.markets/Bandors/will-cyberleek-release-his-gta6-bui",
+    "stake": 80.0,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 2,
+    "smart_user_mana": 300,
+    "price_impact": 14.6,
+    "conviction_score": 3.52,
+    "signal_strength": 1.17
   }
 ]
