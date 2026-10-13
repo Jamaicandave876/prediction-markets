@@ -5136,7 +5136,7 @@
     "price_move": -15.3,
     "divergence_score": 9.97,
     "signal_strength": 1.5,
-    "peak_pnl": 12.5
+    "peak_pnl": 13.700000000000003
   },
   {
     "market_id": "RhsItQhU9n",
@@ -5175,7 +5175,7 @@
     "price_move": -18.2,
     "divergence_score": 13.14,
     "signal_strength": 1.5,
-    "peak_pnl": 0.40000000000000213
+    "peak_pnl": 2.900000000000002
   },
   {
     "market_id": "NzRzcstQpI",
@@ -5185,15 +5185,34 @@
     "entry_time": "2026-10-12 14:06 UTC",
     "url": "https://manifold.markets/HansPeter/will-there-be-a-serious-incident-ca",
     "stake": 97.4,
+    "status": "closed",
+    "exit_prob": 25.5,
+    "exit_time": "2026-10-12 22:21 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 0.0,
+    "crowd_dir": "YES",
+    "crowd_pct": 66.7,
+    "price_move": -24.5,
+    "divergence_score": 16.32,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "pc2AtN2A86",
+    "question": "Will the address for math.eg.rego.re receive more than $50 before Oct 20 UTC-12?",
+    "direction": "BUY NO",
+    "entry_prob": 16.0,
+    "entry_time": "2026-10-12 22:21 UTC",
+    "url": "https://manifold.markets/vi/will-the-address-for-mathegregore-r-ESg0Lggz8Q",
+    "stake": 113.8,
     "status": "open",
     "exit_prob": null,
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null,
     "crowd_dir": "YES",
-    "crowd_pct": 66.7,
-    "price_move": -24.5,
-    "divergence_score": 16.32,
+    "crowd_pct": 73.3,
+    "price_move": -64.0,
+    "divergence_score": 46.96,
     "signal_strength": 1.5
   }
 ]
