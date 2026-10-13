@@ -2548,11 +2548,11 @@
     "drift_score": 13.76,
     "url": "https://manifold.markets/SG/will-mnx-commission-a-new-longform",
     "stake": 50.6,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 59.7,
+    "exit_time": "2026-10-13 13:18 UTC",
+    "exit_reason": "stale",
+    "pnl_pp": 1.8,
     "peak_pnl": 1.8000000000000043
   },
   {
@@ -2580,11 +2580,11 @@
     "drift_score": -48.88,
     "url": "https://manifold.markets/jim/9984-9984",
     "stake": 50.6,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 28.0,
+    "exit_time": "2026-10-13 13:18 UTC",
+    "exit_reason": "stale",
+    "pnl_pp": 0.0
   },
   {
     "market_id": "yPOCOqtS8I",
