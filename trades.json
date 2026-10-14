@@ -2721,7 +2721,8 @@
     "exit_prob": null,
     "exit_time": null,
     "exit_reason": null,
-    "pnl_pp": null
+    "pnl_pp": null,
+    "peak_pnl": 2.799999999999997
   },
   {
     "market_id": "968uRzhPtR",
@@ -2732,6 +2733,22 @@
     "drift_score": -10.6,
     "url": "https://manifold.markets/Velaris/will-trump-livestream-an-execution",
     "stake": 36.5,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "peak_pnl": 1.0999999999999979
+  },
+  {
+    "market_id": "zS855gEyRg",
+    "question": "Saudi-Houthi ceasefire agreement before November 1?",
+    "direction": "BUY NO",
+    "entry_prob": 28.7,
+    "entry_time": "2026-10-14 14:14 UTC",
+    "drift_score": -42.47,
+    "url": "https://manifold.markets/apol/saudihouthi-ceasefire-agreement-bef",
+    "stake": 37.0,
     "status": "open",
     "exit_prob": null,
     "exit_time": null,
