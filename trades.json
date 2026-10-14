@@ -2625,11 +2625,11 @@
     "drift_score": 8.48,
     "url": "https://manifold.markets/BenAybar/will-2026-be-a-bigger-blue-wave-tha",
     "stake": 40.9,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 54.6,
+    "exit_time": "2026-10-14 00:03 UTC",
+    "exit_reason": "stale",
+    "pnl_pp": -1.6
   },
   {
     "market_id": "0tE26608Py",
@@ -2640,11 +2640,11 @@
     "drift_score": -13.24,
     "url": "https://manifold.markets/apol/will-bitcoin-rise-to-105k-before-th",
     "stake": 40.9,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 34.5,
+    "exit_time": "2026-10-14 00:03 UTC",
+    "exit_reason": "stale",
+    "pnl_pp": 6.4,
     "peak_pnl": 9.399999999999999
   },
   {
@@ -2672,11 +2672,11 @@
     "drift_score": 18.74,
     "url": "https://manifold.markets/Parallax/will-i-weigh-160lbs-at-the-end-of-o",
     "stake": 51.5,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 18.1,
+    "exit_time": "2026-10-14 00:03 UTC",
+    "exit_reason": "reversal",
+    "pnl_pp": -15.0
   },
   {
     "market_id": "Azl6Zpc0pz",
@@ -2687,6 +2687,21 @@
     "drift_score": -33.6,
     "url": "https://manifold.markets/Bandors/will-cyberleek-release-his-gta6-bui",
     "stake": 50.5,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
+  },
+  {
+    "market_id": "tZ2st2SRqz",
+    "question": "Will I avoid audiovisual media before 6 p.m. every day next week? (\u1e4010 Bonus)",
+    "direction": "BUY YES",
+    "entry_prob": 54.0,
+    "entry_time": "2026-10-14 00:03 UTC",
+    "drift_score": 7.9,
+    "url": "https://manifold.markets/redcat/will-i-avoid-audiovisual-media-befo",
+    "stake": 45.6,
     "status": "open",
     "exit_prob": null,
     "exit_time": null,

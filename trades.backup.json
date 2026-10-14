@@ -2677,5 +2677,20 @@
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null
+  },
+  {
+    "market_id": "Azl6Zpc0pz",
+    "question": "Will Cyberleek release his gta6 build?",
+    "direction": "BUY NO",
+    "entry_prob": 33.2,
+    "entry_time": "2026-10-13 20:27 UTC",
+    "drift_score": -33.6,
+    "url": "https://manifold.markets/Bandors/will-cyberleek-release-his-gta6-bui",
+    "stake": 50.5,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]
