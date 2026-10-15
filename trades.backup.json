@@ -2706,7 +2706,8 @@
     "exit_prob": null,
     "exit_time": null,
     "exit_reason": null,
-    "pnl_pp": null
+    "pnl_pp": null,
+    "peak_pnl": 1.0
   },
   {
     "market_id": "snyczSN8Qc",
@@ -2722,7 +2723,7 @@
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null,
-    "peak_pnl": 2.799999999999997
+    "peak_pnl": 6.899999999999999
   },
   {
     "market_id": "968uRzhPtR",
