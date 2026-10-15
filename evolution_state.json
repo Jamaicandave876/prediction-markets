@@ -75,7 +75,7 @@
       "target_hit": 2
     },
     "sentiment": {
-      "target_hit": 112,
+      "target_hit": 113,
       "stopped_out": 122,
       "trailing_stop": 18,
       "stale": 54,
@@ -178,10 +178,10 @@
     },
     "momentum": {
       "mid_prob_entry": 53,
-      "yes_direction": 48,
-      "strong_signal": 120,
-      "high_prob_entry": 24,
-      "fast_trade": 42,
+      "yes_direction": 49,
+      "strong_signal": 121,
+      "high_prob_entry": 25,
+      "fast_trade": 43,
       "no_direction": 72,
       "low_prob_entry": 43,
       "slow_trade": 51
@@ -198,14 +198,14 @@
       "slow_trade": 16
     },
     "fade": {
-      "mid_prob_entry": 17,
+      "mid_prob_entry": 18,
       "no_direction": 15,
-      "strong_signal": 45,
+      "strong_signal": 46,
       "slow_trade": 5,
-      "yes_direction": 30,
+      "yes_direction": 31,
       "low_prob_entry": 20,
       "high_prob_entry": 8,
-      "fast_trade": 23
+      "fast_trade": 24
     },
     "close_gravity": {
       "mid_prob_entry": 2,
@@ -220,13 +220,13 @@
     },
     "sentiment": {
       "low_prob_entry": 21,
-      "fast_trade": 69,
+      "fast_trade": 70,
       "no_direction": 71,
       "weak_signal": 8,
       "mid_prob_entry": 84,
-      "strong_signal": 88,
-      "high_prob_entry": 22,
-      "yes_direction": 56
+      "strong_signal": 89,
+      "high_prob_entry": 23,
+      "yes_direction": 57
     },
     "hedge": {
       "low_prob_entry": 3,
@@ -1174,76 +1174,6 @@
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "sentiment",
-      "market_id": "9S2ZhnAZul",
-      "outcome": "small_loss",
-      "pnl_pp": 0.0,
-      "exit_reason": "target_hit",
-      "duration_hours": 5.7,
-      "traits": [
-        "high_prob_entry",
-        "fast_trade",
-        "yes_direction"
-      ],
-      "entry_prob": 81.8,
-      "direction": "BUY YES",
-      "timestamp": "2026-09-29 00:46 UTC",
-      "lesson": "Sentiment: small loss via target_hit. PnL: +0.0pp in 6h."
-    },
-    {
-      "bot": "smart_money",
-      "market_id": "uOZOuEO80l",
-      "outcome": "small_loss",
-      "pnl_pp": 0.0,
-      "exit_reason": "target_hit",
-      "duration_hours": 8.6,
-      "traits": [
-        "low_prob_entry",
-        "fast_trade",
-        "no_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 16.8,
-      "direction": "BUY NO",
-      "timestamp": "2026-09-29 09:21 UTC",
-      "lesson": "Smart $: small loss via target_hit. PnL: +0.0pp in 9h."
-    },
-    {
-      "bot": "sentiment",
-      "market_id": "EzuZRncgSd",
-      "outcome": "big_loss",
-      "pnl_pp": -4.4,
-      "exit_reason": "trailing_stop",
-      "duration_hours": 14.3,
-      "traits": [
-        "mid_prob_entry",
-        "fast_trade",
-        "yes_direction"
-      ],
-      "entry_prob": 35.0,
-      "direction": "BUY YES",
-      "timestamp": "2026-09-29 09:21 UTC",
-      "lesson": "Sentiment: big loss via trailing_stop. PnL: -4.4pp in 14h."
-    },
-    {
-      "bot": "sentiment",
-      "market_id": "usc5uzsuNd",
-      "outcome": "small_loss",
-      "pnl_pp": 0.0,
-      "exit_reason": "target_hit",
-      "duration_hours": 8.6,
-      "traits": [
-        "low_prob_entry",
-        "fast_trade",
-        "no_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 16.1,
-      "direction": "BUY NO",
-      "timestamp": "2026-09-29 09:21 UTC",
-      "lesson": "Sentiment: small loss via target_hit. PnL: +0.0pp in 9h."
-    },
     {
       "bot": "momentum",
       "market_id": "Ph2CL99phz",
@@ -2924,6 +2854,78 @@
       "direction": "BUY YES",
       "timestamp": "2026-10-15 18:50 UTC",
       "lesson": "Smart $: small loss via target_hit. PnL: +0.0pp in 5h."
+    },
+    {
+      "bot": "momentum",
+      "market_id": "EQ688gUnZ5",
+      "outcome": "strong_win",
+      "pnl_pp": 6.6,
+      "exit_reason": "target_hit",
+      "duration_hours": 4.7,
+      "traits": [
+        "high_prob_entry",
+        "fast_trade",
+        "yes_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 72.0,
+      "direction": "BUY YES",
+      "timestamp": "2026-10-15 23:29 UTC",
+      "lesson": "Momentum: Quick strong win \u2014 this signal pattern works well."
+    },
+    {
+      "bot": "fade",
+      "market_id": "Z8Uzdc8qqC",
+      "outcome": "strong_win",
+      "pnl_pp": 9.9,
+      "exit_reason": "normalized",
+      "duration_hours": 4.7,
+      "traits": [
+        "mid_prob_entry",
+        "fast_trade",
+        "yes_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 66.1,
+      "direction": "BUY YES",
+      "timestamp": "2026-10-15 23:29 UTC",
+      "lesson": "Fade: Quick strong win \u2014 this signal pattern works well."
+    },
+    {
+      "bot": "sentiment",
+      "market_id": "NzRzcstQpI",
+      "outcome": "small_loss",
+      "pnl_pp": 0.0,
+      "exit_reason": "target_hit",
+      "duration_hours": 4.7,
+      "traits": [
+        "low_prob_entry",
+        "fast_trade",
+        "no_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 23.4,
+      "direction": "BUY NO",
+      "timestamp": "2026-10-15 23:30 UTC",
+      "lesson": "Sentiment: small loss via target_hit. PnL: +0.0pp in 5h."
+    },
+    {
+      "bot": "sentiment",
+      "market_id": "EQ688gUnZ5",
+      "outcome": "strong_win",
+      "pnl_pp": 6.6,
+      "exit_reason": "target_hit",
+      "duration_hours": 4.7,
+      "traits": [
+        "high_prob_entry",
+        "fast_trade",
+        "yes_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 72.0,
+      "direction": "BUY YES",
+      "timestamp": "2026-10-15 23:30 UTC",
+      "lesson": "Sentiment: Quick strong win \u2014 this signal pattern works well."
     }
   ],
   "regime": "cautious",
@@ -3044,8 +3046,8 @@
     }
   ],
   "bot_confidence": {
-    "momentum": 0.6,
-    "fade": 0.6,
+    "momentum": 0.65,
+    "fade": 0.61,
     "mean_reversion": 0.1,
     "volume_surge": 0.2,
     "whale": 0.23,
@@ -3069,6 +3071,6 @@
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-10-15 18:51 UTC",
-  "generation": 1224
+  "last_evolution": "2026-10-15 23:31 UTC",
+  "generation": 1225
 }

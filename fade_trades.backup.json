@@ -970,5 +970,23 @@
     "exit_time": "2026-10-04 03:43 UTC",
     "exit_reason": "normalized",
     "pnl_pp": 14.1
+  },
+  {
+    "market_id": "Z8Uzdc8qqC",
+    "question": "Katie Zacharia (press secretary) lasts longer than a mooch?",
+    "direction": "BUY YES",
+    "entry_prob": 66.1,
+    "pre_spike_prob": 85.1,
+    "spike_size": 19.0,
+    "spike_ratio": 15.6,
+    "spike_dir": -1,
+    "entry_time": "2026-10-15 18:48 UTC",
+    "url": "https://manifold.markets/CryptoNeoLiberalist/katie-zacharia-press-secretary-last",
+    "stake": 45.6,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]

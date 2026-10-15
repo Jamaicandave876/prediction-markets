@@ -1460,5 +1460,23 @@
     "breakout_strength": 28.3,
     "signal_strength": 1.5,
     "peak_pnl": 8.5
+  },
+  {
+    "market_id": "qLNSsQUZyN",
+    "question": "Will Anthropic\u2019s IPO Form S-1 be public by 31 October 2026?",
+    "direction": "BUY YES",
+    "entry_prob": 52.5,
+    "entry_time": "2026-10-15 23:30 UTC",
+    "url": "https://manifold.markets/Simon74fe/will-anthropics-ipo-s1-be-public-by-EspZI2PuCc",
+    "stake": 78.7,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "baseline_range": 1.2,
+    "breakout_move": 5.1,
+    "breakout_strength": 4.4,
+    "signal_strength": 1.4558460161791833
   }
 ]
