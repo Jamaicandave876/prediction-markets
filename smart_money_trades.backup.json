@@ -10938,7 +10938,8 @@
     "smart_user_mana": 300,
     "price_impact": 9.6,
     "conviction_score": 4.62,
-    "signal_strength": 1.5
+    "signal_strength": 1.5,
+    "peak_pnl": 0.6999999999999993
   },
   {
     "market_id": "zNlSl5tn6u",
