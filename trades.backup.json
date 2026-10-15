@@ -2702,11 +2702,11 @@
     "drift_score": 7.9,
     "url": "https://manifold.markets/redcat/will-i-avoid-audiovisual-media-befo",
     "stake": 45.6,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 0.0,
+    "exit_time": "2026-10-15 07:53 UTC",
+    "exit_reason": "resolved_loss",
+    "pnl_pp": -54.0,
     "peak_pnl": 1.0
   },
   {
@@ -2718,12 +2718,12 @@
     "drift_score": -20.24,
     "url": "https://manifold.markets/JimD/will-trump-press-secretary-katie-za",
     "stake": 36.5,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
-    "peak_pnl": 6.899999999999999
+    "status": "closed",
+    "exit_prob": 21.7,
+    "exit_time": "2026-10-15 07:53 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 14.6,
+    "peak_pnl": 14.599999999999998
   },
   {
     "market_id": "968uRzhPtR",
@@ -2750,11 +2750,11 @@
     "drift_score": -42.47,
     "url": "https://manifold.markets/apol/saudihouthi-ceasefire-agreement-bef",
     "stake": 37.0,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
-    "peak_pnl": 0.6999999999999993
+    "status": "closed",
+    "exit_prob": 17.8,
+    "exit_time": "2026-10-15 07:53 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 10.9,
+    "peak_pnl": 10.899999999999999
   }
 ]

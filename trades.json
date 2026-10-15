@@ -2734,12 +2734,12 @@
     "drift_score": -10.6,
     "url": "https://manifold.markets/Velaris/will-trump-livestream-an-execution",
     "stake": 36.5,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
-    "peak_pnl": 1.0999999999999979
+    "status": "closed",
+    "exit_prob": 19.8,
+    "exit_time": "2026-10-15 13:50 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 4.6,
+    "peak_pnl": 4.599999999999998
   },
   {
     "market_id": "zS855gEyRg",
@@ -2756,5 +2756,20 @@
     "exit_reason": "target_hit",
     "pnl_pp": 10.9,
     "peak_pnl": 10.899999999999999
+  },
+  {
+    "market_id": "pSOngp26Q0",
+    "question": "NFL Week 6: Will the total combined score in the Chicago Bears vs. Atlanta Falcons game be OVER 48.5 points?",
+    "direction": "BUY YES",
+    "entry_prob": 58.0,
+    "entry_time": "2026-10-15 13:50 UTC",
+    "drift_score": 12.75,
+    "url": "https://manifold.markets/Web3ICP/nfl-week-6-will-the-total-combined-8R29OIycRA",
+    "stake": 40.8,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]
