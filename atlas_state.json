@@ -23,7 +23,7 @@
       "avg_pnl": -2.9,
       "total_pnl": 324.9,
       "closed": 176,
-      "open": 2,
+      "open": 5,
       "grade": "C"
     },
     "fade": {
@@ -32,7 +32,7 @@
       "avg_pnl": 7.2,
       "total_pnl": 520.8,
       "closed": 54,
-      "open": 0,
+      "open": 1,
       "grade": "C"
     },
     "mean_reversion": {

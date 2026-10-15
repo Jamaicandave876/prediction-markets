@@ -2771,5 +2771,50 @@
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null
+  },
+  {
+    "market_id": "nI0EIcO5Lp",
+    "question": "Will Kathy Hochul outperform Letitia James?",
+    "direction": "BUY NO",
+    "entry_prob": 37.6,
+    "entry_time": "2026-10-15 18:48 UTC",
+    "drift_score": -35.08,
+    "url": "https://manifold.markets/Jack1/will-kathy-hochul-outperform-letiti",
+    "stake": 51.1,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
+  },
+  {
+    "market_id": "EQ688gUnZ5",
+    "question": "Will Zvi write a full capabilities report on Gemini 4 Argon?",
+    "direction": "BUY YES",
+    "entry_prob": 72.0,
+    "entry_time": "2026-10-15 18:48 UTC",
+    "drift_score": 24.38,
+    "url": "https://manifold.markets/ZviMowshowitz/will-zvi-write-a-full-capabilities",
+    "stake": 51.1,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
+  },
+  {
+    "market_id": "zAIuQQcuyZ",
+    "question": "Will Zvi write a full report on Muse Wonder?",
+    "direction": "BUY NO",
+    "entry_prob": 39.4,
+    "entry_time": "2026-10-15 18:48 UTC",
+    "drift_score": -17.67,
+    "url": "https://manifold.markets/ZviMowshowitz/will-zvi-write-a-full-report-on-mus",
+    "stake": 51.1,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]
