@@ -983,10 +983,10 @@
     "entry_time": "2026-10-15 18:48 UTC",
     "url": "https://manifold.markets/CryptoNeoLiberalist/katie-zacharia-press-secretary-last",
     "stake": 45.6,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 76.0,
+    "exit_time": "2026-10-15 23:29 UTC",
+    "exit_reason": "normalized",
+    "pnl_pp": 9.9
   }
 ]

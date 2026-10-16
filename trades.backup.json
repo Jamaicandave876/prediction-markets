@@ -2770,7 +2770,8 @@
     "exit_prob": null,
     "exit_time": null,
     "exit_reason": null,
-    "pnl_pp": null
+    "pnl_pp": null,
+    "peak_pnl": 1.0
   },
   {
     "market_id": "nI0EIcO5Lp",
@@ -2796,11 +2797,12 @@
     "drift_score": 24.38,
     "url": "https://manifold.markets/ZviMowshowitz/will-zvi-write-a-full-capabilities",
     "stake": 51.1,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 78.6,
+    "exit_time": "2026-10-15 23:29 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 6.6,
+    "peak_pnl": 6.599999999999994
   },
   {
     "market_id": "zAIuQQcuyZ",
@@ -2815,6 +2817,7 @@
     "exit_prob": null,
     "exit_time": null,
     "exit_reason": null,
-    "pnl_pp": null
+    "pnl_pp": null,
+    "peak_pnl": 1.1999999999999957
   }
 ]
