@@ -5388,5 +5388,43 @@
     "divergence_score": 8.42,
     "signal_strength": 1.5,
     "peak_pnl": 6.599999999999994
+  },
+  {
+    "market_id": "NzRzcstQpI",
+    "question": "Will there be a serious incident caused by AI before 2030? (AI Chernobyl)",
+    "direction": "BUY NO",
+    "entry_prob": 23.4,
+    "entry_time": "2026-10-16 13:42 UTC",
+    "url": "https://manifold.markets/HansPeter/will-there-be-a-serious-incident-ca",
+    "stake": 117.9,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "YES",
+    "crowd_pct": 62.5,
+    "price_move": -26.6,
+    "divergence_score": 16.61,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "Z8Uzdc8qqC",
+    "question": "Katie Zacharia (press secretary) lasts longer than a mooch?",
+    "direction": "BUY NO",
+    "entry_prob": 72.2,
+    "entry_time": "2026-10-16 13:42 UTC",
+    "url": "https://manifold.markets/CryptoNeoLiberalist/katie-zacharia-press-secretary-last",
+    "stake": 43.4,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "YES",
+    "crowd_pct": 65.0,
+    "price_move": -12.5,
+    "divergence_score": 8.11,
+    "signal_strength": 1.5
   }
 ]
