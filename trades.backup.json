@@ -2818,6 +2818,66 @@
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null,
-    "peak_pnl": 1.1999999999999957
+    "peak_pnl": 1.6000000000000014
+  },
+  {
+    "market_id": "tndzu9lt5u",
+    "question": "Will Ilhan Omar lose her US citizenship by the end of 2027?",
+    "direction": "BUY NO",
+    "entry_prob": 32.8,
+    "entry_time": "2026-10-16 02:37 UTC",
+    "drift_score": -33.51,
+    "url": "https://manifold.markets/AlexanderTheGreater/will-ilhan-omar-lose-her-us-citizen",
+    "stake": 51.6,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
+  },
+  {
+    "market_id": "ZdI0pctn28",
+    "question": "If Republicans lose the house, will Mike Johnson serve out the whole of his next term?",
+    "direction": "BUY YES",
+    "entry_prob": 63.9,
+    "entry_time": "2026-10-16 02:37 UTC",
+    "drift_score": 56.33,
+    "url": "https://manifold.markets/Jack1/if-republicans-lose-the-house-will",
+    "stake": 51.6,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
+  },
+  {
+    "market_id": "dyQOnAh0Z0",
+    "question": "War in Iran goes into Berserk mode before end of 2027?",
+    "direction": "BUY NO",
+    "entry_prob": 17.3,
+    "entry_time": "2026-10-16 02:37 UTC",
+    "drift_score": -39.83,
+    "url": "https://manifold.markets/CryptoNeoLiberalist/war-in-iran-goes-into-berserk-mode",
+    "stake": 51.6,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
+  },
+  {
+    "market_id": "q95cg5EIlL",
+    "question": "Will Anthropic\u2019s revenue growth re-accelerate in Q4 2026?",
+    "direction": "BUY NO",
+    "entry_prob": 40.1,
+    "entry_time": "2026-10-16 02:37 UTC",
+    "drift_score": -19.61,
+    "url": "https://manifold.markets/Simon74fe/will-anthropics-revenue-growth-reac",
+    "stake": 51.6,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]

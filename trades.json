@@ -2829,11 +2829,12 @@
     "drift_score": -33.51,
     "url": "https://manifold.markets/AlexanderTheGreater/will-ilhan-omar-lose-her-us-citizen",
     "stake": 51.6,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 16.1,
+    "exit_time": "2026-10-16 07:46 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 16.7,
+    "peak_pnl": 16.699999999999996
   },
   {
     "market_id": "ZdI0pctn28",
@@ -2859,11 +2860,11 @@
     "drift_score": -39.83,
     "url": "https://manifold.markets/CryptoNeoLiberalist/war-in-iran-goes-into-berserk-mode",
     "stake": 51.6,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 17.3,
+    "exit_time": "2026-10-16 07:46 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 0.0
   },
   {
     "market_id": "q95cg5EIlL",
