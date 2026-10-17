@@ -10987,11 +10987,11 @@
     "entry_time": "2026-10-15 18:50 UTC",
     "url": "https://manifold.markets/ZviMowshowitz/will-zvi-write-a-full-report-on-mus",
     "stake": 82.8,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 37.2,
+    "exit_time": "2026-10-17 19:57 UTC",
+    "exit_reason": "stale",
+    "pnl_pp": 0.3,
     "smart_user_bets": 2,
     "smart_user_mana": 450,
     "price_impact": 21.1,
@@ -11131,7 +11131,8 @@
     "smart_user_mana": 850,
     "price_impact": 3.2,
     "conviction_score": 2.16,
-    "signal_strength": 0.72
+    "signal_strength": 0.72,
+    "peak_pnl": 5.0
   },
   {
     "market_id": "dQEnS0dsUg",
@@ -11141,15 +11142,16 @@
     "entry_time": "2026-10-17 17:42 UTC",
     "url": "https://manifold.markets/retr0id/will-jerryrigeverything-win-his-10k",
     "stake": 85.0,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 76.9,
+    "exit_time": "2026-10-17 19:57 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 0.4,
     "smart_user_bets": 3,
     "smart_user_mana": 300,
     "price_impact": 9.6,
     "conviction_score": 3.47,
-    "signal_strength": 1.16
+    "signal_strength": 1.16,
+    "peak_pnl": 0.4000000000000057
   }
 ]
