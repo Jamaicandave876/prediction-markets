@@ -82,8 +82,8 @@
       "resolved_loss": 2
     },
     "smart_money": {
-      "target_hit": 248,
-      "stopped_out": 85,
+      "target_hit": 249,
+      "stopped_out": 86,
       "trailing_stop": 24,
       "stale": 115,
       "resolved_loss": 2
@@ -1174,40 +1174,6 @@
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "smart_money",
-      "market_id": "EzuZRncgSd",
-      "outcome": "small_loss",
-      "pnl_pp": 0.0,
-      "exit_reason": "stale",
-      "duration_hours": 50.6,
-      "traits": [
-        "mid_prob_entry",
-        "no_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 30.0,
-      "direction": "BUY NO",
-      "timestamp": "2026-10-01 20:03 UTC",
-      "lesson": "Smart $: small loss via stale. PnL: +0.0pp in 51h."
-    },
-    {
-      "bot": "sentiment",
-      "market_id": "lIqyQZz8gt",
-      "outcome": "small_win",
-      "pnl_pp": 0.4,
-      "exit_reason": "stale",
-      "duration_hours": 99.7,
-      "traits": [
-        "mid_prob_entry",
-        "yes_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 59.2,
-      "direction": "BUY YES",
-      "timestamp": "2026-10-02 00:24 UTC",
-      "lesson": "Sentiment: small win via stale. PnL: +0.4pp in 100h."
-    },
     {
       "bot": "smart_money",
       "market_id": "qONQZ8Eldz",
@@ -2931,6 +2897,41 @@
       "direction": "BUY YES",
       "timestamp": "2026-10-16 23:11 UTC",
       "lesson": "Smart $: small loss via target_hit. PnL: +0.0pp in 5h."
+    },
+    {
+      "bot": "smart_money",
+      "market_id": "dyQOnAh0Z0",
+      "outcome": "big_loss",
+      "pnl_pp": -28.9,
+      "exit_reason": "stopped_out",
+      "duration_hours": 4.6,
+      "traits": [
+        "low_prob_entry",
+        "fast_trade",
+        "no_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 16.6,
+      "direction": "BUY NO",
+      "timestamp": "2026-10-16 23:11 UTC",
+      "lesson": "Smart $: big loss via stopped_out. PnL: -28.9pp in 5h."
+    },
+    {
+      "bot": "smart_money",
+      "market_id": "EQ688gUnZ5",
+      "outcome": "small_loss",
+      "pnl_pp": 0.0,
+      "exit_reason": "target_hit",
+      "duration_hours": 4.6,
+      "traits": [
+        "high_prob_entry",
+        "fast_trade",
+        "yes_direction"
+      ],
+      "entry_prob": 87.5,
+      "direction": "BUY YES",
+      "timestamp": "2026-10-16 23:11 UTC",
+      "lesson": "Smart $: small loss via target_hit. PnL: +0.0pp in 5h."
     }
   ],
   "regime": "cautious",
@@ -3076,6 +3077,6 @@
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-10-16 23:12 UTC",
-  "generation": 1230
+  "last_evolution": "2026-10-17 02:31 UTC",
+  "generation": 1231
 }
