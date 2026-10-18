@@ -2813,12 +2813,12 @@
     "drift_score": -17.67,
     "url": "https://manifold.markets/ZviMowshowitz/will-zvi-write-a-full-report-on-mus",
     "stake": 51.1,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
-    "peak_pnl": 15.799999999999997
+    "status": "closed",
+    "exit_prob": 20.1,
+    "exit_time": "2026-10-18 19:56 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 19.3,
+    "peak_pnl": 19.299999999999997
   },
   {
     "market_id": "tndzu9lt5u",

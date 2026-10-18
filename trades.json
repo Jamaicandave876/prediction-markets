@@ -2766,11 +2766,11 @@
     "drift_score": 12.75,
     "url": "https://manifold.markets/Web3ICP/nfl-week-6-will-the-total-combined-8R29OIycRA",
     "stake": 40.8,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 100.0,
+    "exit_time": "2026-10-18 22:41 UTC",
+    "exit_reason": "resolved_win",
+    "pnl_pp": 42.0,
     "peak_pnl": 5.0
   },
   {
