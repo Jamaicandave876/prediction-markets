@@ -2895,5 +2895,20 @@
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null
+  },
+  {
+    "market_id": "IyLChuzPQz",
+    "question": "Will France cut off funding to Ukraine in 2027?",
+    "direction": "BUY NO",
+    "entry_prob": 47.5,
+    "entry_time": "2026-10-19 16:04 UTC",
+    "drift_score": -6.25,
+    "url": "https://manifold.markets/Plant/will-france-cut-off-funding-to-ukra",
+    "stake": 52.8,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]

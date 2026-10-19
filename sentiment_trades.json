@@ -5427,5 +5427,24 @@
     "divergence_score": 8.11,
     "signal_strength": 1.5,
     "peak_pnl": 70.9
+  },
+  {
+    "market_id": "dyQOnAh0Z0",
+    "question": "War in Iran goes into Berserk mode before end of 2027?",
+    "direction": "BUY YES",
+    "entry_prob": 28.1,
+    "entry_time": "2026-10-19 16:05 UTC",
+    "url": "https://manifold.markets/CryptoNeoLiberalist/war-in-iran-goes-into-berserk-mode",
+    "stake": 36.5,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "NO",
+    "crowd_pct": 75.0,
+    "price_move": 15.6,
+    "divergence_score": 11.7,
+    "signal_strength": 1.5
   }
 ]

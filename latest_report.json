@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-10-19 08:22 UTC",
+  "timestamp": "2026-10-19 16:06 UTC",
   "regime": "adverse",
   "pnl_7d": 50.1,
-  "total_open": 5,
+  "total_open": 6,
   "total_closed": 391,
   "total_pnl": 1016.6,
   "bots": [
@@ -13,7 +13,7 @@
       "score": 71.7,
       "win_rate": 70.0,
       "total_pnl": 397.4,
-      "open": 4,
+      "open": 5,
       "closed": 182,
       "paused": false,
       "consecutive_losses": 1
@@ -179,8 +179,8 @@
   "adjustments": [
     {
       "param": "MIN_DRIFT_SCORE",
-      "old": 4.1,
-      "new": 3.8,
+      "old": 3.8,
+      "new": 3.5,
       "reason": "Momentum WR 70% > 65% \u2014 loosening"
     }
   ]
