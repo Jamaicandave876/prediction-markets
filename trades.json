@@ -2880,5 +2880,20 @@
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null
+  },
+  {
+    "market_id": "ZlzIcSApIU",
+    "question": "Is Cheryl Scott from ABC CHICAGO pregnant????!?!??? \ud83e\udd30",
+    "direction": "BUY NO",
+    "entry_prob": 77.2,
+    "entry_time": "2026-10-19 02:44 UTC",
+    "drift_score": -35.38,
+    "url": "https://manifold.markets/Pedro6LNOI/is-cheryl-scott-from-abc-chicago-pr-CtdC9sL5Oh",
+    "stake": 58.9,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]
