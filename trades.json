@@ -2782,11 +2782,11 @@
     "drift_score": -35.08,
     "url": "https://manifold.markets/Jack1/will-kathy-hochul-outperform-letiti",
     "stake": 51.1,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 49.7,
+    "exit_time": "2026-10-19 08:20 UTC",
+    "exit_reason": "reversal",
+    "pnl_pp": -12.1
   },
   {
     "market_id": "EQ688gUnZ5",
