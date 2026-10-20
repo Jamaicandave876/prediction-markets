@@ -1062,6 +1062,12 @@
       "old": 3.2,
       "new": 2.9,
       "reason": "System WR 70% > 65% \u2014 loosen signals"
+    },
+    {
+      "param": "MIN_DRIFT_SCORE",
+      "old": 2.9,
+      "new": 2.6,
+      "reason": "System WR 70% > 65% \u2014 loosen signals"
     }
   ],
   "paused": {
