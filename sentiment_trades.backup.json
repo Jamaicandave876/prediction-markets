@@ -5446,5 +5446,43 @@
     "price_move": 15.6,
     "divergence_score": 11.7,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "tyNgzgQQQc",
+    "question": "\"Avengers: Doomsday\" breaks the record for the biggest opening weekend of all time?",
+    "direction": "BUY YES",
+    "entry_prob": 46.7,
+    "entry_time": "2026-10-19 21:55 UTC",
+    "url": "https://manifold.markets/Ziddletwix/avengers-doomsday-breaks-the-record",
+    "stake": 49.2,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "NO",
+    "crowd_pct": 65.0,
+    "price_move": 11.6,
+    "divergence_score": 7.53,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "IyLChuzPQz",
+    "question": "Will France cut off funding to Ukraine in 2027?",
+    "direction": "BUY NO",
+    "entry_prob": 40.6,
+    "entry_time": "2026-10-19 21:55 UTC",
+    "url": "https://manifold.markets/Plant/will-france-cut-off-funding-to-ukra",
+    "stake": 55.6,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "YES",
+    "crowd_pct": 68.8,
+    "price_move": -9.4,
+    "divergence_score": 6.46,
+    "signal_strength": 1.29
   }
 ]
