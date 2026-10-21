@@ -5455,11 +5455,11 @@
     "entry_time": "2026-10-19 21:55 UTC",
     "url": "https://manifold.markets/Ziddletwix/avengers-doomsday-breaks-the-record",
     "stake": 49.2,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 40.5,
+    "exit_time": "2026-10-21 14:17 UTC",
+    "exit_reason": "stopped_out",
+    "pnl_pp": -6.2,
     "crowd_dir": "NO",
     "crowd_pct": 65.0,
     "price_move": 11.6,
@@ -5504,6 +5504,7 @@
     "crowd_pct": 85.0,
     "price_move": 8.4,
     "divergence_score": 7.16,
-    "signal_strength": 1.43
+    "signal_strength": 1.43,
+    "peak_pnl": 9.600000000000001
   }
 ]

@@ -5486,5 +5486,24 @@
     "divergence_score": 6.46,
     "signal_strength": 1.29,
     "peak_pnl": 1.8999999999999986
+  },
+  {
+    "market_id": "uzy6qS585c",
+    "question": "Elon Musk actually gifts a SpaceX share to every American child in 2027?",
+    "direction": "BUY YES",
+    "entry_prob": 32.5,
+    "entry_time": "2026-10-21 08:11 UTC",
+    "url": "https://manifold.markets/Ziddletwix/elon-musk-actually-gifts-a-spacex-s",
+    "stake": 36.4,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "NO",
+    "crowd_pct": 85.0,
+    "price_move": 8.4,
+    "divergence_score": 7.16,
+    "signal_strength": 1.43
   }
 ]
