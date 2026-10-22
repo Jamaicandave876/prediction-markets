@@ -11291,7 +11291,8 @@
     "smart_user_mana": 928,
     "price_impact": 9.2,
     "conviction_score": 20.58,
-    "signal_strength": 1.5
+    "signal_strength": 1.5,
+    "peak_pnl": 1.0
   },
   {
     "market_id": "ss8RQQP85g",
@@ -11310,6 +11311,7 @@
     "smart_user_mana": 400,
     "price_impact": 16.2,
     "conviction_score": 10.38,
-    "signal_strength": 1.5
+    "signal_strength": 1.5,
+    "peak_pnl": 4.399999999999999
   }
 ]
