@@ -1479,5 +1479,23 @@
     "breakout_strength": 4.4,
     "signal_strength": 1.4558460161791833,
     "peak_pnl": 24.5
+  },
+  {
+    "market_id": "5E2INgNAlz",
+    "question": "Will this story end up on \"Last Week Tonight\"?",
+    "direction": "BUY NO",
+    "entry_prob": 12.9,
+    "entry_time": "2026-10-23 18:49 UTC",
+    "url": "https://manifold.markets/MikeLewis/will-this-story-end-up-on-last-week",
+    "stake": 120.7,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "baseline_range": 2.3,
+    "breakout_move": -5.1,
+    "breakout_strength": 2.2,
+    "signal_strength": 0.7275838507263507
   }
 ]
