@@ -158,10 +158,10 @@
     },
     "smart_money": {
       "mid_prob_entry": 189,
-      "no_direction": 219,
-      "strong_signal": 363,
-      "fast_trade": 276,
-      "low_prob_entry": 122,
+      "no_direction": 220,
+      "strong_signal": 364,
+      "fast_trade": 277,
+      "low_prob_entry": 123,
       "yes_direction": 186,
       "high_prob_entry": 94,
       "slow_trade": 3
@@ -1174,24 +1174,6 @@
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "breakout",
-      "market_id": "s8uqRyg2U0",
-      "outcome": "big_loss",
-      "pnl_pp": -3.0,
-      "exit_reason": "stale",
-      "duration_hours": 220.9,
-      "traits": [
-        "high_prob_entry",
-        "slow_trade",
-        "yes_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 71.0,
-      "direction": "BUY YES",
-      "timestamp": "2026-10-06 04:15 UTC",
-      "lesson": "Breakout: Held too long with no resolution. Consider shorter max_days."
-    },
     {
       "bot": "sentiment",
       "market_id": "dZROLpZCRO",
@@ -2925,6 +2907,24 @@
       "direction": "BUY NO",
       "timestamp": "2026-10-23 02:53 UTC",
       "lesson": "Smart $: small win via target_hit. PnL: +1.0pp in 8h."
+    },
+    {
+      "bot": "smart_money",
+      "market_id": "5E2INgNAlz",
+      "outcome": "strong_win",
+      "pnl_pp": 8.0,
+      "exit_reason": "target_hit",
+      "duration_hours": 5.8,
+      "traits": [
+        "low_prob_entry",
+        "fast_trade",
+        "no_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 26.8,
+      "direction": "BUY NO",
+      "timestamp": "2026-10-23 14:00 UTC",
+      "lesson": "Smart $: Quick strong win \u2014 this signal pattern works well."
     }
   ],
   "regime": "cautious",
@@ -3057,7 +3057,7 @@
     "breakout": 0.67,
     "calibration": 0.1,
     "reversal": 0.2,
-    "smart_money": 0.6,
+    "smart_money": 0.64,
     "time_decay": 0.23,
     "sentiment": 0.25,
     "accumulation": 0.1,
@@ -3070,6 +3070,6 @@
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-10-23 08:10 UTC",
-  "generation": 1263
+  "last_evolution": "2026-10-23 14:01 UTC",
+  "generation": 1264
 }
