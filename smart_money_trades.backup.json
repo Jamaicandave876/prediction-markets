@@ -11292,7 +11292,7 @@
     "price_impact": 9.2,
     "conviction_score": 20.58,
     "signal_strength": 1.5,
-    "peak_pnl": 2.8000000000000043
+    "peak_pnl": 3.0
   },
   {
     "market_id": "ss8RQQP85g",
@@ -11322,16 +11322,17 @@
     "entry_time": "2026-10-22 02:49 UTC",
     "url": "https://manifold.markets/ManifoldPolitics/if-jon-ossoff-is-reelected-will-he",
     "stake": 102.4,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 75.8,
+    "exit_time": "2026-10-22 23:48 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 1.0,
     "smart_user_bets": 3,
     "smart_user_mana": 1000,
     "price_impact": 30.0,
     "conviction_score": 36.0,
-    "signal_strength": 1.5
+    "signal_strength": 1.5,
+    "peak_pnl": 1.0
   },
   {
     "market_id": "CPUqPcgS68",
@@ -11369,7 +11370,8 @@
     "smart_user_mana": 543,
     "price_impact": 9.7,
     "conviction_score": 16.83,
-    "signal_strength": 1.5
+    "signal_strength": 1.5,
+    "peak_pnl": 3.700000000000003
   },
   {
     "market_id": "gzU0thApPR",
@@ -11407,6 +11409,7 @@
     "smart_user_mana": 300,
     "price_impact": 9.3,
     "conviction_score": 7.82,
-    "signal_strength": 1.5
+    "signal_strength": 1.5,
+    "peak_pnl": 0.7999999999999972
   }
 ]
