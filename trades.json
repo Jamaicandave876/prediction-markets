@@ -2895,7 +2895,8 @@
     "exit_prob": null,
     "exit_time": null,
     "exit_reason": null,
-    "pnl_pp": null
+    "pnl_pp": null,
+    "peak_pnl": 0.29999999999999716
   },
   {
     "market_id": "IyLChuzPQz",
@@ -2911,6 +2912,6 @@
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null,
-    "peak_pnl": 8.799999999999997
+    "peak_pnl": 9.799999999999997
   }
 ]
