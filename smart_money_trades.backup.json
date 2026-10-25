@@ -11509,5 +11509,24 @@
     "price_impact": 8.4,
     "conviction_score": 2.68,
     "signal_strength": 0.89
+  },
+  {
+    "market_id": "ghN2sn6tNR",
+    "question": "Will the address for math.eg.rego.re receive more than $50 before Nov 1 UTC?",
+    "direction": "BUY NO",
+    "entry_prob": 20.5,
+    "entry_time": "2026-10-25 08:00 UTC",
+    "url": "https://manifold.markets/vi/will-the-address-for-mathegregore-r-EQ9uR6yPsE",
+    "stake": 122.4,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 3,
+    "smart_user_mana": 750,
+    "price_impact": 60.4,
+    "conviction_score": 54.36,
+    "signal_strength": 1.5
   }
 ]
