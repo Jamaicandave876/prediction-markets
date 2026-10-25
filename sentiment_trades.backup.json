@@ -5506,5 +5506,24 @@
     "divergence_score": 7.16,
     "signal_strength": 1.43,
     "peak_pnl": 14.700000000000003
+  },
+  {
+    "market_id": "lQZdyZCLZZ",
+    "question": "Will the worst day in cyber security in 2026 be after 10/21/2026?",
+    "direction": "BUY YES",
+    "entry_prob": 61.3,
+    "entry_time": "2026-10-24 22:49 UTC",
+    "url": "https://manifold.markets/ZviMowshowitz/will-the-worst-day-in-cyber-securit",
+    "stake": 43.0,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "NO",
+    "crowd_pct": 65.0,
+    "price_move": 5.3,
+    "divergence_score": 3.46,
+    "signal_strength": 0.69
   }
 ]
