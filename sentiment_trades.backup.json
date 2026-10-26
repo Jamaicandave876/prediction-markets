@@ -5525,5 +5525,24 @@
     "price_move": 5.3,
     "divergence_score": 3.46,
     "signal_strength": 0.69
+  },
+  {
+    "market_id": "6SdQQAgZQS",
+    "question": "EPL: Will Chelsea beat Manchester United?",
+    "direction": "BUY NO",
+    "entry_prob": 48.6,
+    "entry_time": "2026-10-25 22:58 UTC",
+    "url": "https://manifold.markets/Web3ICP/epl-will-chelsea-beat-manchester-un",
+    "stake": 32.1,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "YES",
+    "crowd_pct": 60.0,
+    "price_move": -5.4,
+    "divergence_score": 3.26,
+    "signal_strength": 0.65
   }
 ]
