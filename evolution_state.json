@@ -157,12 +157,12 @@
       "weak_signal": 2
     },
     "smart_money": {
-      "mid_prob_entry": 195,
+      "mid_prob_entry": 196,
       "no_direction": 222,
-      "strong_signal": 370,
-      "fast_trade": 277,
+      "strong_signal": 371,
+      "fast_trade": 278,
       "low_prob_entry": 123,
-      "yes_direction": 190,
+      "yes_direction": 191,
       "high_prob_entry": 94,
       "slow_trade": 3
     },
@@ -1174,23 +1174,6 @@
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "sentiment",
-      "market_id": "zSE2S22SCn",
-      "outcome": "strong_win",
-      "pnl_pp": 12.1,
-      "exit_reason": "stale",
-      "duration_hours": 98.6,
-      "traits": [
-        "mid_prob_entry",
-        "no_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 44.1,
-      "direction": "BUY NO",
-      "timestamp": "2026-10-13 20:28 UTC",
-      "lesson": "Sentiment: Strong signal \u2192 strong win. Keep trusting high-confidence entries."
-    },
     {
       "bot": "sentiment",
       "market_id": "yp52Q9RQnL",
@@ -2916,6 +2899,24 @@
       "direction": "BUY NO",
       "timestamp": "2026-10-26 15:42 UTC",
       "lesson": "Sentiment: big loss via stopped_out. PnL: -4.9pp in 17h."
+    },
+    {
+      "bot": "smart_money",
+      "market_id": "dEAN5tpC0R",
+      "outcome": "strong_win",
+      "pnl_pp": 13.4,
+      "exit_reason": "target_hit",
+      "duration_hours": 19.5,
+      "traits": [
+        "mid_prob_entry",
+        "fast_trade",
+        "yes_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 64.6,
+      "direction": "BUY YES",
+      "timestamp": "2026-10-26 22:09 UTC",
+      "lesson": "Smart $: Quick strong win \u2014 this signal pattern works well."
     }
   ],
   "regime": "cautious",
@@ -3048,7 +3049,7 @@
     "breakout": 0.67,
     "calibration": 0.1,
     "reversal": 0.2,
-    "smart_money": 0.31,
+    "smart_money": 0.56,
     "time_decay": 0.23,
     "sentiment": 0.2,
     "accumulation": 0.1,
@@ -3061,6 +3062,6 @@
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-10-26 15:42 UTC",
-  "generation": 1280
+  "last_evolution": "2026-10-26 22:10 UTC",
+  "generation": 1281
 }

@@ -5544,5 +5544,24 @@
     "price_move": -5.4,
     "divergence_score": 3.26,
     "signal_strength": 0.65
+  },
+  {
+    "market_id": "cZuOSpL2Iz",
+    "question": "Will the first commercially successful personal robot use legs?",
+    "direction": "BUY YES",
+    "entry_prob": 66.2,
+    "entry_time": "2026-10-26 22:09 UTC",
+    "url": "https://manifold.markets/spiderduckpig/will-the-first-commercially-success",
+    "stake": 42.5,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "NO",
+    "crowd_pct": 70.0,
+    "price_move": 5.3,
+    "divergence_score": 3.68,
+    "signal_strength": 0.74
   }
 ]
