@@ -2687,11 +2687,11 @@
     "drift_score": -33.6,
     "url": "https://manifold.markets/Bandors/will-cyberleek-release-his-gta6-bui",
     "stake": 50.5,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 33.0,
+    "exit_time": "2026-10-27 21:39 UTC",
+    "exit_reason": "stale",
+    "pnl_pp": 0.2,
     "peak_pnl": 0.20000000000000284
   },
   {
