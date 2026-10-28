@@ -2938,11 +2938,11 @@
     "drift_score": -57.44,
     "url": "https://manifold.markets/Jack1/will-the-linked-market-have-100-tra",
     "stake": 69.1,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 20.8,
+    "exit_time": "2026-10-28 11:55 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 0.0
   },
   {
     "market_id": "U5LPZhnS80",
@@ -2953,10 +2953,10 @@
     "drift_score": -76.51,
     "url": "https://manifold.markets/matterasmachine/will-a-moving-mirror-produce-light",
     "stake": 69.1,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 16.5,
+    "exit_time": "2026-10-28 11:55 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 0.0
   }
 ]
