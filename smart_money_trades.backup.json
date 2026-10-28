@@ -11586,5 +11586,24 @@
     "price_impact": 10.9,
     "conviction_score": 2.19,
     "signal_strength": 0.73
+  },
+  {
+    "market_id": "QZuyuQsp2S",
+    "question": "Will BLS report more than 275,600 data scientist jobs in the United States in 2030?",
+    "direction": "BUY YES",
+    "entry_prob": 75.5,
+    "entry_time": "2026-10-28 03:29 UTC",
+    "url": "https://manifold.markets/AdamBraff/will-bls-report-more-than-275600-da",
+    "stake": 121.5,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 2,
+    "smart_user_mana": 450,
+    "price_impact": 12.5,
+    "conviction_score": 4.49,
+    "signal_strength": 1.5
   }
 ]
