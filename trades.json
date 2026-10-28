@@ -2913,5 +2913,50 @@
     "exit_reason": null,
     "pnl_pp": null,
     "peak_pnl": 10.600000000000001
+  },
+  {
+    "market_id": "0p6EREc6Rl",
+    "question": "Will Julie Anne Genter win Wellington Bays in 2026?",
+    "direction": "BUY NO",
+    "entry_prob": 71.0,
+    "entry_time": "2026-10-28 03:27 UTC",
+    "drift_score": -10.05,
+    "url": "https://manifold.markets/Jack1/will-julie-anne-genter-win-wellingt",
+    "stake": 69.1,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
+  },
+  {
+    "market_id": "plP92OAPgP",
+    "question": "Will the linked market have 100 traders before it resolves?",
+    "direction": "BUY NO",
+    "entry_prob": 20.8,
+    "entry_time": "2026-10-28 03:27 UTC",
+    "drift_score": -57.44,
+    "url": "https://manifold.markets/Jack1/will-the-linked-market-have-100-tra",
+    "stake": 69.1,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
+  },
+  {
+    "market_id": "U5LPZhnS80",
+    "question": "Will a moving mirror produce light that propagates below c in vacuum by the end of 2030?",
+    "direction": "BUY NO",
+    "entry_prob": 16.5,
+    "entry_time": "2026-10-28 03:27 UTC",
+    "drift_score": -76.51,
+    "url": "https://manifold.markets/matterasmachine/will-a-moving-mirror-produce-light",
+    "stake": 69.1,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]
