@@ -2927,7 +2927,8 @@
     "exit_prob": null,
     "exit_time": null,
     "exit_reason": null,
-    "pnl_pp": null
+    "pnl_pp": null,
+    "peak_pnl": 3.5999999999999943
   },
   {
     "market_id": "plP92OAPgP",
