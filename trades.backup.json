@@ -2846,11 +2846,11 @@
     "drift_score": 56.33,
     "url": "https://manifold.markets/Jack1/if-republicans-lose-the-house-will",
     "stake": 51.6,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 62.2,
+    "exit_time": "2026-10-30 09:23 UTC",
+    "exit_reason": "stale",
+    "pnl_pp": -1.7
   },
   {
     "market_id": "dyQOnAh0Z0",
@@ -2876,11 +2876,11 @@
     "drift_score": -19.61,
     "url": "https://manifold.markets/Simon74fe/will-anthropics-revenue-growth-reac",
     "stake": 51.6,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 43.9,
+    "exit_time": "2026-10-30 09:23 UTC",
+    "exit_reason": "stale",
+    "pnl_pp": -3.8
   },
   {
     "market_id": "ZlzIcSApIU",
@@ -2912,7 +2912,7 @@
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null,
-    "peak_pnl": 11.399999999999999
+    "peak_pnl": 11.600000000000001
   },
   {
     "market_id": "0p6EREc6Rl",
