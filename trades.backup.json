@@ -2959,5 +2959,20 @@
     "exit_time": "2026-10-28 11:55 UTC",
     "exit_reason": "target_hit",
     "pnl_pp": 0.0
+  },
+  {
+    "market_id": "2puCpRCuzd",
+    "question": "Will Sesame Smart Glasses have a wave guide visual display?",
+    "direction": "BUY NO",
+    "entry_prob": 44.9,
+    "entry_time": "2026-10-30 17:34 UTC",
+    "drift_score": -10.12,
+    "url": "https://manifold.markets/Truthinperspective/will-sesame-smart-glasses-have-a-wa",
+    "stake": 38.4,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]

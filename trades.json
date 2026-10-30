@@ -2974,5 +2974,20 @@
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null
+  },
+  {
+    "market_id": "CIq9PQpQ6y",
+    "question": "Will Cognition raise at a $70B+ valuation in 2026?",
+    "direction": "BUY NO",
+    "entry_prob": 49.6,
+    "entry_time": "2026-10-30 21:51 UTC",
+    "drift_score": -55.59,
+    "url": "https://manifold.markets/Bayesian/will-cognition-raise-at-a-70b-valua",
+    "stake": 38.4,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]
