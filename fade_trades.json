@@ -988,5 +988,23 @@
     "exit_time": "2026-10-15 23:29 UTC",
     "exit_reason": "normalized",
     "pnl_pp": 9.9
+  },
+  {
+    "market_id": "SI8LdLEtAh",
+    "question": "Will Iran strike US military base at least once before December?",
+    "direction": "BUY NO",
+    "entry_prob": 64.9,
+    "pre_spike_prob": 52.1,
+    "spike_size": 12.8,
+    "spike_ratio": 8.3,
+    "spike_dir": 1,
+    "entry_time": "2026-10-31 23:53 UTC",
+    "url": "https://manifold.markets/apol/will-iran-strike-us-military-base-a-QRSggc02Nc",
+    "stake": 51.5,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]
