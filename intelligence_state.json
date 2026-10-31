@@ -1,5 +1,5 @@
 {
-  "last_report": "2026-10-30 00:32 UTC",
+  "last_report": "2026-10-31 03:38 UTC",
   "adjustments": [
     {
       "param": "MIN_DRIFT_SCORE",
@@ -1157,6 +1157,12 @@
       "param": "MIN_DRIFT_SCORE",
       "old": 2.5,
       "new": 2.8,
+      "reason": "System WR 30% < 40% \u2014 tighten signals"
+    },
+    {
+      "param": "MIN_DRIFT_SCORE",
+      "old": 2.8,
+      "new": 3.1,
       "reason": "System WR 30% < 40% \u2014 tighten signals"
     }
   ],
