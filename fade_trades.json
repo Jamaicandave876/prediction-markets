@@ -1001,10 +1001,10 @@
     "entry_time": "2026-10-31 23:53 UTC",
     "url": "https://manifold.markets/apol/will-iran-strike-us-military-base-a-QRSggc02Nc",
     "stake": 51.5,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 57.1,
+    "exit_time": "2026-11-01 19:17 UTC",
+    "exit_reason": "normalized",
+    "pnl_pp": 7.8
   }
 ]
