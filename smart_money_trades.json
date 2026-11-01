@@ -11725,5 +11725,24 @@
     "conviction_score": 8.3,
     "signal_strength": 1.5,
     "peak_pnl": 4.5
+  },
+  {
+    "market_id": "N5O2RlE0N0",
+    "question": "Will Donald Tusk be the Prime Minister of Poland at the end of November 2026?",
+    "direction": "BUY YES",
+    "entry_prob": 86.0,
+    "entry_time": "2026-11-01 12:28 UTC",
+    "url": "https://manifold.markets/a_l_e_x/will-donald-tusk-be-the-prime-minis",
+    "stake": 121.5,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 12,
+    "smart_user_mana": 751,
+    "price_impact": 4.6,
+    "conviction_score": 16.66,
+    "signal_strength": 1.5
   }
 ]
