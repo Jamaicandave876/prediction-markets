@@ -2891,11 +2891,11 @@
     "drift_score": -35.38,
     "url": "https://manifold.markets/Pedro6LNOI/is-cheryl-scott-from-abc-chicago-pr-CtdC9sL5Oh",
     "stake": 58.9,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 56.0,
+    "exit_time": "2026-11-02 10:23 UTC",
+    "exit_reason": "stale",
+    "pnl_pp": 21.2,
     "peak_pnl": 21.200000000000003
   },
   {
