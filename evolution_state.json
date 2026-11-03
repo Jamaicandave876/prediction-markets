@@ -157,12 +157,12 @@
       "weak_signal": 2
     },
     "smart_money": {
-      "mid_prob_entry": 199,
+      "mid_prob_entry": 200,
       "no_direction": 223,
-      "strong_signal": 376,
-      "fast_trade": 281,
+      "strong_signal": 377,
+      "fast_trade": 282,
       "low_prob_entry": 123,
-      "yes_direction": 196,
+      "yes_direction": 197,
       "high_prob_entry": 97,
       "slow_trade": 3
     },
@@ -177,11 +177,11 @@
       "weak_signal": 6
     },
     "momentum": {
-      "mid_prob_entry": 59,
-      "yes_direction": 51,
-      "strong_signal": 129,
+      "mid_prob_entry": 60,
+      "yes_direction": 52,
+      "strong_signal": 130,
       "high_prob_entry": 27,
-      "fast_trade": 45,
+      "fast_trade": 46,
       "no_direction": 78,
       "low_prob_entry": 43,
       "slow_trade": 54
@@ -1174,42 +1174,6 @@
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "momentum",
-      "market_id": "zS855gEyRg",
-      "outcome": "strong_win",
-      "pnl_pp": 10.9,
-      "exit_reason": "target_hit",
-      "duration_hours": 17.6,
-      "traits": [
-        "low_prob_entry",
-        "fast_trade",
-        "no_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 28.7,
-      "direction": "BUY NO",
-      "timestamp": "2026-10-15 07:53 UTC",
-      "lesson": "Momentum: Quick strong win \u2014 this signal pattern works well."
-    },
-    {
-      "bot": "smart_money",
-      "market_id": "zS855gEyRg",
-      "outcome": "strong_win",
-      "pnl_pp": 10.9,
-      "exit_reason": "target_hit",
-      "duration_hours": 17.6,
-      "traits": [
-        "low_prob_entry",
-        "fast_trade",
-        "no_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 28.7,
-      "direction": "BUY NO",
-      "timestamp": "2026-10-15 07:54 UTC",
-      "lesson": "Smart $: Quick strong win \u2014 this signal pattern works well."
-    },
     {
       "bot": "momentum",
       "market_id": "968uRzhPtR",
@@ -2919,6 +2883,42 @@
       "direction": "BUY NO",
       "timestamp": "2026-11-02 21:14 UTC",
       "lesson": "Momentum: Strong signal \u2192 strong win. Keep trusting high-confidence entries."
+    },
+    {
+      "bot": "momentum",
+      "market_id": "2pAygZU69h",
+      "outcome": "strong_win",
+      "pnl_pp": 43.2,
+      "exit_reason": "resolved_win",
+      "duration_hours": 16.2,
+      "traits": [
+        "mid_prob_entry",
+        "fast_trade",
+        "yes_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 56.8,
+      "direction": "BUY YES",
+      "timestamp": "2026-11-03 13:24 UTC",
+      "lesson": "Momentum: Quick strong win \u2014 this signal pattern works well."
+    },
+    {
+      "bot": "smart_money",
+      "market_id": "dZ2QnEqSsQ",
+      "outcome": "strong_win",
+      "pnl_pp": 24.6,
+      "exit_reason": "target_hit",
+      "duration_hours": 8.6,
+      "traits": [
+        "mid_prob_entry",
+        "fast_trade",
+        "yes_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 56.0,
+      "direction": "BUY YES",
+      "timestamp": "2026-11-03 13:26 UTC",
+      "lesson": "Smart $: Quick strong win \u2014 this signal pattern works well."
     }
   ],
   "regime": "cautious",
@@ -3039,7 +3039,7 @@
     }
   ],
   "bot_confidence": {
-    "momentum": 0.61,
+    "momentum": 0.65,
     "fade": 0.61,
     "mean_reversion": 0.1,
     "volume_surge": 0.2,
@@ -3051,7 +3051,7 @@
     "breakout": 0.67,
     "calibration": 0.1,
     "reversal": 0.2,
-    "smart_money": 0.48,
+    "smart_money": 0.56,
     "time_decay": 0.23,
     "sentiment": 0.2,
     "accumulation": 0.1,
@@ -3064,6 +3064,6 @@
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-11-03 04:53 UTC",
-  "generation": 1308
+  "last_evolution": "2026-11-03 13:27 UTC",
+  "generation": 1309
 }

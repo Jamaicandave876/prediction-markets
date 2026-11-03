@@ -1,15 +1,15 @@
 {
-  "last_run": "2026-11-03 04:53 UTC",
+  "last_run": "2026-11-03 13:27 UTC",
   "conflicts": [],
   "overlaps": {},
   "direction_exposure": {
-    "yes_count": 4,
+    "yes_count": 3,
     "no_count": 5,
-    "total": 9,
-    "yes_stake": 282.6,
+    "total": 8,
+    "yes_stake": 228.9,
     "no_stake": 253.3,
-    "total_stake": 535.9,
-    "yes_pct": 52.7,
+    "total_stake": 482.2,
+    "yes_pct": 47.5,
     "balance": "balanced"
   },
   "capital_weights": {
