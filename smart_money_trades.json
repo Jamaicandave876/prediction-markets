@@ -11781,6 +11781,45 @@
     "smart_user_mana": 414,
     "price_impact": 7.0,
     "conviction_score": 3.49,
-    "signal_strength": 1.16
+    "signal_strength": 1.16,
+    "peak_pnl": 0.6999999999999993
+  },
+  {
+    "market_id": "dZ2QnEqSsQ",
+    "question": "US-Iran ceasefire continues through October 31st? [Polymarket]",
+    "direction": "BUY YES",
+    "entry_prob": 56.0,
+    "entry_time": "2026-11-03 04:52 UTC",
+    "url": "https://manifold.markets/MonicaLewinsky/usiran-ceasefire-continues-through-N6sPutUsd2",
+    "stake": 74.5,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 4,
+    "smart_user_mana": 370,
+    "price_impact": 23.1,
+    "conviction_score": 13.65,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "55INpsQCyU",
+    "question": "Before 2028, will it become commonplace to improve frontier LLMs via training-free weight updates?",
+    "direction": "BUY NO",
+    "entry_prob": 32.0,
+    "entry_time": "2026-11-03 04:52 UTC",
+    "url": "https://manifold.markets/JaundicedBaboon/before-2028-will-it-become-commonpl",
+    "stake": 102.4,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 2,
+    "smart_user_mana": 500,
+    "price_impact": 20.2,
+    "conviction_score": 8.07,
+    "signal_strength": 1.5
   }
 ]
