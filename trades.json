@@ -3015,11 +3015,11 @@
     "drift_score": -11.31,
     "url": "https://manifold.markets/Jack1/democrats-win-53-senate-seats-and-2",
     "stake": 53.7,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 68.0,
+    "exit_time": "2026-11-04 00:59 UTC",
+    "exit_reason": "reversal",
+    "pnl_pp": -25.8,
     "peak_pnl": 0.5
   },
   {
