@@ -3046,11 +3046,11 @@
     "drift_score": 22.4,
     "url": "https://manifold.markets/DudleyDOODOO/will-democrats-win-michigan-iowa-ar",
     "stake": 53.7,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 100.0,
+    "exit_time": "2026-11-04 10:15 UTC",
+    "exit_reason": "resolved_win",
+    "pnl_pp": 25.6,
     "peak_pnl": 3.0999999999999943
   },
   {

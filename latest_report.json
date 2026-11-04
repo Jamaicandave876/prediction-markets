@@ -1,11 +1,23 @@
 {
-  "timestamp": "2026-11-04 01:05 UTC",
+  "timestamp": "2026-11-04 10:17 UTC",
   "regime": "adverse",
-  "pnl_7d": 52.5,
-  "total_open": 7,
-  "total_closed": 403,
-  "total_pnl": 1085.3,
+  "pnl_7d": 78.1,
+  "total_open": 6,
+  "total_closed": 404,
+  "total_pnl": 1110.9,
   "bots": [
+    {
+      "name": "momentum",
+      "display": "Momentum",
+      "grade": "C",
+      "score": 64.1,
+      "win_rate": 50.0,
+      "total_pnl": 467.9,
+      "open": 5,
+      "closed": 192,
+      "paused": false,
+      "consecutive_losses": 0
+    },
     {
       "name": "breakout",
       "display": "Breakout",
@@ -29,18 +41,6 @@
       "closed": 56,
       "paused": false,
       "consecutive_losses": 0
-    },
-    {
-      "name": "momentum",
-      "display": "Momentum",
-      "grade": "C",
-      "score": 50.6,
-      "win_rate": 40.0,
-      "total_pnl": 442.3,
-      "open": 6,
-      "closed": 191,
-      "paused": false,
-      "consecutive_losses": 1
     },
     {
       "name": "weather_temperature",
