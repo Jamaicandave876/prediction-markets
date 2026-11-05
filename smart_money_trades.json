@@ -11888,15 +11888,16 @@
     "entry_time": "2026-11-04 19:12 UTC",
     "url": "https://manifold.markets/Ziddletwix/alito-retires-by-eoy",
     "stake": 129.3,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 13.8,
+    "exit_time": "2026-11-05 01:13 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 0.5,
     "smart_user_bets": 2,
     "smart_user_mana": 400,
     "price_impact": 9.9,
     "conviction_score": 3.16,
-    "signal_strength": 1.05
+    "signal_strength": 1.05,
+    "peak_pnl": 0.5
   }
 ]
