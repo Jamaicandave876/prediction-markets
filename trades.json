@@ -3068,5 +3068,35 @@
     "exit_reason": null,
     "pnl_pp": null,
     "peak_pnl": 0.5
+  },
+  {
+    "market_id": "pzlC5pN0nU",
+    "question": "Will California courts *sentence* anyone to death in 2027?",
+    "direction": "BUY NO",
+    "entry_prob": 35.5,
+    "entry_time": "2026-11-07 21:17 UTC",
+    "drift_score": -24.1,
+    "url": "https://manifold.markets/MingweiSamuel/will-california-sentence-anyone-to",
+    "stake": 63.4,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
+  },
+  {
+    "market_id": "6pRPIEhhu5",
+    "question": "Will I write for 2 hours a day for the next month?",
+    "direction": "BUY NO",
+    "entry_prob": 48.0,
+    "entry_time": "2026-11-07 21:17 UTC",
+    "drift_score": -9.72,
+    "url": "https://manifold.markets/DrewSpartz/will-i-write-for-2-hours-a-day-for",
+    "stake": 63.4,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]

@@ -2923,12 +2923,12 @@
     "drift_score": -10.05,
     "url": "https://manifold.markets/Jack1/will-julie-anne-genter-win-wellingt",
     "stake": 69.1,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
-    "peak_pnl": 6.599999999999994
+    "status": "closed",
+    "exit_prob": 9.6,
+    "exit_time": "2026-11-07 17:15 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 61.4,
+    "peak_pnl": 61.4
   },
   {
     "market_id": "plP92OAPgP",
