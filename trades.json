@@ -3062,11 +3062,11 @@
     "drift_score": -30.84,
     "url": "https://manifold.markets/Web3ICP/epl-will-chelsea-beat-sunderland-by",
     "stake": 53.7,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 0.0,
+    "exit_time": "2026-11-08 19:15 UTC",
+    "exit_reason": "resolved_win",
+    "pnl_pp": 25.5,
     "peak_pnl": 0.5
   },
   {
