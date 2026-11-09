@@ -11939,5 +11939,43 @@
     "price_impact": 12.5,
     "conviction_score": 4.0,
     "signal_strength": 1.33
+  },
+  {
+    "market_id": "9PEgCLRug0",
+    "question": "Will bitcoin rise to 105k before crude oil falls below $80 per barrel?",
+    "direction": "BUY NO",
+    "entry_prob": 30.0,
+    "entry_time": "2026-11-09 10:46 UTC",
+    "url": "https://manifold.markets/apol/will-bitcoin-rise-to-105k-before-cr",
+    "stake": 130.7,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 3,
+    "smart_user_mana": 200,
+    "price_impact": 20.6,
+    "conviction_score": 4.94,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "OnpNLLgytQ",
+    "question": "Jensen Huang leave or announce leaving as Nvidia CEO in 2026?",
+    "direction": "BUY NO",
+    "entry_prob": 15.9,
+    "entry_time": "2026-11-09 10:46 UTC",
+    "url": "https://manifold.markets/Simon74fe/jensen-huang-leave-or-announce-leav",
+    "stake": 116.7,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 2,
+    "smart_user_mana": 377,
+    "price_impact": 7.0,
+    "conviction_score": 2.12,
+    "signal_strength": 0.71
   }
 ]
