@@ -1516,5 +1516,41 @@
     "breakout_strength": 7.5,
     "signal_strength": 1.5,
     "peak_pnl": 3.0
+  },
+  {
+    "market_id": "Ct6OpOt5Z9",
+    "question": "Will the US invade Iran with ground troops before 2028?",
+    "direction": "BUY NO",
+    "entry_prob": 24.1,
+    "entry_time": "2026-11-09 21:49 UTC",
+    "url": "https://manifold.markets/xixi/will-the-us-invade-iran-with-ground",
+    "stake": 132.8,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "baseline_range": 0.0,
+    "breakout_move": -12.6,
+    "breakout_strength": 12.6,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "h6SpUyCuln",
+    "question": "Will SP500 close at 7500.00 or more between Nov 9 and Nov 30 2026",
+    "direction": "BUY YES",
+    "entry_prob": 82.7,
+    "entry_time": "2026-11-09 21:49 UTC",
+    "url": "https://manifold.markets/Jack1/will-sp500-close-at-750000-or-more",
+    "stake": 132.8,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "baseline_range": 3.6,
+    "breakout_move": 10.4,
+    "breakout_strength": 2.9,
+    "signal_strength": 0.9795158979960311
   }
 ]
