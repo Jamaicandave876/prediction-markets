@@ -160,11 +160,11 @@
     "smart_money": {
       "mid_prob_entry": 203,
       "no_direction": 227,
-      "strong_signal": 383,
-      "fast_trade": 286,
+      "strong_signal": 384,
+      "fast_trade": 287,
       "low_prob_entry": 125,
-      "yes_direction": 199,
-      "high_prob_entry": 98,
+      "yes_direction": 200,
+      "high_prob_entry": 99,
       "slow_trade": 3
     },
     "liquidation": {
@@ -1193,24 +1193,6 @@
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "smart_money",
-      "market_id": "dyQOnAh0Z0",
-      "outcome": "big_loss",
-      "pnl_pp": -28.9,
-      "exit_reason": "stopped_out",
-      "duration_hours": 4.6,
-      "traits": [
-        "low_prob_entry",
-        "fast_trade",
-        "no_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 16.6,
-      "direction": "BUY NO",
-      "timestamp": "2026-10-16 23:11 UTC",
-      "lesson": "Smart $: big loss via stopped_out. PnL: -28.9pp in 5h."
-    },
     {
       "bot": "smart_money",
       "market_id": "EQ688gUnZ5",
@@ -2932,6 +2914,24 @@
       "direction": "BUY NO",
       "timestamp": "2026-11-10 05:33 UTC",
       "lesson": "Smart $: small loss via target_hit. PnL: +0.0pp in 8h."
+    },
+    {
+      "bot": "smart_money",
+      "market_id": "Il8SRLhuCs",
+      "outcome": "small_win",
+      "pnl_pp": 3.5,
+      "exit_reason": "target_hit",
+      "duration_hours": 8.5,
+      "traits": [
+        "high_prob_entry",
+        "fast_trade",
+        "yes_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 86.0,
+      "direction": "BUY YES",
+      "timestamp": "2026-11-10 14:05 UTC",
+      "lesson": "Smart $: small win via target_hit. PnL: +3.5pp in 9h."
     }
   ],
   "regime": "cautious",
@@ -3077,6 +3077,6 @@
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-11-10 05:33 UTC",
-  "generation": 1330
+  "last_evolution": "2026-11-10 14:05 UTC",
+  "generation": 1331
 }
