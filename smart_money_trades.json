@@ -12055,5 +12055,43 @@
     "price_impact": 25.3,
     "conviction_score": 20.22,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "OnpNLLgytQ",
+    "question": "Jensen Huang leave or announce leaving as Nvidia CEO in 2026?",
+    "direction": "BUY YES",
+    "entry_prob": 14.3,
+    "entry_time": "2026-11-11 04:04 UTC",
+    "url": "https://manifold.markets/Simon74fe/jensen-huang-leave-or-announce-leav",
+    "stake": 38.1,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 2,
+    "smart_user_mana": 1431,
+    "price_impact": 33.0,
+    "conviction_score": 37.81,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "UpnlqNP08L",
+    "question": "Will I kiss Aella this year?",
+    "direction": "BUY NO",
+    "entry_prob": 27.5,
+    "entry_time": "2026-11-11 04:04 UTC",
+    "url": "https://manifold.markets/zax/will-i-kiss-aella-this-year",
+    "stake": 118.6,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 4,
+    "smart_user_mana": 200,
+    "price_impact": 22.2,
+    "conviction_score": 7.12,
+    "signal_strength": 1.5
   }
 ]

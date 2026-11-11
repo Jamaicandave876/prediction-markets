@@ -5620,5 +5620,24 @@
     "price_move": 8.3,
     "divergence_score": 5.42,
     "signal_strength": 1.08
+  },
+  {
+    "market_id": "Ct6OpOt5Z9",
+    "question": "Will the US invade Iran with ground troops before 2028?",
+    "direction": "BUY NO",
+    "entry_prob": 20.0,
+    "entry_time": "2026-11-10 21:08 UTC",
+    "url": "https://manifold.markets/xixi/will-the-us-invade-iran-with-ground",
+    "stake": 136.4,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "YES",
+    "crowd_pct": 70.0,
+    "price_move": -16.7,
+    "divergence_score": 11.66,
+    "signal_strength": 1.5
   }
 ]
