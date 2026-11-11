@@ -12073,7 +12073,8 @@
     "smart_user_mana": 1431,
     "price_impact": 33.0,
     "conviction_score": 37.81,
-    "signal_strength": 1.5
+    "signal_strength": 1.5,
+    "peak_pnl": 1.6999999999999993
   },
   {
     "market_id": "UpnlqNP08L",
@@ -12083,15 +12084,35 @@
     "entry_time": "2026-11-11 04:04 UTC",
     "url": "https://manifold.markets/zax/will-i-kiss-aella-this-year",
     "stake": 118.6,
+    "status": "closed",
+    "exit_prob": 15.1,
+    "exit_time": "2026-11-11 13:22 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 12.4,
+    "smart_user_bets": 4,
+    "smart_user_mana": 200,
+    "price_impact": 22.2,
+    "conviction_score": 7.12,
+    "signal_strength": 1.5,
+    "peak_pnl": 12.4
+  },
+  {
+    "market_id": "2qyUUC8snq",
+    "question": "Will Waymo give public driverless rides across the Golden Gate Bridge by the end of 2027?",
+    "direction": "BUY YES",
+    "entry_prob": 59.0,
+    "entry_time": "2026-11-11 13:22 UTC",
+    "url": "https://manifold.markets/MingweiSamuel/will-waymo-give-public-driverless-r-Cl8Nglsgss",
+    "stake": 47.8,
     "status": "open",
     "exit_prob": null,
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null,
-    "smart_user_bets": 4,
-    "smart_user_mana": 200,
-    "price_impact": 22.2,
-    "conviction_score": 7.12,
-    "signal_strength": 1.5
+    "smart_user_bets": 2,
+    "smart_user_mana": 250,
+    "price_impact": 11.0,
+    "conviction_score": 2.2,
+    "signal_strength": 0.73
   }
 ]

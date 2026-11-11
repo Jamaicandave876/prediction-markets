@@ -159,10 +159,10 @@
     },
     "smart_money": {
       "mid_prob_entry": 203,
-      "no_direction": 227,
-      "strong_signal": 384,
-      "fast_trade": 287,
-      "low_prob_entry": 125,
+      "no_direction": 228,
+      "strong_signal": 385,
+      "fast_trade": 288,
+      "low_prob_entry": 126,
       "yes_direction": 200,
       "high_prob_entry": 99,
       "slow_trade": 3
@@ -1193,23 +1193,6 @@
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "smart_money",
-      "market_id": "zAIuQQcuyZ",
-      "outcome": "small_win",
-      "pnl_pp": 0.3,
-      "exit_reason": "stale",
-      "duration_hours": 49.1,
-      "traits": [
-        "mid_prob_entry",
-        "no_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 37.5,
-      "direction": "BUY NO",
-      "timestamp": "2026-10-17 19:57 UTC",
-      "lesson": "Smart $: small win via stale. PnL: +0.3pp in 49h."
-    },
     {
       "bot": "smart_money",
       "market_id": "dQEnS0dsUg",
@@ -2935,6 +2918,24 @@
       "direction": "BUY NO",
       "timestamp": "2026-11-11 04:04 UTC",
       "lesson": "Sentiment: small loss via target_hit. PnL: +0.0pp in 7h."
+    },
+    {
+      "bot": "smart_money",
+      "market_id": "UpnlqNP08L",
+      "outcome": "strong_win",
+      "pnl_pp": 12.4,
+      "exit_reason": "target_hit",
+      "duration_hours": 9.3,
+      "traits": [
+        "low_prob_entry",
+        "fast_trade",
+        "no_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 27.5,
+      "direction": "BUY NO",
+      "timestamp": "2026-11-11 13:22 UTC",
+      "lesson": "Smart $: Quick strong win \u2014 this signal pattern works well."
     }
   ],
   "regime": "cautious",
@@ -3067,7 +3068,7 @@
     "breakout": 0.67,
     "calibration": 0.1,
     "reversal": 0.2,
-    "smart_money": 0.47,
+    "smart_money": 0.56,
     "time_decay": 0.23,
     "sentiment": 0.2,
     "accumulation": 0.1,
@@ -3080,6 +3081,6 @@
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-11-11 04:05 UTC",
-  "generation": 1333
+  "last_evolution": "2026-11-11 13:22 UTC",
+  "generation": 1334
 }
