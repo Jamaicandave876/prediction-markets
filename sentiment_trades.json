@@ -5639,5 +5639,43 @@
     "price_move": -16.7,
     "divergence_score": 11.66,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "UEOtIqzyAP",
+    "question": "Will evidence that Alice Huang is a Chinese spy become publicly available before November 11, 2027?",
+    "direction": "BUY NO",
+    "entry_prob": 25.1,
+    "entry_time": "2026-11-13 04:32 UTC",
+    "url": "https://manifold.markets/CraigDemel/will-evidence-that-alice-huang-is-a",
+    "stake": 121.2,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "YES",
+    "crowd_pct": 75.0,
+    "price_move": -33.1,
+    "divergence_score": 24.81,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "tuguORNsAu",
+    "question": "Will there be time person of the year shortlist in 2026?",
+    "direction": "BUY NO",
+    "entry_prob": 55.0,
+    "entry_time": "2026-11-13 04:32 UTC",
+    "url": "https://manifold.markets/Jack1/will-there-be-time-person-of-the-ye",
+    "stake": 24.0,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "YES",
+    "crowd_pct": 75.0,
+    "price_move": -4.4,
+    "divergence_score": 3.27,
+    "signal_strength": 0.65
   }
 ]
