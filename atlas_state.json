@@ -20,10 +20,10 @@
     "momentum": {
       "score": 76.0,
       "win_rate": 60.0,
-      "avg_pnl": 15.7,
-      "total_pnl": 554.8,
-      "closed": 194,
-      "open": 5,
+      "avg_pnl": 15.6,
+      "total_pnl": 553.9,
+      "closed": 195,
+      "open": 4,
       "grade": "B"
     },
     "fade": {
@@ -145,7 +145,7 @@
     }
   },
   "consecutive_losses": {
-    "momentum": 0,
+    "momentum": 1,
     "fade": 0,
     "mean_reversion": 5,
     "volume_surge": 2,
