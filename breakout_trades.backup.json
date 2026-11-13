@@ -1553,5 +1553,23 @@
     "breakout_move": 10.4,
     "breakout_strength": 2.9,
     "signal_strength": 0.9795158979960311
+  },
+  {
+    "market_id": "UEOtIqzyAP",
+    "question": "Will evidence that Alice Huang is a Chinese spy become publicly available before November 11, 2027?",
+    "direction": "BUY NO",
+    "entry_prob": 25.1,
+    "entry_time": "2026-11-13 04:32 UTC",
+    "url": "https://manifold.markets/CraigDemel/will-evidence-that-alice-huang-is-a",
+    "stake": 141.4,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "baseline_range": 7.3,
+    "breakout_move": -29.4,
+    "breakout_strength": 4.0,
+    "signal_strength": 1.3449875724957725
   }
 ]
