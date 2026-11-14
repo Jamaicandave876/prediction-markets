@@ -3158,7 +3158,8 @@
     "exit_prob": null,
     "exit_time": null,
     "exit_reason": null,
-    "pnl_pp": null
+    "pnl_pp": null,
+    "peak_pnl": 0.10000000000000142
   },
   {
     "market_id": "LASCU9LPA5",
@@ -3199,10 +3200,10 @@
     "drift_score": -45.79,
     "url": "https://manifold.markets/LeeBressler/will-jensen-huang-join-spacex-befor",
     "stake": 67.9,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 20.6,
+    "exit_time": "2026-11-14 12:48 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 0.0
   }
 ]

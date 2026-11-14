@@ -20,10 +20,10 @@
     "momentum": {
       "score": 82.0,
       "win_rate": 70.0,
-      "avg_pnl": 16.1,
+      "avg_pnl": 16.4,
       "total_pnl": 556.5,
-      "closed": 196,
-      "open": 10,
+      "closed": 197,
+      "open": 9,
       "grade": "A"
     },
     "fade": {
@@ -145,7 +145,7 @@
     }
   },
   "consecutive_losses": {
-    "momentum": 0,
+    "momentum": 1,
     "fade": 0,
     "mean_reversion": 5,
     "volume_surge": 2,
@@ -161,5 +161,5 @@
     "weather_divergence": 0
   },
   "regime": "adverse",
-  "last_report": "2026-11-13 13:45 UTC"
+  "last_report": "2026-11-14 12:50 UTC"
 }
