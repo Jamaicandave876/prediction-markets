@@ -3171,11 +3171,12 @@
     "drift_score": -49.71,
     "url": "https://manifold.markets/TuringGames/will-chatgpt61-sol-and-claude-opus",
     "stake": 67.9,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 21.8,
+    "exit_time": "2026-11-15 18:20 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 0.9,
+    "peak_pnl": 0.8999999999999986
   },
   {
     "market_id": "N8CPEnERu0",
