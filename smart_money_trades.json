@@ -12241,11 +12241,11 @@
     "entry_time": "2026-11-13 21:08 UTC",
     "url": "https://manifold.markets/Jack1/anthropic-market-cap-at-close-on-ip",
     "stake": 81.1,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 36.4,
+    "exit_time": "2026-11-16 00:36 UTC",
+    "exit_reason": "stale",
+    "pnl_pp": 5.2,
     "smart_user_bets": 4,
     "smart_user_mana": 750,
     "price_impact": 8.4,
@@ -12348,6 +12348,25 @@
     "price_impact": 20.8,
     "conviction_score": 4.98,
     "signal_strength": 1.5,
-    "peak_pnl": 7.800000000000004
+    "peak_pnl": 7.999999999999993
+  },
+  {
+    "market_id": "EnItdCdCEC",
+    "question": "Will Jensen Huang return as NVIDIA CEO by the end of 2026?",
+    "direction": "BUY NO",
+    "entry_prob": 18.5,
+    "entry_time": "2026-11-16 00:36 UTC",
+    "url": "https://manifold.markets/bessarabov/jensen-huang-nvidia-ceo-return-2026",
+    "stake": 131.4,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 2,
+    "smart_user_mana": 509,
+    "price_impact": 6.4,
+    "conviction_score": 2.6,
+    "signal_strength": 0.87
   }
 ]
