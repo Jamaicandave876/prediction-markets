@@ -5697,5 +5697,43 @@
     "price_move": -32.8,
     "divergence_score": 22.97,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "98upN8h680",
+    "question": "Will a new prize drawing be opened before EOY 2026?",
+    "direction": "BUY NO",
+    "entry_prob": 45.0,
+    "entry_time": "2026-11-17 15:42 UTC",
+    "url": "https://manifold.markets/Jack1/will-a-new-prize-drawing-be-opened-6zECunRAZt",
+    "stake": 93.8,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "YES",
+    "crowd_pct": 85.0,
+    "price_move": -14.4,
+    "divergence_score": 12.26,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "d5s8OUyqg5",
+    "question": "Will Jensen Huang testify before a committee of the US Congress by EoY, 2026?",
+    "direction": "BUY YES",
+    "entry_prob": 62.9,
+    "entry_time": "2026-11-17 15:42 UTC",
+    "url": "https://manifold.markets/JoeandSeth/will-jensen-huang-testify-before-a",
+    "stake": 91.0,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "NO",
+    "crowd_pct": 60.0,
+    "price_move": 10.0,
+    "divergence_score": 6.0,
+    "signal_strength": 1.2
   }
 ]
