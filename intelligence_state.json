@@ -1227,19 +1227,14 @@
     }
   ],
   "paused": {
-    "mean_reversion": true,
-    "contrarian": true,
+    "mean_reversion": false,
+    "contrarian": false,
     "liquidation": false,
-    "calibration": true,
-    "sentiment_divergence": true,
+    "calibration": false,
+    "sentiment_divergence": false,
     "smart_money": false,
     "momentum": false
   },
   "consecutive_losses": {},
-  "pause_start": {
-    "mean_reversion": "2026-11-15 00:35 UTC",
-    "contrarian": "2026-11-15 00:35 UTC",
-    "calibration": "2026-11-15 00:35 UTC",
-    "sentiment_divergence": "2026-11-15 18:22 UTC"
-  }
+  "pause_start": {}
 }
