@@ -3109,11 +3109,11 @@
     "drift_score": -45.27,
     "url": "https://manifold.markets/Pjfkh/will-jensen-huang-be-criminally-cha",
     "stake": 67.9,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 39.0,
+    "exit_time": "2026-11-18 10:56 UTC",
+    "exit_reason": "reversal",
+    "pnl_pp": -16.4
   },
   {
     "market_id": "ptIuNNyAqz",
@@ -3129,7 +3129,7 @@
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null,
-    "peak_pnl": 12.500000000000004
+    "peak_pnl": 17.200000000000003
   },
   {
     "market_id": "ycgZ2SnZCQ",
