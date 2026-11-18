@@ -5725,15 +5725,16 @@
     "entry_time": "2026-11-17 15:42 UTC",
     "url": "https://manifold.markets/JoeandSeth/will-jensen-huang-testify-before-a",
     "stake": 91.0,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 91.4,
+    "exit_time": "2026-11-18 10:57 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 28.5,
     "crowd_dir": "NO",
     "crowd_pct": 60.0,
     "price_move": 10.0,
     "divergence_score": 6.0,
-    "signal_strength": 1.2
+    "signal_strength": 1.2,
+    "peak_pnl": 28.500000000000007
   }
 ]
