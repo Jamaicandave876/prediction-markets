@@ -12387,7 +12387,7 @@
     "price_impact": 5.2,
     "conviction_score": 9.27,
     "signal_strength": 1.5,
-    "peak_pnl": 9.399999999999999
+    "peak_pnl": 9.7
   },
   {
     "market_id": "ALEOARzzp6",
@@ -12406,6 +12406,25 @@
     "smart_user_mana": 200,
     "price_impact": 26.4,
     "conviction_score": 8.45,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "QR5CC628Ip",
+    "question": "Will the Democratic Party hold a filibuster-proof majority (60+ seats) in the Senate after the 2028 election?",
+    "direction": "BUY NO",
+    "entry_prob": 22.7,
+    "entry_time": "2026-11-18 19:49 UTC",
+    "url": "https://manifold.markets/RedzoneITG/will-the-democratic-party-hold-a-fi",
+    "stake": 146.6,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 5,
+    "smart_user_mana": 200,
+    "price_impact": 11.4,
+    "conviction_score": 4.54,
     "signal_strength": 1.5
   }
 ]
