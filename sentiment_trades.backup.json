@@ -5715,7 +5715,8 @@
     "crowd_pct": 85.0,
     "price_move": -14.4,
     "divergence_score": 12.26,
-    "signal_strength": 1.5
+    "signal_strength": 1.5,
+    "peak_pnl": 4.0
   },
   {
     "market_id": "d5s8OUyqg5",

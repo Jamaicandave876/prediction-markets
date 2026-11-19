@@ -12427,5 +12427,43 @@
     "conviction_score": 4.54,
     "signal_strength": 1.5,
     "peak_pnl": 2.5
+  },
+  {
+    "market_id": "c6R2QOllRz",
+    "question": "Avengers: Doomsday Highest Worldwide Grossing Movie of All Time?",
+    "direction": "BUY YES",
+    "entry_prob": 40.7,
+    "entry_time": "2026-11-19 11:01 UTC",
+    "url": "https://manifold.markets/Jack1/avengers-doomsday-highest-worldwide-ptgSzd0lEh",
+    "stake": 74.1,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 3,
+    "smart_user_mana": 520,
+    "price_impact": 9.1,
+    "conviction_score": 5.7,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "RshAyhSdPU",
+    "question": "Will railway part of Crimean (Kerch Strait) Bridge be destroyed by EOY 2026?",
+    "direction": "BUY YES",
+    "entry_prob": 58.0,
+    "entry_time": "2026-11-19 11:01 UTC",
+    "url": "https://manifold.markets/Egor/will-railway-part-of-crimean-kerch",
+    "stake": 51.6,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 2,
+    "smart_user_mana": 200,
+    "price_impact": 13.9,
+    "conviction_score": 2.23,
+    "signal_strength": 0.74
   }
 ]
