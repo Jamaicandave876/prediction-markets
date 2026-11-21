@@ -3093,11 +3093,11 @@
     "drift_score": -9.72,
     "url": "https://manifold.markets/DrewSpartz/will-i-write-for-2-hours-a-day-for",
     "stake": 63.4,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 60.4,
+    "exit_time": "2026-11-21 10:30 UTC",
+    "exit_reason": "reversal",
+    "pnl_pp": -12.4,
     "peak_pnl": 7.0
   },
   {
