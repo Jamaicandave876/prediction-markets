@@ -5737,5 +5737,24 @@
     "divergence_score": 6.0,
     "signal_strength": 1.2,
     "peak_pnl": 28.500000000000007
+  },
+  {
+    "market_id": "ypOdqhlqA5",
+    "question": "Will a THIRD Millennium Prize problem be solved by the end of 2026?",
+    "direction": "BUY NO",
+    "entry_prob": 33.0,
+    "entry_time": "2026-11-21 18:33 UTC",
+    "url": "https://manifold.markets/qhyzn/will-a-third-millennium-prize-probl",
+    "stake": 117.7,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "YES",
+    "crowd_pct": 60.0,
+    "price_move": -28.0,
+    "divergence_score": 16.82,
+    "signal_strength": 1.5
   }
 ]
