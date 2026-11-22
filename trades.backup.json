@@ -3222,5 +3222,20 @@
     "exit_time": null,
     "exit_reason": null,
     "pnl_pp": null
+  },
+  {
+    "market_id": "6hNZc0thlg",
+    "question": "Will an AI solve any Millenium prize problem before December 31, 2026?",
+    "direction": "BUY YES",
+    "entry_prob": 54.8,
+    "entry_time": "2026-11-22 10:36 UTC",
+    "drift_score": 9.15,
+    "url": "https://manifold.markets/apol/will-an-ai-solve-any-millenium-priz",
+    "stake": 40.7,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]

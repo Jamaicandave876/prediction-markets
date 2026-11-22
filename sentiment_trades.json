@@ -5756,5 +5756,24 @@
     "price_move": -28.0,
     "divergence_score": 16.82,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "glLUlst5IU",
+    "question": "Will P vs NP be resolved by Nov 20, 2027?",
+    "direction": "BUY YES",
+    "entry_prob": 45.3,
+    "entry_time": "2026-11-22 18:55 UTC",
+    "url": "https://manifold.markets/Bayesian/will-p-vs-np-be-resolved-by-nov-20",
+    "stake": 38.6,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "crowd_dir": "NO",
+    "crowd_pct": 70.0,
+    "price_move": 6.6,
+    "divergence_score": 4.62,
+    "signal_strength": 0.92
   }
 ]
