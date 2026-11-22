@@ -12585,5 +12585,43 @@
     "price_impact": 9.1,
     "conviction_score": 2.18,
     "signal_strength": 0.73
+  },
+  {
+    "market_id": "OAOzugOlQz",
+    "question": "Will D.J. Trump pardon Jensen Huang?",
+    "direction": "BUY NO",
+    "entry_prob": 23.5,
+    "entry_time": "2026-11-22 00:50 UTC",
+    "url": "https://manifold.markets/aleven/will-dj-trump-pardon-jensen-huang",
+    "stake": 146.1,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 4,
+    "smart_user_mana": 825,
+    "price_impact": 25.9,
+    "conviction_score": 34.12,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "nd2EnyRhcu",
+    "question": "S&P500 closes at 7000.00 or higher on Wednesday 25 Nov 2026?",
+    "direction": "BUY YES",
+    "entry_prob": 49.4,
+    "entry_time": "2026-11-22 00:50 UTC",
+    "url": "https://manifold.markets/Jack1/sp500-closes-at-700000-or-higher-on",
+    "stake": 85.3,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 6,
+    "smart_user_mana": 300,
+    "price_impact": 11.5,
+    "conviction_score": 8.3,
+    "signal_strength": 1.5
   }
 ]

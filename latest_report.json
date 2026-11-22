@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-11-21 18:34 UTC",
+  "timestamp": "2026-11-22 00:51 UTC",
   "regime": "adverse",
-  "pnl_7d": 18.8,
-  "total_open": 6,
-  "total_closed": 419,
-  "total_pnl": 1239.6,
+  "pnl_7d": 17.0,
+  "total_open": 5,
+  "total_closed": 420,
+  "total_pnl": 1237.8,
   "bots": [
     {
       "name": "breakout",
@@ -17,18 +17,6 @@
       "closed": 85,
       "paused": false,
       "consecutive_losses": 0
-    },
-    {
-      "name": "momentum",
-      "display": "Momentum",
-      "grade": "B",
-      "score": 66.1,
-      "win_rate": 50.0,
-      "total_pnl": 548.4,
-      "open": 5,
-      "closed": 202,
-      "paused": false,
-      "consecutive_losses": 1
     },
     {
       "name": "fade",
@@ -89,6 +77,18 @@
       "closed": 0,
       "paused": false,
       "consecutive_losses": 0
+    },
+    {
+      "name": "momentum",
+      "display": "Momentum",
+      "grade": "D",
+      "score": 47.5,
+      "win_rate": 40.0,
+      "total_pnl": 546.6,
+      "open": 4,
+      "closed": 203,
+      "paused": false,
+      "consecutive_losses": 2
     },
     {
       "name": "whale",

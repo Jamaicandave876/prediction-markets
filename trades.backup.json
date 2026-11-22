@@ -3207,5 +3207,20 @@
     "exit_time": "2026-11-14 12:48 UTC",
     "exit_reason": "target_hit",
     "pnl_pp": 0.0
+  },
+  {
+    "market_id": "l9puyUs5AZ",
+    "question": "Is the 2028 Republican President and VP Nominee on this Turning Point AmericaFest ad?",
+    "direction": "BUY NO",
+    "entry_prob": 40.8,
+    "entry_time": "2026-11-21 18:32 UTC",
+    "drift_score": -14.26,
+    "url": "https://manifold.markets/Jack1/is-the-2028-republican-president-an",
+    "stake": 63.3,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]
