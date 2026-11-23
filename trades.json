@@ -3232,11 +3232,11 @@
     "drift_score": 9.15,
     "url": "https://manifold.markets/apol/will-an-ai-solve-any-millenium-priz",
     "stake": 40.7,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
-    "peak_pnl": 22.200000000000003
+    "status": "closed",
+    "exit_prob": 87.6,
+    "exit_time": "2026-11-23 01:18 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 32.8,
+    "peak_pnl": 32.8
   }
 ]
