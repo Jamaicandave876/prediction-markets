@@ -12694,16 +12694,17 @@
     "entry_time": "2026-11-23 23:13 UTC",
     "url": "https://manifold.markets/2b3o4o/jensen-out-again-by-end-of-2027",
     "stake": 144.3,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 17.4,
+    "exit_time": "2026-11-24 07:54 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 0.6,
     "smart_user_bets": 4,
     "smart_user_mana": 787,
     "price_impact": 18.6,
     "conviction_score": 23.42,
-    "signal_strength": 1.5
+    "signal_strength": 1.5,
+    "peak_pnl": 0.6000000000000014
   },
   {
     "market_id": "t0cARPIqCc",
@@ -12741,6 +12742,25 @@
     "smart_user_mana": 500,
     "price_impact": 10.2,
     "conviction_score": 8.14,
+    "signal_strength": 1.5
+  },
+  {
+    "market_id": "OAOzugOlQz",
+    "question": "Will D.J. Trump pardon Jensen Huang?",
+    "direction": "BUY YES",
+    "entry_prob": 44.4,
+    "entry_time": "2026-11-24 07:54 UTC",
+    "url": "https://manifold.markets/aleven/will-dj-trump-pardon-jensen-huang",
+    "stake": 78.0,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 42,
+    "smart_user_mana": 435,
+    "price_impact": 11.0,
+    "conviction_score": 80.64,
     "signal_strength": 1.5
   }
 ]
