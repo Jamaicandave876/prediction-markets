@@ -3252,7 +3252,8 @@
     "exit_prob": null,
     "exit_time": null,
     "exit_reason": null,
-    "pnl_pp": null
+    "pnl_pp": null,
+    "peak_pnl": 5.099999999999994
   },
   {
     "market_id": "U9y8tOUsLh",
@@ -3263,11 +3264,11 @@
     "drift_score": -37.96,
     "url": "https://manifold.markets/apol/will-gta6-be-recompiled-on-a-pc-bui",
     "stake": 50.7,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 52.5,
+    "exit_time": "2026-11-23 23:11 UTC",
+    "exit_reason": "reversal",
+    "pnl_pp": -21.5
   },
   {
     "market_id": "ZIRs6Lz8qd",
@@ -3278,11 +3279,12 @@
     "drift_score": -56.77,
     "url": "https://manifold.markets/DleEviLol/will-ukrainian-forces-break-through",
     "stake": 50.7,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 20.2,
+    "exit_time": "2026-11-23 23:11 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 1.4,
+    "peak_pnl": 1.4000000000000021
   },
   {
     "market_id": "NPld8sQycU",
@@ -3293,11 +3295,11 @@
     "drift_score": -37.43,
     "url": "https://manifold.markets/ZenSpam/will-donald-trump-comment-on-the-ri",
     "stake": 50.7,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 19.5,
+    "exit_time": "2026-11-23 23:11 UTC",
+    "exit_reason": "target_hit",
+    "pnl_pp": 0.0
   },
   {
     "market_id": "LzlOOC6suq",
