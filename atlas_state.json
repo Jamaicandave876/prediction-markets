@@ -32,7 +32,7 @@
       "avg_pnl": 1.9,
       "total_pnl": 538.5,
       "closed": 56,
-      "open": 0,
+      "open": 1,
       "grade": "C"
     },
     "mean_reversion": {

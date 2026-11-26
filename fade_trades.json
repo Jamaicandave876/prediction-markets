@@ -1006,5 +1006,23 @@
     "exit_time": "2026-11-01 19:17 UTC",
     "exit_reason": "normalized",
     "pnl_pp": 7.8
+  },
+  {
+    "market_id": "unpOghgZ6d",
+    "question": "Will Jensen Huang receive a Presidential Pardon from Trump?",
+    "direction": "BUY YES",
+    "entry_prob": 10.9,
+    "pre_spike_prob": 48.4,
+    "spike_size": 37.6,
+    "spike_ratio": 29.3,
+    "spike_dir": -1,
+    "entry_time": "2026-11-26 20:47 UTC",
+    "url": "https://manifold.markets/pensiveplatypus/will-jensen-huang-receive-a-preside",
+    "stake": 49.9,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null
   }
 ]
