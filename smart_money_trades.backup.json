@@ -12861,5 +12861,24 @@
     "price_impact": 15.8,
     "conviction_score": 5.72,
     "signal_strength": 1.5
+  },
+  {
+    "market_id": "5IECczN822",
+    "question": "Will my Mana exceed 3k by the end of November",
+    "direction": "BUY YES",
+    "entry_prob": 45.7,
+    "entry_time": "2026-11-26 20:48 UTC",
+    "url": "https://manifold.markets/better26/will-my-mana-exceed-3k-by-the-end-o",
+    "stake": 79.7,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 7,
+    "smart_user_mana": 800,
+    "price_impact": 40.7,
+    "conviction_score": 91.07,
+    "signal_strength": 1.5
   }
 ]

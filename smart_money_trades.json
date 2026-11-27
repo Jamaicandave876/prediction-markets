@@ -12879,6 +12879,26 @@
     "smart_user_mana": 800,
     "price_impact": 40.7,
     "conviction_score": 91.07,
+    "signal_strength": 1.5,
+    "peak_pnl": 5.599999999999994
+  },
+  {
+    "market_id": "2StpE6hA9E",
+    "question": "Will the prime factors of RSA-2048 be known before July 2027?",
+    "direction": "BUY NO",
+    "entry_prob": 29.1,
+    "entry_time": "2026-11-27 03:25 UTC",
+    "url": "https://manifold.markets/FreshFrier/will-the-prime-factors-of-rsa2048-b-gdRAcldE6L",
+    "stake": 146.5,
+    "status": "open",
+    "exit_prob": null,
+    "exit_time": null,
+    "exit_reason": null,
+    "pnl_pp": null,
+    "smart_user_bets": 6,
+    "smart_user_mana": 200,
+    "price_impact": 20.3,
+    "conviction_score": 9.73,
     "signal_strength": 1.5
   }
 ]

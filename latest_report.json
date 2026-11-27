@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-26 20:48 UTC",
+  "timestamp": "2026-11-27 03:25 UTC",
   "regime": "adverse",
   "pnl_7d": -18.2,
   "total_open": 6,
@@ -179,8 +179,8 @@
   "adjustments": [
     {
       "param": "MIN_DRIFT_SCORE",
-      "old": 2.8,
-      "new": 3.1,
+      "old": 3.1,
+      "new": 3.4,
       "reason": "Momentum WR 30% < 40% \u2014 tightening"
     }
   ]
