@@ -3140,11 +3140,11 @@
     "drift_score": -40.65,
     "url": "https://manifold.markets/CraigTalbert/will-sleep-products-with-labmade-cb",
     "stake": 67.9,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null
+    "status": "closed",
+    "exit_prob": 31.1,
+    "exit_time": "2026-11-28 11:14 UTC",
+    "exit_reason": "stale",
+    "pnl_pp": -1.6
   },
   {
     "market_id": "25yyEtIPRO",
@@ -3155,11 +3155,11 @@
     "drift_score": -52.96,
     "url": "https://manifold.markets/ManifoldMarketmaker/will-intermex-imxi-be-acquired-by-w",
     "stake": 67.9,
-    "status": "open",
-    "exit_prob": null,
-    "exit_time": null,
-    "exit_reason": null,
-    "pnl_pp": null,
+    "status": "closed",
+    "exit_prob": 22.2,
+    "exit_time": "2026-11-28 11:14 UTC",
+    "exit_reason": "stale",
+    "pnl_pp": 1.3,
     "peak_pnl": 1.3000000000000007
   },
   {
