@@ -86,7 +86,7 @@
       "target_hit": 264,
       "stopped_out": 93,
       "trailing_stop": 27,
-      "stale": 133,
+      "stale": 134,
       "resolved_loss": 2
     },
     "momentum": {
@@ -159,12 +159,12 @@
     },
     "smart_money": {
       "mid_prob_entry": 214,
-      "no_direction": 244,
-      "strong_signal": 408,
-      "fast_trade": 299,
-      "low_prob_entry": 138,
-      "yes_direction": 208,
-      "high_prob_entry": 100,
+      "no_direction": 245,
+      "strong_signal": 410,
+      "fast_trade": 301,
+      "low_prob_entry": 139,
+      "yes_direction": 209,
+      "high_prob_entry": 101,
       "slow_trade": 3
     },
     "liquidation": {
@@ -1193,59 +1193,6 @@
     }
   ],
   "trade_autopsies": [
-    {
-      "bot": "smart_money",
-      "market_id": "N5O2RlE0N0",
-      "outcome": "small_win",
-      "pnl_pp": 4.5,
-      "exit_reason": "target_hit",
-      "duration_hours": 4.2,
-      "traits": [
-        "high_prob_entry",
-        "fast_trade",
-        "yes_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 75.6,
-      "direction": "BUY YES",
-      "timestamp": "2026-10-31 20:51 UTC",
-      "lesson": "Smart $: small win via target_hit. PnL: +4.5pp in 4h."
-    },
-    {
-      "bot": "smart_money",
-      "market_id": "RAUZsAPttc",
-      "outcome": "small_loss",
-      "pnl_pp": -0.2,
-      "exit_reason": "stale",
-      "duration_hours": 51.2,
-      "traits": [
-        "low_prob_entry",
-        "no_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 25.8,
-      "direction": "BUY NO",
-      "timestamp": "2026-11-01 03:43 UTC",
-      "lesson": "Smart $: small loss via stale. PnL: -0.2pp in 51h."
-    },
-    {
-      "bot": "fade",
-      "market_id": "SI8LdLEtAh",
-      "outcome": "strong_win",
-      "pnl_pp": 7.8,
-      "exit_reason": "normalized",
-      "duration_hours": 19.4,
-      "traits": [
-        "mid_prob_entry",
-        "fast_trade",
-        "no_direction",
-        "strong_signal"
-      ],
-      "entry_prob": 64.9,
-      "direction": "BUY NO",
-      "timestamp": "2026-11-01 19:17 UTC",
-      "lesson": "Fade: Quick strong win \u2014 this signal pattern works well."
-    },
     {
       "bot": "smart_money",
       "market_id": "LtpELtyL0p",
@@ -2943,6 +2890,59 @@
       "direction": "BUY NO",
       "timestamp": "2026-11-27 15:57 UTC",
       "lesson": "Smart $: small win via target_hit. PnL: +4.1pp in 13h."
+    },
+    {
+      "bot": "smart_money",
+      "market_id": "9qOhhOp5yO",
+      "outcome": "big_loss",
+      "pnl_pp": -4.7,
+      "exit_reason": "stale",
+      "duration_hours": 56.3,
+      "traits": [
+        "mid_prob_entry",
+        "yes_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 34.0,
+      "direction": "BUY YES",
+      "timestamp": "2026-11-28 00:56 UTC",
+      "lesson": "Smart $: Held too long with no resolution. Consider shorter max_days."
+    },
+    {
+      "bot": "smart_money",
+      "market_id": "ppgSEnpt89",
+      "outcome": "small_win",
+      "pnl_pp": 3.5,
+      "exit_reason": "target_hit",
+      "duration_hours": 9.0,
+      "traits": [
+        "high_prob_entry",
+        "fast_trade",
+        "yes_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 86.7,
+      "direction": "BUY YES",
+      "timestamp": "2026-11-28 00:56 UTC",
+      "lesson": "Smart $: small win via target_hit. PnL: +3.5pp in 9h."
+    },
+    {
+      "bot": "smart_money",
+      "market_id": "IhNq9CZzpA",
+      "outcome": "strong_win",
+      "pnl_pp": 12.7,
+      "exit_reason": "target_hit",
+      "duration_hours": 9.0,
+      "traits": [
+        "low_prob_entry",
+        "fast_trade",
+        "no_direction",
+        "strong_signal"
+      ],
+      "entry_prob": 28.0,
+      "direction": "BUY NO",
+      "timestamp": "2026-11-28 00:56 UTC",
+      "lesson": "Smart $: Quick strong win \u2014 this signal pattern works well."
     }
   ],
   "regime": "cautious",
@@ -3075,7 +3075,7 @@
     "breakout": 0.65,
     "calibration": 0.1,
     "reversal": 0.2,
-    "smart_money": 0.72,
+    "smart_money": 0.66,
     "time_decay": 0.23,
     "sentiment": 0.2,
     "accumulation": 0.1,
@@ -3088,6 +3088,6 @@
     "weather_storm": 0.5,
     "weather_divergence": 0.5
   },
-  "last_evolution": "2026-11-27 15:57 UTC",
-  "generation": 1379
+  "last_evolution": "2026-11-28 00:57 UTC",
+  "generation": 1380
 }
